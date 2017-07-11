@@ -9,12 +9,35 @@
 /* Begin PBXBuildFile section */
 		B3F4F0001F14A8600005197E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4EFFF1F14A8600005197E /* main.m */; };
 		B3F4F0031F14A8600005197E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0021F14A8600005197E /* AppDelegate.m */; };
-		B3F4F0061F14A8600005197E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0051F14A8600005197E /* ViewController.m */; };
 		B3F4F0091F14A8600005197E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F0071F14A8600005197E /* Main.storyboard */; };
 		B3F4F00B1F14A8600005197E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F00A1F14A8600005197E /* Assets.xcassets */; };
 		B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F00C1F14A8600005197E /* LaunchScreen.storyboard */; };
 		B3F4F0191F14A8600005197E /* UIKitExpandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0181F14A8600005197E /* UIKitExpandTests.m */; };
 		B3F4F0241F14A8600005197E /* UIKitExpandUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0231F14A8600005197E /* UIKitExpandUITests.m */; };
+		B3F4F0341F14AA5A0005197E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0331F14AA5A0005197E /* UIImage+ImageEffects.m */; };
+		B3F4F03E1F14B1110005197E /* UIView+BlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F03D1F14B1110005197E /* UIView+BlurredImage.m */; };
+		B3F4F0411F14B93A0005197E /* NSString+paths.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0401F14B93A0005197E /* NSString+paths.m */; };
+		B3F4F0461F14E06F0005197E /* 组-5.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F0431F14E06F0005197E /* 组-5.png */; };
+		B3F4F0471F14E06F0005197E /* 组-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F0441F14E06F0005197E /* 组-5@2x.png */; };
+		B3F4F0481F14E06F0005197E /* 组-5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F0451F14E06F0005197E /* 组-5@3x.png */; };
+		B3F4F04B1F14E07F0005197E /* iconfont-gouwuche.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F0491F14E07F0005197E /* iconfont-gouwuche.png */; };
+		B3F4F04C1F14E07F0005197E /* iconfont-gouwuche@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F04A1F14E07F0005197E /* iconfont-gouwuche@2x.png */; };
+		B3F4F04F1F14E0910005197E /* iconfont-home.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F04D1F14E0910005197E /* iconfont-home.png */; };
+		B3F4F0501F14E0910005197E /* iconfont-home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F04E1F14E0910005197E /* iconfont-home@2x.png */; };
+		B3F4F0531F14E0970005197E /* iconfont-sousuo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F0511F14E0970005197E /* iconfont-sousuo.png */; };
+		B3F4F0541F14E0970005197E /* iconfont-sousuo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F0521F14E0970005197E /* iconfont-sousuo@2x.png */; };
+		B3F4F0571F14E09D0005197E /* iconfont-wode.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F0551F14E09D0005197E /* iconfont-wode.png */; };
+		B3F4F0581F14E09D0005197E /* iconfont-wode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F0561F14E09D0005197E /* iconfont-wode@2x.png */; };
+		B3F4F05B1F14E0A10005197E /* Wisdom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F0591F14E0A10005197E /* Wisdom@2x.png */; };
+		B3F4F05C1F14E0A10005197E /* Wisdom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F05A1F14E0A10005197E /* Wisdom@3x.png */; };
+		B3F4F0601F14E0F40005197E /* BaseTabBarCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F05F1F14E0F40005197E /* BaseTabBarCtrl.m */; };
+		B3F4F0631F14E1FF0005197E /* AppDelegate+ApptabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0621F14E1FF0005197E /* AppDelegate+ApptabBar.m */; };
+		B3F4F0761F14E3610005197E /* STHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0651F14E3610005197E /* STHomeViewController.m */; };
+		B3F4F0781F14E3610005197E /* STSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0681F14E3610005197E /* STSearchViewController.m */; };
+		B3F4F07A1F14E3610005197E /* STScanSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F06B1F14E3610005197E /* STScanSearchViewController.m */; };
+		B3F4F07C1F14E3610005197E /* STShopCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F06E1F14E3610005197E /* STShopCartViewController.m */; };
+		B3F4F07E1F14E3610005197E /* STMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0711F14E3610005197E /* STMyViewController.m */; };
+		B3F4F0841F14E41E0005197E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0831F14E41E0005197E /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +62,6 @@
 		B3F4EFFF1F14A8600005197E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3F4F0011F14A8600005197E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B3F4F0021F14A8600005197E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B3F4F0041F14A8600005197E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B3F4F0051F14A8600005197E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B3F4F0081F14A8600005197E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3F4F00A1F14A8600005197E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3F4F00D1F14A8600005197E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +72,41 @@
 		B3F4F01F1F14A8600005197E /* UIKitExpandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitExpandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F4F0231F14A8600005197E /* UIKitExpandUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitExpandUITests.m; sourceTree = "<group>"; };
 		B3F4F0251F14A8600005197E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F4F0321F14AA5A0005197E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		B3F4F0331F14AA5A0005197E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		B3F4F03C1F14B1110005197E /* UIView+BlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlurredImage.h"; sourceTree = "<group>"; };
+		B3F4F03D1F14B1110005197E /* UIView+BlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlurredImage.m"; sourceTree = "<group>"; };
+		B3F4F03F1F14B93A0005197E /* NSString+paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+paths.h"; sourceTree = "<group>"; };
+		B3F4F0401F14B93A0005197E /* NSString+paths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+paths.m"; sourceTree = "<group>"; };
+		B3F4F0431F14E06F0005197E /* 组-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "组-5.png"; sourceTree = "<group>"; };
+		B3F4F0441F14E06F0005197E /* 组-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "组-5@2x.png"; sourceTree = "<group>"; };
+		B3F4F0451F14E06F0005197E /* 组-5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "组-5@3x.png"; sourceTree = "<group>"; };
+		B3F4F0491F14E07F0005197E /* iconfont-gouwuche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-gouwuche.png"; sourceTree = "<group>"; };
+		B3F4F04A1F14E07F0005197E /* iconfont-gouwuche@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-gouwuche@2x.png"; sourceTree = "<group>"; };
+		B3F4F04D1F14E0910005197E /* iconfont-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-home.png"; sourceTree = "<group>"; };
+		B3F4F04E1F14E0910005197E /* iconfont-home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-home@2x.png"; sourceTree = "<group>"; };
+		B3F4F0511F14E0970005197E /* iconfont-sousuo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-sousuo.png"; sourceTree = "<group>"; };
+		B3F4F0521F14E0970005197E /* iconfont-sousuo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-sousuo@2x.png"; sourceTree = "<group>"; };
+		B3F4F0551F14E09D0005197E /* iconfont-wode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-wode.png"; sourceTree = "<group>"; };
+		B3F4F0561F14E09D0005197E /* iconfont-wode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-wode@2x.png"; sourceTree = "<group>"; };
+		B3F4F0591F14E0A10005197E /* Wisdom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wisdom@2x.png"; sourceTree = "<group>"; };
+		B3F4F05A1F14E0A10005197E /* Wisdom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wisdom@3x.png"; sourceTree = "<group>"; };
+		B3F4F05E1F14E0F40005197E /* BaseTabBarCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarCtrl.h; sourceTree = "<group>"; };
+		B3F4F05F1F14E0F40005197E /* BaseTabBarCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarCtrl.m; sourceTree = "<group>"; };
+		B3F4F0611F14E1FF0005197E /* AppDelegate+ApptabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ApptabBar.h"; sourceTree = "<group>"; };
+		B3F4F0621F14E1FF0005197E /* AppDelegate+ApptabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ApptabBar.m"; sourceTree = "<group>"; };
+		B3F4F0641F14E3610005197E /* STHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHomeViewController.h; sourceTree = "<group>"; };
+		B3F4F0651F14E3610005197E /* STHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHomeViewController.m; sourceTree = "<group>"; };
+		B3F4F0671F14E3610005197E /* STSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSearchViewController.h; sourceTree = "<group>"; };
+		B3F4F0681F14E3610005197E /* STSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSearchViewController.m; sourceTree = "<group>"; };
+		B3F4F06A1F14E3610005197E /* STScanSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScanSearchViewController.h; sourceTree = "<group>"; };
+		B3F4F06B1F14E3610005197E /* STScanSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScanSearchViewController.m; sourceTree = "<group>"; };
+		B3F4F06D1F14E3610005197E /* STShopCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STShopCartViewController.h; sourceTree = "<group>"; };
+		B3F4F06E1F14E3610005197E /* STShopCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STShopCartViewController.m; sourceTree = "<group>"; };
+		B3F4F0701F14E3610005197E /* STMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMyViewController.h; sourceTree = "<group>"; };
+		B3F4F0711F14E3610005197E /* STMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMyViewController.m; sourceTree = "<group>"; };
+		B3F4F0821F14E41E0005197E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		B3F4F0831F14E41E0005197E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +159,13 @@
 			children = (
 				B3F4F0011F14A8600005197E /* AppDelegate.h */,
 				B3F4F0021F14A8600005197E /* AppDelegate.m */,
-				B3F4F0041F14A8600005197E /* ViewController.h */,
-				B3F4F0051F14A8600005197E /* ViewController.m */,
+				B3F4F0611F14E1FF0005197E /* AppDelegate+ApptabBar.h */,
+				B3F4F0621F14E1FF0005197E /* AppDelegate+ApptabBar.m */,
+				B3F4F0821F14E41E0005197E /* BaseViewController.h */,
+				B3F4F0831F14E41E0005197E /* BaseViewController.m */,
+				B3F4F05D1F14E0D40005197E /* BaseTabBarCtrl */,
+				B3F4F0421F14E05D0005197E /* TabBarImgs */,
+				B3F4F0311F14AA440005197E /* ImageEffects */,
 				B3F4F0071F14A8600005197E /* Main.storyboard */,
 				B3F4F00A1F14A8600005197E /* Assets.xcassets */,
 				B3F4F00C1F14A8600005197E /* LaunchScreen.storyboard */,
@@ -138,6 +199,58 @@
 				B3F4F0251F14A8600005197E /* Info.plist */,
 			);
 			path = UIKitExpandUITests;
+			sourceTree = "<group>";
+		};
+		B3F4F0311F14AA440005197E /* ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				B3F4F0321F14AA5A0005197E /* UIImage+ImageEffects.h */,
+				B3F4F0331F14AA5A0005197E /* UIImage+ImageEffects.m */,
+				B3F4F03C1F14B1110005197E /* UIView+BlurredImage.h */,
+				B3F4F03D1F14B1110005197E /* UIView+BlurredImage.m */,
+				B3F4F03F1F14B93A0005197E /* NSString+paths.h */,
+				B3F4F0401F14B93A0005197E /* NSString+paths.m */,
+			);
+			path = ImageEffects;
+			sourceTree = "<group>";
+		};
+		B3F4F0421F14E05D0005197E /* TabBarImgs */ = {
+			isa = PBXGroup;
+			children = (
+				B3F4F0431F14E06F0005197E /* 组-5.png */,
+				B3F4F0441F14E06F0005197E /* 组-5@2x.png */,
+				B3F4F0451F14E06F0005197E /* 组-5@3x.png */,
+				B3F4F0491F14E07F0005197E /* iconfont-gouwuche.png */,
+				B3F4F04A1F14E07F0005197E /* iconfont-gouwuche@2x.png */,
+				B3F4F04D1F14E0910005197E /* iconfont-home.png */,
+				B3F4F04E1F14E0910005197E /* iconfont-home@2x.png */,
+				B3F4F0511F14E0970005197E /* iconfont-sousuo.png */,
+				B3F4F0521F14E0970005197E /* iconfont-sousuo@2x.png */,
+				B3F4F0551F14E09D0005197E /* iconfont-wode.png */,
+				B3F4F0561F14E09D0005197E /* iconfont-wode@2x.png */,
+				B3F4F0591F14E0A10005197E /* Wisdom@2x.png */,
+				B3F4F05A1F14E0A10005197E /* Wisdom@3x.png */,
+			);
+			path = TabBarImgs;
+			sourceTree = "<group>";
+		};
+		B3F4F05D1F14E0D40005197E /* BaseTabBarCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				B3F4F05E1F14E0F40005197E /* BaseTabBarCtrl.h */,
+				B3F4F05F1F14E0F40005197E /* BaseTabBarCtrl.m */,
+				B3F4F0641F14E3610005197E /* STHomeViewController.h */,
+				B3F4F0651F14E3610005197E /* STHomeViewController.m */,
+				B3F4F0671F14E3610005197E /* STSearchViewController.h */,
+				B3F4F0681F14E3610005197E /* STSearchViewController.m */,
+				B3F4F06A1F14E3610005197E /* STScanSearchViewController.h */,
+				B3F4F06B1F14E3610005197E /* STScanSearchViewController.m */,
+				B3F4F06D1F14E3610005197E /* STShopCartViewController.h */,
+				B3F4F06E1F14E3610005197E /* STShopCartViewController.m */,
+				B3F4F0701F14E3610005197E /* STMyViewController.h */,
+				B3F4F0711F14E3610005197E /* STMyViewController.m */,
+			);
+			path = BaseTabBarCtrl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +362,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F4F04F1F14E0910005197E /* iconfont-home.png in Resources */,
+				B3F4F0471F14E06F0005197E /* 组-5@2x.png in Resources */,
+				B3F4F0541F14E0970005197E /* iconfont-sousuo@2x.png in Resources */,
+				B3F4F0571F14E09D0005197E /* iconfont-wode.png in Resources */,
+				B3F4F04C1F14E07F0005197E /* iconfont-gouwuche@2x.png in Resources */,
+				B3F4F0461F14E06F0005197E /* 组-5.png in Resources */,
+				B3F4F05B1F14E0A10005197E /* Wisdom@2x.png in Resources */,
+				B3F4F0481F14E06F0005197E /* 组-5@3x.png in Resources */,
+				B3F4F0531F14E0970005197E /* iconfont-sousuo.png in Resources */,
+				B3F4F0501F14E0910005197E /* iconfont-home@2x.png in Resources */,
+				B3F4F0581F14E09D0005197E /* iconfont-wode@2x.png in Resources */,
+				B3F4F04B1F14E07F0005197E /* iconfont-gouwuche.png in Resources */,
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
 				B3F4F00B1F14A8600005197E /* Assets.xcassets in Resources */,
+				B3F4F05C1F14E0A10005197E /* Wisdom@3x.png in Resources */,
 				B3F4F0091F14A8600005197E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,9 +402,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3F4F0061F14A8600005197E /* ViewController.m in Sources */,
+				B3F4F0761F14E3610005197E /* STHomeViewController.m in Sources */,
+				B3F4F0411F14B93A0005197E /* NSString+paths.m in Sources */,
+				B3F4F07A1F14E3610005197E /* STScanSearchViewController.m in Sources */,
+				B3F4F0341F14AA5A0005197E /* UIImage+ImageEffects.m in Sources */,
+				B3F4F0841F14E41E0005197E /* BaseViewController.m in Sources */,
+				B3F4F03E1F14B1110005197E /* UIView+BlurredImage.m in Sources */,
+				B3F4F07C1F14E3610005197E /* STShopCartViewController.m in Sources */,
+				B3F4F0631F14E1FF0005197E /* AppDelegate+ApptabBar.m in Sources */,
+				B3F4F07E1F14E3610005197E /* STMyViewController.m in Sources */,
+				B3F4F0781F14E3610005197E /* STSearchViewController.m in Sources */,
 				B3F4F0031F14A8600005197E /* AppDelegate.m in Sources */,
 				B3F4F0001F14A8600005197E /* main.m in Sources */,
+				B3F4F0601F14E0F40005197E /* BaseTabBarCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +654,7 @@
 				B3F4F02A1F14A8600005197E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3F4F02B1F14A8600005197E /* Build configuration list for PBXNativeTarget "UIKitExpandTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +663,7 @@
 				B3F4F02D1F14A8600005197E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3F4F02E1F14A8600005197E /* Build configuration list for PBXNativeTarget "UIKitExpandUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +672,7 @@
 				B3F4F0301F14A8600005197E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
