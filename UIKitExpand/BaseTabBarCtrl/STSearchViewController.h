@@ -6,8 +6,8 @@
 //  Copyright © 2017年 soso-mac. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface STSearchViewController : UIViewController
+@interface STSearchViewController : BaseViewController
 
 @end

@@ -20,4 +20,5 @@
 
 - (UIImage *)imagePixelFromColor:(UIColor *)color;
 + (UIImage *)imageFromColor:(UIColor *)color withSize:(CGSize)size;
+- (UIImage *)radiuslayer;
 @end

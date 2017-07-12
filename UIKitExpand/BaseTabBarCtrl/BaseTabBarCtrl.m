@@ -12,67 +12,94 @@
 #import "STScanSearchViewController.h"
 #import "STShopCartViewController.h"
 #import "STMyViewController.h"
-@interface BaseTabBarCtrl ()<UITabBarDelegate>
 
+@interface BaseTabBarCtrl ()<UITabBarDelegate>
+@property(nonatomic,strong)NSMutableArray*tabBarSource;
+@property(nonatomic,strong)UIButton *wisdom;
+@property(nonatomic,strong)UIImageView *tabBarBg;
 @end
 
+#define wisdom_width  60
+#define wisdom_height 60
+#define systemic_height 49
 @implementation BaseTabBarCtrl
+
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        NSLog(@"开启启动了哦");
+        [self wisdom];
+        [self tabBarBg];
+        [self addSubController];
+    }
+    return self;
+}
+
+-(NSMutableArray*)tabBarSource{
+    if (!_tabBarSource) {
+        _tabBarSource = [NSMutableArray new];
+    }
+    return _tabBarSource;
+}
+
+-(UIButton*)wisdom{
+    if (!_wisdom) {
+        _wisdom = [[UIButton alloc]initWithFrame:CGRectMake((self.view.frame.size.width-wisdom_width)/2, systemic_height-wisdom_height, wisdom_width, wisdom_height)];
+        _wisdom.userInteractionEnabled = NO;
+        _wisdom.backgroundColor = [UIColor clearColor];
+        _wisdom.titleLabel.font = [UIFont systemFontOfSize:10];
+        _wisdom.imageEdgeInsets = UIEdgeInsetsMake(-20, 0, 0, 0);
+        [_wisdom setImage:[UIImage imageNamed:@"Wisdom"]forState:UIControlStateNormal];
+        _wisdom.contentMode =  UIViewContentModeCenter;
+        [self.tabBar addSubview:_wisdom];
+    }
+    return _wisdom;
+}
+
+-(UIImageView*)tabBarBg{
+    if (!_tabBarBg) {
+        _tabBarBg = [[UIImageView alloc]initWithFrame:CGRectMake(0, -20, self.view.frame.size.width, 22)];
+        _tabBarBg.image = [UIImage imageNamed:@"组-5"];
+       _tabBarBg.contentMode = UIViewContentModeCenter;
+        [self.tabBar addSubview:_tabBarBg];
+    }
+    return _tabBarBg;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
-    [self addSubController];
 }
 
 -(void)addSubController{
 
-    UIButton *wisdomBtn = [[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 30, 49-60, 60, 60)];
-    wisdomBtn.userInteractionEnabled = NO;
-    wisdomBtn.backgroundColor = [UIColor clearColor];
-    wisdomBtn.titleLabel.font = [UIFont systemFontOfSize:10];
-    wisdomBtn.imageEdgeInsets = UIEdgeInsetsMake(-20, 0, 0, 0);
-    [wisdomBtn setImage:[UIImage imageNamed:@"Wisdom"] forState:UIControlStateNormal];
-    [self.tabBar addSubview:wisdomBtn];
-    
-    
     STHomeViewController *homePage = [[STHomeViewController alloc]init];
-    homePage.title = @"首页";
-    homePage.tabBarItem.tag = 100;
-    homePage.tabBarItem.image = [UIImage imageNamed:@"iconfont-home"];
-    UINavigationController *navi1 = [[UINavigationController alloc]initWithRootViewController:homePage];
-    
+    [self tabBarControllers:homePage title:@"首页" imageUrl:@"icon-home"];
+
     STSearchViewController *search = [[STSearchViewController alloc]init];
-    search.title = @"探索";
-    search.tabBarItem.tag = 101;
-    search.tabBarItem.image = [UIImage imageNamed:@"iconfont-sousuo"];
-    UINavigationController *navi2 = [[UINavigationController alloc]initWithRootViewController:search];
-    
+    [self tabBarControllers:search title:@"探索" imageUrl:@"icon-search"];
+
     STScanSearchViewController *scan = [[STScanSearchViewController alloc]init];
-    scan.tabBarItem.tag = 102;
-    scan.title = @"智慧采购";
-    UINavigationController *navi3 = [[UINavigationController alloc]initWithRootViewController:scan];
+    [self tabBarControllers:scan title:@"智慧采购" imageUrl:nil];
     
-    STShopCartViewController *shopCart = [[STShopCartViewController alloc]init];
-    shopCart.title = @"购物车";
-    shopCart.tabBarItem.tag = 103;
-    shopCart.tabBarItem.image = [UIImage imageNamed:@"iconfont-gouwuche"];
-    UINavigationController *navi4 = [[UINavigationController alloc]initWithRootViewController:shopCart];
+     STShopCartViewController *shopCart = [[STShopCartViewController alloc]init];
+      [self tabBarControllers:shopCart title:@"购物车" imageUrl:@"icon-cart"];
     
     STMyViewController *personal = [[STMyViewController alloc]init];
-    personal.title = @"我的";
-    personal.tabBarItem.tag = 104;
-    personal.tabBarItem.image = [UIImage imageNamed:@"iconfont-wode"];
-    UINavigationController *navi5 = [[UINavigationController alloc]initWithRootViewController:personal];
-    
-    self.viewControllers = @[navi1,navi2,navi3,navi4,navi5];
-    
-    UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(0, -20, self.view.frame.size.width, 22)];
-    imageV.image = [UIImage imageNamed:@"组-5"];
-    imageV.contentMode = UIViewContentModeCenter;
-    [self.tabBar addSubview:imageV];
+    [self tabBarControllers:personal title:@"我的" imageUrl:@"icon-account"];
 
+    self.viewControllers = [self.tabBarSource copy];
 }
+
+
+-(void)tabBarControllers:(UIViewController*)controller title:(NSString*)title imageUrl:(NSString*)imageUrl{
+    controller.title = title;
+    controller.tabBarItem.image = [UIImage imageNamed:imageUrl];
+    UINavigationController *tabBar = [[UINavigationController alloc]initWithRootViewController:controller];
+    //tabBar.navigationBarHidden = YES;
+    [self.tabBarSource addObject:tabBar];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -81,8 +108,7 @@
 
 #pragma mark - UITabBarDelegate
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
-
-    NSLog(@"%ld",item.tag);
+     NSLog(@"%@",item.title);
 }
 
 - (void)tabBar:(UITabBar *)tabBar willBeginCustomizingItems:(NSArray<UITabBarItem *> *)items {

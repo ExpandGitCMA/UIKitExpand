@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+ApptabBar.h"
-#import "BaseTabBarCtrl.h"
+#import "AppEnteryConterl.h"
+#import "ExpandFileHeader.h"
 @interface AppDelegate ()
 
 @end
@@ -17,11 +18,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self appDidLaunching];
+
     
-    //自己定义TabBar控制器
-    BaseTabBarCtrl *tabBar = [[BaseTabBarCtrl alloc]init];
-    self.window.rootViewController = tabBar;
+    [self appDidLaunching];
+    [AppEnteryConterl  appDidLaunchController];
+
     return YES;
 }
 
@@ -50,5 +51,12 @@
 
 }
 
-
+#pragma mark 是否支持横屏
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    if (ISIPADIDIOM) {
+        return UIInterfaceOrientationMaskLandscape;
+    }
+    return UIInterfaceOrientationMaskPortrait;
+}
 @end

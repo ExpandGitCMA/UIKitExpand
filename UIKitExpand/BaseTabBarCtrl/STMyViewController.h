@@ -6,8 +6,9 @@
 //  Copyright © 2017年 soso-mac. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
-@interface STMyViewController : UIViewController
+#import "BaseViewController.h"
+
+@interface STMyViewController : BaseViewController
 
 @end
