@@ -241,4 +241,22 @@
     return newImage;
 }
 
+
+- (UIImage *)localizeFitImage
+{
+    UIImage *existingImage = self;
+    CGSize existingSize = [existingImage size];
+    UIGraphicsBeginImageContextWithOptions(existingSize, NO, existingImage.scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context,existingSize.width, 0);
+    CGContextScaleCTM(context, -1, 1);
+    
+    [existingImage drawInRect:CGRectMake(0, 0, existingSize.width, existingSize.height)];
+    
+    UIImage *flippedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return flippedImage;
+}
+
 @end

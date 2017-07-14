@@ -94,9 +94,9 @@
 
 -(void)tabBarControllers:(UIViewController*)controller title:(NSString*)title imageUrl:(NSString*)imageUrl{
     controller.title = title;
+    
     controller.tabBarItem.image = [UIImage imageNamed:imageUrl];
     UINavigationController *tabBar = [[UINavigationController alloc]initWithRootViewController:controller];
-    //tabBar.navigationBarHidden = YES;
     [self.tabBarSource addObject:tabBar];
 }
 

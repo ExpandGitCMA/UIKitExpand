@@ -21,7 +21,7 @@
 
     
     [self appDidLaunching];
-    [AppEnteryConterl  appDidLaunchController];
+    [AppEnteryConterl  switchBaseTabBarController];
 
     return YES;
 }

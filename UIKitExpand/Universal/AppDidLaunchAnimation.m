@@ -18,7 +18,7 @@
 @property (nonatomic,strong)UILabel *loading;
 @end
 
-static NSString *const life      = @"给生活一点惊喜哦 !";
+static NSString *const life      = @"给生活一点惊喜吧!";
 static int const showtime  = 6;
 
 @implementation AppDidLaunchAnimation

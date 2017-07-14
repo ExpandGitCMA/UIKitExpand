@@ -18,6 +18,13 @@
     [[self class] showToHomeViewController:controller];
 }
 
++(void)switchBaseTabBarController{
+    AppDelegate *appDelegate =  (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    appDelegate.window.rootViewController = nil;
+    BaseTabBarCtrl *tabBar = [[BaseTabBarCtrl alloc]init];
+    [[self class] showToHomeViewController:tabBar];
+}
+
 +(void)appDidLaunchController{
     AppDelegate *appDelegate =  (AppDelegate*)[[UIApplication sharedApplication] delegate];
     appDelegate.window.rootViewController = nil;
