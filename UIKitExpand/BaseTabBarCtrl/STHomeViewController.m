@@ -9,6 +9,7 @@
 #import "STHomeViewController.h"
 #import "DFCTextFieldSearch.h"
 #import "ExpandSearch.h"
+#import "ExpandBar.h"
 @interface STHomeViewController ()
 @property (nonatomic,strong) ExpandSearch *search;//搜索框
 @property (nonatomic,strong) UIView *titleView;
@@ -25,20 +26,15 @@
     self = [super init];
     if (self) {
           [self search];
-          [self whisk];
+  
     }
     return self;
 }
 
 -(void)whisk{
-    self.navigationItem.leftBarButtonItem =[[UIBarButtonItem alloc]initWithImage:[UIImage
-                  imageNamed:@"category_camera_7_gray"] style: UIBarButtonItemStylePlain
-                target:self action:@selector(whiskClick)];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage
-                    imageNamed:@"msg_home"] style: UIBarButtonItemStylePlain
-                    target:self action:@selector(msgClick)];
-    
+    [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavLeftStyle barTarget:self action:@selector(whiskClick) title:@"category_camera_7_gray"];
+    [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(msgClick) title:@"msg_home"];
 }
 
 
@@ -54,7 +50,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self whisk];
 }
 
 

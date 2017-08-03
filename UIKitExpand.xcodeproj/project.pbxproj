@@ -45,6 +45,7 @@
 		B3F4F07A1F14E3610005197E /* STScanSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F06B1F14E3610005197E /* STScanSearchViewController.m */; };
 		B3F4F07C1F14E3610005197E /* STShopCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F06E1F14E3610005197E /* STShopCartViewController.m */; };
 		B3F4F07E1F14E3610005197E /* STMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0711F14E3610005197E /* STMyViewController.m */; };
+		D88B35B41F331063007DF7BC /* ExpandBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D88B35B31F331063007DF7BC /* ExpandBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,8 @@
 		B3F4F06E1F14E3610005197E /* STShopCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STShopCartViewController.m; sourceTree = "<group>"; };
 		B3F4F0701F14E3610005197E /* STMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMyViewController.h; sourceTree = "<group>"; };
 		B3F4F0711F14E3610005197E /* STMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMyViewController.m; sourceTree = "<group>"; };
+		D88B35B21F331063007DF7BC /* ExpandBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandBar.h; sourceTree = "<group>"; };
+		D88B35B31F331063007DF7BC /* ExpandBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +195,8 @@
 				B34688B81F160E2800498E66 /* ImageEffects */,
 				B30DE8CD1F1892F300F50302 /* UIControl+ExControlayerStyle.h */,
 				B30DE8CE1F1892F300F50302 /* UIControl+ExControlayerStyle.m */,
+				D88B35B21F331063007DF7BC /* ExpandBar.h */,
+				D88B35B31F331063007DF7BC /* ExpandBar.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -497,6 +502,7 @@
 				B3F4F0761F14E3610005197E /* STHomeViewController.m in Sources */,
 				B3F4F07A1F14E3610005197E /* STScanSearchViewController.m in Sources */,
 				B34688C01F160E2800498E66 /* UIImage+ImageEffects.m in Sources */,
+				D88B35B41F331063007DF7BC /* ExpandBar.m in Sources */,
 				B3B36D311F174FF9006E46B6 /* RSA.m in Sources */,
 				B3B36D2B1F174DB9006E46B6 /* AES.m in Sources */,
 				B34688AD1F15FB8800498E66 /* AppEnteryConterl.m in Sources */,
