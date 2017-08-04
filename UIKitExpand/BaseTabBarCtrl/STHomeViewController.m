@@ -10,12 +10,13 @@
 #import "DFCTextFieldSearch.h"
 #import "ExpandSearch.h"
 #import "ExpandBar.h"
-#import "ExpandUser.h"
-#import "ExUserDefaultManager.h"
+#import "HttpRequestManager.h"
+
 @interface STHomeViewController ()
 @property (nonatomic,strong) ExpandSearch *search;//搜索框
 @property (nonatomic,strong) UIView *titleView;
 @property (strong,nonatomic) UIButton *msgBtn; //导航栏的消息按钮
+@property (assign,nonatomic)NSInteger page;   // 页面
 @end
 
 #define Search_width 115
@@ -53,15 +54,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self whisk];
+    
+
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    [params SafetySetObject:@"0" forKey:@"type"];
+
+    [params SafetySetObject:[NSNumber numberWithInteger:_page] forKey:@"page"];
+    @weakify(self)
+    [[HttpRequestManager manager] requestPostWithPath:URL_AppIndexList  params:params completed:^(BOOL ret, id obj) {
+        @strongify(self)
+        if (ret) {
+            DEBUG_NSLog(@"obj===%@",obj);
+        } else {
+            
+            DEBUG_NSLog(@"obj==%@",obj);
+        }
+    }];
+
 }
 
 
 #pragma mark 点击搜索框点击事件
 - (void)searchClick{
    
-    
-    ExpandUser *user = [ExUserDefaultManager sharedDefaultManager].user;
-     NSLog(@"点击搜索框点击事件===%@",user);
+
 }
 
 -(void)whiskClick{

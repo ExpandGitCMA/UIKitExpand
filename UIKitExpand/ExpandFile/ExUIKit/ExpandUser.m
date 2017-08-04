@@ -26,6 +26,7 @@
     return [NSString stringWithFormat:@"<%@: %p> ------%@",[self class],self,dictionary];
 }
 
+
 + (instancetype)userWithDict:(NSDictionary *)dict{
     ExpandUser *user = [[ExpandUser alloc]init];
     user.name = @"name";
@@ -57,10 +58,8 @@
 }
 
 
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super init];
-    if (self) {
+- (instancetype)initWithCoder:(NSCoder *)coder{
+    if ( self = [super init]) {
         unsigned int count = 0;
         Ivar * ivars = class_copyIvarList([ExpandUser class], &count);
         for (int i = 0; i < count; i++) {

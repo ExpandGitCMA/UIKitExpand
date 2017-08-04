@@ -42,7 +42,7 @@ static ExUserDefaultManager *userManager = nil;
 //保存数据
 - (void)saveAccount:(ExpandUser *)user{
     _user = user;
-    [NSKeyedArchiver archiveRootObject:user toFile:[self cacheDir]];
+     [NSKeyedArchiver archiveRootObject:user toFile:[self cacheDir]];
 }
 
 //文件存储路径

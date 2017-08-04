@@ -8,6 +8,10 @@
 
 #ifndef ExpandFileHeader_h
 #define ExpandFileHeader_h
+#import "Safety.h"
+#import "EXTScope.h"
+#import "ExpandRequest_Url.h"
+
 //如果不是iPhone的视图，就采用iPad的显示方式，包括apple TV
 #define ISIPADIDIOM ([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPhone)
 
@@ -27,4 +31,11 @@
 //是否从右到左
 #define ISRIGHTTOLEFT  (iOS9 && [UIView instancesRespondToSelector:@selector(semanticContentAttribute)] && ([UIView appearance].semanticContentAttribute == UISemanticContentAttributeForceRightToLeft))
 
+
+#ifdef DEBUG
+#define DEBUG_NSLog(format, ...) printf("\n[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+#else
+#define DEBUG_NSLog(format, ...)
+
+#endif
 #endif /* ExpandFileHeader_h */
