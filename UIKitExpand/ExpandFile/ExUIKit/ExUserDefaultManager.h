@@ -12,4 +12,5 @@
 @property (nonatomic,readonly) ExpandUser *user;
 +(instancetype)sharedDefaultManager;
 - (void)saveAccount:(ExpandUser *)user;
+- (void)removeAccount;
 @end
