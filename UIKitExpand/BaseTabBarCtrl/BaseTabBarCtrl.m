@@ -29,7 +29,7 @@
     if (self) {
         NSLog(@"开启启动了哦");
         [self wisdom];
-        [self tabBarBg];
+//        [self tabBarBg];
         [self addSubController];
     }
     return self;

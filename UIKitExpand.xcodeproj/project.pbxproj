@@ -45,6 +45,8 @@
 		B3F4F07A1F14E3610005197E /* STScanSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F06B1F14E3610005197E /* STScanSearchViewController.m */; };
 		B3F4F07C1F14E3610005197E /* STShopCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F06E1F14E3610005197E /* STShopCartViewController.m */; };
 		B3F4F07E1F14E3610005197E /* STMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0711F14E3610005197E /* STMyViewController.m */; };
+		D8650B791F344C51007294F4 /* ExpandUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D8650B781F344C51007294F4 /* ExpandUser.m */; };
+		D8650B7C1F344FF3007294F4 /* ExUserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8650B7B1F344FF3007294F4 /* ExUserDefaultManager.m */; };
 		D88B35B41F331063007DF7BC /* ExpandBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D88B35B31F331063007DF7BC /* ExpandBar.m */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +138,10 @@
 		B3F4F06E1F14E3610005197E /* STShopCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STShopCartViewController.m; sourceTree = "<group>"; };
 		B3F4F0701F14E3610005197E /* STMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMyViewController.h; sourceTree = "<group>"; };
 		B3F4F0711F14E3610005197E /* STMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMyViewController.m; sourceTree = "<group>"; };
+		D8650B771F344C51007294F4 /* ExpandUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandUser.h; sourceTree = "<group>"; };
+		D8650B781F344C51007294F4 /* ExpandUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandUser.m; sourceTree = "<group>"; };
+		D8650B7A1F344FF3007294F4 /* ExUserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExUserDefaultManager.h; sourceTree = "<group>"; };
+		D8650B7B1F344FF3007294F4 /* ExUserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExUserDefaultManager.m; sourceTree = "<group>"; };
 		D88B35B21F331063007DF7BC /* ExpandBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandBar.h; sourceTree = "<group>"; };
 		D88B35B31F331063007DF7BC /* ExpandBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -261,6 +267,10 @@
 				B30DE8C81F188BD700F50302 /* ExplandStyle.m */,
 				B30DE8CA1F188EEB00F50302 /* ExpandSearch.h */,
 				B30DE8CB1F188EEB00F50302 /* ExpandSearch.m */,
+				D8650B771F344C51007294F4 /* ExpandUser.h */,
+				D8650B781F344C51007294F4 /* ExpandUser.m */,
+				D8650B7A1F344FF3007294F4 /* ExUserDefaultManager.h */,
+				D8650B7B1F344FF3007294F4 /* ExUserDefaultManager.m */,
 			);
 			path = ExUIKit;
 			sourceTree = "<group>";
@@ -500,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3F4F0761F14E3610005197E /* STHomeViewController.m in Sources */,
+				D8650B7C1F344FF3007294F4 /* ExUserDefaultManager.m in Sources */,
 				B3F4F07A1F14E3610005197E /* STScanSearchViewController.m in Sources */,
 				B34688C01F160E2800498E66 /* UIImage+ImageEffects.m in Sources */,
 				D88B35B41F331063007DF7BC /* ExpandBar.m in Sources */,
@@ -524,6 +535,7 @@
 				B30DE8CF1F1892F300F50302 /* UIControl+ExControlayerStyle.m in Sources */,
 				B3F4F0601F14E0F40005197E /* BaseTabBarCtrl.m in Sources */,
 				B34688BF1F160E2800498E66 /* NSString+paths.m in Sources */,
+				D8650B791F344C51007294F4 /* ExpandUser.m in Sources */,
 				B30DE8CC1F188EEB00F50302 /* ExpandSearch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -715,6 +727,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = JR453H2A98;
 				INFOPLIST_FILE = UIKitExpandTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = planExpand.com.UIKitExpandTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -728,6 +741,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = JR453H2A98;
 				INFOPLIST_FILE = UIKitExpandTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = planExpand.com.UIKitExpandTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -740,6 +754,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = JR453H2A98;
 				INFOPLIST_FILE = UIKitExpandUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = planExpand.com.UIKitExpandUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -752,6 +767,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = JR453H2A98;
 				INFOPLIST_FILE = UIKitExpandUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = planExpand.com.UIKitExpandUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

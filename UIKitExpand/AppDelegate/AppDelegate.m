@@ -10,6 +10,8 @@
 #import "AppDelegate+ApptabBar.h"
 #import "AppEnteryConterl.h"
 #import "ExpandFileHeader.h"
+#import "ExpandUser.h"
+#import "ExUserDefaultManager.h"
 @interface AppDelegate ()
 
 @end
@@ -19,10 +21,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    
     [self appDidLaunching];
     [AppEnteryConterl  switchBaseTabBarController];
 
+     ExpandUser*user = [ExpandUser userWithDict:nil];
+     [[ExUserDefaultManager sharedDefaultManager]saveAccount:user];
+    
+    
     return YES;
 }
 

@@ -10,6 +10,8 @@
 #import "DFCTextFieldSearch.h"
 #import "ExpandSearch.h"
 #import "ExpandBar.h"
+#import "ExpandUser.h"
+#import "ExUserDefaultManager.h"
 @interface STHomeViewController ()
 @property (nonatomic,strong) ExpandSearch *search;//搜索框
 @property (nonatomic,strong) UIView *titleView;
@@ -56,7 +58,10 @@
 
 #pragma mark 点击搜索框点击事件
 - (void)searchClick{
-    NSLog(@"点击搜索框点击事件");
+   
+    
+    ExpandUser *user = [ExUserDefaultManager sharedDefaultManager].user;
+     NSLog(@"点击搜索框点击事件===%@",user);
 }
 
 -(void)whiskClick{
@@ -65,7 +70,9 @@
 
 #pragma mark - 点击消息按钮
 - (void)msgClick {
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
