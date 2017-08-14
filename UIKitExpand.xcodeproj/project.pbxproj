@@ -73,6 +73,10 @@
 		D8DE214E1F414AF1006663FF /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DE21341F414AF1006663FF /* UIView+WebCacheOperation.m */; };
 		D8DE214F1F414AF1006663FF /* UIImageView+QSImageProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DE21371F414AF1006663FF /* UIImageView+QSImageProcess.m */; };
 		D8DE21501F414AF1006663FF /* UIColor+QSImageProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DE21391F414AF1006663FF /* UIColor+QSImageProcess.m */; };
+		D8DE215D1F41852C006663FF /* UIImage+SGHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DE21541F41852C006663FF /* UIImage+SGHelper.m */; };
+		D8DE215E1F41852C006663FF /* SGQRCodeConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DE21571F41852C006663FF /* SGQRCodeConst.m */; };
+		D8DE215F1F41852C006663FF /* SGQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D8DE21581F41852C006663FF /* SGQRCode.bundle */; };
+		D8DE21601F41852C006663FF /* SGQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DE215C1F41852C006663FF /* SGQRCodeTool.m */; };
 		F55D2E6A66DF966165AA0C8D /* Pods_UIKitExpand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1C1773E5F46C0EC7238C6F /* Pods_UIKitExpand.framework */; };
 /* End PBXBuildFile section */
 
@@ -226,6 +230,14 @@
 		D8DE21371F414AF1006663FF /* UIImageView+QSImageProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+QSImageProcess.m"; sourceTree = "<group>"; };
 		D8DE21381F414AF1006663FF /* UIColor+QSImageProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+QSImageProcess.h"; sourceTree = "<group>"; };
 		D8DE21391F414AF1006663FF /* UIColor+QSImageProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+QSImageProcess.m"; sourceTree = "<group>"; };
+		D8DE21531F41852C006663FF /* UIImage+SGHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SGHelper.h"; sourceTree = "<group>"; };
+		D8DE21541F41852C006663FF /* UIImage+SGHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SGHelper.m"; sourceTree = "<group>"; };
+		D8DE21561F41852C006663FF /* SGQRCodeConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeConst.h; sourceTree = "<group>"; };
+		D8DE21571F41852C006663FF /* SGQRCodeConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeConst.m; sourceTree = "<group>"; };
+		D8DE21581F41852C006663FF /* SGQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SGQRCode.bundle; sourceTree = "<group>"; };
+		D8DE21591F41852C006663FF /* SGQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCode.h; sourceTree = "<group>"; };
+		D8DE215B1F41852C006663FF /* SGQRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeTool.h; sourceTree = "<group>"; };
+		D8DE215C1F41852C006663FF /* SGQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeTool.m; sourceTree = "<group>"; };
 		DF1C1773E5F46C0EC7238C6F /* Pods_UIKitExpand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitExpand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -468,6 +480,7 @@
 		D8650B831F348130007294F4 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				D8DE21511F41852C006663FF /* SGQRCode */,
 				D8DE21071F414AF1006663FF /* QSImageProcess */,
 				D8650B871F348189007294F4 /* EXTScope */,
 			);
@@ -559,6 +572,45 @@
 				D8DE21371F414AF1006663FF /* UIImageView+QSImageProcess.m */,
 			);
 			path = SDWebImageExtension;
+			sourceTree = "<group>";
+		};
+		D8DE21511F41852C006663FF /* SGQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE21521F41852C006663FF /* Category */,
+				D8DE21551F41852C006663FF /* Helper */,
+				D8DE21581F41852C006663FF /* SGQRCode.bundle */,
+				D8DE21591F41852C006663FF /* SGQRCode.h */,
+				D8DE215A1F41852C006663FF /* Tools */,
+			);
+			path = SGQRCode;
+			sourceTree = "<group>";
+		};
+		D8DE21521F41852C006663FF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE21531F41852C006663FF /* UIImage+SGHelper.h */,
+				D8DE21541F41852C006663FF /* UIImage+SGHelper.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D8DE21551F41852C006663FF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE21561F41852C006663FF /* SGQRCodeConst.h */,
+				D8DE21571F41852C006663FF /* SGQRCodeConst.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D8DE215A1F41852C006663FF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE215B1F41852C006663FF /* SGQRCodeTool.h */,
+				D8DE215C1F41852C006663FF /* SGQRCodeTool.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		FBECBD4E7C4A909322F7F211 /* Pods */ = {
@@ -685,6 +737,7 @@
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
 				B34688A61F15DE9200498E66 /* loading_duobao.gif in Resources */,
 				B3F4F00B1F14A8600005197E /* Assets.xcassets in Resources */,
+				D8DE215F1F41852C006663FF /* SGQRCode.bundle in Resources */,
 				B30DE8D71F189B0900F50302 /* navigation_menu@2x.png in Resources */,
 				B30DE8D51F18984900F50302 /* msg_home@2x.png in Resources */,
 				B34688AA1F15F2FE00498E66 /* LaunchImage-700@2x.png in Resources */,
@@ -783,11 +836,13 @@
 				D8DE21431F414AF1006663FF /* SDWebImageDecoder.m in Sources */,
 				B3B36D2E1F174DF9006E46B6 /* RandomKey.m in Sources */,
 				D8DE21501F414AF1006663FF /* UIColor+QSImageProcess.m in Sources */,
+				D8DE215E1F41852C006663FF /* SGQRCodeConst.m in Sources */,
 				B34688B41F15FC8700498E66 /* AppDidLaunchAnimation.m in Sources */,
 				B3B36D281F1748E3006E46B6 /* MD5.m in Sources */,
 				D8DE214B1F414AF1006663FF /* UIImageView+HighlightedWebCache.m in Sources */,
 				B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */,
 				B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */,
+				D8DE215D1F41852C006663FF /* UIImage+SGHelper.m in Sources */,
 				D8DE21451F414AF1006663FF /* SDWebImageDownloaderOperation.m in Sources */,
 				B3B36D371F175131006E46B6 /* RSACryptor.m in Sources */,
 				D8DE21411F414AF1006663FF /* SDImageCacheConfig.m in Sources */,
@@ -818,6 +873,7 @@
 				D8DE214C1F414AF1006663FF /* UIImageView+WebCache.m in Sources */,
 				D8650B791F344C51007294F4 /* ExpandUser.m in Sources */,
 				B30DE8CC1F188EEB00F50302 /* ExpandSearch.m in Sources */,
+				D8DE21601F41852C006663FF /* SGQRCodeTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
