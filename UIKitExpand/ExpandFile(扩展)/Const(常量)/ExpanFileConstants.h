@@ -7,15 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+//定义常量不会影响项目编译速度,宏定义太多项目编译会变慢
 
-extern NSString *const USER_AGE_KEY         ;
-extern NSString *const USER_TELPHONE_KEY    ;
-extern NSString *const USER_ADDRESS_KEY     ;
-extern NSString *const USER_BRIEF_KEY       ;
-
-extern NSString *const kDFCTabBarItemAttributeTitle;// NSString
+//UIKIT_EXTERN  NSString *const AGEKEY   ;
+extern NSString *const AGEKEY    ;
 
 
-@interface ExpanFileConstants : NSObject
-
-@end

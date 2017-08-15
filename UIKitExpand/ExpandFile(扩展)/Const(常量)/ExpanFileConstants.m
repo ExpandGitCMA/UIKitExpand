@@ -8,14 +8,5 @@
 
 #import "ExpanFileConstants.h"
 
-NSString *const BKUSER_AGE_KEY         =     @"XXXXX.userAge";
-NSString *const BKUSER_TELPHONE_KEY    =     @"XXXXX.telphoneNO";
-NSString *const BKUSER_ADDRESS_KEY     =     @"XXXXX.address";
-NSString *const BKUSER_BRIEF_KEY       =     @"XXXXX.brief";
+NSString *const AGEKEY         =     @"UIKitExpand";
 
-NSString *const kDFCTabBarItemAttributeTitle = @"DFCTabBarItemAttributeTitle";// NSString
-
-
-@implementation ExpanFileConstants
-
-@end

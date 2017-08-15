@@ -11,7 +11,7 @@
 #import "ExpandSearch.h"
 #import "ExpandBar.h"
 #import "HttpRequestManager.h"
-
+#import "ExpanFileConstants.h"
 @interface STHomeViewController ()
 @property (nonatomic,strong) ExpandSearch *search;//搜索框
 @property (nonatomic,strong) UIView *titleView;
@@ -54,8 +54,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self whisk];
-    
 
+    
+    //DEBUG_NSLog(@"%@",USER_AGE_KEY);
+
+    NSLog(@"%@",AGEKEY);
+    
+    
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params SafetySetObject:@"0" forKey:@"type"];
 
@@ -76,7 +81,8 @@
 
 #pragma mark 点击搜索框点击事件
 - (void)searchClick{
-   
+    
+
 
 }
 
