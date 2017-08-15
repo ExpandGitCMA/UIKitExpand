@@ -12,6 +12,7 @@
 #import "ExpandBar.h"
 #import "HttpRequestManager.h"
 #import "ExpanFileConstants.h"
+#import "ExNSUserDefault.h"
 @interface STHomeViewController ()
 @property (nonatomic,strong) ExpandSearch *search;//搜索框
 @property (nonatomic,strong) UIView *titleView;
@@ -56,9 +57,10 @@
     [self whisk];
 
     
-    //DEBUG_NSLog(@"%@",USER_AGE_KEY);
+  
+    
 
-    NSLog(@"%@",AGEKEY);
+     NSLog(@"%@",AGEKEY);
     
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
@@ -69,13 +71,18 @@
     [[HttpRequestManager manager] requestPostWithPath:URL_AppIndexList  params:params completed:^(BOOL ret, id obj) {
         @strongify(self)
         if (ret) {
-            DEBUG_NSLog(@"obj===%@",obj);
+            //DEBUG_NSLog(@"obj===%@",obj);
         } else {
             
-            DEBUG_NSLog(@"obj==%@",obj);
+            //DEBUG_NSLog(@"obj==%@",obj);
         }
     }];
 
+    
+    [[ExNSUserDefault sharedDefaultManager]saveUserKeyNamed:params];
+    
+
+    
 }
 
 

@@ -75,11 +75,12 @@
 		D8C6CA6D1F42DC4500BE85ED /* ExpandSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6CA501F42DC4500BE85ED /* ExpandSearch.m */; };
 		D8C6CA6E1F42DC4500BE85ED /* ExpandUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6CA521F42DC4500BE85ED /* ExpandUser.m */; };
 		D8C6CA6F1F42DC4500BE85ED /* ExplandStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6CA541F42DC4500BE85ED /* ExplandStyle.m */; };
-		D8C6CA701F42DC4500BE85ED /* ExUserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6CA561F42DC4500BE85ED /* ExUserDefaultManager.m */; };
 		D8C6CA711F42DC4500BE85ED /* HttpRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6CA5D1F42DC4500BE85ED /* HttpRequestManager.m */; };
 		D8C6CA721F42DC4500BE85ED /* Safety.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6CA5F1F42DC4500BE85ED /* Safety.m */; };
 		D8C6CA781F42DF7C00BE85ED /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6CA771F42DF7C00BE85ED /* Reachability.m */; };
 		D8C6CA7C1F42E0AC00BE85ED /* ExpanFileConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6CA7B1F42E0AC00BE85ED /* ExpanFileConstants.m */; };
+		D8C6CA801F42ED8F00BE85ED /* ExUserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6CA7F1F42ED8F00BE85ED /* ExUserDefaultManager.m */; };
+		D8C6CA831F42EE4D00BE85ED /* ExNSUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6CA821F42EE4D00BE85ED /* ExNSUserDefault.m */; };
 		F55D2E6A66DF966165AA0C8D /* Pods_UIKitExpand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1C1773E5F46C0EC7238C6F /* Pods_UIKitExpand.framework */; };
 /* End PBXBuildFile section */
 
@@ -234,8 +235,6 @@
 		D8C6CA521F42DC4500BE85ED /* ExpandUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandUser.m; sourceTree = "<group>"; };
 		D8C6CA531F42DC4500BE85ED /* ExplandStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExplandStyle.h; sourceTree = "<group>"; };
 		D8C6CA541F42DC4500BE85ED /* ExplandStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExplandStyle.m; sourceTree = "<group>"; };
-		D8C6CA551F42DC4500BE85ED /* ExUserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExUserDefaultManager.h; sourceTree = "<group>"; };
-		D8C6CA561F42DC4500BE85ED /* ExUserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExUserDefaultManager.m; sourceTree = "<group>"; };
 		D8C6CA581F42DC4500BE85ED /* ExpandColorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandColorHeader.h; sourceTree = "<group>"; };
 		D8C6CA591F42DC4500BE85ED /* ExpandFileHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandFileHeader.h; sourceTree = "<group>"; };
 		D8C6CA5A1F42DC4500BE85ED /* ExpandRequest_Url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandRequest_Url.h; sourceTree = "<group>"; };
@@ -247,6 +246,10 @@
 		D8C6CA771F42DF7C00BE85ED /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		D8C6CA7A1F42E0AC00BE85ED /* ExpanFileConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpanFileConstants.h; sourceTree = "<group>"; };
 		D8C6CA7B1F42E0AC00BE85ED /* ExpanFileConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpanFileConstants.m; sourceTree = "<group>"; };
+		D8C6CA7E1F42ED8F00BE85ED /* ExUserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExUserDefaultManager.h; sourceTree = "<group>"; };
+		D8C6CA7F1F42ED8F00BE85ED /* ExUserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExUserDefaultManager.m; sourceTree = "<group>"; };
+		D8C6CA811F42EE4D00BE85ED /* ExNSUserDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExNSUserDefault.h; sourceTree = "<group>"; };
+		D8C6CA821F42EE4D00BE85ED /* ExNSUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExNSUserDefault.m; sourceTree = "<group>"; };
 		DF1C1773E5F46C0EC7238C6F /* Pods_UIKitExpand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitExpand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -328,6 +331,7 @@
 				D8C6C9C91F42D8E200BE85ED /* ExpandFile(扩展) */,
 				B30F386C1F15B5A7005B5CE6 /* AppDelegate */,
 				D8C6CA0F1F42D95C00BE85ED /* Base(基类) */,
+				D8C6CA7D1F42EB4800BE85ED /* SDKFile(集成) */,
 				D8C6CA221F42D9A400BE85ED /* Resource(资源) */,
 				B3F4EFFE1F14A8600005197E /* Supporting Files */,
 			);
@@ -600,6 +604,10 @@
 		D8C6CA3E1F42DC4500BE85ED /* DataBase(数据库) */ = {
 			isa = PBXGroup;
 			children = (
+				D8C6CA7E1F42ED8F00BE85ED /* ExUserDefaultManager.h */,
+				D8C6CA7F1F42ED8F00BE85ED /* ExUserDefaultManager.m */,
+				D8C6CA811F42EE4D00BE85ED /* ExNSUserDefault.h */,
+				D8C6CA821F42EE4D00BE85ED /* ExNSUserDefault.m */,
 			);
 			path = "DataBase(数据库)";
 			sourceTree = "<group>";
@@ -634,8 +642,6 @@
 				D8C6CA521F42DC4500BE85ED /* ExpandUser.m */,
 				D8C6CA531F42DC4500BE85ED /* ExplandStyle.h */,
 				D8C6CA541F42DC4500BE85ED /* ExplandStyle.m */,
-				D8C6CA551F42DC4500BE85ED /* ExUserDefaultManager.h */,
-				D8C6CA561F42DC4500BE85ED /* ExUserDefaultManager.m */,
 			);
 			path = "ExUIKit(自定义控件)";
 			sourceTree = "<group>";
@@ -706,6 +712,13 @@
 			children = (
 			);
 			path = "Logger(日志记录)";
+			sourceTree = "<group>";
+		};
+		D8C6CA7D1F42EB4800BE85ED /* SDKFile(集成) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SDKFile(集成)";
 			sourceTree = "<group>";
 		};
 		FBECBD4E7C4A909322F7F211 /* Pods */ = {
@@ -931,6 +944,7 @@
 				D8C6C9BE1F42D89500BE85ED /* UIImage+MultiFormat.m in Sources */,
 				D8C6C9AD1F42D89500BE85ED /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				D8C6CA6A1F42DC4500BE85ED /* RSA.m in Sources */,
+				D8C6CA831F42EE4D00BE85ED /* ExNSUserDefault.m in Sources */,
 				D8C6CA0E1F42D91100BE85ED /* BaseViewController.m in Sources */,
 				B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */,
 				D8C6CA661F42DC4500BE85ED /* AES.m in Sources */,
@@ -950,6 +964,7 @@
 				D8C6CA7C1F42E0AC00BE85ED /* ExpanFileConstants.m in Sources */,
 				D8C6C9B21F42D89500BE85ED /* NSData+ImageContentType.m in Sources */,
 				D8C6C9C01F42D89500BE85ED /* UIImageView+WebCache.m in Sources */,
+				D8C6CA801F42ED8F00BE85ED /* ExUserDefaultManager.m in Sources */,
 				D8C6C9B51F42D89500BE85ED /* SDImageCacheConfig.m in Sources */,
 				D8C6C9C81F42D89500BE85ED /* SGQRCodeTool.m in Sources */,
 				D8C6C9B01F42D89500BE85ED /* QSImageProcessConfig.m in Sources */,
@@ -969,7 +984,6 @@
 				D8C6C9B81F42D89500BE85ED /* SDWebImageDownloader.m in Sources */,
 				D8C6CA6B1F42DC4500BE85ED /* RSACryptor.m in Sources */,
 				D8C6CA211F42D95C00BE85ED /* STShopCartViewController.m in Sources */,
-				D8C6CA701F42DC4500BE85ED /* ExUserDefaultManager.m in Sources */,
 				D8C6CA1C1F42D95C00BE85ED /* BaseTabBarCtrl.m in Sources */,
 				D8C6CA681F42DC4500BE85ED /* MD5.m in Sources */,
 			);
