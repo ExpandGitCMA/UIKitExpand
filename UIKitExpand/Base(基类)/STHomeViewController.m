@@ -56,33 +56,20 @@
     [super viewDidLoad];
     [self whisk];
 
-    
-  
-    
+    NSLog(@"%@",AGEKEY);
+//    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+//    [params SafetySetObject:@1 forKey:@"call"];
+//    [params SafetySetObject:[NSNumber numberWithInteger:_page] forKey:@"page"];
+//    @weakify(self)
+//    [[HttpRequestManager manager] requestPostWithPath:URL_AppHocus    params:params completed:^(BOOL ret, id obj) {
+//        @strongify(self)
+//        if (ret) {
+//            DEBUG_NSLog(@"obj===%@",obj);
+//        } else {
+//            DEBUG_NSLog(@"obj==%@",obj);
+//        }
+//    }];
 
-     NSLog(@"%@",AGEKEY);
-    
-    
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    [params SafetySetObject:@"0" forKey:@"type"];
-
-    [params SafetySetObject:[NSNumber numberWithInteger:_page] forKey:@"page"];
-    @weakify(self)
-    [[HttpRequestManager manager] requestPostWithPath:URL_AppIndexList  params:params completed:^(BOOL ret, id obj) {
-        @strongify(self)
-        if (ret) {
-            //DEBUG_NSLog(@"obj===%@",obj);
-        } else {
-            
-            //DEBUG_NSLog(@"obj==%@",obj);
-        }
-    }];
-
-    
-    [[ExNSUserDefault sharedDefaultManager]saveUserKeyNamed:params];
-    
-
-    
 }
 
 

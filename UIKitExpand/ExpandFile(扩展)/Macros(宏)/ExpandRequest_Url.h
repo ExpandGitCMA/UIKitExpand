@@ -20,10 +20,8 @@
 
 #endif
 
-
+#define URL_AppHocus                    @"loveBeen/focus.json.php"    //首页
 #define URL_AppIndexList                @"App/Index/Order_List" //首页
 #define URL_AppIndexPage           @"App/Index/Order_Index_Page2" //默认
-#define URL_AppIndexDetail           @"App/Index/Order_Detail" //详情
-
 
 #endif /* ExpandRequest_Url_h */
