@@ -6,6 +6,7 @@
 //  Copyright © 2017年 陈美安. All rights reserved.
 //  
 
+//防止一个头文件被重复包含
 #ifndef ExpandRequest_Url_h
 #define ExpandRequest_Url_h
 
@@ -19,6 +20,7 @@
 #define BASE_API_URL @"http://new.iformoney.com/"
 
 #endif
+
 
 #define URL_AppHocus                    @"loveBeen/focus.json.php"    //首页
 #define URL_AppIndexList                @"App/Index/Order_List" //首页
