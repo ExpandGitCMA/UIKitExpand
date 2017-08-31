@@ -30,7 +30,7 @@
  */
 - (void)qs_setImageWithURL:(nullable NSURL *)url
           placeholderImage:(nullable UIImage *)placeholder
-                    config:(QSImageProcessConfig *)config;
+                    config:(QSImageProcessConfig *_Nullable)config;
 
 
 

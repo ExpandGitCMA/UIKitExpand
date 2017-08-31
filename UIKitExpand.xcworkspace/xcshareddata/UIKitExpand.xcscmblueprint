@@ -4,12 +4,12 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "F803BA490E2B2B28F4BC1D5A5CF7F36542FA6E6F" : 9223372036854775807,
+    "E33120FCFB712EE4DF5FB101701281366457CA5E" : 9223372036854775807,
     "9291EA81C22F5F3ED6933CC8C37ACDC2914E22C0" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "882B2C62-F0A1-4A4A-848A-EB7AB657B2D9",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "F803BA490E2B2B28F4BC1D5A5CF7F36542FA6E6F" : "planByGodWin_works\/",
+    "E33120FCFB712EE4DF5FB101701281366457CA5E" : "planByGodWin_works\/",
     "9291EA81C22F5F3ED6933CC8C37ACDC2914E22C0" : "UIKitExpand\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "UIKitExpand",
@@ -24,7 +24,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/coding.net\/u\/RickHe\/p\/WisdomClassroom",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F803BA490E2B2B28F4BC1D5A5CF7F36542FA6E6F"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E33120FCFB712EE4DF5FB101701281366457CA5E"
     }
   ]
 }

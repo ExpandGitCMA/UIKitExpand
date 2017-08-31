@@ -11,7 +11,6 @@
 
 @implementation UINavigationController (ExpandBar)
 
-
 -(void)captureNavigationType:(NavigationType)type
              NavigationStyle:(NavigationStyle)style
                    barTarget:(id)target action:(SEL)action
