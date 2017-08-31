@@ -78,18 +78,16 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
 
 - (void)setCommonValue:(NSMutableDictionary *)parameters{
     [parameters SafetySetObject:@"1.1.1" forKey:@"appVersion"];
-    [parameters SafetySetObject:@"11" forKey:@"version"];
+    [parameters SafetySetObject:@"13" forKey:@"version"];
 }
 
 //PSOT 请求
 - (void)requestPostWithPath:(NSString *)path params:(NSMutableDictionary *)params completed:(HttpCompletedBlock)completed{
-    [self setCommonValue:params];
     [self requestWithMetod:POST path:path params:params completed:completed];
 }
 
 //GET请求
 - (void)requestGetWithPath:(NSString *)path params:(NSMutableDictionary *)params completed:(HttpCompletedBlock)completed{
-    [self setCommonValue:params];
     [self requestWithMetod:GET path:path params:params completed:completed];
 }
 

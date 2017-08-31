@@ -57,6 +57,7 @@
     [self whisk];
 
     NSLog(@"%@",AGEKEY);
+<<<<<<< HEAD
     
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
@@ -75,6 +76,21 @@
     
     [[ExNSUserDefault sharedDefaultManager]saveUserKeyNamed:params];
     
+=======
+//    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+//    [params SafetySetObject:@1 forKey:@"call"];
+//    [params SafetySetObject:[NSNumber numberWithInteger:_page] forKey:@"page"];
+//    @weakify(self)
+//    [[HttpRequestManager manager] requestPostWithPath:URL_AppHocus    params:params completed:^(BOOL ret, id obj) {
+//        @strongify(self)
+//        if (ret) {
+//            DEBUG_NSLog(@"obj===%@",obj);
+//        } else {
+//            DEBUG_NSLog(@"obj==%@",obj);
+//        }
+//    }];
+
+>>>>>>> 48b4574e296d25b7b291231201f4d52a4fcc25a1
 }
 
 
