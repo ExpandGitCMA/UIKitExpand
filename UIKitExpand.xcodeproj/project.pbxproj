@@ -292,6 +292,13 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		B3586EBA1F57DD4B009090DE /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
 		B3B36D1A1F172106006E46B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,6 +523,7 @@
 		D8C6C9C91F42D8E200BE85ED /* ExpandFile(扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				B3586EBA1F57DD4B009090DE /* Thread */,
 				D8C6CA311F42DC4500BE85ED /* Category(分类) */,
 				D8C6CA3D1F42DC4500BE85ED /* Const(常量) */,
 				D8C6CA3E1F42DC4500BE85ED /* DataBase(数据库) */,
