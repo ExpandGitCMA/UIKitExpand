@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F38701F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m */; };
+		B34415511F6292450006A4BF /* CJWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B344154F1F6292450006A4BF /* CJWViewController.m */; };
+		B34415521F6292450006A4BF /* CJWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B34415501F6292450006A4BF /* CJWViewController.xib */; };
+		B34415681F6294C70006A4BF /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = B34415651F6294C70006A4BF /* search.png */; };
+		B34415691F6294C70006A4BF /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B34415661F6294C70006A4BF /* search@2x.png */; };
+		B344156A1F6294C70006A4BF /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B34415671F6294C70006A4BF /* search@3x.png */; };
 		B34688A81F15F24600498E66 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = B34688A71F15F24600498E66 /* iTunesArtwork */; };
 		B34688AD1F15FB8800498E66 /* AppEnteryConterl.m in Sources */ = {isa = PBXBuildFile; fileRef = B34688AC1F15FB8800498E66 /* AppEnteryConterl.m */; };
 		B3D208CD1F47E87D00F0CE6F /* appLaunchAn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D208C61F47E87D00F0CE6F /* appLaunchAn@2x.png */; };
@@ -108,6 +113,12 @@
 		B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B30F386F1F15B5C7005B5CE6 /* AppDelegate+ApptabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ApptabBar.h"; sourceTree = "<group>"; };
 		B30F38701F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ApptabBar.m"; sourceTree = "<group>"; };
+		B344154E1F6292450006A4BF /* CJWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWViewController.h; sourceTree = "<group>"; };
+		B344154F1F6292450006A4BF /* CJWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWViewController.m; sourceTree = "<group>"; };
+		B34415501F6292450006A4BF /* CJWViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CJWViewController.xib; sourceTree = "<group>"; };
+		B34415651F6294C70006A4BF /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		B34415661F6294C70006A4BF /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		B34415671F6294C70006A4BF /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@3x.png"; sourceTree = "<group>"; };
 		B34688A71F15F24600498E66 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		B34688AB1F15FB8800498E66 /* AppEnteryConterl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppEnteryConterl.h; sourceTree = "<group>"; };
 		B34688AC1F15FB8800498E66 /* AppEnteryConterl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppEnteryConterl.m; sourceTree = "<group>"; };
@@ -118,7 +129,7 @@
 		B3D208CA1F47E87D00F0CE6F /* msg_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "msg_home@2x.png"; path = "UIKitExpand/Resource(资源)/msg_home@2x.png"; sourceTree = SOURCE_ROOT; };
 		B3D208CB1F47E87D00F0CE6F /* navigation_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navigation_menu@2x.png"; path = "UIKitExpand/Resource(资源)/navigation_menu@2x.png"; sourceTree = SOURCE_ROOT; };
 		B3D208CC1F47E87D00F0CE6F /* planBar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = planBar.jpg; path = "UIKitExpand/Resource(资源)/planBar.jpg"; sourceTree = SOURCE_ROOT; };
-		B3D208D41F47E89700F0CE6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = UIKitExpand/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		B3D208D41F47E89700F0CE6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "UIKitExpand/Resource(资源)/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		B3F4EFFB1F14A8600005197E /* UIKitExpand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitExpand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F4EFFF1F14A8600005197E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3F4F0081F14A8600005197E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -338,7 +349,6 @@
 				D8C6C9C91F42D8E200BE85ED /* ExpandFile(扩展) */,
 				B30F386C1F15B5A7005B5CE6 /* AppDelegate */,
 				D8C6CA0F1F42D95C00BE85ED /* Base(基类) */,
-				D8C6CA7D1F42EB4800BE85ED /* SDKFile(集成) */,
 				D8C6CA221F42D9A400BE85ED /* Resource(资源) */,
 				B3F4EFFE1F14A8600005197E /* Supporting Files */,
 			);
@@ -562,6 +572,9 @@
 				D8C6CA191F42D95C00BE85ED /* STSearchViewController.m */,
 				D8C6CA1A1F42D95C00BE85ED /* STShopCartViewController.h */,
 				D8C6CA1B1F42D95C00BE85ED /* STShopCartViewController.m */,
+				B344154E1F6292450006A4BF /* CJWViewController.h */,
+				B344154F1F6292450006A4BF /* CJWViewController.m */,
+				B34415501F6292450006A4BF /* CJWViewController.xib */,
 			);
 			path = "Base(基类)";
 			sourceTree = "<group>";
@@ -569,8 +582,17 @@
 		D8C6CA221F42D9A400BE85ED /* Resource(资源) */ = {
 			isa = PBXGroup;
 			children = (
-				D8C6CA741F42DF2D00BE85ED /* Plist(配置) */,
-				D8C6CA731F42DE4E00BE85ED /* Image(图片资源) */,
+				B34415651F6294C70006A4BF /* search.png */,
+				B34415661F6294C70006A4BF /* search@2x.png */,
+				B34415671F6294C70006A4BF /* search@3x.png */,
+				B3D208D41F47E89700F0CE6F /* Assets.xcassets */,
+				B3D208C61F47E87D00F0CE6F /* appLaunchAn@2x.png */,
+				B3D208C71F47E87D00F0CE6F /* gif_paying.gif */,
+				B3D208C81F47E87D00F0CE6F /* LaunchImage-700@2x.png */,
+				B3D208C91F47E87D00F0CE6F /* loading_duobao.gif */,
+				B3D208CA1F47E87D00F0CE6F /* msg_home@2x.png */,
+				B3D208CB1F47E87D00F0CE6F /* navigation_menu@2x.png */,
+				B3D208CC1F47E87D00F0CE6F /* planBar.jpg */,
 			);
 			path = "Resource(资源)";
 			sourceTree = "<group>";
@@ -684,28 +706,6 @@
 			path = "Tool(工具类)";
 			sourceTree = "<group>";
 		};
-		D8C6CA731F42DE4E00BE85ED /* Image(图片资源) */ = {
-			isa = PBXGroup;
-			children = (
-				B3D208D41F47E89700F0CE6F /* Assets.xcassets */,
-				B3D208C61F47E87D00F0CE6F /* appLaunchAn@2x.png */,
-				B3D208C71F47E87D00F0CE6F /* gif_paying.gif */,
-				B3D208C81F47E87D00F0CE6F /* LaunchImage-700@2x.png */,
-				B3D208C91F47E87D00F0CE6F /* loading_duobao.gif */,
-				B3D208CA1F47E87D00F0CE6F /* msg_home@2x.png */,
-				B3D208CB1F47E87D00F0CE6F /* navigation_menu@2x.png */,
-				B3D208CC1F47E87D00F0CE6F /* planBar.jpg */,
-			);
-			path = "Image(图片资源)";
-			sourceTree = "<group>";
-		};
-		D8C6CA741F42DF2D00BE85ED /* Plist(配置) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Plist(配置)";
-			sourceTree = "<group>";
-		};
 		D8C6CA751F42DF7200BE85ED /* Reachability(网络状态) */ = {
 			isa = PBXGroup;
 			children = (
@@ -720,13 +720,6 @@
 			children = (
 			);
 			path = "Logger(日志记录)";
-			sourceTree = "<group>";
-		};
-		D8C6CA7D1F42EB4800BE85ED /* SDKFile(集成) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "SDKFile(集成)";
 			sourceTree = "<group>";
 		};
 		FBECBD4E7C4A909322F7F211 /* Pods */ = {
@@ -851,8 +844,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3D208CD1F47E87D00F0CE6F /* appLaunchAn@2x.png in Resources */,
+				B344156A1F6294C70006A4BF /* search@3x.png in Resources */,
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
 				B3D208D21F47E87D00F0CE6F /* navigation_menu@2x.png in Resources */,
+				B34415691F6294C70006A4BF /* search@2x.png in Resources */,
+				B34415681F6294C70006A4BF /* search.png in Resources */,
 				B3D208D11F47E87D00F0CE6F /* msg_home@2x.png in Resources */,
 				B3D208D01F47E87D00F0CE6F /* loading_duobao.gif in Resources */,
 				B3D208D31F47E87D00F0CE6F /* planBar.jpg in Resources */,
@@ -862,6 +858,7 @@
 				B34688A81F15F24600498E66 /* iTunesArtwork in Resources */,
 				B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */,
 				B3F4F0091F14A8600005197E /* Main.storyboard in Resources */,
+				B34415521F6292450006A4BF /* CJWViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -983,6 +980,7 @@
 				D8C6CA1F1F42D95C00BE85ED /* STScanSearchViewController.m in Sources */,
 				D8C6CA6D1F42DC4500BE85ED /* ExpandSearch.m in Sources */,
 				D8C6C9B31F42D89500BE85ED /* NSImage+WebCache.m in Sources */,
+				B34415511F6292450006A4BF /* CJWViewController.m in Sources */,
 				D8C6C9C21F42D89500BE85ED /* UIView+WebCacheOperation.m in Sources */,
 				D8C6C9BB1F42D89500BE85ED /* SDWebImagePrefetcher.m in Sources */,
 				D8C6C9B41F42D89500BE85ED /* SDImageCache.m in Sources */,

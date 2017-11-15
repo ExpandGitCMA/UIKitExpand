@@ -13,6 +13,7 @@
 #import "HttpRequestManager.h"
 #import "ExpanFileConstants.h"
 #import "ExNSUserDefault.h"
+#import "MD5.h"
 @interface STHomeViewController ()
 @property (nonatomic,strong) ExpandSearch *search;//搜索框
 @property (nonatomic,strong) UIView *titleView;
@@ -21,7 +22,7 @@
 @end
 
 #define Search_width 115
-#define Search_height  28
+#define Search_height  40
 
 @implementation STHomeViewController
 
@@ -56,8 +57,16 @@
     [super viewDidLoad];
     [self whisk];
 
-    NSLog(@"%@",AGEKEY);
+    NSString*md5 = @"apiKey=40287ae447680a6b0147680a6b580000&businessType=qcwdapp&clientApp=app10&timestamp=1507694616";
+    
+    //apiKey=40287ae447680a6b0147680a6b580000&businessType=qcwdapp&clientApp=app10&timestamp=1507694616
+    NSString *appKey = [md5 MD5];
+    NSLog(@"%@",appKey);
 
+    
+//    NSLog(@"%@",AGEKEY);
+//    [self.navigationController.navigationBar.subviews[0] setAlpha:0.0];
+    //self.navigationController.navigationBar.hidden = YES;
 
     
    // [[ExNSUserDefault sharedDefaultManager]saveUserKeyNamed:params];

@@ -1,10 +1,10 @@
 //
 //  ExpandBar.h
 //  UIKitExpand
-//
+// navbar
 //  Created by 童公放 on 2017/8/3.
 //  Copyright © 2017年 陈美安. All rights reserved.
-//
+//   CJWNavBarStyle
 
 #import <UIKit/UIKit.h>
 

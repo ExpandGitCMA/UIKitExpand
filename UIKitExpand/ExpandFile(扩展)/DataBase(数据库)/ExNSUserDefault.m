@@ -50,7 +50,7 @@ static ExNSUserDefault *userManager = nil;
           会自动调用removeObject：forKey方法
    (2)  setValue：  forKey： 中key只能够是NSString类型，
           setObject：forKey： 的可以是任何类型
- */
+ */ 
 -(void)saveUserKeyNamed:(id)key{
     NSUserDefaults *user = [self getUserDefaults];
     [user setObject:key forKey:@"key"];
