@@ -29,6 +29,9 @@
 		B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F00C1F14A8600005197E /* LaunchScreen.storyboard */; };
 		B3F4F0191F14A8600005197E /* UIKitExpandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0181F14A8600005197E /* UIKitExpandTests.m */; };
 		B3F4F0241F14A8600005197E /* UIKitExpandUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0231F14A8600005197E /* UIKitExpandUITests.m */; };
+		B74318342117D7FF002A6668 /* ZFJPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B74318332117D7FE002A6668 /* ZFJPermissionManager.m */; };
+		B7FFD18920F75CB900DF83D1 /* ImagePickerPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FFD18820F75CB900DF83D1 /* ImagePickerPhoto.m */; };
+		B7FFD18C20F7651900DF83D1 /* ImagePickerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FFD18B20F7651900DF83D1 /* ImagePickerMenu.m */; };
 		D8C6C9AD1F42D89500BE85ED /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6C96A1F42D89500BE85ED /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		D8C6C9AE1F42D89500BE85ED /* QSDispatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6C9711F42D89500BE85ED /* QSDispatchQueue.m */; };
 		D8C6C9AF1F42D89500BE85ED /* QSImageProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6C9731F42D89500BE85ED /* QSImageProcess.m */; };
@@ -106,6 +109,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B71A9E0121F9EC24009648C0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		525FFFA43E217571B50990FB /* Pods-UIKitExpand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.release.xcconfig"; sourceTree = "<group>"; };
 		882F48B94BC203F871DAED01 /* Pods-UIKitExpand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +157,12 @@
 		B3F4F01F1F14A8600005197E /* UIKitExpandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitExpandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F4F0231F14A8600005197E /* UIKitExpandUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitExpandUITests.m; sourceTree = "<group>"; };
 		B3F4F0251F14A8600005197E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B74318322117D7FE002A6668 /* ZFJPermissionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFJPermissionManager.h; sourceTree = "<group>"; };
+		B74318332117D7FE002A6668 /* ZFJPermissionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFJPermissionManager.m; sourceTree = "<group>"; };
+		B7FFD18720F75CB900DF83D1 /* ImagePickerPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerPhoto.h; sourceTree = "<group>"; };
+		B7FFD18820F75CB900DF83D1 /* ImagePickerPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerPhoto.m; sourceTree = "<group>"; };
+		B7FFD18A20F7651900DF83D1 /* ImagePickerMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePickerMenu.h; sourceTree = "<group>"; };
+		B7FFD18B20F7651900DF83D1 /* ImagePickerMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagePickerMenu.m; sourceTree = "<group>"; };
 		D8C6C9691F42D89500BE85ED /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
 		D8C6C96A1F42D89500BE85ED /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
 		D8C6C96C1F42D89500BE85ED /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
@@ -533,6 +555,8 @@
 		D8C6C9C91F42D8E200BE85ED /* ExpandFile(扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				B74318322117D7FE002A6668 /* ZFJPermissionManager.h */,
+				B74318332117D7FE002A6668 /* ZFJPermissionManager.m */,
 				B3586EBA1F57DD4B009090DE /* Thread */,
 				D8C6CA311F42DC4500BE85ED /* Category(分类) */,
 				D8C6CA3D1F42DC4500BE85ED /* Const(常量) */,
@@ -560,6 +584,10 @@
 		D8C6CA0F1F42D95C00BE85ED /* Base(基类) */ = {
 			isa = PBXGroup;
 			children = (
+				B7FFD18720F75CB900DF83D1 /* ImagePickerPhoto.h */,
+				B7FFD18820F75CB900DF83D1 /* ImagePickerPhoto.m */,
+				B7FFD18A20F7651900DF83D1 /* ImagePickerMenu.h */,
+				B7FFD18B20F7651900DF83D1 /* ImagePickerMenu.m */,
 				D8C6CA101F42D95C00BE85ED /* BaseTabBarCtrl.h */,
 				D8C6CA111F42D95C00BE85ED /* BaseTabBarCtrl.m */,
 				D8C6CA121F42D95C00BE85ED /* STHomeViewController.h */,
@@ -744,6 +772,7 @@
 				B3F4EFF91F14A8600005197E /* Resources */,
 				ED51EB89096540924509C6E3 /* [CP] Embed Pods Frameworks */,
 				D763C97E1BCBDE929BD04E62 /* [CP] Copy Pods Resources */,
+				B71A9E0121F9EC24009648C0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -796,6 +825,7 @@
 		B3F4EFF31F14A8600005197E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "陈美安";
 				TargetAttributes = {
@@ -885,13 +915,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIKitExpand-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D763C97E1BCBDE929BD04E62 /* [CP] Copy Pods Resources */ = {
@@ -915,9 +948,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -953,6 +991,7 @@
 				D8C6CA0E1F42D91100BE85ED /* BaseViewController.m in Sources */,
 				B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */,
 				D8C6CA661F42DC4500BE85ED /* AES.m in Sources */,
+				B7FFD18920F75CB900DF83D1 /* ImagePickerPhoto.m in Sources */,
 				D8C6C9BD1F42D89500BE85ED /* UIImage+GIF.m in Sources */,
 				D8C6C9B61F42D89500BE85ED /* SDWebImageCompat.m in Sources */,
 				B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */,
@@ -963,6 +1002,7 @@
 				D8C6CA6F1F42DC4500BE85ED /* ExplandStyle.m in Sources */,
 				D8C6CA711F42DC4500BE85ED /* HttpRequestManager.m in Sources */,
 				D8C6C9C41F42D89500BE85ED /* UIColor+QSImageProcess.m in Sources */,
+				B7FFD18C20F7651900DF83D1 /* ImagePickerMenu.m in Sources */,
 				D8C6C9B91F42D89500BE85ED /* SDWebImageDownloaderOperation.m in Sources */,
 				D8C6C9C31F42D89500BE85ED /* UIImageView+QSImageProcess.m in Sources */,
 				D8C6CA641F42DC4500BE85ED /* UIView+BlurredImage.m in Sources */,
@@ -992,6 +1032,7 @@
 				D8C6CA211F42D95C00BE85ED /* STShopCartViewController.m in Sources */,
 				D8C6CA1C1F42D95C00BE85ED /* BaseTabBarCtrl.m in Sources */,
 				D8C6CA681F42DC4500BE85ED /* MD5.m in Sources */,
+				B74318342117D7FF002A6668 /* ZFJPermissionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1087,7 +1128,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1130,7 +1171,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1144,6 +1185,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = JR453H2A98;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1164,6 +1206,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = JR453H2A98;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

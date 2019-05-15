@@ -23,6 +23,7 @@ static int const showtime  = 6;
 
 @implementation AppDidLaunchAnimation
 
+
 - (NSMutableArray *)frames{
     if (!_frames) {
         _frames = [NSMutableArray array];

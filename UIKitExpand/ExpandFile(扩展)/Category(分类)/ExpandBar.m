@@ -22,6 +22,8 @@
                        UIBarButtonItemStylePlain
                                                       target:target
                                                       action:action];
+            
+        
             [self setNavigationStyle:style BarItem:barItem];
             
         }

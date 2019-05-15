@@ -38,6 +38,9 @@
 
 -(void)whisk{
     
+    
+    
+    
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavLeftStyle barTarget:self action:@selector(whiskClick) title:@"category_camera_7_gray"];
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(msgClick) title:@"msg_home"];
 }
@@ -92,7 +95,9 @@
 #pragma mark 点击搜索框点击事件
 - (void)searchClick{
     
-
+//    NSString *urlStr =@"https://itunes.apple.com/cn/app/车架号查询/id1436029165";
+    NSString *urlStr =@"itms-apps://itunes.apple.com/cn/app/%E8%BD%A6%E6%9E%B6%E5%8F%B7%E6%9F%A5%E8%AF%A2/id1436029165";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
 
 }
 
