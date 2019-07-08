@@ -29,6 +29,9 @@
 		B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F4F00C1F14A8600005197E /* LaunchScreen.storyboard */; };
 		B3F4F0191F14A8600005197E /* UIKitExpandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0181F14A8600005197E /* UIKitExpandTests.m */; };
 		B3F4F0241F14A8600005197E /* UIKitExpandUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F4F0231F14A8600005197E /* UIKitExpandUITests.m */; };
+		B73F5B6922D2D66E004A63E0 /* libbankcard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F5B6822D2D66E004A63E0 /* libbankcard.a */; };
+		B73F5B7022D2D68A004A63E0 /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = B73F5B6D22D2D689004A63E0 /* zocr0.lib */; };
+		B73F5B7122D2D68A004A63E0 /* libexidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F5B6F22D2D689004A63E0 /* libexidcardios.a */; };
 		B74318342117D7FF002A6668 /* ZFJPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B74318332117D7FE002A6668 /* ZFJPermissionManager.m */; };
 		B7FFD18920F75CB900DF83D1 /* ImagePickerPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FFD18820F75CB900DF83D1 /* ImagePickerPhoto.m */; };
 		B7FFD18C20F7651900DF83D1 /* ImagePickerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FFD18B20F7651900DF83D1 /* ImagePickerMenu.m */; };
@@ -157,6 +160,14 @@
 		B3F4F01F1F14A8600005197E /* UIKitExpandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitExpandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F4F0231F14A8600005197E /* UIKitExpandUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitExpandUITests.m; sourceTree = "<group>"; };
 		B3F4F0251F14A8600005197E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B73F5B6422D2D66E004A63E0 /* BankCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCard.h; sourceTree = "<group>"; };
+		B73F5B6522D2D66E004A63E0 /* exbankcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcard.h; sourceTree = "<group>"; };
+		B73F5B6722D2D66E004A63E0 /* exbankcardcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcardcore.h; sourceTree = "<group>"; };
+		B73F5B6822D2D66E004A63E0 /* libbankcard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbankcard.a; sourceTree = "<group>"; };
+		B73F5B6B22D2D689004A63E0 /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
+		B73F5B6D22D2D689004A63E0 /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
+		B73F5B6E22D2D689004A63E0 /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
+		B73F5B6F22D2D689004A63E0 /* libexidcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexidcardios.a; sourceTree = "<group>"; };
 		B74318322117D7FE002A6668 /* ZFJPermissionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFJPermissionManager.h; sourceTree = "<group>"; };
 		B74318332117D7FE002A6668 /* ZFJPermissionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFJPermissionManager.m; sourceTree = "<group>"; };
 		B7FFD18720F75CB900DF83D1 /* ImagePickerPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerPhoto.h; sourceTree = "<group>"; };
@@ -292,6 +303,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F55D2E6A66DF966165AA0C8D /* Pods_UIKitExpand.framework in Frameworks */,
+				B73F5B6922D2D66E004A63E0 /* libbankcard.a in Frameworks */,
+				B73F5B7122D2D68A004A63E0 /* libexidcardios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +417,44 @@
 				B3F4F0251F14A8600005197E /* Info.plist */,
 			);
 			path = UIKitExpandUITests;
+			sourceTree = "<group>";
+		};
+		B73F5B6322D2D66E004A63E0 /* bank_io */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5B6422D2D66E004A63E0 /* BankCard.h */,
+				B73F5B6522D2D66E004A63E0 /* exbankcard.h */,
+				B73F5B6622D2D66E004A63E0 /* exbankcardcore */,
+			);
+			path = bank_io;
+			sourceTree = "<group>";
+		};
+		B73F5B6622D2D66E004A63E0 /* exbankcardcore */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5B6722D2D66E004A63E0 /* exbankcardcore.h */,
+				B73F5B6822D2D66E004A63E0 /* libbankcard.a */,
+			);
+			path = exbankcardcore;
+			sourceTree = "<group>";
+		};
+		B73F5B6A22D2D689004A63E0 /* libexidcard */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5B6B22D2D689004A63E0 /* commondef.h */,
+				B73F5B6C22D2D689004A63E0 /* dicts */,
+				B73F5B6E22D2D689004A63E0 /* excards.h */,
+				B73F5B6F22D2D689004A63E0 /* libexidcardios.a */,
+			);
+			path = libexidcard;
+			sourceTree = "<group>";
+		};
+		B73F5B6C22D2D689004A63E0 /* dicts */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5B6D22D2D689004A63E0 /* zocr0.lib */,
+			);
+			path = dicts;
 			sourceTree = "<group>";
 		};
 		D8C6C9671F42D89500BE85ED /* Vender(第三方) */ = {
@@ -557,6 +608,8 @@
 			children = (
 				B74318322117D7FE002A6668 /* ZFJPermissionManager.h */,
 				B74318332117D7FE002A6668 /* ZFJPermissionManager.m */,
+				B73F5B6A22D2D689004A63E0 /* libexidcard */,
+				B73F5B6322D2D66E004A63E0 /* bank_io */,
 				B3586EBA1F57DD4B009090DE /* Thread */,
 				D8C6CA311F42DC4500BE85ED /* Category(分类) */,
 				D8C6CA3D1F42DC4500BE85ED /* Const(常量) */,
@@ -873,6 +926,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73F5B7022D2D68A004A63E0 /* zocr0.lib in Resources */,
 				B3D208CD1F47E87D00F0CE6F /* appLaunchAn@2x.png in Resources */,
 				B344156A1F6294C70006A4BF /* search@3x.png in Resources */,
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
@@ -1113,7 +1167,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1163,6 +1217,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1187,6 +1242,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = JR453H2A98;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1194,6 +1250,11 @@
 				INFOPLIST_FILE = UIKitExpand/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UIKitExpand/ExpandFile(扩展)/bank_io/exbankcardcore",
+					"$(PROJECT_DIR)/UIKitExpand/ExpandFile(扩展)/libexidcard",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = planExpand.com.UIKitExpand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1208,6 +1269,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = JR453H2A98;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1215,6 +1277,11 @@
 				INFOPLIST_FILE = UIKitExpand/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UIKitExpand/ExpandFile(扩展)/bank_io/exbankcardcore",
+					"$(PROJECT_DIR)/UIKitExpand/ExpandFile(扩展)/libexidcard",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = planExpand.com.UIKitExpand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
