@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEAB23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
+		031EBEAE23D6B61D00919BEF /* lanch.png in Resources */ = {isa = PBXBuildFile; fileRef = 031EBEAD23D6B61D00919BEF /* lanch.png */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F38701F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m */; };
 		B34415681F6294C70006A4BF /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = B34415651F6294C70006A4BF /* search.png */; };
@@ -81,6 +82,7 @@
 		031EBEA823D6B1E900919BEF /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		031EBEAA23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
 		031EBEAB23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
+		031EBEAD23D6B61D00919BEF /* lanch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lanch.png; sourceTree = "<group>"; };
 		B30F386D1F15B5C7005B5CE6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B30F386F1F15B5C7005B5CE6 /* AppDelegate+ApptabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ApptabBar.h"; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 				B3D208D41F47E89700F0CE6F /* Assets.xcassets */,
 				B3D208CA1F47E87D00F0CE6F /* msg_home@2x.png */,
 				B3D208CB1F47E87D00F0CE6F /* navigation_menu@2x.png */,
+				031EBEAD23D6B61D00919BEF /* lanch.png */,
 			);
 			path = "Resource(资源)";
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 			files = (
 				B344156A1F6294C70006A4BF /* search@3x.png in Resources */,
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
+				031EBEAE23D6B61D00919BEF /* lanch.png in Resources */,
 				B3D208D21F47E87D00F0CE6F /* navigation_menu@2x.png in Resources */,
 				B34415691F6294C70006A4BF /* search@2x.png in Resources */,
 				B34415681F6294C70006A4BF /* search.png in Resources */,
@@ -781,7 +785,7 @@
 					"$(PROJECT_DIR)/UIKitExpand/ExpandFile(扩展)/libexidcard",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = planExpand.com.UIKitExpand;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.PalyGames;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -808,7 +812,7 @@
 					"$(PROJECT_DIR)/UIKitExpand/ExpandFile(扩展)/libexidcard",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = planExpand.com.UIKitExpand;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.PalyGames;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
