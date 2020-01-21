@@ -10,6 +10,5 @@
 
 @interface AppEnteryConterl : NSObject
 +(void)switchBaseTabBarController:(UIViewController*)controller;
-+(void)appDidLaunchController;
 +(void)switchBaseTabBarController;
 @end

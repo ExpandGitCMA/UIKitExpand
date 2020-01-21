@@ -8,6 +8,8 @@
 
 #import "AppEnteryConterl.h"
 #import "AppDelegate.h"
+#import "BaseTabBarCtrl.h"
+
 
 @implementation AppEnteryConterl
 
@@ -18,12 +20,11 @@
 }
 
 +(void)switchBaseTabBarController{
-//    AppDelegate *appDelegate =  (AppDelegate*)[[UIApplication sharedApplication] delegate];
-//    appDelegate.window.rootViewController = nil;
-//    BaseTabBarCtrl *tabBar = [[BaseTabBarCtrl alloc]init];
-//    [[self class] showToHomeViewController:tabBar];
+    AppDelegate *appDelegate =  (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    appDelegate.window.rootViewController = nil;
+    BaseTabBarCtrl *tabBar = [[BaseTabBarCtrl alloc]init];
+    [[self class] showToHomeViewController:tabBar];
 }
-
 
 
 +(void)showToHomeViewController:(UIViewController*)controller{

@@ -32,7 +32,7 @@
         self.borderStyle = UITextBorderStyleNone;
         self.placeholder = @"搜索";
         self.backgroundColor = kUIColorFromRGB(ExSearch);
-        self.tintColor = kUIColorFromRGB(ExpandIconColor);
+        self.tintColor = kUIColorFromRGB(AppMianColor);
       
     }
     return self;

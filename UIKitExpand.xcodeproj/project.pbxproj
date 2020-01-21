@@ -10,7 +10,14 @@
 		031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEAB23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		031EBECC23D6C04D00919BEF /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 031EBECB23D6C04D00919BEF /* libAFNetworking.a */; };
 		031EBECE23D6C0A400919BEF /* lanch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 031EBECD23D6C0A400919BEF /* lanch.jpg */; };
-		031EBEDB23D6C3AA00919BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031EBEDA23D6C3AA00919BEF /* Main.storyboard */; };
+		031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031EBEDD23D6C88E00919BEF /* Main.storyboard */; };
+		031EBEE323D6C8C400919BEF /* BaseTabBarCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEE223D6C8C400919BEF /* BaseTabBarCtrl.m */; };
+		031EBEEE23D6C8DD00919BEF /* STMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEE523D6C8DC00919BEF /* STMyViewController.m */; };
+		031EBEEF23D6C8DD00919BEF /* STScanSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEE623D6C8DC00919BEF /* STScanSearchViewController.m */; };
+		031EBEF023D6C8DD00919BEF /* STSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEE723D6C8DC00919BEF /* STSearchViewController.m */; };
+		031EBEF123D6C8DD00919BEF /* STShopCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEEB23D6C8DC00919BEF /* STShopCartViewController.m */; };
+		031EBEF223D6C8DD00919BEF /* STHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEEC23D6C8DC00919BEF /* STHomeViewController.m */; };
+		031EBEF523D6C90400919BEF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEF423D6C90400919BEF /* BaseViewController.m */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F38701F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m */; };
 		B34415681F6294C70006A4BF /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = B34415651F6294C70006A4BF /* search.png */; };
@@ -86,7 +93,21 @@
 		031EBEAB23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
 		031EBECB23D6C04D00919BEF /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		031EBECD23D6C0A400919BEF /* lanch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lanch.jpg; sourceTree = "<group>"; };
-		031EBEDA23D6C3AA00919BEF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		031EBEDE23D6C88E00919BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		031EBEE123D6C8C400919BEF /* BaseTabBarCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarCtrl.h; sourceTree = "<group>"; };
+		031EBEE223D6C8C400919BEF /* BaseTabBarCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarCtrl.m; sourceTree = "<group>"; };
+		031EBEE423D6C8DC00919BEF /* STSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSearchViewController.h; sourceTree = "<group>"; };
+		031EBEE523D6C8DC00919BEF /* STMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMyViewController.m; sourceTree = "<group>"; };
+		031EBEE623D6C8DC00919BEF /* STScanSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScanSearchViewController.m; sourceTree = "<group>"; };
+		031EBEE723D6C8DC00919BEF /* STSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSearchViewController.m; sourceTree = "<group>"; };
+		031EBEE823D6C8DC00919BEF /* STShopCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STShopCartViewController.h; sourceTree = "<group>"; };
+		031EBEE923D6C8DC00919BEF /* STMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMyViewController.h; sourceTree = "<group>"; };
+		031EBEEA23D6C8DC00919BEF /* STHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHomeViewController.h; sourceTree = "<group>"; };
+		031EBEEB23D6C8DC00919BEF /* STShopCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STShopCartViewController.m; sourceTree = "<group>"; };
+		031EBEEC23D6C8DC00919BEF /* STHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHomeViewController.m; sourceTree = "<group>"; };
+		031EBEED23D6C8DD00919BEF /* STScanSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScanSearchViewController.h; sourceTree = "<group>"; };
+		031EBEF323D6C90400919BEF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		031EBEF423D6C90400919BEF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		1557A88AC0C9420DBF348CAF /* Pods-UIKitExpand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.release.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.release.xcconfig"; sourceTree = "<group>"; };
 		2865E39BF27EDBE025A41994 /* libPods-UIKitExpand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIKitExpand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC86418AF49E0D7082C20E8 /* Pods-UIKitExpand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.debug.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +236,27 @@
 			path = ALAssetsLibrary;
 			sourceTree = "<group>";
 		};
+		031EBEE023D6C89800919BEF /* Base(主界面) */ = {
+			isa = PBXGroup;
+			children = (
+				031EBEF323D6C90400919BEF /* BaseViewController.h */,
+				031EBEF423D6C90400919BEF /* BaseViewController.m */,
+				031EBEE123D6C8C400919BEF /* BaseTabBarCtrl.h */,
+				031EBEE223D6C8C400919BEF /* BaseTabBarCtrl.m */,
+				031EBEEA23D6C8DC00919BEF /* STHomeViewController.h */,
+				031EBEEC23D6C8DC00919BEF /* STHomeViewController.m */,
+				031EBEE923D6C8DC00919BEF /* STMyViewController.h */,
+				031EBEE523D6C8DC00919BEF /* STMyViewController.m */,
+				031EBEED23D6C8DD00919BEF /* STScanSearchViewController.h */,
+				031EBEE623D6C8DC00919BEF /* STScanSearchViewController.m */,
+				031EBEE423D6C8DC00919BEF /* STSearchViewController.h */,
+				031EBEE723D6C8DC00919BEF /* STSearchViewController.m */,
+				031EBEE823D6C8DC00919BEF /* STShopCartViewController.h */,
+				031EBEEB23D6C8DC00919BEF /* STShopCartViewController.m */,
+			);
+			path = "Base(主界面)";
+			sourceTree = "<group>";
+		};
 		B30F386C1F15B5A7005B5CE6 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,8 +305,9 @@
 		B3F4EFFD1F14A8600005197E /* UIKitExpand */ = {
 			isa = PBXGroup;
 			children = (
-				D8C6C9C91F42D8E200BE85ED /* ExpandFile(扩展) */,
 				B30F386C1F15B5A7005B5CE6 /* AppDelegate */,
+				031EBEE023D6C89800919BEF /* Base(主界面) */,
+				D8C6C9C91F42D8E200BE85ED /* ExpandFile(扩展) */,
 				D8C6CA221F42D9A400BE85ED /* Resource(资源) */,
 				B3F4EFFE1F14A8600005197E /* Supporting Files */,
 			);
@@ -275,7 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				B3F4F00C1F14A8600005197E /* LaunchScreen.storyboard */,
-				031EBEDA23D6C3AA00919BEF /* Main.storyboard */,
+				031EBEDD23D6C88E00919BEF /* Main.storyboard */,
 				B3F4F00F1F14A8600005197E /* Info.plist */,
 				B3F4EFFF1F14A8600005197E /* main.m */,
 			);
@@ -579,12 +622,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B344156A1F6294C70006A4BF /* search@3x.png in Resources */,
-				031EBEDB23D6C3AA00919BEF /* Main.storyboard in Resources */,
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
 				031EBECE23D6C0A400919BEF /* lanch.jpg in Resources */,
 				B3D208D21F47E87D00F0CE6F /* navigation_menu@2x.png in Resources */,
 				B34415691F6294C70006A4BF /* search@2x.png in Resources */,
 				B34415681F6294C70006A4BF /* search.png in Resources */,
+				031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */,
 				B3D208D11F47E87D00F0CE6F /* msg_home@2x.png in Resources */,
 				B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */,
 			);
@@ -638,14 +681,18 @@
 			files = (
 				D8C6CA691F42DC4500BE85ED /* RandomKey.m in Sources */,
 				D8C6CA631F42DC4500BE85ED /* UIImage+ImageEffects.m in Sources */,
+				031EBEEF23D6C8DD00919BEF /* STScanSearchViewController.m in Sources */,
 				D8C6CA611F42DC4500BE85ED /* ExpandBar.m in Sources */,
+				031EBEF223D6C8DD00919BEF /* STHomeViewController.m in Sources */,
 				031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				D8C6CA6C1F42DC4500BE85ED /* DFCTextFieldSearch.m in Sources */,
+				031EBEF523D6C90400919BEF /* BaseViewController.m in Sources */,
 				D8C6CA721F42DC4500BE85ED /* Safety.m in Sources */,
 				B34688AD1F15FB8800498E66 /* AppEnteryConterl.m in Sources */,
 				D8C6CA6E1F42DC4500BE85ED /* ExpandUser.m in Sources */,
 				D8C6CA6A1F42DC4500BE85ED /* RSA.m in Sources */,
 				D8C6CA831F42EE4D00BE85ED /* ExNSUserDefault.m in Sources */,
+				031EBEF023D6C8DD00919BEF /* STSearchViewController.m in Sources */,
 				B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */,
 				D8C6CA661F42DC4500BE85ED /* AES.m in Sources */,
 				B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */,
@@ -655,6 +702,7 @@
 				D8C6CA711F42DC4500BE85ED /* HttpRequestManager.m in Sources */,
 				D8C6CA641F42DC4500BE85ED /* UIView+BlurredImage.m in Sources */,
 				D8C6CA7C1F42E0AC00BE85ED /* ExpanFileConstants.m in Sources */,
+				031EBEEE23D6C8DD00919BEF /* STMyViewController.m in Sources */,
 				D8C6CA801F42ED8F00BE85ED /* ExUserDefaultManager.m in Sources */,
 				D8C6CA621F42DC4500BE85ED /* NSString+paths.m in Sources */,
 				D8C6CA651F42DC4500BE85ED /* UIControl+ExControlayerStyle.m in Sources */,
@@ -663,6 +711,8 @@
 				D8C6CA6B1F42DC4500BE85ED /* RSACryptor.m in Sources */,
 				D8C6CA681F42DC4500BE85ED /* MD5.m in Sources */,
 				B74318342117D7FF002A6668 /* ZFJPermissionManager.m in Sources */,
+				031EBEE323D6C8C400919BEF /* BaseTabBarCtrl.m in Sources */,
+				031EBEF123D6C8DD00919BEF /* STShopCartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,6 +748,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		031EBEDD23D6C88E00919BEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				031EBEDE23D6C88E00919BEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		B3F4F00C1F14A8600005197E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
