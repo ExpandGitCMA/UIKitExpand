@@ -24,7 +24,7 @@
 
 @implementation ZFJPermissionManager
 
-- (void)checkUpAPPPermission:(ZFJCheckPermissionType)permissionType completed:(void(^)(ZFJCheckResultType authStatus))completed{
+- (void)checkUpAPPPermission:(ZFJCheckPermissionType)permissionType completed:(ZFJCheckResultType)completed{
     if(permissionType == ZFJCheckDataRestricted){
         //检查联网权限
         CTCellularData *cellularData = [[CTCellularData alloc]init];
@@ -32,17 +32,17 @@
         if(state == kCTCellularDataRestricted){
             //蜂窝移动网络状态：关闭
             if(completed){
-                completed(ZFJStatusDenied);
+                completed(kCTCellularDataRestricted);
             }
         }else if (state == kCTCellularDataNotRestricted){
             //蜂窝移动网络状态：开启
             if(completed){
-                completed(ZFJStatusAuthorized);
+                completed(kCTCellularDataNotRestricted);
             }
         }else if (state == kCTCellularDataRestrictedStateUnknown){
             //蜂窝移动网络状态：未知 WIFI OR OTHERS
             if(completed){
-                completed(ZFJStatusUnknown);
+                completed(kCTCellularDataRestrictedStateUnknown);
             }
         }
         
@@ -52,22 +52,22 @@
         if (photoAuthorStatus == PHAuthorizationStatusDenied) {
             //用户拒绝当前应用访问相册,我们需要提醒用户打开访问开关
             if(completed){
-                completed(ZFJStatusDenied);
+                completed(PHAuthorizationStatusDenied);
             }
         }else if (photoAuthorStatus == PHAuthorizationStatusRestricted){
             //家长控制,不允许访问
             if(completed){
-                completed(ZFJStatusRestricted);
+                completed(PHAuthorizationStatusRestricted);
             }
         }else if (photoAuthorStatus == PHAuthorizationStatusNotDetermined){
             //用户还没有做出选择
             if(completed){
-                completed(ZFJStatusNotDetermined);
+                completed(PHAuthorizationStatusNotDetermined);
             }
         }else if (photoAuthorStatus == PHAuthorizationStatusAuthorized){
             //用户允许当前应用访问权限
             if(completed){
-                completed(ZFJStatusAuthorized);
+                completed(PHAuthorizationStatusAuthorized);
             }
         }
     }else if (permissionType == ZFJCheckCamera){
@@ -76,22 +76,22 @@
         if(authStatus == AVAuthorizationStatusNotDetermined){
             //用户还没有做出选择
             if(completed){
-                completed(ZFJStatusNotDetermined);
+                completed(AVAuthorizationStatusNotDetermined);
             }
         }else if (authStatus == AVAuthorizationStatusRestricted){
             //家长控制,不允许访问
             if(completed){
-                completed(ZFJStatusRestricted);
+                completed(AVAuthorizationStatusRestricted);
             }
         }else if (authStatus == AVAuthorizationStatusDenied){
             //未授权
             if(completed){
-                completed(ZFJStatusDenied);
+                completed(AVAuthorizationStatusDenied);
             }
         }else if (authStatus == AVAuthorizationStatusAuthorized){
             //用户允许当前应用访问权限
             if(completed){
-                completed(ZFJStatusAuthorized);
+                completed(AVAuthorizationStatusAuthorized);
             }
         }
     }else if (permissionType == ZFJCheckLocation){
@@ -100,27 +100,27 @@
         if(authorizationStatus == kCLAuthorizationStatusNotDetermined){
             //用户尚未对该应用程序作出选择
             if(completed){
-                completed(ZFJStatusNotDetermined);
+                completed(kCLAuthorizationStatusNotDetermined);
             }
         }else if(authorizationStatus == kCLAuthorizationStatusRestricted){
             //应用程序的定位权限被限制
             if(completed){
-                completed(ZFJStatusRestricted);
+                completed(kCLAuthorizationStatusRestricted);
             }
         }else if(authorizationStatus == kCLAuthorizationStatusAuthorizedAlways){
             //一直允许获取定位
             if(completed){
-                completed(ZFJStatusAuthorizedAlways);
+                completed(kCLAuthorizationStatusAuthorizedAlways);
             }
         }else if(authorizationStatus == kCLAuthorizationStatusAuthorizedWhenInUse){
             //在使用时允许获取定位
             if(completed){
-                completed(ZFJStatusAuthorizedWhenInUse);
+                completed(kCLAuthorizationStatusAuthorizedWhenInUse);
             }
         }else if(authorizationStatus == kCLAuthorizationStatusDenied){
             //拒绝获取定位
             if(completed){
-                completed(ZFJStatusDenied);
+                completed(kCLAuthorizationStatusDenied);
             }
         }
         
@@ -131,12 +131,12 @@
         if(types == UIUserNotificationTypeNone){
             //用户拒绝访问权限,我们需要提醒用户打开访问开关
             if(completed){
-                completed(ZFJStatusDenied);
+                completed(UIUserNotificationTypeNone);
             }
         }else if (types == (UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert)){
             //通知可以使用
             if(completed){
-                completed(ZFJStatusAuthorized);
+                completed(types);
             }
         }
         /*
@@ -151,22 +151,22 @@
         if(authStatus == AVAuthorizationStatusNotDetermined){
             //没有询问是否开启麦克风
             if(completed){
-                completed(ZFJStatusNotDetermined);
+                completed(AVAuthorizationStatusNotDetermined);
             }
         }else if (authStatus == AVAuthorizationStatusRestricted){
             //未授权，家长限制
             if(completed){
-                completed(ZFJStatusRestricted);
+                completed(AVAuthorizationStatusRestricted);
             }
         }else if (authStatus == AVAuthorizationStatusDenied){
             //用户拒绝访问权限,我们需要提醒用户打开访问开关
             if(completed){
-                completed(ZFJStatusDenied);
+                completed(AVAuthorizationStatusDenied);
             }
         }else if (authStatus == AVAuthorizationStatusAuthorized){
             //用户允许当前应用访问权限
             if(completed){
-                completed(ZFJStatusAuthorized);
+                completed(AVAuthorizationStatusAuthorized);
             }
         }
     }else if(permissionType == ZFJCheckAddressBook){
@@ -175,19 +175,19 @@
             CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
             if(status == CNAuthorizationStatusAuthorized){
                 if(completed){
-                    completed(ZFJStatusAuthorized);
+                    completed(CNAuthorizationStatusAuthorized);
                 }
             }else if(status == CNAuthorizationStatusDenied){
                 if(completed){
-                    completed(ZFJStatusDenied);
+                    completed(CNAuthorizationStatusDenied);
                 }
             }else if(status == CNAuthorizationStatusRestricted){
                 if(completed){
-                    completed(ZFJStatusRestricted);
+                    completed(CNAuthorizationStatusRestricted);
                 }
             }else if(status == CNAuthorizationStatusNotDetermined){
                 if(completed){
-                    completed(ZFJStatusNotDetermined);
+                    completed(CNAuthorizationStatusNotDetermined);
                 }
             }
         }else{
@@ -195,19 +195,19 @@
             ABAuthorizationStatus ABstatus = ABAddressBookGetAuthorizationStatus();
             if(ABstatus == kABAuthorizationStatusAuthorized){
                 if(completed){
-                    completed(ZFJStatusAuthorized);
+                    completed(kABAuthorizationStatusAuthorized);
                 }
             }else if(ABstatus == kABAuthorizationStatusDenied){
                 if(completed){
-                    completed(ZFJStatusDenied);
+                    completed(kABAuthorizationStatusDenied);
                 }
             }else if(ABstatus == kABAuthorizationStatusNotDetermined){
                 if(completed){
-                    completed(ZFJStatusNotDetermined);
+                    completed(kABAuthorizationStatusNotDetermined);
                 }
             }else if(ABstatus == kABAuthorizationStatusRestricted){
                 if(completed){
-                    completed(ZFJStatusRestricted);
+                    completed(kABAuthorizationStatusRestricted);
                 }
             }
         }
@@ -217,22 +217,22 @@
         switch (EKstatus) {
             case EKAuthorizationStatusAuthorized:
                 if(completed){
-                    completed(ZFJStatusAuthorized);
+                    completed(EKAuthorizationStatusAuthorized);
                 }
                 break;
             case EKAuthorizationStatusDenied:
                 if(completed){
-                    completed(ZFJStatusDenied);
+                    completed(EKAuthorizationStatusDenied);
                 }
                 break;
             case EKAuthorizationStatusNotDetermined:
                 if(completed){
-                    completed(ZFJStatusNotDetermined);
+                    completed(EKAuthorizationStatusNotDetermined);
                 }
                 break;
             case EKAuthorizationStatusRestricted:
                 if(completed){
-                    completed(ZFJStatusRestricted);
+                    completed(EKAuthorizationStatusRestricted);
                 }
                 break;
             default:
@@ -244,22 +244,22 @@
         switch (EKstatus) {
             case EKAuthorizationStatusAuthorized:
                 if(completed){
-                    completed(ZFJStatusAuthorized);
+                    completed(EKAuthorizationStatusAuthorized);
                 }
                 break;
             case EKAuthorizationStatusDenied:
                 if(completed){
-                    completed(ZFJStatusDenied);
+                    completed(EKAuthorizationStatusDenied);
                 }
                 break;
             case EKAuthorizationStatusNotDetermined:
                 if(completed){
-                    completed(ZFJStatusNotDetermined);
+                    completed(EKAuthorizationStatusNotDetermined);
                 }
                 break;
             case EKAuthorizationStatusRestricted:
                 if(completed){
-                    completed(ZFJStatusRestricted);
+                    completed(EKAuthorizationStatusRestricted);
                 }
                 break;
             default:
@@ -269,6 +269,7 @@
         //
     }
 }
+
 
 - (void)requestAccessPermission:(ZFJCheckPermissionType)permissionType completed:(void(^)(BOOL isScu))completed{
     if(permissionType == ZFJCheckDataRestricted){
@@ -285,19 +286,19 @@
             [self.LocationManager requestWhenInUseAuthorization];
         }
         [self.LocationManager startUpdatingLocation];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self checkUpAPPPermission:ZFJCheckLocation completed:^(ZFJCheckResultType authStatus) {
-                if(authStatus == ZFJStatusAuthorizedAlways || authStatus == ZFJStatusAuthorizedWhenInUse){
-                    if(completed){
-                        completed(YES);
-                    }
-                }else{
-                    if(completed){
-                        completed(NO);
-                    }
-                }
-            }];
-        });
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [self checkUpAPPPermission:ZFJCheckLocation completed:^(ZFJCheckResultType authStatus) {
+//                if(authStatus == ZFJStatusAuthorizedAlways || authStatus == ZFJStatusAuthorizedWhenInUse){
+//                    if(completed){
+//                        completed(YES);
+//                    }
+//                }else{
+//                    if(completed){
+//                        completed(NO);
+//                    }
+//                }
+//            }];
+//        });
     }else if (permissionType == ZFJCheckAddressBook){
         //检查通讯录权限
         if([[[UIDevice currentDevice]systemVersion] floatValue] >= 9.0){

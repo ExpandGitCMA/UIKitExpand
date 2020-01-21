@@ -9,8 +9,24 @@
 #import <Foundation/Foundation.h>
 
 
-@interface ZFJPermissionManager : NSObject
+typedef NS_ENUM(NSUInteger, ZFJCheckPermissionType){
+  
+  ZFJCheckDataRestricted = 0,
+  ZFJCheckPhotoLibrary,
+  ZFJCheckCamera,
+  ZFJCheckLocation,
+  ZFJCheckNotification,
+  ZFJCheckAudio,
+  ZFJCheckAddressBook,
+  ZFJCheckCalendars,
+  ZFJCheckReminders,
+};
 
+
+
+typedef void (^ZFJCheckResultType)( NSUInteger type);
+
+@interface ZFJPermissionManager : NSObject
 
 /**
  检查APP权限
@@ -18,7 +34,7 @@
  @param permissionType 要检查的权限类型
  @param completed 结果回调(FIRST:6 2 2 2 2 2 2 2 0)
  */
-- (void)checkUpAPPPermission:(ZFJCheckPermissionType)permissionType completed:(void(^)(ZFJCheckResultType authStatus))completed;
+- (void)checkUpAPPPermission:(ZFJCheckPermissionType)permissionType completed:(ZFJCheckResultType)completed;
 
 /**
  请求权限
