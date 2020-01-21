@@ -3,7 +3,7 @@
 //  UIKitExpand
 //
 //  Created by ZeroSmile on 2017/7/14.
-//  Copyright © 2017年 陈美安. All rights reserved.
+//  Copyright © 2017年 ZeroSmile. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
