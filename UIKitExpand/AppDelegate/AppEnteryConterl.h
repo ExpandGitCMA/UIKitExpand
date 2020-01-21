@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface AppEnteryConterl : NSObject
-+(void)switchBaseTabBarController:(UIViewController*)controller;
-+(void)switchBaseTabBarController;
++(void)switchBaseRequest;
 @end

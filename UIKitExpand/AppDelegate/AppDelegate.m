@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+ApptabBar.h"
+#import "AppDelegate+JGPush.h"
 #import "AppEnteryConterl.h"
 #import "ExpandFileHeader.h"
 
@@ -19,10 +20,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    [self JGPushGisterNotification:launchOptions];
     [self appDidLaunching];
-    [AppEnteryConterl  switchBaseTabBarController];
-
+    [AppEnteryConterl  switchBaseRequest];
     return YES;
 }
 

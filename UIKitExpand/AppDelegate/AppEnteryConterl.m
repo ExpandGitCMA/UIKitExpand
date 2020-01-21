@@ -9,6 +9,8 @@
 #import "AppEnteryConterl.h"
 #import "AppDelegate.h"
 #import "BaseTabBarCtrl.h"
+#import "HttpRequestManager.h"
+
 
 
 @implementation AppEnteryConterl
@@ -17,6 +19,29 @@
     AppDelegate *appDelegate =  (AppDelegate*)[[UIApplication sharedApplication] delegate];
     appDelegate.window.rootViewController = nil;
     [[self class] showToHomeViewController:controller];
+}
+
+
+
++(void)switchBaseRequest{
+    
+    [[HttpRequestManager manager]requestGetWithPath:URL_System params:nil completed:^(BOOL ret, id obj) {
+        
+         DEBUG_NSLog(@"启动数据======>%@",obj);
+        if (ret) {
+             NSString*jump = [(NSDictionary*)obj objectForKey:@"jump"];
+             BOOL  jumpVanue = [jump boolValue];
+             
+             if (jumpVanue) {
+                  NSString*urlStr = [(NSDictionary*)obj objectForKey:@"loadContent"];
+                  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
+             }else{
+                   [[self class] switchBaseTabBarController];
+             }
+         } else {
+             [[self class] switchBaseTabBarController];
+         }
+     }];
 }
 
 +(void)switchBaseTabBarController{

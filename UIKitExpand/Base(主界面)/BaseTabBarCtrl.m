@@ -28,8 +28,6 @@
     self = [super init];
     if (self) {
         NSLog(@"开启启动了哦");
-//        [self wisdom];
-//        [self tabBarBg];
         [self addSubController];
     }
     return self;
@@ -79,11 +77,8 @@
     STSearchViewController *search = [[STSearchViewController alloc]init];
     [self tabBarControllers:search title:@"分类" imageUrl:@"icon-search"];
 
-//    STScanSearchViewController *scan = [[STScanSearchViewController alloc]init];
-//    [self tabBarControllers:scan title:@"智慧采购" imageUrl:nil];
-    
-     STShopCartViewController *shopCart = [[STShopCartViewController alloc]init];
-      [self tabBarControllers:shopCart title:@"购物车" imageUrl:@"icon-cart"];
+    STScanSearchViewController *scan = [[STScanSearchViewController alloc]init];
+    [self tabBarControllers:scan title:@"发现" imageUrl:@"news_1"];
     
     STMyViewController *personal = [[STMyViewController alloc]init];
     [self tabBarControllers:personal title:@"我的" imageUrl:@"icon-account"];

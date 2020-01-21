@@ -18,6 +18,8 @@
 		031EBEF123D6C8DD00919BEF /* STShopCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEEB23D6C8DC00919BEF /* STShopCartViewController.m */; };
 		031EBEF223D6C8DD00919BEF /* STHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEEC23D6C8DC00919BEF /* STHomeViewController.m */; };
 		031EBEF523D6C90400919BEF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEF423D6C90400919BEF /* BaseViewController.m */; };
+		031EBEF823D6D0A200919BEF /* NSString+IMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEF723D6D0A200919BEF /* NSString+IMAdditions.m */; };
+		031EBF3723D6DC3400919BEF /* AppDelegate+JGPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBF3623D6DC3400919BEF /* AppDelegate+JGPush.m */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F38701F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m */; };
 		B34415681F6294C70006A4BF /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = B34415651F6294C70006A4BF /* search.png */; };
@@ -108,6 +110,11 @@
 		031EBEED23D6C8DD00919BEF /* STScanSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScanSearchViewController.h; sourceTree = "<group>"; };
 		031EBEF323D6C90400919BEF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		031EBEF423D6C90400919BEF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		031EBEF623D6D0A200919BEF /* NSString+IMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IMAdditions.h"; sourceTree = "<group>"; };
+		031EBEF723D6D0A200919BEF /* NSString+IMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IMAdditions.m"; sourceTree = "<group>"; };
+		031EBF1523D6D87100919BEF /* UIKitExpand.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UIKitExpand.entitlements; sourceTree = "<group>"; };
+		031EBF3523D6DC3400919BEF /* AppDelegate+JGPush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JGPush.h"; sourceTree = "<group>"; };
+		031EBF3623D6DC3400919BEF /* AppDelegate+JGPush.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JGPush.m"; sourceTree = "<group>"; };
 		1557A88AC0C9420DBF348CAF /* Pods-UIKitExpand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.release.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.release.xcconfig"; sourceTree = "<group>"; };
 		2865E39BF27EDBE025A41994 /* libPods-UIKitExpand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIKitExpand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC86418AF49E0D7082C20E8 /* Pods-UIKitExpand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.debug.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.debug.xcconfig"; sourceTree = "<group>"; };
@@ -262,6 +269,8 @@
 			children = (
 				B30F386D1F15B5C7005B5CE6 /* AppDelegate.h */,
 				B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */,
+				031EBF3523D6DC3400919BEF /* AppDelegate+JGPush.h */,
+				031EBF3623D6DC3400919BEF /* AppDelegate+JGPush.m */,
 				B30F386F1F15B5C7005B5CE6 /* AppDelegate+ApptabBar.h */,
 				B30F38701F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m */,
 				B34688AB1F15FB8800498E66 /* AppEnteryConterl.h */,
@@ -305,6 +314,7 @@
 		B3F4EFFD1F14A8600005197E /* UIKitExpand */ = {
 			isa = PBXGroup;
 			children = (
+				031EBF1523D6D87100919BEF /* UIKitExpand.entitlements */,
 				B30F386C1F15B5A7005B5CE6 /* AppDelegate */,
 				031EBEE023D6C89800919BEF /* Base(主界面) */,
 				D8C6C9C91F42D8E200BE85ED /* ExpandFile(扩展) */,
@@ -381,6 +391,8 @@
 				D8C6CA331F42DC4500BE85ED /* ExpandBar.m */,
 				D8C6CA3B1F42DC4500BE85ED /* UIControl+ExControlayerStyle.h */,
 				D8C6CA3C1F42DC4500BE85ED /* UIControl+ExControlayerStyle.m */,
+				031EBEF623D6D0A200919BEF /* NSString+IMAdditions.h */,
+				031EBEF723D6D0A200919BEF /* NSString+IMAdditions.m */,
 				D8C6CA341F42DC4500BE85ED /* ImageEffects */,
 			);
 			path = "Category(分类)";
@@ -578,7 +590,7 @@
 				TargetAttributes = {
 					B3F4EFFA1F14A8600005197E = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = JR453H2A98;
+						DevelopmentTeam = 8DZ394K7X7;
 						ProvisioningStyle = Automatic;
 					};
 					B3F4F0131F14A8600005197E = {
@@ -686,6 +698,7 @@
 				031EBEF223D6C8DD00919BEF /* STHomeViewController.m in Sources */,
 				031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				D8C6CA6C1F42DC4500BE85ED /* DFCTextFieldSearch.m in Sources */,
+				031EBF3723D6DC3400919BEF /* AppDelegate+JGPush.m in Sources */,
 				031EBEF523D6C90400919BEF /* BaseViewController.m in Sources */,
 				D8C6CA721F42DC4500BE85ED /* Safety.m in Sources */,
 				B34688AD1F15FB8800498E66 /* AppEnteryConterl.m in Sources */,
@@ -703,6 +716,7 @@
 				D8C6CA641F42DC4500BE85ED /* UIView+BlurredImage.m in Sources */,
 				D8C6CA7C1F42E0AC00BE85ED /* ExpanFileConstants.m in Sources */,
 				031EBEEE23D6C8DD00919BEF /* STMyViewController.m in Sources */,
+				031EBEF823D6D0A200919BEF /* NSString+IMAdditions.m in Sources */,
 				D8C6CA801F42ED8F00BE85ED /* ExUserDefaultManager.m in Sources */,
 				D8C6CA621F42DC4500BE85ED /* NSString+paths.m in Sources */,
 				D8C6CA651F42DC4500BE85ED /* UIControl+ExControlayerStyle.m in Sources */,
@@ -866,8 +880,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = JR453H2A98;
+				CODE_SIGN_ENTITLEMENTS = UIKitExpand/UIKitExpand.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DZ394K7X7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -881,9 +897,16 @@
 					"$(PROJECT_DIR)/UIKitExpand/ExpandFile(扩展)/bank_io/exbankcardcore",
 					"$(PROJECT_DIR)/UIKitExpand/ExpandFile(扩展)/libexidcard",
 				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.PalyGames;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"jcore-ios-2.1.8\"",
+					"-l\"jpush-ios-3.2.8\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.PalyGamest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -894,8 +917,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = JR453H2A98;
+				CODE_SIGN_ENTITLEMENTS = UIKitExpand/UIKitExpand.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DZ394K7X7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -909,9 +934,16 @@
 					"$(PROJECT_DIR)/UIKitExpand/ExpandFile(扩展)/bank_io/exbankcardcore",
 					"$(PROJECT_DIR)/UIKitExpand/ExpandFile(扩展)/libexidcard",
 				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.PalyGames;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"jcore-ios-2.1.8\"",
+					"-l\"jpush-ios-3.2.8\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.PalyGamest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

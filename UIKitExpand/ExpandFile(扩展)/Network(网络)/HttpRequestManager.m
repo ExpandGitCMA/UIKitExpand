@@ -49,7 +49,7 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
 }
 
 - (BOOL)isNetSuccess:(id)JSON{
-    id codeStr = [JSON objectForKey:@"result"];
+    id codeStr = [JSON objectForKey:@"status"];
     if (codeStr == nil) {
         return NO;
     }

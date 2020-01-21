@@ -11,19 +11,10 @@
 #define ExpandRequest_Url_h
 
 
-#define SeverEnvironment 1
 
-#if  SeverEnvironment==1  //开发测试网络
-#define BASE_API_URL @"http://new.iformoney.com/"
-
-#elif SeverEnvironment==2  //正式发布网络
-#define BASE_API_URL @"http://new.iformoney.com/"
-
-#endif
+#define BASE_API_URL @"http://mock-api.com/Rz3ambnM.mock/"
+#define  URL_System   @"App/Index/SportsGame"    //首页
 
 
-#define URL_AppHocus                    @"loveBeen/focus.json.php"    //首页
-#define URL_AppIndexList                @"App/Index/Order_List" //首页
-#define URL_AppIndexPage           @"App/Index/Order_Index_Page2" //默认
 
 #endif /* ExpandRequest_Url_h */

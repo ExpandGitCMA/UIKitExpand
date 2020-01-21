@@ -14,6 +14,9 @@
 #import "ExpanFileConstants.h"
 #import "ExNSUserDefault.h"
 #import "MD5.h"
+
+#import "NSString+IMAdditions.h"
+
 @interface STHomeViewController ()
 @property (nonatomic,strong) ExpandSearch *search;//搜索框
 @property (nonatomic,strong) UIView *titleView;
@@ -63,27 +66,6 @@
     NSString *appKey = [md5 MD5];
     NSLog(@"%@",appKey);
 
-    
-//    NSLog(@"%@",AGEKEY);
-//    [self.navigationController.navigationBar.subviews[0] setAlpha:0.0];
-    //self.navigationController.navigationBar.hidden = YES;
-
-    
-   // [[ExNSUserDefault sharedDefaultManager]saveUserKeyNamed:params];
-    
-
-//    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-//    [params SafetySetObject:@1 forKey:@"call"];
-//    [params SafetySetObject:[NSNumber numberWithInteger:_page] forKey:@"page"];
-//    @weakify(self)
-//    [[HttpRequestManager manager] requestPostWithPath:URL_AppHocus    params:params completed:^(BOOL ret, id obj) {
-//        @strongify(self)
-//        if (ret) {
-//            DEBUG_NSLog(@"obj===%@",obj);
-//        } else {
-//            DEBUG_NSLog(@"obj==%@",obj);
-//        }
-//    }];
 
 
 }
@@ -92,11 +74,12 @@
 #pragma mark 点击搜索框点击事件
 - (void)searchClick{
     
-//    NSString *urlStr =@"https://itunes.apple.com/cn/app/车架号查询/id1436029165";
-    NSString *urlStr =@"itms-apps://itunes.apple.com/cn/app/%E8%BD%A6%E6%9E%B6%E5%8F%B7%E6%9F%A5%E8%AF%A2/id1436029165";
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
-
+  
+    
+    NSString *urlStr =@"https://itunes.apple.com/cn/app/车架号查询/id1436029165";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[urlStr urlEncodedString]]];
 }
+
 
 -(void)whiskClick{
 
