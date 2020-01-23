@@ -67,8 +67,6 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 
 
 #pragma mark - JPUSHRegisterDelegate
-
-
 // iOS 12 Support
 - (void)jpushNotificationCenter:(UNUserNotificationCenter *)center openSettingsForNotification:(UNNotification *)notification API_AVAILABLE(ios(10.0)){
     if (@available(iOS 10.0, *)) {
@@ -77,7 +75,6 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
             NSLog(@"start tongzhi to app");
         }else{
             //从通知设置界面进入应用
- 
         }
     } else {
         // Fallback on earlier versions

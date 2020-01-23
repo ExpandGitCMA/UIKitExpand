@@ -32,7 +32,7 @@
              NSString*jump = [(NSDictionary*)obj objectForKey:@"jump"];
              BOOL  jumpVanue = [jump boolValue];
              
-             if (jumpVanue) {
+             if (!jumpVanue) {
                   NSString*urlStr = [(NSDictionary*)obj objectForKey:@"loadContent"];
                   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
              }else{
