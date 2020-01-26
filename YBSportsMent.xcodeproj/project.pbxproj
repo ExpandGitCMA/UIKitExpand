@@ -16,6 +16,8 @@
 		039C71A723DDB42D0046CB3F /* YBSUIPrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039C71A323DDB42C0046CB3F /* YBSUIPrivacyView.xib */; };
 		039C71A823DDB42D0046CB3F /* YBSUIPrivacyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C71A423DDB42D0046CB3F /* YBSUIPrivacyView.m */; };
 		039C71A923DDB42D0046CB3F /* YBSYBSportsAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C71A623DDB42D0046CB3F /* YBSYBSportsAlert.m */; };
+		039C71AD23DDBD430046CB3F /* YBSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C71AB23DDBD430046CB3F /* YBSHomeViewController.m */; };
+		039C71AE23DDBD430046CB3F /* YBSHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039C71AC23DDBD430046CB3F /* YBSHomeViewController.xib */; };
 		B1EBE7679DF987494E973CC6 /* libPods-YBSportsMent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E14825F263C503581E0F14A /* libPods-YBSportsMent.a */; };
 		B30060A51CBB8E8D0040BF99 /* YBSStage08PeopleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30060A41CBB8E8D0040BF99 /* YBSStage08PeopleView.m */; };
 		B30060A71CBB8F340040BF99 /* YBSStage08PeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30060A61CBB8F340040BF99 /* YBSStage08PeopleView.xib */; };
@@ -204,6 +206,9 @@
 		039C71A423DDB42D0046CB3F /* YBSUIPrivacyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSUIPrivacyView.m; sourceTree = "<group>"; };
 		039C71A523DDB42D0046CB3F /* YBSYBSportsAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSYBSportsAlert.h; sourceTree = "<group>"; };
 		039C71A623DDB42D0046CB3F /* YBSYBSportsAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSYBSportsAlert.m; sourceTree = "<group>"; };
+		039C71AA23DDBD430046CB3F /* YBSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBSHomeViewController.h; sourceTree = "<group>"; };
+		039C71AB23DDBD430046CB3F /* YBSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBSHomeViewController.m; sourceTree = "<group>"; };
+		039C71AC23DDBD430046CB3F /* YBSHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YBSHomeViewController.xib; sourceTree = "<group>"; };
 		08DC16FCDB3182C91FE883AB /* Pods-YBSportsMent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBSportsMent.debug.xcconfig"; path = "Target Support Files/Pods-YBSportsMent/Pods-YBSportsMent.debug.xcconfig"; sourceTree = "<group>"; };
 		4E14825F263C503581E0F14A /* libPods-YBSportsMent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YBSportsMent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A9ED0BD0861BCF083FB449 /* Pods-YBSportsMent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBSportsMent.release.xcconfig"; path = "Target Support Files/Pods-YBSportsMent/Pods-YBSportsMent.release.xcconfig"; sourceTree = "<group>"; };
@@ -922,6 +927,9 @@
 				B3E561931C7C6F650081C720 /* YBSLaunchAnimationViewController.h */,
 				B3E561941C7C6F650081C720 /* YBSLaunchAnimationViewController.m */,
 				B3E561951C7C6F650081C720 /* YBSLaunchAnimationViewController.xib */,
+				039C71AA23DDBD430046CB3F /* YBSHomeViewController.h */,
+				039C71AB23DDBD430046CB3F /* YBSHomeViewController.m */,
+				039C71AC23DDBD430046CB3F /* YBSHomeViewController.xib */,
 			);
 			name = RootViewController;
 			path = ../RootViewController;
@@ -1376,6 +1384,7 @@
 				B3650EE31C856AC600FC2D4E /* YBSStageView.xib in Resources */,
 				B3F5327F1CF83A9F005F537D /* YBSBusView.xib in Resources */,
 				B39AE1931CB91536007F7554 /* YBSBreakGlassView.xib in Resources */,
+				039C71AE23DDBD430046CB3F /* YBSHomeViewController.xib in Resources */,
 				FAEE91911C95437A0093FBC0 /* YBSPauseViewController.xib in Resources */,
 				B331F6301CEB362F008DE83A /* YBSPokerView.xib in Resources */,
 				B331F6351CEC052D008DE83A /* YBSStage18PokerView.xib in Resources */,
@@ -1485,6 +1494,7 @@
 				B30A2E6C1CB3CF5E00A3DA68 /* YBSStage06ViewController.m in Sources */,
 				B3EF93CE1C90345E006C3E42 /* YBSFeatherView.m in Sources */,
 				B30886171C895B6500AE83B2 /* YBSFootView.m in Sources */,
+				039C71AD23DDBD430046CB3F /* YBSHomeViewController.m in Sources */,
 				B331F61B1CE9A3F4008DE83A /* YBSNoseView.m in Sources */,
 				B331F6261CE9C8CF008DE83A /* YBSPowerView.m in Sources */,
 				FAD0DAD31CE858EC002E0E09 /* YBSStage16ViewController.m in Sources */,

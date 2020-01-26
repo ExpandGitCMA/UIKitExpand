@@ -2,14 +2,13 @@
 #import "YBSAppDelegate.h"
 #import "YBSBaseNavigationController.h"
 #import "YBSLaunchAnimationViewController.h"
-
+#import "YBSHomeViewController.h"
 @implementation YBSAppJumpConterl
 
 
 +(void)jumpBaserConterl{
     
      __weak typeof(self) weakSelf = self;
-    
     YBSLaunchAnimationViewController *launchAnimationVC = [[YBSLaunchAnimationViewController alloc] init];
     [[self class] toHomeViewConterl:launchAnimationVC];
     launchAnimationVC.animationFinish = ^{
@@ -22,6 +21,7 @@
 +(void)EnteryBaseConterl{
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
        YBSBaseNavigationController *tabBar = (YBSBaseNavigationController *)[sb instantiateViewControllerWithIdentifier:@"RootNavigationController"];
+//    YBSHomeViewController *tabBar  =[YBSHomeViewController new];
     [[self class] toHomeViewConterl:tabBar];
 }
 

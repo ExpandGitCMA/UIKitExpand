@@ -132,10 +132,69 @@
                         <viewControllerLayoutGuide type="top" id="CpY-0J-Z3o"/>
                         <viewControllerLayoutGuide type="bottom" id="8Zf-mV-LBT"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HBo-Tw-Z3J" customClass="YBSFullBackgroundView">
+                    <view key="view" contentMode="scaleToFill" id="HBo-Tw-Z3J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pause_bg" translatesAutoresizingMaskIntoConstraints="NO" id="irG-1S-FOq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiV-Fb-Huv">
+                                <rect key="frame" x="292.5" y="746" width="61" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="4h7-aP-WaA"/>
+                                    <constraint firstAttribute="height" constant="75" id="5h6-De-a8z"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="bt_setting"/>
+                                <connections>
+                                    <action selector="set:" destination="v4j-O1-j6A" eventType="touchUpInside" id="rL1-IP-ubL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBV-dL-6ow">
+                                <rect key="frame" x="60.5" y="746" width="61" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="4Ru-Uy-cuq"/>
+                                    <constraint firstAttribute="width" constant="61" id="901-Iq-M9T"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="bt_home"/>
+                                <connections>
+                                    <action selector="home:" destination="v4j-O1-j6A" eventType="touchUpInside" id="i5H-bJ-ejG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPU-W4-Ab3">
+                                <rect key="frame" x="176.5" y="746" width="61" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="i8Z-a9-TXx"/>
+                                    <constraint firstAttribute="height" constant="75" id="yPi-4Q-SvG"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="bt_resume"/>
+                                <connections>
+                                    <action selector="play:" destination="v4j-O1-j6A" eventType="touchUpInside" id="JhT-v0-sW1"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ivnESZurqwp" translatesAutoresizingMaskIntoConstraints="NO" id="5GR-2E-YEf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="661.00000000000011"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="661" id="xgM-qK-6Y6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bPU-W4-Ab3" firstAttribute="centerX" secondItem="irG-1S-FOq" secondAttribute="centerX" id="4GK-hb-vg5"/>
+                            <constraint firstItem="5GR-2E-YEf" firstAttribute="leading" secondItem="HBo-Tw-Z3J" secondAttribute="leading" id="Akx-rI-8Em"/>
+                            <constraint firstItem="bPU-W4-Ab3" firstAttribute="leading" secondItem="mBV-dL-6ow" secondAttribute="trailing" constant="55" id="DRU-Ec-C1V"/>
+                            <constraint firstItem="8Zf-mV-LBT" firstAttribute="top" secondItem="XiV-Fb-Huv" secondAttribute="bottom" constant="41" id="EHk-1x-ajv"/>
+                            <constraint firstAttribute="trailing" secondItem="irG-1S-FOq" secondAttribute="trailing" id="IAd-kP-CWG"/>
+                            <constraint firstItem="irG-1S-FOq" firstAttribute="leading" secondItem="HBo-Tw-Z3J" secondAttribute="leading" id="Itl-yb-Hx5"/>
+                            <constraint firstItem="irG-1S-FOq" firstAttribute="top" secondItem="HBo-Tw-Z3J" secondAttribute="top" id="Mg9-6k-crR"/>
+                            <constraint firstAttribute="trailing" secondItem="5GR-2E-YEf" secondAttribute="trailing" id="R10-KV-yzH"/>
+                            <constraint firstItem="8Zf-mV-LBT" firstAttribute="top" secondItem="mBV-dL-6ow" secondAttribute="bottom" constant="41" id="RBh-oV-XFz"/>
+                            <constraint firstItem="5GR-2E-YEf" firstAttribute="top" secondItem="HBo-Tw-Z3J" secondAttribute="top" id="Tg1-Xn-1fX"/>
+                            <constraint firstAttribute="bottom" secondItem="irG-1S-FOq" secondAttribute="bottom" id="Wzx-Mt-qZA"/>
+                            <constraint firstItem="8Zf-mV-LBT" firstAttribute="top" secondItem="bPU-W4-Ab3" secondAttribute="bottom" constant="41" id="xT6-ee-P1z"/>
+                            <constraint firstItem="XiV-Fb-Huv" firstAttribute="leading" secondItem="bPU-W4-Ab3" secondAttribute="trailing" constant="55" id="zR6-aB-ojS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QtK-Fa-bTY"/>
                     <connections>
@@ -146,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIW-pc-aUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1633" y="617"/>
+            <point key="canvasLocation" x="-1633.3333333333335" y="616.74107142857144"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="zMO-kZ-41A">
@@ -515,6 +574,11 @@
     <resources>
         <image name="bt_blue-iphone4" width="468" height="120"/>
         <image name="bt_green" width="468" height="119"/>
+        <image name="bt_home" width="137" height="168"/>
+        <image name="bt_resume" width="136" height="168"/>
+        <image name="bt_setting" width="136" height="170"/>
+        <image name="ivnESZurqwp" width="640" height="748"/>
+        <image name="pause_bg" width="640" height="1136"/>
         <image name="ready_btplay" width="124" height="115"/>
         <image name="ready_intro" width="618" height="706"/>
         <image name="ready_loading" width="445" height="66"/>

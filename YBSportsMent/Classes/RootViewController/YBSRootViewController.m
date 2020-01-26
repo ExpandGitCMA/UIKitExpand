@@ -13,7 +13,7 @@
 @implementation YBSRootViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundImageWihtImageName:@"home_bg.jpg"];
+//    [self.view setBackgroundImageWihtImageName:@"home_bg.jpg"];
 //    [self loadHomeButtonFrame];
 }
 - (void)viewDidAppear:(BOOL)animated {
@@ -22,6 +22,15 @@
 //        [[WNXSoundToolManager sharedSoundToolManager] playBgMusicWihtPlayAgain:YES];
 //    }
 //    _isNotFristLoad = YES;
+}
+- (IBAction)home:(UIButton *)sender {
+     [self performSegueWithIdentifier:@"Rare" sender:nil];
+}
+- (IBAction)play:(UIButton *)sender {
+       [self performSegueWithIdentifier:@"PlayGame" sender:nil];
+}
+- (IBAction)set:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"Setting" sender:nil];
 }
 
 - (void)loadHomeButtonFrame {
@@ -43,7 +52,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
     CGPoint touchPoint = [touch locationInView:touch.view];
-     [self performSegueWithIdentifier:@"PlayGame" sender:nil];
+  
 //    [self performSegueWithIdentifier:@"Setting" sender:nil];
 //  [self performSegueWithIdentifier:@"Rare" sender:nil];
     

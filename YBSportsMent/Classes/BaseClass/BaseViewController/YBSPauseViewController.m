@@ -17,6 +17,7 @@
 @implementation YBSPauseViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //设置
     [self.view setBackgroundImageWihtImageName:@"pause_bg"];
     if (!iPhone5) {
         self.adImageTop.constant = 80;
