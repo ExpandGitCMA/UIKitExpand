@@ -10,7 +10,8 @@
 		039C717623DD8F210046CB3F /* UIColor+YBSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717023DD8F210046CB3F /* UIColor+YBSColor.m */; };
 		039C717723DD8F210046CB3F /* UIView+YBSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717123DD8F210046CB3F /* UIView+YBSImage.m */; };
 		039C717823DD8F210046CB3F /* UIApplication+YBSLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717223DD8F210046CB3F /* UIApplication+YBSLoad.m */; };
-		039C718423DD97600046CB3F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C718323DD97600046CB3F /* Launch Screen.storyboard */; };
+		039C719823DDA0720046CB3F /* YBSAppJumpConterl.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C719723DDA0720046CB3F /* YBSAppJumpConterl.m */; };
+		039C719A23DDA1B10046CB3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C719923DDA1B10046CB3F /* LaunchScreen.storyboard */; };
 		B30060A51CBB8E8D0040BF99 /* YBSStage08PeopleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30060A41CBB8E8D0040BF99 /* YBSStage08PeopleView.m */; };
 		B30060A71CBB8F340040BF99 /* YBSStage08PeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30060A61CBB8F340040BF99 /* YBSStage08PeopleView.xib */; };
 		B30496B31CB7C12500EB8AC4 /* YBSStage07ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B30496B21CB7C12500EB8AC4 /* YBSStage07ViewController.m */; };
@@ -185,7 +186,9 @@
 		039C717323DD8F210046CB3F /* UIApplication+YBSLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YBSLoad.h"; sourceTree = "<group>"; };
 		039C717423DD8F210046CB3F /* UIColor+YBSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YBSColor.h"; sourceTree = "<group>"; };
 		039C717523DD8F210046CB3F /* UIView+YBSImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YBSImage.h"; sourceTree = "<group>"; };
-		039C718323DD97600046CB3F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		039C719623DDA0720046CB3F /* YBSAppJumpConterl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBSAppJumpConterl.h; sourceTree = "<group>"; };
+		039C719723DDA0720046CB3F /* YBSAppJumpConterl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBSAppJumpConterl.m; sourceTree = "<group>"; };
+		039C719923DDA1B10046CB3F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B30060A31CBB8E8D0040BF99 /* YBSStage08PeopleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSStage08PeopleView.h; sourceTree = "<group>"; };
 		B30060A41CBB8E8D0040BF99 /* YBSStage08PeopleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSStage08PeopleView.m; sourceTree = "<group>"; };
 		B30060A61CBB8F340040BF99 /* YBSStage08PeopleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBSStage08PeopleView.xib; sourceTree = "<group>"; };
@@ -568,9 +571,11 @@
 			children = (
 				B32C1E531C7C4DF600B2C577 /* YBSAppDelegate.h */,
 				B32C1E541C7C4DF600B2C577 /* YBSAppDelegate.m */,
+				039C719623DDA0720046CB3F /* YBSAppJumpConterl.h */,
+				039C719723DDA0720046CB3F /* YBSAppJumpConterl.m */,
 				B32C1E851C7C57A300B2C577 /* Classes */,
 				B32C1E591C7C4DF600B2C577 /* Main.storyboard */,
-				039C718323DD97600046CB3F /* Launch Screen.storyboard */,
+				039C719923DDA1B10046CB3F /* LaunchScreen.storyboard */,
 				B32C1E5C1C7C4DF600B2C577 /* Assets.xcassets */,
 				B32C1E501C7C4DF600B2C577 /* Supporting Files */,
 			);
@@ -1323,6 +1328,7 @@
 				B331F6281CE9C8DD008DE83A /* YBSPowerView.xib in Resources */,
 				B35E97F81CD218F8003AF56E /* Default.png in Resources */,
 				B3D148051C9FFFA300ABCBE4 /* YBSCountTimeView.xib in Resources */,
+				039C719A23DDA1B10046CB3F /* LaunchScreen.storyboard in Resources */,
 				B35E97F91CD218F8003AF56E /* Default@2x.png in Resources */,
 				B384CD2A1C7EE9C4008AFA9E /* bg_music.mp3 in Resources */,
 				B3F29D871CE18EE400049FA7 /* YBSStage14LineView.xib in Resources */,
@@ -1332,7 +1338,6 @@
 				B308860A1C8939D700AE83B2 /* Transformers Movie 变形金刚字体.ttf in Resources */,
 				B39910A41D0169BA00E107DD /* YBSCockroachView.xib in Resources */,
 				B384CD371C7F133A008AFA9E /* home.plist in Resources */,
-				039C718423DD97600046CB3F /* Launch Screen.storyboard in Resources */,
 				B31F64031CA1653200997243 /* YBSFailView.xib in Resources */,
 				B3F5321B1CF2E308005F537D /* YBSDiceView.xib in Resources */,
 				FA48C6521CBA94BC004B326C /* YBSStage07ErrorView.xib in Resources */,
@@ -1407,6 +1412,7 @@
 				B3650EE11C856AC600FC2D4E /* YBSStageListView.m in Sources */,
 				B34D8B3A1CBD1E820076A97D /* YBSBobmView.m in Sources */,
 				B3650EE91C856BBE00FC2D4E /* YBSPrepareScoreView.m in Sources */,
+				039C719823DDA0720046CB3F /* YBSAppJumpConterl.m in Sources */,
 				B3A6213E1CEDAC9400643415 /* YBSStage19FishView.m in Sources */,
 				B3F532771CF81D46005F537D /* YBSStage23ViewController.m in Sources */,
 				B3CB25141CD87C8E003B801A /* YBSDropEggView.m in Sources */,
