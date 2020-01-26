@@ -31,7 +31,7 @@ typedef void(^RetryButtonClickBlock)();
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"失败原因" message:self.stage.fail delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
         [alertView show];
     } else if (sender.tag == 12) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kAuthorGithubURLString]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.davechambers.co.uk "]];
     } else if (sender.tag == 13) {
         if (self.retryButtonClickBlock) {
             self.retryButtonClickBlock();

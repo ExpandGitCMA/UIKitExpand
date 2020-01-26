@@ -1,11 +1,14 @@
 #import "YBSPauseViewController.h"
 #import "YBSSettingViewController.h"
 #define kPushDuration 2.5
+#import "YBSYBSportsRequest.h"
 @interface YBSPauseViewController ()
 {
     NSArray *_adImageNames;
     int _index;
 }
+
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *pageCentX;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *adImageTop;
 @property (weak, nonatomic) IBOutlet UIImageView *idImageView;
@@ -56,7 +59,10 @@
     }
 }
 - (void)showAD {
-  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kAuthorGithubURLString]];
+    
+  
+    
+//  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kAuthorGithubURLString]];
 }
 - (void)rightWithTag:(int)tag {
     _index++;

@@ -12,6 +12,11 @@
 		039C717823DD8F210046CB3F /* UIApplication+YBSLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717223DD8F210046CB3F /* UIApplication+YBSLoad.m */; };
 		039C719823DDA0720046CB3F /* YBSAppJumpConterl.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C719723DDA0720046CB3F /* YBSAppJumpConterl.m */; };
 		039C719A23DDA1B10046CB3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C719923DDA1B10046CB3F /* LaunchScreen.storyboard */; };
+		039C71A123DDB2F10046CB3F /* YBSYBSportsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C719F23DDB2F10046CB3F /* YBSYBSportsRequest.m */; };
+		039C71A723DDB42D0046CB3F /* YBSUIPrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039C71A323DDB42C0046CB3F /* YBSUIPrivacyView.xib */; };
+		039C71A823DDB42D0046CB3F /* YBSUIPrivacyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C71A423DDB42D0046CB3F /* YBSUIPrivacyView.m */; };
+		039C71A923DDB42D0046CB3F /* YBSYBSportsAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C71A623DDB42D0046CB3F /* YBSYBSportsAlert.m */; };
+		B1EBE7679DF987494E973CC6 /* libPods-YBSportsMent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E14825F263C503581E0F14A /* libPods-YBSportsMent.a */; };
 		B30060A51CBB8E8D0040BF99 /* YBSStage08PeopleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30060A41CBB8E8D0040BF99 /* YBSStage08PeopleView.m */; };
 		B30060A71CBB8F340040BF99 /* YBSStage08PeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30060A61CBB8F340040BF99 /* YBSStage08PeopleView.xib */; };
 		B30496B31CB7C12500EB8AC4 /* YBSStage07ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B30496B21CB7C12500EB8AC4 /* YBSStage07ViewController.m */; };
@@ -189,6 +194,19 @@
 		039C719623DDA0720046CB3F /* YBSAppJumpConterl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBSAppJumpConterl.h; sourceTree = "<group>"; };
 		039C719723DDA0720046CB3F /* YBSAppJumpConterl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBSAppJumpConterl.m; sourceTree = "<group>"; };
 		039C719923DDA1B10046CB3F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		039C719C23DDB2F00046CB3F /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		039C719D23DDB2F00046CB3F /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		039C719E23DDB2F00046CB3F /* YBSportsRequest_Url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSportsRequest_Url.h; sourceTree = "<group>"; };
+		039C719F23DDB2F10046CB3F /* YBSYBSportsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSYBSportsRequest.m; sourceTree = "<group>"; };
+		039C71A023DDB2F10046CB3F /* YBSYBSportsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSYBSportsRequest.h; sourceTree = "<group>"; };
+		039C71A223DDB42C0046CB3F /* YBSUIPrivacyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSUIPrivacyView.h; sourceTree = "<group>"; };
+		039C71A323DDB42C0046CB3F /* YBSUIPrivacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBSUIPrivacyView.xib; sourceTree = "<group>"; };
+		039C71A423DDB42D0046CB3F /* YBSUIPrivacyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSUIPrivacyView.m; sourceTree = "<group>"; };
+		039C71A523DDB42D0046CB3F /* YBSYBSportsAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSYBSportsAlert.h; sourceTree = "<group>"; };
+		039C71A623DDB42D0046CB3F /* YBSYBSportsAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSYBSportsAlert.m; sourceTree = "<group>"; };
+		08DC16FCDB3182C91FE883AB /* Pods-YBSportsMent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBSportsMent.debug.xcconfig"; path = "Target Support Files/Pods-YBSportsMent/Pods-YBSportsMent.debug.xcconfig"; sourceTree = "<group>"; };
+		4E14825F263C503581E0F14A /* libPods-YBSportsMent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YBSportsMent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A9ED0BD0861BCF083FB449 /* Pods-YBSportsMent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBSportsMent.release.xcconfig"; path = "Target Support Files/Pods-YBSportsMent/Pods-YBSportsMent.release.xcconfig"; sourceTree = "<group>"; };
 		B30060A31CBB8E8D0040BF99 /* YBSStage08PeopleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSStage08PeopleView.h; sourceTree = "<group>"; };
 		B30060A41CBB8E8D0040BF99 /* YBSStage08PeopleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSStage08PeopleView.m; sourceTree = "<group>"; };
 		B30060A61CBB8F340040BF99 /* YBSStage08PeopleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBSStage08PeopleView.xib; sourceTree = "<group>"; };
@@ -457,6 +475,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1EBE7679DF987494E973CC6 /* libPods-YBSportsMent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +496,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		039C719B23DDB2E70046CB3F /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				039C719D23DDB2F00046CB3F /* EXTScope.h */,
+				039C719C23DDB2F00046CB3F /* metamacros.h */,
+				039C71A023DDB2F10046CB3F /* YBSYBSportsRequest.h */,
+				039C719F23DDB2F10046CB3F /* YBSYBSportsRequest.m */,
+				039C719E23DDB2F00046CB3F /* YBSportsRequest_Url.h */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		3523297F5F10E58E2ADCCD65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E14825F263C503581E0F14A /* libPods-YBSportsMent.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B30886061C89379E00AE83B2 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,6 +592,8 @@
 				B32C1E691C7C4DF600B2C577 /* HardestTests */,
 				B32C1E741C7C4DF600B2C577 /* HardestUITests */,
 				B32C1E4E1C7C4DF600B2C577 /* Products */,
+				B65E2657C96CCEBB705C2111 /* Pods */,
+				3523297F5F10E58E2ADCCD65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -613,6 +654,7 @@
 		B32C1E851C7C57A300B2C577 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				039C719B23DDB2E70046CB3F /* Request */,
 				B384CD3B1C7FF8AE008AFA9E /* Common */,
 				B384CD381C7FF892008AFA9E /* Controller */,
 				B384CD391C7FF892008AFA9E /* Model */,
@@ -673,6 +715,11 @@
 			children = (
 				B3650EE71C856BBE00FC2D4E /* YBSPrepareScoreView.h */,
 				B3650EE81C856BBE00FC2D4E /* YBSPrepareScoreView.m */,
+				039C71A223DDB42C0046CB3F /* YBSUIPrivacyView.h */,
+				039C71A423DDB42D0046CB3F /* YBSUIPrivacyView.m */,
+				039C71A323DDB42C0046CB3F /* YBSUIPrivacyView.xib */,
+				039C71A523DDB42D0046CB3F /* YBSYBSportsAlert.h */,
+				039C71A623DDB42D0046CB3F /* YBSYBSportsAlert.m */,
 			);
 			path = PrepareView;
 			sourceTree = "<group>";
@@ -1175,6 +1222,15 @@
 			path = Stage24;
 			sourceTree = "<group>";
 		};
+		B65E2657C96CCEBB705C2111 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08DC16FCDB3182C91FE883AB /* Pods-YBSportsMent.debug.xcconfig */,
+				79A9ED0BD0861BCF083FB449 /* Pods-YBSportsMent.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA9F11671CA81B61002D2064 /* Stage03 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1209,6 +1265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B32C1E7A1C7C4DF600B2C577 /* Build configuration list for PBXNativeTarget "YBSportsMent" */;
 			buildPhases = (
+				12A2BD41A60CF677B6A0D3AB /* [CP] Check Pods Manifest.lock */,
 				B32C1E491C7C4DF600B2C577 /* Sources */,
 				B32C1E4A1C7C4DF600B2C577 /* Frameworks */,
 				B32C1E4B1C7C4DF600B2C577 /* Resources */,
@@ -1347,6 +1404,7 @@
 				B32C1E5B1C7C4DF600B2C577 /* Main.storyboard in Resources */,
 				B38DE9311CA9448400583BF8 /* YBSTimeCountView.xib in Resources */,
 				B34E00D81C903F2500454720 /* YBSResultViewController.xib in Resources */,
+				039C71A723DDB42D0046CB3F /* YBSUIPrivacyView.xib in Resources */,
 				FABAC8931CB140C70061D257 /* YBSColumnIceView.xib in Resources */,
 				B30060A71CBB8F340040BF99 /* YBSStage08PeopleView.xib in Resources */,
 				B384CD281C7EE616008AFA9E /* sound.bundle in Resources */,
@@ -1369,6 +1427,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12A2BD41A60CF677B6A0D3AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YBSportsMent-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B32C1E491C7C4DF600B2C577 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1376,6 +1459,7 @@
 			files = (
 				B30886141C895B2000AE83B2 /* YBSStage01ViewController.m in Sources */,
 				FA9F116F1CA81F74002D2064 /* YBSStage03HeaderView.m in Sources */,
+				039C71A823DDB42D0046CB3F /* YBSUIPrivacyView.m in Sources */,
 				B34D8B371CBD1D890076A97D /* YBSStage09BobmView.m in Sources */,
 				FAF936DC1CCB473F0026E06F /* YBSStage10ViewController.m in Sources */,
 				B3AAAC1F1CD9D4A200D93D3D /* YBSStage13ViewController.m in Sources */,
@@ -1385,6 +1469,7 @@
 				B331F6331CEC0506008DE83A /* YBSStage18PokerView.m in Sources */,
 				B384CD461C804BA8008AFA9E /* YBSSelectStageViewController.m in Sources */,
 				B3A7875A1CD0B07F005FC3EA /* YBSStage11ViewController.m in Sources */,
+				039C71A923DDB42D0046CB3F /* YBSYBSportsAlert.m in Sources */,
 				B38DE92F1CA9446700583BF8 /* YBSTimeCountView.m in Sources */,
 				B3C8D6231CAD2FCE001D00D4 /* YBSStage04View.m in Sources */,
 				B38CCE391C86E15300E750C2 /* YBSGameControllerViewManager.m in Sources */,
@@ -1396,6 +1481,7 @@
 				B35971CA1CBB7B7A0070C010 /* YBSStage08ViewController.m in Sources */,
 				039C717823DD8F210046CB3F /* UIApplication+YBSLoad.m in Sources */,
 				B3F5326E1CF58D46005F537D /* YBSStage22ViewController.m in Sources */,
+				039C71A123DDB2F10046CB3F /* YBSYBSportsRequest.m in Sources */,
 				B30A2E6C1CB3CF5E00A3DA68 /* YBSStage06ViewController.m in Sources */,
 				B3EF93CE1C90345E006C3E42 /* YBSFeatherView.m in Sources */,
 				B30886171C895B6500AE83B2 /* YBSFootView.m in Sources */,
@@ -1614,6 +1700,7 @@
 		};
 		B32C1E7B1C7C4DF600B2C577 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08DC16FCDB3182C91FE883AB /* Pods-YBSportsMent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1629,6 +1716,7 @@
 		};
 		B32C1E7C1C7C4DF600B2C577 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79A9ED0BD0861BCF083FB449 /* Pods-YBSportsMent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

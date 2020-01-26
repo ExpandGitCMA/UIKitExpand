@@ -1,0 +1,4 @@
+target 'YBSportsMent' do
+  pod 'AFNetworking'
+  pod 'AppBaseCategory'
+end
