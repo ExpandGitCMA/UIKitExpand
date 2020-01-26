@@ -22,7 +22,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Yg-aD-CUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-591" y="522"/>
+            <point key="canvasLocation" x="-4525" y="567"/>
         </scene>
         <!--Rare View Controller-->
         <scene sceneID="oK4-fE-WwJ">
@@ -146,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIW-pc-aUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-180" y="513"/>
+            <point key="canvasLocation" x="-1633" y="617"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="zMO-kZ-41A">
@@ -257,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMa-r2-ANW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="282" y="513"/>
+            <point key="canvasLocation" x="720" y="522"/>
         </scene>
         <!--Select Stage View Controller-->
         <scene sceneID="Y7R-kT-Eml">
@@ -509,7 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j50-As-zUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="395" y="1195"/>
+            <point key="canvasLocation" x="841" y="1200"/>
         </scene>
     </scenes>
     <resources>
