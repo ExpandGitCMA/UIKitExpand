@@ -164,13 +164,13 @@
 - (void)buildADView {
     self.adType = arc4random_uniform(3);
     self.adView = [[UIImageView alloc] initWithFrame:CGRectMake(kCountStartX(250), 0, 250, 50)];
-    if (self.adType == WNXADTypeBlog) {
-        self.adView.image = [UIImage imageNamed:@"ad1"];
-    } else if (self.adType == WNXADTypeWeiBo) {
-        self.adView.image = [UIImage imageNamed:@"ad3"];
-    } else {
-        self.adView.image = [UIImage imageNamed:@"ad2"];
-    }
+//    if (self.adType == WNXADTypeBlog) {
+//        self.adView.image = [UIImage imageNamed:@"ad1"];
+//    } else if (self.adType == WNXADTypeWeiBo) {
+//        self.adView.image = [UIImage imageNamed:@"ad3"];
+//    } else {
+//        self.adView.image = [UIImage imageNamed:@"ad2"];
+//    }
     self.adView.userInteractionEnabled = YES;
     [self.adView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(adViewClick)]];
     [self.view addSubview:self.adView];

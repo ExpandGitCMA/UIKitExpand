@@ -4,7 +4,7 @@
 @implementation YBSBackViewController
 - (void)loadView {
     [super loadView];
-    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 50, 48)];
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 20, 50, 48)];
     backButton.adjustsImageWhenHighlighted = NO;
     [backButton setBackgroundImage:[UIImage imageNamed:@"bt_back"] forState:UIControlStateNormal];
     [backButton addTarget:self action:@selector(backButtonClick) forControlEvents:UIControlEventTouchUpInside];

@@ -12,6 +12,7 @@
     [[self class] toHomeViewConterl:tabBar];
 }
 
+
 +(void)toHomeViewConterl:(UIViewController*)controller{
     YBSAppDelegate *appDelegate =  (YBSAppDelegate*)[[UIApplication sharedApplication] delegate];
     appDelegate.window.rootViewController = controller;
@@ -20,5 +21,6 @@
         [appDelegate.window makeKeyAndVisible];
     }
 }
+
 
 @end

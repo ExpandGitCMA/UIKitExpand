@@ -14,15 +14,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundImageWihtImageName:@"home_bg.jpg"];
-    [self loadHomeButtonFrame];
+//    [self loadHomeButtonFrame];
 }
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    if (!_isNotFristLoad) {
-        [[WNXSoundToolManager sharedSoundToolManager] playBgMusicWihtPlayAgain:YES];
-    }
-    _isNotFristLoad = YES;
+//    if (!_isNotFristLoad) {
+//        [[WNXSoundToolManager sharedSoundToolManager] playBgMusicWihtPlayAgain:YES];
+//    }
+//    _isNotFristLoad = YES;
 }
+
 - (void)loadHomeButtonFrame {
     NSString *framePath = [[NSBundle mainBundle] pathForResource:@"home.plist" ofType:nil];
     NSDictionary *frameDic = [NSDictionary dictionaryWithContentsOfFile:framePath];
@@ -42,19 +43,23 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
     CGPoint touchPoint = [touch locationInView:touch.view];
-    [[WNXSoundToolManager sharedSoundToolManager] playSoundWithSoundName: kSoundCliclName];
-    if (CGRectContainsPoint(_settingFrame, touchPoint)) {
-        [self performSegueWithIdentifier:@"Setting" sender:nil];
-    } else if (CGRectContainsPoint(_languageFrame, touchPoint)) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kBlogURL]];
-    } else if (CGRectContainsPoint(_moreFrame, touchPoint)) {
-        [self performSegueWithIdentifier:@"Rare" sender:nil];
-    } else if (CGRectContainsPoint(_rankFrame, touchPoint)) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kWeiBoURL]];
-    } else if (CGRectContainsPoint(_playFrame, touchPoint)) {
-        [self performSegueWithIdentifier:@"PlayGame" sender:nil];
-    } else if (CGRectContainsPoint(_getFrame, touchPoint)) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kGithubUrl]];
-    }
+     [self performSegueWithIdentifier:@"PlayGame" sender:nil];
+//    [self performSegueWithIdentifier:@"Setting" sender:nil];
+//  [self performSegueWithIdentifier:@"Rare" sender:nil];
+    
+//    [[WNXSoundToolManager sharedSoundToolManager] playSoundWithSoundName: kSoundCliclName];
+//    if (CGRectContainsPoint(_settingFrame, touchPoint)) {
+//        [self performSegueWithIdentifier:@"Setting" sender:nil];
+//    } else if (CGRectContainsPoint(_languageFrame, touchPoint)) {
+//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kBlogURL]];
+//    } else if (CGRectContainsPoint(_moreFrame, touchPoint)) {
+//        [self performSegueWithIdentifier:@"Rare" sender:nil];
+//    } else if (CGRectContainsPoint(_rankFrame, touchPoint)) {
+//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kWeiBoURL]];
+//    } else if (CGRectContainsPoint(_playFrame, touchPoint)) {
+//        [self performSegueWithIdentifier:@"PlayGame" sender:nil];
+//    } else if (CGRectContainsPoint(_getFrame, touchPoint)) {
+//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kGithubUrl]];
+//    }
 }
 @end

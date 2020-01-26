@@ -569,11 +569,11 @@
 		B32C1E4F1C7C4DF600B2C577 /* YBSportsMent */ = {
 			isa = PBXGroup;
 			children = (
+				B32C1E851C7C57A300B2C577 /* Classes */,
 				B32C1E531C7C4DF600B2C577 /* YBSAppDelegate.h */,
 				B32C1E541C7C4DF600B2C577 /* YBSAppDelegate.m */,
 				039C719623DDA0720046CB3F /* YBSAppJumpConterl.h */,
 				039C719723DDA0720046CB3F /* YBSAppJumpConterl.m */,
-				B32C1E851C7C57A300B2C577 /* Classes */,
 				B32C1E591C7C4DF600B2C577 /* Main.storyboard */,
 				039C719923DDA1B10046CB3F /* LaunchScreen.storyboard */,
 				B32C1E5C1C7C4DF600B2C577 /* Assets.xcassets */,

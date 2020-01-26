@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *topBombImageView2;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *smokeImageViews;
 @end
+
 @implementation YBSLaunchAnimationViewController
 - (void)viewDidLoad {
     [super viewDidLoad];

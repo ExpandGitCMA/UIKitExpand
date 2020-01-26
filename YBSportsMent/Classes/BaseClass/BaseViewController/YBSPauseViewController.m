@@ -56,22 +56,7 @@
     }
 }
 - (void)showAD {
-    switch (_index) {
-        case 0:
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kAuthorSineWeiBoUrlString]];
-            break;
-        case 1:
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kAuthorGithubURLString]];
-            break;
-        case 2:
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kAuthorBlogURLString]];
-            break;
-        case 3:
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kAuthorGithubURLString]];
-            break;
-        default:
-            break;
-    }
+  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kAuthorGithubURLString]];
 }
 - (void)rightWithTag:(int)tag {
     _index++;
