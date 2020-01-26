@@ -173,7 +173,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ivnESZurqwp" translatesAutoresizingMaskIntoConstraints="NO" id="5GR-2E-YEf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="661.00000000000011"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="661"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="661" id="xgM-qK-6Y6"/>
                                 </constraints>

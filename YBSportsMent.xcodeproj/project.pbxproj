@@ -1335,6 +1335,7 @@
 				TargetAttributes = {
 					B32C1E4C1C7C4DF600B2C577 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8DZ394K7X7;
 					};
 					B32C1E651C7C4DF600B2C577 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -1714,6 +1715,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8DZ394K7X7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = YBSportsMent/PrefixHeader.pch;
 				INFOPLIST_FILE = YBSportsMent/Info.plist;
@@ -1730,6 +1732,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8DZ394K7X7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = YBSportsMent/PrefixHeader.pch;
 				INFOPLIST_FILE = YBSportsMent/Info.plist;
