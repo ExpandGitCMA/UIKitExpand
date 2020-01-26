@@ -8,7 +8,7 @@
 @end
 @implementation YBSAppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+   // [[UIApplication sharedApplication] setStatusBarHidden:YES];
     [NSThread sleepForTimeInterval:1.0];
     [self setKeyWindow];
     return YES;
@@ -25,6 +25,7 @@
     self.window.rootViewController = launchAnimationVC;
     [self.window makeKeyAndVisible];
 }
+
 - (void)applicationWillResignActive:(UIApplication *)application {
 }
 - (void)applicationDidEnterBackground:(UIApplication *)application {

@@ -10,6 +10,7 @@
 		039C717623DD8F210046CB3F /* UIColor+YBSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717023DD8F210046CB3F /* UIColor+YBSColor.m */; };
 		039C717723DD8F210046CB3F /* UIView+YBSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717123DD8F210046CB3F /* UIView+YBSImage.m */; };
 		039C717823DD8F210046CB3F /* UIApplication+YBSLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717223DD8F210046CB3F /* UIApplication+YBSLoad.m */; };
+		039C718423DD97600046CB3F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C718323DD97600046CB3F /* Launch Screen.storyboard */; };
 		B30060A51CBB8E8D0040BF99 /* YBSStage08PeopleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B30060A41CBB8E8D0040BF99 /* YBSStage08PeopleView.m */; };
 		B30060A71CBB8F340040BF99 /* YBSStage08PeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30060A61CBB8F340040BF99 /* YBSStage08PeopleView.xib */; };
 		B30496B31CB7C12500EB8AC4 /* YBSStage07ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B30496B21CB7C12500EB8AC4 /* YBSStage07ViewController.m */; };
@@ -184,6 +185,7 @@
 		039C717323DD8F210046CB3F /* UIApplication+YBSLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YBSLoad.h"; sourceTree = "<group>"; };
 		039C717423DD8F210046CB3F /* UIColor+YBSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YBSColor.h"; sourceTree = "<group>"; };
 		039C717523DD8F210046CB3F /* UIView+YBSImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YBSImage.h"; sourceTree = "<group>"; };
+		039C718323DD97600046CB3F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B30060A31CBB8E8D0040BF99 /* YBSStage08PeopleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSStage08PeopleView.h; sourceTree = "<group>"; };
 		B30060A41CBB8E8D0040BF99 /* YBSStage08PeopleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSStage08PeopleView.m; sourceTree = "<group>"; };
 		B30060A61CBB8F340040BF99 /* YBSStage08PeopleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBSStage08PeopleView.xib; sourceTree = "<group>"; };
@@ -210,7 +212,7 @@
 		B31F63FF1CA1652000997243 /* YBSFailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSFailView.h; sourceTree = "<group>"; };
 		B31F64001CA1652000997243 /* YBSFailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSFailView.m; sourceTree = "<group>"; };
 		B31F64021CA1653200997243 /* YBSFailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBSFailView.xib; sourceTree = "<group>"; };
-		B32C1E4D1C7C4DF600B2C577 /* 亞博体育-运动.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "亞博体育-运动.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32C1E4D1C7C4DF600B2C577 /* 亞博体育-游戏.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "亞博体育-游戏.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32C1E511C7C4DF600B2C577 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B32C1E531C7C4DF600B2C577 /* YBSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBSAppDelegate.h; sourceTree = "<group>"; };
 		B32C1E541C7C4DF600B2C577 /* YBSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBSAppDelegate.m; sourceTree = "<group>"; };
@@ -554,7 +556,7 @@
 		B32C1E4E1C7C4DF600B2C577 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B32C1E4D1C7C4DF600B2C577 /* 亞博体育-运动.app */,
+				B32C1E4D1C7C4DF600B2C577 /* 亞博体育-游戏.app */,
 				B32C1E661C7C4DF600B2C577 /* HardestTests.xctest */,
 				B32C1E711C7C4DF600B2C577 /* HardestUITests.xctest */,
 			);
@@ -568,6 +570,7 @@
 				B32C1E541C7C4DF600B2C577 /* YBSAppDelegate.m */,
 				B32C1E851C7C57A300B2C577 /* Classes */,
 				B32C1E591C7C4DF600B2C577 /* Main.storyboard */,
+				039C718323DD97600046CB3F /* Launch Screen.storyboard */,
 				B32C1E5C1C7C4DF600B2C577 /* Assets.xcassets */,
 				B32C1E501C7C4DF600B2C577 /* Supporting Files */,
 			);
@@ -1211,7 +1214,7 @@
 			);
 			name = YBSportsMent;
 			productName = YBSportsMent;
-			productReference = B32C1E4D1C7C4DF600B2C577 /* 亞博体育-运动.app */;
+			productReference = B32C1E4D1C7C4DF600B2C577 /* 亞博体育-游戏.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B32C1E651C7C4DF600B2C577 /* HardestTests */ = {
@@ -1329,6 +1332,7 @@
 				B308860A1C8939D700AE83B2 /* Transformers Movie 变形金刚字体.ttf in Resources */,
 				B39910A41D0169BA00E107DD /* YBSCockroachView.xib in Resources */,
 				B384CD371C7F133A008AFA9E /* home.plist in Resources */,
+				039C718423DD97600046CB3F /* Launch Screen.storyboard in Resources */,
 				B31F64031CA1653200997243 /* YBSFailView.xib in Resources */,
 				B3F5321B1CF2E308005F537D /* YBSDiceView.xib in Resources */,
 				FA48C6521CBA94BC004B326C /* YBSStage07ErrorView.xib in Resources */,
@@ -1612,8 +1616,8 @@
 				INFOPLIST_FILE = YBSportsMent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = weinidexiaoxiong.Hardestkkk;
-				PRODUCT_NAME = "亞博体育-运动";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.YBSportsMent;
+				PRODUCT_NAME = "亞博体育-游戏";
 			};
 			name = Debug;
 		};
@@ -1627,8 +1631,8 @@
 				INFOPLIST_FILE = YBSportsMent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = weinidexiaoxiong.Hardestkkk;
-				PRODUCT_NAME = "亞博体育-运动";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.YBSportsMent;
+				PRODUCT_NAME = "亞博体育-游戏";
 			};
 			name = Release;
 		};

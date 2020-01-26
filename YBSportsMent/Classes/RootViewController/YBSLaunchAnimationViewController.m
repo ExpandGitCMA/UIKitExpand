@@ -23,12 +23,13 @@
     [super viewDidLoad];
     self.view.clipsToBounds = NO;
     if (!iPhone5) {
-        UIView *bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, 480, 320, ScreenHeightDifference)];
+        UIView *bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_WIDTH, SCREEN_HEIGHT, ScreenHeightDifference)];
         bottomView.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:bottomView];
     }
     self.handImageView.hidden = YES;
 }
+
 - (void)viewDidAppear:(BOOL)animated {
     if (!_isNotFristLoad && !iPhone5) {
         CGRect newFrame = self.view.frame;
