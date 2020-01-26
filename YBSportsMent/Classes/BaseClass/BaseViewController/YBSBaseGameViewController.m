@@ -33,13 +33,14 @@
     [self guideImageViewClick];
 }
 - (void)pauseGame {
-    __weak __typeof(self) weakSelf = self;
-    self.view.userInteractionEnabled = NO;
-    YBSPauseViewController *pauseVC = [[YBSPauseViewController alloc] init];
-    pauseVC.ContinueGameButtonClick = ^ {
-        [weakSelf continueGame];
-    };
-    [self.navigationController pushViewController:pauseVC animated:NO];
+//    __weak __typeof(self) weakSelf = self;
+//    self.view.userInteractionEnabled = NO;
+//    YBSPauseViewController *pauseVC = [[YBSPauseViewController alloc] init];
+//    pauseVC.ContinueGameButtonClick = ^ {
+//        [weakSelf continueGame];
+//    };
+    //[self.navigationController pushViewController:pauseVC animated:NO];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)buildStageInfo {}
 - (void)continueGame {

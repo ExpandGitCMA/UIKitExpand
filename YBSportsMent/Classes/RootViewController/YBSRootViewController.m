@@ -50,8 +50,8 @@
     _getFrame = CGRectFromString(dict[@"btn_get_frame"]);
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    UITouch *touch = [touches anyObject];
-    CGPoint touchPoint = [touch locationInView:touch.view];
+//    UITouch *touch = [touches anyObject];
+//    CGPoint touchPoint = [touch locationInView:touch.view];
   
 //    [self performSegueWithIdentifier:@"Setting" sender:nil];
 //  [self performSegueWithIdentifier:@"Rare" sender:nil];
