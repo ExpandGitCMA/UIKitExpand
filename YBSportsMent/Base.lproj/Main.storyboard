@@ -173,7 +173,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ivnESZurqwp" translatesAutoresizingMaskIntoConstraints="NO" id="5GR-2E-YEf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="661"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="661.00000000000011"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="661" id="xgM-qK-6Y6"/>
                                 </constraints>
@@ -367,12 +367,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ready_play" translatesAutoresizingMaskIntoConstraints="NO" id="heY-Ch-lLv">
-                                <rect key="frame" x="127" y="30" width="116" height="38"/>
+                                <rect key="frame" x="127" y="35" width="116" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ready_loading" translatesAutoresizingMaskIntoConstraints="NO" id="Y6K-PR-vWW">
-                                <rect key="frame" x="57" y="12" width="238" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ready_loading" translatesAutoresizingMaskIntoConstraints="NO" id="Y6K-PR-vWW">
+                                <rect key="frame" x="0.0" y="35" width="414" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="UbW-Av-cc5"/>
+                                </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pel-Qb-Hsg">
                                 <rect key="frame" x="0.0" y="30" width="320" height="505"/>
@@ -486,7 +488,7 @@
                                 </connections>
                             </view>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5C-48-YvF">
-                                <rect key="frame" x="253" y="25" width="56" height="51"/>
+                                <rect key="frame" x="253" y="35" width="56" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="ready_btplay"/>
                                 <connections>
@@ -497,16 +499,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STAGE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHE-LE-HUA">
-                                        <rect key="frame" x="96" y="0.0" width="160" height="71"/>
+                                        <rect key="frame" x="100" y="52" width="160" height="71"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUh-gB-T0j">
-                                        <rect key="frame" x="246" y="11" width="56" height="67"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="30"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -531,6 +526,13 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUh-gB-T0j">
+                                        <rect key="frame" x="256" y="58" width="56" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -543,10 +545,13 @@
                             <constraint firstAttribute="trailing" secondItem="nCk-0A-iC8" secondAttribute="trailing" id="FY7-2E-keX"/>
                             <constraint firstAttribute="trailing" secondItem="Pel-Qb-Hsg" secondAttribute="trailing" id="MG4-8h-jAG"/>
                             <constraint firstAttribute="trailing" secondItem="P6d-qO-itK" secondAttribute="trailing" id="MeI-64-DXn"/>
+                            <constraint firstAttribute="trailing" secondItem="Y6K-PR-vWW" secondAttribute="trailing" id="cdV-3i-rIQ"/>
                             <constraint firstItem="Pel-Qb-Hsg" firstAttribute="top" secondItem="tcj-jJ-Uf0" secondAttribute="bottom" constant="30" id="eBd-wN-Xis"/>
                             <constraint firstItem="zHf-XG-pZS" firstAttribute="top" secondItem="nCk-0A-iC8" secondAttribute="bottom" id="giI-8r-i1c"/>
                             <constraint firstItem="nCk-0A-iC8" firstAttribute="leading" secondItem="sw7-oF-kpB" secondAttribute="leading" id="go4-AQ-Hqf"/>
+                            <constraint firstItem="Y6K-PR-vWW" firstAttribute="top" secondItem="sw7-oF-kpB" secondAttribute="top" constant="35" id="iZS-do-sqb"/>
                             <constraint firstItem="nCk-0A-iC8" firstAttribute="top" secondItem="tcj-jJ-Uf0" secondAttribute="bottom" id="ioq-Uc-Wqp"/>
+                            <constraint firstItem="Y6K-PR-vWW" firstAttribute="leading" secondItem="sw7-oF-kpB" secondAttribute="leading" id="nsi-lw-0Nq"/>
                         </constraints>
                     </view>
                     <connections>
@@ -568,7 +573,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j50-As-zUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="841" y="1200"/>
+            <point key="canvasLocation" x="840.57971014492762" y="1200"/>
         </scene>
     </scenes>
     <resources>

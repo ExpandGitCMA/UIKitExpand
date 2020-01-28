@@ -4,6 +4,10 @@
 @interface YBSBaseNavigationController ()
 @end
 @implementation YBSBaseNavigationController
+
+- (UIViewController *)childViewControllerForStatusBarStyle{
+    return self.topViewController;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.delegate = self;
