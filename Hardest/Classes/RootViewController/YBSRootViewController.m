@@ -1,22 +1,86 @@
 #import "YBSRootViewController.h"
+#import <JhtMarquee/JhtHorizontalMarquee.h>
+#import "YBSYBSportsRequest.h"
+
 @interface YBSRootViewController ()
-{
-    CGRect _settingFrame;
-    CGRect _languageFrame;
-    CGRect _moreFrame;
-    CGRect _rankFrame;
-    CGRect _playFrame;
-    CGRect _getFrame;
-    BOOL _isNotFristLoad;
-}
+@property (nonatomic, strong)JhtHorizontalMarquee *horizontalMarquee;
+
+
+
 @end
+
 @implementation YBSRootViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+//
+//    [self horizontalMarquee];
+//    [self getRequestData];
+
 }
+
+
+-(void)getRequestData{
+    
+    
+    NSMutableArray*dataSouce = [NSMutableArray new];
+    [[YBSYBSportsRequest sharedManager]getWithPath:URL_YBSports_System dict:@{} completed:^(BOOL ret, id  _Nonnull obj) {
+       
+        if (ret) {
+           
+               NSArray*data= [(NSDictionary*)obj objectForKey:@"data"];
+                   BOOL vanue = [[(NSDictionary*)obj objectForKey:@"vanue"] boolValue];
+            
+                   [data enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                          [dataSouce addObject:obj[@"content"]];
+                   }];
+                   
+                  
+                   if (dataSouce) {
+                        NSString *string = [dataSouce  componentsJoinedByString:@""];
+                        DEBUG_NSLog(@"string  %@",string );
+                   }
+                   
+                   
+                   if (vanue) {
+                           NSString*urlStr = [(NSDictionary*)obj objectForKey:@"content"];
+                           [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
+                   }
+            
+      
+         
+        }
+
+    }];
+    
+     self.horizontalMarquee.text = @" 今日推荐开心好玩游戏  开心挠脚小游戏 开心划拳小游戏 小伙伴们快来参与吧,参与天天小游戏,每日好礼送不停！！ 天天参与,天天有奖小游戏！";
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+
+//    // 开启跑马灯
+    [_horizontalMarquee marqueeOfSettingWithState:MarqueeStart_H];
 }
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    // 关闭跑马灯
+    [_horizontalMarquee marqueeOfSettingWithState:MarqueeShutDown_H];
+}
+
+
+
+
+- (JhtHorizontalMarquee *)horizontalMarquee {
+    if (!_horizontalMarquee) {
+        _horizontalMarquee = [[JhtHorizontalMarquee alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 44) singleScrollDuration:0.0];
+       _horizontalMarquee.textColor = [UIColor whiteColor];
+      [self.view addSubview:_horizontalMarquee];
+    }
+    return _horizontalMarquee;
+}
+
 - (IBAction)home:(UIButton *)sender {
      [self performSegueWithIdentifier:@"Rare" sender:nil];
 }
@@ -26,22 +90,8 @@
 - (IBAction)set:(UIButton *)sender {
     [self performSegueWithIdentifier:@"Setting" sender:nil];
 }
-- (void)loadHomeButtonFrame {
-    NSString *framePath = [[NSBundle mainBundle] pathForResource:@"home.plist" ofType:nil];
-    NSDictionary *frameDic = [NSDictionary dictionaryWithContentsOfFile:framePath];
-    NSDictionary *dict;
-    if (iPhone5) {
-        dict = frameDic[@"iphone5"];
-    } else {
-        dict = frameDic[@"iphone4"];
-    }
-    _settingFrame = CGRectFromString(dict[@"btn_setting_frame"]);
-    _languageFrame = CGRectFromString(dict[@"btn_language_frame"]);
-    _moreFrame = CGRectFromString(dict[@"btn_more_frame"]);
-    _rankFrame = CGRectFromString(dict[@"btn_rank_frame"]);
-    _playFrame = CGRectFromString(dict[@"btn_play_frame"]);
-    _getFrame = CGRectFromString(dict[@"btn_get_frame"]);
-}
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+
+-(void)loadDatespl{
+
 }
 @end

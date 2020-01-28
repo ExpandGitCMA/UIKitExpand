@@ -4,7 +4,6 @@
 #import "YBSLaunchAnimationViewController.h"
 #import "YBSHomeViewController.h"
 #import "YBSYBSportsAlert.h"
-#import "YBSYBSportsRequest.h"
 @implementation YBSAppJumpConterl
 
 +(void)jumpBaserConterl{

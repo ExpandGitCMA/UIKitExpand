@@ -14,21 +14,21 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - AppBaseCategory (0.1.1)
+  - JhtMarquee (1.0.6)
 
 DEPENDENCIES:
   - AFNetworking
-  - AppBaseCategory
+  - JhtMarquee
 
 SPEC REPOS:
   trunk:
     - AFNetworking
-    - AppBaseCategory
+    - JhtMarquee
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  AppBaseCategory: 99631671a9148ba301351ef53009b76180f49948
+  JhtMarquee: 38eb0ceb3d515092e77a88b9005e2179c7cd1b2d
 
-PODFILE CHECKSUM: 08aedff1b40da2414067588dc2ad5ac8dc5d252d
+PODFILE CHECKSUM: 3f8533d35fa7b320451ed82b503faf19a5bc1004
 
 COCOAPODS: 1.8.4

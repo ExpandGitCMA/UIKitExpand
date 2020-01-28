@@ -1,4 +1,4 @@
 target 'Hardest' do
   pod 'AFNetworking'
-  pod 'AppBaseCategory'
+  pod 'JhtMarquee'
 end
