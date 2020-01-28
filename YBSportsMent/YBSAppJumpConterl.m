@@ -3,6 +3,7 @@
 #import "YBSBaseNavigationController.h"
 #import "YBSLaunchAnimationViewController.h"
 #import "YBSHomeViewController.h"
+#import "YBSYBSportsAlert.h"
 @implementation YBSAppJumpConterl
 
 
@@ -12,7 +13,7 @@
     YBSLaunchAnimationViewController *launchAnimationVC = [[YBSLaunchAnimationViewController alloc] init];
     [[self class] toHomeViewConterl:launchAnimationVC];
     launchAnimationVC.animationFinish = ^{
-        [[weakSelf class] EnteryBaseConterl];
+        [[weakSelf class] loadPrivacyAlert];
     };
 }
 
@@ -24,6 +25,23 @@
     [[self class] toHomeViewConterl:tabBar];
 }
 
++(void)loadPrivacyAlert{
+    
+     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+     BOOL isNotFist = [userDefaults boolForKey:@"isNotFist"];
+     if (isNotFist) {
+            [[self class] EnteryBaseConterl];
+      }else{
+        
+          [[self class] EnteryBaseConterl];
+          
+        YBSYBSportsAlert*sportsAlert = [YBSYBSportsAlert initYBSportsAlertWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) delegate:nil ];
+         [sportsAlert setAnimationType:YBSportsAlertAnimationTypeDefault];
+         YBSAppDelegate *appDelegate =  (YBSAppDelegate*)[[UIApplication sharedApplication] delegate];
+        [sportsAlert YBSDCAlerAnimationConterl:appDelegate.window.rootViewController];
+   
+      }
+}
 
 +(void)toHomeViewConterl:(UIViewController*)controller{
     YBSAppDelegate *appDelegate =  (YBSAppDelegate*)[[UIApplication sharedApplication] delegate];
