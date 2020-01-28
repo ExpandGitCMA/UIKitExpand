@@ -136,16 +136,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pause_bg" translatesAutoresizingMaskIntoConstraints="NO" id="irG-1S-FOq">
+                            <imageView clipsSubviews="YES" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="irG-1S-FOq">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiV-Fb-Huv">
+                            <button opaque="NO" tag="20" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiV-Fb-Huv">
                                 <rect key="frame" x="292.5" y="746" width="61" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="61" id="4h7-aP-WaA"/>
                                     <constraint firstAttribute="height" constant="75" id="5h6-De-a8z"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="bt_setting"/>
+                                <state key="normal" image="set_ios"/>
                                 <connections>
                                     <action selector="set:" destination="v4j-O1-j6A" eventType="touchUpInside" id="rL1-IP-ubL"/>
                                 </connections>
@@ -156,41 +156,32 @@
                                     <constraint firstAttribute="height" constant="75" id="4Ru-Uy-cuq"/>
                                     <constraint firstAttribute="width" constant="61" id="901-Iq-M9T"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="bt_home"/>
+                                <state key="normal" image="home_ios"/>
                                 <connections>
                                     <action selector="home:" destination="v4j-O1-j6A" eventType="touchUpInside" id="i5H-bJ-ejG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPU-W4-Ab3">
+                            <button opaque="NO" tag="20" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPU-W4-Ab3">
                                 <rect key="frame" x="176.5" y="746" width="61" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="61" id="i8Z-a9-TXx"/>
                                     <constraint firstAttribute="height" constant="75" id="yPi-4Q-SvG"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="bt_resume"/>
+                                <state key="normal" image="games_ios"/>
                                 <connections>
                                     <action selector="play:" destination="v4j-O1-j6A" eventType="touchUpInside" id="JhT-v0-sW1"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ivnESZurqwp" translatesAutoresizingMaskIntoConstraints="NO" id="5GR-2E-YEf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="661"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="661" id="xgM-qK-6Y6"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bPU-W4-Ab3" firstAttribute="centerX" secondItem="irG-1S-FOq" secondAttribute="centerX" id="4GK-hb-vg5"/>
-                            <constraint firstItem="5GR-2E-YEf" firstAttribute="leading" secondItem="HBo-Tw-Z3J" secondAttribute="leading" id="Akx-rI-8Em"/>
                             <constraint firstItem="bPU-W4-Ab3" firstAttribute="leading" secondItem="mBV-dL-6ow" secondAttribute="trailing" constant="55" id="DRU-Ec-C1V"/>
                             <constraint firstItem="8Zf-mV-LBT" firstAttribute="top" secondItem="XiV-Fb-Huv" secondAttribute="bottom" constant="41" id="EHk-1x-ajv"/>
                             <constraint firstAttribute="trailing" secondItem="irG-1S-FOq" secondAttribute="trailing" id="IAd-kP-CWG"/>
                             <constraint firstItem="irG-1S-FOq" firstAttribute="leading" secondItem="HBo-Tw-Z3J" secondAttribute="leading" id="Itl-yb-Hx5"/>
                             <constraint firstItem="irG-1S-FOq" firstAttribute="top" secondItem="HBo-Tw-Z3J" secondAttribute="top" id="Mg9-6k-crR"/>
-                            <constraint firstAttribute="trailing" secondItem="5GR-2E-YEf" secondAttribute="trailing" id="R10-KV-yzH"/>
                             <constraint firstItem="8Zf-mV-LBT" firstAttribute="top" secondItem="mBV-dL-6ow" secondAttribute="bottom" constant="41" id="RBh-oV-XFz"/>
-                            <constraint firstItem="5GR-2E-YEf" firstAttribute="top" secondItem="HBo-Tw-Z3J" secondAttribute="top" id="Tg1-Xn-1fX"/>
                             <constraint firstAttribute="bottom" secondItem="irG-1S-FOq" secondAttribute="bottom" id="Wzx-Mt-qZA"/>
                             <constraint firstItem="8Zf-mV-LBT" firstAttribute="top" secondItem="bPU-W4-Ab3" secondAttribute="bottom" constant="41" id="xT6-ee-P1z"/>
                             <constraint firstItem="XiV-Fb-Huv" firstAttribute="leading" secondItem="bPU-W4-Ab3" secondAttribute="trailing" constant="55" id="zR6-aB-ojS"/>
@@ -579,11 +570,9 @@
     <resources>
         <image name="bt_blue-iphone4" width="468" height="120"/>
         <image name="bt_green" width="468" height="119"/>
-        <image name="bt_home" width="137" height="168"/>
-        <image name="bt_resume" width="136" height="168"/>
-        <image name="bt_setting" width="136" height="170"/>
-        <image name="ivnESZurqwp" width="640" height="748"/>
-        <image name="pause_bg" width="640" height="1136"/>
+        <image name="games_ios" width="97" height="97"/>
+        <image name="home_ios" width="97" height="97"/>
+        <image name="photo" width="640" height="1136"/>
         <image name="ready_btplay" width="124" height="115"/>
         <image name="ready_intro" width="618" height="706"/>
         <image name="ready_loading" width="445" height="66"/>
@@ -592,5 +581,6 @@
         <image name="ready_score_arrow" width="78" height="221"/>
         <image name="select_image01" width="253" height="206"/>
         <image name="select_stage_normal" width="299" height="254"/>
+        <image name="set_ios" width="97" height="97"/>
     </resources>
 </document>

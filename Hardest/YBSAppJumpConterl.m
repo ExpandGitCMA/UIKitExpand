@@ -5,19 +5,22 @@
 #import "YBSHomeViewController.h"
 #import "YBSYBSportsAlert.h"
 @implementation YBSAppJumpConterl
+
 +(void)jumpBaserConterl{
      __weak typeof(self) weakSelf = self;
     YBSLaunchAnimationViewController *launchAnimationVC = [[YBSLaunchAnimationViewController alloc] init];
     [[self class] toHomeViewConterl:launchAnimationVC];
     launchAnimationVC.animationFinish = ^{
-        [[weakSelf class] loadPrivacyAlert];
+        [[weakSelf class] EnteryBaseConterl];
     };
 }
+
 +(void)EnteryBaseConterl{
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
        YBSBaseNavigationController *tabBar = (YBSBaseNavigationController *)[sb instantiateViewControllerWithIdentifier:@"RootNavigationController"];
     [[self class] toHomeViewConterl:tabBar];
 }
+
 +(void)loadPrivacyAlert{
      NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
      BOOL isNotFist = [userDefaults boolForKey:@"isNotFist"];
