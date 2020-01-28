@@ -8,6 +8,9 @@
 - (UIViewController *)childViewControllerForStatusBarStyle{
     return self.topViewController;
 }
+- (BOOL)prefersStatusBarHidden {
+    return [self.topViewController prefersStatusBarHidden];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.delegate = self;
