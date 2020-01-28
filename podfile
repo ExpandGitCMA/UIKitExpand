@@ -1,4 +1,4 @@
-target 'YBSportsMent' do
+target 'Hardest' do
   pod 'AFNetworking'
   pod 'AppBaseCategory'
 end
