@@ -21,7 +21,6 @@
 +(void)EnteryBaseConterl{
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
        YBSBaseNavigationController *tabBar = (YBSBaseNavigationController *)[sb instantiateViewControllerWithIdentifier:@"RootNavigationController"];
-//    YBSHomeViewController *tabBar  =[YBSHomeViewController new];
     [[self class] toHomeViewConterl:tabBar];
 }
 

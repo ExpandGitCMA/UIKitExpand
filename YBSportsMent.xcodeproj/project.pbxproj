@@ -238,7 +238,7 @@
 		B31F63FF1CA1652000997243 /* YBSFailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSFailView.h; sourceTree = "<group>"; };
 		B31F64001CA1652000997243 /* YBSFailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSFailView.m; sourceTree = "<group>"; };
 		B31F64021CA1653200997243 /* YBSFailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBSFailView.xib; sourceTree = "<group>"; };
-		B32C1E4D1C7C4DF600B2C577 /* 亞博体育-娱乐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "亞博体育-娱乐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32C1E4D1C7C4DF600B2C577 /* YB亞博體育-娱乐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YB亞博體育-娱乐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32C1E511C7C4DF600B2C577 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B32C1E531C7C4DF600B2C577 /* YBSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBSAppDelegate.h; sourceTree = "<group>"; };
 		B32C1E541C7C4DF600B2C577 /* YBSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBSAppDelegate.m; sourceTree = "<group>"; };
@@ -605,7 +605,7 @@
 		B32C1E4E1C7C4DF600B2C577 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B32C1E4D1C7C4DF600B2C577 /* 亞博体育-娱乐.app */,
+				B32C1E4D1C7C4DF600B2C577 /* YB亞博體育-娱乐.app */,
 				B32C1E661C7C4DF600B2C577 /* HardestTests.xctest */,
 				B32C1E711C7C4DF600B2C577 /* HardestUITests.xctest */,
 			);
@@ -1284,7 +1284,7 @@
 			);
 			name = YBSportsMent;
 			productName = YBSportsMent;
-			productReference = B32C1E4D1C7C4DF600B2C577 /* 亞博体育-娱乐.app */;
+			productReference = B32C1E4D1C7C4DF600B2C577 /* YB亞博體育-娱乐.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B32C1E651C7C4DF600B2C577 /* HardestTests */ = {
@@ -1722,7 +1722,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.YBSportsMent;
-				PRODUCT_NAME = "亞博体育-娱乐";
+				PRODUCT_NAME = "YB亞博體育-娱乐";
 			};
 			name = Debug;
 		};
@@ -1739,7 +1739,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.YBSportsMent;
-				PRODUCT_NAME = "亞博体育-娱乐";
+				PRODUCT_NAME = "YB亞博體育-娱乐";
 			};
 			name = Release;
 		};

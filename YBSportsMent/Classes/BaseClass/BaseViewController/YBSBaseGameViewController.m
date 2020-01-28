@@ -33,6 +33,7 @@
     [self guideImageViewClick];
 }
 - (void)pauseGame {
+    //返回
 //    __weak __typeof(self) weakSelf = self;
 //    self.view.userInteractionEnabled = NO;
 //    YBSPauseViewController *pauseVC = [[YBSPauseViewController alloc] init];
