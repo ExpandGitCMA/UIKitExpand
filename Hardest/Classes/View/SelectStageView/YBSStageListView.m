@@ -10,6 +10,7 @@
         self.showsVerticalScrollIndicator = NO;
         self.pagingEnabled = YES;
         self.delegate = self;
+        self.bounces  = NO;
         NSArray *bgNames = @[@"select_easy_bg", @"select_normal_bg", @"select_hard_bg", @"select_insane_bg"];
         for (int i = 0; i < 4; i++) {
             YBSFullBackgroundView *listView = [[YBSFullBackgroundView alloc] initWithFrame:CGRectMake(i * ScreenWidth, 0, ScreenWidth, ScreenHeight)];
