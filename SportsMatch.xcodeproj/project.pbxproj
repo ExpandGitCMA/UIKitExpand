@@ -19,6 +19,12 @@
 		031EBEF523D6C90400919BEF /* TestActiveTargetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEF423D6C90400919BEF /* TestActiveTargetController.m */; };
 		031EBEF823D6D0A200919BEF /* NSString+IMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEF723D6D0A200919BEF /* NSString+IMAdditions.m */; };
 		0375018D23E1B96700D041E5 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375018C23E1B96700D041E5 /* EmptyView.m */; };
+		0375019523E1D9DE00D041E5 /* ZeroSDCycleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019023E1D9DE00D041E5 /* ZeroSDCycleViewCell.m */; };
+		0375019623E1D9DE00D041E5 /* ZeroSDCSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019223E1D9DE00D041E5 /* ZeroSDCSafety.m */; };
+		0375019723E1D9DE00D041E5 /* ZeroSDCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019423E1D9DE00D041E5 /* ZeroSDCycleView.m */; };
+		0375019B23E1DCA000D041E5 /* NewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019923E1DCA000D041E5 /* NewModel.m */; };
+		0375019F23E1DCC800D041E5 /* NewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019D23E1DCC800D041E5 /* NewTableViewCell.m */; };
+		037501A023E1DCC800D041E5 /* NewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0375019E23E1DCC800D041E5 /* NewTableViewCell.xib */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F38701F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m */; };
 		B34688AD1F15FB8800498E66 /* AcceptPastPleasure.m in Sources */ = {isa = PBXBuildFile; fileRef = B34688AC1F15FB8800498E66 /* AcceptPastPleasure.m */; };
@@ -110,6 +116,17 @@
 		0375017C23E18FA700D041E5 /* AppRequest_Url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRequest_Url.h; sourceTree = "<group>"; };
 		0375018B23E1B96700D041E5 /* EmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
 		0375018C23E1B96700D041E5 /* EmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
+		0375018F23E1D9DD00D041E5 /* ZeroSDCSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroSDCSafety.h; sourceTree = "<group>"; };
+		0375019023E1D9DE00D041E5 /* ZeroSDCycleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroSDCycleViewCell.m; sourceTree = "<group>"; };
+		0375019123E1D9DE00D041E5 /* ZeroSDCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroSDCycleView.h; sourceTree = "<group>"; };
+		0375019223E1D9DE00D041E5 /* ZeroSDCSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroSDCSafety.m; sourceTree = "<group>"; };
+		0375019323E1D9DE00D041E5 /* ZeroSDCycleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroSDCycleViewCell.h; sourceTree = "<group>"; };
+		0375019423E1D9DE00D041E5 /* ZeroSDCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroSDCycleView.m; sourceTree = "<group>"; };
+		0375019923E1DCA000D041E5 /* NewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewModel.m; sourceTree = "<group>"; };
+		0375019A23E1DCA000D041E5 /* NewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewModel.h; sourceTree = "<group>"; };
+		0375019C23E1DCC700D041E5 /* NewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTableViewCell.h; sourceTree = "<group>"; };
+		0375019D23E1DCC800D041E5 /* NewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTableViewCell.m; sourceTree = "<group>"; };
+		0375019E23E1DCC800D041E5 /* NewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTableViewCell.xib; sourceTree = "<group>"; };
 		1557A88AC0C9420DBF348CAF /* Pods-SportsMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsMatch.release.xcconfig"; path = "Target Support Files/Pods-SportsMatch/Pods-SportsMatch.release.xcconfig"; sourceTree = "<group>"; };
 		2865E39BF27EDBE025A41994 /* libPods-SportsMatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SportsMatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC86418AF49E0D7082C20E8 /* Pods-SportsMatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsMatch.debug.xcconfig"; path = "Target Support Files/Pods-SportsMatch/Pods-SportsMatch.debug.xcconfig"; sourceTree = "<group>"; };
@@ -237,8 +254,6 @@
 				031EBEF423D6C90400919BEF /* TestActiveTargetController.m */,
 				031EBEE123D6C8C400919BEF /* SpeakBeggarAcademic.h */,
 				031EBEE223D6C8C400919BEF /* SpeakBeggarAcademic.m */,
-				031EBEEA23D6C8DC00919BEF /* FrustrateFamilyInefficientController.h */,
-				031EBEEC23D6C8DC00919BEF /* FrustrateFamilyInefficientController.m */,
 				031EBEE923D6C8DC00919BEF /* InvadeHollowCabbageController.h */,
 				031EBEE523D6C8DC00919BEF /* InvadeHollowCabbageController.m */,
 				031EBEED23D6C8DD00919BEF /* RespectiveButterflyController.h */,
@@ -247,6 +262,7 @@
 				031EBEE723D6C8DC00919BEF /* BestMannerController.m */,
 				031EBEE823D6C8DC00919BEF /* DisposeOverweightFakeController.h */,
 				031EBEEB23D6C8DC00919BEF /* DisposeOverweightFakeController.m */,
+				0375019823E1DC7100D041E5 /* HomeVC */,
 			);
 			path = "Base(主界面)";
 			sourceTree = "<group>";
@@ -258,6 +274,34 @@
 				0375018C23E1B96700D041E5 /* EmptyView.m */,
 			);
 			path = EmptyView;
+			sourceTree = "<group>";
+		};
+		0375018E23E1D9CF00D041E5 /* HomeBanner */ = {
+			isa = PBXGroup;
+			children = (
+				0375018F23E1D9DD00D041E5 /* ZeroSDCSafety.h */,
+				0375019223E1D9DE00D041E5 /* ZeroSDCSafety.m */,
+				0375019123E1D9DE00D041E5 /* ZeroSDCycleView.h */,
+				0375019423E1D9DE00D041E5 /* ZeroSDCycleView.m */,
+				0375019323E1D9DE00D041E5 /* ZeroSDCycleViewCell.h */,
+				0375019023E1D9DE00D041E5 /* ZeroSDCycleViewCell.m */,
+			);
+			path = HomeBanner;
+			sourceTree = "<group>";
+		};
+		0375019823E1DC7100D041E5 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				031EBEEA23D6C8DC00919BEF /* FrustrateFamilyInefficientController.h */,
+				031EBEEC23D6C8DC00919BEF /* FrustrateFamilyInefficientController.m */,
+				0375019A23E1DCA000D041E5 /* NewModel.h */,
+				0375019923E1DCA000D041E5 /* NewModel.m */,
+				0375019C23E1DCC700D041E5 /* NewTableViewCell.h */,
+				0375019D23E1DCC800D041E5 /* NewTableViewCell.m */,
+				0375019E23E1DCC800D041E5 /* NewTableViewCell.xib */,
+				0375018E23E1D9CF00D041E5 /* HomeBanner */,
+			);
+			path = HomeVC;
 			sourceTree = "<group>";
 		};
 		B30F386C1F15B5A7005B5CE6 /* AppDelegate */ = {
@@ -520,6 +564,7 @@
 				B3F4EFF81F14A8600005197E /* Frameworks */,
 				B3F4EFF91F14A8600005197E /* Resources */,
 				B71A9E0121F9EC24009648C0 /* Embed App Extensions */,
+				C9368D965351293393E78567 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -623,6 +668,7 @@
 			files = (
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
 				031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */,
+				037501A023E1DCC800D041E5 /* NewTableViewCell.xib in Resources */,
 				B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,6 +712,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C9368D965351293393E78567 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SportsMatch/Pods-SportsMatch-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SportsMatch/Pods-SportsMatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -676,26 +740,31 @@
 				D8C6CA691F42DC4500BE85ED /* ComeTillRoad.m in Sources */,
 				D8C6CA631F42DC4500BE85ED /* UIImage+ImageEffects.m in Sources */,
 				031EBEEF23D6C8DD00919BEF /* RespectiveButterflyController.m in Sources */,
+				0375019F23E1DCC800D041E5 /* NewTableViewCell.m in Sources */,
 				D8C6CA611F42DC4500BE85ED /* BendInformalProvince.m in Sources */,
 				031EBEF223D6C8DD00919BEF /* FrustrateFamilyInefficientController.m in Sources */,
 				031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				D8C6CA6C1F42DC4500BE85ED /* FlatterSlightRhythm.m in Sources */,
 				031EBEF523D6C90400919BEF /* TestActiveTargetController.m in Sources */,
+				0375019B23E1DCA000D041E5 /* NewModel.m in Sources */,
 				D8C6CA721F42DC4500BE85ED /* AffectRichExhibition.m in Sources */,
 				B34688AD1F15FB8800498E66 /* AcceptPastPleasure.m in Sources */,
 				D8C6CA6E1F42DC4500BE85ED /* AcademicFinding.m in Sources */,
 				D8C6CA6A1F42DC4500BE85ED /* VeryGlobalBiochemistry.m in Sources */,
 				D8C6CA831F42EE4D00BE85ED /* AlternativeSkull.m in Sources */,
 				031EBEF023D6C8DD00919BEF /* BestMannerController.m in Sources */,
+				0375019623E1D9DE00D041E5 /* ZeroSDCSafety.m in Sources */,
 				B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */,
 				D8C6CA661F42DC4500BE85ED /* EstimateAltitude.m in Sources */,
 				B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */,
 				D8C6CA781F42DF7C00BE85ED /* NearbyCrudeAlcohol.m in Sources */,
 				D8C6CA671F42DC4500BE85ED /* ExtendHatefulShift.m in Sources */,
 				D8C6CA6F1F42DC4500BE85ED /* PartialMaintenance.m in Sources */,
+				0375019523E1D9DE00D041E5 /* ZeroSDCycleViewCell.m in Sources */,
 				0375018D23E1B96700D041E5 /* EmptyView.m in Sources */,
 				D8C6CA711F42DC4500BE85ED /* WeaveAboutCheekboneManager.m in Sources */,
 				D8C6CA641F42DC4500BE85ED /* UIView+BlurredImage.m in Sources */,
+				0375019723E1D9DE00D041E5 /* ZeroSDCycleView.m in Sources */,
 				D8C6CA7C1F42E0AC00BE85ED /* ExpanFileConstants.m in Sources */,
 				031EBEEE23D6C8DD00919BEF /* InvadeHollowCabbageController.m in Sources */,
 				031EBEF823D6D0A200919BEF /* NSString+IMAdditions.m in Sources */,

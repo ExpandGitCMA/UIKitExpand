@@ -60,24 +60,26 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
     [parameters SafetySetObject:@"1.1.1" forKey:@"appVersion"];
     [parameters SafetySetObject:@"13" forKey:@"version"];
 }
-- (void)lendGate:(NSString *)path params:(NSMutableDictionary *)params completed:(HttpCompletedBlock)completed{
-    [self requestWithMetod:POST path:path params:params completed:completed];
-}
-- (void)trustDaytime:(NSString *)path params:(NSMutableDictionary *)params completed:(HttpCompletedBlock)completed{
+
+- (void)lendGate:(NSString *)path params:(NSDictionary *)params completed:(HttpCompletedBlock)completed{
     [self requestWithMetod:GET path:path params:params completed:completed];
+}
+- (void)trustDaytime:(NSString *)path params:(NSDictionary *)params completed:(HttpCompletedBlock)completed{
+    [self requestWithMetod:POST path:path params:params completed:completed];
 }
 - (void)requestWithMetod:(HTTPMethod)method path:(NSString *)path params:(NSDictionary *)params completed:(HttpCompletedBlock)completed{
     switch (method) {
         case GET: {
             @weakify(self)
-            [[self manager]  GET:path parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+            
+            [[self manager] GET:path parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
                 @strongify(self)
                 if (completed) {
                     BOOL bSuccess = [self isNetSuccess:responseObject];
                     if (bSuccess==YES) {
                         completed(YES, responseObject);
                     }else{
-                        completed(NO, responseObject[@"msg"]);
+                        completed(NO, responseObject);
                     }
                 }
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -115,6 +117,22 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
         }
     }
 }
+
+-(void)requestHomeNews:(NSDictionary *)params completed:(HttpCompletedBlock)completed {
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer.timeoutInterval = 5;
+    manager.responseSerializer.acceptableContentTypes =
+    [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
+    [manager GET:URL_HomeNews parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        completed(YES, responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (error) {
+            completed(NO, @{});
+        }
+    }];
+}
+
 - (NSString *)matchingAppServerUrl{
     return BASE_API_URL;
 }
