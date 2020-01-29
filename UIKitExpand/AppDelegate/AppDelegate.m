@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "AppDelegate+ApptabBar.h"
 #import "AppDelegate+JGPush.h"
-#import "AppEnteryConterl.h"
+#import "AcceptPastPleasure.h"
 #import "ExpandFileHeader.h"
 
 @interface AppDelegate ()
@@ -22,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self JGPushGisterNotification:launchOptions];
     [self appDidLaunching];
-    [AppEnteryConterl  switchBaseRequest];
+    [AcceptPastPleasure  switchBaseRequest];
     return YES;
 }
 
@@ -60,3 +60,5 @@
     return UIInterfaceOrientationMaskPortrait;
 }
 @end
+
+

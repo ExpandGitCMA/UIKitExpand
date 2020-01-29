@@ -8,7 +8,7 @@
 
 #ifndef ExpandFileHeader_h
 #define ExpandFileHeader_h
-#import "Safety.h"
+#import "AffectRichExhibition.h"
 #import "EXTScope.h"
 #import "ExpandRequest_Url.h"
 
@@ -39,3 +39,5 @@
 
 #endif
 #endif /* ExpandFileHeader_h */
+
+

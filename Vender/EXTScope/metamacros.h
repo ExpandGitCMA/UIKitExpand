@@ -664,3 +664,4 @@ metamacro_if_eq(0, 1)(true)(false)
 #define metamacro_drop20(...) metamacro_drop19(metamacro_tail(__VA_ARGS__))
 
 #endif
+

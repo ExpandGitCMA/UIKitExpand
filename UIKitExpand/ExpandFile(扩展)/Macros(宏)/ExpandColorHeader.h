@@ -26,3 +26,5 @@ typedef NS_ENUM(UInt32, ColorRGBType) {
 
 
 #endif /* ExpandColorHeader_h */
+
+
