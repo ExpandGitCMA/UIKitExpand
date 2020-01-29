@@ -56,9 +56,7 @@
     FrustrateFamilyInefficientController *homePage = [[FrustrateFamilyInefficientController alloc]init];
     [self tabBarControllers:homePage title:@"首页" imageUrl:@"icon-home"];
     BestMannerController *search = [[BestMannerController alloc]init];
-    [self tabBarControllers:search title:@"分类" imageUrl:@"icon-search"];
-    RespectiveButterflyController *scan = [[RespectiveButterflyController alloc]init];
-    [self tabBarControllers:scan title:@"发现" imageUrl:@"news_1"];
+    [self tabBarControllers:search title:@"比分" imageUrl:@"score"];
     InvadeHollowCabbageController *personal = [[InvadeHollowCabbageController alloc]init];
     [self tabBarControllers:personal title:@"我的" imageUrl:@"icon-account"];
     self.viewControllers = [self.tabBarSource copy];

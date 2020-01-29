@@ -1,4 +1,4 @@
 #import "AppDelegate.h"
 @interface AppDelegate (ApptabBar)
--(void)launchAppappearance;
+-(void)launchAppAppearance;
 @end

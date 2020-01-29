@@ -9,5 +9,6 @@ typedef NS_ENUM(UInt32, ColorRGBType) {
     ExSearch                 = 0Xf2f2f2,
     ExAddress                = 0x999999,
     ExStyle                  = 0x81858c,
+    Appx999999               = 0x999999
 };
 #endif 

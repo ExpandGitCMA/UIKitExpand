@@ -2,7 +2,7 @@
 #import "AppColorHeader.h"
 @implementation AppDelegate (ApptabBar)
 
--(void)launchAppappearance{
+-(void)launchAppAppearance{
     [[UITabBar appearance] setTintColor:kUIColorFromRGB(AppMianColor)];
     [[UINavigationBar appearance] setBarTintColor:kUIColorFromRGB(AppMianColor)];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];

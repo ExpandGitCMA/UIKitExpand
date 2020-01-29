@@ -7,8 +7,8 @@
 @end
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self launchAppappearance];
-    [AcceptPastPleasure  switchBaseRequest];
+    [self launchAppAppearance];
+    [AcceptPastPleasure  getBaseRequestController];
     return YES;
 }
 - (void)applicationWillResignActive:(UIApplication *)application {

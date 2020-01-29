@@ -28,14 +28,14 @@
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavLeftStyle barTarget:self action:@selector(whiskClick) title:@"category_camera_7_gray"];
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(msgClick) title:@"msg_home"];
 }
-//-(SlopeButBenefit*)search{
-//    if (_search==nil) {
-//        _search = [[SlopeButBenefit alloc]initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH- Search_width, Search_height)];
-//        [_search addTarget:self action:@selector(searchClick) forControlEvents:UIControlEventTouchUpInside];
-//        self.navigationItem.titleView = _search;
-//    }
-//    return _search;
-//}
+-(SlopeButBenefit*)search{
+    if (_search==nil) {
+        _search = [[SlopeButBenefit alloc]initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH- Search_width, Search_height)];
+        [_search addTarget:self action:@selector(searchClick) forControlEvents:UIControlEventTouchUpInside];
+        self.navigationItem.titleView = _search;
+    }
+    return _search;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self whisk];
