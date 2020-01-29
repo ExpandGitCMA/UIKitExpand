@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEAB23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		031EBECC23D6C04D00919BEF /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 031EBECB23D6C04D00919BEF /* libAFNetworking.a */; };
-		031EBECE23D6C0A400919BEF /* lanch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 031EBECD23D6C0A400919BEF /* lanch.jpg */; };
 		031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031EBEDD23D6C88E00919BEF /* Main.storyboard */; };
 		031EBEE323D6C8C400919BEF /* SpeakBeggarAcademic.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEE223D6C8C400919BEF /* SpeakBeggarAcademic.m */; };
 		031EBEEE23D6C8DD00919BEF /* InvadeHollowCabbageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEE523D6C8DC00919BEF /* InvadeHollowCabbageController.m */; };
@@ -19,7 +18,6 @@
 		031EBEF223D6C8DD00919BEF /* FrustrateFamilyInefficientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEEC23D6C8DC00919BEF /* FrustrateFamilyInefficientController.m */; };
 		031EBEF523D6C90400919BEF /* TestActiveTargetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEF423D6C90400919BEF /* TestActiveTargetController.m */; };
 		031EBEF823D6D0A200919BEF /* NSString+IMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEF723D6D0A200919BEF /* NSString+IMAdditions.m */; };
-		031EBF3723D6DC3400919BEF /* AppDelegate+JGPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBF3623D6DC3400919BEF /* AppDelegate+JGPush.m */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F38701F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m */; };
 		B34415681F6294C70006A4BF /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = B34415651F6294C70006A4BF /* search.png */; };
@@ -94,7 +92,6 @@
 		031EBEAA23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
 		031EBEAB23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
 		031EBECB23D6C04D00919BEF /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		031EBECD23D6C0A400919BEF /* lanch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lanch.jpg; sourceTree = "<group>"; };
 		031EBEDE23D6C88E00919BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		031EBEE123D6C8C400919BEF /* SpeakBeggarAcademic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakBeggarAcademic.h; sourceTree = "<group>"; };
 		031EBEE223D6C8C400919BEF /* SpeakBeggarAcademic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakBeggarAcademic.m; sourceTree = "<group>"; };
@@ -112,9 +109,6 @@
 		031EBEF423D6C90400919BEF /* TestActiveTargetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestActiveTargetController.m; sourceTree = "<group>"; };
 		031EBEF623D6D0A200919BEF /* NSString+IMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IMAdditions.h"; sourceTree = "<group>"; };
 		031EBEF723D6D0A200919BEF /* NSString+IMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IMAdditions.m"; sourceTree = "<group>"; };
-		031EBF1523D6D87100919BEF /* UIKitExpand.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UIKitExpand.entitlements; sourceTree = "<group>"; };
-		031EBF3523D6DC3400919BEF /* AppDelegate+JGPush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JGPush.h"; sourceTree = "<group>"; };
-		031EBF3623D6DC3400919BEF /* AppDelegate+JGPush.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JGPush.m"; sourceTree = "<group>"; };
 		1557A88AC0C9420DBF348CAF /* Pods-UIKitExpand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.release.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.release.xcconfig"; sourceTree = "<group>"; };
 		2865E39BF27EDBE025A41994 /* libPods-UIKitExpand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIKitExpand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC86418AF49E0D7082C20E8 /* Pods-UIKitExpand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.debug.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,14 +124,14 @@
 		B3D208CA1F47E87D00F0CE6F /* msg_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "msg_home@2x.png"; path = "UIKitExpand/Resource(资源)/msg_home@2x.png"; sourceTree = SOURCE_ROOT; };
 		B3D208CB1F47E87D00F0CE6F /* navigation_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navigation_menu@2x.png"; path = "UIKitExpand/Resource(资源)/navigation_menu@2x.png"; sourceTree = SOURCE_ROOT; };
 		B3D208D41F47E89700F0CE6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "UIKitExpand/Resource(资源)/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
-		B3F4EFFB1F14A8600005197E /* UIKitExpand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitExpand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F4EFFB1F14A8600005197E /* 亞博体育-球赛.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "亞博体育-球赛.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F4EFFF1F14A8600005197E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3F4F00D1F14A8600005197E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3F4F00F1F14A8600005197E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3F4F0141F14A8600005197E /* RecoverConcerningCrater.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecoverConcerningCrater.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F4F0141F14A8600005197E /* RecoverConcerningCrater.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RecoverConcerningCrater.xctest; path = UIKitExpandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F4F0181F14A8600005197E /* RecoverConcerningCrater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoverConcerningCrater.m; sourceTree = "<group>"; };
 		B3F4F01A1F14A8600005197E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3F4F01F1F14A8600005197E /* FundamentalAd.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FundamentalAd.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F4F01F1F14A8600005197E /* FundamentalAd.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FundamentalAd.xctest; path = UIKitExpandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F4F0231F14A8600005197E /* FundamentalAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FundamentalAd.m; sourceTree = "<group>"; };
 		B3F4F0251F14A8600005197E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B74318322117D7FE002A6668 /* ReverseSexualCockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseSexualCockManager.h; sourceTree = "<group>"; };
@@ -269,8 +263,6 @@
 			children = (
 				B30F386D1F15B5C7005B5CE6 /* AppDelegate.h */,
 				B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */,
-				031EBF3523D6DC3400919BEF /* AppDelegate+JGPush.h */,
-				031EBF3623D6DC3400919BEF /* AppDelegate+JGPush.m */,
 				B30F386F1F15B5C7005B5CE6 /* AppDelegate+ApptabBar.h */,
 				B30F38701F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m */,
 				B34688AB1F15FB8800498E66 /* AcceptPastPleasure.h */,
@@ -304,7 +296,7 @@
 		B3F4EFFC1F14A8600005197E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3F4EFFB1F14A8600005197E /* UIKitExpand.app */,
+				B3F4EFFB1F14A8600005197E /* 亞博体育-球赛.app */,
 				B3F4F0141F14A8600005197E /* RecoverConcerningCrater.xctest */,
 				B3F4F01F1F14A8600005197E /* FundamentalAd.xctest */,
 			);
@@ -314,7 +306,6 @@
 		B3F4EFFD1F14A8600005197E /* UIKitExpand */ = {
 			isa = PBXGroup;
 			children = (
-				031EBF1523D6D87100919BEF /* UIKitExpand.entitlements */,
 				B30F386C1F15B5A7005B5CE6 /* AppDelegate */,
 				031EBEE023D6C89800919BEF /* Base(主界面) */,
 				D8C6C9C91F42D8E200BE85ED /* ExpandFile(扩展) */,
@@ -373,7 +364,6 @@
 		D8C6CA221F42D9A400BE85ED /* Resource(资源) */ = {
 			isa = PBXGroup;
 			children = (
-				031EBECD23D6C0A400919BEF /* lanch.jpg */,
 				B34415651F6294C70006A4BF /* search.png */,
 				B34415661F6294C70006A4BF /* search@2x.png */,
 				B34415671F6294C70006A4BF /* search@3x.png */,
@@ -539,7 +529,7 @@
 			);
 			name = UIKitExpand;
 			productName = UIKitExpand;
-			productReference = B3F4EFFB1F14A8600005197E /* UIKitExpand.app */;
+			productReference = B3F4EFFB1F14A8600005197E /* 亞博体育-球赛.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B3F4F0131F14A8600005197E /* UIKitExpandTests */ = {
@@ -635,7 +625,6 @@
 			files = (
 				B344156A1F6294C70006A4BF /* search@3x.png in Resources */,
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
-				031EBECE23D6C0A400919BEF /* lanch.jpg in Resources */,
 				B3D208D21F47E87D00F0CE6F /* navigation_menu@2x.png in Resources */,
 				B34415691F6294C70006A4BF /* search@2x.png in Resources */,
 				B34415681F6294C70006A4BF /* search.png in Resources */,
@@ -698,7 +687,6 @@
 				031EBEF223D6C8DD00919BEF /* FrustrateFamilyInefficientController.m in Sources */,
 				031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				D8C6CA6C1F42DC4500BE85ED /* FlatterSlightRhythm.m in Sources */,
-				031EBF3723D6DC3400919BEF /* AppDelegate+JGPush.m in Sources */,
 				031EBEF523D6C90400919BEF /* TestActiveTargetController.m in Sources */,
 				D8C6CA721F42DC4500BE85ED /* AffectRichExhibition.m in Sources */,
 				B34688AD1F15FB8800498E66 /* AcceptPastPleasure.m in Sources */,
@@ -905,7 +893,7 @@
 					"-l\"jpush-ios-3.2.8\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.PalyGamest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "亞博体育-球赛";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -942,7 +930,7 @@
 					"-l\"jpush-ios-3.2.8\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.PalyGamest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "亞博体育-球赛";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

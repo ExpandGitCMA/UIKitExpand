@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+ApptabBar.h"
-#import "AppDelegate+JGPush.h"
 #import "AcceptPastPleasure.h"
 #import "ExpandFileHeader.h"
 
@@ -20,7 +19,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self JGPushGisterNotification:launchOptions];
+    
     [self appDidLaunching];
     [AcceptPastPleasure  switchBaseRequest];
     return YES;

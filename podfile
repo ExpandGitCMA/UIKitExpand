@@ -1,5 +1,3 @@
 target 'UIKitExpand' do
-  pod 'AFNetworking'
-  pod 'JPush'
-  
+  pod 'AFNetworking'  
 end
