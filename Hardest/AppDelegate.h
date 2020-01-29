@@ -1,4 +1,4 @@
 #import <UIKit/UIKit.h>
-@interface YBSAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow *window;
 @end

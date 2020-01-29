@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0375013123E1736F00D041E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375012F23E1736F00D041E5 /* AppDelegate.m */; };
 		039C717623DD8F210046CB3F /* UIColor+YBSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717023DD8F210046CB3F /* UIColor+YBSColor.m */; };
 		039C717723DD8F210046CB3F /* UIView+YBSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717123DD8F210046CB3F /* UIView+YBSImage.m */; };
 		039C717823DD8F210046CB3F /* UIApplication+YBSLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717223DD8F210046CB3F /* UIApplication+YBSLoad.m */; };
@@ -36,7 +37,6 @@
 		B31F64011CA1652000997243 /* YBSFailView.m in Sources */ = {isa = PBXBuildFile; fileRef = B31F64001CA1652000997243 /* YBSFailView.m */; };
 		B31F64031CA1653200997243 /* YBSFailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B31F64021CA1653200997243 /* YBSFailView.xib */; };
 		B32C1E521C7C4DF600B2C577 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B32C1E511C7C4DF600B2C577 /* main.m */; };
-		B32C1E551C7C4DF600B2C577 /* YBSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B32C1E541C7C4DF600B2C577 /* YBSAppDelegate.m */; };
 		B32C1E5B1C7C4DF600B2C577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32C1E591C7C4DF600B2C577 /* Main.storyboard */; };
 		B32C1E5D1C7C4DF600B2C577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32C1E5C1C7C4DF600B2C577 /* Assets.xcassets */; };
 		B32C1E6B1C7C4DF600B2C577 /* HardestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B32C1E6A1C7C4DF600B2C577 /* HardestTests.m */; };
@@ -185,6 +185,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0375012F23E1736F00D041E5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0375013023E1736F00D041E5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		039C717023DD8F210046CB3F /* UIColor+YBSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YBSColor.m"; sourceTree = "<group>"; };
 		039C717123DD8F210046CB3F /* UIView+YBSImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YBSImage.m"; sourceTree = "<group>"; };
 		039C717223DD8F210046CB3F /* UIApplication+YBSLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+YBSLoad.m"; sourceTree = "<group>"; };
@@ -239,8 +241,6 @@
 		B31F64021CA1653200997243 /* YBSFailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBSFailView.xib; sourceTree = "<group>"; };
 		B32C1E4D1C7C4DF600B2C577 /* YB亞博體育-游戏.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YB亞博體育-游戏.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32C1E511C7C4DF600B2C577 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B32C1E531C7C4DF600B2C577 /* YBSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBSAppDelegate.h; sourceTree = "<group>"; };
-		B32C1E541C7C4DF600B2C577 /* YBSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBSAppDelegate.m; sourceTree = "<group>"; };
 		B32C1E5A1C7C4DF600B2C577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B32C1E5C1C7C4DF600B2C577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B32C1E611C7C4DF600B2C577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -612,10 +612,10 @@
 			isa = PBXGroup;
 			children = (
 				B32C1E851C7C57A300B2C577 /* Classes */,
-				B32C1E531C7C4DF600B2C577 /* YBSAppDelegate.h */,
-				B32C1E541C7C4DF600B2C577 /* YBSAppDelegate.m */,
 				039C719623DDA0720046CB3F /* YBSAppJumpConterl.h */,
 				039C719723DDA0720046CB3F /* YBSAppJumpConterl.m */,
+				0375013023E1736F00D041E5 /* AppDelegate.h */,
+				0375012F23E1736F00D041E5 /* AppDelegate.m */,
 				B32C1E591C7C4DF600B2C577 /* Main.storyboard */,
 				039C719923DDA1B10046CB3F /* LaunchScreen.storyboard */,
 				B32C1E5C1C7C4DF600B2C577 /* Assets.xcassets */,
@@ -1497,6 +1497,7 @@
 				FA6D6CBD1CD7859C00C6AA47 /* YBSStage12ViewController.m in Sources */,
 				B3F532741CF5AF0A005F537D /* YBSStage22PeopleView.m in Sources */,
 				B35C8CA71D082363009162C0 /* YBSStage05ViewController.m in Sources */,
+				0375013123E1736F00D041E5 /* AppDelegate.m in Sources */,
 				B30496B31CB7C12500EB8AC4 /* YBSStage07ViewController.m in Sources */,
 				B3650EE11C856AC600FC2D4E /* YBSStageListView.m in Sources */,
 				B34D8B3A1CBD1E820076A97D /* YBSBobmView.m in Sources */,
@@ -1528,7 +1529,6 @@
 				FAA0FA1D1CD8E712000D80E8 /* YBSState12ResultView.m in Sources */,
 				039C717723DD8F210046CB3F /* UIView+YBSImage.m in Sources */,
 				FA6D6CC01CD78D8700C6AA47 /* YBSStage12BottomView.m in Sources */,
-				B32C1E551C7C4DF600B2C577 /* YBSAppDelegate.m in Sources */,
 				B3F29D851CE18ED900049FA7 /* YBSStage14LineView.m in Sources */,
 				B3B7D3F41D0D5F4C00721033 /* YBSRareViewController.m in Sources */,
 				B3A621411CEDACE500643415 /* YBSFishView.m in Sources */,

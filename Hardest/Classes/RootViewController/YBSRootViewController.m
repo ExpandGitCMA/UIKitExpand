@@ -12,16 +12,13 @@
 @implementation YBSRootViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-//
-//    [self horizontalMarquee];
-//    [self getRequestData];
 
+    [self getRequestData ];
 }
 
 
 -(void)getRequestData{
-    
-    
+        
     NSMutableArray*dataSouce = [NSMutableArray new];
     [[YBSYBSportsRequest sharedManager]getWithPath:URL_YBSports_System dict:@{} completed:^(BOOL ret, id  _Nonnull obj) {
        
@@ -42,16 +39,15 @@
                    
                    
                    if (vanue) {
-                           NSString*urlStr = [(NSDictionary*)obj objectForKey:@"content"];
-                           [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
+//                           NSString*urlStr = [(NSDictionary*)obj objectForKey:@"content"];
+//                           [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
+                       
+                         NSString*urlStr = [(NSDictionary*)obj objectForKey:@"url"];
+                       DEBUG_NSLog(@"urlStr %@",urlStr );
                    }
-            
-      
-         
         }
 
     }];
-    
      self.horizontalMarquee.text = @" 今日推荐开心好玩游戏  开心挠脚小游戏 开心划拳小游戏 小伙伴们快来参与吧,参与天天小游戏,每日好礼送不停！！ 天天参与,天天有奖小游戏！";
 }
 
@@ -68,8 +64,6 @@
     // 关闭跑马灯
     [_horizontalMarquee marqueeOfSettingWithState:MarqueeShutDown_H];
 }
-
-
 
 
 - (JhtHorizontalMarquee *)horizontalMarquee {

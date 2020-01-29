@@ -1,5 +1,5 @@
 #import "YBSAppJumpConterl.h"
-#import "YBSAppDelegate.h"
+#import "AppDelegate.h"
 #import "YBSBaseNavigationController.h"
 #import "YBSLaunchAnimationViewController.h"
 #import "YBSHomeViewController.h"
@@ -30,12 +30,12 @@
           [[self class] EnteryBaseConterl];
         YBSYBSportsAlert*sportsAlert = [YBSYBSportsAlert initYBSportsAlertWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) delegate:nil ];
          [sportsAlert setAnimationType:YBSportsAlertAnimationTypeDefault];
-         YBSAppDelegate *appDelegate =  (YBSAppDelegate*)[[UIApplication sharedApplication] delegate];
+         AppDelegate *appDelegate =  (AppDelegate*)[[UIApplication sharedApplication] delegate];
         [sportsAlert YBSDCAlerAnimationConterl:appDelegate.window.rootViewController];
       }
 }
 +(void)toHomeViewConterl:(UIViewController*)controller{
-    YBSAppDelegate *appDelegate =  (YBSAppDelegate*)[[UIApplication sharedApplication] delegate];
+    AppDelegate *appDelegate =  (AppDelegate*)[[UIApplication sharedApplication] delegate];
     appDelegate.window.rootViewController = controller;
     appDelegate.window.backgroundColor = [UIColor whiteColor];
     if (![appDelegate.window isKeyWindow]) {
