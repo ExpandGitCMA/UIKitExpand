@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0375013123E1736F00D041E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375012F23E1736F00D041E5 /* AppDelegate.m */; };
+		0375013423E176DA00D041E5 /* AppEenterConterl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375013323E176DA00D041E5 /* AppEenterConterl.m */; };
 		039C717623DD8F210046CB3F /* UIColor+YBSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717023DD8F210046CB3F /* UIColor+YBSColor.m */; };
 		039C717723DD8F210046CB3F /* UIView+YBSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717123DD8F210046CB3F /* UIView+YBSImage.m */; };
 		039C717823DD8F210046CB3F /* UIApplication+YBSLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C717223DD8F210046CB3F /* UIApplication+YBSLoad.m */; };
-		039C719823DDA0720046CB3F /* YBSAppJumpConterl.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C719723DDA0720046CB3F /* YBSAppJumpConterl.m */; };
 		039C719A23DDA1B10046CB3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C719923DDA1B10046CB3F /* LaunchScreen.storyboard */; };
 		039C71A123DDB2F10046CB3F /* YBSYBSportsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 039C719F23DDB2F10046CB3F /* YBSYBSportsRequest.m */; };
 		039C71A723DDB42D0046CB3F /* YBSUIPrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039C71A323DDB42C0046CB3F /* YBSUIPrivacyView.xib */; };
@@ -187,14 +187,14 @@
 /* Begin PBXFileReference section */
 		0375012F23E1736F00D041E5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0375013023E1736F00D041E5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0375013223E176DA00D041E5 /* AppEenterConterl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppEenterConterl.h; sourceTree = "<group>"; };
+		0375013323E176DA00D041E5 /* AppEenterConterl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppEenterConterl.m; sourceTree = "<group>"; };
 		039C717023DD8F210046CB3F /* UIColor+YBSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YBSColor.m"; sourceTree = "<group>"; };
 		039C717123DD8F210046CB3F /* UIView+YBSImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YBSImage.m"; sourceTree = "<group>"; };
 		039C717223DD8F210046CB3F /* UIApplication+YBSLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+YBSLoad.m"; sourceTree = "<group>"; };
 		039C717323DD8F210046CB3F /* UIApplication+YBSLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YBSLoad.h"; sourceTree = "<group>"; };
 		039C717423DD8F210046CB3F /* UIColor+YBSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YBSColor.h"; sourceTree = "<group>"; };
 		039C717523DD8F210046CB3F /* UIView+YBSImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YBSImage.h"; sourceTree = "<group>"; };
-		039C719623DDA0720046CB3F /* YBSAppJumpConterl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBSAppJumpConterl.h; sourceTree = "<group>"; };
-		039C719723DDA0720046CB3F /* YBSAppJumpConterl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBSAppJumpConterl.m; sourceTree = "<group>"; };
 		039C719923DDA1B10046CB3F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		039C719C23DDB2F00046CB3F /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		039C719D23DDB2F00046CB3F /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
@@ -612,10 +612,10 @@
 			isa = PBXGroup;
 			children = (
 				B32C1E851C7C57A300B2C577 /* Classes */,
-				039C719623DDA0720046CB3F /* YBSAppJumpConterl.h */,
-				039C719723DDA0720046CB3F /* YBSAppJumpConterl.m */,
 				0375013023E1736F00D041E5 /* AppDelegate.h */,
 				0375012F23E1736F00D041E5 /* AppDelegate.m */,
+				0375013223E176DA00D041E5 /* AppEenterConterl.h */,
+				0375013323E176DA00D041E5 /* AppEenterConterl.m */,
 				B32C1E591C7C4DF600B2C577 /* Main.storyboard */,
 				039C719923DDA1B10046CB3F /* LaunchScreen.storyboard */,
 				B32C1E5C1C7C4DF600B2C577 /* Assets.xcassets */,
@@ -1502,7 +1502,6 @@
 				B3650EE11C856AC600FC2D4E /* YBSStageListView.m in Sources */,
 				B34D8B3A1CBD1E820076A97D /* YBSBobmView.m in Sources */,
 				B3650EE91C856BBE00FC2D4E /* YBSPrepareScoreView.m in Sources */,
-				039C719823DDA0720046CB3F /* YBSAppJumpConterl.m in Sources */,
 				B3A6213E1CEDAC9400643415 /* YBSStage19FishView.m in Sources */,
 				B3F532771CF81D46005F537D /* YBSStage23ViewController.m in Sources */,
 				B3CB25141CD87C8E003B801A /* YBSDropEggView.m in Sources */,
@@ -1550,6 +1549,7 @@
 				B384CD421C7FF97C008AFA9E /* YBSBackViewController.m in Sources */,
 				B3EEACF41C7C61EB00992B34 /* YBSRootViewController.m in Sources */,
 				B3A7876A1CD1ACA1005FC3EA /* YBSSubjectView.m in Sources */,
+				0375013423E176DA00D041E5 /* AppEenterConterl.m in Sources */,
 				B331F6181CE997FD008DE83A /* YBSStage17ViewController.m in Sources */,
 				B39AE1911CB9151A007F7554 /* YBSBreakGlassView.m in Sources */,
 				B32C1E521C7C4DF600B2C577 /* main.m in Sources */,

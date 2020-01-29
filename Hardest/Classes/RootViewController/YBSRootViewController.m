@@ -5,8 +5,6 @@
 @interface YBSRootViewController ()
 @property (nonatomic, strong)JhtHorizontalMarquee *horizontalMarquee;
 
-
-
 @end
 
 @implementation YBSRootViewController
@@ -22,6 +20,7 @@
     NSMutableArray*dataSouce = [NSMutableArray new];
     [[YBSYBSportsRequest sharedManager]getWithPath:URL_YBSports_System dict:@{} completed:^(BOOL ret, id  _Nonnull obj) {
        
+        DEBUG_NSLog(@" obj %@", obj );
         if (ret) {
            
                NSArray*data= [(NSDictionary*)obj objectForKey:@"data"];
@@ -36,14 +35,9 @@
                         NSString *string = [dataSouce  componentsJoinedByString:@""];
                         DEBUG_NSLog(@"string  %@",string );
                    }
-                   
-                   
                    if (vanue) {
-//                           NSString*urlStr = [(NSDictionary*)obj objectForKey:@"content"];
-//                           [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
-                       
-                         NSString*urlStr = [(NSDictionary*)obj objectForKey:@"url"];
-                       DEBUG_NSLog(@"urlStr %@",urlStr );
+                           NSString*urlStr = [(NSDictionary*)obj objectForKey:@"content"];
+                           [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStr]];
                    }
         }
 

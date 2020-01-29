@@ -1,10 +1,10 @@
-#import "YBSAppJumpConterl.h"
+#import "AppEenterConterl.h"
 #import "AppDelegate.h"
 #import "YBSBaseNavigationController.h"
 #import "YBSLaunchAnimationViewController.h"
 #import "YBSHomeViewController.h"
 #import "YBSYBSportsAlert.h"
-@implementation YBSAppJumpConterl
+@implementation AppEenterConterl
 
 +(void)jumpBaserConterl{
      __weak typeof(self) weakSelf = self;
