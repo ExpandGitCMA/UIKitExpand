@@ -1,8 +1,8 @@
-#ifndef ExpandFileHeader_h
-#define ExpandFileHeader_h
+#ifndef AppHeaderFile_h
+#define AppHeaderFile_h
 #import "AffectRichExhibition.h"
 #import "EXTScope.h"
-#import "ExpandRequest_Url.h"
+#import "AppRequest_Url.h"
 #define ISIPADIDIOM ([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPhone)
 #define SCREEN_WIDTH ([UIScreen  mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)

@@ -104,6 +104,9 @@
 		031EBEF423D6C90400919BEF /* TestActiveTargetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestActiveTargetController.m; sourceTree = "<group>"; };
 		031EBEF623D6D0A200919BEF /* NSString+IMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IMAdditions.h"; sourceTree = "<group>"; };
 		031EBEF723D6D0A200919BEF /* NSString+IMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IMAdditions.m"; sourceTree = "<group>"; };
+		0375017A23E18F1C00D041E5 /* AppColorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppColorHeader.h; sourceTree = "<group>"; };
+		0375017B23E18F1C00D041E5 /* AppHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHeaderFile.h; sourceTree = "<group>"; };
+		0375017C23E18FA700D041E5 /* AppRequest_Url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRequest_Url.h; sourceTree = "<group>"; };
 		1557A88AC0C9420DBF348CAF /* Pods-SportsMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsMatch.release.xcconfig"; path = "Target Support Files/Pods-SportsMatch/Pods-SportsMatch.release.xcconfig"; sourceTree = "<group>"; };
 		2865E39BF27EDBE025A41994 /* libPods-SportsMatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SportsMatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC86418AF49E0D7082C20E8 /* Pods-SportsMatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsMatch.debug.xcconfig"; path = "Target Support Files/Pods-SportsMatch/Pods-SportsMatch.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,9 +159,6 @@
 		D8C6CA521F42DC4500BE85ED /* AcademicFinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcademicFinding.m; sourceTree = "<group>"; };
 		D8C6CA531F42DC4500BE85ED /* PartialMaintenance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartialMaintenance.h; sourceTree = "<group>"; };
 		D8C6CA541F42DC4500BE85ED /* PartialMaintenance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartialMaintenance.m; sourceTree = "<group>"; };
-		D8C6CA581F42DC4500BE85ED /* ExpandColorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandColorHeader.h; sourceTree = "<group>"; };
-		D8C6CA591F42DC4500BE85ED /* ExpandFileHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandFileHeader.h; sourceTree = "<group>"; };
-		D8C6CA5A1F42DC4500BE85ED /* ExpandRequest_Url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandRequest_Url.h; sourceTree = "<group>"; };
 		D8C6CA5C1F42DC4500BE85ED /* WeaveAboutCheekboneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeaveAboutCheekboneManager.h; sourceTree = "<group>"; };
 		D8C6CA5D1F42DC4500BE85ED /* WeaveAboutCheekboneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeaveAboutCheekboneManager.m; sourceTree = "<group>"; };
 		D8C6CA5E1F42DC4500BE85ED /* AffectRichExhibition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffectRichExhibition.h; sourceTree = "<group>"; };
@@ -443,9 +443,9 @@
 		D8C6CA571F42DC4500BE85ED /* Macros(宏) */ = {
 			isa = PBXGroup;
 			children = (
-				D8C6CA581F42DC4500BE85ED /* ExpandColorHeader.h */,
-				D8C6CA591F42DC4500BE85ED /* ExpandFileHeader.h */,
-				D8C6CA5A1F42DC4500BE85ED /* ExpandRequest_Url.h */,
+				0375017A23E18F1C00D041E5 /* AppColorHeader.h */,
+				0375017B23E18F1C00D041E5 /* AppHeaderFile.h */,
+				0375017C23E18FA700D041E5 /* AppRequest_Url.h */,
 			);
 			path = "Macros(宏)";
 			sourceTree = "<group>";
