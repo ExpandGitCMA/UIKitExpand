@@ -1,11 +1,12 @@
 #import "BestMannerController.h"
-
+#import "EmptyView.h"
 
 
 @interface BestMannerController ()<WKUIDelegate, WKNavigationDelegate, UIScrollViewDelegate>{
     WKWebView *_wkview;
     UIProgressView *_progressView;
     UIScrollView *scrollView;
+    EmptyView*_emptyView;
 }
 @end
 
@@ -51,20 +52,22 @@
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
     _progressView.hidden = YES;
     _progressView.progress = 0.0;
+
     //title
     if (webView.title.length > 0) {
-//        self.title = webView.title;//webview的title
-        DEBUG_NSLog(@"========>%@",webView.URL.absoluteString);
         if ([webView.URL.absoluteString isEqual:@"http://nlive.159cai.com/live/beidan"]) {
              DEBUG_NSLog(@"webView.title===>%@",webView.title);
-            
-            
+            _emptyView.hidden = NO;
+        }else{
+             _emptyView.hidden = YES;
         }
     }
     //取消长按选择框
     [_wkview evaluateJavaScript:@"document.documentElement.style.webkitTouchCallout='none';" completionHandler:nil];
     [_wkview evaluateJavaScript:@"document.documentElement.style.webkitUserSelect='none';"completionHandler:nil];
 }
+
+
 
 //页面加载失败时调用
 // 类似 UIWebView 的- webView:didFailLoadWithError:
@@ -184,6 +187,11 @@
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://nlive.159cai.com/live"]];
     [_wkview loadRequest:request];
     [self.view addSubview:_wkview];
+    
+    
+     _emptyView = [[EmptyView alloc]initWithFrame:CGRectMake(0, 15, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    _emptyView.hidden = YES;
+    [self.view addSubview:_emptyView];
 
 }
 

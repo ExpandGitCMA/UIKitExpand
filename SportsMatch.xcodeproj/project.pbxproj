@@ -18,6 +18,7 @@
 		031EBEF223D6C8DD00919BEF /* FrustrateFamilyInefficientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEEC23D6C8DC00919BEF /* FrustrateFamilyInefficientController.m */; };
 		031EBEF523D6C90400919BEF /* TestActiveTargetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEF423D6C90400919BEF /* TestActiveTargetController.m */; };
 		031EBEF823D6D0A200919BEF /* NSString+IMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEF723D6D0A200919BEF /* NSString+IMAdditions.m */; };
+		0375018D23E1B96700D041E5 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375018C23E1B96700D041E5 /* EmptyView.m */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F38701F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m */; };
 		B34688AD1F15FB8800498E66 /* AcceptPastPleasure.m in Sources */ = {isa = PBXBuildFile; fileRef = B34688AC1F15FB8800498E66 /* AcceptPastPleasure.m */; };
@@ -107,6 +108,8 @@
 		0375017A23E18F1C00D041E5 /* AppColorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppColorHeader.h; sourceTree = "<group>"; };
 		0375017B23E18F1C00D041E5 /* AppHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHeaderFile.h; sourceTree = "<group>"; };
 		0375017C23E18FA700D041E5 /* AppRequest_Url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRequest_Url.h; sourceTree = "<group>"; };
+		0375018B23E1B96700D041E5 /* EmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
+		0375018C23E1B96700D041E5 /* EmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
 		1557A88AC0C9420DBF348CAF /* Pods-SportsMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsMatch.release.xcconfig"; path = "Target Support Files/Pods-SportsMatch/Pods-SportsMatch.release.xcconfig"; sourceTree = "<group>"; };
 		2865E39BF27EDBE025A41994 /* libPods-SportsMatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SportsMatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC86418AF49E0D7082C20E8 /* Pods-SportsMatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsMatch.debug.xcconfig"; path = "Target Support Files/Pods-SportsMatch/Pods-SportsMatch.debug.xcconfig"; sourceTree = "<group>"; };
@@ -248,6 +251,15 @@
 			path = "Base(主界面)";
 			sourceTree = "<group>";
 		};
+		0375018A23E1B93500D041E5 /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				0375018B23E1B96700D041E5 /* EmptyView.h */,
+				0375018C23E1B96700D041E5 /* EmptyView.m */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
 		B30F386C1F15B5A7005B5CE6 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +351,7 @@
 			children = (
 				B74318322117D7FE002A6668 /* ReverseSexualCockManager.h */,
 				B74318332117D7FE002A6668 /* ReverseSexualCockManager.m */,
+				0375018A23E1B93500D041E5 /* EmptyView */,
 				D8C6CA311F42DC4500BE85ED /* Category(分类) */,
 				D8C6CA3D1F42DC4500BE85ED /* Const(常量) */,
 				D8C6CA3E1F42DC4500BE85ED /* DataBase(数据库) */,
@@ -680,6 +693,7 @@
 				D8C6CA781F42DF7C00BE85ED /* NearbyCrudeAlcohol.m in Sources */,
 				D8C6CA671F42DC4500BE85ED /* ExtendHatefulShift.m in Sources */,
 				D8C6CA6F1F42DC4500BE85ED /* PartialMaintenance.m in Sources */,
+				0375018D23E1B96700D041E5 /* EmptyView.m in Sources */,
 				D8C6CA711F42DC4500BE85ED /* WeaveAboutCheekboneManager.m in Sources */,
 				D8C6CA641F42DC4500BE85ED /* UIView+BlurredImage.m in Sources */,
 				D8C6CA7C1F42E0AC00BE85ED /* ExpanFileConstants.m in Sources */,
