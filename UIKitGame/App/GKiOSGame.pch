@@ -1,0 +1,41 @@
+//
+//  GKiOSGame.pch
+//  GKiOSGame
+//
+//  Created by wangws1990 on 2019/7/11.
+//  Copyright © 2019 wangws1990. All rights reserved.
+//
+
+#ifndef GKiOSGame_pch
+#define GKiOSGame_pch
+
+#import "YYKit.h"
+#import "Masonry.h"
+#import "CategoryKit.h"
+#import <VTMagic.h>
+#import <ViewDeck.h>
+#import <SDWebImage/SDWebImageManager.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "MBProgressHUD.h"
+#import "SVProgressHUD.h"
+#import "Toast.h"
+#import "UIView+GKToast.h"
+#import "MBProgressHUD+ATAdd.h"
+
+
+#import "BaseMacro.h"
+#import "BaseModel.h"
+#import "BaseViewController.h"
+#import "BaseRefreshController.h"
+#import "BaseConnectionController.h"
+#import "BaseNavigationController.h"
+
+#import "BaseNetManager.h"
+#import "BaseDownTask.h"
+#import "GKTimeTool.h"
+#import "GKHomeNetManager.h"
+#import "GKVideoNetManager.h"
+#import "BaseDownTask.h"
+#import "ATBrowser.h"
+#endif /* GKiOSGame_pch */
