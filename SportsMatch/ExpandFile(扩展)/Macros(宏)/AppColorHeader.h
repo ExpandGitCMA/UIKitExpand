@@ -5,7 +5,8 @@
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 typedef NS_ENUM(UInt32, ColorRGBType) {
-    AppMianColor             = 0x489EFF,
+//    AppMianColor             = 0x489EFF,
+    AppMianColor             = 0x55BE04,
     ExSearch                 = 0Xf2f2f2,
     ExAddress                = 0x999999,
     ExStyle                  = 0x81858c,

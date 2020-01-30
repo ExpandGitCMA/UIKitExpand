@@ -25,6 +25,7 @@
     [self tableView];
     [self getHomeBanner];
   
+    [self.tableView.mj_header beginRefreshing];
     
 }
 
@@ -39,7 +40,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableHeaderView =  [self zeroSDCycleView];
-        _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(getHomeBanner)];
+        _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(getMassage)];
         _tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(getLoad)];
           [_tableView registerNib:[UINib nibWithNibName:@"NewTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
           [self.view addSubview:_tableView];
@@ -56,12 +57,13 @@
 }
 
 -(void)getHomeBanner{
-
     [[WeaveAboutCheekboneManager sharedManager]lendGate:URL_HomeBanner params:@{} completed:^(BOOL ret, id obj) {
         NSArray *banner = [obj objectForKey:@"banner"];
          [_zeroSDCycleView setArrayStringUrl:banner];
     }];
 
+}
+- (void)getMassage{
     [[WeaveAboutCheekboneManager sharedManager]requestHomeNews:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
             [self.marr removeAllObjects];
@@ -78,7 +80,6 @@
         }
     }];
 }
-
 - (void)getLoad{
      dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView.mj_footer endRefreshing];

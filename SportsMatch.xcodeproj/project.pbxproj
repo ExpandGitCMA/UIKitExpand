@@ -258,13 +258,21 @@
 				031EBEE523D6C8DC00919BEF /* InvadeHollowCabbageController.m */,
 				031EBEED23D6C8DD00919BEF /* RespectiveButterflyController.h */,
 				031EBEE623D6C8DC00919BEF /* RespectiveButterflyController.m */,
-				031EBEE423D6C8DC00919BEF /* BestMannerController.h */,
-				031EBEE723D6C8DC00919BEF /* BestMannerController.m */,
 				031EBEE823D6C8DC00919BEF /* DisposeOverweightFakeController.h */,
 				031EBEEB23D6C8DC00919BEF /* DisposeOverweightFakeController.m */,
+				0324AC6423E2938A004B4C3E /* ScoreVC */,
 				0375019823E1DC7100D041E5 /* HomeVC */,
 			);
 			path = "Base(主界面)";
+			sourceTree = "<group>";
+		};
+		0324AC6423E2938A004B4C3E /* ScoreVC */ = {
+			isa = PBXGroup;
+			children = (
+				031EBEE423D6C8DC00919BEF /* BestMannerController.h */,
+				031EBEE723D6C8DC00919BEF /* BestMannerController.m */,
+			);
+			path = ScoreVC;
 			sourceTree = "<group>";
 		};
 		0375018A23E1B93500D041E5 /* EmptyView */ = {
