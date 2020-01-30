@@ -4,6 +4,7 @@
 #import "RespectiveButterflyController.h"
 #import "DisposeOverweightFakeController.h"
 #import "InvadeHollowCabbageController.h"
+#import "WKViewController.h"
 @interface SpeakBeggarAcademic ()<UITabBarDelegate>
 @property(nonatomic,strong)NSMutableArray*tabBarSource;
 @property(nonatomic,strong)UIButton *wisdom;
@@ -55,8 +56,10 @@
 -(void)addSubController{
     FrustrateFamilyInefficientController *homePage = [[FrustrateFamilyInefficientController alloc]init];
     [self tabBarControllers:homePage title:@"首页" imageUrl:@"icon-home"];
-    BestMannerController *search = [[BestMannerController alloc]init];
-    [self tabBarControllers:search title:@"比分" imageUrl:@"score"];
+//    BestMannerController *search = [[BestMannerController alloc]init];
+    WKViewController *score = [[WKViewController alloc] init];
+     score.url = @"http://nlive.159cai.com/live";
+    [self tabBarControllers:score title:@"比分" imageUrl:@"score"];
     InvadeHollowCabbageController *personal = [[InvadeHollowCabbageController alloc]init];
     [self tabBarControllers:personal title:@"我的" imageUrl:@"icon-account"];
     self.viewControllers = [self.tabBarSource copy];

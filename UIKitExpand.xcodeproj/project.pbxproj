@@ -20,6 +20,7 @@
 		031EBEF823D6D0A200919BEF /* NSString+IMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEF723D6D0A200919BEF /* NSString+IMAdditions.m */; };
 		0324AC6723E29BC4004B4C3E /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 0324AC6523E29BC4004B4C3E /* iTunesArtwork */; };
 		0324AC6823E29BC4004B4C3E /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 0324AC6623E29BC4004B4C3E /* iTunesArtwork@2x */; };
+		0324AC6B23E2B883004B4C3E /* WKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324AC6923E2B883004B4C3E /* WKViewController.m */; };
 		0375018D23E1B96700D041E5 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375018C23E1B96700D041E5 /* EmptyView.m */; };
 		0375019523E1D9DE00D041E5 /* ZeroSDCycleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019023E1D9DE00D041E5 /* ZeroSDCycleViewCell.m */; };
 		0375019623E1D9DE00D041E5 /* ZeroSDCSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019223E1D9DE00D041E5 /* ZeroSDCSafety.m */; };
@@ -115,6 +116,8 @@
 		031EBEF723D6D0A200919BEF /* NSString+IMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IMAdditions.m"; sourceTree = "<group>"; };
 		0324AC6523E29BC4004B4C3E /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		0324AC6623E29BC4004B4C3E /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		0324AC6923E2B883004B4C3E /* WKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKViewController.m; sourceTree = "<group>"; };
+		0324AC6A23E2B883004B4C3E /* WKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKViewController.h; sourceTree = "<group>"; };
 		0375017A23E18F1C00D041E5 /* AppColorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppColorHeader.h; sourceTree = "<group>"; };
 		0375017B23E18F1C00D041E5 /* AppHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHeaderFile.h; sourceTree = "<group>"; };
 		0375017C23E18FA700D041E5 /* AppRequest_Url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRequest_Url.h; sourceTree = "<group>"; };
@@ -275,6 +278,8 @@
 			children = (
 				031EBEE423D6C8DC00919BEF /* BestMannerController.h */,
 				031EBEE723D6C8DC00919BEF /* BestMannerController.m */,
+				0324AC6A23E2B883004B4C3E /* WKViewController.h */,
+				0324AC6923E2B883004B4C3E /* WKViewController.m */,
 			);
 			path = ScoreVC;
 			sourceTree = "<group>";
@@ -759,6 +764,7 @@
 				0375019F23E1DCC800D041E5 /* NewTableViewCell.m in Sources */,
 				D8C6CA611F42DC4500BE85ED /* BendInformalProvince.m in Sources */,
 				031EBEF223D6C8DD00919BEF /* FrustrateFamilyInefficientController.m in Sources */,
+				0324AC6B23E2B883004B4C3E /* WKViewController.m in Sources */,
 				031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				D8C6CA6C1F42DC4500BE85ED /* FlatterSlightRhythm.m in Sources */,
 				031EBEF523D6C90400919BEF /* TestActiveTargetController.m in Sources */,
