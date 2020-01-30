@@ -18,6 +18,11 @@
     [self marr];
     [self tableView];
     [self getHomeBanner];
+
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     [self.tableView.mj_header beginRefreshing];
 }
 -(UITableView*)tableView{
