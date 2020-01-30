@@ -29,6 +29,11 @@
 		0324ACA723E2F317004B4C3E /* QuLeHomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0324ACA423E2F317004B4C3E /* QuLeHomeDetailViewController.xib */; };
 		0324ACAB23E2FD55004B4C3E /* UsVCViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACA923E2FD55004B4C3E /* UsVCViewCell.m */; };
 		0324ACAC23E2FD55004B4C3E /* UsVCViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0324ACAA23E2FD55004B4C3E /* UsVCViewCell.xib */; };
+		0324ACB023E30043004B4C3E /* UsVCPrivacyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACAE23E30043004B4C3E /* UsVCPrivacyController.m */; };
+		0324ACB123E30043004B4C3E /* UsVCPrivacyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0324ACAF23E30043004B4C3E /* UsVCPrivacyController.xib */; };
+		0324ACB423E30660004B4C3E /* CustomActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACB323E30660004B4C3E /* CustomActivity.m */; };
+		0324ACB823E309A0004B4C3E /* QuLeyijianFanKuiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACB523E3099F004B4C3E /* QuLeyijianFanKuiViewController.m */; };
+		0324ACB923E309A0004B4C3E /* QuLeyijianFanKuiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0324ACB723E309A0004B4C3E /* QuLeyijianFanKuiViewController.xib */; };
 		0375018D23E1B96700D041E5 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375018C23E1B96700D041E5 /* EmptyView.m */; };
 		0375019523E1D9DE00D041E5 /* ZeroSDCycleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019023E1D9DE00D041E5 /* ZeroSDCycleViewCell.m */; };
 		0375019623E1D9DE00D041E5 /* ZeroSDCSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019223E1D9DE00D041E5 /* ZeroSDCSafety.m */; };
@@ -138,6 +143,14 @@
 		0324ACA823E2FD55004B4C3E /* UsVCViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsVCViewCell.h; sourceTree = "<group>"; };
 		0324ACA923E2FD55004B4C3E /* UsVCViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsVCViewCell.m; sourceTree = "<group>"; };
 		0324ACAA23E2FD55004B4C3E /* UsVCViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsVCViewCell.xib; sourceTree = "<group>"; };
+		0324ACAD23E30043004B4C3E /* UsVCPrivacyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsVCPrivacyController.h; sourceTree = "<group>"; };
+		0324ACAE23E30043004B4C3E /* UsVCPrivacyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsVCPrivacyController.m; sourceTree = "<group>"; };
+		0324ACAF23E30043004B4C3E /* UsVCPrivacyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsVCPrivacyController.xib; sourceTree = "<group>"; };
+		0324ACB223E30660004B4C3E /* CustomActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActivity.h; sourceTree = "<group>"; };
+		0324ACB323E30660004B4C3E /* CustomActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActivity.m; sourceTree = "<group>"; };
+		0324ACB523E3099F004B4C3E /* QuLeyijianFanKuiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuLeyijianFanKuiViewController.m; sourceTree = "<group>"; };
+		0324ACB623E3099F004B4C3E /* QuLeyijianFanKuiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuLeyijianFanKuiViewController.h; sourceTree = "<group>"; };
+		0324ACB723E309A0004B4C3E /* QuLeyijianFanKuiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuLeyijianFanKuiViewController.xib; sourceTree = "<group>"; };
 		0375017A23E18F1C00D041E5 /* AppColorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppColorHeader.h; sourceTree = "<group>"; };
 		0375017B23E18F1C00D041E5 /* AppHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHeaderFile.h; sourceTree = "<group>"; };
 		0375017C23E18FA700D041E5 /* AppRequest_Url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRequest_Url.h; sourceTree = "<group>"; };
@@ -311,6 +324,11 @@
 		0324AC6E23E2C72B004B4C3E /* MeCenterVC */ = {
 			isa = PBXGroup;
 			children = (
+				0324ACB623E3099F004B4C3E /* QuLeyijianFanKuiViewController.h */,
+				0324ACB523E3099F004B4C3E /* QuLeyijianFanKuiViewController.m */,
+				0324ACB723E309A0004B4C3E /* QuLeyijianFanKuiViewController.xib */,
+				0324ACB223E30660004B4C3E /* CustomActivity.h */,
+				0324ACB323E30660004B4C3E /* CustomActivity.m */,
 				031EBEE923D6C8DC00919BEF /* InvadeHollowCabbageController.h */,
 				031EBEE523D6C8DC00919BEF /* InvadeHollowCabbageController.m */,
 				0324AC7223E2C7A8004B4C3E /* AboutUsVController.h */,
@@ -319,6 +337,9 @@
 				0324ACA823E2FD55004B4C3E /* UsVCViewCell.h */,
 				0324ACA923E2FD55004B4C3E /* UsVCViewCell.m */,
 				0324ACAA23E2FD55004B4C3E /* UsVCViewCell.xib */,
+				0324ACAD23E30043004B4C3E /* UsVCPrivacyController.h */,
+				0324ACAE23E30043004B4C3E /* UsVCPrivacyController.m */,
+				0324ACAF23E30043004B4C3E /* UsVCPrivacyController.xib */,
 			);
 			path = MeCenterVC;
 			sourceTree = "<group>";
@@ -732,8 +753,10 @@
 				0324AC6723E29BC4004B4C3E /* iTunesArtwork in Resources */,
 				0324ACAC23E2FD55004B4C3E /* UsVCViewCell.xib in Resources */,
 				0324ACA723E2F317004B4C3E /* QuLeHomeDetailViewController.xib in Resources */,
+				0324ACB923E309A0004B4C3E /* QuLeyijianFanKuiViewController.xib in Resources */,
 				0324AC9A23E2DEFA004B4C3E /* date.json in Resources */,
 				0324AC7623E2C7A8004B4C3E /* AboutUsVController.xib in Resources */,
+				0324ACB123E30043004B4C3E /* UsVCPrivacyController.xib in Resources */,
 				B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -785,10 +808,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -805,6 +830,7 @@
 				D8C6CA691F42DC4500BE85ED /* ComeTillRoad.m in Sources */,
 				D8C6CA631F42DC4500BE85ED /* UIImage+ImageEffects.m in Sources */,
 				031EBEEF23D6C8DD00919BEF /* RespectiveButterflyController.m in Sources */,
+				0324ACB423E30660004B4C3E /* CustomActivity.m in Sources */,
 				0375019F23E1DCC800D041E5 /* NewTableViewCell.m in Sources */,
 				D8C6CA611F42DC4500BE85ED /* BendInformalProvince.m in Sources */,
 				0324ACA623E2F317004B4C3E /* QuLeHomeDetailViewController.m in Sources */,
@@ -817,6 +843,8 @@
 				D8C6CA721F42DC4500BE85ED /* AffectRichExhibition.m in Sources */,
 				B34688AD1F15FB8800498E66 /* AcceptPastPleasure.m in Sources */,
 				D8C6CA6E1F42DC4500BE85ED /* AcademicFinding.m in Sources */,
+				0324ACB023E30043004B4C3E /* UsVCPrivacyController.m in Sources */,
+				0324ACB823E309A0004B4C3E /* QuLeyijianFanKuiViewController.m in Sources */,
 				D8C6CA6A1F42DC4500BE85ED /* VeryGlobalBiochemistry.m in Sources */,
 				D8C6CA831F42EE4D00BE85ED /* AlternativeSkull.m in Sources */,
 				0324ACAB23E2FD55004B4C3E /* UsVCViewCell.m in Sources */,

@@ -1,6 +1,9 @@
 #import "InvadeHollowCabbageController.h"
 #import "AboutUsVController.h"
 #import "UsVCViewCell.h"
+#import "UsVCPrivacyController.h"
+#import "CustomActivity.h"
+#import "QuLeyijianFanKuiViewController.h"
 @interface InvadeHollowCabbageController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSArray *dataSource;
@@ -11,7 +14,7 @@
     [super viewDidLoad];
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(setClick) title:@"nav_set"];
     
-    _dataSource = @[@"隐私协议",@"意见反馈",@"关于我们"];
+    _dataSource = @[@"隐私协议",@"意见反馈",@"分享好友",@"关于我们"];
     
     [self tableView];
 }
@@ -55,6 +58,31 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    switch (indexPath.row) {
+        case 0:{
+             UsVCPrivacyController *controller = [[UsVCPrivacyController  alloc] init];
+              controller.hidesBottomBarWhenPushed = YES;
+              [self.navigationController pushViewController:controller animated:YES];
+           }
+           
+            break;
+        case 1:{
+            QuLeyijianFanKuiViewController*controller = [[QuLeyijianFanKuiViewController  alloc] init];
+                      controller.hidesBottomBarWhenPushed = YES;
+                      [self.navigationController pushViewController:controller animated:YES];
+        }
+            break;
+            case 2:{
+                [self showShareDetail];
+            }
+            break;
+            case 3:
+            [self setClick];
+            break;
+        default:
+            break;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -67,4 +95,46 @@
     [self.navigationController pushViewController:aboutUs animated:YES];
 }
 
+-(void)showShareDetail{
+        // 1、设置分享的内容，并将内容添加到数组中
+        NSString *shareText = @"分享的标题";
+        UIImage *shareImage = [UIImage imageNamed:@"banner"];
+        NSURL *shareUrl = [NSURL URLWithString:@"https://www.jianshu.com/u/4751e3a9bcfd"];
+        NSArray *activityItemsArray = @[shareText,shareImage,shareUrl];
+        
+        // 自定义的CustomActivity，继承自UIActivity
+        CustomActivity *customActivity = [[CustomActivity alloc]initWithTitle:shareText ActivityImage:[UIImage imageNamed:@"icon"] URL:shareUrl ActivityType:@"Custom"];
+        NSArray *activityArray = @[customActivity];
+        
+        // 2、初始化控制器，添加分享内容至控制器
+        UIActivityViewController *activityVC = [[UIActivityViewController alloc]initWithActivityItems:activityItemsArray applicationActivities:activityArray];
+        activityVC.modalInPopover = YES;
+        // 3、设置回调
+        if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
+            // ios8.0 之后用此方法回调
+            UIActivityViewControllerCompletionWithItemsHandler itemsBlock = ^(UIActivityType __nullable activityType, BOOL completed, NSArray * __nullable returnedItems, NSError * __nullable activityError){
+                NSLog(@"activityType == %@",activityType);
+                if (completed == YES) {
+                    NSLog(@"completed");
+                }else{
+                    NSLog(@"cancel");
+                }
+            };
+            activityVC.completionWithItemsHandler = itemsBlock;
+        }else{
+            // ios8.0 之前用此方法回调
+            UIActivityViewControllerCompletionHandler handlerBlock = ^(UIActivityType __nullable activityType, BOOL completed){
+                NSLog(@"activityType == %@",activityType);
+                if (completed == YES) {
+                    NSLog(@"completed");
+                }else{
+                    NSLog(@"cancel");
+                }
+            };
+            activityVC.completionHandler = handlerBlock;
+        }
+        // 4、调用控制器
+        [self presentViewController:activityVC animated:YES completion:nil];
+        
+    }
 @end
