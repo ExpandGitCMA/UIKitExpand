@@ -1038,8 +1038,8 @@
 			baseConfigurationReference = A37E3480F225FA1E6F53E48D /* Pods-GKiOSGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AH5A6D2MR2;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GKiOSGame/App/GKiOSGame.pch";
 				INFOPLIST_FILE = GKiOSGame/Info.plist;
@@ -1050,6 +1050,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.3733SDK.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1059,8 +1060,8 @@
 			baseConfigurationReference = BD224A48388F61B17B4FB6BE /* Pods-GKiOSGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AH5A6D2MR2;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GKiOSGame/App/GKiOSGame.pch";
 				INFOPLIST_FILE = GKiOSGame/Info.plist;
@@ -1071,6 +1072,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.3733SDK.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
