@@ -17,7 +17,7 @@
     [self dataSource];
     [self tableView];
     [self.tableView.mj_header beginRefreshing];
-    self.title = @"足球赛事规则";
+    self.title = @"球赛规则";
 }
 -(UITableView*)tableView{
     if (!_tableView) {

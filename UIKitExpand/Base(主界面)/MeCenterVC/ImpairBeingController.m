@@ -4,6 +4,6 @@
 @implementation ImpairBeingController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"《YABO体育-球圈隐私政策》";
+    self.title = @"《亞博体育-球圈隐私政策》";
 }
 @end
