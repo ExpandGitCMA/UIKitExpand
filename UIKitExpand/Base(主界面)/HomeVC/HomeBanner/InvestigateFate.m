@@ -72,5 +72,3 @@
     return (date != nil) ? [self components:unitFlags fromDate:date] : nil;
 }
 @end
-
-

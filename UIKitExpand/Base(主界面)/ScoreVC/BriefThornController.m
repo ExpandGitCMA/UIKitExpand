@@ -18,7 +18,6 @@
     [self.tableView.mj_header beginRefreshing];
     self.title = @"足球赛事规则";
 }
-
 -(UITableView*)tableView{
     if (!_tableView) {
          if (@available(iOS 11.0, *)) {
@@ -43,11 +42,8 @@
     }
     return _dataSource;
 }
-
 - (void)getMassage{
-
     [[FeelLeatherManager sharedManager]tryHeapUseful:URL_Gamerule params:@{} completed:^(BOOL ret, id obj) {
-      
         [self.dataSource removeAllObjects];
         NSArray *arr = [obj objectForKey:@"game"];
              for (NSDictionary *dic in arr) {
@@ -60,11 +56,8 @@
                         [self.tableView.mj_footer endRefreshing];
                         [self.tableView reloadData];
              });
-        
      }];
 }
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     EndLinenPeak *cell = [tableView dequeueReusableCellWithIdentifier:@"Newcell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -76,21 +69,17 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return  _dataSource.count;
-
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 70;
 }
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
      BeatLikeNewspaper *model = self.dataSource[indexPath.row];
-    
     PermitRemoteChatController * homeDetailVC = [[PermitRemoteChatController alloc] init];
            homeDetailVC.hidesBottomBarWhenPushed = YES;
            homeDetailVC.title = model.rule;
            [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
-
 -(ReuniteDifficultyWalletView*)zeroSDCycleView{
     if (!_zeroSDCycleView) {
         _zeroSDCycleView = [ReuniteDifficultyWalletView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 190) delegate:self];
@@ -106,8 +95,4 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
-
 @end
-
-

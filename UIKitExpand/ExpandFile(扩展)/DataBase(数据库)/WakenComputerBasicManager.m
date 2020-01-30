@@ -38,5 +38,3 @@ static WakenComputerBasicManager *userManager = nil;
     _user = nil;
 }
 @end
-
-

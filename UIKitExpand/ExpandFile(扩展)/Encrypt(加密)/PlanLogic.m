@@ -108,5 +108,3 @@
     return [[NSString alloc] initWithData:result encoding:NSUTF8StringEncoding];
 }
 @end
-
-

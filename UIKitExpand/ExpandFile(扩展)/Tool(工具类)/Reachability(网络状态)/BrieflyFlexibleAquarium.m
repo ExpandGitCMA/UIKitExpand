@@ -160,5 +160,3 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 	return returnValue;
 }
 @end
-
-

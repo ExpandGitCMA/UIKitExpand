@@ -3,5 +3,3 @@
 @property (weak, nonatomic) UIImageView *imageView;
 -(void)wreckBath:(NSString*)url;
 @end
-
-

@@ -99,5 +99,3 @@ static const int AES_256_IV_SIZE = 16;
                                  encoding:NSUTF8StringEncoding];
 }
 @end
-
-

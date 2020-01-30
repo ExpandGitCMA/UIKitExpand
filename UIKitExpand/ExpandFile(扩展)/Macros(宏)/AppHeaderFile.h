@@ -24,5 +24,3 @@
 #define KiPhoneXMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhone_Bang (KiPhoneX  || KiPhoneXR || KiPhoneXMax)
 #endif 
-
-

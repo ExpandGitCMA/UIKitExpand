@@ -43,5 +43,3 @@
   return [[self snapshotImage] applyTintEffectWithColor:color];
 }
 @end
-
-

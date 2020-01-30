@@ -2,5 +2,3 @@
 @interface NSString (paths)
 +(NSString*)pathsResourceName:(NSString*)name;
 @end
-
-

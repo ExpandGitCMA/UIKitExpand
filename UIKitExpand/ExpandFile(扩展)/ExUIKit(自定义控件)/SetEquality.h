@@ -6,5 +6,3 @@
 @interface SetEquality : NSObject
 + (UIFont *)fontWithSize: (CGFloat)size;
 @end
-
-

@@ -6,5 +6,3 @@
 - (void)reactDuringSuccessiveAcid:(ScareBesidesHurding *)user;
 - (void)widenIndoorsUnexpectedDinner;
 @end
-
-

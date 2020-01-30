@@ -4,5 +4,3 @@
 -(void)chewCloak:(id)key;
 - (void)preserveMicrophone;
 @end
-
-

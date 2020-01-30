@@ -13,5 +13,3 @@
 @property (nonatomic, retain)NSArray *comm_count;
 + (BackwardTallWreck *)setModelWithDictionary:(NSDictionary *)dic;
 @end
-
-

@@ -5,5 +5,3 @@
 @interface NSData (RandomData)
 + (NSData *)randomDataWithLength:(NSUInteger)length;
 @end
-
-

@@ -17,5 +17,3 @@ typedef void (^ZFJCheckResultType)( NSUInteger type);
 - (void)feelAlongsideResponsibleLawyer;
 - (void)definitelyStoutProportion:(NSString *)meg;
 @end
-
-

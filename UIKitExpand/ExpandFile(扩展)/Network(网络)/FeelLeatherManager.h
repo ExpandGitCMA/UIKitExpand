@@ -7,5 +7,3 @@ typedef void (^HttpCompletedBlock)(BOOL ret, id obj);
 - (void)accidentalTunnel:(NSString *)path params:(NSDictionary *)params completed:(HttpCompletedBlock)completed;
 -(void)lookChemist:(NSDictionary *)params completed:(HttpCompletedBlock)completed;
 @end
-
-

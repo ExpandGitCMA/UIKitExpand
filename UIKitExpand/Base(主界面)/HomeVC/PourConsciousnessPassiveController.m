@@ -18,13 +18,9 @@
     [self marr];
     [self tableView];
     [self getHomeBanner];
-
-}
-
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
     [self.tableView.mj_header beginRefreshing];
 }
+
 -(UITableView*)tableView{
     if (!_tableView) {
          if (@available(iOS 11.0, *)) {
@@ -78,7 +74,6 @@
             [self.tableView reloadData];
     });
 }
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     EndLinenPeak *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;  
@@ -108,10 +103,8 @@
 }
 -(void)cycleScrollView:(ReuniteDifficultyWalletView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
 }
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
       BackwardTallWreck *model = self.marr [indexPath.row];
-    
     PermitRemoteChatController * homeDetailVC = [[PermitRemoteChatController alloc] init];
            homeDetailVC.hidesBottomBarWhenPushed = YES;
            homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.pubtime,@"\n",model.title ];
@@ -121,5 +114,3 @@
     [super didReceiveMemoryWarning];
 }
 @end
-
-

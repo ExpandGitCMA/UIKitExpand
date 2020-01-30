@@ -2,4 +2,3 @@
 @interface AppDelegate (ApptabBar)
 -(void)launchAppAppearance;
 @end
-

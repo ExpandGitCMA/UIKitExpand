@@ -7,5 +7,3 @@
 - (NSData *)relateInitialStick:(NSData *)plainData;
 - (NSData *)listenMinusGuide:(NSData *)cipherData;
 @end
-
-

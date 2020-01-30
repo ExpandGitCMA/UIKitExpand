@@ -30,5 +30,3 @@
     self.alpha = alpha;
 }
 @end
-
-

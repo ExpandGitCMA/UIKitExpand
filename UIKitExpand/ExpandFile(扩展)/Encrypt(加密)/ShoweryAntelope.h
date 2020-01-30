@@ -5,5 +5,3 @@
 @interface NSString (RSA)
 - (NSString *)RSAEncryptWithPublicKey:(NSString *)pubKey;
 @end
-
-

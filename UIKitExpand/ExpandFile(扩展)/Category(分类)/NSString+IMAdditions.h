@@ -17,5 +17,3 @@
 @interface NSObject (JudgeNull)
 - (BOOL)isNull;
 @end
-
-

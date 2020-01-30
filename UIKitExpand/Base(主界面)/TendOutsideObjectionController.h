@@ -5,5 +5,3 @@
 @interface TendOutsideObjectionController : UIViewController
 @property (strong, nonatomic)UICollectionView * collectionView;
 @end
-
-

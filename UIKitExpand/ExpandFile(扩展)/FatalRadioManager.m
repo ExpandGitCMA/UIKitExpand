@@ -301,5 +301,3 @@
     [[UIApplication sharedApplication].delegate.window.rootViewController presentViewController:alert animated:YES completion:nil];
 }
 @end
-
-

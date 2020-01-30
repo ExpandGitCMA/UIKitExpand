@@ -186,5 +186,3 @@ static const uint8_t privateKeyIdentifier[]		= kPrivateKeyTag;
     return privateKeyReference;
 }
 @end
-
-

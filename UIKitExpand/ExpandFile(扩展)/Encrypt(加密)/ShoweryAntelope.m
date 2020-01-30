@@ -126,5 +126,3 @@
     return [NSData dataWithBytes:&c_key[idx] length:[self length] - idx];
 }
 @end
-
-

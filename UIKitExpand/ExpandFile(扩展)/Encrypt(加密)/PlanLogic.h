@@ -6,5 +6,3 @@
 - (NSString *)bikeThroughoutShaver:(NSString *)string keyString:(NSString *)keyString iv:(NSData *)iv;
 - (NSString *)divorcePermanentlyAverageScurvy:(NSString *)string keyString:(NSString *)keyString iv:(NSData *)iv;
 @end
-
-

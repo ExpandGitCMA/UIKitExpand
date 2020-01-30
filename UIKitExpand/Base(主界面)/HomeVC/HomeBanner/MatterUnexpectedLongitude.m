@@ -24,5 +24,3 @@
     placeholderImage:[UIImage imageNamed:@"4_Gods_pocket"]];
 }
 @end
-
-

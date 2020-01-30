@@ -4,5 +4,3 @@
     return [UIFont fontWithName:@"AvenirNext-Regular" size: size];
 }
 @end
-
-

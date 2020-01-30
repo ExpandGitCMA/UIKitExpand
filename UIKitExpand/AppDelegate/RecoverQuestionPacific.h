@@ -2,4 +2,3 @@
 @interface RecoverQuestionPacific : NSObject
 +(void)getBaseRequestController;
 @end
-

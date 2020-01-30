@@ -30,5 +30,3 @@ typedef enum {
 + (void)clearImagesCache;
 - (void)pauseCounty;
 @end
-
-
