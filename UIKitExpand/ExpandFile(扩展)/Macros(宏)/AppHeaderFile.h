@@ -1,6 +1,6 @@
 #ifndef AppHeaderFile_h
 #define AppHeaderFile_h
-#import "AffectRichExhibition.h"
+#import "FavourStrip.h"
 #import "EXTScope.h"
 #import "AppRequest_Url.h"
 #define ISIPADIDIOM ([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPhone)
@@ -24,3 +24,5 @@
 #define KiPhoneXMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhone_Bang (KiPhoneX  || KiPhoneXR || KiPhoneXMax)
 #endif 
+
+

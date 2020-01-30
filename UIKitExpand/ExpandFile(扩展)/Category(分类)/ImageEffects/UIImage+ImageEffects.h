@@ -11,3 +11,5 @@
 - (UIImage *)radiuslayer;
 - (UIImage *)localizeFitImage;
 @end
+
+

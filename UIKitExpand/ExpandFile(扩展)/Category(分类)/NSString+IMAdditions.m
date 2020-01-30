@@ -80,7 +80,7 @@
     CFStringRef cfUrlEncodedString = CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
                                                                              (__bridge CFStringRef)self,
                                                                              NULL,
-                                                                             (__bridge CFStringRef)(@":!*();@/&?#[]+$,='%’\""),
+                                                                             (__bridge CFStringRef)(@":!*();@/&?#[]+$,='%â€™\""),
                                                                              kCFStringEncodingUTF8);
     NSString *urlEncoded = [NSString stringWithString:(__bridge_transfer NSString *)cfUrlEncodedString];
     return urlEncoded;
@@ -170,3 +170,5 @@
     }
 }
 @end
+
+
