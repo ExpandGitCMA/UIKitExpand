@@ -66,7 +66,7 @@
     BeatLikeNewspaper *model = self.dataSource[indexPath.row];
     cell.title.text = model.title;
     cell.title.numberOfLines = 0;
-    cell.time.text = model.rule;
+    cell.time.text = [NSString stringWithFormat:@"%@%@%@%@",@"(",model.title,@")",model.rule];
     return cell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
