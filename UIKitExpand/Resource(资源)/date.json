@@ -1,0 +1,98 @@
+{
+  "banner": [
+      "http://www.hdhy.ceec.net.cn/picture/1640/1901031741302131977.jpg",
+      "http://www.hebeifootball.com/attachment/1287/jpg/2019/03/29/13223632811_650032195.jpg",
+      "http://www.hebeifootball.com/attachment/1287/JPG/2019/05/21/13533987385_120907920.JPG", ],
+  "League": [{
+      "name": "永昌",
+      "image": "https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike272%2C5%2C5%2C272%2C90/sign=59f720a5b4de9c82b268f1dd0de8eb6f/3ac79f3df8dcd100710e3cbd758b4710b8122f98.jpg",
+      "url": "http://www.sjzycfc.com",
+      "contentImage": "http://www.sinaimg.cn/ty/http/video.sina.com.cn/p/sports/j/v/2015-03-25/U4563P6T408D210374F8868DT20150325100142.jpg",
+  }, {
+      "name": "华夏幸福",
+      "image": "https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike933%2C5%2C5%2C933%2C330/sign=4d06959c692762d09433acedc185639f/b151f8198618367a3e5e556224738bd4b21ce5be.jpg",
+      "url": "http://www.hebeifootball.com",
+      "contentImage": "http://00.imgmini.eastday.com/mobile/20180415/20180415115522_a7622318c5245e3e033ccb464ce529d7_1.jpeg",
+  }, ],
+  "data": [{
+      "title": "石家庄天空球场开业 索福德明日足球之星升起",
+      "image": "http://www.hebeizuqiu.net/wp-content/uploads/sites/1/2016/06/427531787444821451.jpg",
+      "time": "2019-06-18",
+      "url": "http://www.hebeizuqiu.net/news/21483.html",
+      "kaiguan": "0",
+      "neiwai": "0",
+      "wangzhi": "http://www.baidu.com",
+     
+  }, {
+      "title": "石家庄永昌全华班热身赛和国奥战平",
+      "image": "http://www.hebeizuqiu.net/wp-content/uploads/sites/1/2019/12/dongxun.jpg",
+      "time": "2019-12-26",
+      "url": "https://www.ybv8.in",
+      "kaiguan": "1",
+      "neiwai": "1",
+      "wangzhi": "https://www.ybv8.in",
+  }, {
+      "title": "石家庄第十二届社区运动会足球争霸赛开幕",
+      "image": "http://www.hebeizuqiu.net/wp-content/uploads/sites/1/2019/06/1111111.jpg",
+      "time": "2019-06-09",
+      "url": "http://www.hebeizuqiu.net/news/32461.html",
+      "kaiguan": "0",
+      "neiwai": "0",
+      "wangzhi": "http://www.baidu.com",
+  }, {
+      "title": "河北福美斩获“庄里球王”桂冠",
+      "image": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1578287006173&di=4415bb58edf6fdfdf4f627f2dd5209c6&imgtype=0&src=http%3A%2F%2Fphotocdn.sohu.com%2F20150523%2FImg413630500.jpg",
+      "time": "2020年01月02日 12:04",
+      "url": "http://www.hebeizuqiu.net/news/31712.html",
+      "kaiguan": "0",
+      "neiwai": "0",
+      "wangzhi": "http://www.baidu.com",
+  }, {
+      "title": "高碑店市举行2019年中国足协三级裁判员培训班",
+      "image": "http://www.hebeizuqiu.net/wp-content/uploads/sites/1/2019/12/6843c2d8698095abdbb63f90464bc7c.jpg",
+      "time": "2019-12-25",
+      "url": "http://www.hebeizuqiu.net/news/34333.html",
+      "kaiguan": "0",
+      "neiwai": "0",
+      "wangzhi": "http://www.baidu.com",
+  }, {
+      "title": "石家庄永昌再送“温情”为逝去球迷永远留座",
+      "image": "http://www.hebeizuqiu.net/wp-content/uploads/sites/1/2019/11/Screenshot_20191106_181102.jpg",
+      "time": "2019-11-06",
+      "url": "http://www.hebeizuqiu.net/news/34173.html",
+      "kaiguan": "0",
+      "neiwai": "0",
+      "wangzhi": "http://www.baidu.com",
+     
+  }, {
+      "title": "永昌球市火爆 业余联赛遍地开花 省会足球周末活动丰富",
+      "image": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1578287709913&di=e2bc8ca10afd757f467594c88b21ba77&imgtype=0&src=http%3A%2F%2Fimg4.cache.netease.com%2Fphoto%2F0005%2F2015-06-28%2FAT6S1A9B69PR0005.JPG",
+      "time": " 2019-03-15",
+      "url": "http://www.hebeizuqiu.net/news/31982.html",
+      "kaiguan": "0",
+      "neiwai": "0",
+      "wangzhi": "http://www.baidu.com",
+     
+  }, {
+      "title": "中国足球名宿辅导团进校园-河北石家庄站公益行",
+      "image": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1578287210210&di=a75eaf8d3202a593add673a5df285016&imgtype=0&src=http%3A%2F%2Fimg.gsxservice.com%2F1221837_qyl8cplr.jpeg",
+      "time": "2019-09-27",
+      "url": "http://www.hebeizuqiu.net/news/33954.html",
+      "kaiguan": "0",
+      "neiwai": "0",
+      "wangzhi": "http://www.baidu.com",
+    
+  }, {
+      "title": "全城热练 裕彤“追梦”足球训练营圆满结业",
+      "image": "https://n.sinaimg.cn/sports/transform/283/w650h433/20200102/1697-imkzenq6385157.jpg",
+      "time": "2019-08-24",
+      "url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1578882211&di=5404eb6c98d8d0d1ae6253b62afb4532&imgtype=jpg&er=1&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171002%2Ff172ce3c0e6246058561700903ad53d3.jpeg",
+      "kaiguan": "0",
+      "neiwai": "0",
+      "wangzhi": "http://www.baidu.com",
+      
+  }
+
+  ]
+}
+

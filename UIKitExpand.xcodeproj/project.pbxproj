@@ -20,7 +20,15 @@
 		031EBEF823D6D0A200919BEF /* NSString+IMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEF723D6D0A200919BEF /* NSString+IMAdditions.m */; };
 		0324AC6723E29BC4004B4C3E /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 0324AC6523E29BC4004B4C3E /* iTunesArtwork */; };
 		0324AC6823E29BC4004B4C3E /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 0324AC6623E29BC4004B4C3E /* iTunesArtwork@2x */; };
-		0324AC6B23E2B883004B4C3E /* WKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324AC6923E2B883004B4C3E /* WKViewController.m */; };
+		0324AC7523E2C7A8004B4C3E /* AboutUsVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324AC7323E2C7A8004B4C3E /* AboutUsVController.m */; };
+		0324AC7623E2C7A8004B4C3E /* AboutUsVController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0324AC7423E2C7A8004B4C3E /* AboutUsVController.xib */; };
+		0324AC9A23E2DEFA004B4C3E /* date.json in Resources */ = {isa = PBXBuildFile; fileRef = 0324AC9923E2DEFA004B4C3E /* date.json */; };
+		0324AC9D23E2E127004B4C3E /* BestManner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324AC9C23E2E127004B4C3E /* BestManner.m */; };
+		0324ACA223E2EED4004B4C3E /* BestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACA123E2EED4004B4C3E /* BestModel.m */; };
+		0324ACA623E2F317004B4C3E /* QuLeHomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACA323E2F317004B4C3E /* QuLeHomeDetailViewController.m */; };
+		0324ACA723E2F317004B4C3E /* QuLeHomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0324ACA423E2F317004B4C3E /* QuLeHomeDetailViewController.xib */; };
+		0324ACAB23E2FD55004B4C3E /* UsVCViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACA923E2FD55004B4C3E /* UsVCViewCell.m */; };
+		0324ACAC23E2FD55004B4C3E /* UsVCViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0324ACAA23E2FD55004B4C3E /* UsVCViewCell.xib */; };
 		0375018D23E1B96700D041E5 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375018C23E1B96700D041E5 /* EmptyView.m */; };
 		0375019523E1D9DE00D041E5 /* ZeroSDCycleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019023E1D9DE00D041E5 /* ZeroSDCycleViewCell.m */; };
 		0375019623E1D9DE00D041E5 /* ZeroSDCSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019223E1D9DE00D041E5 /* ZeroSDCSafety.m */; };
@@ -116,8 +124,20 @@
 		031EBEF723D6D0A200919BEF /* NSString+IMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IMAdditions.m"; sourceTree = "<group>"; };
 		0324AC6523E29BC4004B4C3E /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		0324AC6623E29BC4004B4C3E /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
-		0324AC6923E2B883004B4C3E /* WKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKViewController.m; sourceTree = "<group>"; };
-		0324AC6A23E2B883004B4C3E /* WKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKViewController.h; sourceTree = "<group>"; };
+		0324AC7223E2C7A8004B4C3E /* AboutUsVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutUsVController.h; sourceTree = "<group>"; };
+		0324AC7323E2C7A8004B4C3E /* AboutUsVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutUsVController.m; sourceTree = "<group>"; };
+		0324AC7423E2C7A8004B4C3E /* AboutUsVController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsVController.xib; sourceTree = "<group>"; };
+		0324AC9923E2DEFA004B4C3E /* date.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = date.json; sourceTree = "<group>"; };
+		0324AC9B23E2E127004B4C3E /* BestManner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BestManner.h; sourceTree = "<group>"; };
+		0324AC9C23E2E127004B4C3E /* BestManner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BestManner.m; sourceTree = "<group>"; };
+		0324ACA023E2EED4004B4C3E /* BestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BestModel.h; sourceTree = "<group>"; };
+		0324ACA123E2EED4004B4C3E /* BestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BestModel.m; sourceTree = "<group>"; };
+		0324ACA323E2F317004B4C3E /* QuLeHomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuLeHomeDetailViewController.m; sourceTree = "<group>"; };
+		0324ACA423E2F317004B4C3E /* QuLeHomeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuLeHomeDetailViewController.xib; sourceTree = "<group>"; };
+		0324ACA523E2F317004B4C3E /* QuLeHomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuLeHomeDetailViewController.h; sourceTree = "<group>"; };
+		0324ACA823E2FD55004B4C3E /* UsVCViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsVCViewCell.h; sourceTree = "<group>"; };
+		0324ACA923E2FD55004B4C3E /* UsVCViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsVCViewCell.m; sourceTree = "<group>"; };
+		0324ACAA23E2FD55004B4C3E /* UsVCViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsVCViewCell.xib; sourceTree = "<group>"; };
 		0375017A23E18F1C00D041E5 /* AppColorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppColorHeader.h; sourceTree = "<group>"; };
 		0375017B23E18F1C00D041E5 /* AppHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHeaderFile.h; sourceTree = "<group>"; };
 		0375017C23E18FA700D041E5 /* AppRequest_Url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRequest_Url.h; sourceTree = "<group>"; };
@@ -144,7 +164,7 @@
 		B34688AB1F15FB8800498E66 /* AcceptPastPleasure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcceptPastPleasure.h; sourceTree = "<group>"; };
 		B34688AC1F15FB8800498E66 /* AcceptPastPleasure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptPastPleasure.m; sourceTree = "<group>"; };
 		B3D208D41F47E89700F0CE6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "UIKitExpand/Resource(资源)/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
-		B3F4EFFB1F14A8600005197E /* 亞博体育-球圈.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "亞博体育-球圈.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F4EFFB1F14A8600005197E /* YABO体育-球圈.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YABO体育-球圈.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F4EFFF1F14A8600005197E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3F4F00D1F14A8600005197E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3F4F00F1F14A8600005197E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -261,12 +281,11 @@
 				031EBEF423D6C90400919BEF /* TestActiveTargetController.m */,
 				031EBEE123D6C8C400919BEF /* SpeakBeggarAcademic.h */,
 				031EBEE223D6C8C400919BEF /* SpeakBeggarAcademic.m */,
-				031EBEE923D6C8DC00919BEF /* InvadeHollowCabbageController.h */,
-				031EBEE523D6C8DC00919BEF /* InvadeHollowCabbageController.m */,
 				031EBEED23D6C8DD00919BEF /* RespectiveButterflyController.h */,
 				031EBEE623D6C8DC00919BEF /* RespectiveButterflyController.m */,
 				031EBEE823D6C8DC00919BEF /* DisposeOverweightFakeController.h */,
 				031EBEEB23D6C8DC00919BEF /* DisposeOverweightFakeController.m */,
+				0324AC6E23E2C72B004B4C3E /* MeCenterVC */,
 				0324AC6423E2938A004B4C3E /* ScoreVC */,
 				0375019823E1DC7100D041E5 /* HomeVC */,
 			);
@@ -278,10 +297,30 @@
 			children = (
 				031EBEE423D6C8DC00919BEF /* BestMannerController.h */,
 				031EBEE723D6C8DC00919BEF /* BestMannerController.m */,
-				0324AC6A23E2B883004B4C3E /* WKViewController.h */,
-				0324AC6923E2B883004B4C3E /* WKViewController.m */,
+				0324AC9B23E2E127004B4C3E /* BestManner.h */,
+				0324AC9C23E2E127004B4C3E /* BestManner.m */,
+				0324ACA023E2EED4004B4C3E /* BestModel.h */,
+				0324ACA123E2EED4004B4C3E /* BestModel.m */,
+				0324ACA523E2F317004B4C3E /* QuLeHomeDetailViewController.h */,
+				0324ACA323E2F317004B4C3E /* QuLeHomeDetailViewController.m */,
+				0324ACA423E2F317004B4C3E /* QuLeHomeDetailViewController.xib */,
 			);
 			path = ScoreVC;
+			sourceTree = "<group>";
+		};
+		0324AC6E23E2C72B004B4C3E /* MeCenterVC */ = {
+			isa = PBXGroup;
+			children = (
+				031EBEE923D6C8DC00919BEF /* InvadeHollowCabbageController.h */,
+				031EBEE523D6C8DC00919BEF /* InvadeHollowCabbageController.m */,
+				0324AC7223E2C7A8004B4C3E /* AboutUsVController.h */,
+				0324AC7323E2C7A8004B4C3E /* AboutUsVController.m */,
+				0324AC7423E2C7A8004B4C3E /* AboutUsVController.xib */,
+				0324ACA823E2FD55004B4C3E /* UsVCViewCell.h */,
+				0324ACA923E2FD55004B4C3E /* UsVCViewCell.m */,
+				0324ACAA23E2FD55004B4C3E /* UsVCViewCell.xib */,
+			);
+			path = MeCenterVC;
 			sourceTree = "<group>";
 		};
 		0375018A23E1B93500D041E5 /* EmptyView */ = {
@@ -361,7 +400,7 @@
 		B3F4EFFC1F14A8600005197E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3F4EFFB1F14A8600005197E /* 亞博体育-球圈.app */,
+				B3F4EFFB1F14A8600005197E /* YABO体育-球圈.app */,
 				B3F4F0141F14A8600005197E /* RecoverConcerningCrater.xctest */,
 				B3F4F01F1F14A8600005197E /* FundamentalAd.xctest */,
 			);
@@ -431,6 +470,7 @@
 			isa = PBXGroup;
 			children = (
 				B3D208D41F47E89700F0CE6F /* Assets.xcassets */,
+				0324AC9923E2DEFA004B4C3E /* date.json */,
 			);
 			path = "Resource(资源)";
 			sourceTree = "<group>";
@@ -591,7 +631,7 @@
 			);
 			name = UIKitExpand;
 			productName = UIKitExpand;
-			productReference = B3F4EFFB1F14A8600005197E /* 亞博体育-球圈.app */;
+			productReference = B3F4EFFB1F14A8600005197E /* YABO体育-球圈.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B3F4F0131F14A8600005197E /* UIKitExpandTests */ = {
@@ -690,6 +730,10 @@
 				031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */,
 				037501A023E1DCC800D041E5 /* NewTableViewCell.xib in Resources */,
 				0324AC6723E29BC4004B4C3E /* iTunesArtwork in Resources */,
+				0324ACAC23E2FD55004B4C3E /* UsVCViewCell.xib in Resources */,
+				0324ACA723E2F317004B4C3E /* QuLeHomeDetailViewController.xib in Resources */,
+				0324AC9A23E2DEFA004B4C3E /* date.json in Resources */,
+				0324AC7623E2C7A8004B4C3E /* AboutUsVController.xib in Resources */,
 				B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -763,8 +807,9 @@
 				031EBEEF23D6C8DD00919BEF /* RespectiveButterflyController.m in Sources */,
 				0375019F23E1DCC800D041E5 /* NewTableViewCell.m in Sources */,
 				D8C6CA611F42DC4500BE85ED /* BendInformalProvince.m in Sources */,
+				0324ACA623E2F317004B4C3E /* QuLeHomeDetailViewController.m in Sources */,
 				031EBEF223D6C8DD00919BEF /* FrustrateFamilyInefficientController.m in Sources */,
-				0324AC6B23E2B883004B4C3E /* WKViewController.m in Sources */,
+				0324ACA223E2EED4004B4C3E /* BestModel.m in Sources */,
 				031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				D8C6CA6C1F42DC4500BE85ED /* FlatterSlightRhythm.m in Sources */,
 				031EBEF523D6C90400919BEF /* TestActiveTargetController.m in Sources */,
@@ -774,6 +819,7 @@
 				D8C6CA6E1F42DC4500BE85ED /* AcademicFinding.m in Sources */,
 				D8C6CA6A1F42DC4500BE85ED /* VeryGlobalBiochemistry.m in Sources */,
 				D8C6CA831F42EE4D00BE85ED /* AlternativeSkull.m in Sources */,
+				0324ACAB23E2FD55004B4C3E /* UsVCViewCell.m in Sources */,
 				031EBEF023D6C8DD00919BEF /* BestMannerController.m in Sources */,
 				0375019623E1D9DE00D041E5 /* ZeroSDCSafety.m in Sources */,
 				B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */,
@@ -789,6 +835,7 @@
 				0375019723E1D9DE00D041E5 /* ZeroSDCycleView.m in Sources */,
 				D8C6CA7C1F42E0AC00BE85ED /* ExpanFileConstants.m in Sources */,
 				031EBEEE23D6C8DD00919BEF /* InvadeHollowCabbageController.m in Sources */,
+				0324AC7523E2C7A8004B4C3E /* AboutUsVController.m in Sources */,
 				031EBEF823D6D0A200919BEF /* NSString+IMAdditions.m in Sources */,
 				D8C6CA801F42ED8F00BE85ED /* ShoweryCalendarManager.m in Sources */,
 				D8C6CA621F42DC4500BE85ED /* NSString+paths.m in Sources */,
@@ -799,6 +846,7 @@
 				D8C6CA681F42DC4500BE85ED /* IncreaseGraveAlcoholic.m in Sources */,
 				B74318342117D7FF002A6668 /* ReverseSexualCockManager.m in Sources */,
 				031EBEE323D6C8C400919BEF /* SpeakBeggarAcademic.m in Sources */,
+				0324AC9D23E2E127004B4C3E /* BestManner.m in Sources */,
 				031EBEF123D6C8DD00919BEF /* DisposeOverweightFakeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -972,7 +1020,7 @@
 					"-l\"AFNetworking\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.GamesBall;
-				PRODUCT_NAME = "亞博体育-球圈";
+				PRODUCT_NAME = "YABO体育-球圈";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1003,7 +1051,7 @@
 					"-l\"AFNetworking\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.GamesBall;
-				PRODUCT_NAME = "亞博体育-球圈";
+				PRODUCT_NAME = "YABO体育-球圈";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

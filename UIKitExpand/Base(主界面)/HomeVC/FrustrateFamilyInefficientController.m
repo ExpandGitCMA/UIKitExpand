@@ -5,6 +5,7 @@
 #import "NewTableViewCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "MJRefresh.h"
+#import "QuLeHomeDetailViewController.h"
 @interface FrustrateFamilyInefficientController ()<ZeroSDCycleViewDelegate,UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic,strong)ZeroSDCycleView *zeroSDCycleView;
 @property (nonatomic, strong)UITableView *tableView;
@@ -27,6 +28,7 @@
               self.automaticallyAdjustsScrollViewInsets = NO;
           }
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0, SCREEN_WIDTH, SCREEN_HEIGHT - kTabBarH)];
+        _tableView.tableFooterView = [UIView new];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableHeaderView =  [self zeroSDCycleView];
@@ -71,8 +73,7 @@
             [self.tableView reloadData];
     });
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NewTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;  
@@ -101,6 +102,15 @@
     return _zeroSDCycleView;
 }
 -(void)cycleScrollView:(ZeroSDCycleView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+      NewModel *model = self.marr [indexPath.row];
+    
+    QuLeHomeDetailViewController * homeDetailVC = [[QuLeHomeDetailViewController alloc] init];
+           homeDetailVC.hidesBottomBarWhenPushed = YES;
+           homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.pubtime,@"\n",model.title ];
+           [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
