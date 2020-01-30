@@ -1,4 +1,4 @@
-target 'SportsMatch' do
+target 'UIKitExpand' do
   pod 'AFNetworking'
   pod 'SDWebImage', '~> 3.7.3'
   pod 'MJRefresh'
