@@ -4,7 +4,7 @@ platform :ios, '8.0'
 
 inhibit_all_warnings!
 
-target :UIKitGame  do
+target :GKiOSGame  do
     #-------- 开源第三方库 -----
     pod 'AppBaseCategory'
     pod 'FMDB'
