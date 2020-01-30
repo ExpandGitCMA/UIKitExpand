@@ -32,6 +32,8 @@
 		0324ACB423E30660004B4C3E /* HollowMale.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACB323E30660004B4C3E /* HollowMale.m */; };
 		0324ACB823E309A0004B4C3E /* AnchorSongController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACB523E3099F004B4C3E /* AnchorSongController.m */; };
 		0324ACB923E309A0004B4C3E /* AnchorSongController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0324ACB723E309A0004B4C3E /* AnchorSongController.xib */; };
+		0324ACC123E31F4E004B4C3E /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACBB23E31F4E004B4C3E /* TableViewAnimationKit.m */; };
+		0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */; };
 		0375018D23E1B96700D041E5 /* TossUnnecessaryConsiderationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375018C23E1B96700D041E5 /* TossUnnecessaryConsiderationView.m */; };
 		0375019523E1D9DE00D041E5 /* MatterUnexpectedLongitude.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019023E1D9DE00D041E5 /* MatterUnexpectedLongitude.m */; };
 		0375019623E1D9DE00D041E5 /* InvestigateFate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375019223E1D9DE00D041E5 /* InvestigateFate.m */; };
@@ -147,6 +149,12 @@
 		0324ACB523E3099F004B4C3E /* AnchorSongController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnchorSongController.m; sourceTree = "<group>"; };
 		0324ACB623E3099F004B4C3E /* AnchorSongController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnchorSongController.h; sourceTree = "<group>"; };
 		0324ACB723E309A0004B4C3E /* AnchorSongController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnchorSongController.xib; sourceTree = "<group>"; };
+		0324ACBB23E31F4E004B4C3E /* TableViewAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewAnimationKit.m; sourceTree = "<group>"; };
+		0324ACBC23E31F4E004B4C3E /* TableViewAnimationKitHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitHeaders.h; sourceTree = "<group>"; };
+		0324ACBD23E31F4E004B4C3E /* UITableView+XSAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+XSAnimationKit.h"; sourceTree = "<group>"; };
+		0324ACBE23E31F4E004B4C3E /* TableViewAnimationKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitConfig.h; sourceTree = "<group>"; };
+		0324ACBF23E31F4E004B4C3E /* TableViewAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKit.h; sourceTree = "<group>"; };
+		0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XSAnimationKit.m"; sourceTree = "<group>"; };
 		0375017A23E18F1C00D041E5 /* AppColorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppColorHeader.h; sourceTree = "<group>"; };
 		0375017B23E18F1C00D041E5 /* AppHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHeaderFile.h; sourceTree = "<group>"; };
 		0375017C23E18FA700D041E5 /* AppRequest_Url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRequest_Url.h; sourceTree = "<group>"; };
@@ -259,6 +267,7 @@
 		031EBEA523D6B1E900919BEF /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				0324ACBA23E31F4E004B4C3E /* TableViewAnimationKit */,
 				031EBEA623D6B1E900919BEF /* EXTScope */,
 				031EBEA923D6B1E900919BEF /* ALAssetsLibrary */,
 			);
@@ -338,6 +347,19 @@
 				0324ACAF23E30043004B4C3E /* ImpairBeingController.xib */,
 			);
 			path = MeCenterVC;
+			sourceTree = "<group>";
+		};
+		0324ACBA23E31F4E004B4C3E /* TableViewAnimationKit */ = {
+			isa = PBXGroup;
+			children = (
+				0324ACBB23E31F4E004B4C3E /* TableViewAnimationKit.m */,
+				0324ACBC23E31F4E004B4C3E /* TableViewAnimationKitHeaders.h */,
+				0324ACBD23E31F4E004B4C3E /* UITableView+XSAnimationKit.h */,
+				0324ACBE23E31F4E004B4C3E /* TableViewAnimationKitConfig.h */,
+				0324ACBF23E31F4E004B4C3E /* TableViewAnimationKit.h */,
+				0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */,
+			);
+			path = TableViewAnimationKit;
 			sourceTree = "<group>";
 		};
 		0375018A23E1B93500D041E5 /* EmptyView */ = {
@@ -822,6 +844,7 @@
 				D8C6CA691F42DC4500BE85ED /* RevealChainElse.m in Sources */,
 				D8C6CA631F42DC4500BE85ED /* UIImage+ImageEffects.m in Sources */,
 				031EBEEF23D6C8DD00919BEF /* ReportZealHandyController.m in Sources */,
+				0324ACC123E31F4E004B4C3E /* TableViewAnimationKit.m in Sources */,
 				0324ACB423E30660004B4C3E /* HollowMale.m in Sources */,
 				0375019F23E1DCC800D041E5 /* EndLinenPeak.m in Sources */,
 				D8C6CA611F42DC4500BE85ED /* CrossAnalysisAccidental.m in Sources */,
@@ -836,6 +859,7 @@
 				B34688AD1F15FB8800498E66 /* RecoverQuestionPacific.m in Sources */,
 				D8C6CA6E1F42DC4500BE85ED /* ScareBesidesHurding.m in Sources */,
 				0324ACB023E30043004B4C3E /* ImpairBeingController.m in Sources */,
+				0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */,
 				0324ACB823E309A0004B4C3E /* AnchorSongController.m in Sources */,
 				D8C6CA6A1F42DC4500BE85ED /* ShoweryAntelope.m in Sources */,
 				D8C6CA831F42EE4D00BE85ED /* UncertainTransfusion.m in Sources */,

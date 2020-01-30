@@ -6,6 +6,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "MJRefresh.h"
 #import "PermitRemoteChatController.h"
+#import "TableViewAnimationKitHeaders.h"
 @interface PourConsciousnessPassiveController ()<ZeroSDCycleViewDelegate,UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic,strong)ReuniteDifficultyWalletView *zeroSDCycleView;
 @property (nonatomic, strong)UITableView *tableView;
@@ -64,6 +65,7 @@
                       [self.tableView.mj_header endRefreshing];
                       [self.tableView.mj_footer endRefreshing];
                       [self.tableView reloadData];
+                      [self starAnimationWithTableView:self.tableView];
            });
         }
     }];
@@ -107,10 +109,15 @@
       BackwardTallWreck *model = self.marr [indexPath.row];
     PermitRemoteChatController * homeDetailVC = [[PermitRemoteChatController alloc] init];
            homeDetailVC.hidesBottomBarWhenPushed = YES;
-           homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.pubtime,@"\n",model.title ];
+           homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@%@%@",model.pubtime,@"\n",model.modtime_desc,model.title,model.tags  ];
            [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)starAnimationWithTableView:(UITableView *)tableView {
+    
+    [TableViewAnimationKit showWithAnimationType:     XSTableViewAnimationTypeSpringList tableView:tableView];
 }
 @end

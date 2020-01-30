@@ -5,6 +5,7 @@
 #import "EndLinenPeak.h"
 #import "PermitRemoteChatController.h"
 #import "ReuniteDifficultyWalletView.h"
+#import "TableViewAnimationKitHeaders.h"
 @interface BriefThornController ()<ZeroSDCycleViewDelegate,UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *dataSource;
@@ -55,6 +56,7 @@
                         [self.tableView.mj_header endRefreshing];
                         [self.tableView.mj_footer endRefreshing];
                         [self.tableView reloadData];
+                        [self starAnimationWithTableView:self.tableView];
              });
      }];
 }
@@ -94,5 +96,9 @@
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+- (void)starAnimationWithTableView:(UITableView *)tableView {
+    
+    [TableViewAnimationKit showWithAnimationType:   XSTableViewAnimationTypeToTop tableView:tableView];
 }
 @end
