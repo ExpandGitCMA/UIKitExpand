@@ -79,7 +79,8 @@
      BeatLikeNewspaper *model = self.dataSource[indexPath.row];
     PermitRemoteChatController * homeDetailVC = [[PermitRemoteChatController alloc] init];
            homeDetailVC.hidesBottomBarWhenPushed = YES;
-           homeDetailVC.title = model.rule;
+           homeDetailVC.title = model.title;
+           homeDetailVC.conten = model.rule;
            [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
 -(ReuniteDifficultyWalletView*)zeroSDCycleView{

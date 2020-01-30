@@ -7,10 +7,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.QuLeDetailTextView.editable = NO;
-    if (self.conten) {
-          self.QuLeDetailTextView.text = self.conten;
-    }else{
-          self.QuLeDetailTextView.text = self.title;
-    }
+    self.QuLeDetailTextView.text = self.conten;
 }
 @end
