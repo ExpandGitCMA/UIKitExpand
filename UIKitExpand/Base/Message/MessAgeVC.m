@@ -14,7 +14,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     self.title = @"消息中心";
+    
     [self tableView];
 }
 
@@ -54,7 +54,7 @@
    MessAgeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-     MessAgeModel *model = [self.dataSource objectAtIndex:indexPath.row];
+    MessAgeModel *model = [self.dataSource objectAtIndex:indexPath.row];
     cell.title.text = model.title;
     cell.image.image = [UIImage imageNamed:model.image];
     return cell;

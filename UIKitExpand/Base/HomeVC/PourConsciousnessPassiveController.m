@@ -11,6 +11,7 @@
 #import "EndLImageCell.h"
 #import "PreviousDiscount.h"
 #import "MessAgeVC.h"
+#import "DFCNewCode.h"
 @interface PourConsciousnessPassiveController ()<ZeroSDCycleViewDelegate,UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic,strong)ReuniteDifficultyWalletView *zeroSDCycleView;
 @property (nonatomic, strong)UITableView *tableView;
@@ -29,7 +30,6 @@
 
 -(void)initUIView{
     [self whisk];
-    [self search];
     [self marr];
     [self tableView];
     [self getHomeBanner];
@@ -37,7 +37,8 @@
 
 -(void)whisk{
 
-    [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(msgClick) title:@"msg_home"];
+    [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavLeftStyle barTarget:self action:@selector(whiskClick) title:@"category_camera_7_gray"];
+     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(msgClick) title:@"msg_home"];
 }
 
 
@@ -215,7 +216,7 @@
      id obj = self.marr[indexPath.row];
      if ([obj isKindOfClass:[ BackwardTallWreck class]]) {
        BackwardTallWreck *model = self.marr [indexPath.row];
-       homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@%@%@",model.pubtime,@"\n",model.modtime_desc,model.title,model.tags  ];
+       homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@%@",model.pubtime,@"\n",model.modtime_desc,model.title];
 
        }else if ([obj isKindOfClass:[ NewsModel class]]){
             NewsModel *model = self.marr [indexPath.row];
@@ -237,18 +238,30 @@
 #pragma mark 点击搜索框点击事件
 - (void)searchClick{
     
-
+    MessAgeVC * homeDetailVC = [[MessAgeVC alloc] init];
+     homeDetailVC.hidesBottomBarWhenPushed = YES;
+     homeDetailVC.title = @"热点搜索";
+     [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
 
 -(void)whiskClick{
+    DFCNewCode *newCode = [[DFCNewCode alloc]init];
+    newCode.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:newCode animated:YES];
 
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden=NO;
 
+    
+}
 #pragma mark - 点击消息按钮
 - (void)msgClick {
     
     MessAgeVC * homeDetailVC = [[MessAgeVC alloc] init];
     homeDetailVC.hidesBottomBarWhenPushed = YES;
+    homeDetailVC.title = @"消息中心";
     [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
 

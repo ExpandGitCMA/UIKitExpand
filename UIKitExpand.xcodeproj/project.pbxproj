@@ -66,6 +66,10 @@
 		03067FBD23E4395200A08E53 /* MessAgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067FBC23E4395200A08E53 /* MessAgeModel.m */; };
 		03067FC123E43D0100A08E53 /* MessAgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067FBF23E43D0100A08E53 /* MessAgeCell.m */; };
 		03067FC223E43D0100A08E53 /* MessAgeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03067FC023E43D0100A08E53 /* MessAgeCell.xib */; };
+		03067FD923E47A1F00A08E53 /* DFCNewCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067FD423E47A1F00A08E53 /* DFCNewCode.m */; };
+		03067FDA23E47A1F00A08E53 /* DFCWebViewCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067FD723E47A1F00A08E53 /* DFCWebViewCode.m */; };
+		03067FDE23E47AD600A08E53 /* DFCStatusUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067FDD23E47AD600A08E53 /* DFCStatusUtility.m */; };
+		03067FE123E47BA300A08E53 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067FDF23E47BA300A08E53 /* UIView+SDExtension.m */; };
 		031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEAB23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		031EBECC23D6C04D00919BEF /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 031EBECB23D6C04D00919BEF /* libAFNetworking.a */; };
 		031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031EBEDD23D6C88E00919BEF /* Main.storyboard */; };
@@ -225,6 +229,14 @@
 		03067FBE23E43D0100A08E53 /* MessAgeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessAgeCell.h; sourceTree = "<group>"; };
 		03067FBF23E43D0100A08E53 /* MessAgeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessAgeCell.m; sourceTree = "<group>"; };
 		03067FC023E43D0100A08E53 /* MessAgeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessAgeCell.xib; sourceTree = "<group>"; };
+		03067FD423E47A1F00A08E53 /* DFCNewCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCNewCode.m; sourceTree = "<group>"; };
+		03067FD523E47A1F00A08E53 /* DFCNewCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCNewCode.h; sourceTree = "<group>"; };
+		03067FD623E47A1F00A08E53 /* DFCWebViewCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCWebViewCode.h; sourceTree = "<group>"; };
+		03067FD723E47A1F00A08E53 /* DFCWebViewCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCWebViewCode.m; sourceTree = "<group>"; };
+		03067FDC23E47AD600A08E53 /* DFCStatusUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCStatusUtility.h; sourceTree = "<group>"; };
+		03067FDD23E47AD600A08E53 /* DFCStatusUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCStatusUtility.m; sourceTree = "<group>"; };
+		03067FDF23E47BA300A08E53 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		03067FE023E47BA300A08E53 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		031EBEA723D6B1E900919BEF /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		031EBEA823D6B1E900919BEF /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		031EBEAA23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
@@ -334,13 +346,17 @@
 		03067F1623E41BB000A08E53 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				03067FE023E47BA300A08E53 /* UIView+SDExtension.h */,
+				03067FDF23E47BA300A08E53 /* UIView+SDExtension.m */,
+				03067FDC23E47AD600A08E53 /* DFCStatusUtility.h */,
+				03067FDD23E47AD600A08E53 /* DFCStatusUtility.m */,
 				03067F1723E41BB000A08E53 /* UIControl+ExControlayerStyle.m */,
 				03067F1823E41BB000A08E53 /* CrossAnalysisAccidental.m */,
-				03067F1923E41BB000A08E53 /* ImageEffects */,
 				03067F2023E41BB000A08E53 /* NSString+IMAdditions.h */,
 				03067F2123E41BB000A08E53 /* UIControl+ExControlayerStyle.h */,
 				03067F2223E41BB000A08E53 /* CrossAnalysisAccidental.h */,
 				03067F2323E41BB000A08E53 /* NSString+IMAdditions.m */,
+				03067F1923E41BB000A08E53 /* ImageEffects */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -468,6 +484,7 @@
 				03067F5623E41BB100A08E53 /* NewsCell.h */,
 				03067F5123E41BB100A08E53 /* NewsCell.m */,
 				03067F5723E41BB100A08E53 /* NewsCell.xib */,
+				03067FD223E47A1800A08E53 /* SCode */,
 				03067F5823E41BB100A08E53 /* HomeBanner */,
 			);
 			path = HomeVC;
@@ -537,6 +554,17 @@
 				03067FC023E43D0100A08E53 /* MessAgeCell.xib */,
 			);
 			path = Message;
+			sourceTree = "<group>";
+		};
+		03067FD223E47A1800A08E53 /* SCode */ = {
+			isa = PBXGroup;
+			children = (
+				03067FD523E47A1F00A08E53 /* DFCNewCode.h */,
+				03067FD423E47A1F00A08E53 /* DFCNewCode.m */,
+				03067FD623E47A1F00A08E53 /* DFCWebViewCode.h */,
+				03067FD723E47A1F00A08E53 /* DFCWebViewCode.m */,
+			);
+			path = SCode;
 			sourceTree = "<group>";
 		};
 		031EBEA523D6B1E900919BEF /* Vender */ = {
@@ -899,6 +927,8 @@
 				03067F9423E41BB100A08E53 /* ShoweryAntelope.m in Sources */,
 				03067F9123E41BB100A08E53 /* PlanLogic.m in Sources */,
 				03067FA223E41BB100A08E53 /* ReuniteDifficultyWalletView.m in Sources */,
+				03067FD923E47A1F00A08E53 /* DFCNewCode.m in Sources */,
+				03067FDE23E47AD600A08E53 /* DFCStatusUtility.m in Sources */,
 				03067FAB23E41BB100A08E53 /* ImpairBeingController.m in Sources */,
 				03067F8B23E41BB100A08E53 /* FavourStrip.m in Sources */,
 				03067F9723E41BB100A08E53 /* AccountBeyondInsurance.m in Sources */,
@@ -910,6 +940,7 @@
 				03067FA023E41BB100A08E53 /* MatterUnexpectedLongitude.m in Sources */,
 				03067F9B23E41BB100A08E53 /* EndLinenPeak.m in Sources */,
 				03067F8123E41BB100A08E53 /* SetEquality.m in Sources */,
+				03067FDA23E47A1F00A08E53 /* DFCWebViewCode.m in Sources */,
 				03067FB223E41BB100A08E53 /* PermitRemoteChatController.m in Sources */,
 				0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */,
 				03067F9523E41BB100A08E53 /* CloudyWharf.m in Sources */,
@@ -922,6 +953,7 @@
 				03067FC123E43D0100A08E53 /* MessAgeCell.m in Sources */,
 				03067F9D23E41BB100A08E53 /* PourConsciousnessPassiveController.m in Sources */,
 				03067F8F23E41BB100A08E53 /* TossUnnecessaryConsiderationView.m in Sources */,
+				03067FE123E47BA300A08E53 /* UIView+SDExtension.m in Sources */,
 				03067F8C23E41BB100A08E53 /* FeelLeatherManager.m in Sources */,
 				03067F9623E41BB100A08E53 /* BrieflyFlexibleAquarium.m in Sources */,
 				03067FA523E41BB100A08E53 /* AnchorSongController.m in Sources */,

@@ -80,27 +80,26 @@
 //通过接收点击事件对每个tabbar item的点击都执行动画
 -(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
   
-     NSInteger index = [self.tabBar.items indexOfObject:item];
-     DEBUG_NSLog(@"通过接收点击事件对每个tabbar=%@ %ld",item.title ,index);
- 
+     
 }
 
 
 -(void)beginAnimation{
-       NSInteger index ;
+       NSInteger indext ;
         NSMutableArray *arry = [NSMutableArray array];
            for (UIView *btn in self.tabBar.subviews) {
                if ([btn isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
                     [arry addObject:btn];
                }
         }
-       UIView *btnView = [arry objectAtIndex:index];
+       UIView *btnView = [arry objectAtIndex: indext];
        CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.y"];
         animation.values = @[@0.0, @-4.15, @-7.26, @-9.34, @-10.37, @-9.34, @-7.26, @-4.15, @0.0, @2.0, @-2.9, @-4.94, @-6.11, @-6.42, @-5.86, @-4.44, @-2.16, @0.0];
         animation.duration = 0.8;
         animation.beginTime = CACurrentMediaTime()+1;
         [btnView.layer addAnimation:animation forKey:nil];
 }
+
 
 - (void)tabBar:(UITabBar *)tabBar willBeginCustomizingItems:(NSArray<UITabBarItem *> *)items {
 }
