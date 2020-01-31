@@ -9,20 +9,46 @@
 #import "TableViewAnimationKitHeaders.h"
 #import "NewsCell.h"
 #import "EndLImageCell.h"
-
+#import "PreviousDiscount.h"
 @interface PourConsciousnessPassiveController ()<ZeroSDCycleViewDelegate,UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic,strong)ReuniteDifficultyWalletView *zeroSDCycleView;
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *marr;
+@property (nonatomic,strong) PreviousDiscount *search;//搜索框
 @end
 #define kTabBarH 64
+#define Search_width 115
+#define Search_height  40
 @implementation PourConsciousnessPassiveController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initUIView];
+    [self.tableView.mj_header beginRefreshing];
+}
+
+-(void)initUIView{
+    [self whisk];
+    [self search];
     [self marr];
     [self tableView];
     [self getHomeBanner];
-    [self.tableView.mj_header beginRefreshing];
+}
+
+-(void)whisk{
+
+    [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(msgClick) title:@"msg_home"];
+}
+
+
+-(PreviousDiscount*)search{
+    if (_search==nil) {
+        _search = [[PreviousDiscount alloc]initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH, Search_height)];
+        [_search addTarget:self action:@selector(searchClick) forControlEvents:UIControlEventTouchUpInside];
+        self.navigationItem.titleView = _search;
+        
+        
+    }
+    return _search;
 }
 
 -(UITableView*)tableView{
@@ -45,6 +71,10 @@
     }
     return _tableView;
 }
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+}
+
 -(NSMutableArray*)marr{
     if (!_marr) {
        _marr = [NSMutableArray array];
@@ -200,4 +230,20 @@
     
     [TableViewAnimationKit showWithAnimationType:     XSTableViewAnimationTypeSpringList tableView:tableView];
 }
+
+#pragma mark 点击搜索框点击事件
+- (void)searchClick{
+    
+
+}
+
+-(void)whiskClick{
+
+}
+
+#pragma mark - 点击消息按钮
+- (void)msgClick {
+    
+}
+
 @end
