@@ -128,6 +128,20 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
         }
     }];
 }
+
+
+// 读取本地JSON文件
+- (void )requestWithLocalFileWithName:(NSString *)name completed:(HttpCompletedBlock)completed {
+    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"json"];
+    // 将文件数据化
+    NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+    //对数据进行JSON格式化并返回字典形式
+    NSDictionary*dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+    if (dict) {
+        completed(true,dict);
+    }
+}
+
 - (NSString *)matchingAppServerUrl{
     return BASE_API_URL;
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03067F0023E3F37500A08E53 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067EFE23E3F37500A08E53 /* NewsCell.m */; };
+		03067F0123E3F37500A08E53 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03067EFF23E3F37500A08E53 /* NewsCell.xib */; };
+		03067F0523E3FE5F00A08E53 /* EndLImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F0323E3FE5F00A08E53 /* EndLImageCell.m */; };
+		03067F0623E3FE5F00A08E53 /* EndLImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03067F0423E3FE5F00A08E53 /* EndLImageCell.xib */; };
 		031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEAB23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		031EBECC23D6C04D00919BEF /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 031EBECB23D6C04D00919BEF /* libAFNetworking.a */; };
 		031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031EBEDD23D6C88E00919BEF /* Main.storyboard */; };
@@ -105,6 +109,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03067EFD23E3F37500A08E53 /* NewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		03067EFE23E3F37500A08E53 /* NewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		03067EFF23E3F37500A08E53 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		03067F0223E3FE5F00A08E53 /* EndLImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndLImageCell.h; sourceTree = "<group>"; };
+		03067F0323E3FE5F00A08E53 /* EndLImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EndLImageCell.m; sourceTree = "<group>"; };
+		03067F0423E3FE5F00A08E53 /* EndLImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EndLImageCell.xib; sourceTree = "<group>"; };
 		031EBEA723D6B1E900919BEF /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		031EBEA823D6B1E900919BEF /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		031EBEAA23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
@@ -394,6 +404,12 @@
 				0375019C23E1DCC700D041E5 /* EndLinenPeak.h */,
 				0375019D23E1DCC800D041E5 /* EndLinenPeak.m */,
 				0375019E23E1DCC800D041E5 /* EndLinenPeak.xib */,
+				03067EFD23E3F37500A08E53 /* NewsCell.h */,
+				03067EFE23E3F37500A08E53 /* NewsCell.m */,
+				03067EFF23E3F37500A08E53 /* NewsCell.xib */,
+				03067F0223E3FE5F00A08E53 /* EndLImageCell.h */,
+				03067F0323E3FE5F00A08E53 /* EndLImageCell.m */,
+				03067F0423E3FE5F00A08E53 /* EndLImageCell.xib */,
 				0375018E23E1D9CF00D041E5 /* HomeBanner */,
 			);
 			path = HomeVC;
@@ -762,10 +778,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03067F0623E3FE5F00A08E53 /* EndLImageCell.xib in Resources */,
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
 				031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */,
 				037501A023E1DCC800D041E5 /* EndLinenPeak.xib in Resources */,
 				0324ACAC23E2FD55004B4C3E /* BlessPorter.xib in Resources */,
+				03067F0123E3F37500A08E53 /* NewsCell.xib in Resources */,
 				0324ACA723E2F317004B4C3E /* PermitRemoteChatController.xib in Resources */,
 				0324ACB923E309A0004B4C3E /* AnchorSongController.xib in Resources */,
 				0324AC9A23E2DEFA004B4C3E /* date.json in Resources */,
@@ -851,9 +869,11 @@
 				0324ACA623E2F317004B4C3E /* PermitRemoteChatController.m in Sources */,
 				031EBEF223D6C8DD00919BEF /* PourConsciousnessPassiveController.m in Sources */,
 				0324ACA223E2EED4004B4C3E /* BeatLikeNewspaper.m in Sources */,
+				03067F0023E3F37500A08E53 /* NewsCell.m in Sources */,
 				031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				D8C6CA6C1F42DC4500BE85ED /* BegBeyondAmphibian.m in Sources */,
 				031EBEF523D6C90400919BEF /* TendOutsideObjectionController.m in Sources */,
+				03067F0523E3FE5F00A08E53 /* EndLImageCell.m in Sources */,
 				0375019B23E1DCA000D041E5 /* BackwardTallWreck.m in Sources */,
 				D8C6CA721F42DC4500BE85ED /* FavourStrip.m in Sources */,
 				B34688AD1F15FB8800498E66 /* RecoverQuestionPacific.m in Sources */,

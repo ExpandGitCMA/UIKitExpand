@@ -7,6 +7,9 @@
 #import "MJRefresh.h"
 #import "PermitRemoteChatController.h"
 #import "TableViewAnimationKitHeaders.h"
+#import "NewsCell.h"
+#import "EndLImageCell.h"
+
 @interface PourConsciousnessPassiveController ()<ZeroSDCycleViewDelegate,UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic,strong)ReuniteDifficultyWalletView *zeroSDCycleView;
 @property (nonatomic, strong)UITableView *tableView;
@@ -35,7 +38,9 @@
         _tableView.dataSource = self;
         _tableView.tableHeaderView =  [self zeroSDCycleView];
         _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(getMassage)];
-          [_tableView registerNib:[UINib nibWithNibName:@"EndLinenPeak" bundle:nil] forCellReuseIdentifier:@"cell"];
+          [_tableView registerNib:[UINib nibWithNibName:@"EndLImageCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+        [_tableView registerNib:[UINib nibWithNibName:@"NewsCell" bundle:nil] forCellReuseIdentifier:@"NewsCell"];
+   
           [self.view addSubview:_tableView];
     }
     return _tableView;
@@ -53,14 +58,27 @@
     }];
 }
 - (void)getMassage{
+    [self.marr removeAllObjects];
+    
+    NSMutableArray*dataSource = [[NSMutableArray alloc]init];
+    [[FeelLeatherManager sharedManager] requestWithLocalFileWithName:@"date" completed:^(BOOL ret, id obj) {
+         NSArray *arr = [NSArray arrayWithArray:[obj objectForKey:@"data"]];
+        for (NSDictionary *dic in arr) {
+           NewsModel *model = [NewsModel setModelWithDictionary:dic];
+           [dataSource addObject: model];
+        }
+    }];
+    
+    
     [[FeelLeatherManager sharedManager]lookChemist:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
-            [self.marr removeAllObjects];
             NSArray *arr = [NSArray arrayWithArray:[obj objectForKey:@"articles"]];
            for (NSDictionary *dic in arr) {
                       BackwardTallWreck *model = [BackwardTallWreck setModelWithDictionary:dic];
-                      [self.marr addObject: model];
+                      [dataSource addObject: model];
            }
+            
+          self.marr = [self getRandomArrFrome:[dataSource copy]];
            dispatch_async(dispatch_get_main_queue(), ^{
                       [self.tableView.mj_header endRefreshing];
                       [self.tableView.mj_footer endRefreshing];
@@ -70,6 +88,20 @@
         }
     }];
 }
+
+-(NSMutableArray*)getRandomArrFrome:(NSArray*)arr{
+    NSMutableArray *newArr = [NSMutableArray new];
+    while (newArr.count != arr.count) {
+        //生成随机数
+        int x =arc4random() % arr.count;
+        id obj = arr[x];
+        if (![newArr containsObject:obj]) {
+            [newArr addObject:obj];
+        }
+    }
+    return newArr;
+}
+
 - (void)getLoad{
      dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView.mj_footer endRefreshing];
@@ -77,22 +109,58 @@
     });
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    EndLinenPeak *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;  
-    BackwardTallWreck *model = self.marr [indexPath.row];
-    cell.pic.layer.masksToBounds = YES;
-    cell.pic.layer.cornerRadius = 5;
-    cell.title.text = model.title;
-    cell.title.numberOfLines = 0;
-    cell.time.text = model.pubtime;
-    return cell;
+    
+    UITableViewCell*tableViewCell;
+    id obj = self.marr[indexPath.row];
+    if ([obj isKindOfClass:[ BackwardTallWreck class]]) {
+         
+        NewsCell*cell = [tableView dequeueReusableCellWithIdentifier:@"NewsCell" forIndexPath:indexPath];
+        BackwardTallWreck *model = self.marr [indexPath.row];
+        cell.title.text = model.title;
+        cell.timer .text = model.pubtime;
+        tableViewCell = cell;
+     }else if ([obj isKindOfClass:[ NewsModel class]]){
+    
+       EndLImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+        NewsModel *model = self.marr [indexPath.row];
+
+        cell.title.text = model.title;
+        cell.timer .text = model.time;
+        [cell.image sd_setImageWithURL:[NSURL URLWithString:model.image]
+              placeholderImage:[UIImage imageNamed:@"icon_data_empty"]];
+         
+         tableViewCell = cell;
+     }
+    
+    tableViewCell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return tableViewCell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.marr.count;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 115;
+    id obj = self.marr[indexPath.row];
+       
+    if ([obj isKindOfClass:[ BackwardTallWreck class]]) {
+         BackwardTallWreck *model = self.marr [indexPath.row];
+         CGFloat defutHeight = 45;
+        return defutHeight+[self tableViewForRowAtIndexCellHeight:model.title];
+    }else if ([obj isKindOfClass:[ NewsModel class]]){
+        NewsModel *model = self.marr [indexPath.row];
+        CGFloat defutHeight = 100;
+        return defutHeight+[self tableViewForRowAtIndexCellHeight:model.title];
+    }
+    return 70;
 }
+
+
+
+-(CGFloat)tableViewForRowAtIndexCellHeight:(NSString *)title{
+    CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 30, MAXFLOAT);
+    return [title boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:18]} context:nil].size.height;
+}
+
+
 -(ReuniteDifficultyWalletView*)zeroSDCycleView{
     if (!_zeroSDCycleView) {
         _zeroSDCycleView = [ReuniteDifficultyWalletView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 190) delegate:self];
@@ -106,11 +174,20 @@
 -(void)cycleScrollView:(ReuniteDifficultyWalletView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-      BackwardTallWreck *model = self.marr [indexPath.row];
     PermitRemoteChatController * homeDetailVC = [[PermitRemoteChatController alloc] init];
-           homeDetailVC.hidesBottomBarWhenPushed = YES;
-           homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@%@%@",model.pubtime,@"\n",model.modtime_desc,model.title,model.tags  ];
-           [self.navigationController pushViewController:homeDetailVC animated:YES];
+    homeDetailVC.hidesBottomBarWhenPushed = YES;
+     id obj = self.marr[indexPath.row];
+     if ([obj isKindOfClass:[ BackwardTallWreck class]]) {
+       BackwardTallWreck *model = self.marr [indexPath.row];
+       homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@%@%@",model.pubtime,@"\n",model.modtime_desc,model.title,model.tags  ];
+
+       }else if ([obj isKindOfClass:[ NewsModel class]]){
+            NewsModel *model = self.marr [indexPath.row];
+            homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.time,@"\n",model.title];
+           homeDetailVC.url = model.image;
+       }
+    
+     [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
