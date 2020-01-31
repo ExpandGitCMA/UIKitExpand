@@ -53,8 +53,11 @@
 }
 -(void)getHomeBanner{
     [[FeelLeatherManager sharedManager]tryHeapUseful:URL_HomeBanner params:@{} completed:^(BOOL ret, id obj) {
-        NSArray *banner = [obj objectForKey:@"banner"];
-         [_zeroSDCycleView setArrayStringUrl:banner];
+        if (ret) {
+            NSArray *banner = [obj objectForKey:@"banner"];
+           [_zeroSDCycleView setArrayStringUrl:banner];
+        }
+   
     }];
 }
 - (void)getMassage{
