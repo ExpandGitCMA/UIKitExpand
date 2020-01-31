@@ -139,10 +139,10 @@
 		03067F2223E41BB000A08E53 /* CrossAnalysisAccidental.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossAnalysisAccidental.h; sourceTree = "<group>"; };
 		03067F2323E41BB000A08E53 /* NSString+IMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IMAdditions.m"; sourceTree = "<group>"; };
 		03067F2523E41BB000A08E53 /* FavourStrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavourStrip.m; sourceTree = "<group>"; };
-		03067F2623E41BB000A08E53 /* FeelLeatherManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeelLeatherManager.m; path = Network/FeelLeatherManager.m; sourceTree = "<group>"; };
+		03067F2623E41BB000A08E53 /* FeelLeatherManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeelLeatherManager.m; sourceTree = "<group>"; };
 		03067F2723E41BB000A08E53 /* FavourStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavourStrip.h; sourceTree = "<group>"; };
 		03067F2823E41BB000A08E53 /* FeelLeatherManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeelLeatherManager.h; sourceTree = "<group>"; };
-		03067F2923E41BB000A08E53 /* FatalRadioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FatalRadioManager.m; path = ../FatalRadioManager.m; sourceTree = "<group>"; };
+		03067F2923E41BB000A08E53 /* FatalRadioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FatalRadioManager.m; sourceTree = "<group>"; };
 		03067F2B23E41BB000A08E53 /* ExpanFileConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpanFileConstants.h; sourceTree = "<group>"; };
 		03067F2C23E41BB000A08E53 /* ExpanFileConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpanFileConstants.m; sourceTree = "<group>"; };
 		03067F2E23E41BB000A08E53 /* AppHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHeaderFile.h; sourceTree = "<group>"; };
@@ -291,7 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				03067F4523E41BB000A08E53 /* FatalRadioManager.h */,
-				03067F2623E41BB000A08E53 /* FeelLeatherManager.m */,
+				03067F2923E41BB000A08E53 /* FatalRadioManager.m */,
 				03067F0823E41BB000A08E53 /* DataBase */,
 				03067F0D23E41BB000A08E53 /* ExUIKit */,
 				03067F1623E41BB000A08E53 /* Category */,
@@ -364,7 +364,7 @@
 				03067F2523E41BB000A08E53 /* FavourStrip.m */,
 				03067F2723E41BB000A08E53 /* FavourStrip.h */,
 				03067F2823E41BB000A08E53 /* FeelLeatherManager.h */,
-				03067F2923E41BB000A08E53 /* FatalRadioManager.m */,
+				03067F2623E41BB000A08E53 /* FeelLeatherManager.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";

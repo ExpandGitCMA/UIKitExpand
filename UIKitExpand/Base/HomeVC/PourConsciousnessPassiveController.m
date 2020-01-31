@@ -151,7 +151,9 @@
         NewsCell*cell = [tableView dequeueReusableCellWithIdentifier:@"NewsCell" forIndexPath:indexPath];
         BackwardTallWreck *model = self.marr [indexPath.row];
         cell.title.text = model.title;
-        cell.timer .text = model.pubtime;
+        cell.timer .text = model.tags;
+        cell.content.text = model.pubtime;
+//        cell.timer .text = [NSString stringWithFormat:@"%@%@%@",model.modtime_desc,@"\n",model.pubtime];
         tableViewCell = cell;
      }else if ([obj isKindOfClass:[ NewsModel class]]){
     
@@ -177,7 +179,7 @@
        
     if ([obj isKindOfClass:[ BackwardTallWreck class]]) {
          BackwardTallWreck *model = self.marr [indexPath.row];
-         CGFloat defutHeight = 45;
+         CGFloat defutHeight = 65;
         return defutHeight+[self tableViewForRowAtIndexCellHeight:model.title];
     }else if ([obj isKindOfClass:[ NewsModel class]]){
         NewsModel *model = self.marr [indexPath.row];

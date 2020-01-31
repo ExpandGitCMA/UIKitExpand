@@ -18,12 +18,12 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAa-Tq-h45">
-                        <rect key="frame" x="15" y="10" width="320" height="21.5"/>
+                        <rect key="frame" x="18" y="10" width="317" height="21.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="As3-Dl-knP">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="As3-Dl-knP">
                         <rect key="frame" x="15" y="36.5" width="320" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="eJy-Xc-12e"/>
@@ -32,18 +32,28 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSX-T5-9mM">
+                        <rect key="frame" x="15" y="59" width="320" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="tAa-Tq-h45" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="5dJ-oX-X9i"/>
+                    <constraint firstItem="tAa-Tq-h45" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="5dJ-oX-X9i"/>
                     <constraint firstItem="As3-Dl-knP" firstAttribute="top" secondItem="tAa-Tq-h45" secondAttribute="bottom" constant="5" id="Mc2-tU-Uy6"/>
                     <constraint firstItem="tAa-Tq-h45" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="OoM-5T-5eV"/>
+                    <constraint firstAttribute="trailing" secondItem="SSX-T5-9mM" secondAttribute="trailing" constant="15" id="TnN-r4-qN2"/>
                     <constraint firstItem="As3-Dl-knP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="deJ-Rd-UVX"/>
+                    <constraint firstItem="SSX-T5-9mM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="fGS-W5-nHL"/>
+                    <constraint firstAttribute="bottom" secondItem="SSX-T5-9mM" secondAttribute="bottom" constant="5" id="kMt-vn-35H"/>
                     <constraint firstAttribute="trailing" secondItem="tAa-Tq-h45" secondAttribute="trailing" constant="15" id="oiP-xS-5EF"/>
                     <constraint firstAttribute="trailing" secondItem="As3-Dl-knP" secondAttribute="trailing" constant="15" id="z9p-c8-JLg"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="content" destination="SSX-T5-9mM" id="q2k-wR-4lK"/>
                 <outlet property="timer" destination="As3-Dl-knP" id="uxk-wi-TWA"/>
                 <outlet property="title" destination="tAa-Tq-h45" id="TLB-ih-hJF"/>
             </connections>

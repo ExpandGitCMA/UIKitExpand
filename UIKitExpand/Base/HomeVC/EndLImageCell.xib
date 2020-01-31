@@ -31,7 +31,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXX-Ea-Icl">
-                        <rect key="frame" x="15" y="53" width="162" height="18"/>
+                        <rect key="frame" x="15" y="56.5" width="162" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                     <constraint firstItem="18l-7x-vUj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NuR-lk-pVQ"/>
                     <constraint firstItem="TM3-tm-d7z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="SqB-Id-iOT"/>
                     <constraint firstItem="QXX-Ea-Icl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="TX4-oE-0Hp"/>
-                    <constraint firstItem="QXX-Ea-Icl" firstAttribute="top" secondItem="TM3-tm-d7z" secondAttribute="bottom" constant="16.5" id="VNn-SG-7WG"/>
+                    <constraint firstItem="QXX-Ea-Icl" firstAttribute="top" secondItem="TM3-tm-d7z" secondAttribute="bottom" constant="20" id="VNn-SG-7WG"/>
                     <constraint firstItem="18l-7x-vUj" firstAttribute="leading" secondItem="TM3-tm-d7z" secondAttribute="trailing" constant="10" id="pyg-6l-nJN"/>
                 </constraints>
             </tableViewCellContentView>
