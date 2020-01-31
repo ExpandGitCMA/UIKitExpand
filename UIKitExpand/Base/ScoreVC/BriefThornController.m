@@ -46,11 +46,13 @@
 - (void)getMassage{
     [[FeelLeatherManager sharedManager]tryHeapUseful:URL_Gamerule params:@{} completed:^(BOOL ret, id obj) {
         [self.dataSource removeAllObjects];
+        NSMutableArray*date = [NSMutableArray array];
         NSArray *arr = [obj objectForKey:@"game"];
              for (NSDictionary *dic in arr) {
                 BeatLikeNewspaper *model = [BeatLikeNewspaper setModelWithDictionary:dic];
-                [self.dataSource  addObject: model];
+                [date  addObject: model];
              }
+        self.dataSource = [self getRandomArrFrome:[date copy]];
             [_zeroSDCycleView setArrayStringUrl:@[@"https://n.sinaimg.cn/sports/transform/283/w650h433/20200102/1697-imkzenq6385157.jpg"]];
              dispatch_async(dispatch_get_main_queue(), ^{
                         [self.tableView.mj_header endRefreshing];
@@ -59,6 +61,18 @@
                         [self starAnimationWithTableView:self.tableView];
              });
      }];
+}
+-(NSMutableArray*)getRandomArrFrome:(NSArray*)arr{
+    NSMutableArray *newArr = [NSMutableArray new];
+    while (newArr.count != arr.count) {
+        //生成随机数
+        int x =arc4random() % arr.count;
+        id obj = arr[x];
+        if (![newArr containsObject:obj]) {
+            [newArr addObject:obj];
+        }
+    }
+    return newArr;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     EndLinenPeak *cell = [tableView dequeueReusableCellWithIdentifier:@"Newcell" forIndexPath:indexPath];

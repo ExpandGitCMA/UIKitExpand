@@ -13,7 +13,7 @@
     self.layer.cornerRadius = 20;
     [self setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
     self.adjustsImageWhenHighlighted = NO;
-    [self setTitle:@" 热点搜索推荐 " forState:UIControlStateNormal];
+    [self setTitle:@" 热点资讯 " forState:UIControlStateNormal];
     self.titleLabel.font = [SetEquality fontWithSize:14];
     self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     [self setTitleColor:kUIColorFromRGB(ExAddress) forState:UIControlStateNormal];
