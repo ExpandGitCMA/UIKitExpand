@@ -132,28 +132,28 @@
 {
     if ([self isEqual:[NSNull null]])
     {
-        return YES;
+        return NO;
     }
     else
     {
         if ([self isKindOfClass:[NSNull class]])
         {
-            return YES;
+               return NO;
         }
         else
         {
             if (self==nil)
             {
-                return YES;
+                    return NO;
             }
         }
     }
     if ([self isKindOfClass:[NSString class]]) {
-        if ([((NSString *)self) isEqualToString:@"(null)"]) {
-            return YES;
+        if ([((NSString *)self) isEqualToString:@"(null)"] ||[((NSString *)self) isEqualToString:@""]) {
+                return NO;
         }
     }
-    return NO;
+    return YES;
 }
 + (NSString *)removeSpaceAndNewline:(NSString *)str {
     NSString *temp = [str stringByReplacingOccurrencesOfString:@" " withString:@""];
