@@ -10,6 +10,7 @@
 #import "NewsCell.h"
 #import "EndLImageCell.h"
 #import "PreviousDiscount.h"
+#import "MessAgeVC.h"
 @interface PourConsciousnessPassiveController ()<ZeroSDCycleViewDelegate,UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic,strong)ReuniteDifficultyWalletView *zeroSDCycleView;
 @property (nonatomic, strong)UITableView *tableView;
@@ -244,6 +245,9 @@
 #pragma mark - 点击消息按钮
 - (void)msgClick {
     
+    MessAgeVC * homeDetailVC = [[MessAgeVC alloc] init];
+    homeDetailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
 
 @end

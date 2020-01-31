@@ -63,6 +63,9 @@
 		03067FB423E41BB100A08E53 /* OffendAnybodyOutlet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F7A23E41BB100A08E53 /* OffendAnybodyOutlet.m */; };
 		03067FB823E4352200A08E53 /* MessAgeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067FB723E4352200A08E53 /* MessAgeVC.m */; };
 		03067FBA23E436FB00A08E53 /* mesg.json in Resources */ = {isa = PBXBuildFile; fileRef = 03067FB923E436FB00A08E53 /* mesg.json */; };
+		03067FBD23E4395200A08E53 /* MessAgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067FBC23E4395200A08E53 /* MessAgeModel.m */; };
+		03067FC123E43D0100A08E53 /* MessAgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067FBF23E43D0100A08E53 /* MessAgeCell.m */; };
+		03067FC223E43D0100A08E53 /* MessAgeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03067FC023E43D0100A08E53 /* MessAgeCell.xib */; };
 		031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEAB23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		031EBECC23D6C04D00919BEF /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 031EBECB23D6C04D00919BEF /* libAFNetworking.a */; };
 		031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031EBEDD23D6C88E00919BEF /* Main.storyboard */; };
@@ -217,6 +220,11 @@
 		03067FB623E4352200A08E53 /* MessAgeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessAgeVC.h; sourceTree = "<group>"; };
 		03067FB723E4352200A08E53 /* MessAgeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessAgeVC.m; sourceTree = "<group>"; };
 		03067FB923E436FB00A08E53 /* mesg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mesg.json; path = "UIKitExpand/Resource(资源)/mesg.json"; sourceTree = SOURCE_ROOT; };
+		03067FBB23E4395200A08E53 /* MessAgeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessAgeModel.h; sourceTree = "<group>"; };
+		03067FBC23E4395200A08E53 /* MessAgeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessAgeModel.m; sourceTree = "<group>"; };
+		03067FBE23E43D0100A08E53 /* MessAgeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessAgeCell.h; sourceTree = "<group>"; };
+		03067FBF23E43D0100A08E53 /* MessAgeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessAgeCell.m; sourceTree = "<group>"; };
+		03067FC023E43D0100A08E53 /* MessAgeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessAgeCell.xib; sourceTree = "<group>"; };
 		031EBEA723D6B1E900919BEF /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		031EBEA823D6B1E900919BEF /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		031EBEAA23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
@@ -447,18 +455,18 @@
 		03067F4A23E41BB100A08E53 /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
-				03067F4B23E41BB100A08E53 /* BackwardTallWreck.m */,
 				03067F4C23E41BB100A08E53 /* EndLImageCell.xib */,
 				03067F4D23E41BB100A08E53 /* EndLinenPeak.xib */,
 				03067F4E23E41BB100A08E53 /* EndLinenPeak.m */,
 				03067F4F23E41BB100A08E53 /* EndLImageCell.h */,
 				03067F5023E41BB100A08E53 /* PourConsciousnessPassiveController.h */,
-				03067F5123E41BB100A08E53 /* NewsCell.m */,
-				03067F5223E41BB100A08E53 /* BackwardTallWreck.h */,
-				03067F5323E41BB100A08E53 /* EndLinenPeak.h */,
 				03067F5423E41BB100A08E53 /* PourConsciousnessPassiveController.m */,
+				03067F5223E41BB100A08E53 /* BackwardTallWreck.h */,
+				03067F4B23E41BB100A08E53 /* BackwardTallWreck.m */,
+				03067F5323E41BB100A08E53 /* EndLinenPeak.h */,
 				03067F5523E41BB100A08E53 /* EndLImageCell.m */,
 				03067F5623E41BB100A08E53 /* NewsCell.h */,
+				03067F5123E41BB100A08E53 /* NewsCell.m */,
 				03067F5723E41BB100A08E53 /* NewsCell.xib */,
 				03067F5823E41BB100A08E53 /* HomeBanner */,
 			);
@@ -482,21 +490,21 @@
 			isa = PBXGroup;
 			children = (
 				03067F6123E41BB100A08E53 /* HollowMale.h */,
-				03067F6223E41BB100A08E53 /* RetellFingernailController.h */,
-				03067F6323E41BB100A08E53 /* BlessPorter.h */,
-				03067F6423E41BB100A08E53 /* SeriouslyConvenientStuffController.h */,
-				03067F6523E41BB100A08E53 /* AnchorSongController.xib */,
-				03067F6623E41BB100A08E53 /* AnchorSongController.m */,
-				03067F6723E41BB100A08E53 /* ImpairBeingController.h */,
 				03067F6823E41BB100A08E53 /* HollowMale.m */,
-				03067F6923E41BB100A08E53 /* SeriouslyConvenientStuffController.m */,
+				03067F6323E41BB100A08E53 /* BlessPorter.h */,
 				03067F6A23E41BB100A08E53 /* BlessPorter.m */,
-				03067F6B23E41BB100A08E53 /* ImpairBeingController.xib */,
-				03067F6C23E41BB100A08E53 /* RetellFingernailController.m */,
-				03067F6D23E41BB100A08E53 /* ImpairBeingController.m */,
-				03067F6E23E41BB100A08E53 /* SeriouslyConvenientStuffController.xib */,
-				03067F6F23E41BB100A08E53 /* AnchorSongController.h */,
 				03067F7023E41BB100A08E53 /* BlessPorter.xib */,
+				03067F6423E41BB100A08E53 /* SeriouslyConvenientStuffController.h */,
+				03067F6F23E41BB100A08E53 /* AnchorSongController.h */,
+				03067F6623E41BB100A08E53 /* AnchorSongController.m */,
+				03067F6523E41BB100A08E53 /* AnchorSongController.xib */,
+				03067F6723E41BB100A08E53 /* ImpairBeingController.h */,
+				03067F6923E41BB100A08E53 /* SeriouslyConvenientStuffController.m */,
+				03067F6E23E41BB100A08E53 /* SeriouslyConvenientStuffController.xib */,
+				03067F6C23E41BB100A08E53 /* RetellFingernailController.m */,
+				03067F6223E41BB100A08E53 /* RetellFingernailController.h */,
+				03067F6B23E41BB100A08E53 /* ImpairBeingController.xib */,
+				03067F6D23E41BB100A08E53 /* ImpairBeingController.m */,
 			);
 			path = MeCenterVC;
 			sourceTree = "<group>";
@@ -522,6 +530,11 @@
 			children = (
 				03067FB623E4352200A08E53 /* MessAgeVC.h */,
 				03067FB723E4352200A08E53 /* MessAgeVC.m */,
+				03067FBB23E4395200A08E53 /* MessAgeModel.h */,
+				03067FBC23E4395200A08E53 /* MessAgeModel.m */,
+				03067FBE23E43D0100A08E53 /* MessAgeCell.h */,
+				03067FBF23E43D0100A08E53 /* MessAgeCell.m */,
+				03067FC023E43D0100A08E53 /* MessAgeCell.xib */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -789,6 +802,7 @@
 				03067FB023E41BB100A08E53 /* PermitRemoteChatController.xib in Resources */,
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
 				03067F9923E41BB100A08E53 /* EndLImageCell.xib in Resources */,
+				03067FC223E43D0100A08E53 /* MessAgeCell.xib in Resources */,
 				03067F9F23E41BB100A08E53 /* NewsCell.xib in Resources */,
 				031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */,
 				0324AC9A23E2DEFA004B4C3E /* date.json in Resources */,
@@ -888,6 +902,7 @@
 				03067FAB23E41BB100A08E53 /* ImpairBeingController.m in Sources */,
 				03067F8B23E41BB100A08E53 /* FavourStrip.m in Sources */,
 				03067F9723E41BB100A08E53 /* AccountBeyondInsurance.m in Sources */,
+				03067FBD23E4395200A08E53 /* MessAgeModel.m in Sources */,
 				B34688AD1F15FB8800498E66 /* RecoverQuestionPacific.m in Sources */,
 				03067F8623E41BB100A08E53 /* CrossAnalysisAccidental.m in Sources */,
 				03067FB323E41BB100A08E53 /* BriefThornController.m in Sources */,
@@ -904,6 +919,7 @@
 				B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */,
 				03067F8A23E41BB100A08E53 /* NSString+IMAdditions.m in Sources */,
 				03067FAF23E41BB100A08E53 /* HowUnlikelyUsageController.m in Sources */,
+				03067FC123E43D0100A08E53 /* MessAgeCell.m in Sources */,
 				03067F9D23E41BB100A08E53 /* PourConsciousnessPassiveController.m in Sources */,
 				03067F8F23E41BB100A08E53 /* TossUnnecessaryConsiderationView.m in Sources */,
 				03067F8C23E41BB100A08E53 /* FeelLeatherManager.m in Sources */,
