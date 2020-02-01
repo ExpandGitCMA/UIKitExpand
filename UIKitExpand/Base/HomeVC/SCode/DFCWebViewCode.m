@@ -45,7 +45,6 @@
     NSURL *webViewurl = [NSURL URLWithString:_url];
     NSURLRequest *request = [NSURLRequest requestWithURL:webViewurl];
     [_webView loadRequest:request];
-    
     _webView.scrollView.bounces = NO;
     _webView.scalesPageToFit = NO;
     [self.view addSubview:_webView];

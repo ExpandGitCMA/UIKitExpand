@@ -530,14 +530,14 @@
 			isa = PBXGroup;
 			children = (
 				03067F7523E41BB100A08E53 /* OffendAnybodyOutlet.h */,
-				03067F7623E41BB100A08E53 /* PermitRemoteChatController.xib */,
-				03067F7723E41BB100A08E53 /* BeatLikeNewspaper.m */,
-				03067F7823E41BB100A08E53 /* PermitRemoteChatController.m */,
-				03067F7923E41BB100A08E53 /* BriefThornController.m */,
 				03067F7A23E41BB100A08E53 /* OffendAnybodyOutlet.m */,
 				03067F7B23E41BB100A08E53 /* BeatLikeNewspaper.h */,
-				03067F7C23E41BB100A08E53 /* BriefThornController.h */,
+				03067F7723E41BB100A08E53 /* BeatLikeNewspaper.m */,
 				03067F7D23E41BB100A08E53 /* PermitRemoteChatController.h */,
+				03067F7823E41BB100A08E53 /* PermitRemoteChatController.m */,
+				03067F7623E41BB100A08E53 /* PermitRemoteChatController.xib */,
+				03067F7C23E41BB100A08E53 /* BriefThornController.h */,
+				03067F7923E41BB100A08E53 /* BriefThornController.m */,
 			);
 			path = ScoreVC;
 			sourceTree = "<group>";

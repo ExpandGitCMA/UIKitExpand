@@ -6,74 +6,49 @@
 #import "PermitRemoteChatController.h"
 #import "ReuniteDifficultyWalletView.h"
 #import "TableViewAnimationKitHeaders.h"
-@interface BriefThornController ()<ZeroSDCycleViewDelegate,UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong)UITableView *tableView;
-@property (nonatomic, strong)NSMutableArray *dataSource;
-@property(nonatomic,strong)ReuniteDifficultyWalletView *zeroSDCycleView;
+
+@interface BriefThornController ()
 @end
+
 @implementation BriefThornController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self dataSource];
-    [self tableView];
-    [self.tableView.mj_header beginRefreshing];
-    self.title = @"球赛规则";
+     self.title = @"球赛规则";
+     [self.tableView registerNib:[UINib nibWithNibName:@"EndLinenPeak" bundle:nil] forCellReuseIdentifier:@"Newcell"];
 }
--(UITableView*)tableView{
-    if (!_tableView) {
-         if (@available(iOS 11.0, *)) {
-              _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-          } else {
-              self.automaticallyAdjustsScrollViewInsets = NO;
-          }
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-        _tableView.tableHeaderView =  [self zeroSDCycleView];
-         _tableView.tableFooterView = [UIView new];
-        _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(getMassage)];
-          [_tableView registerNib:[UINib nibWithNibName:@"EndLinenPeak" bundle:nil] forCellReuseIdentifier:@"Newcell"];
-          [self.view addSubview:_tableView];
-    }
-    return _tableView;
-}
--(NSMutableArray*)dataSource{
-    if (!_dataSource) {
-       _dataSource = [NSMutableArray array];
-    }
-    return _dataSource;
-}
+
+
+
+
 - (void)getMassage{
     [[FeelLeatherManager sharedManager]tryHeapUseful:URL_Gamerule params:@{} completed:^(BOOL ret, id obj) {
-        [self.dataSource removeAllObjects];
-        NSMutableArray*date = [NSMutableArray array];
-        NSArray *arr = [obj objectForKey:@"game"];
-             for (NSDictionary *dic in arr) {
-                BeatLikeNewspaper *model = [BeatLikeNewspaper setModelWithDictionary:dic];
-                [date  addObject: model];
-             }
-        self.dataSource = [self getRandomArrFrome:[date copy]];
-            [_zeroSDCycleView setArrayStringUrl:@[@"https://n.sinaimg.cn/sports/transform/283/w650h433/20200102/1697-imkzenq6385157.jpg"]];
-             dispatch_async(dispatch_get_main_queue(), ^{
+        
+        if (ret) {
+            [self.dataSource removeAllObjects];
+                 NSMutableArray*date = [NSMutableArray array];
+                 NSArray *arr = [obj objectForKey:@"game"];
+                      for (NSDictionary *dic in arr) {
+                         BeatLikeNewspaper *model = [BeatLikeNewspaper setModelWithDictionary:dic];
+                         [date  addObject: model];
+                      }
+                 self.dataSource = [self getRandomArrFrome:[date copy]];
+                 self.tableView.tableHeaderView =  [self zeroSDCycleView];
+                 [self.zeroSDCycleView setArrayStringUrl:@[@"https://n.sinaimg.cn/sports/transform/283/w650h433/20200102/1697-imkzenq6385157.jpg"]];
+                      dispatch_async(dispatch_get_main_queue(), ^{
                         [self.tableView.mj_header endRefreshing];
                         [self.tableView.mj_footer endRefreshing];
                         [self.tableView reloadData];
                         [self starAnimationWithTableView:self.tableView];
-             });
+                      });
+        }else{
+            [self.tableView.mj_header endRefreshing];
+            [self.tableView.mj_footer endRefreshing];
+            [self.tableView reloadData];
+        }
+     
      }];
 }
--(NSMutableArray*)getRandomArrFrome:(NSArray*)arr{
-    NSMutableArray *newArr = [NSMutableArray new];
-    while (newArr.count != arr.count) {
-        //生成随机数
-        int x =arc4random() % arr.count;
-        id obj = arr[x];
-        if (![newArr containsObject:obj]) {
-            [newArr addObject:obj];
-        }
-    }
-    return newArr;
-}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     EndLinenPeak *cell = [tableView dequeueReusableCellWithIdentifier:@"Newcell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -83,8 +58,9 @@
     cell.time.text = [NSString stringWithFormat:@"%@%@%@%@",@"(",model.title,@")",model.rule];
     return cell;
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return  _dataSource.count;
+    return  self.dataSource.count;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 70;
@@ -97,23 +73,13 @@
            homeDetailVC.conten = model.rule;
            [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
--(ReuniteDifficultyWalletView*)zeroSDCycleView{
-    if (!_zeroSDCycleView) {
-        _zeroSDCycleView = [ReuniteDifficultyWalletView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 190) delegate:self];
-        [_zeroSDCycleView setShowPageControl:YES];
-        [_zeroSDCycleView  setPageControlStyle:ZeroSDCycleViewPageContolStyleAnimated];
-        [_zeroSDCycleView setPageControlAliment:   ZeroSDCycleViewPageContolAlimentCenter];
-         [_zeroSDCycleView setAutoScrollTimeInterval:15.0f];
-    }
-    return _zeroSDCycleView;
-}
--(void)cycleScrollView:(ReuniteDifficultyWalletView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
-}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 - (void)starAnimationWithTableView:(UITableView *)tableView {
     
-    [TableViewAnimationKit showWithAnimationType:   XSTableViewAnimationTypeToTop tableView:tableView];
+    [TableViewAnimationKit showWithAnimationType:XSTableViewAnimationTypeToTop tableView:tableView];
 }
 @end

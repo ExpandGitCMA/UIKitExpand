@@ -1,6 +1,6 @@
 #import "FeelLeatherManager.h"
 #import "EXTScope.h"
-#define DEFAULT_REQUEST_TIME_OUT 20
+#define DEFAULT_REQUEST_TIME_OUT 5
 typedef NS_ENUM(NSUInteger, HTTPMethod) {
     GET,
     POST

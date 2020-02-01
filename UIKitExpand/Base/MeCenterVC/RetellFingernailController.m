@@ -4,42 +4,37 @@
 #import "ImpairBeingController.h"
 #import "HollowMale.h"
 #import "AnchorSongController.h"
-@interface RetellFingernailController ()<UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong)UITableView *tableView;
-@property (nonatomic, strong)NSArray *dataSource;
+@interface RetellFingernailController ()
+
 @end
 @implementation RetellFingernailController
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(setClick) title:@"nav_set"];
-    _dataSource = @[@"隐私协议",@"意见反馈",@"分享好友",@"关于我们"];
-    [self tableView];
+   
+     self.dataSource = [NSMutableArray arrayWithObjects:@"隐私协议",@"意见反馈",@"分享好友",@"关于我们",nil];
+     [self.tableView registerNib:[UINib nibWithNibName:@"BlessPorter" bundle:nil] forCellReuseIdentifier:@"cell"];
+   
 }
--(UITableView*)tableView{
-    if (!_tableView) {
-         if (@available(iOS 11.0, *)) {
-              _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-          } else {
-              self.automaticallyAdjustsScrollViewInsets = NO;
-          }
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-        _tableView.tableFooterView = [UIView new];
-         [_tableView registerNib:[UINib nibWithNibName:@"BlessPorter" bundle:nil] forCellReuseIdentifier:@"cell"];
-         [self.view addSubview:_tableView];
-    }
-    return _tableView;
+
+
+-(void)getMassage{
+    
+       [self.tableView.mj_header endRefreshing];
+       [self.tableView.mj_footer endRefreshing];
+       [self.tableView reloadData];
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
    BlessPorter *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.title.text  = [self.dataSource objectAtIndex:indexPath.row];
+    cell.title.text  = [self.dataSource SafetyObjectAtIndex:indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return  _dataSource.count;
+    return  self.dataSource.count;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 70;
