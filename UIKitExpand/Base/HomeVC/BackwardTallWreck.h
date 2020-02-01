@@ -1,8 +1,5 @@
 #import <Foundation/Foundation.h>
-
-
 @interface NewsModel : NSObject
-
 @property (nonatomic, copy)NSString *title;
 @property (nonatomic, copy)NSString *image;
 @property (nonatomic, copy)NSString *kaiguan;
@@ -12,8 +9,6 @@
 @property (nonatomic, copy)NSString *wangzhi;
 + (NewsModel *)setModelWithDictionary:(NSDictionary *)dic ;
 @end
-
-
 @interface BackwardTallWreck : NSObject
 @property (nonatomic, copy)NSString *sid;
 @property (nonatomic, copy)NSString *title;
@@ -26,11 +21,5 @@
 @property (nonatomic, copy)NSString *origin_url;
 @property (nonatomic, copy)NSString *modtime_desc;
 @property (nonatomic, copy)NSArray *comm_count;
-
-
-
 + (BackwardTallWreck *)setModelWithDictionary:(NSDictionary *)dic;
 @end
-
-
-

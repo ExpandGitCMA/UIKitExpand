@@ -8,16 +8,12 @@
 @property(nonatomic,strong)NSMutableArray*tabBarSource;
 @property(nonatomic,strong)UIButton *wisdom;
 @property(nonatomic,strong)UIImageView *tabBarBg;
-
 @property (nonatomic,assign) NSInteger  indexFlag;;
 @end
 #define wisdom_width  60
 #define wisdom_height 60
 #define systemic_height 49
 @implementation AccountBeyondInsurance
-
-
-
 - (instancetype)init{
     self = [super init];
     if (self) {
@@ -76,14 +72,8 @@
     [super didReceiveMemoryWarning];
 }
 #pragma mark - UITabBarDelegate
-
-//通过接收点击事件对每个tabbar item的点击都执行动画
 -(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
-  
-     
 }
-
-
 -(void)beginAnimation{
        NSInteger indext ;
         NSMutableArray *arry = [NSMutableArray array];
@@ -99,8 +89,6 @@
         animation.beginTime = CACurrentMediaTime()+1;
         [btnView.layer addAnimation:animation forKey:nil];
 }
-
-
 - (void)tabBar:(UITabBar *)tabBar willBeginCustomizingItems:(NSArray<UITabBarItem *> *)items {
 }
 - (void)tabBar:(UITabBar *)tabBar didBeginCustomizingItems:(NSArray<UITabBarItem *> *)items {

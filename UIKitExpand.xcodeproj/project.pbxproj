@@ -784,8 +784,7 @@
 				TargetAttributes = {
 					B3F4EFFA1F14A8600005197E = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 8DZ394K7X7;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					B3F4F0131F14A8600005197E = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -1125,8 +1124,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = UIKitExpand/UIKitExpand.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8DZ394K7X7;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1141,7 +1140,7 @@
 					"-ObjC",
 					"-l\"AFNetworking\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.GamesBall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.GamesPlayBall;
 				PRODUCT_NAME = "亞博体育-球圈";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1156,8 +1155,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = UIKitExpand/UIKitExpand.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8DZ394K7X7;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1172,7 +1171,7 @@
 					"-ObjC",
 					"-l\"AFNetworking\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.GamesBall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.GamesPlayBall;
 				PRODUCT_NAME = "亞博体育-球圈";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;

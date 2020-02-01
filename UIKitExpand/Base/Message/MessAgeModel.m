@@ -1,7 +1,4 @@
-
-
 #import "MessAgeModel.h"
-
 @implementation MessAgeModel
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {}
 + ( MessAgeModel *)setModelWithDictionary:(NSDictionary *)dic {

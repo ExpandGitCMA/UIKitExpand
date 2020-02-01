@@ -1,13 +1,10 @@
 #import "TendOutsideObjectionController.h"
-
 @interface TendOutsideObjectionController ()
 @end
 @implementation TendOutsideObjectionController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self dataSource];
-
 }
 -(ReuniteDifficultyWalletView*)zeroSDCycleView{
     if (!_zeroSDCycleView) {
@@ -21,7 +18,6 @@
 }
 -(void)cycleScrollView:(ReuniteDifficultyWalletView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
 }
-
 -(NSMutableArray*)dataSource{
     if (!_dataSource) {
        _dataSource = [NSMutableArray array];
@@ -47,7 +43,6 @@
     }
     return _tableView;
 }
-
 - (void)getLoad{
      dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView.mj_footer endRefreshing];
@@ -55,17 +50,12 @@
     });
 }
 - (void)getMassage{
-    
 }
-
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    
 }
-
 - (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView{
     return [UIImage imageNamed:@"icon_data_empty"];
 }
-
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView{
     NSString *text = @"  数据空空如也... ";
     NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:17.0f],
@@ -76,16 +66,12 @@
     return 0;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-   
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier:nil];
     return cell;
 }
-
 -(NSMutableArray*)getRandomArrFrome:(NSArray*)arr{
     NSMutableArray *newArr = [NSMutableArray new];
     while (newArr.count != arr.count) {
-        //生成随机数
         int x =arc4random() % arr.count;
         id obj = arr[x];
         if (![newArr containsObject:obj]) {
@@ -94,14 +80,11 @@
     }
     return newArr;
 }
-
 -(CGFloat)tableViewForRowAtIndexCellHeight:(NSString *)title{
     CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 30, MAXFLOAT);
     return [title boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:18]} context:nil].size.height;
 }
-
 - (void)starAnimationWithTableView:(UITableView *)tableView {
-    
     [TableViewAnimationKit showWithAnimationType:XSTableViewAnimationTypeSpringList tableView:tableView];
 }
 @end

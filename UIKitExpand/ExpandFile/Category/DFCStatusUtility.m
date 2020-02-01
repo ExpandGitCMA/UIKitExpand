@@ -1,15 +1,5 @@
-//
-//  DFCStatusUtility.m
-//  planGodDelgate
-//
-//  Created by ZeroSmell on 16/9/12.
-//  Copyright © 2016年 DFC. All rights reserved.
-//
-
 #import "DFCStatusUtility.h"
-
 @implementation DFCStatusUtility
-
 + (void)showActivityIndicator{
     UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     activityIndicator.center = [self keyWindow].center;
@@ -18,7 +8,6 @@
     [activityIndicator startAnimating];
     activityIndicator.hidden = NO;
 }
-
 + (void)hideActivityIndicator{
     UIView *window = [self keyWindow];
     [window.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -30,8 +19,6 @@
         }
     }];
 }
-
-
 +(UIView*)keyWindow{
     __block UIWindow *keyWindow;
     NSMutableArray *windows = [[NSMutableArray alloc]initWithArray:[UIApplication sharedApplication].windows];
@@ -43,6 +30,5 @@
     }];
     UIView *window = [[keyWindow subviews] lastObject];
     return window;
-
 }
 @end
