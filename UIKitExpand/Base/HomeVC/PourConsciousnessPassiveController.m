@@ -7,6 +7,7 @@
 #import "EndLImageCell.h"
 #import "DFCWebViewCode.h"
 #import "PlanLogic.h"
+
 @interface PourConsciousnessPassiveController ()
 @end
 @implementation PourConsciousnessPassiveController
@@ -21,7 +22,7 @@
     [self getHomeBanner];
 }
 -(void)whisk{
-    [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavLeftStyle barTarget:self action:@selector(whiskClick) title:@"category_camera_7_gray"];
+    [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavLeftStyle barTarget:self action:@selector(requestAuthorizationCamera) title:@"category_camera_7_gray"];
      [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(msgClick) title:@"msg_home"];
 }
 -(void)getHomeBanner{
@@ -147,6 +148,18 @@
     newCode.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:newCode animated:YES];
 }
+
+
+-(void)requestAuthorizationCamera{
+
+    
+    DFCNewCode *newCode = [[DFCNewCode alloc]init];
+    newCode.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:newCode animated:YES];
+    
+}
+
+
 
 #pragma mark - 点击消息按钮
 - (void)msgClick {

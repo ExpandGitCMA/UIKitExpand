@@ -3,6 +3,8 @@
 #import "AppHeaderFile.h"
 #import "UIView+SDExtension.h"
 #import "DFCWebViewCode.h"
+#import "EXTScope.h"
+#import "ToolsAuthorization.h"
 static const CGFloat kBorderW = 100;
 static const CGFloat kMargin = 30;
 @interface DFCNewCode ()<UIAlertViewDelegate,AVCaptureMetadataOutputObjectsDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
@@ -30,15 +32,22 @@ static const CGFloat kMargin = 30;
     self.title = @"扫码";
     self.view.clipsToBounds=YES;
     [self setupMaskView];
-    [self setupBottomBar];
+//    [self setupBottomBar];
     [self setupTipTitleView];
     [self setupNavView];
     [self setupScanWindowView];
     [self beginScanning];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(resumeAnimation) name:@"EnterForeground" object:nil];
+    
+    [[ToolsAuthorization sharedToolsInstance]requestAuthorizationCamera:^(BOOL obj) {
+       
+    }];
+    
+    
 }
 -(void)setupTipTitleView{
-    UIView*mask=[[UIView alloc]initWithFrame:CGRectMake(0, _maskView.sd_y+_maskView.sd_height, self.view.sd_width, kBorderW)];
+//    UIView*mask=[[UIView alloc]initWithFrame:CGRectMake(0, _maskView.sd_y+_maskView.sd_height, self.view.sd_width, kBorderW)];
+    UIView*mask=[[UIView alloc]initWithFrame:CGRectMake(0, _maskView.sd_y+_maskView.sd_height, self.view.sd_width, self.view.sd_height- kBorderW)];
     mask.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
     [self.view addSubview:mask];
     UILabel * tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.view.sd_height*0.9-kBorderW*2+10, self.view.bounds.size.width, kBorderW)];

@@ -8,6 +8,7 @@
 #import "TableViewAnimationKitHeaders.h"
 #import "FeelLeatherManager.h"
 #import "FavourStrip.h"
+#import "ToolsAuthorization.h"
 @interface TendOutsideObjectionController : UIViewController<UITableViewDelegate, UITableViewDataSource,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate,ZeroSDCycleViewDelegate>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *dataSource;

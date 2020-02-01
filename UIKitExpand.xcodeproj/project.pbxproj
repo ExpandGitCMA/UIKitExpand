@@ -76,6 +76,7 @@
 		0324AC9A23E2DEFA004B4C3E /* date.json in Resources */ = {isa = PBXBuildFile; fileRef = 0324AC9923E2DEFA004B4C3E /* date.json */; };
 		0324ACC123E31F4E004B4C3E /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACBB23E31F4E004B4C3E /* TableViewAnimationKit.m */; };
 		0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */; };
+		03F1896C23E5978E00503533 /* ToolsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1896B23E5978E00503533 /* ToolsAuthorization.m */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F38701F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m */; };
 		B34688AD1F15FB8800498E66 /* RecoverQuestionPacific.m in Sources */ = {isa = PBXBuildFile; fileRef = B34688AC1F15FB8800498E66 /* RecoverQuestionPacific.m */; };
@@ -250,6 +251,8 @@
 		0324ACBE23E31F4E004B4C3E /* TableViewAnimationKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitConfig.h; sourceTree = "<group>"; };
 		0324ACBF23E31F4E004B4C3E /* TableViewAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKit.h; sourceTree = "<group>"; };
 		0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XSAnimationKit.m"; sourceTree = "<group>"; };
+		03F1896A23E5978E00503533 /* ToolsAuthorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsAuthorization.h; sourceTree = "<group>"; };
+		03F1896B23E5978E00503533 /* ToolsAuthorization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsAuthorization.m; sourceTree = "<group>"; };
 		1557A88AC0C9420DBF348CAF /* Pods-UIKitExpand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.release.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.release.xcconfig"; sourceTree = "<group>"; };
 		2865E39BF27EDBE025A41994 /* libPods-UIKitExpand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIKitExpand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC86418AF49E0D7082C20E8 /* Pods-UIKitExpand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.debug.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.debug.xcconfig"; sourceTree = "<group>"; };
@@ -304,6 +307,8 @@
 			children = (
 				03067F4523E41BB000A08E53 /* FatalRadioManager.h */,
 				03067F2923E41BB000A08E53 /* FatalRadioManager.m */,
+				03F1896A23E5978E00503533 /* ToolsAuthorization.h */,
+				03F1896B23E5978E00503533 /* ToolsAuthorization.m */,
 				03067F0823E41BB000A08E53 /* DataBase */,
 				03067F0D23E41BB000A08E53 /* ExUIKit */,
 				03067F1623E41BB000A08E53 /* Category */,
@@ -961,6 +966,7 @@
 				03067FA823E41BB100A08E53 /* BlessPorter.m in Sources */,
 				03067F7F23E41BB100A08E53 /* UncertainTransfusion.m in Sources */,
 				03067F8423E41BB100A08E53 /* PreviousDiscount.m in Sources */,
+				03F1896C23E5978E00503533 /* ToolsAuthorization.m in Sources */,
 				03067F8923E41BB100A08E53 /* UIImage+ImageEffects.m in Sources */,
 				03067FAE23E41BB100A08E53 /* TendOutsideObjectionController.m in Sources */,
 				03067F9323E41BB100A08E53 /* StressFakeCircumstance.m in Sources */,
