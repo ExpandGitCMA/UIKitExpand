@@ -36,8 +36,10 @@
 -(void)getHomeBanner{
     [[FeelLeatherManager sharedManager]tryHeapUseful:URL_HomeBanner params:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
-            NSArray *banner = [obj objectForKey:@"banner"];
-           [self.zeroSDCycleView setArrayStringUrl:banner];
+             NSArray *banner = [obj objectForKey:@"banner"];
+             BOOL boolValue = [[obj objectForKey:@"vanue"] boolValue];
+             DEBUG_NSLog(@"boolValue=%d",boolValue);
+             [self.zeroSDCycleView setArrayStringUrl:banner];
         }
    
     }];

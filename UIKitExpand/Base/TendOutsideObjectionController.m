@@ -102,6 +102,6 @@
 
 - (void)starAnimationWithTableView:(UITableView *)tableView {
     
-    [TableViewAnimationKit showWithAnimationType:     XSTableViewAnimationTypeSpringList tableView:tableView];
+    [TableViewAnimationKit showWithAnimationType:XSTableViewAnimationTypeSpringList tableView:tableView];
 }
 @end

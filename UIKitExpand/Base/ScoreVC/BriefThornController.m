@@ -15,6 +15,7 @@
     [super viewDidLoad];
      self.title = @"球赛规则";
      [self.tableView registerNib:[UINib nibWithNibName:@"EndLinenPeak" bundle:nil] forCellReuseIdentifier:@"Newcell"];
+     [self.zeroSDCycleView setArrayStringUrl:@[@"https://n.sinaimg.cn/sports/transform/283/w650h433/20200102/1697-imkzenq6385157.jpg"]];
 }
 
 
@@ -24,6 +25,7 @@
     [[FeelLeatherManager sharedManager]tryHeapUseful:URL_Gamerule params:@{} completed:^(BOOL ret, id obj) {
         
         if (ret) {
+            self.tableView.tableHeaderView =  [self zeroSDCycleView];
             [self.dataSource removeAllObjects];
                  NSMutableArray*date = [NSMutableArray array];
                  NSArray *arr = [obj objectForKey:@"game"];
@@ -32,8 +34,7 @@
                          [date  addObject: model];
                       }
                  self.dataSource = [self getRandomArrFrome:[date copy]];
-                 self.tableView.tableHeaderView =  [self zeroSDCycleView];
-                 [self.zeroSDCycleView setArrayStringUrl:@[@"https://n.sinaimg.cn/sports/transform/283/w650h433/20200102/1697-imkzenq6385157.jpg"]];
+               
                       dispatch_async(dispatch_get_main_queue(), ^{
                         [self.tableView.mj_header endRefreshing];
                         [self.tableView.mj_footer endRefreshing];
