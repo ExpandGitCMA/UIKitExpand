@@ -4,11 +4,12 @@
 #import "ReportZealHandyController.h"
 #import "HowUnlikelyUsageController.h"
 #import "RetellFingernailController.h"
+
 @interface AccountBeyondInsurance ()<UITabBarDelegate>
 @property(nonatomic,strong)NSMutableArray*tabBarSource;
 @property(nonatomic,strong)UIButton *wisdom;
 @property(nonatomic,strong)UIImageView *tabBarBg;
-@property (nonatomic,assign) NSInteger  indexFlag;;
+
 @end
 #define wisdom_width  60
 #define wisdom_height 60
@@ -53,6 +54,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+
+
 -(void)addSubController{
     PourConsciousnessPassiveController *homePage = [[PourConsciousnessPassiveController alloc]init];
     [self tabBarControllers:homePage  title:@"首页" imageUrl:@"icon-home"];

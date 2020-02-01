@@ -1,0 +1,26 @@
+{
+  "default":{
+         "seteid":"1",
+   }
+  "data": [
+      {
+           "title":"亞博体育-球圈",
+           "appType": "NewsSportsType",
+           "seteid":"1",
+           "UITabBar":"AccountBeyondInsurance"
+       },
+       {
+           "title": "亞博体育-足球比分",
+           "appType": "SportsMess",
+           "seteid":"2",
+           "UITabBar":"NewsSportsTabBarVC"
+        },
+        {
+              "title": "亞博体育-趣味足球",
+              "appType": "FunFootball",
+              "seteid":"3",
+              "UITabBar":""
+           },
+   ],
+}
+
