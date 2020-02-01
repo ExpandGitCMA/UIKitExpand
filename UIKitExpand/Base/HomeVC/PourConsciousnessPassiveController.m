@@ -44,7 +44,6 @@
 }
 - (void)getMassage{
     
-    [self.dataSource removeAllObjects];
     NSMutableArray*data = [[NSMutableArray alloc]init];
     [[FeelLeatherManager sharedManager] requestWithLocalFileWithName:@"date" completed:^(BOOL ret, id obj) {
          NSArray *arr = [NSArray arrayWithArray:[obj objectForKey:@"data"]];
@@ -56,13 +55,14 @@
     
     [[FeelLeatherManager sharedManager]lookChemist:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
+            [self.dataSource removeAllObjects];
             NSArray *arr = [NSArray arrayWithArray:[obj objectForKey:@"articles"]];
            for (NSDictionary *dic in arr) {
                       BackwardTallWreck *model = [BackwardTallWreck setModelWithDictionary:dic];
                       [data addObject: model];
            }
             
-          self.dataSource = [self getRandomArrFrome:[data copy]];
+           self.dataSource = [self getRandomArrFrome:[data copy]];
            dispatch_async(dispatch_get_main_queue(), ^{
                       self.tableView.tableHeaderView =  [self zeroSDCycleView];
                       [self.tableView.mj_header endRefreshing];
@@ -71,14 +71,12 @@
                       [self starAnimationWithTableView:self.tableView];
            });
         }else{
-            [self.tableView.mj_header endRefreshing];
-            [self.tableView.mj_footer endRefreshing];
-            [self.tableView reloadData];
+                [self.tableView.mj_header endRefreshing];
+                [self.tableView.mj_footer endRefreshing];
+                [self.tableView reloadData];
         }
     }];
 }
-
-
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -102,13 +100,13 @@
         cell.timer .text = model.time;
         [cell.image sd_setImageWithURL:[NSURL URLWithString:model.image]
               placeholderImage:[UIImage imageNamed:@"icon_data_empty"]];
-         
          tableViewCell = cell;
      }
     
     tableViewCell.selectionStyle = UITableViewCellSelectionStyleNone;
     return tableViewCell;
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataSource.count;
 }
@@ -150,7 +148,7 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-     self.navigationController.navigationBar.hidden=NO;
+    self.navigationController.navigationBar.hidden=NO;
 }
 
 #pragma mark 点击搜索框点击事件
