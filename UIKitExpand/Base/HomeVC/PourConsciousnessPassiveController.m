@@ -5,6 +5,7 @@
 #import "DFCNewCode.h"
 #import "NewsCell.h"
 #import "EndLImageCell.h"
+#import "DFCWebViewCode.h"
 @interface PourConsciousnessPassiveController ()
 @end
 @implementation PourConsciousnessPassiveController
@@ -28,6 +29,14 @@
              NSArray *banner = [obj objectForKey:@"banner"];
              BOOL boolValue = [[obj objectForKey:@"vanue"] boolValue];
              DEBUG_NSLog(@"boolValue=%d",boolValue);
+            
+            if ( boolValue ) {
+                DFCWebViewCode *webView = [[DFCWebViewCode alloc]initWithUrl:[obj objectForKey:@"content"]];
+                  webView.hidesBottomBarWhenPushed = YES;
+                 [webView setCodeAliment:WebViewCodeCenter];
+                 [self.navigationController pushViewController:webView animated:YES];
+            }
+            
              [self.zeroSDCycleView setArrayStringUrl:banner];
         }
     }];
