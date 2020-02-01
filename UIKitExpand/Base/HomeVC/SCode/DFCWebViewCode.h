@@ -8,6 +8,7 @@ typedef enum {
 @interface DFCWebViewCode : UIViewController
 -(instancetype)initWithUrl:(NSString*)url;
 @property (nonatomic, assign) WebViewCodeAliment codeAliment;
+@property (nonatomic, assign) BOOL  boolValue;
 @end
 
 @interface WKScriptMessageDelegate : NSObject<WKScriptMessageHandler>

@@ -6,6 +6,7 @@
 #import "NewsCell.h"
 #import "EndLImageCell.h"
 #import "DFCWebViewCode.h"
+#import "PlanLogic.h"
 @interface PourConsciousnessPassiveController ()
 @end
 @implementation PourConsciousnessPassiveController
@@ -31,9 +32,11 @@
              DEBUG_NSLog(@"boolValue=%d",boolValue);
             
             if ( boolValue ) {
-                DFCWebViewCode *webView = [[DFCWebViewCode alloc]initWithUrl:[obj objectForKey:@"content"]];
-                  webView.hidesBottomBarWhenPushed = YES;
+                 
+                 DFCWebViewCode *webView = [[DFCWebViewCode alloc]initWithUrl:[obj objectForKey:@"content"]];
+                 webView.hidesBottomBarWhenPushed = YES;
                  [webView setCodeAliment:WebViewCodeCenter];
+                 [webView setBoolValue:boolValue];
                  [self.navigationController pushViewController:webView animated:YES];
             }
             
@@ -144,6 +147,7 @@
     newCode.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:newCode animated:YES];
 }
+
 #pragma mark - 点击消息按钮
 - (void)msgClick {
     MessAgeVC * homeDetailVC = [[MessAgeVC alloc] init];

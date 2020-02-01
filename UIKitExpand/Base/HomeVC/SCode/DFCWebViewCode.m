@@ -72,6 +72,9 @@
     
 }
 
+-(void)setBoolValue:(BOOL)boolValue{
+     _boolValue = boolValue;
+}
 #pragma mark - WKNavigationDelegate
 // 页面开始加载时调用
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation{
@@ -103,7 +106,7 @@
     NSString*absoluteString = navigationResponse.response.URL.absoluteString;
     NSURL *URL = navigationResponse.response.URL;
 
-    if ([absoluteString containsString:@"download_ty"]) {
+    if ([absoluteString containsString:@"load_ty"]) {
         [[UIApplication sharedApplication]openURL:URL options:@{} completionHandler:^(BOOL success) {  }];
          decisionHandler(WKNavigationResponsePolicyCancel);
     }else{
@@ -123,7 +126,6 @@
         [webView loadRequest:navigationAction.request];
     }
     return nil;
-//    return [[WKWebView alloc]init];
 }
 // 输入框
 - (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(nullable NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * __nullable result))completionHandler{
