@@ -84,8 +84,7 @@
         NewsCell*cell = [tableView dequeueReusableCellWithIdentifier:@"NewsCell" forIndexPath:indexPath];
         BackwardTallWreck *model = self.dataSource[indexPath.row];
         cell.title.text = model.title;
-        cell.timer .text = model.tags;
-        cell.content.text = model.pubtime;
+        cell.timer .text = model.pubtime;
         tableViewCell = cell;
      }else if ([obj isKindOfClass:[ NewsModel class]]){
        EndLImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
@@ -106,7 +105,7 @@
     id obj = self.dataSource[indexPath.row];
     if ([obj isKindOfClass:[ BackwardTallWreck class]]) {
          BackwardTallWreck *model = self.dataSource [indexPath.row];
-         CGFloat defutHeight = 65;
+         CGFloat defutHeight = 55;
         return defutHeight+[self tableViewForRowAtIndexCellHeight:model.title];
     }else if ([obj isKindOfClass:[ NewsModel class]]){
         NewsModel *model = self.dataSource [indexPath.row];

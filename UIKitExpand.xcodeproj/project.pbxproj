@@ -83,6 +83,9 @@
 		0334C51C23E6B0C6000D3E76 /* NewsSportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C51B23E6B0C6000D3E76 /* NewsSportModel.m */; };
 		0334C52023E6B185000D3E76 /* NewsSportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C51E23E6B185000D3E76 /* NewsSportCell.m */; };
 		0334C52123E6B185000D3E76 /* NewsSportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C51F23E6B185000D3E76 /* NewsSportCell.xib */; };
+		0334C52423E6CAF7000D3E76 /* Leagstus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C52323E6CAF7000D3E76 /* Leagstus.m */; };
+		0334C52823E6D256000D3E76 /* LeagstusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C52623E6D256000D3E76 /* LeagstusCell.m */; };
+		0334C52923E6D256000D3E76 /* LeagstusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C52723E6D256000D3E76 /* LeagstusCell.xib */; };
 		03F1896C23E5978E00503533 /* ToolsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1896B23E5978E00503533 /* ToolsAuthorization.m */; };
 		03F189A823E5C20100503533 /* NewsSportsHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F189A723E5C20100503533 /* NewsSportsHomeVC.m */; };
 		03F189AB23E5C56B00503533 /* seteid.json in Resources */ = {isa = PBXBuildFile; fileRef = 03F189AA23E5C56B00503533 /* seteid.json */; };
@@ -272,6 +275,11 @@
 		0334C51D23E6B185000D3E76 /* NewsSportCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsSportCell.h; sourceTree = "<group>"; };
 		0334C51E23E6B185000D3E76 /* NewsSportCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsSportCell.m; sourceTree = "<group>"; };
 		0334C51F23E6B185000D3E76 /* NewsSportCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsSportCell.xib; sourceTree = "<group>"; };
+		0334C52223E6CAF7000D3E76 /* Leagstus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leagstus.h; sourceTree = "<group>"; };
+		0334C52323E6CAF7000D3E76 /* Leagstus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Leagstus.m; sourceTree = "<group>"; };
+		0334C52523E6D256000D3E76 /* LeagstusCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeagstusCell.h; sourceTree = "<group>"; };
+		0334C52623E6D256000D3E76 /* LeagstusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeagstusCell.m; sourceTree = "<group>"; };
+		0334C52723E6D256000D3E76 /* LeagstusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeagstusCell.xib; sourceTree = "<group>"; };
 		03F1896A23E5978E00503533 /* ToolsAuthorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsAuthorization.h; sourceTree = "<group>"; };
 		03F1896B23E5978E00503533 /* ToolsAuthorization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsAuthorization.m; sourceTree = "<group>"; };
 		03F189A623E5C20100503533 /* NewsSportsHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsSportsHomeVC.h; sourceTree = "<group>"; };
@@ -649,6 +657,11 @@
 				0334C51D23E6B185000D3E76 /* NewsSportCell.h */,
 				0334C51E23E6B185000D3E76 /* NewsSportCell.m */,
 				0334C51F23E6B185000D3E76 /* NewsSportCell.xib */,
+				0334C52223E6CAF7000D3E76 /* Leagstus.h */,
+				0334C52323E6CAF7000D3E76 /* Leagstus.m */,
+				0334C52523E6D256000D3E76 /* LeagstusCell.h */,
+				0334C52623E6D256000D3E76 /* LeagstusCell.m */,
+				0334C52723E6D256000D3E76 /* LeagstusCell.xib */,
 			);
 			path = NewsSports;
 			sourceTree = "<group>";
@@ -894,6 +907,7 @@
 				03F189AB23E5C56B00503533 /* seteid.json in Resources */,
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
 				0334C52123E6B185000D3E76 /* NewsSportCell.xib in Resources */,
+				0334C52923E6D256000D3E76 /* LeagstusCell.xib in Resources */,
 				0334C51423E69975000D3E76 /* NewsPlayBallCell.xib in Resources */,
 				03067F9923E41BB100A08E53 /* EndLImageCell.xib in Resources */,
 				03067FC223E43D0100A08E53 /* MessAgeCell.xib in Resources */,
@@ -982,6 +996,7 @@
 				03067F8823E41BB100A08E53 /* UIView+BlurredImage.m in Sources */,
 				0324ACC123E31F4E004B4C3E /* TableViewAnimationKit.m in Sources */,
 				03067FA723E41BB100A08E53 /* SeriouslyConvenientStuffController.m in Sources */,
+				0334C52423E6CAF7000D3E76 /* Leagstus.m in Sources */,
 				03067F9E23E41BB100A08E53 /* EndLImageCell.m in Sources */,
 				03067F9C23E41BB100A08E53 /* NewsCell.m in Sources */,
 				03067FA623E41BB100A08E53 /* HollowMale.m in Sources */,
@@ -994,6 +1009,7 @@
 				03067F9423E41BB100A08E53 /* ShoweryAntelope.m in Sources */,
 				03067F9123E41BB100A08E53 /* PlanLogic.m in Sources */,
 				03067FA223E41BB100A08E53 /* ReuniteDifficultyWalletView.m in Sources */,
+				0334C52823E6D256000D3E76 /* LeagstusCell.m in Sources */,
 				03067FD923E47A1F00A08E53 /* DFCNewCode.m in Sources */,
 				03067FDE23E47AD600A08E53 /* DFCStatusUtility.m in Sources */,
 				03067FAB23E41BB100A08E53 /* ImpairBeingController.m in Sources */,
