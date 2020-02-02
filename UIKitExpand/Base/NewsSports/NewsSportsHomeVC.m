@@ -164,7 +164,7 @@
         return defutHeight+[self tableViewForRowAtIndexCellHeight:model.title];
     }else if ([obj isKindOfClass:[ NewsModel class]]){
         NewsModel *model = self.dataSource [indexPath.row];
-        CGFloat defutHeight = 175;
+        CGFloat defutHeight = 195;
         return defutHeight+[self tableViewForRowAtIndexCellHeight:model.title];
     }else if ([obj isKindOfClass:[NewsSportModel class]]){
         CGFloat defutHeight = 125;

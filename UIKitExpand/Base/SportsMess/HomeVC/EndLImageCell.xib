@@ -23,6 +23,12 @@
                             <constraint firstAttribute="width" constant="125" id="DxA-Ga-hVb"/>
                             <constraint firstAttribute="height" constant="100" id="iEU-zm-VtL"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TM3-tm-d7z">
                         <rect key="frame" x="15" y="15" width="162" height="21.5"/>
@@ -50,7 +56,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
-                <outlet property="image" destination="18l-7x-vUj" id="jX0-5p-PLu"/>
+                <outlet property="imageUrl" destination="18l-7x-vUj" id="F0u-xB-XKo"/>
                 <outlet property="timer" destination="QXX-Ea-Icl" id="tR1-SC-EYQ"/>
                 <outlet property="title" destination="TM3-tm-d7z" id="dvn-df-WaP"/>
             </connections>

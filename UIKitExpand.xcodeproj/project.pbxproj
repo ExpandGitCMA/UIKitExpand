@@ -504,16 +504,16 @@
 		03067F4A23E41BB100A08E53 /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
-				03067F4C23E41BB100A08E53 /* EndLImageCell.xib */,
-				03067F4D23E41BB100A08E53 /* EndLinenPeak.xib */,
+				03067F5323E41BB100A08E53 /* EndLinenPeak.h */,
 				03067F4E23E41BB100A08E53 /* EndLinenPeak.m */,
-				03067F4F23E41BB100A08E53 /* EndLImageCell.h */,
+				03067F4D23E41BB100A08E53 /* EndLinenPeak.xib */,
 				03067F5023E41BB100A08E53 /* PourConsciousnessPassiveController.h */,
 				03067F5423E41BB100A08E53 /* PourConsciousnessPassiveController.m */,
 				03067F5223E41BB100A08E53 /* BackwardTallWreck.h */,
 				03067F4B23E41BB100A08E53 /* BackwardTallWreck.m */,
-				03067F5323E41BB100A08E53 /* EndLinenPeak.h */,
+				03067F4F23E41BB100A08E53 /* EndLImageCell.h */,
 				03067F5523E41BB100A08E53 /* EndLImageCell.m */,
+				03067F4C23E41BB100A08E53 /* EndLImageCell.xib */,
 				03067F5623E41BB100A08E53 /* NewsCell.h */,
 				03067F5123E41BB100A08E53 /* NewsCell.m */,
 				03067F5723E41BB100A08E53 /* NewsCell.xib */,

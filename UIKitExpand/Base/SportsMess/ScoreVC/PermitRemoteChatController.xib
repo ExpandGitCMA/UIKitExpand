@@ -21,13 +21,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="glI-QS-dmv">
-                    <rect key="frame" x="0.0" y="44" width="414" height="150"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="175"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="150" id="86g-th-gat"/>
+                        <constraint firstAttribute="height" constant="175" id="86g-th-gat"/>
                     </constraints>
                 </imageView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e6s-P4-dG7">
-                    <rect key="frame" x="10" y="204" width="394" height="653"/>
+                    <rect key="frame" x="10" y="229" width="394" height="628"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -53,4 +53,3 @@
         <image name="banner" width="357" height="151.5"/>
     </resources>
 </document>
-

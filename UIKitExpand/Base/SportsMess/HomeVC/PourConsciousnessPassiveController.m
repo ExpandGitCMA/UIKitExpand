@@ -19,7 +19,7 @@
 }
 -(void)initUIView{
     [self whisk];
-    [self.tableView registerNib:[UINib nibWithNibName:@"EndLImageCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"EndLImageCell" bundle:nil] forCellReuseIdentifier:@"EndLImageCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"LeagstusCell" bundle:nil] forCellReuseIdentifier:@"LeagstusCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"NewsCell" bundle:nil] forCellReuseIdentifier:@"NewsCell"];
     [self getHomeBanner];
@@ -98,19 +98,18 @@
         cell.timer .text = model.pubtime;
         tableViewCell = cell;
      }else if ([obj isKindOfClass:[ NewsModel class]]){
-       EndLImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+       EndLImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EndLImageCell" forIndexPath:indexPath];
         NewsModel *model = self.dataSource [indexPath.row];
         cell.title.text = model.title;
         cell.timer .text = model.time;
-        [cell.image sd_setImageWithURL:[NSURL URLWithString:model.image]
+        [cell.imageUrl sd_setImageWithURL:[NSURL URLWithString:model.image]
               placeholderImage:[UIImage imageNamed:@"icon_data_empty"]];
          tableViewCell = cell;
      }else if ([obj isKindOfClass:[Leagstus class]]){
         
              LeagstusCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LeagstusCell" forIndexPath:indexPath];
             Leagstus *model = self.dataSource [indexPath.row];
-            cell.title.text = model.content;
-            cell.content.text = model.time;
+            cell.content.text = model.title;
             [cell.imageUrl sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"news_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
             
                  }];
