@@ -1,6 +1,9 @@
 #import "AnchorSongController.h"
 #import <SVProgressHUD.h>
+#import "UncertainTransfusion.h"
+#import "AppColorHeader.h"
 @interface AnchorSongController ()<UITextViewDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *subit;
 @property (weak, nonatomic) IBOutlet UITextView *QuLeFanKuiTextView;
 @end
 @implementation AnchorSongController
@@ -8,6 +11,23 @@
     [super viewDidLoad];
     self.title = @"意见反馈";
     self.QuLeFanKuiTextView.delegate = self;
+    NSString  *seteid = [[UncertainTransfusion sharedDefaultManager]getApresentTimer];
+    
+    switch ([seteid integerValue]) {
+        case 1:{
+            _subit.backgroundColor = kUIColorFromRGB(AppMianColor);
+        
+        }
+         break;
+        case 2:{
+                   
+            _subit.backgroundColor = kUIColorFromRGB(AppScore);
+         }
+          break;
+        default:
+            break;
+    }
+    
 }
 - (void)textViewDidChange:(UITextView *)textView{
 }

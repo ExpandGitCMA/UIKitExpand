@@ -19,7 +19,7 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n7-ns-6by">
                         <rect key="frame" x="15" y="15" width="327" height="0.0"/>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -30,7 +30,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TfW-e9-Loy">
-                        <rect key="frame" x="10" y="28" width="332" height="145"/>
+                        <rect key="frame" x="15" y="28" width="322" height="145"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="5"/>
@@ -41,13 +41,13 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="2n7-ns-6by" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="4gu-I9-sRI"/>
-                    <constraint firstAttribute="trailing" secondItem="TfW-e9-Loy" secondAttribute="trailing" constant="10" id="DaD-nd-tqq"/>
+                    <constraint firstAttribute="trailing" secondItem="TfW-e9-Loy" secondAttribute="trailing" constant="15" id="DaD-nd-tqq"/>
                     <constraint firstAttribute="bottom" secondItem="TfW-e9-Loy" secondAttribute="bottom" constant="10" id="G2v-gU-x1O"/>
                     <constraint firstItem="OXw-KH-3Kc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="LQ4-CN-8lj"/>
                     <constraint firstAttribute="trailing" secondItem="2n7-ns-6by" secondAttribute="trailing" constant="10" id="Llv-iz-qRo"/>
                     <constraint firstAttribute="trailing" secondItem="OXw-KH-3Kc" secondAttribute="trailing" constant="15" id="RYx-ac-bBD"/>
                     <constraint firstItem="TfW-e9-Loy" firstAttribute="top" secondItem="OXw-KH-3Kc" secondAttribute="bottom" constant="8" id="SYB-9C-waA"/>
-                    <constraint firstItem="TfW-e9-Loy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="YKI-Kz-8A7"/>
+                    <constraint firstItem="TfW-e9-Loy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="YKI-Kz-8A7"/>
                     <constraint firstItem="2n7-ns-6by" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bDd-SB-CHG"/>
                     <constraint firstItem="OXw-KH-3Kc" firstAttribute="top" secondItem="2n7-ns-6by" secondAttribute="bottom" constant="5" id="jX3-6n-vXw"/>
                 </constraints>

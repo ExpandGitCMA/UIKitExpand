@@ -86,6 +86,7 @@
 		0334C52423E6CAF7000D3E76 /* Leagstus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C52323E6CAF7000D3E76 /* Leagstus.m */; };
 		0334C52823E6D256000D3E76 /* LeagstusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C52623E6D256000D3E76 /* LeagstusCell.m */; };
 		0334C52923E6D256000D3E76 /* LeagstusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C52723E6D256000D3E76 /* LeagstusCell.xib */; };
+		0334C52C23E6E304000D3E76 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0334C52B23E6E304000D3E76 /* logo.jpg */; };
 		03F1896C23E5978E00503533 /* ToolsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1896B23E5978E00503533 /* ToolsAuthorization.m */; };
 		03F189A823E5C20100503533 /* NewsSportsHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F189A723E5C20100503533 /* NewsSportsHomeVC.m */; };
 		03F189AB23E5C56B00503533 /* seteid.json in Resources */ = {isa = PBXBuildFile; fileRef = 03F189AA23E5C56B00503533 /* seteid.json */; };
@@ -280,6 +281,7 @@
 		0334C52523E6D256000D3E76 /* LeagstusCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeagstusCell.h; sourceTree = "<group>"; };
 		0334C52623E6D256000D3E76 /* LeagstusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeagstusCell.m; sourceTree = "<group>"; };
 		0334C52723E6D256000D3E76 /* LeagstusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeagstusCell.xib; sourceTree = "<group>"; };
+		0334C52B23E6E304000D3E76 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 		03F1896A23E5978E00503533 /* ToolsAuthorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsAuthorization.h; sourceTree = "<group>"; };
 		03F1896B23E5978E00503533 /* ToolsAuthorization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsAuthorization.m; sourceTree = "<group>"; };
 		03F189A623E5C20100503533 /* NewsSportsHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsSportsHomeVC.h; sourceTree = "<group>"; };
@@ -639,6 +641,14 @@
 			path = TableViewAnimationKit;
 			sourceTree = "<group>";
 		};
+		0334C52A23E6E2F5000D3E76 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0334C52B23E6E304000D3E76 /* logo.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		03F189A523E5BE9300503533 /* NewsSports */ = {
 			isa = PBXGroup;
 			children = (
@@ -772,6 +782,7 @@
 		D8C6CA221F42D9A400BE85ED /* Resource(资源) */ = {
 			isa = PBXGroup;
 			children = (
+				0334C52A23E6E2F5000D3E76 /* images */,
 				B3D208D41F47E89700F0CE6F /* Assets.xcassets */,
 				03067FB923E436FB00A08E53 /* mesg.json */,
 				0324AC9923E2DEFA004B4C3E /* date.json */,
@@ -919,6 +930,7 @@
 				03067FAC23E41BB100A08E53 /* SeriouslyConvenientStuffController.xib in Resources */,
 				B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */,
 				03067F9A23E41BB100A08E53 /* EndLinenPeak.xib in Resources */,
+				0334C52C23E6E304000D3E76 /* logo.jpg in Resources */,
 				03067FA423E41BB100A08E53 /* AnchorSongController.xib in Resources */,
 				03067FA923E41BB100A08E53 /* ImpairBeingController.xib in Resources */,
 				03067FAD23E41BB100A08E53 /* BlessPorter.xib in Resources */,

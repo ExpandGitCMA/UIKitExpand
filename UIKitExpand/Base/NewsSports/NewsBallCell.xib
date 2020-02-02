@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmu-Qt-DV8">
-                        <rect key="frame" x="15" y="25" width="342" height="20.5"/>
+                        <rect key="frame" x="15" y="15" width="342" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIp-ER-CVh">
-                        <rect key="frame" x="15" y="50.5" width="337" height="17"/>
+                        <rect key="frame" x="15" y="40.5" width="337" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -34,7 +34,7 @@
                     <constraint firstItem="cIp-ER-CVh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="CtG-wp-M46"/>
                     <constraint firstAttribute="trailing" secondItem="cIp-ER-CVh" secondAttribute="trailing" constant="20" id="GOc-oj-6e2"/>
                     <constraint firstItem="cIp-ER-CVh" firstAttribute="top" secondItem="Dmu-Qt-DV8" secondAttribute="bottom" constant="5" id="KbL-Lw-nuZ"/>
-                    <constraint firstItem="Dmu-Qt-DV8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="QrD-Ze-hTP"/>
+                    <constraint firstItem="Dmu-Qt-DV8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="QrD-Ze-hTP"/>
                     <constraint firstAttribute="trailing" secondItem="Dmu-Qt-DV8" secondAttribute="trailing" constant="15" id="r9I-2x-k9j"/>
                     <constraint firstItem="Dmu-Qt-DV8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="yVE-pK-9ws"/>
                 </constraints>

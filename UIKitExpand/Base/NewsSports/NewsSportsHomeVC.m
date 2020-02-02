@@ -60,11 +60,10 @@
 }
 
 - (void)getMassage{
+    
     NSMutableArray*data = [[NSMutableArray alloc]init];
-    NSMutableArray*leagstusArray = [[NSMutableArray alloc]init];
     [[FeelLeatherManager sharedManager] requestWithLocalFileWithName:@"date" completed:^(BOOL ret, id obj) {
       
-        
          NSArray *arr = [NSArray arrayWithArray:[obj objectForKey:@"data"]];
         for (NSDictionary *dic in arr) {
            NewsModel *model = [NewsModel setModelWithDictionary:dic];
@@ -79,7 +78,7 @@
        NSArray *leagstus = [obj objectForKey:@"Leagstus"];
         for (NSDictionary *dic in leagstus) {
                Leagstus *model = [Leagstus setModelWithDictionary:dic];
-               [leagstusArray addObject: model];
+               [data addObject: model];
         }
         
     }];
@@ -87,26 +86,17 @@
     [[FeelLeatherManager sharedManager]lookChemist:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
             [self.dataSource removeAllObjects];
-            NSArray *smallArray= [NSArray arrayWithArray:[obj objectForKey:@"articles"]];
-            NSArray *arr;
-            
-            if (smallArray.count>15){
-                arr = [smallArray subarrayWithRange:NSMakeRange(0, 15)];
-            }else{
-                 arr = [smallArray copy];
-            }
-     
+              NSArray *arr = [NSArray arrayWithArray:[obj objectForKey:@"articles"]];
+
             
            for (NSDictionary *dic in arr) {
                  BackwardTallWreck *model = [BackwardTallWreck setModelWithDictionary:dic];
                  [data addObject: model];
            }
-            
-            NSArray*array = [ [self getRandomArrFrome:data] copy];
-            
-            [leagstusArray addObjectsFromArray: array];
-            self.dataSource = leagstusArray;
+
+          self.dataSource = [self getRandomArrFrome:[data copy]];
            dispatch_async(dispatch_get_main_queue(), ^{
+                       [[self zeroSDCycleView]  setPageControlStyle:ZeroSDCycleViewPageContolStyleClassic];
                       self.tableView.tableHeaderView =  [self zeroSDCycleView];
                       [self.tableView.mj_header endRefreshing];
                       [self.tableView.mj_footer endRefreshing];
@@ -151,8 +141,7 @@
         
              LeagstusCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LeagstusCell" forIndexPath:indexPath];
             Leagstus *model = self.dataSource [indexPath.row];
-            cell.title.text = model.content;
-            cell.content.text = model.time;
+            cell.content.text = model.title;
             [cell.imageUrl sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"news_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
             
                  }];
@@ -171,7 +160,7 @@
     id obj = self.dataSource[indexPath.row];
     if ([obj isKindOfClass:[ BackwardTallWreck class]]) {
          BackwardTallWreck *model = self.dataSource [indexPath.row];
-         CGFloat defutHeight = 55;
+         CGFloat defutHeight = 38;
         return defutHeight+[self tableViewForRowAtIndexCellHeight:model.title];
     }else if ([obj isKindOfClass:[ NewsModel class]]){
         NewsModel *model = self.dataSource [indexPath.row];
@@ -198,7 +187,11 @@
        }else if ([obj isKindOfClass:[ NewsModel class]]){
             NewsModel *model = self.dataSource [indexPath.row];
             homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.time,@"\n",model.title];
-           homeDetailVC.url = model.image;
+           if([model.image isNull]){
+                homeDetailVC.url =  model.image;
+           }else{
+                homeDetailVC.image = @"news_empty";
+           }
        }else if ([obj isKindOfClass:[NewsSportModel class]]){
             NewsSportModel *model = self.dataSource [indexPath.row];
             homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.title,@"\n",model.content];

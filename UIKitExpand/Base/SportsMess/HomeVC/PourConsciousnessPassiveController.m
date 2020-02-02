@@ -7,6 +7,8 @@
 #import "EndLImageCell.h"
 #import "DFCWebViewCode.h"
 #import "PlanLogic.h"
+#import "Leagstus.h"
+#import "LeagstusCell.h"
 
 @interface PourConsciousnessPassiveController ()
 @end
@@ -18,6 +20,7 @@
 -(void)initUIView{
     [self whisk];
     [self.tableView registerNib:[UINib nibWithNibName:@"EndLImageCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"LeagstusCell" bundle:nil] forCellReuseIdentifier:@"LeagstusCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"NewsCell" bundle:nil] forCellReuseIdentifier:@"NewsCell"];
     [self getHomeBanner];
 }
@@ -53,6 +56,12 @@
            NewsModel *model = [NewsModel setModelWithDictionary:dic];
            [data addObject: model];
         }
+        
+        NSArray *leagstus = [obj objectForKey:@"Leagstus"];
+            for (NSDictionary *dic in leagstus) {
+                   Leagstus *model = [Leagstus setModelWithDictionary:dic];
+                   [data addObject: model];
+            }
     }];
     [[FeelLeatherManager sharedManager]lookChemist:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
@@ -64,7 +73,9 @@
            }
            self.dataSource = [self getRandomArrFrome:[data copy]];
            dispatch_async(dispatch_get_main_queue(), ^{
+                     [[self zeroSDCycleView]  setPageControlStyle:ZeroSDCycleViewPageContolStyleAnimated];
                       self.tableView.tableHeaderView =  [self zeroSDCycleView];
+                    
                       [self.tableView.mj_header endRefreshing];
                       [self.tableView.mj_footer endRefreshing];
                       [self.tableView reloadData];
@@ -94,6 +105,16 @@
         [cell.image sd_setImageWithURL:[NSURL URLWithString:model.image]
               placeholderImage:[UIImage imageNamed:@"icon_data_empty"]];
          tableViewCell = cell;
+     }else if ([obj isKindOfClass:[Leagstus class]]){
+        
+             LeagstusCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LeagstusCell" forIndexPath:indexPath];
+            Leagstus *model = self.dataSource [indexPath.row];
+            cell.title.text = model.content;
+            cell.content.text = model.time;
+            [cell.imageUrl sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"news_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            
+                 }];
+            tableViewCell = cell;
      }
     tableViewCell.selectionStyle = UITableViewCellSelectionStyleNone;
     return tableViewCell;
@@ -111,6 +132,10 @@
         NewsModel *model = self.dataSource [indexPath.row];
         CGFloat defutHeight = 100;
         return defutHeight+[self tableViewForRowAtIndexCellHeight:model.title];
+    }else if ([obj isKindOfClass:[Leagstus class]]){
+        CGFloat defutHeight = 205;
+        Leagstus *model = self.dataSource [indexPath.row];
+        return defutHeight+[self tableViewForRowAtIndexCellHeight:model.content];
     }
     return 70;
 }
@@ -125,6 +150,10 @@
             NewsModel *model = self.dataSource [indexPath.row];
             homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.time,@"\n",model.title];
            homeDetailVC.url = model.image;
+       }else if ([obj isKindOfClass:[Leagstus class]]){
+           Leagstus *model = self.dataSource [indexPath.row];
+           homeDetailVC.url = model.image;
+           homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.content,@"\n \n",model.name];
        }
      [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
