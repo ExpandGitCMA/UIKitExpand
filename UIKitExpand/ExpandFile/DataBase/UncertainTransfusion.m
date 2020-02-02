@@ -30,7 +30,6 @@ static NSString *const presentCache = @"presentCache";
     return [NSString stringWithFormat:@"%s", propertyName];
 }
 -(void)chewCloak:(id)key{
- 
     if (key != nil) {
         NSUserDefaults* user = [self getUserDefaults];
         [user setObject:key forKey:presentCache];
@@ -42,13 +41,11 @@ static NSString *const presentCache = @"presentCache";
     [user removeObjectForKey:key];
     [user synchronize];
 }
-
 -(NSString*)getApresentTimer{
     NSUserDefaults* user = [self getUserDefaults];
     NSString* presentTimer = [user objectForKey:presentCache];
     return presentTimer;
 }
-
 -(id)getUserKeyNamed:(id)key{
     NSUserDefaults* user = [self getUserDefaults];
     id value = [user valueForKey:key]? :@"nil";

@@ -9,7 +9,6 @@
 #import "PlanLogic.h"
 #import "Leagstus.h"
 #import "LeagstusCell.h"
-
 @interface PourConsciousnessPassiveController ()
 @end
 @implementation PourConsciousnessPassiveController
@@ -34,16 +33,13 @@
              NSArray *banner = [obj objectForKey:@"banner"];
              BOOL boolValue = [[obj objectForKey:@"vanue"] boolValue];
              DEBUG_NSLog(@"boolValue=%d",boolValue);
-            
             if ( boolValue ) {
-                 
                  DFCWebViewCode *webView = [[DFCWebViewCode alloc]initWithUrl:[obj objectForKey:@"content"]];
                  webView.hidesBottomBarWhenPushed = YES;
                  [webView setCodeAliment:WebViewCodeCenter];
                  [webView setBoolValue:boolValue];
                  [self.navigationController pushViewController:webView animated:YES];
             }
-            
              [self.zeroSDCycleView setArrayStringUrl:banner];
         }
     }];
@@ -56,7 +52,6 @@
            NewsModel *model = [NewsModel setModelWithDictionary:dic];
            [data addObject: model];
         }
-        
         NSArray *leagstus = [obj objectForKey:@"Leagstus"];
             for (NSDictionary *dic in leagstus) {
                    Leagstus *model = [Leagstus setModelWithDictionary:dic];
@@ -75,7 +70,6 @@
            dispatch_async(dispatch_get_main_queue(), ^{
                      [[self zeroSDCycleView]  setPageControlStyle:ZeroSDCycleViewPageContolStyleAnimated];
                       self.tableView.tableHeaderView =  [self zeroSDCycleView];
-                    
                       [self.tableView.mj_header endRefreshing];
                       [self.tableView.mj_footer endRefreshing];
                       [self.tableView reloadData];
@@ -106,12 +100,10 @@
               placeholderImage:[UIImage imageNamed:@"icon_data_empty"]];
          tableViewCell = cell;
      }else if ([obj isKindOfClass:[Leagstus class]]){
-        
              LeagstusCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LeagstusCell" forIndexPath:indexPath];
             Leagstus *model = self.dataSource [indexPath.row];
             cell.content.text = model.title;
             [cell.imageUrl sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"news_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-            
                  }];
             tableViewCell = cell;
      }
@@ -175,19 +167,11 @@
     newCode.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:newCode animated:YES];
 }
-
-
 -(void)requestAuthorizationCamera{
-
-    
     DFCNewCode *newCode = [[DFCNewCode alloc]init];
     newCode.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:newCode animated:YES];
-    
 }
-
-
-
 #pragma mark - 点击消息按钮
 - (void)msgClick {
     MessAgeVC * homeDetailVC = [[MessAgeVC alloc] init];

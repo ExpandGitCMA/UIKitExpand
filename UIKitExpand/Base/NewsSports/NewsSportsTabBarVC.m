@@ -1,23 +1,11 @@
-//
-//  NewsSportsTabBarVC.m
-//  UIKitExpand
-//
-//  Created by Smell Zero on 2020/2/1.
-//  Copyright © 2020 陈美安. All rights reserved.
-//
-
 #import "NewsSportsTabBarVC.h"
 #import "RetellFingernailController.h"
 #import "NewsSportsHomeVC.h"
 #import "NewstipsVC.h"
-
 @interface NewsSportsTabBarVC ()<UITabBarDelegate>
 @property(nonatomic,strong)NSMutableArray*tabBarSource;
-
 @end
-
 @implementation NewsSportsTabBarVC
-
 - (instancetype)init{
     self = [super init];
     if (self) {
@@ -32,13 +20,9 @@
     }
     return _tabBarSource;
 }
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-
-
 -(void)addSubController{
     NewsSportsHomeVC *homePage = [NewsSportsHomeVC new];
     [self tabBarControllers:homePage  title:@"体育" imageUrl:@"icon-home-new"];
@@ -83,5 +67,4 @@
 }
 - (void)tabBar:(UITabBar *)tabBar didEndCustomizingItems:(NSArray<UITabBarItem *> *)items changed:(BOOL)changed{
 }
-
 @end

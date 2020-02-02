@@ -10,21 +10,15 @@
     [[self class] pleasureoToControl:controller];
 }
 +(void)getBaseRequestController{
-    
-
       NSString  *seteid = [[UncertainTransfusion sharedDefaultManager]getApresentTimer];
       [[self class] speakToTabBarController:[seteid integerValue]];
 }
-
 +(void)speakToTabBarController:(NSInteger)index{
-    
     UIViewController*tabBar;
-    
     switch (index) {
         case 1:{
             tabBar = [AccountBeyondInsurance new];
         }
-            
             break;
         case 2:{
             tabBar = [NewsSportsTabBarVC new];
@@ -34,7 +28,6 @@
     }
     [[self class] pleasureoToControl:tabBar];
 }
-
 +(void)pleasureoToControl:(UIViewController*)controller{
     AppDelegate *appDelegate =  (AppDelegate*)[[UIApplication sharedApplication] delegate];
     appDelegate.window.rootViewController = controller;

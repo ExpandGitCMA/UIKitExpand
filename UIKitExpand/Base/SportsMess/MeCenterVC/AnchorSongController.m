@@ -12,22 +12,18 @@
     self.title = @"意见反馈";
     self.QuLeFanKuiTextView.delegate = self;
     NSString  *seteid = [[UncertainTransfusion sharedDefaultManager]getApresentTimer];
-    
     switch ([seteid integerValue]) {
         case 1:{
             _subit.backgroundColor = kUIColorFromRGB(AppMianColor);
-        
         }
          break;
         case 2:{
-                   
             _subit.backgroundColor = kUIColorFromRGB(AppScore);
          }
           break;
         default:
             break;
     }
-    
 }
 - (void)textViewDidChange:(UITextView *)textView{
 }
