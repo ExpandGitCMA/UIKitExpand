@@ -7,12 +7,9 @@
 //
 
 #import "NewsSportsTabBarVC.h"
-#import "PourConsciousnessPassiveController.h"
-#import "BriefThornController.h"
-#import "ReportZealHandyController.h"
-#import "HowUnlikelyUsageController.h"
 #import "RetellFingernailController.h"
 #import "NewsSportsHomeVC.h"
+#import "NewstipsVC.h"
 
 @interface NewsSportsTabBarVC ()<UITabBarDelegate>
 @property(nonatomic,strong)NSMutableArray*tabBarSource;
@@ -43,11 +40,11 @@
 
 
 -(void)addSubController{
-    NewsSportsHomeVC *homePage = [[NewsSportsHomeVC alloc]init];
+    NewsSportsHomeVC *homePage = [NewsSportsHomeVC new];
     [self tabBarControllers:homePage  title:@"体育" imageUrl:@"icon-home-new"];
-    BriefThornController *score = [[BriefThornController alloc]init];
-    [self tabBarControllers:score title:@"规则" imageUrl:@"score"];
-    RetellFingernailController *personal = [[RetellFingernailController alloc]init];
+    NewstipsVC *score = [NewstipsVC new];
+    [self tabBarControllers:score title:@"足球小知识" imageUrl:@"score"];
+    RetellFingernailController *personal = [RetellFingernailController new];
     [self tabBarControllers:personal title:@"我的" imageUrl:@"icon-account"];
     self.viewControllers = [self.tabBarSource copy];
 }

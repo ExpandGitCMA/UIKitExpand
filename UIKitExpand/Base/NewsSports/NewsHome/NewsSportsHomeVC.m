@@ -21,8 +21,9 @@
 #import "NewsSportModel.h"
 #import "Leagstus.h"
 #import "LeagstusCell.h"
+#import "NewsUpView.h"
 @interface NewsSportsHomeVC ()
-
+@property(nonatomic,strong)NewsUpView*upView;
 @end
 
 @implementation NewsSportsHomeVC
@@ -35,7 +36,6 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"NewsBallCell" bundle:nil] forCellReuseIdentifier:@"BallCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"NewsSportCell" bundle:nil] forCellReuseIdentifier:@"SportCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"LeagstusCell" bundle:nil] forCellReuseIdentifier:@"LeagstusCell"];
-    
     [self getHomeBanner];
 }
 
@@ -83,7 +83,7 @@
         
     }];
     
-    [[FeelLeatherManager sharedManager]lookChemist:@{} completed:^(BOOL ret, id obj) {
+    [[FeelLeatherManager sharedManager]lookChemist:URL_HomeNews completed:^(BOOL ret, id obj) {
         if (ret) {
             [self.dataSource removeAllObjects];
               NSArray *arr = [NSArray arrayWithArray:[obj objectForKey:@"articles"]];
@@ -113,7 +113,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell*tableViewCell;
-    id obj = self.dataSource[indexPath.row];
+  
+   id obj = self.dataSource[indexPath.row];
     if ([obj isKindOfClass:[ BackwardTallWreck class]]) {
          NewsBallCell*cell = [tableView dequeueReusableCellWithIdentifier:@"BallCell" forIndexPath:indexPath];
         BackwardTallWreck *model = self.dataSource[indexPath.row];
@@ -147,17 +148,37 @@
                  }];
             tableViewCell = cell;
      }
-    
   
     tableViewCell.selectionStyle = UITableViewCellSelectionStyleNone;
     return tableViewCell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.dataSource.count;
+   return self.dataSource.count;
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView*)tableView{
+   return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+  
+    return 150;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    return [self upView];
+}
+
+-(NewsUpView*)upView{
+    if (!_upView) {
+        _upView = [[NewsUpView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 150)];
+    }
+    return _upView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    id obj = self.dataSource[indexPath.row];
+    
+ id obj = self.dataSource[indexPath.row];
     if ([obj isKindOfClass:[ BackwardTallWreck class]]) {
          BackwardTallWreck *model = self.dataSource [indexPath.row];
          CGFloat defutHeight = 38;
@@ -174,34 +195,35 @@
         Leagstus *model = self.dataSource [indexPath.row];
         return defutHeight+[self tableViewForRowAtIndexCellHeight:model.content];
     }
-    return 70;
+        return 70;
+
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     PermitRemoteChatController * homeDetailVC = [[PermitRemoteChatController alloc] init];
     homeDetailVC.hidesBottomBarWhenPushed = YES;
-     id obj = self.dataSource[indexPath.row];
-     if ([obj isKindOfClass:[ BackwardTallWreck class]]) {
-       BackwardTallWreck *model = self.dataSource [indexPath.row];
-       homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@%@",model.pubtime,@"\n",model.modtime_desc,model.title];
-       }else if ([obj isKindOfClass:[ NewsModel class]]){
+   id obj = self.dataSource[indexPath.row];
+  if ([obj isKindOfClass:[ BackwardTallWreck class]]) {
+         BackwardTallWreck *model = self.dataSource [indexPath.row];
+          homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@%@",model.pubtime,@"\n",model.modtime_desc,model.title];
+         }else if ([obj isKindOfClass:[ NewsModel class]]){
             NewsModel *model = self.dataSource [indexPath.row];
-            homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.time,@"\n",model.title];
-           if([model.image isNull]){
-                homeDetailVC.url =  model.image;
+              homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.time,@"\n",model.title];
+         if([model.image isNull]){
+              homeDetailVC.url =  model.image;
            }else{
-                homeDetailVC.image = @"news_empty";
-           }
-       }else if ([obj isKindOfClass:[NewsSportModel class]]){
+             homeDetailVC.image = @"news_empty";
+              
+            }
+        }else if ([obj isKindOfClass:[NewsSportModel class]]){
             NewsSportModel *model = self.dataSource [indexPath.row];
             homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.title,@"\n",model.content];
             homeDetailVC.image = model.image;
-       }else if ([obj isKindOfClass:[Leagstus class]]){
-           Leagstus *model = self.dataSource [indexPath.row];
-           homeDetailVC.url = model.image;
-           homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.content,@"\n \n",model.name];
-       }
-
+          }else if ([obj isKindOfClass:[Leagstus class]]){
+                Leagstus *model = self.dataSource [indexPath.row];
+                homeDetailVC.url = model.image;
+                homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.content,@"\n \n",model.name];
+            }
      [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
 

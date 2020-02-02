@@ -4,4 +4,6 @@
 @property (nonatomic, assign) CGFloat sd_width;
 @property (nonatomic, assign) CGFloat sd_y;
 @property (nonatomic, assign) CGFloat sd_x;
+
+- (UIViewController *)viewController;
 @end

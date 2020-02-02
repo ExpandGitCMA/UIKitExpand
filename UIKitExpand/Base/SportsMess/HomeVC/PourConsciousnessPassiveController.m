@@ -63,7 +63,7 @@
                    [data addObject: model];
             }
     }];
-    [[FeelLeatherManager sharedManager]lookChemist:@{} completed:^(BOOL ret, id obj) {
+    [[FeelLeatherManager sharedManager]lookChemist:URL_HomeNews completed:^(BOOL ret, id obj) {
         if (ret) {
             [self.dataSource removeAllObjects];
             NSArray *arr = [NSArray arrayWithArray:[obj objectForKey:@"articles"]];

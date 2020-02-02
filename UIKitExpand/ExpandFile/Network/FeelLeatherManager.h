@@ -5,6 +5,6 @@ typedef void (^HttpCompletedBlock)(BOOL ret, id obj);
 + (instancetype)sharedManager;
 - (void)tryHeapUseful:(NSString *)path params:(NSDictionary *)params completed:(HttpCompletedBlock)completed;
 - (void)accidentalTunnel:(NSString *)path params:(NSDictionary *)params completed:(HttpCompletedBlock)completed;
--(void)lookChemist:(NSDictionary *)params completed:(HttpCompletedBlock)completed;
+-(void)lookChemist:(NSString *)url completed:(HttpCompletedBlock)completed;
 - (void)requestWithLocalFileWithName:(NSString *)name completed:(HttpCompletedBlock)completed;
 @end

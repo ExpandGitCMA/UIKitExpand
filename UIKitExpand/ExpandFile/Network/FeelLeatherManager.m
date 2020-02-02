@@ -115,12 +115,12 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
         }
     }
 }
--(void)lookChemist:(NSDictionary *)params completed:(HttpCompletedBlock)completed {
+-(void)lookChemist:(NSString *)url completed:(HttpCompletedBlock)completed {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer.timeoutInterval = 5;
     manager.responseSerializer.acceptableContentTypes =
     [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
-    [manager GET:URL_HomeNews parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [manager GET:url parameters:@{} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         completed(YES, responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (error) {

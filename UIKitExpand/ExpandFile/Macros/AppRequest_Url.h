@@ -5,5 +5,5 @@
 #define  URL_HomeBanner  @"App/Api/SportsGame/HomeBanner"
 #define  URL_Gamerule  @"App/Api/SportsGame/Gamerule"
 #define  URL_HomeNews @"http://zhiboba.3b2o.com/article/listJson/category/soccer?1452072425"
-#define  URL_Matchlist@"v尺寸"
+#define  URL_Matchlist @"http://c.m.163.com//nc/article/headline/T1348647853363/0-20.html"
 #endif 

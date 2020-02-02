@@ -76,19 +76,23 @@
 		0324AC9A23E2DEFA004B4C3E /* date.json in Resources */ = {isa = PBXBuildFile; fileRef = 0324AC9923E2DEFA004B4C3E /* date.json */; };
 		0324ACC123E31F4E004B4C3E /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACBB23E31F4E004B4C3E /* TableViewAnimationKit.m */; };
 		0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */; };
-		0334C51323E69975000D3E76 /* NewsPlayBallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C51123E69975000D3E76 /* NewsPlayBallCell.m */; };
-		0334C51423E69975000D3E76 /* NewsPlayBallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C51223E69975000D3E76 /* NewsPlayBallCell.xib */; };
-		0334C51823E6A163000D3E76 /* NewsBallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C51623E6A163000D3E76 /* NewsBallCell.m */; };
-		0334C51923E6A163000D3E76 /* NewsBallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C51723E6A163000D3E76 /* NewsBallCell.xib */; };
-		0334C51C23E6B0C6000D3E76 /* NewsSportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C51B23E6B0C6000D3E76 /* NewsSportModel.m */; };
-		0334C52023E6B185000D3E76 /* NewsSportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C51E23E6B185000D3E76 /* NewsSportCell.m */; };
-		0334C52123E6B185000D3E76 /* NewsSportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C51F23E6B185000D3E76 /* NewsSportCell.xib */; };
-		0334C52423E6CAF7000D3E76 /* Leagstus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C52323E6CAF7000D3E76 /* Leagstus.m */; };
-		0334C52823E6D256000D3E76 /* LeagstusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C52623E6D256000D3E76 /* LeagstusCell.m */; };
-		0334C52923E6D256000D3E76 /* LeagstusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C52723E6D256000D3E76 /* LeagstusCell.xib */; };
 		0334C52C23E6E304000D3E76 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0334C52B23E6E304000D3E76 /* logo.jpg */; };
+		0334C54023E6F6DA000D3E76 /* NewsBallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C52F23E6F6DA000D3E76 /* NewsBallCell.m */; };
+		0334C54123E6F6DA000D3E76 /* NewsSportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C53023E6F6DA000D3E76 /* NewsSportCell.m */; };
+		0334C54223E6F6DA000D3E76 /* NewsSportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C53223E6F6DA000D3E76 /* NewsSportModel.m */; };
+		0334C54323E6F6DA000D3E76 /* NewsSportsHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C53423E6F6DA000D3E76 /* NewsSportsHomeVC.m */; };
+		0334C54423E6F6DA000D3E76 /* LeagstusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C53523E6F6DA000D3E76 /* LeagstusCell.xib */; };
+		0334C54523E6F6DA000D3E76 /* Leagstus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C53623E6F6DA000D3E76 /* Leagstus.m */; };
+		0334C54623E6F6DA000D3E76 /* NewsPlayBallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C53823E6F6DA000D3E76 /* NewsPlayBallCell.xib */; };
+		0334C54723E6F6DA000D3E76 /* NewsBallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C53A23E6F6DA000D3E76 /* NewsBallCell.xib */; };
+		0334C54823E6F6DA000D3E76 /* NewsSportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C53B23E6F6DA000D3E76 /* NewsSportCell.xib */; };
+		0334C54923E6F6DA000D3E76 /* LeagstusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C53D23E6F6DA000D3E76 /* LeagstusCell.m */; };
+		0334C54A23E6F6DA000D3E76 /* NewsPlayBallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C53F23E6F6DA000D3E76 /* NewsPlayBallCell.m */; };
+		0334C54E23E6F764000D3E76 /* NewstipsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C54D23E6F764000D3E76 /* NewstipsVC.m */; };
+		0334C55123E702DE000D3E76 /* NewsUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C55023E702DE000D3E76 /* NewsUpView.m */; };
+		0334C55A23E70468000D3E76 /* NewsUpViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C55823E70468000D3E76 /* NewsUpViewCell.m */; };
+		0334C55B23E70468000D3E76 /* NewsUpViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C55923E70468000D3E76 /* NewsUpViewCell.xib */; };
 		03F1896C23E5978E00503533 /* ToolsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1896B23E5978E00503533 /* ToolsAuthorization.m */; };
-		03F189A823E5C20100503533 /* NewsSportsHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F189A723E5C20100503533 /* NewsSportsHomeVC.m */; };
 		03F189AB23E5C56B00503533 /* seteid.json in Resources */ = {isa = PBXBuildFile; fileRef = 03F189AA23E5C56B00503533 /* seteid.json */; };
 		03F189AE23E5C7D400503533 /* NewsSportsTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F189AD23E5C7D400503533 /* NewsSportsTabBarVC.m */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
@@ -265,27 +269,34 @@
 		0324ACBE23E31F4E004B4C3E /* TableViewAnimationKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitConfig.h; sourceTree = "<group>"; };
 		0324ACBF23E31F4E004B4C3E /* TableViewAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKit.h; sourceTree = "<group>"; };
 		0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XSAnimationKit.m"; sourceTree = "<group>"; };
-		0334C51023E69975000D3E76 /* NewsPlayBallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsPlayBallCell.h; sourceTree = "<group>"; };
-		0334C51123E69975000D3E76 /* NewsPlayBallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsPlayBallCell.m; sourceTree = "<group>"; };
-		0334C51223E69975000D3E76 /* NewsPlayBallCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsPlayBallCell.xib; sourceTree = "<group>"; };
-		0334C51523E6A163000D3E76 /* NewsBallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsBallCell.h; sourceTree = "<group>"; };
-		0334C51623E6A163000D3E76 /* NewsBallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsBallCell.m; sourceTree = "<group>"; };
-		0334C51723E6A163000D3E76 /* NewsBallCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsBallCell.xib; sourceTree = "<group>"; };
-		0334C51A23E6B0C6000D3E76 /* NewsSportModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsSportModel.h; sourceTree = "<group>"; };
-		0334C51B23E6B0C6000D3E76 /* NewsSportModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsSportModel.m; sourceTree = "<group>"; };
-		0334C51D23E6B185000D3E76 /* NewsSportCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsSportCell.h; sourceTree = "<group>"; };
-		0334C51E23E6B185000D3E76 /* NewsSportCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsSportCell.m; sourceTree = "<group>"; };
-		0334C51F23E6B185000D3E76 /* NewsSportCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsSportCell.xib; sourceTree = "<group>"; };
-		0334C52223E6CAF7000D3E76 /* Leagstus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leagstus.h; sourceTree = "<group>"; };
-		0334C52323E6CAF7000D3E76 /* Leagstus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Leagstus.m; sourceTree = "<group>"; };
-		0334C52523E6D256000D3E76 /* LeagstusCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeagstusCell.h; sourceTree = "<group>"; };
-		0334C52623E6D256000D3E76 /* LeagstusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeagstusCell.m; sourceTree = "<group>"; };
-		0334C52723E6D256000D3E76 /* LeagstusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeagstusCell.xib; sourceTree = "<group>"; };
 		0334C52B23E6E304000D3E76 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		0334C52E23E6F6DA000D3E76 /* Leagstus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leagstus.h; sourceTree = "<group>"; };
+		0334C52F23E6F6DA000D3E76 /* NewsBallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBallCell.m; sourceTree = "<group>"; };
+		0334C53023E6F6DA000D3E76 /* NewsSportCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsSportCell.m; sourceTree = "<group>"; };
+		0334C53123E6F6DA000D3E76 /* NewsPlayBallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsPlayBallCell.h; sourceTree = "<group>"; };
+		0334C53223E6F6DA000D3E76 /* NewsSportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsSportModel.m; sourceTree = "<group>"; };
+		0334C53323E6F6DA000D3E76 /* LeagstusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeagstusCell.h; sourceTree = "<group>"; };
+		0334C53423E6F6DA000D3E76 /* NewsSportsHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsSportsHomeVC.m; sourceTree = "<group>"; };
+		0334C53523E6F6DA000D3E76 /* LeagstusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeagstusCell.xib; sourceTree = "<group>"; };
+		0334C53623E6F6DA000D3E76 /* Leagstus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Leagstus.m; sourceTree = "<group>"; };
+		0334C53723E6F6DA000D3E76 /* NewsBallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBallCell.h; sourceTree = "<group>"; };
+		0334C53823E6F6DA000D3E76 /* NewsPlayBallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsPlayBallCell.xib; sourceTree = "<group>"; };
+		0334C53923E6F6DA000D3E76 /* NewsSportCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsSportCell.h; sourceTree = "<group>"; };
+		0334C53A23E6F6DA000D3E76 /* NewsBallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsBallCell.xib; sourceTree = "<group>"; };
+		0334C53B23E6F6DA000D3E76 /* NewsSportCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsSportCell.xib; sourceTree = "<group>"; };
+		0334C53C23E6F6DA000D3E76 /* NewsSportsHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsSportsHomeVC.h; sourceTree = "<group>"; };
+		0334C53D23E6F6DA000D3E76 /* LeagstusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeagstusCell.m; sourceTree = "<group>"; };
+		0334C53E23E6F6DA000D3E76 /* NewsSportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsSportModel.h; sourceTree = "<group>"; };
+		0334C53F23E6F6DA000D3E76 /* NewsPlayBallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsPlayBallCell.m; sourceTree = "<group>"; };
+		0334C54C23E6F764000D3E76 /* NewstipsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewstipsVC.h; sourceTree = "<group>"; };
+		0334C54D23E6F764000D3E76 /* NewstipsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewstipsVC.m; sourceTree = "<group>"; };
+		0334C54F23E702DE000D3E76 /* NewsUpView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsUpView.h; sourceTree = "<group>"; };
+		0334C55023E702DE000D3E76 /* NewsUpView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsUpView.m; sourceTree = "<group>"; };
+		0334C55723E70468000D3E76 /* NewsUpViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsUpViewCell.h; sourceTree = "<group>"; };
+		0334C55823E70468000D3E76 /* NewsUpViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsUpViewCell.m; sourceTree = "<group>"; };
+		0334C55923E70468000D3E76 /* NewsUpViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsUpViewCell.xib; sourceTree = "<group>"; };
 		03F1896A23E5978E00503533 /* ToolsAuthorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsAuthorization.h; sourceTree = "<group>"; };
 		03F1896B23E5978E00503533 /* ToolsAuthorization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsAuthorization.m; sourceTree = "<group>"; };
-		03F189A623E5C20100503533 /* NewsSportsHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsSportsHomeVC.h; sourceTree = "<group>"; };
-		03F189A723E5C20100503533 /* NewsSportsHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsSportsHomeVC.m; sourceTree = "<group>"; };
 		03F189AA23E5C56B00503533 /* seteid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = seteid.json; sourceTree = "<group>"; };
 		03F189AC23E5C7D400503533 /* NewsSportsTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsSportsTabBarVC.h; sourceTree = "<group>"; };
 		03F189AD23E5C7D400503533 /* NewsSportsTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsSportsTabBarVC.m; sourceTree = "<group>"; };
@@ -649,29 +660,52 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		0334C52D23E6F6DA000D3E76 /* NewsHome */ = {
+			isa = PBXGroup;
+			children = (
+				0334C53E23E6F6DA000D3E76 /* NewsSportModel.h */,
+				0334C53223E6F6DA000D3E76 /* NewsSportModel.m */,
+				0334C53123E6F6DA000D3E76 /* NewsPlayBallCell.h */,
+				0334C53823E6F6DA000D3E76 /* NewsPlayBallCell.xib */,
+				0334C53F23E6F6DA000D3E76 /* NewsPlayBallCell.m */,
+				0334C53C23E6F6DA000D3E76 /* NewsSportsHomeVC.h */,
+				0334C53423E6F6DA000D3E76 /* NewsSportsHomeVC.m */,
+				0334C54F23E702DE000D3E76 /* NewsUpView.h */,
+				0334C55023E702DE000D3E76 /* NewsUpView.m */,
+				0334C55723E70468000D3E76 /* NewsUpViewCell.h */,
+				0334C55823E70468000D3E76 /* NewsUpViewCell.m */,
+				0334C55923E70468000D3E76 /* NewsUpViewCell.xib */,
+				0334C53323E6F6DA000D3E76 /* LeagstusCell.h */,
+				0334C53D23E6F6DA000D3E76 /* LeagstusCell.m */,
+				0334C53523E6F6DA000D3E76 /* LeagstusCell.xib */,
+				0334C52E23E6F6DA000D3E76 /* Leagstus.h */,
+				0334C53623E6F6DA000D3E76 /* Leagstus.m */,
+				0334C53723E6F6DA000D3E76 /* NewsBallCell.h */,
+				0334C52F23E6F6DA000D3E76 /* NewsBallCell.m */,
+				0334C53A23E6F6DA000D3E76 /* NewsBallCell.xib */,
+				0334C53923E6F6DA000D3E76 /* NewsSportCell.h */,
+				0334C53023E6F6DA000D3E76 /* NewsSportCell.m */,
+				0334C53B23E6F6DA000D3E76 /* NewsSportCell.xib */,
+			);
+			path = NewsHome;
+			sourceTree = "<group>";
+		};
+		0334C54B23E6F742000D3E76 /* Newstips */ = {
+			isa = PBXGroup;
+			children = (
+				0334C54C23E6F764000D3E76 /* NewstipsVC.h */,
+				0334C54D23E6F764000D3E76 /* NewstipsVC.m */,
+			);
+			path = Newstips;
+			sourceTree = "<group>";
+		};
 		03F189A523E5BE9300503533 /* NewsSports */ = {
 			isa = PBXGroup;
 			children = (
-				03F189A623E5C20100503533 /* NewsSportsHomeVC.h */,
-				03F189A723E5C20100503533 /* NewsSportsHomeVC.m */,
 				03F189AC23E5C7D400503533 /* NewsSportsTabBarVC.h */,
 				03F189AD23E5C7D400503533 /* NewsSportsTabBarVC.m */,
-				0334C51023E69975000D3E76 /* NewsPlayBallCell.h */,
-				0334C51123E69975000D3E76 /* NewsPlayBallCell.m */,
-				0334C51223E69975000D3E76 /* NewsPlayBallCell.xib */,
-				0334C51523E6A163000D3E76 /* NewsBallCell.h */,
-				0334C51623E6A163000D3E76 /* NewsBallCell.m */,
-				0334C51723E6A163000D3E76 /* NewsBallCell.xib */,
-				0334C51A23E6B0C6000D3E76 /* NewsSportModel.h */,
-				0334C51B23E6B0C6000D3E76 /* NewsSportModel.m */,
-				0334C51D23E6B185000D3E76 /* NewsSportCell.h */,
-				0334C51E23E6B185000D3E76 /* NewsSportCell.m */,
-				0334C51F23E6B185000D3E76 /* NewsSportCell.xib */,
-				0334C52223E6CAF7000D3E76 /* Leagstus.h */,
-				0334C52323E6CAF7000D3E76 /* Leagstus.m */,
-				0334C52523E6D256000D3E76 /* LeagstusCell.h */,
-				0334C52623E6D256000D3E76 /* LeagstusCell.m */,
-				0334C52723E6D256000D3E76 /* LeagstusCell.xib */,
+				0334C54B23E6F742000D3E76 /* Newstips */,
+				0334C52D23E6F6DA000D3E76 /* NewsHome */,
 			);
 			path = NewsSports;
 			sourceTree = "<group>";
@@ -916,20 +950,21 @@
 			files = (
 				03067FB023E41BB100A08E53 /* PermitRemoteChatController.xib in Resources */,
 				03F189AB23E5C56B00503533 /* seteid.json in Resources */,
+				0334C54423E6F6DA000D3E76 /* LeagstusCell.xib in Resources */,
+				0334C54823E6F6DA000D3E76 /* NewsSportCell.xib in Resources */,
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
-				0334C52123E6B185000D3E76 /* NewsSportCell.xib in Resources */,
-				0334C52923E6D256000D3E76 /* LeagstusCell.xib in Resources */,
-				0334C51423E69975000D3E76 /* NewsPlayBallCell.xib in Resources */,
 				03067F9923E41BB100A08E53 /* EndLImageCell.xib in Resources */,
+				0334C54623E6F6DA000D3E76 /* NewsPlayBallCell.xib in Resources */,
 				03067FC223E43D0100A08E53 /* MessAgeCell.xib in Resources */,
-				0334C51923E6A163000D3E76 /* NewsBallCell.xib in Resources */,
 				03067F9F23E41BB100A08E53 /* NewsCell.xib in Resources */,
 				031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */,
 				0324AC9A23E2DEFA004B4C3E /* date.json in Resources */,
+				0334C54723E6F6DA000D3E76 /* NewsBallCell.xib in Resources */,
 				03067FBA23E436FB00A08E53 /* mesg.json in Resources */,
 				03067FAC23E41BB100A08E53 /* SeriouslyConvenientStuffController.xib in Resources */,
 				B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */,
 				03067F9A23E41BB100A08E53 /* EndLinenPeak.xib in Resources */,
+				0334C55B23E70468000D3E76 /* NewsUpViewCell.xib in Resources */,
 				0334C52C23E6E304000D3E76 /* logo.jpg in Resources */,
 				03067FA423E41BB100A08E53 /* AnchorSongController.xib in Resources */,
 				03067FA923E41BB100A08E53 /* ImpairBeingController.xib in Resources */,
@@ -1008,35 +1043,36 @@
 				03067F8823E41BB100A08E53 /* UIView+BlurredImage.m in Sources */,
 				0324ACC123E31F4E004B4C3E /* TableViewAnimationKit.m in Sources */,
 				03067FA723E41BB100A08E53 /* SeriouslyConvenientStuffController.m in Sources */,
-				0334C52423E6CAF7000D3E76 /* Leagstus.m in Sources */,
+				0334C54A23E6F6DA000D3E76 /* NewsPlayBallCell.m in Sources */,
 				03067F9E23E41BB100A08E53 /* EndLImageCell.m in Sources */,
 				03067F9C23E41BB100A08E53 /* NewsCell.m in Sources */,
+				0334C54023E6F6DA000D3E76 /* NewsBallCell.m in Sources */,
 				03067FA623E41BB100A08E53 /* HollowMale.m in Sources */,
 				03067FB423E41BB100A08E53 /* OffendAnybodyOutlet.m in Sources */,
 				03067F8523E41BB100A08E53 /* UIControl+ExControlayerStyle.m in Sources */,
 				03067FA123E41BB100A08E53 /* InvestigateFate.m in Sources */,
 				03067F8023E41BB100A08E53 /* WakenComputerBasicManager.m in Sources */,
 				03067FB823E4352200A08E53 /* MessAgeVC.m in Sources */,
+				0334C55123E702DE000D3E76 /* NewsUpView.m in Sources */,
+				0334C54523E6F6DA000D3E76 /* Leagstus.m in Sources */,
 				031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				03067F9423E41BB100A08E53 /* ShoweryAntelope.m in Sources */,
 				03067F9123E41BB100A08E53 /* PlanLogic.m in Sources */,
 				03067FA223E41BB100A08E53 /* ReuniteDifficultyWalletView.m in Sources */,
-				0334C52823E6D256000D3E76 /* LeagstusCell.m in Sources */,
 				03067FD923E47A1F00A08E53 /* DFCNewCode.m in Sources */,
 				03067FDE23E47AD600A08E53 /* DFCStatusUtility.m in Sources */,
 				03067FAB23E41BB100A08E53 /* ImpairBeingController.m in Sources */,
 				03067F8B23E41BB100A08E53 /* FavourStrip.m in Sources */,
 				03067F9723E41BB100A08E53 /* AccountBeyondInsurance.m in Sources */,
 				03067FBD23E4395200A08E53 /* MessAgeModel.m in Sources */,
-				0334C52023E6B185000D3E76 /* NewsSportCell.m in Sources */,
 				B34688AD1F15FB8800498E66 /* RecoverQuestionPacific.m in Sources */,
 				03067F8623E41BB100A08E53 /* CrossAnalysisAccidental.m in Sources */,
 				03067FB323E41BB100A08E53 /* BriefThornController.m in Sources */,
 				03067F8E23E41BB100A08E53 /* ExpanFileConstants.m in Sources */,
-				0334C51323E69975000D3E76 /* NewsPlayBallCell.m in Sources */,
 				03067FA023E41BB100A08E53 /* MatterUnexpectedLongitude.m in Sources */,
 				03067F9B23E41BB100A08E53 /* EndLinenPeak.m in Sources */,
 				03067F8123E41BB100A08E53 /* SetEquality.m in Sources */,
+				0334C54123E6F6DA000D3E76 /* NewsSportCell.m in Sources */,
 				03067FDA23E47A1F00A08E53 /* DFCWebViewCode.m in Sources */,
 				03067FB223E41BB100A08E53 /* PermitRemoteChatController.m in Sources */,
 				0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */,
@@ -1044,13 +1080,17 @@
 				03F189AE23E5C7D400503533 /* NewsSportsTabBarVC.m in Sources */,
 				03067F8223E41BB100A08E53 /* BegBeyondAmphibian.m in Sources */,
 				03067F9023E41BB100A08E53 /* VentureCloudySeed.m in Sources */,
+				0334C54E23E6F764000D3E76 /* NewstipsVC.m in Sources */,
 				B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */,
+				0334C54923E6F6DA000D3E76 /* LeagstusCell.m in Sources */,
 				B30F38721F15B5C7005B5CE6 /* AppDelegate+ApptabBar.m in Sources */,
 				03067F8A23E41BB100A08E53 /* NSString+IMAdditions.m in Sources */,
 				03067FAF23E41BB100A08E53 /* HowUnlikelyUsageController.m in Sources */,
 				03067FC123E43D0100A08E53 /* MessAgeCell.m in Sources */,
 				03067F9D23E41BB100A08E53 /* PourConsciousnessPassiveController.m in Sources */,
+				0334C54323E6F6DA000D3E76 /* NewsSportsHomeVC.m in Sources */,
 				03067F8F23E41BB100A08E53 /* TossUnnecessaryConsiderationView.m in Sources */,
+				0334C54223E6F6DA000D3E76 /* NewsSportModel.m in Sources */,
 				03067FE123E47BA300A08E53 /* UIView+SDExtension.m in Sources */,
 				03067F8C23E41BB100A08E53 /* FeelLeatherManager.m in Sources */,
 				03067F9623E41BB100A08E53 /* BrieflyFlexibleAquarium.m in Sources */,
@@ -1059,18 +1099,16 @@
 				03067FA823E41BB100A08E53 /* BlessPorter.m in Sources */,
 				03067F7F23E41BB100A08E53 /* UncertainTransfusion.m in Sources */,
 				03067F8423E41BB100A08E53 /* PreviousDiscount.m in Sources */,
-				0334C51C23E6B0C6000D3E76 /* NewsSportModel.m in Sources */,
-				03F189A823E5C20100503533 /* NewsSportsHomeVC.m in Sources */,
 				03F1896C23E5978E00503533 /* ToolsAuthorization.m in Sources */,
 				03067F8923E41BB100A08E53 /* UIImage+ImageEffects.m in Sources */,
 				03067FAE23E41BB100A08E53 /* TendOutsideObjectionController.m in Sources */,
+				0334C55A23E70468000D3E76 /* NewsUpViewCell.m in Sources */,
 				03067F9323E41BB100A08E53 /* StressFakeCircumstance.m in Sources */,
 				03067F8D23E41BB100A08E53 /* FatalRadioManager.m in Sources */,
 				03067F8323E41BB100A08E53 /* ScareBesidesHurding.m in Sources */,
 				03067F8723E41BB100A08E53 /* NSString+paths.m in Sources */,
 				03067FA323E41BB100A08E53 /* ReportZealHandyController.m in Sources */,
 				03067FAA23E41BB100A08E53 /* RetellFingernailController.m in Sources */,
-				0334C51823E6A163000D3E76 /* NewsBallCell.m in Sources */,
 				B3F4F0001F14A8600005197E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
