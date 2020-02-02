@@ -1,25 +1,28 @@
 {
   "default":{
          "seteid":"1",
-   }
+   },
   "data": [
       {
            "title":"亞博体育-球圈",
-           "appType": "NewsSportsType",
+           "appType": "SportsMess",
            "seteid":"1",
-           "UITabBar":"AccountBeyondInsurance"
+           "UITabBar":"AccountBeyondInsurance",
+           "BundleID":"com.Sports.GamesPlayBall"
        },
        {
            "title": "亞博体育-足球比分",
-           "appType": "SportsMess",
+           "appType": "NewsSportsType",
            "seteid":"2",
-           "UITabBar":"NewsSportsTabBarVC"
+           "UITabBar":"NewsSportsTabBarVC",
+           "BundleID":"com.NewsSports.GamesPlayBall"
         },
         {
               "title": "亞博体育-趣味足球",
               "appType": "FunFootball",
               "seteid":"3",
-              "UITabBar":""
+              "UITabBar":"",
+              "BundleID":"com.Football.GamesPlayBall"
            },
    ],
 }

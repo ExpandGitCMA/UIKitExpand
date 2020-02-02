@@ -3,4 +3,5 @@
 +(instancetype)sharedDefaultManager;
 -(void)chewCloak:(id)key;
 - (void)preserveMicrophone;
+-(NSString*)getApresentTimer;
 @end

@@ -10,6 +10,7 @@ typedef NS_ENUM(UInt32, ColorRGBType) {
     ExAddress                = 0x999999,
     ExStyle                  = 0x81858c,
     Appx999999               = 0x999999,
-    DefaulColor       = 0xf2a0d5,
+    DefaulColor              = 0xf2a0d5,
+    AppScore                 = 0xc43c38,
 };
 #endif 

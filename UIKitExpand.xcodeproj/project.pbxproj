@@ -333,10 +333,10 @@
 		03067F0823E41BB000A08E53 /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
-				03067F0923E41BB000A08E53 /* UncertainTransfusion.m */,
-				03067F0A23E41BB000A08E53 /* WakenComputerBasicManager.m */,
 				03067F0B23E41BB000A08E53 /* UncertainTransfusion.h */,
+				03067F0923E41BB000A08E53 /* UncertainTransfusion.m */,
 				03067F0C23E41BB000A08E53 /* WakenComputerBasicManager.h */,
+				03067F0A23E41BB000A08E53 /* WakenComputerBasicManager.m */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";

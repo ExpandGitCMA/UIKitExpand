@@ -1,5 +1,6 @@
 #import "UncertainTransfusion.h"
 static UncertainTransfusion *userManager = nil;
+static NSString *const presentCache = @"presentCache";
 @interface UncertainTransfusion ()
 @property (strong,nonatomic) NSUserDefaults *userDefaults;
 @end
@@ -29,15 +30,25 @@ static UncertainTransfusion *userManager = nil;
     return [NSString stringWithFormat:@"%s", propertyName];
 }
 -(void)chewCloak:(id)key{
-    NSUserDefaults *user = [self getUserDefaults];
-    [user setObject:key forKey:@"key"];
-    [user synchronize];
+ 
+    if (key != nil) {
+        NSUserDefaults* user = [self getUserDefaults];
+        [user setObject:key forKey:presentCache];
+        [user synchronize];
+    }
 }
 -(void)removeUserKeyNamed:(id)key{
     NSUserDefaults *user = [self getUserDefaults];
     [user removeObjectForKey:key];
     [user synchronize];
 }
+
+-(NSString*)getApresentTimer{
+    NSUserDefaults* user = [self getUserDefaults];
+    NSString* presentTimer = [user objectForKey:presentCache];
+    return presentTimer;
+}
+
 -(id)getUserKeyNamed:(id)key{
     NSUserDefaults* user = [self getUserDefaults];
     id value = [user valueForKey:key]? :@"nil";
