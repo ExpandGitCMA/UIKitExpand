@@ -14,5 +14,8 @@
     [self.QuLeHomeDetailImageV sd_setImageWithURL:[NSURL URLWithString:self.url]
                      placeholderImage:[UIImage imageNamed:@"icon_data_empty"]];
     }
+    if (self.image &&[self.image isNull]) {
+        [self.QuLeHomeDetailImageV setImage:[UIImage imageNamed:self.image]];
+    }
 }
 @end

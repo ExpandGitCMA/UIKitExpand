@@ -44,7 +44,7 @@
 
 -(void)addSubController{
     NewsSportsHomeVC *homePage = [[NewsSportsHomeVC alloc]init];
-    [self tabBarControllers:homePage  title:@"推荐" imageUrl:@"icon-home-new"];
+    [self tabBarControllers:homePage  title:@"体育" imageUrl:@"icon-home-new"];
     BriefThornController *score = [[BriefThornController alloc]init];
     [self tabBarControllers:score title:@"规则" imageUrl:@"score"];
     RetellFingernailController *personal = [[RetellFingernailController alloc]init];

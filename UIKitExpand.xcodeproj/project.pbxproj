@@ -76,6 +76,13 @@
 		0324AC9A23E2DEFA004B4C3E /* date.json in Resources */ = {isa = PBXBuildFile; fileRef = 0324AC9923E2DEFA004B4C3E /* date.json */; };
 		0324ACC123E31F4E004B4C3E /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACBB23E31F4E004B4C3E /* TableViewAnimationKit.m */; };
 		0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */; };
+		0334C51323E69975000D3E76 /* NewsPlayBallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C51123E69975000D3E76 /* NewsPlayBallCell.m */; };
+		0334C51423E69975000D3E76 /* NewsPlayBallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C51223E69975000D3E76 /* NewsPlayBallCell.xib */; };
+		0334C51823E6A163000D3E76 /* NewsBallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C51623E6A163000D3E76 /* NewsBallCell.m */; };
+		0334C51923E6A163000D3E76 /* NewsBallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C51723E6A163000D3E76 /* NewsBallCell.xib */; };
+		0334C51C23E6B0C6000D3E76 /* NewsSportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C51B23E6B0C6000D3E76 /* NewsSportModel.m */; };
+		0334C52023E6B185000D3E76 /* NewsSportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0334C51E23E6B185000D3E76 /* NewsSportCell.m */; };
+		0334C52123E6B185000D3E76 /* NewsSportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334C51F23E6B185000D3E76 /* NewsSportCell.xib */; };
 		03F1896C23E5978E00503533 /* ToolsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1896B23E5978E00503533 /* ToolsAuthorization.m */; };
 		03F189A823E5C20100503533 /* NewsSportsHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F189A723E5C20100503533 /* NewsSportsHomeVC.m */; };
 		03F189AB23E5C56B00503533 /* seteid.json in Resources */ = {isa = PBXBuildFile; fileRef = 03F189AA23E5C56B00503533 /* seteid.json */; };
@@ -254,6 +261,17 @@
 		0324ACBE23E31F4E004B4C3E /* TableViewAnimationKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitConfig.h; sourceTree = "<group>"; };
 		0324ACBF23E31F4E004B4C3E /* TableViewAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKit.h; sourceTree = "<group>"; };
 		0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XSAnimationKit.m"; sourceTree = "<group>"; };
+		0334C51023E69975000D3E76 /* NewsPlayBallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsPlayBallCell.h; sourceTree = "<group>"; };
+		0334C51123E69975000D3E76 /* NewsPlayBallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsPlayBallCell.m; sourceTree = "<group>"; };
+		0334C51223E69975000D3E76 /* NewsPlayBallCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsPlayBallCell.xib; sourceTree = "<group>"; };
+		0334C51523E6A163000D3E76 /* NewsBallCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsBallCell.h; sourceTree = "<group>"; };
+		0334C51623E6A163000D3E76 /* NewsBallCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsBallCell.m; sourceTree = "<group>"; };
+		0334C51723E6A163000D3E76 /* NewsBallCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsBallCell.xib; sourceTree = "<group>"; };
+		0334C51A23E6B0C6000D3E76 /* NewsSportModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsSportModel.h; sourceTree = "<group>"; };
+		0334C51B23E6B0C6000D3E76 /* NewsSportModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsSportModel.m; sourceTree = "<group>"; };
+		0334C51D23E6B185000D3E76 /* NewsSportCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsSportCell.h; sourceTree = "<group>"; };
+		0334C51E23E6B185000D3E76 /* NewsSportCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsSportCell.m; sourceTree = "<group>"; };
+		0334C51F23E6B185000D3E76 /* NewsSportCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsSportCell.xib; sourceTree = "<group>"; };
 		03F1896A23E5978E00503533 /* ToolsAuthorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsAuthorization.h; sourceTree = "<group>"; };
 		03F1896B23E5978E00503533 /* ToolsAuthorization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsAuthorization.m; sourceTree = "<group>"; };
 		03F189A623E5C20100503533 /* NewsSportsHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsSportsHomeVC.h; sourceTree = "<group>"; };
@@ -620,6 +638,17 @@
 				03F189A723E5C20100503533 /* NewsSportsHomeVC.m */,
 				03F189AC23E5C7D400503533 /* NewsSportsTabBarVC.h */,
 				03F189AD23E5C7D400503533 /* NewsSportsTabBarVC.m */,
+				0334C51023E69975000D3E76 /* NewsPlayBallCell.h */,
+				0334C51123E69975000D3E76 /* NewsPlayBallCell.m */,
+				0334C51223E69975000D3E76 /* NewsPlayBallCell.xib */,
+				0334C51523E6A163000D3E76 /* NewsBallCell.h */,
+				0334C51623E6A163000D3E76 /* NewsBallCell.m */,
+				0334C51723E6A163000D3E76 /* NewsBallCell.xib */,
+				0334C51A23E6B0C6000D3E76 /* NewsSportModel.h */,
+				0334C51B23E6B0C6000D3E76 /* NewsSportModel.m */,
+				0334C51D23E6B185000D3E76 /* NewsSportCell.h */,
+				0334C51E23E6B185000D3E76 /* NewsSportCell.m */,
+				0334C51F23E6B185000D3E76 /* NewsSportCell.xib */,
 			);
 			path = NewsSports;
 			sourceTree = "<group>";
@@ -864,8 +893,11 @@
 				03067FB023E41BB100A08E53 /* PermitRemoteChatController.xib in Resources */,
 				03F189AB23E5C56B00503533 /* seteid.json in Resources */,
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
+				0334C52123E6B185000D3E76 /* NewsSportCell.xib in Resources */,
+				0334C51423E69975000D3E76 /* NewsPlayBallCell.xib in Resources */,
 				03067F9923E41BB100A08E53 /* EndLImageCell.xib in Resources */,
 				03067FC223E43D0100A08E53 /* MessAgeCell.xib in Resources */,
+				0334C51923E6A163000D3E76 /* NewsBallCell.xib in Resources */,
 				03067F9F23E41BB100A08E53 /* NewsCell.xib in Resources */,
 				031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */,
 				0324AC9A23E2DEFA004B4C3E /* date.json in Resources */,
@@ -968,10 +1000,12 @@
 				03067F8B23E41BB100A08E53 /* FavourStrip.m in Sources */,
 				03067F9723E41BB100A08E53 /* AccountBeyondInsurance.m in Sources */,
 				03067FBD23E4395200A08E53 /* MessAgeModel.m in Sources */,
+				0334C52023E6B185000D3E76 /* NewsSportCell.m in Sources */,
 				B34688AD1F15FB8800498E66 /* RecoverQuestionPacific.m in Sources */,
 				03067F8623E41BB100A08E53 /* CrossAnalysisAccidental.m in Sources */,
 				03067FB323E41BB100A08E53 /* BriefThornController.m in Sources */,
 				03067F8E23E41BB100A08E53 /* ExpanFileConstants.m in Sources */,
+				0334C51323E69975000D3E76 /* NewsPlayBallCell.m in Sources */,
 				03067FA023E41BB100A08E53 /* MatterUnexpectedLongitude.m in Sources */,
 				03067F9B23E41BB100A08E53 /* EndLinenPeak.m in Sources */,
 				03067F8123E41BB100A08E53 /* SetEquality.m in Sources */,
@@ -997,6 +1031,7 @@
 				03067FA823E41BB100A08E53 /* BlessPorter.m in Sources */,
 				03067F7F23E41BB100A08E53 /* UncertainTransfusion.m in Sources */,
 				03067F8423E41BB100A08E53 /* PreviousDiscount.m in Sources */,
+				0334C51C23E6B0C6000D3E76 /* NewsSportModel.m in Sources */,
 				03F189A823E5C20100503533 /* NewsSportsHomeVC.m in Sources */,
 				03F1896C23E5978E00503533 /* ToolsAuthorization.m in Sources */,
 				03067F8923E41BB100A08E53 /* UIImage+ImageEffects.m in Sources */,
@@ -1007,6 +1042,7 @@
 				03067F8723E41BB100A08E53 /* NSString+paths.m in Sources */,
 				03067FA323E41BB100A08E53 /* ReportZealHandyController.m in Sources */,
 				03067FAA23E41BB100A08E53 /* RetellFingernailController.m in Sources */,
+				0334C51823E6A163000D3E76 /* NewsBallCell.m in Sources */,
 				B3F4F0001F14A8600005197E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
