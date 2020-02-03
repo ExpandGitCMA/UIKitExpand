@@ -310,7 +310,7 @@
 		B34688AB1F15FB8800498E66 /* RecoverQuestionPacific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecoverQuestionPacific.h; sourceTree = "<group>"; };
 		B34688AC1F15FB8800498E66 /* RecoverQuestionPacific.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecoverQuestionPacific.m; sourceTree = "<group>"; };
 		B3D208D41F47E89700F0CE6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "UIKitExpand/Resource(资源)/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
-		B3F4EFFB1F14A8600005197E /* 亞博体育-球圈.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "亞博体育-球圈.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F4EFFB1F14A8600005197E /* 亞博体育-狂欢.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "亞博体育-狂欢.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F4EFFF1F14A8600005197E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3F4F00D1F14A8600005197E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3F4F00F1F14A8600005197E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -765,7 +765,7 @@
 		B3F4EFFC1F14A8600005197E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3F4EFFB1F14A8600005197E /* 亞博体育-球圈.app */,
+				B3F4EFFB1F14A8600005197E /* 亞博体育-狂欢.app */,
 				B3F4F0141F14A8600005197E /* ImaginativeReply.xctest */,
 				B3F4F01F1F14A8600005197E /* RepairInformalVariable.xctest */,
 			);
@@ -854,7 +854,7 @@
 			);
 			name = UIKitExpand;
 			productName = UIKitExpand;
-			productReference = B3F4EFFB1F14A8600005197E /* 亞博体育-球圈.app */;
+			productReference = B3F4EFFB1F14A8600005197E /* 亞博体育-狂欢.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B3F4F0131F14A8600005197E /* UIKitExpandTests */ = {
@@ -1282,7 +1282,7 @@
 					"-l\"AFNetworking\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.GamesBall;
-				PRODUCT_NAME = "亞博体育-球圈";
+				PRODUCT_NAME = "亞博体育-狂欢";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1313,7 +1313,7 @@
 					"-l\"AFNetworking\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.GamesBall;
-				PRODUCT_NAME = "亞博体育-球圈";
+				PRODUCT_NAME = "亞博体育-狂欢";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

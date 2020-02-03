@@ -30,7 +30,7 @@
     [self getHomeBanner];
 }
 -(void)getHomeBanner{
-    [[FeelLeatherManager sharedManager]tryHeapUseful:URL_HomeBanner params:@{} completed:^(BOOL ret, id obj) {
+    [[FeelLeatherManager sharedManager]tryHeapUseful:URL_HomeSports params:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
              BOOL boolValue = [[obj objectForKey:@"vanue"] boolValue];
              DEBUG_NSLog(@"boolValue=%d",boolValue);
