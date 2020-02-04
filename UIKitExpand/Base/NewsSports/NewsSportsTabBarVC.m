@@ -25,7 +25,7 @@
 }
 -(void)addSubController{
     NewsSportsHomeVC *homePage = [NewsSportsHomeVC new];
-    [self tabBarControllers:homePage  title:@"体育" imageUrl:@"icon-home-new"];
+    [self tabBarControllers:homePage  title:@"体育资讯" imageUrl:@"icon-home-new"];
     NewstipsVC *score = [NewstipsVC new];
     [self tabBarControllers:score title:@"足球小知识" imageUrl:@"score"];
     RetellFingernailController *personal = [RetellFingernailController new];

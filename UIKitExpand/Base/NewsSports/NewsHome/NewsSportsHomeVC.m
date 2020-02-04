@@ -42,6 +42,7 @@
                  [self.navigationController pushViewController:webView animated:YES];
             }
             NSArray *banner = [obj objectForKey:@"banner"];
+            self.tableView.tableHeaderView =  [self zeroSDCycleView];
             [self.zeroSDCycleView setArrayStringUrl:banner];
         }
     }];
@@ -68,7 +69,8 @@
     [[FeelLeatherManager sharedManager]lookChemist:URL_HomeNews completed:^(BOOL ret, id obj) {
         if (ret) {
             [self.dataSource removeAllObjects];
-              NSArray *arr = [NSArray arrayWithArray:[obj objectForKey:@"articles"]];
+              NSArray *smallArray = [NSArray arrayWithArray:[obj objectForKey:@"articles"]];
+                NSArray *arr = [smallArray subarrayWithRange:NSMakeRange(0, 10)];
            for (NSDictionary *dic in arr) {
                  BackwardTallWreck *model = [BackwardTallWreck setModelWithDictionary:dic];
                  [data addObject: model];
@@ -76,7 +78,6 @@
           self.dataSource = [self getRandomArrFrome:[data copy]];
            dispatch_async(dispatch_get_main_queue(), ^{
                        [[self zeroSDCycleView]  setPageControlStyle:ZeroSDCycleViewPageContolStyleClassic];
-                      self.tableView.tableHeaderView =  [self zeroSDCycleView];
                       [self.tableView.mj_header endRefreshing];
                       [self.tableView.mj_footer endRefreshing];
                       [self.tableView reloadData];
@@ -103,8 +104,13 @@
         NewsModel *model = self.dataSource [indexPath.row];
         cell.title.text = model.title;
         cell.timer .text = model.time;
-         [cell.image sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"news_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-         }];
+         [cell.image  sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"icon_data_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+             if (!error&&image) {
+                    cell.image.contentMode =  UIViewContentModeScaleAspectFill;
+             }else{
+                  cell.image.contentMode = UIViewContentModeCenter;
+             }
+            }];
          tableViewCell = cell;
      }else if ([obj isKindOfClass:[NewsSportModel class]]){
            NewsSportCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SportCell" forIndexPath:indexPath];
@@ -117,8 +123,13 @@
              LeagstusCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LeagstusCell" forIndexPath:indexPath];
             Leagstus *model = self.dataSource [indexPath.row];
             cell.content.text = model.title;
-            [cell.imageUrl sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"news_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-                 }];
+     
+            [cell.imageUrl  sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"icon_data_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                   if (!error) {
+                       cell.imageUrl.contentMode =  UIViewContentModeScaleAspectFill;
+                   }
+               }];
+         
             tableViewCell = cell;
      }
     tableViewCell.selectionStyle = UITableViewCellSelectionStyleNone;

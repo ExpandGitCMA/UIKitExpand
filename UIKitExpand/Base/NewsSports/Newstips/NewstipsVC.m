@@ -3,17 +3,22 @@
 #import "AppHeaderFile.h"
 #import "FeelLeatherManager.h"
 #import "TableViewAnimationKit.h"
-@interface NewstipsVC ()<UITableViewDelegate, UITableViewDataSource>
+#import "AppColorHeader.h"
+#import "NewstipsTextView.h"
+@interface NewstipsVC ()<UITableViewDelegate, UITableViewDataSource,UITextViewDelegate>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *dataSource;
+@property(assign,nonatomic)NSInteger isCurrentSelect;
+@property(nonatomic,strong)NewstipsTextView *textView;
 @end
 
 @implementation NewstipsVC
 - (void)viewDidLoad {
     [super viewDidLoad];
-     
+    [self textView];
     [self tableView];
     [self getMassage];
+   
     
 }
 
@@ -52,7 +57,10 @@
                          [ self.dataSource  addObject: model];
                       }
                       dispatch_async(dispatch_get_main_queue(), ^{
+                        BeatLikeNewspaper *model = self.dataSource[0];
+                        _textView.text.text = model.rule;
                         [self.tableView reloadData];
+                          
                         [self starAnimationWithTableView:self.tableView];
                       });
         }else{
@@ -67,6 +75,13 @@
     cell.textLabel.text =  model.title;
     cell.textLabel.numberOfLines = 0;
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    if (_isCurrentSelect == indexPath.row) {
+        [cell setBackgroundColor:kUIColorFromRGB(AppScore)];
+         cell.textLabel.textColor = [UIColor whiteColor];
+    }else{
+        [cell setBackgroundColor:[UIColor whiteColor]];
+         cell.textLabel.textColor = [UIColor blackColor];
+    }
     return cell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -77,7 +92,11 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-     
+    _isCurrentSelect = indexPath.row;
+    BeatLikeNewspaper *model = self.dataSource[indexPath.row];
+    _textView.text.text = model.rule;
+    
+    [tableView reloadData];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -85,4 +104,16 @@
 - (void)starAnimationWithTableView:(UITableView *)tableView {
     [TableViewAnimationKit showWithAnimationType:XSTableViewAnimationTypeToTop tableView:tableView];
 }
+
+-(NewstipsTextView*)textView{
+    if (!_textView) {
+        _textView = [NewstipsTextView loadNibNamedNewstipsTextView];
+          _textView.frame = CGRectMake(100, 0, SCREEN_WIDTH - 100, SCREEN_HEIGHT);
+          _textView.userInteractionEnabled = YES;
+        _textView.text.delegate = self;
+        [self.view addSubview:_textView];
+    }
+    return _textView;
+}
+  - (BOOL)textViewShouldBeginEditing:(UITextView *)textView{ return NO; }
 @end

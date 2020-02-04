@@ -70,6 +70,8 @@
 		03067FDA23E47A1F00A08E53 /* DFCWebViewCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067FD723E47A1F00A08E53 /* DFCWebViewCode.m */; };
 		03067FDE23E47AD600A08E53 /* DFCStatusUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067FDD23E47AD600A08E53 /* DFCStatusUtility.m */; };
 		03067FE123E47BA300A08E53 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067FDF23E47BA300A08E53 /* UIView+SDExtension.m */; };
+		0314144423E92FFD009DB240 /* NewstipsTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0314144323E92FFD009DB240 /* NewstipsTextView.m */; };
+		0314144623E9300D009DB240 /* NewstipsTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0314144523E9300D009DB240 /* NewstipsTextView.xib */; };
 		031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 031EBEAB23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		031EBECC23D6C04D00919BEF /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 031EBECB23D6C04D00919BEF /* libAFNetworking.a */; };
 		031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031EBEDD23D6C88E00919BEF /* Main.storyboard */; };
@@ -256,6 +258,9 @@
 		03067FDD23E47AD600A08E53 /* DFCStatusUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCStatusUtility.m; sourceTree = "<group>"; };
 		03067FDF23E47BA300A08E53 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		03067FE023E47BA300A08E53 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		0314144223E92FFD009DB240 /* NewstipsTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewstipsTextView.h; sourceTree = "<group>"; };
+		0314144323E92FFD009DB240 /* NewstipsTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewstipsTextView.m; sourceTree = "<group>"; };
+		0314144523E9300D009DB240 /* NewstipsTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewstipsTextView.xib; sourceTree = "<group>"; };
 		031EBEA723D6B1E900919BEF /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		031EBEA823D6B1E900919BEF /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		031EBEAA23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
@@ -537,12 +542,12 @@
 		03067F5823E41BB100A08E53 /* HomeBanner */ = {
 			isa = PBXGroup;
 			children = (
-				03067F5923E41BB100A08E53 /* ReuniteDifficultyWalletView.h */,
-				03067F5A23E41BB100A08E53 /* MatterUnexpectedLongitude.m */,
-				03067F5B23E41BB100A08E53 /* InvestigateFate.m */,
-				03067F5C23E41BB100A08E53 /* ReuniteDifficultyWalletView.m */,
 				03067F5D23E41BB100A08E53 /* MatterUnexpectedLongitude.h */,
+				03067F5A23E41BB100A08E53 /* MatterUnexpectedLongitude.m */,
+				03067F5923E41BB100A08E53 /* ReuniteDifficultyWalletView.h */,
+				03067F5C23E41BB100A08E53 /* ReuniteDifficultyWalletView.m */,
 				03067F5E23E41BB100A08E53 /* InvestigateFate.h */,
+				03067F5B23E41BB100A08E53 /* InvestigateFate.m */,
 			);
 			path = HomeBanner;
 			sourceTree = "<group>";
@@ -695,6 +700,9 @@
 			children = (
 				0334C54C23E6F764000D3E76 /* NewstipsVC.h */,
 				0334C54D23E6F764000D3E76 /* NewstipsVC.m */,
+				0314144223E92FFD009DB240 /* NewstipsTextView.h */,
+				0314144323E92FFD009DB240 /* NewstipsTextView.m */,
+				0314144523E9300D009DB240 /* NewstipsTextView.xib */,
 			);
 			path = Newstips;
 			sourceTree = "<group>";
@@ -948,6 +956,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0314144623E9300D009DB240 /* NewstipsTextView.xib in Resources */,
 				03067FB023E41BB100A08E53 /* PermitRemoteChatController.xib in Resources */,
 				03F189AB23E5C56B00503533 /* seteid.json in Resources */,
 				0334C54423E6F6DA000D3E76 /* LeagstusCell.xib in Resources */,
@@ -1069,6 +1078,7 @@
 				03067F8623E41BB100A08E53 /* CrossAnalysisAccidental.m in Sources */,
 				03067FB323E41BB100A08E53 /* BriefThornController.m in Sources */,
 				03067F8E23E41BB100A08E53 /* ExpanFileConstants.m in Sources */,
+				0314144423E92FFD009DB240 /* NewstipsTextView.m in Sources */,
 				03067FA023E41BB100A08E53 /* MatterUnexpectedLongitude.m in Sources */,
 				03067F9B23E41BB100A08E53 /* EndLinenPeak.m in Sources */,
 				03067F8123E41BB100A08E53 /* SetEquality.m in Sources */,
