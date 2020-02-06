@@ -13,5 +13,3 @@ typedef NS_ENUM(UInt32, ColorRGBType) {
     DefaulColor       = 0xf2a0d5,
 };
 #endif 
-
-

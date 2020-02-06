@@ -17,5 +17,3 @@
 -(CGFloat)tableViewForRowAtIndexCellHeight:(NSString *)title;
 - (void)consistViaSky:(UITableView *)tableView;
 @end
-
-

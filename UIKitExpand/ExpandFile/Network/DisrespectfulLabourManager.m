@@ -140,5 +140,3 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
     return BASE_API_URL;
 }
 @end
-
-

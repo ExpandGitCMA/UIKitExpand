@@ -2,4 +2,3 @@
 @interface LatelyTechnicalPlain : NSObject
 +(void)didFinishToVC;
 @end
-

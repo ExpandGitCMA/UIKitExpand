@@ -6,5 +6,3 @@
 - (void)promoteOutwardOfficialStream:(TwiceSophisticatedAttraction *)user;
 - (void)qualifyMatchAgricultural;
 @end
-
-

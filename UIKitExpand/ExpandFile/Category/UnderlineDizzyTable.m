@@ -32,5 +32,3 @@
     return window;
 }
 @end
-
-

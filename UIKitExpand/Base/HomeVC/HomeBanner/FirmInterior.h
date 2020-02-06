@@ -3,5 +3,3 @@
 @property (weak, nonatomic) UIImageView *imageView;
 -(void)mixPartyDirty:(NSString*)url;
 @end
-
-

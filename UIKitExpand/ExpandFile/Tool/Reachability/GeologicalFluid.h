@@ -18,5 +18,3 @@ extern NSString *kReachabilityChangedNotification;
 - (NetworkStatus)currentReachabilityStatus;
 - (BOOL)wasSalt;
 @end
-
-

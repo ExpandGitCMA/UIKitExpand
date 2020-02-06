@@ -30,5 +30,3 @@ typedef enum {
 + (void)clearImagesCache;
 - (void)anyhowThoroughHeating;
 @end
-
-

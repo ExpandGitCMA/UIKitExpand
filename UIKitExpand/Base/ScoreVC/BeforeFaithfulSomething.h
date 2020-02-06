@@ -6,5 +6,3 @@ NS_ASSUME_NONNULL_BEGIN
 + (BeforeFaithfulSomething *)setModelWithDictionary:(NSDictionary *)dic;
 @end
 NS_ASSUME_NONNULL_END
-
-

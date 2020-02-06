@@ -2,7 +2,6 @@
 #import "AppDelegate+tabBar.h"
 #import "LatelyTechnicalPlain.h"
 #import <UMCommon/UMCommon.h>
-//com.Sports.OrgyBall  com.Sports.MutualOrgy
 @interface AppDelegate ()
 @end
 @implementation AppDelegate
@@ -12,7 +11,4 @@
     [LatelyTechnicalPlain  didFinishToVC];
     return YES;
 }
-
 @end
-
-

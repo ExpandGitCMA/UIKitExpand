@@ -71,5 +71,3 @@
     [AsFondAssembly showWithAnimationType:XSTableViewAnimationTypeToTop tableView:tableView];
 }
 @end
-
-

@@ -1,7 +1,5 @@
-
 #import "AppDelegate+tabBar.h"
 #import "SportsColorHeader.h"
-
 @implementation AppDelegate (tabBar)
 -(void)launchApptabBar{
     [[UITabBar appearance] setTintColor:kUIColorFromRGB(AppMianColor)];
@@ -10,5 +8,3 @@
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIColor whiteColor], NSForegroundColorAttributeName,[UIFont fontWithName:@"PingFang-SC-Medium" size: 18], NSFontAttributeName, nil]];
 }
 @end
-
-

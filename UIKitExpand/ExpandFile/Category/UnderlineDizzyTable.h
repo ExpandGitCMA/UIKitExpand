@@ -4,5 +4,3 @@
 + (void)showActivityIndicator;
 + (void)hideActivityIndicator;
 @end
-
-

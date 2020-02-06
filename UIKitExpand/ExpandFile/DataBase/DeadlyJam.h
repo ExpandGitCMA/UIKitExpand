@@ -4,5 +4,3 @@
 -(void)doubtlessSincereRepentance:(id)key;
 - (void)flashAmongstUpsidedownFreedom;
 @end
-
-

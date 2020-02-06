@@ -39,8 +39,6 @@ static const CGFloat kMargin = 30;
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(resumeAnimation) name:@"EnterForeground" object:nil];
     [[ToolsAuthorization sharedToolsInstance]requestAuthorizationCamera:^(BOOL obj) {
      }];
-    
-
 }
 -(void)setupTipTitleView{
     UIView*mask=[[UIView alloc]initWithFrame:CGRectMake(0, _maskView.sd_y+_maskView.sd_height, self.view.sd_width, self.view.sd_height * 0.85)];
@@ -88,17 +86,7 @@ static const CGFloat kMargin = 30;
     [self.view addSubview:mask];
 }
 - (void)setupBottomBar{
-//    UIView *bottomBar = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.sd_height * 0.85, self.view.sd_width, self.view.sd_height * 0.2)];
     self.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
-//    [self.view addSubview:bottomBar];
-//    UIButton * myCodeBtn=[UIButton buttonWithType:UIButtonTypeCustom];
-//    myCodeBtn.frame = CGRectMake(0,0, self.view.sd_height * 0.1*35/49, self.view.sd_height * 0.1);
-//    myCodeBtn.center=CGPointMake(self.view.sd_width/2, self.view.sd_height * 0.1/2+10);
-//    [myCodeBtn setImage:[UIImage imageNamed:@"qrcode_scan_btn_myqrcode_down"] forState:UIControlStateNormal];
-//
-//    myCodeBtn.contentMode=UIViewContentModeScaleAspectFit;
-//    [myCodeBtn addTarget:self action:@selector(myCode) forControlEvents:UIControlEventTouchUpInside];
-//    [bottomBar addSubview:myCodeBtn];
 }
 - (void)setupScanWindowView{
     CGFloat scanWindowH = self.view.sd_width - kMargin * 2;
@@ -272,5 +260,3 @@ static const CGFloat kMargin = 30;
     [super didReceiveMemoryWarning];
 }
 @end
-
-

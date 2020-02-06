@@ -16,5 +16,3 @@
 - (NSDate *)safeDateFromComponents:(NSDateComponents *)comps;
 - (NSDateComponents *)safeComponents:(NSCalendarUnit)unitFlags fromDate:(NSDate *)date;
 @end
-
-

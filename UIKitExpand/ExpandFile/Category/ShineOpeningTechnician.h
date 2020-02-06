@@ -13,5 +13,3 @@ typedef NS_ENUM(NSInteger, NavigationStyle){
                    barTarget:(id)target action:(SEL)action
                        title:(NSString*)title;
 @end
-
-

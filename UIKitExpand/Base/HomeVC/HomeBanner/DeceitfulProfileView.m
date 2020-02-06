@@ -250,5 +250,3 @@ NSUInteger  const SGMaxSections = 100;
     [[[SDWebImageManager sharedManager] imageCache] clearDisk];
 }
 @end
-
-

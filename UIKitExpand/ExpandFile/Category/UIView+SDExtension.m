@@ -41,5 +41,3 @@
     self.frame = temp;
 }
 @end
-
-

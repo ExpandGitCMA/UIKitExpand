@@ -3,5 +3,3 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ShrinkSexualDisability : UIView
 @end
 NS_ASSUME_NONNULL_END
-
-

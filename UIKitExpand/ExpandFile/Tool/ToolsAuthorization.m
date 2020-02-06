@@ -1,7 +1,6 @@
 #import "ToolsAuthorization.h"
 #import <AVFoundation/AVFoundation.h>
 #import <Photos/PHPhotoLibrary.h>
-
 static ToolsAuthorization *_authorization = nil;
 @interface  ToolsAuthorization ()
 @end
@@ -99,4 +98,3 @@ static ToolsAuthorization *_authorization = nil;
   }
 }
 @end
-

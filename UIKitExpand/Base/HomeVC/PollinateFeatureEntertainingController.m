@@ -23,7 +23,6 @@
      [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(msgClick) title:@"msg_home"];
 }
 -(void)getHomeBanner{
-    
     [[DisrespectfulLabourManager sharedManager] goUponGutter:URL_HomeBanner params:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
              NSArray *banner = [obj objectForKey:@"banner"];
@@ -59,6 +58,7 @@
                       [self consistViaSky:self.tableView];
            });
         }else{
+                self.dataSource = [self getRandomArrFrome:[data copy]];
                 [self.tableView.mj_header endRefreshing];
                 [self.tableView.mj_footer endRefreshing];
                 [self.tableView reloadData];
@@ -143,5 +143,3 @@
     [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
 @end
-
-

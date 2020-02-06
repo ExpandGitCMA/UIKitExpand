@@ -6,5 +6,3 @@
 @interface GrabSpread : NSObject
 + (UIFont *)fontWithSize: (CGFloat)size;
 @end
-
-

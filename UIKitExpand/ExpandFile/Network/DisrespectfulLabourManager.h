@@ -8,5 +8,3 @@ typedef void (^HttpCompletedBlock)(BOOL ret, id obj);
 -(void)sailThroughAlternativeMineral:(NSDictionary *)params completed:(HttpCompletedBlock)completed;
 - (void)borrowNosebleed:(NSString *)name completed:(HttpCompletedBlock)completed;
 @end
-
-

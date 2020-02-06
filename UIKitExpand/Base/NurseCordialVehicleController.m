@@ -88,5 +88,3 @@
     [AsFondAssembly showWithAnimationType:XSTableViewAnimationTypeSpringList tableView:tableView];
 }
 @end
-
-

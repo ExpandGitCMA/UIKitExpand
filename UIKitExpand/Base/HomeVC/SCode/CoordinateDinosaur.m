@@ -52,8 +52,6 @@
         [self->webView reload];
     }];
 }
-
-
 #pragma mark - WKNavigationDelegate
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation{
       [UnderlineDizzyTable showActivityIndicator];
@@ -124,5 +122,3 @@
     [self.scriptMessageDelegate userContentController:userContentController didReceiveScriptMessage:message];
 }
 @end
-
-

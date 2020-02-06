@@ -23,5 +23,3 @@
 @property (nonatomic, copy)NSArray *comm_count;
 + (VomitTime *)setModelWithDictionary:(NSDictionary *)dic;
 @end
-
-

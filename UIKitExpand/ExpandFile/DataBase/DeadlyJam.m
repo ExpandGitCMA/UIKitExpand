@@ -56,5 +56,3 @@ static DeadlyJam *userManager = nil;
     [[NSUserDefaults standardUserDefaults]removePersistentDomainForName:appDomain];
 }
 @end
-
-

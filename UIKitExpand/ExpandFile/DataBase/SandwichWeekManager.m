@@ -38,5 +38,3 @@ static SandwichWeekManager *userManager = nil;
     _user = nil;
 }
 @end
-
-

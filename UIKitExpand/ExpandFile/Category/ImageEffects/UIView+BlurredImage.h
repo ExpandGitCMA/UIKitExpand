@@ -7,5 +7,3 @@
 -(UIImage *)imageWithExtraLightEffect;
 -(UIImage *)imageWithTint:(UIColor*)color;
 @end
-
-

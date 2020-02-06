@@ -70,5 +70,3 @@
     return _dataSource;
 }
 @end
-
-

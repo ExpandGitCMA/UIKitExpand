@@ -10,5 +10,3 @@
 @property (nonatomic,copy) NSString *userToken; 
 + (instancetype)userWithDict:(NSDictionary *)dict;
 @end
-
-
