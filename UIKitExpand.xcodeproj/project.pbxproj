@@ -75,6 +75,7 @@
 		0324ACC123E31F4E004B4C3E /* AsFondAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACBB23E31F4E004B4C3E /* AsFondAssembly.m */; };
 		0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */; };
 		038A0AF223EC01ED00463BFF /* AppDelegate+tabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A0AF123EC01ED00463BFF /* AppDelegate+tabBar.m */; };
+		038A0AF523EC081F00463BFF /* ToolsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A0AF423EC081F00463BFF /* ToolsAuthorization.m */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B34688AD1F15FB8800498E66 /* LatelyTechnicalPlain.m in Sources */ = {isa = PBXBuildFile; fileRef = B34688AC1F15FB8800498E66 /* LatelyTechnicalPlain.m */; };
 		B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D208D41F47E89700F0CE6F /* Assets.xcassets */; };
@@ -247,6 +248,8 @@
 		038A0AEF23EBFF6100463BFF /* SportsBallAppUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsBallAppUrl.h; sourceTree = "<group>"; };
 		038A0AF023EC01ED00463BFF /* AppDelegate+tabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+tabBar.h"; sourceTree = "<group>"; };
 		038A0AF123EC01ED00463BFF /* AppDelegate+tabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+tabBar.m"; sourceTree = "<group>"; };
+		038A0AF323EC081F00463BFF /* ToolsAuthorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsAuthorization.h; sourceTree = "<group>"; };
+		038A0AF423EC081F00463BFF /* ToolsAuthorization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsAuthorization.m; sourceTree = "<group>"; };
 		1557A88AC0C9420DBF348CAF /* Pods-UIKitExpand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.release.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.release.xcconfig"; sourceTree = "<group>"; };
 		2865E39BF27EDBE025A41994 /* libPods-UIKitExpand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIKitExpand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC86418AF49E0D7082C20E8 /* Pods-UIKitExpand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.debug.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.debug.xcconfig"; sourceTree = "<group>"; };
@@ -429,6 +432,8 @@
 			isa = PBXGroup;
 			children = (
 				03067F4223E41BB000A08E53 /* Reachability */,
+				038A0AF323EC081F00463BFF /* ToolsAuthorization.h */,
+				038A0AF423EC081F00463BFF /* ToolsAuthorization.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -921,6 +926,7 @@
 				038A0AF223EC01ED00463BFF /* AppDelegate+tabBar.m in Sources */,
 				03067FDE23E47AD600A08E53 /* UnderlineDizzyTable.m in Sources */,
 				03067FAB23E41BB100A08E53 /* ObeyStadiumController.m in Sources */,
+				038A0AF523EC081F00463BFF /* ToolsAuthorization.m in Sources */,
 				03067F8B23E41BB100A08E53 /* HappenDuringRealm.m in Sources */,
 				03067F9723E41BB100A08E53 /* LightenMistakenVision.m in Sources */,
 				03067FBD23E4395200A08E53 /* GrievePerBrush.m in Sources */,

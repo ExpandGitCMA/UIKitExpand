@@ -36,6 +36,9 @@ static const CGFloat kMargin = 30;
     [self setupScanWindowView];
     [self beginScanning];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(resumeAnimation) name:@"EnterForeground" object:nil];
+    [[ToolsAuthorization sharedToolsInstance]requestAuthorizationCamera:^(BOOL obj) {
+     }];
+    
 }
 -(void)setupTipTitleView{
     UIView*mask=[[UIView alloc]initWithFrame:CGRectMake(0, _maskView.sd_y+_maskView.sd_height, self.view.sd_width, kBorderW)];
