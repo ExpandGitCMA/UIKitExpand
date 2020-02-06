@@ -28,8 +28,8 @@
         if (ret) {
              NSArray *banner = [obj objectForKey:@"banner"];
              BOOL boolValue = [[obj objectForKey:@"vanue"] boolValue];
-             DEBUG_NSLog(@"boolValue=%d",boolValue);
              [self.zeroSDCycleView setArrayStringUrl:banner];
+             DEBUG_NSLog(@"obj=%@",obj);
         }
     }];
 }
