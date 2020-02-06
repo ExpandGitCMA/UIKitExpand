@@ -28,7 +28,7 @@
         if (ret) {
              NSArray *banner = [obj objectForKey:@"banner"];
              BOOL boolValue = [[obj objectForKey:@"vanue"] boolValue];
-             [self.zeroSDCycleView setArrayStringUrl:banner];
+             [self.DeceitfultView setArrayStringUrl:banner];
              DEBUG_NSLog(@"obj=%@",obj);
         }
     }];
@@ -52,7 +52,7 @@
            }
            self.dataSource = [self getRandomArrFrome:[data copy]];
            dispatch_async(dispatch_get_main_queue(), ^{
-                      self.tableView.tableHeaderView =  [self zeroSDCycleView];
+                      self.tableView.tableHeaderView =  [self DeceitfultView];
                       [self.tableView.mj_header endRefreshing];
                       [self.tableView.mj_footer endRefreshing];
                       [self.tableView reloadData];

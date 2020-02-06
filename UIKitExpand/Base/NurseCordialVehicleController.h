@@ -8,10 +8,10 @@
 #import "TableViewAnimationKitHeaders.h"
 #import "DisrespectfulLabourManager.h"
 #import "HappenDuringRealm.h"
-@interface NurseCordialVehicleController : UIViewController<UITableViewDelegate, UITableViewDataSource,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate,ZeroSDCycleViewDelegate>
+@interface NurseCordialVehicleController : UIViewController<UITableViewDelegate, UITableViewDataSource,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate,DeceitfultViewDelegate>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *dataSource;
-@property(nonatomic,strong)DeceitfulProfileView *zeroSDCycleView;
+@property(nonatomic,strong)DeceitfulProfileView *DeceitfultView;
 - (void)simplyTallWidth;
 -(NSMutableArray*)getRandomArrFrome:(NSArray*)arr;
 -(CGFloat)tableViewForRowAtIndexCellHeight:(NSString *)title;

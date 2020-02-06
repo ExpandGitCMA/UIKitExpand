@@ -1,22 +1,22 @@
 #import <UIKit/UIKit.h>
 typedef enum {
-    ZeroSDCycleViewPageContolAlimentRight,
-    ZeroSDCycleViewPageContolAlimentCenter
-}  ZeroSDCycleViewPageContolAliment;
+    DeceitfultViewPageContolAlimentRight,
+    DeceitfultViewPageContolAlimentCenter
+}  DeceitfultViewPageContolAliment;
 typedef enum {
-    ZeroSDCycleViewPageContolStyleClassic,        
-    ZeroSDCycleViewPageContolStyleAnimated,    
-    ZeroSDCycleViewPageContolStyleNone            
-}  ZeroSDCycleViewPageContolStyle;
+    DeceitfultViewPageContolStyleClassic,        
+    DeceitfultViewPageContolStyleAnimated,    
+    DeceitfultViewPageContolStyleNone            
+}  DeceitfultViewPageContolStyle;
 @class DeceitfulProfileView;
-@protocol ZeroSDCycleViewDelegate <NSObject>
+@protocol DeceitfultViewDelegate <NSObject>
 @optional
 - (void)cycleScrollView:(DeceitfulProfileView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index;
 - (void)cycleScrollView:(DeceitfulProfileView *)cycleScrollView didScrollToIndex:(NSInteger)index;
 @end
 @interface DeceitfulProfileView : UIView
-+ (instancetype)cycleScrollViewWithFrame:(CGRect)frame delegate:(id<ZeroSDCycleViewDelegate>)delegate ;
-@property (nonatomic, weak) id<ZeroSDCycleViewDelegate> delegate;
++ (instancetype)cycleScrollViewWithFrame:(CGRect)frame delegate:(id<DeceitfultViewDelegate>)delegate ;
+@property (nonatomic, weak) id<DeceitfultViewDelegate> delegate;
 @property (nonatomic, copy) NSArray *imagePathsGroup;
 @property (nonatomic, copy) NSArray *arrayStringUrl;
 @property (nonatomic, assign) CGFloat autoScrollTimeInterval;
@@ -25,8 +25,8 @@ typedef enum {
 @property (nonatomic, assign) BOOL showPageControl;
 @property (nonatomic, strong) UIColor *currentPageDotColor;
 @property (nonatomic, strong) UIColor *pageDotColor;
-@property (nonatomic, assign) ZeroSDCycleViewPageContolAliment pageControlAliment;
-@property (nonatomic, assign) ZeroSDCycleViewPageContolStyle pageControlStyle;
+@property (nonatomic, assign) DeceitfultViewPageContolAliment pageControlAliment;
+@property (nonatomic, assign) DeceitfultViewPageContolStyle pageControlStyle;
 + (void)clearImagesCache;
 - (void)anyhowThoroughHeating;
 @end

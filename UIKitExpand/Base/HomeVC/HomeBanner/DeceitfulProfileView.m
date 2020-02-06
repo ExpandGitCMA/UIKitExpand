@@ -11,7 +11,7 @@ NSUInteger  const SGMaxSections = 100;
 @property (nonatomic,copy) NSArray *arraySource;
 @end
 @implementation DeceitfulProfileView
-+(instancetype)cycleScrollViewWithFrame:(CGRect)frame delegate:(id<ZeroSDCycleViewDelegate>)delegate {
++(instancetype)cycleScrollViewWithFrame:(CGRect)frame delegate:(id<DeceitfultViewDelegate>)delegate {
     DeceitfulProfileView *cycleScrollView = [[self alloc] initWithFrame:frame];
     cycleScrollView.delegate = delegate;
     return cycleScrollView;
@@ -84,14 +84,14 @@ NSUInteger  const SGMaxSections = 100;
     }
     return _pageControl;
 }
--(void)setPageControlAliment:(ZeroSDCycleViewPageContolAliment)pageControlAliment{
+-(void)setPageControlAliment:(DeceitfultViewPageContolAliment)pageControlAliment{
     _pageControlAliment = pageControlAliment;
     switch (_pageControlAliment) {
-        case ZeroSDCycleViewPageContolAlimentRight:{
+        case DeceitfultViewPageContolAlimentRight:{
              _pageControl.frame = CGRectMake(self.frame.size.width-120, self.frame.size.height-30, 30, 30);
         }
             break;
-        case ZeroSDCycleViewPageContolAlimentCenter:{
+        case DeceitfultViewPageContolAlimentCenter:{
                 _pageControl.frame = CGRectMake(0, self.frame.size.height-30, self.frame.size.width, 30);
         }
             break;
@@ -99,20 +99,20 @@ NSUInteger  const SGMaxSections = 100;
             break;
     }
 }
--(void)setPageControlStyle:(ZeroSDCycleViewPageContolStyle)pageControlStyle{
+-(void)setPageControlStyle:(DeceitfultViewPageContolStyle)pageControlStyle{
         _pageControlStyle = pageControlStyle;
     switch (_pageControlStyle) {
-        case ZeroSDCycleViewPageContolStyleClassic:{
+        case DeceitfultViewPageContolStyleClassic:{
               _pageControl.pageIndicatorTintColor=[UIColor whiteColor];
             _pageControl.currentPageIndicatorTintColor = [UIColor lightGrayColor];
         }
             break;
-        case ZeroSDCycleViewPageContolStyleAnimated:{
+        case DeceitfultViewPageContolStyleAnimated:{
             [_pageControl  setValue:[UIImage imageNamed:@"img_home_banner_select"] forKeyPath:@"currentPageImage"];
             [_pageControl setValue:[UIImage imageNamed:@"img_home_banner_unselect"] forKeyPath:@"pageImage"];
         }
             break;
-        case ZeroSDCycleViewPageContolStyleNone:{
+        case DeceitfultViewPageContolStyleNone:{
             _pageControl.hidden = YES;
         }
             break;

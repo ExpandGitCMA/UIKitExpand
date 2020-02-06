@@ -6,15 +6,15 @@
     [super viewDidLoad];
     [self dataSource];
 }
--(DeceitfulProfileView*)zeroSDCycleView{
-    if (!_zeroSDCycleView) {
-        _zeroSDCycleView = [DeceitfulProfileView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 190) delegate:self];
-        [_zeroSDCycleView setShowPageControl:YES];
-        [_zeroSDCycleView  setPageControlStyle: ZeroSDCycleViewPageContolStyleClassic];
-        [_zeroSDCycleView setPageControlAliment:   ZeroSDCycleViewPageContolAlimentCenter];
-         [_zeroSDCycleView setAutoScrollTimeInterval:3.5f];
+-(DeceitfulProfileView*)DeceitfultView{
+    if (!_DeceitfultView) {
+        _DeceitfultView = [DeceitfulProfileView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 190) delegate:self];
+        [_DeceitfultView setShowPageControl:YES];
+        [_DeceitfultView  setPageControlStyle:DeceitfultViewPageContolStyleClassic];
+        [_DeceitfultView setPageControlAliment:DeceitfultViewPageContolAlimentCenter];
+         [_DeceitfultView setAutoScrollTimeInterval:3.5f];
     }
-    return _zeroSDCycleView;
+    return _DeceitfultView;
 }
 -(void)cycleScrollView:(DeceitfulProfileView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
 }
