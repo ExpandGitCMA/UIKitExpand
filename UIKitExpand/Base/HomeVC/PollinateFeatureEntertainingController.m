@@ -72,8 +72,7 @@
         RoarTowardInvestment*cell = [tableView dequeueReusableCellWithIdentifier:@"RoarTowardInvestment" forIndexPath:indexPath];
         VomitTime *model = self.dataSource[indexPath.row];
         cell.title.text = model.title;
-        cell.timer .text = model.tags;
-        cell.content.text = model.pubtime;
+        cell.timer .text = model.pubtime;
         tableViewCell = cell;
      }else if ([obj isKindOfClass:[ NewsModel class]]){
        CareUniversityEcofriendly *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
@@ -94,11 +93,11 @@
     id obj = self.dataSource[indexPath.row];
     if ([obj isKindOfClass:[ VomitTime class]]) {
          VomitTime *model = self.dataSource [indexPath.row];
-         CGFloat defutHeight = 65;
+         CGFloat defutHeight = 60;
         return defutHeight+[self tableViewForRowAtIndexCellHeight:model.title];
     }else if ([obj isKindOfClass:[ NewsModel class]]){
         NewsModel *model = self.dataSource [indexPath.row];
-        CGFloat defutHeight = 100;
+        CGFloat defutHeight = 110;
         return defutHeight+[self tableViewForRowAtIndexCellHeight:model.title];
     }
     return 70;
@@ -109,7 +108,7 @@
      id obj = self.dataSource[indexPath.row];
      if ([obj isKindOfClass:[ VomitTime class]]) {
        VomitTime *model = self.dataSource [indexPath.row];
-       homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@%@",model.pubtime,@"\n",model.modtime_desc,model.title];
+       homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@%@",model.pubtime,@"\n",model.tags,model.title];
        }else if ([obj isKindOfClass:[ NewsModel class]]){
             NewsModel *model = self.dataSource [indexPath.row];
             homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.time,@"\n",model.title];
