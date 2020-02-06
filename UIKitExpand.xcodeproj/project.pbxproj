@@ -23,12 +23,6 @@
 		03067F8C23E41BB100A08E53 /* DisrespectfulLabourManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F2623E41BB000A08E53 /* DisrespectfulLabourManager.m */; };
 		03067F8E23E41BB100A08E53 /* ExpanFileConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F2C23E41BB000A08E53 /* ExpanFileConstants.m */; };
 		03067F8F23E41BB100A08E53 /* WellFunnyMurdererView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F3323E41BB000A08E53 /* WellFunnyMurdererView.m */; };
-		03067F9023E41BB100A08E53 /* PaddleBasketball.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F3523E41BB000A08E53 /* PaddleBasketball.m */; };
-		03067F9123E41BB100A08E53 /* CompletelyToughScent.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F3623E41BB000A08E53 /* CompletelyToughScent.m */; };
-		03067F9223E41BB100A08E53 /* DisapprovePromisingDepth.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F3723E41BB000A08E53 /* DisapprovePromisingDepth.m */; };
-		03067F9323E41BB100A08E53 /* SeasideBlackboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F3D23E41BB000A08E53 /* SeasideBlackboard.m */; };
-		03067F9423E41BB100A08E53 /* ClearlyHorizontalSpelling.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F3F23E41BB000A08E53 /* ClearlyHorizontalSpelling.m */; };
-		03067F9523E41BB100A08E53 /* InventPostalTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F4023E41BB000A08E53 /* InventPostalTouch.m */; };
 		03067F9623E41BB100A08E53 /* GeologicalFluid.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F4323E41BB000A08E53 /* GeologicalFluid.m */; };
 		03067F9723E41BB100A08E53 /* LightenMistakenVision.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F4723E41BB100A08E53 /* LightenMistakenVision.m */; };
 		03067F9823E41BB100A08E53 /* VomitTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F4B23E41BB100A08E53 /* VomitTime.m */; };
@@ -149,18 +143,6 @@
 		03067F2C23E41BB000A08E53 /* ExpanFileConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpanFileConstants.m; sourceTree = "<group>"; };
 		03067F3223E41BB000A08E53 /* WellFunnyMurdererView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellFunnyMurdererView.h; sourceTree = "<group>"; };
 		03067F3323E41BB000A08E53 /* WellFunnyMurdererView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellFunnyMurdererView.m; sourceTree = "<group>"; };
-		03067F3523E41BB000A08E53 /* PaddleBasketball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddleBasketball.m; sourceTree = "<group>"; };
-		03067F3623E41BB000A08E53 /* CompletelyToughScent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletelyToughScent.m; sourceTree = "<group>"; };
-		03067F3723E41BB000A08E53 /* DisapprovePromisingDepth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisapprovePromisingDepth.m; sourceTree = "<group>"; };
-		03067F3823E41BB000A08E53 /* SeasideBlackboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeasideBlackboard.h; sourceTree = "<group>"; };
-		03067F3923E41BB000A08E53 /* ClearlyHorizontalSpelling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearlyHorizontalSpelling.h; sourceTree = "<group>"; };
-		03067F3A23E41BB000A08E53 /* InventPostalTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventPostalTouch.h; sourceTree = "<group>"; };
-		03067F3B23E41BB000A08E53 /* CompletelyToughScent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletelyToughScent.h; sourceTree = "<group>"; };
-		03067F3C23E41BB000A08E53 /* PaddleBasketball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddleBasketball.h; sourceTree = "<group>"; };
-		03067F3D23E41BB000A08E53 /* SeasideBlackboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeasideBlackboard.m; sourceTree = "<group>"; };
-		03067F3E23E41BB000A08E53 /* DisapprovePromisingDepth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisapprovePromisingDepth.h; sourceTree = "<group>"; };
-		03067F3F23E41BB000A08E53 /* ClearlyHorizontalSpelling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearlyHorizontalSpelling.m; sourceTree = "<group>"; };
-		03067F4023E41BB000A08E53 /* InventPostalTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventPostalTouch.m; sourceTree = "<group>"; };
 		03067F4323E41BB000A08E53 /* GeologicalFluid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeologicalFluid.m; sourceTree = "<group>"; };
 		03067F4423E41BB000A08E53 /* GeologicalFluid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeologicalFluid.h; sourceTree = "<group>"; };
 		03067F4723E41BB100A08E53 /* LightenMistakenVision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightenMistakenVision.m; sourceTree = "<group>"; };
@@ -307,7 +289,6 @@
 				03067F2A23E41BB000A08E53 /* Const */,
 				03067F2D23E41BB000A08E53 /* Macros */,
 				03067F3123E41BB000A08E53 /* EmptyView */,
-				03067F3423E41BB000A08E53 /* Encrypt */,
 				03067F4123E41BB000A08E53 /* Tool */,
 			);
 			path = ExpandFile;
@@ -407,25 +388,6 @@
 				03067F3323E41BB000A08E53 /* WellFunnyMurdererView.m */,
 			);
 			path = EmptyView;
-			sourceTree = "<group>";
-		};
-		03067F3423E41BB000A08E53 /* Encrypt */ = {
-			isa = PBXGroup;
-			children = (
-				03067F3523E41BB000A08E53 /* PaddleBasketball.m */,
-				03067F3623E41BB000A08E53 /* CompletelyToughScent.m */,
-				03067F3723E41BB000A08E53 /* DisapprovePromisingDepth.m */,
-				03067F3823E41BB000A08E53 /* SeasideBlackboard.h */,
-				03067F3923E41BB000A08E53 /* ClearlyHorizontalSpelling.h */,
-				03067F3A23E41BB000A08E53 /* InventPostalTouch.h */,
-				03067F3B23E41BB000A08E53 /* CompletelyToughScent.h */,
-				03067F3C23E41BB000A08E53 /* PaddleBasketball.h */,
-				03067F3D23E41BB000A08E53 /* SeasideBlackboard.m */,
-				03067F3E23E41BB000A08E53 /* DisapprovePromisingDepth.h */,
-				03067F3F23E41BB000A08E53 /* ClearlyHorizontalSpelling.m */,
-				03067F4023E41BB000A08E53 /* InventPostalTouch.m */,
-			);
-			path = Encrypt;
 			sourceTree = "<group>";
 		};
 		03067F4123E41BB000A08E53 /* Tool */ = {
@@ -781,7 +743,7 @@
 				TargetAttributes = {
 					B3F4EFFA1F14A8600005197E = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 8DZ394K7X7;
+						DevelopmentTeam = 57Y8ANKX46;
 						ProvisioningStyle = Automatic;
 					};
 					B3F4F0131F14A8600005197E = {
@@ -906,7 +868,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				03067FB123E41BB100A08E53 /* BeforeFaithfulSomething.m in Sources */,
-				03067F9223E41BB100A08E53 /* DisapprovePromisingDepth.m in Sources */,
 				03067F8823E41BB100A08E53 /* UIView+BlurredImage.m in Sources */,
 				0324ACC123E31F4E004B4C3E /* AsFondAssembly.m in Sources */,
 				03067FA723E41BB100A08E53 /* CrackHandleController.m in Sources */,
@@ -919,8 +880,6 @@
 				03067F8023E41BB100A08E53 /* SandwichWeekManager.m in Sources */,
 				03067FB823E4352200A08E53 /* ExtinctAppearance.m in Sources */,
 				031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
-				03067F9423E41BB100A08E53 /* ClearlyHorizontalSpelling.m in Sources */,
-				03067F9123E41BB100A08E53 /* CompletelyToughScent.m in Sources */,
 				03067FA223E41BB100A08E53 /* DeceitfulProfileView.m in Sources */,
 				03067FD923E47A1F00A08E53 /* GainDetectionAbnormal.m in Sources */,
 				038A0AF223EC01ED00463BFF /* AppDelegate+tabBar.m in Sources */,
@@ -940,9 +899,7 @@
 				03067FDA23E47A1F00A08E53 /* CoordinateDinosaur.m in Sources */,
 				03067FB223E41BB100A08E53 /* GovernIntoPreserveController.m in Sources */,
 				0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */,
-				03067F9523E41BB100A08E53 /* InventPostalTouch.m in Sources */,
 				03067F8223E41BB100A08E53 /* CoarseDisk.m in Sources */,
-				03067F9023E41BB100A08E53 /* PaddleBasketball.m in Sources */,
 				B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */,
 				03067F8A23E41BB100A08E53 /* NSString+IMAdditions.m in Sources */,
 				03067FAF23E41BB100A08E53 /* StackDoseBigController.m in Sources */,
@@ -959,7 +916,6 @@
 				03067F8423E41BB100A08E53 /* SuddenlyCubicRefund.m in Sources */,
 				03067F8923E41BB100A08E53 /* UIImage+ImageEffects.m in Sources */,
 				03067FAE23E41BB100A08E53 /* NurseCordialVehicleController.m in Sources */,
-				03067F9323E41BB100A08E53 /* SeasideBlackboard.m in Sources */,
 				03067F8323E41BB100A08E53 /* TwiceSophisticatedAttraction.m in Sources */,
 				03067F8723E41BB100A08E53 /* NSString+paths.m in Sources */,
 				03067FA323E41BB100A08E53 /* TripPhotographerSolemnController.m in Sources */,
@@ -1122,7 +1078,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEVELOPMENT_TEAM = 8DZ394K7X7;
+				DEVELOPMENT_TEAM = 57Y8ANKX46;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1155,7 +1111,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEVELOPMENT_TEAM = 8DZ394K7X7;
+				DEVELOPMENT_TEAM = 57Y8ANKX46;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
