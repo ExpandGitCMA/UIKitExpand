@@ -20,6 +20,7 @@ PODS:
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
   - SVProgressHUD (2.2.5)
+  - UMCCommon (2.1.1)
 
 DEPENDENCIES:
   - AFNetworking
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - MJRefresh
   - SDWebImage (~> 3.7.3)
   - SVProgressHUD
+  - UMCCommon
 
 SPEC REPOS:
   trunk:
@@ -35,6 +37,7 @@ SPEC REPOS:
     - MJRefresh
     - SDWebImage
     - SVProgressHUD
+    - UMCCommon
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -42,7 +45,8 @@ SPEC CHECKSUMS:
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UMCCommon: 971f324a5a99c9d662ae040a815e7e3d7ef8b2a8
 
-PODFILE CHECKSUM: b20cb7f2addc34546e6f4f4673ad4da77d2dda15
+PODFILE CHECKSUM: 83fff2abe01a0ae531bc96c90f5a9df2a5214242
 
 COCOAPODS: 1.8.4

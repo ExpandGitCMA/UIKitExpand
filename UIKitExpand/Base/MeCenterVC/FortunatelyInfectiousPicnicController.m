@@ -66,7 +66,7 @@
 }
 -(void)showShareDetail{
         NSString *shareText = @"分享的标题";
-        UIImage *shareImage = [UIImage imageNamed:@"banner"];
+        UIImage *shareImage = [UIImage imageNamed:@"icon"];
         NSURL *shareUrl = [NSURL URLWithString:@"https://www.jianshu.com/u/4751e3a9bcfd"];
         NSArray *activityItemsArray = @[shareText,shareImage,shareUrl];
         OweUnderneathBamboo *customActivity = [[OweUnderneathBamboo alloc]initWithTitle:shareText ActivityImage:[UIImage imageNamed:@"icon"] URL:shareUrl ActivityType:@"Custom"];
