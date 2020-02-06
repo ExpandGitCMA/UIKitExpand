@@ -3,6 +3,7 @@
 #import "SportsBallFile.h"
 #import "UIView+SDExtension.h"
 #import "CoordinateDinosaur.h"
+#import "ToolsAuthorization.h"
 static const CGFloat kBorderW = 100;
 static const CGFloat kMargin = 30;
 @interface GainDetectionAbnormal ()<UIAlertViewDelegate,AVCaptureMetadataOutputObjectsDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
