@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B3F4EFFA1F14A8600005197E"
-               BuildableName = "&#x4e9e;&#x535a;&#x4f53;&#x80b2;-&#x7403;&#x5708;.app"
+               BuildableName = "&#x4f53;&#x8baf;&#x4e92;&#x5a31;-&#x8db3;&#x7403;.app"
                BlueprintName = "UIKitExpand"
                ReferencedContainer = "container:UIKitExpand.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3F4EFFA1F14A8600005197E"
-            BuildableName = "&#x4e9e;&#x535a;&#x4f53;&#x80b2;-&#x7403;&#x5708;.app"
+            BuildableName = "&#x4f53;&#x8baf;&#x4e92;&#x5a31;-&#x8db3;&#x7403;.app"
             BlueprintName = "UIKitExpand"
             ReferencedContainer = "container:UIKitExpand.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3F4EFFA1F14A8600005197E"
-            BuildableName = "&#x4e9e;&#x535a;&#x4f53;&#x80b2;-&#x7403;&#x5708;.app"
+            BuildableName = "&#x4f53;&#x8baf;&#x4e92;&#x5a31;-&#x8db3;&#x7403;.app"
             BlueprintName = "UIKitExpand"
             ReferencedContainer = "container:UIKitExpand.xcodeproj">
          </BuildableReference>

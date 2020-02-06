@@ -7,14 +7,16 @@
 //
 
 #import "UITableView+XSAnimationKit.h"
-#import "WarnGiantBar.h"
+#import "AsFondAssembly.h"
 
 @implementation UITableView (XSAnimationKit)
 
 - (void)xs_showTableViewAnimationWithType:(XSTableViewAnimationType)animationType{
-    [WarnGiantBar showWithAnimationType:animationType tableView:self];
+    [AsFondAssembly showWithAnimationType:animationType tableView:self];
 }
 
 @end
+
+
 
 
