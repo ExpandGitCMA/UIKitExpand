@@ -1,4 +1,15 @@
 #import "VomitTime.h"
+
+@implementation ItemSportsModel
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {}
++ (ItemSportsModel *)setModelWithDictionary:(NSDictionary *)dic {
+       ItemSportsModel *model = [[ItemSportsModel  alloc] init];
+       [model setValuesForKeysWithDictionary:dic];
+       return model;
+};
+
+@end
+
 @implementation NewsModel
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {}
 + (NewsModel *)setModelWithDictionary:(NSDictionary *)dic {

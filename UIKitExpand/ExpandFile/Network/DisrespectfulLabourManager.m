@@ -115,6 +115,24 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
         }
     }
 }
+
+
+
+-(void)getSportsNewspath:(NSString *)path   params:(NSDictionary *)params  completed:(HttpCompletedBlock)completed{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+       manager.requestSerializer.timeoutInterval = 20;
+       manager.responseSerializer.acceptableContentTypes =
+       [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
+       [manager GET:path  parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+           completed(YES, responseObject);
+       } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+           if (error) {
+               completed(NO, @{});
+           }
+       }];
+    
+}
+
 -(void)sailThroughAlternativeMineral:(NSDictionary *)params completed:(HttpCompletedBlock)completed {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer.timeoutInterval = 5;
@@ -128,6 +146,8 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
         }
     }];
 }
+
+
 - (void )borrowNosebleed:(NSString *)name completed:(HttpCompletedBlock)completed {
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"json"];
     NSData *data = [[NSData alloc] initWithContentsOfFile:path];

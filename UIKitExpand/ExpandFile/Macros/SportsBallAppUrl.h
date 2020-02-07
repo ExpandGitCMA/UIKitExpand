@@ -5,4 +5,8 @@
 #define  URL_HomeBanner  @"App/Api/SportsGame/HomeBanner"
 #define  URL_Gamerule  @"App/Api/SportsGame/Gamerule"
 #define  URL_HomeNews @"http://zhiboba.3b2o.com/article/listJson/category/soccer?1452072425"
+//#define  URL_HomeComNews @"https://api.iclient.ifeng.com/ClientNews?id=TY43,FOCUSTY43,TYTOPIC&page=1"
+#define  URL_ComNews   @"https://api.iclient.ifeng.com/ClientNews?"
+
 #endif 
+

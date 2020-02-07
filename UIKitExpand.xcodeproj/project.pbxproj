@@ -70,6 +70,8 @@
 		0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */; };
 		038A0AF223EC01ED00463BFF /* AppDelegate+tabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A0AF123EC01ED00463BFF /* AppDelegate+tabBar.m */; };
 		038A0AF523EC081F00463BFF /* ToolsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A0AF423EC081F00463BFF /* ToolsAuthorization.m */; };
+		840EDAB023ED61770024D946 /* HotContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAAD23ED61770024D946 /* HotContentCell.m */; };
+		840EDAB123ED61770024D946 /* DFCHotContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAAF23ED61770024D946 /* DFCHotContent.m */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B34688AD1F15FB8800498E66 /* LatelyTechnicalPlain.m in Sources */ = {isa = PBXBuildFile; fileRef = B34688AC1F15FB8800498E66 /* LatelyTechnicalPlain.m */; };
 		B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D208D41F47E89700F0CE6F /* Assets.xcassets */; };
@@ -235,6 +237,10 @@
 		1557A88AC0C9420DBF348CAF /* Pods-UIKitExpand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.release.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.release.xcconfig"; sourceTree = "<group>"; };
 		2865E39BF27EDBE025A41994 /* libPods-UIKitExpand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIKitExpand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC86418AF49E0D7082C20E8 /* Pods-UIKitExpand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.debug.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.debug.xcconfig"; sourceTree = "<group>"; };
+		840EDAAC23ED61770024D946 /* DFCHotContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCHotContent.h; sourceTree = "<group>"; };
+		840EDAAD23ED61770024D946 /* HotContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotContentCell.m; sourceTree = "<group>"; };
+		840EDAAE23ED61770024D946 /* HotContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotContentCell.h; sourceTree = "<group>"; };
+		840EDAAF23ED61770024D946 /* DFCHotContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCHotContent.m; sourceTree = "<group>"; };
 		B30F386D1F15B5C7005B5CE6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B34688AB1F15FB8800498E66 /* LatelyTechnicalPlain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatelyTechnicalPlain.h; sourceTree = "<group>"; };
@@ -431,16 +437,16 @@
 		03067F4A23E41BB100A08E53 /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
-				03067F4C23E41BB100A08E53 /* CareUniversityEcofriendly.xib */,
 				03067F4D23E41BB100A08E53 /* RebuildIllJoy.xib */,
 				03067F4E23E41BB100A08E53 /* RebuildIllJoy.m */,
-				03067F4F23E41BB100A08E53 /* CareUniversityEcofriendly.h */,
 				03067F5023E41BB100A08E53 /* PollinateFeatureEntertainingController.h */,
 				03067F5423E41BB100A08E53 /* PollinateFeatureEntertainingController.m */,
 				03067F5223E41BB100A08E53 /* VomitTime.h */,
 				03067F4B23E41BB100A08E53 /* VomitTime.m */,
 				03067F5323E41BB100A08E53 /* RebuildIllJoy.h */,
+				03067F4F23E41BB100A08E53 /* CareUniversityEcofriendly.h */,
 				03067F5523E41BB100A08E53 /* CareUniversityEcofriendly.m */,
+				03067F4C23E41BB100A08E53 /* CareUniversityEcofriendly.xib */,
 				03067F5623E41BB100A08E53 /* RoarTowardInvestment.h */,
 				03067F5123E41BB100A08E53 /* RoarTowardInvestment.m */,
 				03067F5723E41BB100A08E53 /* RoarTowardInvestment.xib */,
@@ -523,6 +529,10 @@
 				03067FD423E47A1F00A08E53 /* GainDetectionAbnormal.m */,
 				03067FD623E47A1F00A08E53 /* CoordinateDinosaur.h */,
 				03067FD723E47A1F00A08E53 /* CoordinateDinosaur.m */,
+				840EDAAC23ED61770024D946 /* DFCHotContent.h */,
+				840EDAAF23ED61770024D946 /* DFCHotContent.m */,
+				840EDAAE23ED61770024D946 /* HotContentCell.h */,
+				840EDAAD23ED61770024D946 /* HotContentCell.m */,
 			);
 			path = SCode;
 			sourceTree = "<group>";
@@ -872,6 +882,7 @@
 				0324ACC123E31F4E004B4C3E /* AsFondAssembly.m in Sources */,
 				03067FA723E41BB100A08E53 /* CrackHandleController.m in Sources */,
 				03067F9E23E41BB100A08E53 /* CareUniversityEcofriendly.m in Sources */,
+				840EDAB123ED61770024D946 /* DFCHotContent.m in Sources */,
 				03067F9C23E41BB100A08E53 /* RoarTowardInvestment.m in Sources */,
 				03067FA623E41BB100A08E53 /* OweUnderneathBamboo.m in Sources */,
 				03067FB423E41BB100A08E53 /* ShrinkSexualDisability.m in Sources */,
@@ -911,6 +922,7 @@
 				03067F9623E41BB100A08E53 /* GeologicalFluid.m in Sources */,
 				03067FA523E41BB100A08E53 /* FishWithoutStrikerController.m in Sources */,
 				03067F9823E41BB100A08E53 /* VomitTime.m in Sources */,
+				840EDAB023ED61770024D946 /* HotContentCell.m in Sources */,
 				03067FA823E41BB100A08E53 /* AutomaticRear.m in Sources */,
 				03067F7F23E41BB100A08E53 /* DeadlyJam.m in Sources */,
 				03067F8423E41BB100A08E53 /* SuddenlyCubicRefund.m in Sources */,
