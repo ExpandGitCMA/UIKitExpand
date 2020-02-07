@@ -5,6 +5,7 @@
 #import "DeceitfulProfileView.h"
 #import "UnderlineDizzyTable.h"
 #import "UIView+LoadState.h"
+#import "NSString+IMAdditions.h"
 @interface WKWebViewVC ()<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 @property(nonatomic,copy)WKWebView *webView;
 @property(nonatomic,copy)NSString *metaUrl;
@@ -86,14 +87,13 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
                         NSDictionary*body = [obj objectForKey:@"body"];
                         if (ret) {
                             NSString*html = body[@"text"];
-                            if (data.count) {
+                            if (data.count>0|| [html isNull]) {
                                  [self.view dismessStateView];
                                  [_deceitfultView setArrayStringUrl:[data copy]];
                                  [self.webView loadHTMLString:html baseURL:nil];
                             }else{
                                  [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
                             }
-                             DEBUG_NSLog(@"=======>html=%@ date=%@",html,data)
                         }else{
                              [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
                         }
@@ -115,7 +115,6 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
      [webView.scrollView.mj_header endRefreshing];
 }
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation{
-   DEBUG_NSLog(@"接收到服务器跳转请求之后调用=%@",webView.URL.absoluteString);
 }
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
     NSString*absoluteString = navigationResponse.response.URL.absoluteString;
