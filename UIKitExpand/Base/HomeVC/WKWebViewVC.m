@@ -116,10 +116,17 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
               [[DisrespectfulLabourManager sharedManager] getSportsNewspath:metaUrl params:@{} completed:^(BOOL ret, id obj) {
                         NSDictionary*body = [obj objectForKey:@"body"];
                         if (ret) {
-                             [self.view dismessStateView];
-                             NSString*html = body[@"text"];
-                             [_deceitfultView setArrayStringUrl:[data copy]];
-                             [self.webView loadHTMLString:html baseURL:nil];
+                            NSString*html = body[@"text"];
+                            if (data.count) {
+                                 [self.view dismessStateView];
+                                 [_deceitfultView setArrayStringUrl:[data copy]];
+                                 [self.webView loadHTMLString:html baseURL:nil];
+                            }else{
+                                 [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
+                            }
+                                                        
+                             DEBUG_NSLog(@"=======>html=%@ date=%@",html,data)
+                            
                         }else{
                              [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
                         }
