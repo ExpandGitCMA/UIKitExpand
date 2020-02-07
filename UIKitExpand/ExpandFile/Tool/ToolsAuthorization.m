@@ -55,29 +55,43 @@ static ToolsAuthorization *_authorization = nil;
   }
 }
 -(void)requestAuthorizationAlbums:(ToolsAuthCompletedBlock)completed{
-  PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
-  switch (status) {
-    case PHAuthorizationStatusDenied:{
-      completed(false);
-      [self getAlbums];
+
+    
+    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+
+    if (status == PHAuthorizationStatusAuthorized ) {
+
+    //允许访问
+        completed(true);
     }
-      break;
-    case PHAuthorizationStatusRestricted:{
-      completed(false);
-      [self getAlbums];
+
+    if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied) {
+
+    //不允许
+        completed(false);
+        [self getAlbums];
+    }else if (status == PHAuthorizationStatusNotDetermined){
+        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+
+        if (granted) {
+
+        //允许访问
+           completed(true);
+        }else{
+
+        //不允许访问
+            completed(false);
+            [self getAlbums];
+        }
+
+        });
+
+        }];
     }
-      break;
-    case PHAuthorizationStatusNotDetermined:{
-      completed(true);
-    }
-      break;
-    case PHAuthorizationStatusAuthorized:{
-      completed(true);
-    }
-      break;
-    default:
-      break;
-  }
+
+    }];
 }
 - (void)getCamera{
     NSString*message = [NSString stringWithFormat:@"%@%@%@",@"请在iPhone的""设置-",@"体讯互娱-足球" ,@"-相机中允许使用相机"];

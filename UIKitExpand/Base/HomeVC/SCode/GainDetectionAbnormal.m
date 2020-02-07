@@ -4,6 +4,7 @@
 #import "UIView+SDExtension.h"
 #import "CoordinateDinosaur.h"
 #import "ToolsAuthorization.h"
+#import <Photos/PHPhotoLibrary.h>
 static const CGFloat kBorderW = 100;
 static const CGFloat kMargin = 30;
 @interface GainDetectionAbnormal ()<UIAlertViewDelegate,AVCaptureMetadataOutputObjectsDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
@@ -140,18 +141,54 @@ static const CGFloat kMargin = 30;
 }
 #pragma mark-> 我的相册
 -(void)myAlbum{
-      DEBUG_NSLog(@"我的相册");
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]){
-        UIImagePickerController *controller = [[UIImagePickerController alloc] init];
-        controller.delegate = self;
-        controller.sourceType =  UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-        controller.modalTransitionStyle=UIModalTransitionStyleFlipHorizontal;
-        [self presentViewController:controller animated:YES completion:NULL];
+    
+   
+    
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.delegate = self;
+    imagePickerController.allowsEditing = YES;
+    imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+
+    if (status == PHAuthorizationStatusNotDetermined) {
+        [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+            if(status == PHAuthorizationStatusAuthorized) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    // 用户点击 "OK"
+                     
+                });
+            } else {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    // 用户点击 不允许访问
+                    [self dismissViewControllerAnimated:YES completion:nil];
+                });
+            }
+        }];
+
+        [self presentViewController:imagePickerController animated:YES completion:nil];
+    }else if(status == PHAuthorizationStatusDenied || status == PHAuthorizationStatusRestricted){
+        NSLog(@"buyunxu");
+        // 无权限
+        NSString *msg = @"请在iPhone的”设置-隐私-照片“选项中，允许该应用访问你的照片。";
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:msg preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"好" style:UIAlertActionStyleCancel handler:nil];
+        [alertController addAction:cancelAction];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self presentViewController:alertController animated:YES completion:nil];
+        });
+
     }else{
-       UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"设备不支持访问相册，请在设置->隐私->照片中进行设置！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        [alert show];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self presentViewController:imagePickerController animated:YES completion:nil];
+        });
+
     }
+    
+    
+ 
 }
+
+
 #pragma mark-> imagePickerController delegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
