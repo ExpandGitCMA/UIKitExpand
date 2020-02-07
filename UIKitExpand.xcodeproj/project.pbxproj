@@ -29,10 +29,8 @@
 		03067F9923E41BB100A08E53 /* CareUniversityEcofriendly.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03067F4C23E41BB100A08E53 /* CareUniversityEcofriendly.xib */; };
 		03067F9A23E41BB100A08E53 /* RebuildIllJoy.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03067F4D23E41BB100A08E53 /* RebuildIllJoy.xib */; };
 		03067F9B23E41BB100A08E53 /* RebuildIllJoy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F4E23E41BB100A08E53 /* RebuildIllJoy.m */; };
-		03067F9C23E41BB100A08E53 /* RoarTowardInvestment.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F5123E41BB100A08E53 /* RoarTowardInvestment.m */; };
 		03067F9D23E41BB100A08E53 /* PollinateFeatureEntertainingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F5423E41BB100A08E53 /* PollinateFeatureEntertainingController.m */; };
 		03067F9E23E41BB100A08E53 /* CareUniversityEcofriendly.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F5523E41BB100A08E53 /* CareUniversityEcofriendly.m */; };
-		03067F9F23E41BB100A08E53 /* RoarTowardInvestment.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03067F5723E41BB100A08E53 /* RoarTowardInvestment.xib */; };
 		03067FA023E41BB100A08E53 /* FirmInterior.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F5A23E41BB100A08E53 /* FirmInterior.m */; };
 		03067FA123E41BB100A08E53 /* ResistantPicnic.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F5B23E41BB100A08E53 /* ResistantPicnic.m */; };
 		03067FA223E41BB100A08E53 /* DeceitfulProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F5C23E41BB100A08E53 /* DeceitfulProfileView.m */; };
@@ -72,6 +70,12 @@
 		038A0AF523EC081F00463BFF /* ToolsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A0AF423EC081F00463BFF /* ToolsAuthorization.m */; };
 		840EDAB023ED61770024D946 /* HotContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAAD23ED61770024D946 /* HotContentCell.m */; };
 		840EDAB123ED61770024D946 /* DFCHotContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAAF23ED61770024D946 /* DFCHotContent.m */; };
+		840EDABA23EDAB8B0024D946 /* WKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAB823EDAB8B0024D946 /* WKWebViewVC.m */; };
+		840EDAC823EDC7D90024D946 /* JQLoadingStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840EDABF23EDC7D90024D946 /* JQLoadingStatusView.xib */; };
+		840EDAC923EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC023EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m */; };
+		840EDACA23EDC7D90024D946 /* JQLoadingStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC123EDC7D90024D946 /* JQLoadingStatusView.m */; };
+		840EDACB23EDC7D90024D946 /* JQLoadingStatusView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 840EDAC323EDC7D90024D946 /* JQLoadingStatusView.bundle */; };
+		840EDACC23EDC7D90024D946 /* UIView+LoadState.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC623EDC7D90024D946 /* UIView+LoadState.m */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B34688AD1F15FB8800498E66 /* LatelyTechnicalPlain.m in Sources */ = {isa = PBXBuildFile; fileRef = B34688AC1F15FB8800498E66 /* LatelyTechnicalPlain.m */; };
 		B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D208D41F47E89700F0CE6F /* Assets.xcassets */; };
@@ -156,13 +160,10 @@
 		03067F4E23E41BB100A08E53 /* RebuildIllJoy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RebuildIllJoy.m; sourceTree = "<group>"; };
 		03067F4F23E41BB100A08E53 /* CareUniversityEcofriendly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CareUniversityEcofriendly.h; sourceTree = "<group>"; };
 		03067F5023E41BB100A08E53 /* PollinateFeatureEntertainingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollinateFeatureEntertainingController.h; sourceTree = "<group>"; };
-		03067F5123E41BB100A08E53 /* RoarTowardInvestment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoarTowardInvestment.m; sourceTree = "<group>"; };
 		03067F5223E41BB100A08E53 /* VomitTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VomitTime.h; sourceTree = "<group>"; };
 		03067F5323E41BB100A08E53 /* RebuildIllJoy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RebuildIllJoy.h; sourceTree = "<group>"; };
 		03067F5423E41BB100A08E53 /* PollinateFeatureEntertainingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollinateFeatureEntertainingController.m; sourceTree = "<group>"; };
 		03067F5523E41BB100A08E53 /* CareUniversityEcofriendly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CareUniversityEcofriendly.m; sourceTree = "<group>"; };
-		03067F5623E41BB100A08E53 /* RoarTowardInvestment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoarTowardInvestment.h; sourceTree = "<group>"; };
-		03067F5723E41BB100A08E53 /* RoarTowardInvestment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoarTowardInvestment.xib; sourceTree = "<group>"; };
 		03067F5923E41BB100A08E53 /* DeceitfulProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeceitfulProfileView.h; sourceTree = "<group>"; };
 		03067F5A23E41BB100A08E53 /* FirmInterior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirmInterior.m; sourceTree = "<group>"; };
 		03067F5B23E41BB100A08E53 /* ResistantPicnic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResistantPicnic.m; sourceTree = "<group>"; };
@@ -241,6 +242,16 @@
 		840EDAAD23ED61770024D946 /* HotContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotContentCell.m; sourceTree = "<group>"; };
 		840EDAAE23ED61770024D946 /* HotContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotContentCell.h; sourceTree = "<group>"; };
 		840EDAAF23ED61770024D946 /* DFCHotContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCHotContent.m; sourceTree = "<group>"; };
+		840EDAB723EDAB8B0024D946 /* WKWebViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewVC.h; sourceTree = "<group>"; };
+		840EDAB823EDAB8B0024D946 /* WKWebViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewVC.m; sourceTree = "<group>"; };
+		840EDABF23EDC7D90024D946 /* JQLoadingStatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JQLoadingStatusView.xib; sourceTree = "<group>"; };
+		840EDAC023EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQLoadingIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		840EDAC123EDC7D90024D946 /* JQLoadingStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQLoadingStatusView.m; sourceTree = "<group>"; };
+		840EDAC323EDC7D90024D946 /* JQLoadingStatusView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JQLoadingStatusView.bundle; sourceTree = "<group>"; };
+		840EDAC423EDC7D90024D946 /* UIView+LoadState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LoadState.h"; sourceTree = "<group>"; };
+		840EDAC523EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQLoadingIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		840EDAC623EDC7D90024D946 /* UIView+LoadState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LoadState.m"; sourceTree = "<group>"; };
+		840EDAC723EDC7D90024D946 /* JQLoadingStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQLoadingStatusView.h; sourceTree = "<group>"; };
 		B30F386D1F15B5C7005B5CE6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B34688AB1F15FB8800498E66 /* LatelyTechnicalPlain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatelyTechnicalPlain.h; sourceTree = "<group>"; };
@@ -288,6 +299,7 @@
 		03067F0723E41BB000A08E53 /* ExpandFile */ = {
 			isa = PBXGroup;
 			children = (
+				840EDABE23EDC7D90024D946 /* JQLoadingStatusView */,
 				03067F0823E41BB000A08E53 /* DataBase */,
 				03067F0D23E41BB000A08E53 /* ExUIKit */,
 				03067F1623E41BB000A08E53 /* Category */,
@@ -447,9 +459,8 @@
 				03067F4F23E41BB100A08E53 /* CareUniversityEcofriendly.h */,
 				03067F5523E41BB100A08E53 /* CareUniversityEcofriendly.m */,
 				03067F4C23E41BB100A08E53 /* CareUniversityEcofriendly.xib */,
-				03067F5623E41BB100A08E53 /* RoarTowardInvestment.h */,
-				03067F5123E41BB100A08E53 /* RoarTowardInvestment.m */,
-				03067F5723E41BB100A08E53 /* RoarTowardInvestment.xib */,
+				840EDAB723EDAB8B0024D946 /* WKWebViewVC.h */,
+				840EDAB823EDAB8B0024D946 /* WKWebViewVC.m */,
 				03067FD223E47A1800A08E53 /* SCode */,
 				03067F5823E41BB100A08E53 /* HomeBanner */,
 			);
@@ -576,6 +587,29 @@
 				0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */,
 			);
 			path = TableViewAnimationKit;
+			sourceTree = "<group>";
+		};
+		840EDABE23EDC7D90024D946 /* JQLoadingStatusView */ = {
+			isa = PBXGroup;
+			children = (
+				840EDABF23EDC7D90024D946 /* JQLoadingStatusView.xib */,
+				840EDAC023EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m */,
+				840EDAC123EDC7D90024D946 /* JQLoadingStatusView.m */,
+				840EDAC423EDC7D90024D946 /* UIView+LoadState.h */,
+				840EDAC523EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.h */,
+				840EDAC623EDC7D90024D946 /* UIView+LoadState.m */,
+				840EDAC723EDC7D90024D946 /* JQLoadingStatusView.h */,
+				840EDAC223EDC7D90024D946 /* Resources */,
+			);
+			path = JQLoadingStatusView;
+			sourceTree = "<group>";
+		};
+		840EDAC223EDC7D90024D946 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				840EDAC323EDC7D90024D946 /* JQLoadingStatusView.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B30F386C1F15B5A7005B5CE6 /* AppDelegate */ = {
@@ -799,11 +833,12 @@
 				B3F4F00E1F14A8600005197E /* LaunchScreen.storyboard in Resources */,
 				03067F9923E41BB100A08E53 /* CareUniversityEcofriendly.xib in Resources */,
 				03067FC223E43D0100A08E53 /* InwardVacantBoard.xib in Resources */,
-				03067F9F23E41BB100A08E53 /* RoarTowardInvestment.xib in Resources */,
 				031EBEDF23D6C88E00919BEF /* Main.storyboard in Resources */,
 				0324AC9A23E2DEFA004B4C3E /* date.json in Resources */,
+				840EDACB23EDC7D90024D946 /* JQLoadingStatusView.bundle in Resources */,
 				03067FAC23E41BB100A08E53 /* CrackHandleController.xib in Resources */,
 				B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */,
+				840EDAC823EDC7D90024D946 /* JQLoadingStatusView.xib in Resources */,
 				03067F9A23E41BB100A08E53 /* RebuildIllJoy.xib in Resources */,
 				03067FA423E41BB100A08E53 /* FishWithoutStrikerController.xib in Resources */,
 				03067FA923E41BB100A08E53 /* ObeyStadiumController.xib in Resources */,
@@ -879,11 +914,11 @@
 			files = (
 				03067FB123E41BB100A08E53 /* BeforeFaithfulSomething.m in Sources */,
 				03067F8823E41BB100A08E53 /* UIView+BlurredImage.m in Sources */,
+				840EDACA23EDC7D90024D946 /* JQLoadingStatusView.m in Sources */,
 				0324ACC123E31F4E004B4C3E /* AsFondAssembly.m in Sources */,
 				03067FA723E41BB100A08E53 /* CrackHandleController.m in Sources */,
 				03067F9E23E41BB100A08E53 /* CareUniversityEcofriendly.m in Sources */,
 				840EDAB123ED61770024D946 /* DFCHotContent.m in Sources */,
-				03067F9C23E41BB100A08E53 /* RoarTowardInvestment.m in Sources */,
 				03067FA623E41BB100A08E53 /* OweUnderneathBamboo.m in Sources */,
 				03067FB423E41BB100A08E53 /* ShrinkSexualDisability.m in Sources */,
 				03067F8523E41BB100A08E53 /* UIControl+ExControlayerStyle.m in Sources */,
@@ -930,6 +965,9 @@
 				03067FAE23E41BB100A08E53 /* NurseCordialVehicleController.m in Sources */,
 				03067F8323E41BB100A08E53 /* TwiceSophisticatedAttraction.m in Sources */,
 				03067F8723E41BB100A08E53 /* NSString+paths.m in Sources */,
+				840EDAC923EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m in Sources */,
+				840EDABA23EDAB8B0024D946 /* WKWebViewVC.m in Sources */,
+				840EDACC23EDC7D90024D946 /* UIView+LoadState.m in Sources */,
 				03067FA323E41BB100A08E53 /* TripPhotographerSolemnController.m in Sources */,
 				03067FAA23E41BB100A08E53 /* FortunatelyInfectiousPicnicController.m in Sources */,
 				B3F4F0001F14A8600005197E /* main.m in Sources */,

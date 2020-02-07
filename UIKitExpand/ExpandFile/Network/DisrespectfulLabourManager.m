@@ -120,7 +120,7 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
 
 -(void)getSportsNewspath:(NSString *)path   params:(NSDictionary *)params  completed:(HttpCompletedBlock)completed{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-       manager.requestSerializer.timeoutInterval = 20;
+       manager.requestSerializer.timeoutInterval = 10;
        manager.responseSerializer.acceptableContentTypes =
        [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
        [manager GET:path  parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

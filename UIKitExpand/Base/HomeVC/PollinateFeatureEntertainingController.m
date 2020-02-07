@@ -3,14 +3,10 @@
 #import "GovernIntoPreserveController.h"
 #import "ExtinctAppearance.h"
 #import "GainDetectionAbnormal.h"
-#import "RoarTowardInvestment.h"
 #import "CareUniversityEcofriendly.h"
 #import "CoordinateDinosaur.h"
 #import "DFCHotContent.h"
-
-
-
-
+#import "WKWebViewVC.h"
 
 @interface PollinateFeatureEntertainingController ()<HotContentDelegate>
 @property(nonatomic,strong)DFCHotContent *hotContent;
@@ -18,6 +14,9 @@
 @property (nonatomic,assign) NSInteger currentPage;
 @property (nonatomic,assign) NSInteger contentPage;
 @end
+
+
+
 @implementation PollinateFeatureEntertainingController
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,6 +25,7 @@
     _contentPage = 0 ;
     
 }
+
 -(void)initUIView{
     [self whisk];
     [self.tableView registerNib:[UINib nibWithNibName:@"CareUniversityEcofriendly" bundle:nil] forCellReuseIdentifier:@"cell"];
@@ -54,8 +54,6 @@
 
 - (void)getLoad{
     
-
-    
     if (_currentPage < _totalPage) {
                _currentPage++;
                 NSString *page = [NSString stringWithFormat:@"%ld",(long)_currentPage];
@@ -65,10 +63,9 @@
                     
               [self.tableView.mj_footer endRefreshingWithNoMoreData];
          }
-    
-
-       
 }
+
+
 - (void)simplyTallWidth{
 
     if (_contentPage == 0) {
@@ -79,9 +76,9 @@
         
          [self selectStatus:nil page:_contentPage];
     }
-   
-
 }
+
+
 
 - (void)getBrandGoodDatasours:(NSString *)page{
      NSDictionary *dic = @{@"id":@"TY43,FOCUSTY43,TYTOPIC", @"page":page};
@@ -147,7 +144,7 @@
 
 -(DFCHotContent*)hotContent{
     if (!_hotContent) {
-        _hotContent = [[DFCHotContent alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 50) HotSearch:@[@"头条",@"足球快讯",@"亚冠"]];
+        _hotContent = [[DFCHotContent alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 50) HotSearch:@[@"推荐",@"足球快讯",@"凤凰体育资讯"]];
         _hotContent.delegate = self;
     }
     return _hotContent;
@@ -208,14 +205,12 @@
                   [self.tableView reloadData];
            }
        }];
-            
-
+        
+        
     }
  
     
 }
-
-
 
 
 
@@ -226,24 +221,26 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-       NewsModel *model = self.dataSource [indexPath.row];
-       NSString *url = model.link[@"weburl"];
-       if ([url isNull]){
-              CoordinateDinosaur *inosaur = [[CoordinateDinosaur alloc]initWithUrl:url];
-              inosaur.hidesBottomBarWhenPushed = YES;
-              [self.navigationController pushViewController:inosaur animated:YES];
-       }else if ([model.content isNull]){
-            GovernIntoPreserveController * homeDetailVC = [[GovernIntoPreserveController alloc] init];
-            homeDetailVC.hidesBottomBarWhenPushed = YES;
-            homeDetailVC.conten = model.content;
-            [self.navigationController pushViewController:homeDetailVC animated:YES];
-       }else{
-           
-            
-       }
     
     
-  
+    NewsModel *model = [self.dataSource SafetyObjectAtIndex:indexPath.row];
+    GovernIntoPreserveController * homeDetailVC = [[GovernIntoPreserveController alloc] init];
+    homeDetailVC.hidesBottomBarWhenPushed = YES;
+    
+    if ([model.content isNull]) {
+        homeDetailVC.url = model.thumbnail;
+        homeDetailVC.conten = model.content;
+        [self.navigationController pushViewController:homeDetailVC animated:YES];
+    }else{
+        
+        WKWebViewVC* webViewVC = [[WKWebViewVC alloc]initGetLoadWitheresponseObjectUrl:model.link[@"url"] banner:@[]];
+        webViewVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:webViewVC animated:YES];
+    }
+    
+    
+    
+ 
     
 }
 

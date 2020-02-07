@@ -15,6 +15,7 @@
 @property (nonatomic, copy)NSString *source;
 @property (nonatomic, copy)NSString *content;
 @property (nonatomic, copy)NSDictionary *link;
+@property (nonatomic, copy)NSString *intro;
 
 + (NewsModel *)setModelWithDictionary:(NSDictionary *)dic ;
 @end
