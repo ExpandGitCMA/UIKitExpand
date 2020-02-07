@@ -97,7 +97,7 @@
         return defutHeight+[self tableViewForRowAtIndexCellHeight:model.title];
     }else if ([obj isKindOfClass:[ NewsModel class]]){
         NewsModel *model = self.dataSource [indexPath.row];
-        CGFloat defutHeight = 110;
+        CGFloat defutHeight = 80;
         return defutHeight+[self tableViewForRowAtIndexCellHeight:model.title];
     }
     return 70;
@@ -111,8 +111,8 @@
        homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@%@",model.pubtime,@"\n",model.tags,model.title];
        }else if ([obj isKindOfClass:[ NewsModel class]]){
             NewsModel *model = self.dataSource [indexPath.row];
-            homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.time,@"\n",model.title];
-           homeDetailVC.url = model.image;
+            homeDetailVC.conten = model.content;
+            homeDetailVC.url =    model.image;
        }
      [self.navigationController pushViewController:homeDetailVC animated:YES];
 }
