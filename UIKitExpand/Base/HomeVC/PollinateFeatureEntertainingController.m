@@ -7,6 +7,7 @@
 #import "CoordinateDinosaur.h"
 #import "DFCHotContent.h"
 #import "WKWebViewVC.h"
+#import "UnderlineDizzyTable.h"
 @interface PollinateFeatureEntertainingController ()<HotContentDelegate>
 @property(nonatomic,strong)DFCHotContent *hotContent;
 @property (nonatomic,assign)NSInteger totalPage;
@@ -78,12 +79,14 @@
                      }
                }
              dispatch_async(dispatch_get_main_queue(), ^{
+                     [UnderlineDizzyTable hideActivityIndicator];
                      self.tableView.tableHeaderView =  [self DeceitfultView];
                      [self.tableView.mj_header endRefreshing];
                      [self.tableView.mj_footer endRefreshing];
                      [self.tableView reloadData];
              });
          }else{
+                 [UnderlineDizzyTable hideActivityIndicator];
                 [self.tableView.mj_header endRefreshing];
                 [self.tableView.mj_footer endRefreshing];
                 [self.tableView reloadData];
@@ -118,9 +121,11 @@
     return _hotContent;
 }
 -(void)selectStatus:(DFCHotContent*)selectStatus  page:(NSInteger)page{
+     [UnderlineDizzyTable showActivityIndicator];
     NSMutableArray*data = [[NSMutableArray alloc]init];
     _contentPage = page ;
     [self.dataSource removeAllObjects];
+    [self.tableView reloadData];
     if (page==0) {
         _currentPage = 1;
           NSString *page = [NSString stringWithFormat:@"%ld", (long)_currentPage];
@@ -134,9 +139,11 @@
             }
             self.dataSource = [self getRandomArrFrome:[data copy]];
             dispatch_async(dispatch_get_main_queue(), ^{
+                    _currentPage = _totalPage;
+                     [UnderlineDizzyTable hideActivityIndicator];
                     [self.tableView.mj_header endRefreshing];
                     [self.tableView.mj_footer endRefreshing];
-                    [self.tableView.mj_footer endRefreshingWithNoMoreData];
+//                    [self.tableView.mj_footer endRefreshingWithNoMoreData];
                     [self.tableView reloadData];
                     [self consistViaSky:self.tableView];
             });
@@ -154,12 +161,15 @@
                  }
                self.dataSource = [self getRandomArrFrome:[data copy]];
                dispatch_async(dispatch_get_main_queue(), ^{
+                       _currentPage = _totalPage;
+                       [UnderlineDizzyTable hideActivityIndicator];
                        [self.tableView.mj_header endRefreshing];
                        [self.tableView.mj_footer endRefreshing];
-                       [self.tableView.mj_footer endRefreshingWithNoMoreData];
+//                       [self.tableView.mj_footer endRefreshingWithNoMoreData];
                        [self.tableView reloadData];
                });
            }else{
+                  [UnderlineDizzyTable hideActivityIndicator];
                   [self.tableView.mj_header endRefreshing];
                   [self.tableView.mj_footer endRefreshing];
                   [self.tableView reloadData];

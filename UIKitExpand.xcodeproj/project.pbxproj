@@ -1144,7 +1144,7 @@
 					"-ObjC",
 					"-l\"AFNetworking\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.OrgyBall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.MutualOrgy;
 				PRODUCT_NAME = "体讯互娱-足球";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1177,7 +1177,7 @@
 					"-ObjC",
 					"-l\"AFNetworking\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.OrgyBall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.MutualOrgy;
 				PRODUCT_NAME = "体讯互娱-足球";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
