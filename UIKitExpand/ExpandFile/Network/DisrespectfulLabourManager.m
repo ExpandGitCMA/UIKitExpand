@@ -115,9 +115,6 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
         }
     }
 }
-
-
-
 -(void)getSportsNewspath:(NSString *)path   params:(NSDictionary *)params  completed:(HttpCompletedBlock)completed{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
        manager.requestSerializer.timeoutInterval = 10;
@@ -130,9 +127,7 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
                completed(NO, @{});
            }
        }];
-    
 }
-
 -(void)sailThroughAlternativeMineral:(NSDictionary *)params completed:(HttpCompletedBlock)completed {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer.timeoutInterval = 5;
@@ -146,8 +141,6 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
         }
     }];
 }
-
-
 - (void )borrowNosebleed:(NSString *)name completed:(HttpCompletedBlock)completed {
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"json"];
     NSData *data = [[NSData alloc] initWithContentsOfFile:path];

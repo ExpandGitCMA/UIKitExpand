@@ -4,7 +4,6 @@
 @implementation NurseCordialVehicleController
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
     [self dataSource];
 }
 -(DeceitfulProfileView*)DeceitfultView{
@@ -40,14 +39,12 @@
         _tableView.emptyDataSetDelegate = self;
         _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(simplyTallWidth)];
        _tableView.mj_footer =[MJRefreshAutoGifFooter footerWithRefreshingTarget:self refreshingAction:@selector(getLoad)];
-        
         [_tableView.mj_header beginRefreshing];
          [self.view addSubview:_tableView];
     }
     return _tableView;
 }
 - (void)getLoad{
-    
 }
 - (void)simplyTallWidth{
      [_tableView.mj_footer resetNoMoreData];

@@ -16,6 +16,4 @@
 #else
 #define DEBUG_NSLog(format, ...)
 #endif
-
-
 #endif 

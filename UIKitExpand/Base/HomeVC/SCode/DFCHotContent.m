@@ -1,5 +1,3 @@
-
-
 #import "DFCHotContent.h"
 #import "HotContentCell.h"
 #import "SportsColorHeader.h"
@@ -10,7 +8,6 @@
 @property(nonatomic,strong)UIView  *line;
 @property(nonatomic,strong)UICollectionView *collectionView;
 @end
-
 static int const content = 50;
 @implementation DFCHotContent
 -(instancetype)initWithFrame:(CGRect)frame HotSearch:(NSArray*)hotSearch{
@@ -20,7 +17,6 @@ static int const content = 50;
     }
     return self;
 }
-
 -(void)setUpView{
     UICollectionViewFlowLayout *flowLayout=[[UICollectionViewFlowLayout alloc] init];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
@@ -32,22 +28,17 @@ static int const content = 50;
     _collectionView.backgroundColor=[UIColor whiteColor];
     [_collectionView registerClass:[HotContentCell class] forCellWithReuseIdentifier:@"cell"];
     [self addSubview:_collectionView];
-    
-    //分割线
     _line = [[UIView alloc] init];
     _line.frame=CGRectMake(0, content, self.frame.size.width, 0.5);
     _line.backgroundColor= kUIColorFromRGB(LineColore);
     [self addSubview:_line];
 }
-
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return _hotSearch.count;
 }
-
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1;
 }
-
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     HotContentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell"forIndexPath:indexPath];
     cell.titleLabel.text = [_hotSearch objectAtIndex:indexPath.row];
@@ -59,43 +50,31 @@ static int const content = 50;
     }
     return cell;
 }
-
-
 #pragma mark 设置选中状态
 -(void)setSelectStatus:(NSIndexPath *)indexPath{
     _isCurrentSelect = indexPath.row;
     [_collectionView selectItemAtIndexPath:indexPath animated:YES scrollPosition:UICollectionViewScrollPositionCenteredHorizontally];
     [_collectionView reloadData];
 }
-
-
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     if ([self.delegate respondsToSelector:@selector(selectStatus:page:)]) {
         [self.delegate selectStatus:self page:indexPath.row];
     }
     [self setSelectStatus:indexPath];
 }
-
-//设置每个cell的大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-
       CGFloat defutMaxWidth =  [self itemCelBounds:[_hotSearch objectAtIndex:indexPath.row]];
       return CGSizeMake(defutMaxWidth, content);
 }
-
 -(CGFloat)itemCelBounds:(NSString *)tring{
-    
     CGSize maxSize = [tring sizeWithAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"PingFang-SC-Medium" size:20.0f]}];
     return ceilf(maxSize.width);
 }
-
 - (UIEdgeInsets)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(0, 15, 0,15); // 顶部, left, 底部, right
+    return UIEdgeInsetsMake(0, 15, 0,15); 
 }
-
 -(void)reloadData:(NSInteger)index{
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
     [self setSelectStatus:indexPath];
 }
-
 @end

@@ -1,16 +1,11 @@
-
-
 #import "WKWebViewVC.h"
 #import <MJRefresh.h>
 #import "SportsBallFile.h"
 #import "DisrespectfulLabourManager.h"
 #import "DeceitfulProfileView.h"
 #import "UnderlineDizzyTable.h"
-
 #import "UIView+LoadState.h"
-
 @interface WKWebViewVC ()<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
-
 @property(nonatomic,copy)WKWebView *webView;
 @property(nonatomic,copy)NSString *metaUrl;
 @property(nonatomic,copy)NSArray*banner;
@@ -18,30 +13,20 @@
 @property(nonatomic,strong)UIView * headerView;
 @end
 @implementation WKWebViewVC
-
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
-
 #define IPHONE_X \
 ({BOOL isPhoneX = NO;\
 if (@available(iOS 11.0, *)) {\
 isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
 }\
 (isPhoneX);})
-
-
-
 -(instancetype)initGetLoadWitheresponseObjectUrl:(NSString*)url banner:(NSArray*)banner{
     if(self = [super init]){
         [self.view showLoadStateWithMaskViewStateType:viewStateWithLoading];
-        
         WS(weakSelf);
-        //加载状态回调
         [self.view loadStateReturnBlock:^(ViewStateReturnType viewStateReturnType) {
-            if (viewStateReturnType == ViewStateReturnReloadViewDataType) {//用户点击了重新加载
-                //显示加载中
+            if (viewStateReturnType == ViewStateReturnReloadViewDataType) {
                 [weakSelf.view showLoadStateWithMaskViewStateType:viewStateWithLoading];
-           
-                //重新请求数据
                 [weakSelf getLoad:url];
             }
         }];
@@ -50,16 +35,12 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     }
     return self;
 }
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"详情";
     [self webView];
     [self deceitfultView];
-
 }
-
 -(DeceitfulProfileView*)deceitfultView{
     if (!_deceitfultView) {
         _deceitfultView = [DeceitfulProfileView cycleScrollViewWithFrame:CGRectMake(0,IPHONE_X?88:64, SCREEN_WIDTH, 190) delegate:nil];
@@ -71,38 +52,26 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     }
     return _deceitfultView;
 }
-
-
 -(WKWebView*)webView{
     if (!_webView) {
          _webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, IPHONE_X?278:254, SCREEN_WIDTH, SCREEN_HEIGHT-(IPHONE_X?278:254)) configuration:[[WKWebViewConfiguration alloc] init]];
         _webView.UIDelegate = self;
         _webView.navigationDelegate = self;
         _webView.scrollView.bounces = NO;
-        //打开垂直滚动条
         _webView.scrollView.showsVerticalScrollIndicator=YES;
-        //关闭水平滚动条
         _webView.scrollView.showsHorizontalScrollIndicator=NO;
-        //设置滚动视图的背景颜色
         _webView.scrollView.backgroundColor = [UIColor whiteColor];
-
-        //两条属性关闭黑影
        _webView.backgroundColor = [UIColor clearColor];
        _webView.opaque = NO;
         [self.view addSubview:_webView];
         _webView.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             [self->_webView reload];
-  
         }];
     }
     return _webView;
 }
-
 - (void)getLoad:(NSString*)url{
-    
-    
     [[DisrespectfulLabourManager sharedManager] getSportsNewspath:url params:@{} completed:^(BOOL ret, id obj) {
-               
             if (ret) {
                 NSMutableArray*data = [[NSMutableArray alloc]init];
                  NSDictionary*  meta = [obj objectForKey:@"meta"];
@@ -124,48 +93,27 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
                             }else{
                                  [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
                             }
-                                                        
                              DEBUG_NSLog(@"=======>html=%@ date=%@",html,data)
-                            
                         }else{
                              [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
                         }
-                  
                        }];
                 }else{
-                    
                      [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
                 }
-                        
-                        
            }];
-    
-    
-
-
-    
 }
-
-
-
-
 #pragma mark - WKNavigationDelegate
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation{
- 
 }
 - (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation{
 }
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
    [webView.scrollView.mj_header endRefreshing];
- 
 }
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation{
      [webView.scrollView.mj_header endRefreshing];
-    
 }
-
-
-
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation{
    DEBUG_NSLog(@"接收到服务器跳转请求之后调用=%@",webView.URL.absoluteString);
 }
@@ -207,7 +155,5 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     [super didReceiveMemoryWarning];
 }
 - (void)dealloc {
-   
 }
 @end
-

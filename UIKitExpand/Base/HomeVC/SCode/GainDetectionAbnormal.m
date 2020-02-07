@@ -141,34 +141,25 @@ static const CGFloat kMargin = 30;
 }
 #pragma mark-> 我的相册
 -(void)myAlbum{
-    
-   
-    
     UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
     imagePickerController.delegate = self;
     imagePickerController.allowsEditing = YES;
     imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
-
     if (status == PHAuthorizationStatusNotDetermined) {
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
             if(status == PHAuthorizationStatusAuthorized) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    // 用户点击 "OK"
-                     
                 });
             } else {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    // 用户点击 不允许访问
                     [self dismissViewControllerAnimated:YES completion:nil];
                 });
             }
         }];
-
         [self presentViewController:imagePickerController animated:YES completion:nil];
     }else if(status == PHAuthorizationStatusDenied || status == PHAuthorizationStatusRestricted){
         NSLog(@"buyunxu");
-        // 无权限
         NSString *msg = @"请在iPhone的”设置-隐私-照片“选项中，允许该应用访问你的照片。";
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:msg preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"好" style:UIAlertActionStyleCancel handler:nil];
@@ -176,19 +167,12 @@ static const CGFloat kMargin = 30;
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self presentViewController:alertController animated:YES completion:nil];
         });
-
     }else{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self presentViewController:imagePickerController animated:YES completion:nil];
         });
-
     }
-    
-    
- 
 }
-
-
 #pragma mark-> imagePickerController delegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {

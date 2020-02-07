@@ -55,42 +55,25 @@ static ToolsAuthorization *_authorization = nil;
   }
 }
 -(void)requestAuthorizationAlbums:(ToolsAuthCompletedBlock)completed{
-
-    
     [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-
     if (status == PHAuthorizationStatusAuthorized ) {
-
-    //允许访问
         completed(true);
     }
-
     if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied) {
-
-    //不允许
         completed(false);
         [self getAlbums];
     }else if (status == PHAuthorizationStatusNotDetermined){
         [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-
         dispatch_async(dispatch_get_main_queue(), ^{
-
         if (granted) {
-
-        //允许访问
            completed(true);
         }else{
-
-        //不允许访问
             completed(false);
             [self getAlbums];
         }
-
         });
-
         }];
     }
-
     }];
 }
 - (void)getCamera{

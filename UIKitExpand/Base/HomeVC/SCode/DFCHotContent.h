@@ -1,8 +1,5 @@
-
-
 #import <UIKit/UIKit.h>
 @class DFCHotContent;
-
 @protocol  HotContentDelegate <NSObject>
 @optional
 -(void)selectStatus:(DFCHotContent*)selectStatus  page:(NSInteger)page;

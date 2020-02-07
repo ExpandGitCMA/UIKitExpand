@@ -13,7 +13,6 @@
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *dataSource;
 @property(nonatomic,strong)DeceitfulProfileView *DeceitfultView;
-
 - (void)simplyTallWidth;
 - (void)getLoad;
 -(NSMutableArray*)getRandomArrFrome:(NSArray*)arr;

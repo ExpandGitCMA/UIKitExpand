@@ -67,7 +67,6 @@
      [webView.scrollView.mj_header endRefreshing];
      [UnderlineDizzyTable hideActivityIndicator];
 }
-
 -(void)setCodeAliment:(WebViewCodeAliment)codeAliment{
     if (codeAliment==WebViewCodeCenter) {
         [self.navigationController.navigationItem setHidesBackButton:YES];
@@ -75,7 +74,6 @@
         [self.navigationController.navigationBar.backItem setHidesBackButton:YES];
     }
 }
-
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation{
    DEBUG_NSLog(@"接收到服务器跳转请求之后调用=%@",webView.URL.absoluteString);
 }
