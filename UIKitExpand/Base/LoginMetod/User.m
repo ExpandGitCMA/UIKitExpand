@@ -12,6 +12,19 @@
 
 @implementation User
 
+-(NSString*)description{
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+    uint count ;
+    objc_property_t  *properties = class_copyPropertyList([self class], &count);
+    for (int i = 0; i<count; i++) {
+        objc_property_t   property = properties[i];
+        NSString*name = @(property_getName(property));
+        id value = [self valueForKey:name]? :@"nil";
+        [dictionary  setObject:value forKey:name];
+    }
+    free(properties);
+    return [NSString stringWithFormat:@"<%@: %p> ------%@",[self class],self,dictionary];
+}
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {}
 + (instancetype)userWithDict:(NSDictionary *)dict {

@@ -131,6 +131,34 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
            }
        }];
 }
+
+
+-(void)requestWithMetod:(NSString *)path  params :(NSDictionary *)params  completed:(HttpCompletedBlock)completed{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer.timeoutInterval = 10;
+    manager.responseSerializer.acceptableContentTypes =
+    [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
+  
+    
+    [manager POST:path parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+      
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"responseObject=================>%@",responseObject);
+        completed(YES, responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSString *errStr = [self getCommentErrorString:error];
+        NSLog(@"errStr=================>%@",errStr);
+         NSLog(@"error.userInfo=================>%@",error.userInfo);
+        if (error) {
+            completed(NO, @{});
+        }
+    }];
+    
+}
+
 -(void)sailThroughAlternativeMineral:(NSDictionary *)params completed:(HttpCompletedBlock)completed {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer.timeoutInterval = 5;

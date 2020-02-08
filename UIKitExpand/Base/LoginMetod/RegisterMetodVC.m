@@ -1,89 +1,101 @@
-//
-//  RegisterMetodVC.m
-//  QuLeZuQiu
-//
-//  Created by 疯子 on 2019/12/25.
-//  Copyright © 2019 fengzi. All rights reserved.
-//
+
 
 #import "RegisterMetodVC.h"
+#import "SystemNavigationCapture.h"
 
+#import <SVProgressHUD.h>
 
-
+#import "UserDefaultManager.h"
 
 @interface RegisterMetodVC ()<UITextFieldDelegate>
 
 
-@property (weak, nonatomic) IBOutlet UITextField *registedZhangHaoField;
-@property (weak, nonatomic) IBOutlet UITextField *registedMiMaField;
-
-
+@property (weak, nonatomic) IBOutlet UITextField *accountField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
 
 @end
 
 
+
 @implementation RegisterMetodVC
-
-
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES];
-}
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.registedZhangHaoField addTarget:self action:@selector(zhangHaofieldDidChange:) forControlEvents:UIControlEventEditingChanged];
-    [self.registedMiMaField addTarget:self action:@selector(zhangHaofieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+
+    [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavLeftStyle barTarget:self action:@selector(colse) title:@"navigation_back"];
 }
 
 
--(void)zhangHaofieldDidChange:(UITextField *)textfield{
-    if (textfield == self.registedZhangHaoField) {
-        if (textfield.text.length >= 11) {
-            textfield.text = [textfield.text substringToIndex:11];
-        }
-    }
-    if (textfield == self.registedMiMaField) {
-        if (textfield.text.length >= 10) {
-            textfield.text = [textfield.text substringToIndex:10];
-        }
-    }
-}
 
+-(void)colse{
 
-- (IBAction)regisCLosedBtnAction:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
-- (IBAction)registedZhuCeBtnAction:(UIButton *)sender {
-//    if (self.registedZhangHaoField.text.length == 0) {
-//        [SVProgressHUD showInfoWithStatus:@"请输入账号"];
-//        return;
-//    }
-//    if (self.registedMiMaField.text.length == 0) {
-//        [SVProgressHUD showInfoWithStatus:@"请输入密码"];
-//        return;
-//    }
-//    [SVProgressHUD show];
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [SVProgressHUD showSuccessWithStatus:@"注册成功"];
-//        [self dismissViewControllerAnimated:YES completion:nil];
-//    });
+- (IBAction)registedAction:(UIButton *)sender {
+  
+    if (_accountField.text.length == 0) {
+         [SVProgressHUD showInfoWithStatus:@"请输入账号"];
+         return;
+     }
+     if (_passwordField.text.length == 0) {
+         [SVProgressHUD showInfoWithStatus:@"请输入密码"];
+         return;
+     }
+    NSDictionary*dict = @{
+        @"login_type":@"0",
+        @"identity_no":@"1003",
+        @"dev_name":@"",
+        @"imei":@"B900E334868556ejrwowq]r8576BF3031",
+        @"dev_name":@"iPhone6",
+        @"app_type":@"2",
+        @"username":_accountField.text,
+        @"password":_passwordField.text,
+    };
     
+    [SVProgressHUD show];
     
+    [[HttpNetWorkManager sharedManager] requestWithMetod:URL_Login params:dict completed:^(BOOL ret, id obj) {
     
+        if (ret) {
+            DEBUG_NSLog(@"======注册==%@",obj)
+            [SVProgressHUD showSuccessWithStatus:@"注册成功"];
+              User*user = [ User userWithDict:@{
+                  @"mobile": _accountField.text,
+                  @"name" : _accountField.text,
+                  @"token":@"eyJleHAiOjE1ODM3NjIyNzMsInVzZXJfaWQiOjQ0OTcsImlDzzQBGtUQ9zB9ZZQ7iDPH0Gp6cTAU",
+                  @"uid":@"wQdej5",
+              }];
+            [[UserDefaultManager sharedDefaultManager]saveAccount:user];
+            [self dismissViewControllerAnimated:YES completion:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"RegisterMetod" object:nil];
+        
+        }else{
+              [SVProgressHUD showInfoWithStatus:@"网络不畅,请稍微尝试"];
+            
+        }
+       
+        
+    }];
 }
-
 
 - (IBAction)registedAgreementAction:(UIButton *)sender {
-//    QuLePrivateViewController * privateVC = [[QuLePrivateViewController alloc] init];
-//       UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:privateVC];
-//       [self presentViewController:navc animated:YES completion:nil];
+
+     [LatelyMetodRouter switchTopushUserPrivacyVC:self];
 }
 
 
+// 只能输入字母和数字
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"] invertedSet];
+    NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
+    
+    if (textField.text.length>12) {
+        return NO;
+    }
+    return [string isEqualToString:filtered];
+}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];

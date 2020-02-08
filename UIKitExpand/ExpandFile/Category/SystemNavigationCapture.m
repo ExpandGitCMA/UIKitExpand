@@ -1,4 +1,4 @@
-#import "ShineOpeningTechnician.h"
+#import "SystemNavigationCapture.h"
 @implementation UINavigationController (ExpandBar)
 -(void)captureNavigationType:(NavigationType)type
              NavigationStyle:(NavigationStyle)style

@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "SportsBallFile.h"
 #import "SportsColorHeader.h"
-#import "ShineOpeningTechnician.h"
+#import "SystemNavigationCapture.h"
 #import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
 #import "MJRefresh.h"
 #import "GeneralBanner.h"
@@ -12,6 +12,7 @@
 #import "CJWRefreshHeader.h"
 #import "CJWRefreshFooter.h"
 
+#import "LatelyMetodRouter.h"
 
 @interface BaseMetodVC : UIViewController<UITableViewDelegate, UITableViewDataSource,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate,GeneralDelegate>
 @property (nonatomic, strong)UITableView *tableView;

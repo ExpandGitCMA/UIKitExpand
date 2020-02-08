@@ -15,5 +15,5 @@ typedef void (^HttpCompletedBlock)(BOOL ret, id obj);
 - (void)borrowNosebleed:(NSString *)name completed:(HttpCompletedBlock)completed;
 -(void)getSportsNewspath:(NSString *)path   params:(NSDictionary *)params  completed:(HttpCompletedBlock)completed;
 
-
+-(void)requestWithMetod:(NSString *)path  params :(NSDictionary *)params  completed:(HttpCompletedBlock)completed;
 @end

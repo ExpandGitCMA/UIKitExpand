@@ -11,14 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface User : NSObject
-@property (nonatomic,copy) NSString *imgUrl; // 头像
-@property (nonatomic,copy) NSString *name;  //  姓名
-@property (nonatomic,copy) NSString *mobile;    // 手机号
-@property (nonatomic,copy) NSString *sex;   // 性别
-@property (nonatomic,copy) NSString *createDate;    // 创建时间
-@property (nonatomic,copy) NSString *userCode;   // 账号
-@property (nonatomic,copy) NSString *userId;    // 用户id
-@property (nonatomic,copy) NSString *userToken; // token
+
+@property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *mobile;
+@property (nonatomic,copy) NSString *token;
+@property (nonatomic,copy) NSString *uid;
+@property (nonatomic,copy) NSDictionary*user_info;
+
 + (instancetype)userWithDict:(NSDictionary *)dict;
 @end
 

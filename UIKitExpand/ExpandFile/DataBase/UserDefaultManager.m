@@ -57,4 +57,11 @@ static UserDefaultManager *userManager = nil;
     _user = nil;
 }
 
++ (BOOL)isLogin{
+    User *user =  [UserDefaultManager sharedDefaultManager].user ;
+    if (user.token && user.token.length > 0 && user.uid != nil) {
+        return YES;
+    }
+    return NO;
+}
 @end

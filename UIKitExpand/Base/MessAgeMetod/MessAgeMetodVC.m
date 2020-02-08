@@ -14,6 +14,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self tableView];
+    self.title =@"消息中心";
 }
 
 

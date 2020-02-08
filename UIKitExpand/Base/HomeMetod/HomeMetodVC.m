@@ -1,13 +1,15 @@
 #import "HomeMetodVC.h"
 #import "VomitTime.h"
 #import "RuleDetailsVC.h"
-#import "MessAgeMetodVC.h"
 #import "GainDetectionAbnormal.h"
 #import "HomeNewCell.h"
 #import "CoordinateDinosaur.h"
 #import "DFCHotContent.h"
 #import "WKWebViewVC.h"
+
 #import "UnderlineDizzyTable.h"
+#import "UserDefaultManager.h"
+
 @interface HomeMetodVC ()<HotContentDelegate>
 @property(nonatomic,strong)DFCHotContent *hotContent;
 @property (nonatomic,assign)NSInteger totalPage;
@@ -154,18 +156,27 @@
     return 120;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NewsModel *model = [self.dataSource SafetyObjectAtIndex:indexPath.row];
-    RuleDetailsVC * homeDetailVC = [[RuleDetailsVC alloc] init];
-    homeDetailVC.hidesBottomBarWhenPushed = YES;
-    if ([model.content isNull]) {
-        homeDetailVC.url = model.thumbnail;
-        homeDetailVC.conten = model.content;
-        [self.navigationController pushViewController:homeDetailVC animated:YES];
+    
+    
+    if ([UserDefaultManager isLogin]) {
+      NewsModel *model = [self.dataSource SafetyObjectAtIndex:indexPath.row];
+      RuleDetailsVC * homeDetailVC = [[RuleDetailsVC alloc] init];
+      homeDetailVC.hidesBottomBarWhenPushed = YES;
+      if ([model.content isNull]) {
+          homeDetailVC.url = model.thumbnail;
+          homeDetailVC.conten = model.content;
+          [self.navigationController pushViewController:homeDetailVC animated:YES];
+      }else{
+          WKWebViewVC* webViewVC = [[WKWebViewVC alloc]initGetLoadWitheresponseObjectUrl:model.link[@"url"] banner:@[]];
+          webViewVC.hidesBottomBarWhenPushed = YES;
+          [self.navigationController pushViewController:webViewVC animated:YES];
+      }
     }else{
-        WKWebViewVC* webViewVC = [[WKWebViewVC alloc]initGetLoadWitheresponseObjectUrl:model.link[@"url"] banner:@[]];
-        webViewVC.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:webViewVC animated:YES];
+         [LatelyMetodRouter switchTopresentLoginMetodVC:self];
     }
+    
+    
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -174,13 +185,7 @@
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.hidden=NO;
 }
-#pragma mark 点击搜索框点击事件
-- (void)searchClick{
-     MessAgeMetodVC * homeDetailVC = [[MessAgeMetodVC alloc] init];
-     homeDetailVC.hidesBottomBarWhenPushed = YES;
-     homeDetailVC.title = @"热点搜索";
-     [self.navigationController pushViewController:homeDetailVC animated:YES];
-}
+
 -(void)whiskClick{
     GainDetectionAbnormal *newCode = [[GainDetectionAbnormal alloc]init];
     newCode.hidesBottomBarWhenPushed = YES;
@@ -188,9 +193,12 @@
 }
 #pragma mark - 点击消息按钮
 - (void)msgClick {
-    MessAgeMetodVC * homeDetailVC = [[MessAgeMetodVC alloc] init];
-    homeDetailVC.hidesBottomBarWhenPushed = YES;
-    homeDetailVC.title = @"消息中心";
-    [self.navigationController pushViewController:homeDetailVC animated:YES];
+    
+    if ([UserDefaultManager isLogin]) {
+        [LatelyMetodRouter switchTopushMessAgeMetodVC:self];
+    }else{
+        [LatelyMetodRouter switchTopresentLoginMetodVC:self];
+    }
+    
 }
 @end

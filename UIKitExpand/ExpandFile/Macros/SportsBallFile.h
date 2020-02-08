@@ -3,6 +3,10 @@
 #import "Safety.h"
 #import "EXTScope.h"
 #import "SportsBallAppUrl.h"
+
+
+
+
 #define ISIPADIDIOM ([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPhone)
 #define SCREEN_WIDTH ([UIScreen  mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
@@ -16,5 +20,9 @@
 #else
 #define DEBUG_NSLog(format, ...)
 #endif
+
+
 #define CJW_1PX_WIDTH (1 / [UIScreen mainScreen].scale)
+
+
 #endif 

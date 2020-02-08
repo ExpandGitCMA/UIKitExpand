@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UserPrivacy</key>
+	<string>UserPrivacyVC</string>
+	<key>FeedbackMetod</key>
+	<string>FeedbackMetodVC</string>
+	<key>AboutUsMetod</key>
+	<string>AboutUsMetodVC</string>
+	<key>LoginMetod</key>
+	<string>LoginMetodVC</string>
+	<key>RegisterMetod</key>
+	<string>RegisterMetodVC</string>
+	<key>MessAgeMetod</key>
+	<string>MessAgeMetodVC</string>
+	<key>UsSystem</key>
+	<string>UsSystemVC</string>
+</dict>
+</plist>

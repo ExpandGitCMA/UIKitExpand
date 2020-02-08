@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(instancetype)sharedDefaultManager;
 - (void)saveAccount:(User *)user;
 - (void)removeAccount;
++ (BOOL)isLogin;
 @end
 
 NS_ASSUME_NONNULL_END
