@@ -76,6 +76,11 @@
 		840EDACA23EDC7D90024D946 /* JQLoadingStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC123EDC7D90024D946 /* JQLoadingStatusView.m */; };
 		840EDACB23EDC7D90024D946 /* JQLoadingStatusView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 840EDAC323EDC7D90024D946 /* JQLoadingStatusView.bundle */; };
 		840EDACC23EDC7D90024D946 /* UIView+LoadState.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC623EDC7D90024D946 /* UIView+LoadState.m */; };
+		84E547C423EE8C7200422C37 /* CJWProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547BD23EE8C7200422C37 /* CJWProgressView.m */; };
+		84E547C523EE8C7200422C37 /* pull_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E547BF23EE8C7200422C37 /* pull_refresh_arrow@2x.png */; };
+		84E547C623EE8C7200422C37 /* CJWRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547C023EE8C7200422C37 /* CJWRefreshFooter.m */; };
+		84E547C723EE8C7200422C37 /* CJWRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547C123EE8C7200422C37 /* CJWRefreshHeader.m */; };
+		84E547C823EE8C7200422C37 /* CJWActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547C223EE8C7200422C37 /* CJWActivityIndicatorView.m */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B34688AD1F15FB8800498E66 /* LatelyTechnicalPlain.m in Sources */ = {isa = PBXBuildFile; fileRef = B34688AC1F15FB8800498E66 /* LatelyTechnicalPlain.m */; };
 		B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D208D41F47E89700F0CE6F /* Assets.xcassets */; };
@@ -252,6 +257,15 @@
 		840EDAC523EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQLoadingIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		840EDAC623EDC7D90024D946 /* UIView+LoadState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LoadState.m"; sourceTree = "<group>"; };
 		840EDAC723EDC7D90024D946 /* JQLoadingStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQLoadingStatusView.h; sourceTree = "<group>"; };
+		84E547BB23EE8C7200422C37 /* CJWRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWRefreshHeader.h; sourceTree = "<group>"; };
+		84E547BC23EE8C7200422C37 /* CJWRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWRefreshFooter.h; sourceTree = "<group>"; };
+		84E547BD23EE8C7200422C37 /* CJWProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWProgressView.m; sourceTree = "<group>"; };
+		84E547BE23EE8C7200422C37 /* CJWActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWActivityIndicatorView.h; sourceTree = "<group>"; };
+		84E547BF23EE8C7200422C37 /* pull_refresh_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pull_refresh_arrow@2x.png"; sourceTree = "<group>"; };
+		84E547C023EE8C7200422C37 /* CJWRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWRefreshFooter.m; sourceTree = "<group>"; };
+		84E547C123EE8C7200422C37 /* CJWRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWRefreshHeader.m; sourceTree = "<group>"; };
+		84E547C223EE8C7200422C37 /* CJWActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWActivityIndicatorView.m; sourceTree = "<group>"; };
+		84E547C323EE8C7200422C37 /* CJWProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWProgressView.h; sourceTree = "<group>"; };
 		B30F386D1F15B5C7005B5CE6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B34688AB1F15FB8800498E66 /* LatelyTechnicalPlain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatelyTechnicalPlain.h; sourceTree = "<group>"; };
@@ -299,6 +313,7 @@
 		03067F0723E41BB000A08E53 /* ExpandFile */ = {
 			isa = PBXGroup;
 			children = (
+				84E547BA23EE8C7200422C37 /* MJRefreshCustom */,
 				840EDABE23EDC7D90024D946 /* JQLoadingStatusView */,
 				03067F0823E41BB000A08E53 /* DataBase */,
 				03067F0D23E41BB000A08E53 /* ExUIKit */,
@@ -612,6 +627,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		84E547BA23EE8C7200422C37 /* MJRefreshCustom */ = {
+			isa = PBXGroup;
+			children = (
+				84E547BB23EE8C7200422C37 /* CJWRefreshHeader.h */,
+				84E547C123EE8C7200422C37 /* CJWRefreshHeader.m */,
+				84E547BC23EE8C7200422C37 /* CJWRefreshFooter.h */,
+				84E547C023EE8C7200422C37 /* CJWRefreshFooter.m */,
+				84E547C323EE8C7200422C37 /* CJWProgressView.h */,
+				84E547BD23EE8C7200422C37 /* CJWProgressView.m */,
+				84E547BF23EE8C7200422C37 /* pull_refresh_arrow@2x.png */,
+				84E547BE23EE8C7200422C37 /* CJWActivityIndicatorView.h */,
+				84E547C223EE8C7200422C37 /* CJWActivityIndicatorView.m */,
+			);
+			path = MJRefreshCustom;
+			sourceTree = "<group>";
+		};
 		B30F386C1F15B5A7005B5CE6 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -840,6 +871,7 @@
 				B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */,
 				840EDAC823EDC7D90024D946 /* JQLoadingStatusView.xib in Resources */,
 				03067F9A23E41BB100A08E53 /* RebuildIllJoy.xib in Resources */,
+				84E547C523EE8C7200422C37 /* pull_refresh_arrow@2x.png in Resources */,
 				03067FA423E41BB100A08E53 /* FishWithoutStrikerController.xib in Resources */,
 				03067FA923E41BB100A08E53 /* ObeyStadiumController.xib in Resources */,
 				03067FAD23E41BB100A08E53 /* AutomaticRear.xib in Resources */,
@@ -894,11 +926,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/UMCShare/UMShare/UMSocialUI/UMSocialSDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -920,6 +954,7 @@
 				03067F9E23E41BB100A08E53 /* CareUniversityEcofriendly.m in Sources */,
 				840EDAB123ED61770024D946 /* DFCHotContent.m in Sources */,
 				03067FA623E41BB100A08E53 /* OweUnderneathBamboo.m in Sources */,
+				84E547C423EE8C7200422C37 /* CJWProgressView.m in Sources */,
 				03067FB423E41BB100A08E53 /* ShrinkSexualDisability.m in Sources */,
 				03067F8523E41BB100A08E53 /* UIControl+ExControlayerStyle.m in Sources */,
 				03067FA123E41BB100A08E53 /* ResistantPicnic.m in Sources */,
@@ -927,6 +962,7 @@
 				03067FB823E4352200A08E53 /* ExtinctAppearance.m in Sources */,
 				031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				03067FA223E41BB100A08E53 /* DeceitfulProfileView.m in Sources */,
+				84E547C823EE8C7200422C37 /* CJWActivityIndicatorView.m in Sources */,
 				03067FD923E47A1F00A08E53 /* GainDetectionAbnormal.m in Sources */,
 				038A0AF223EC01ED00463BFF /* AppDelegate+tabBar.m in Sources */,
 				03067FDE23E47AD600A08E53 /* UnderlineDizzyTable.m in Sources */,
@@ -939,6 +975,7 @@
 				03067F8623E41BB100A08E53 /* ShineOpeningTechnician.m in Sources */,
 				03067FB323E41BB100A08E53 /* NorthernEnvelopeController.m in Sources */,
 				03067F8E23E41BB100A08E53 /* ExpanFileConstants.m in Sources */,
+				84E547C623EE8C7200422C37 /* CJWRefreshFooter.m in Sources */,
 				03067FA023E41BB100A08E53 /* FirmInterior.m in Sources */,
 				03067F9B23E41BB100A08E53 /* RebuildIllJoy.m in Sources */,
 				03067F8123E41BB100A08E53 /* GrabSpread.m in Sources */,
@@ -959,6 +996,7 @@
 				03067F9823E41BB100A08E53 /* VomitTime.m in Sources */,
 				840EDAB023ED61770024D946 /* HotContentCell.m in Sources */,
 				03067FA823E41BB100A08E53 /* AutomaticRear.m in Sources */,
+				84E547C723EE8C7200422C37 /* CJWRefreshHeader.m in Sources */,
 				03067F7F23E41BB100A08E53 /* DeadlyJam.m in Sources */,
 				03067F8423E41BB100A08E53 /* SuddenlyCubicRefund.m in Sources */,
 				03067F8923E41BB100A08E53 /* UIImage+ImageEffects.m in Sources */,

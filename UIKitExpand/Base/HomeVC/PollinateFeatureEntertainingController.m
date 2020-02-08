@@ -7,13 +7,15 @@
 #import "CoordinateDinosaur.h"
 #import "DFCHotContent.h"
 #import "WKWebViewVC.h"
-#import "UnderlineDizzyTable.h"
-#import "UIView+LoadState.h"
+
+#import "CJWActivityIndicatorView.h"
+
 @interface PollinateFeatureEntertainingController ()<HotContentDelegate>
 @property(nonatomic,strong)DFCHotContent *hotContent;
 @property (nonatomic,assign)NSInteger totalPage;
 @property (nonatomic,assign) NSInteger currentPage;
 @property (nonatomic,assign) NSInteger contentPage;
+@property (weak, nonatomic) CJWActivityIndicatorView *loading;
 @end
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
@@ -24,12 +26,21 @@
     [self initUIView];
     _currentPage = 1;
     _contentPage = 0 ;
+    
+    
 }
 -(void)initUIView{
     [self whisk];
-    self.tableView.mj_footer =[MJRefreshAutoGifFooter footerWithRefreshingTarget:self refreshingAction:@selector(getLoad)];
+    __weak __typeof(self) weakSelf = self;
+    CJWRefreshFooter *footer = [CJWRefreshFooter footerWithRefreshingBlock:^{
+        [weakSelf getLoad];
+    }];
+    self.tableView.mj_footer = footer;
     [self.tableView registerNib:[UINib nibWithNibName:@"CareUniversityEcofriendly" bundle:nil] forCellReuseIdentifier:@"cell"];
     [self getHomeBanner];
+    CJWActivityIndicatorView *loading = [[CJWActivityIndicatorView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-40)/2, SCREEN_HEIGHT/2, 40, 40)];
+    [self.view addSubview:loading];
+    self.loading = loading;
 }
 
 -(void)whisk{
@@ -68,10 +79,10 @@
 
 
 - (void)getBrandGoodDatasours:(NSDictionary *)dic{
-    
+   
      [[DisrespectfulLabourManager sharedManager] getSportsNewspath:URL_ComNews params:dic completed:^(BOOL ret, id obj) {
          if (ret) {
-            [self.view dismessStateView];
+      
              if(_currentPage == 1){
                  _totalPage =  [obj[0][@"totalPage"] integerValue];
                  [self.dataSource removeAllObjects];
@@ -88,6 +99,7 @@
                      [self.tableView.mj_header endRefreshing];
                      [self.tableView.mj_footer endRefreshing];
                      [self.tableView reloadData];
+                     [self.loading stopAnimating];
              });
          }else{
                 [self.tableView.mj_header endRefreshing];
@@ -129,11 +141,15 @@
 }
 
 -(void)selectStatus:(DFCHotContent*)selectStatus  page:(NSInteger)page{
-
+    
+    if ([selectStatus isNull]) {
+            [self.loading startAnimating];
+    }
+    
+ 
     NSMutableArray*data = [[NSMutableArray alloc]init];
     _contentPage = page ;
     [self.dataSource removeAllObjects];
-    [self.tableView reloadData];
     if (page==0) {
           _currentPage = 1;
           NSString *page = [NSString stringWithFormat:@"%ld", (long)_currentPage];
@@ -148,17 +164,19 @@
             self.dataSource = [self getRandomArrFrome:[data copy]];
             dispatch_async(dispatch_get_main_queue(), ^{
                     _currentPage = _totalPage;
-                     [UnderlineDizzyTable hideActivityIndicator];
                     [self.tableView.mj_header endRefreshing];
                     [self.tableView.mj_footer endRefreshing];
                     [self.tableView reloadData];
                     [self consistViaSky:self.tableView];
+                    [self.loading stopAnimating];
             });
         }];
     }else{
          _currentPage = _totalPage;
          [self getBrandGoodDatasours:@{@"id":@"FOCUSTY43",@"page":@1}];
     }
+    
+  
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 120;

@@ -5,4 +5,8 @@ target 'UIKitExpand' do
   pod 'SVProgressHUD'
   pod 'DZNEmptyDataSet'
   pod 'UMCCommon'
+  pod 'UMCAnalytics'
+  pod 'UMCShare/UI'
+  pod 'UMCShare/Social/ReducedWeChat'
+  pod 'UMCShare/Social/ReducedQQ'
 end

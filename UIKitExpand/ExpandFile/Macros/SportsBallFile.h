@@ -16,4 +16,7 @@
 #else
 #define DEBUG_NSLog(format, ...)
 #endif
+
+#define CJW_1PX_WIDTH (1 / [UIScreen mainScreen].scale)
+
 #endif 

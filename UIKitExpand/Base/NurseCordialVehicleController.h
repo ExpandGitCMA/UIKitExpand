@@ -9,6 +9,8 @@
 #import "DisrespectfulLabourManager.h"
 #import "HappenDuringRealm.h"
 #import "NSString+IMAdditions.h"
+#import "CJWRefreshHeader.h"
+#import "CJWRefreshFooter.h"
 @interface NurseCordialVehicleController : UIViewController<UITableViewDelegate, UITableViewDataSource,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate,DeceitfultViewDelegate>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *dataSource;
