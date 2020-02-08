@@ -38,7 +38,6 @@
         _tableView.emptyDataSetSource = self;
         _tableView.emptyDataSetDelegate = self;
         _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(simplyTallWidth)];
-       _tableView.mj_footer =[MJRefreshAutoGifFooter footerWithRefreshingTarget:self refreshingAction:@selector(getLoad)];
         [_tableView.mj_header beginRefreshing];
          [self.view addSubview:_tableView];
     }

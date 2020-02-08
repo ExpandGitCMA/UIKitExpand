@@ -14,7 +14,6 @@
 @property (nonatomic, strong)NSMutableArray *dataSource;
 @property(nonatomic,strong)DeceitfulProfileView *DeceitfultView;
 - (void)simplyTallWidth;
-- (void)getLoad;
 -(NSMutableArray*)getRandomArrFrome:(NSArray*)arr;
 -(CGFloat)tableViewForRowAtIndexCellHeight:(NSString *)title;
 - (void)consistViaSky:(UITableView *)tableView;
