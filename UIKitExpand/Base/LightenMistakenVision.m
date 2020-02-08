@@ -1,8 +1,7 @@
 #import "LightenMistakenVision.h"
 #import "PollinateFeatureEntertainingController.h"
 #import "NorthernEnvelopeController.h"
-#import "TripPhotographerSolemnController.h"
-#import "StackDoseBigController.h"
+#import "CommunityVC.h"
 #import "FortunatelyInfectiousPicnicController.h"
 @interface LightenMistakenVision ()<UITabBarDelegate>
 @property(nonatomic,strong)NSMutableArray*tabBarSource;
@@ -54,11 +53,13 @@
     [super viewDidLoad];
 }
 -(void)addSubController{
-    PollinateFeatureEntertainingController *homePage = [[PollinateFeatureEntertainingController alloc]init];
+    CommunityVC *communityVC = [CommunityVC new];
+    [self tabBarControllers:communityVC title:@"社区" imageUrl:@"discover"];
+    PollinateFeatureEntertainingController *homePage = [PollinateFeatureEntertainingController new];
+    NorthernEnvelopeController *score = [NorthernEnvelopeController new];
+    [self tabBarControllers:score title:@"规则" imageUrl:@"score"];
     [self tabBarControllers:homePage  title:@"首页" imageUrl:@"icon-home"];
-    NorthernEnvelopeController *score = [[NorthernEnvelopeController alloc]init];
-    [self tabBarControllers:score title:@"球赛规则" imageUrl:@"score"];
-    FortunatelyInfectiousPicnicController *personal = [[FortunatelyInfectiousPicnicController alloc]init];
+    FortunatelyInfectiousPicnicController *personal = [FortunatelyInfectiousPicnicController new];
     [self tabBarControllers:personal title:@"我的" imageUrl:@"icon-account"];
     self.viewControllers = [self.tabBarSource copy];
 }

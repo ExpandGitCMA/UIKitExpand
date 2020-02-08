@@ -34,7 +34,6 @@
 		03067FA023E41BB100A08E53 /* FirmInterior.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F5A23E41BB100A08E53 /* FirmInterior.m */; };
 		03067FA123E41BB100A08E53 /* ResistantPicnic.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F5B23E41BB100A08E53 /* ResistantPicnic.m */; };
 		03067FA223E41BB100A08E53 /* DeceitfulProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F5C23E41BB100A08E53 /* DeceitfulProfileView.m */; };
-		03067FA323E41BB100A08E53 /* TripPhotographerSolemnController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F5F23E41BB100A08E53 /* TripPhotographerSolemnController.m */; };
 		03067FA423E41BB100A08E53 /* FishWithoutStrikerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03067F6523E41BB100A08E53 /* FishWithoutStrikerController.xib */; };
 		03067FA523E41BB100A08E53 /* FishWithoutStrikerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F6623E41BB100A08E53 /* FishWithoutStrikerController.m */; };
 		03067FA623E41BB100A08E53 /* OweUnderneathBamboo.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F6823E41BB100A08E53 /* OweUnderneathBamboo.m */; };
@@ -46,7 +45,6 @@
 		03067FAC23E41BB100A08E53 /* CrackHandleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03067F6E23E41BB100A08E53 /* CrackHandleController.xib */; };
 		03067FAD23E41BB100A08E53 /* AutomaticRear.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03067F7023E41BB100A08E53 /* AutomaticRear.xib */; };
 		03067FAE23E41BB100A08E53 /* NurseCordialVehicleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F7123E41BB100A08E53 /* NurseCordialVehicleController.m */; };
-		03067FAF23E41BB100A08E53 /* StackDoseBigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F7323E41BB100A08E53 /* StackDoseBigController.m */; };
 		03067FB023E41BB100A08E53 /* GovernIntoPreserveController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03067F7623E41BB100A08E53 /* GovernIntoPreserveController.xib */; };
 		03067FB123E41BB100A08E53 /* BeforeFaithfulSomething.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F7723E41BB100A08E53 /* BeforeFaithfulSomething.m */; };
 		03067FB223E41BB100A08E53 /* GovernIntoPreserveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03067F7823E41BB100A08E53 /* GovernIntoPreserveController.m */; };
@@ -159,7 +157,6 @@
 		03067F4323E41BB000A08E53 /* GeologicalFluid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeologicalFluid.m; sourceTree = "<group>"; };
 		03067F4423E41BB000A08E53 /* GeologicalFluid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeologicalFluid.h; sourceTree = "<group>"; };
 		03067F4723E41BB100A08E53 /* LightenMistakenVision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightenMistakenVision.m; sourceTree = "<group>"; };
-		03067F4823E41BB100A08E53 /* StackDoseBigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackDoseBigController.h; sourceTree = "<group>"; };
 		03067F4923E41BB100A08E53 /* NurseCordialVehicleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NurseCordialVehicleController.h; sourceTree = "<group>"; };
 		03067F4B23E41BB100A08E53 /* VomitTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VomitTime.m; sourceTree = "<group>"; };
 		03067F4C23E41BB100A08E53 /* CareUniversityEcofriendly.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CareUniversityEcofriendly.xib; sourceTree = "<group>"; };
@@ -177,7 +174,6 @@
 		03067F5C23E41BB100A08E53 /* DeceitfulProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeceitfulProfileView.m; sourceTree = "<group>"; };
 		03067F5D23E41BB100A08E53 /* FirmInterior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirmInterior.h; sourceTree = "<group>"; };
 		03067F5E23E41BB100A08E53 /* ResistantPicnic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResistantPicnic.h; sourceTree = "<group>"; };
-		03067F5F23E41BB100A08E53 /* TripPhotographerSolemnController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripPhotographerSolemnController.m; sourceTree = "<group>"; };
 		03067F6123E41BB100A08E53 /* OweUnderneathBamboo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OweUnderneathBamboo.h; sourceTree = "<group>"; };
 		03067F6223E41BB100A08E53 /* FortunatelyInfectiousPicnicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FortunatelyInfectiousPicnicController.h; sourceTree = "<group>"; };
 		03067F6323E41BB100A08E53 /* AutomaticRear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutomaticRear.h; sourceTree = "<group>"; };
@@ -196,7 +192,6 @@
 		03067F7023E41BB100A08E53 /* AutomaticRear.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutomaticRear.xib; sourceTree = "<group>"; };
 		03067F7123E41BB100A08E53 /* NurseCordialVehicleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NurseCordialVehicleController.m; sourceTree = "<group>"; };
 		03067F7223E41BB100A08E53 /* LightenMistakenVision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightenMistakenVision.h; sourceTree = "<group>"; };
-		03067F7323E41BB100A08E53 /* StackDoseBigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackDoseBigController.m; sourceTree = "<group>"; };
 		03067F7523E41BB100A08E53 /* ShrinkSexualDisability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkSexualDisability.h; sourceTree = "<group>"; };
 		03067F7623E41BB100A08E53 /* GovernIntoPreserveController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GovernIntoPreserveController.xib; sourceTree = "<group>"; };
 		03067F7723E41BB100A08E53 /* BeforeFaithfulSomething.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeforeFaithfulSomething.m; sourceTree = "<group>"; };
@@ -206,7 +201,6 @@
 		03067F7B23E41BB100A08E53 /* BeforeFaithfulSomething.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeforeFaithfulSomething.h; sourceTree = "<group>"; };
 		03067F7C23E41BB100A08E53 /* NorthernEnvelopeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NorthernEnvelopeController.h; sourceTree = "<group>"; };
 		03067F7D23E41BB100A08E53 /* GovernIntoPreserveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GovernIntoPreserveController.h; sourceTree = "<group>"; };
-		03067F7E23E41BB100A08E53 /* TripPhotographerSolemnController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripPhotographerSolemnController.h; sourceTree = "<group>"; };
 		03067FB623E4352200A08E53 /* ExtinctAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtinctAppearance.h; sourceTree = "<group>"; };
 		03067FB723E4352200A08E53 /* ExtinctAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtinctAppearance.m; sourceTree = "<group>"; };
 		03067FBB23E4395200A08E53 /* GrievePerBrush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrievePerBrush.h; sourceTree = "<group>"; };
@@ -451,14 +445,10 @@
 		03067F4623E41BB000A08E53 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				03067F4823E41BB100A08E53 /* StackDoseBigController.h */,
-				03067F7323E41BB100A08E53 /* StackDoseBigController.m */,
 				03067F4923E41BB100A08E53 /* NurseCordialVehicleController.h */,
 				03067F7123E41BB100A08E53 /* NurseCordialVehicleController.m */,
 				03067F7223E41BB100A08E53 /* LightenMistakenVision.h */,
 				03067F4723E41BB100A08E53 /* LightenMistakenVision.m */,
-				03067F7E23E41BB100A08E53 /* TripPhotographerSolemnController.h */,
-				03067F5F23E41BB100A08E53 /* TripPhotographerSolemnController.m */,
 				84E547E523EE992300422C37 /* Community */,
 				03067FB523E434F500A08E53 /* Message */,
 				03067F4A23E41BB100A08E53 /* HomeVC */,
@@ -1005,7 +995,6 @@
 				03067F8223E41BB100A08E53 /* CoarseDisk.m in Sources */,
 				B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */,
 				03067F8A23E41BB100A08E53 /* NSString+IMAdditions.m in Sources */,
-				03067FAF23E41BB100A08E53 /* StackDoseBigController.m in Sources */,
 				03067FC123E43D0100A08E53 /* InwardVacantBoard.m in Sources */,
 				03067F9D23E41BB100A08E53 /* PollinateFeatureEntertainingController.m in Sources */,
 				03067F8F23E41BB100A08E53 /* WellFunnyMurdererView.m in Sources */,
@@ -1026,7 +1015,6 @@
 				840EDAC923EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m in Sources */,
 				840EDABA23EDAB8B0024D946 /* WKWebViewVC.m in Sources */,
 				840EDACC23EDC7D90024D946 /* UIView+LoadState.m in Sources */,
-				03067FA323E41BB100A08E53 /* TripPhotographerSolemnController.m in Sources */,
 				03067FAA23E41BB100A08E53 /* FortunatelyInfectiousPicnicController.m in Sources */,
 				B3F4F0001F14A8600005197E /* main.m in Sources */,
 			);

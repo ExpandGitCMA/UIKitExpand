@@ -1,18 +1,13 @@
 #import "UnderlineDizzyTable.h"
 #import "LodingActivity.h"
-
 @interface UnderlineDizzyTable()
-
 @end
 @implementation UnderlineDizzyTable
-
 + (void)showActivityIndicator{
-
      LodingActivity*loadingView = [[LodingActivity alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
      loadingView.center = [self keyWindow].center;
      [[self keyWindow] addSubview:loadingView];
 }
-
 + (void)hideActivityIndicator{
     UIView *window = [self keyWindow];
     [window.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {

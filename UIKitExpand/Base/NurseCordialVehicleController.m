@@ -35,9 +35,6 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableFooterView = [UIView new];
-//        _tableView.emptyDataSetSource = self;
-//        _tableView.emptyDataSetDelegate = self;
-//        _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(simplyTallWidth)];
            __weak __typeof(self) weakSelf = self;
         CJWRefreshHeader *header = [CJWRefreshHeader headerWithRefreshingBlock:^{
             [weakSelf simplyTallWidth];

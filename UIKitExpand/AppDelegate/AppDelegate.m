@@ -4,9 +4,6 @@
 #import <UMCommon/UMCommon.h>
 #import <UMAnalytics/MobClick.h>
 #import <UMShare/UMShare.h>
-
-
-
 @interface AppDelegate ()
 @end
 @implementation AppDelegate

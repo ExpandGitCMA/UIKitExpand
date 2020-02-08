@@ -7,27 +7,20 @@
 #import "CoordinateDinosaur.h"
 #import "DFCHotContent.h"
 #import "WKWebViewVC.h"
-
 #import "UnderlineDizzyTable.h"
-
 @interface PollinateFeatureEntertainingController ()<HotContentDelegate>
 @property(nonatomic,strong)DFCHotContent *hotContent;
 @property (nonatomic,assign)NSInteger totalPage;
 @property (nonatomic,assign) NSInteger currentPage;
 @property (nonatomic,assign) NSInteger contentPage;
-
 @end
-
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
-
 @implementation PollinateFeatureEntertainingController
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initUIView];
     _currentPage = 1;
     _contentPage = 0 ;
-    
-    
 }
 -(void)initUIView{
     [self whisk];
@@ -38,14 +31,11 @@
     self.tableView.mj_footer = footer;
     [self.tableView registerNib:[UINib nibWithNibName:@"CareUniversityEcofriendly" bundle:nil] forCellReuseIdentifier:@"cell"];
     [self getHomeBanner];
-
 }
-
 -(void)whisk{
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavLeftStyle barTarget:self action:@selector(whiskClick) title:@"category_camera_7_gray"];
      [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(msgClick) title:@"msg_home"];
 }
-
 -(void)getHomeBanner{
     [[DisrespectfulLabourManager sharedManager] goUponGutter:URL_HomeBanner params:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
@@ -54,7 +44,6 @@
         }
     }];
 }
-
 - (void)getLoad{
     if (_currentPage < _totalPage) {
                _currentPage++;
@@ -64,7 +53,6 @@
               [self.tableView.mj_footer endRefreshingWithNoMoreData];
          }
 }
-
 - (void)simplyTallWidth{
     if (_contentPage == 0) {
              _currentPage = 1;
@@ -74,13 +62,9 @@
          [self selectStatus:nil page:_contentPage];
     }
 }
-
-
 - (void)getBrandGoodDatasours:(NSDictionary *)dic{
-    
      [[DisrespectfulLabourManager sharedManager] getSportsNewspath:URL_ComNews params:dic completed:^(BOOL ret, id obj) {
          if (ret) {
-      
              if(_currentPage == 1){
                  _totalPage =  [obj[0][@"totalPage"] integerValue];
                  [self.dataSource removeAllObjects];
@@ -106,9 +90,6 @@
          }
      }];
 }
-
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     CareUniversityEcofriendly *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     NewsModel *model = [self.dataSource SafetyObjectAtIndex:indexPath.row];
@@ -129,7 +110,6 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
      return [self hotContent];
 }
-
 -(DFCHotContent*)hotContent{
     if (!_hotContent) {
         _hotContent = [[DFCHotContent alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 50) HotSearch:@[@"推荐",@"足球快讯",@"凤凰体育资讯"]];
@@ -137,14 +117,10 @@
     }
     return _hotContent;
 }
-
 -(void)selectStatus:(DFCHotContent*)selectStatus  page:(NSInteger)page{
-    
     if ([selectStatus isNull]) {
            [UnderlineDizzyTable showActivityIndicator];
     }
-    
- 
     NSMutableArray*data = [[NSMutableArray alloc]init];
     _contentPage = page ;
     [self.dataSource removeAllObjects];
@@ -173,8 +149,6 @@
          _currentPage = _totalPage;
          [self getBrandGoodDatasours:@{@"id":@"FOCUSTY43",@"page":@1}];
     }
-    
-  
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 120;
