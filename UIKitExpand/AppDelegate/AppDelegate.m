@@ -6,6 +6,7 @@
 #import <UMShare/UMShare.h>
 @interface AppDelegate ()
 @end
+
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self  launchApptabBar];

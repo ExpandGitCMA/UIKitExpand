@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterMetodVC">
+            <connections>
+                <outlet property="registedMiMaField" destination="VdT-Gu-xUt" id="hnJ-kI-naN"/>
+                <outlet property="registedZhangHaoField" destination="Wpa-Qr-h3A" id="tOT-ft-MX2"/>
+                <outlet property="view" destination="aOm-0X-gqs" id="W23-rX-6Wx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aOm-0X-gqs">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="立即注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tS3-Va-zAU">
+                    <rect key="frame" x="20" y="194" width="105.5" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXM-0y-08y">
+                    <rect key="frame" x="20" y="270.5" width="374" height="391.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="设置密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VdT-Gu-xUt">
+                            <rect key="frame" x="50" y="78" width="274" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="LgB-7c-WRZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNt-IH-6ia">
+                            <rect key="frame" x="50" y="162" width="274" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="GeG-16-SEV"/>
+                            </constraints>
+                            <state key="normal" title="注册">
+                                <color key="titleColor" red="0.48782492890000001" green="0.84002590669999999" blue="0.38746147689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="registedZhuCeBtnAction:" destination="-1" eventType="touchUpInside" id="3dn-gT-ftb"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="设置账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wpa-Qr-h3A">
+                            <rect key="frame" x="50" y="14" width="274" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="41u-58-JL6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5l-fh-5aZ">
+                            <rect key="frame" x="30" y="227.5" width="314" height="30"/>
+                            <state key="normal" title="注册即代表同意&lt;隐私协议&gt;">
+                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="registedAgreementAction:" destination="-1" eventType="touchUpInside" id="wLh-IW-icI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.48782492890000001" green="0.84002590669999999" blue="0.38746147689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Wpa-Qr-h3A" firstAttribute="top" secondItem="tXM-0y-08y" secondAttribute="top" constant="14" id="2MB-gZ-2Kt"/>
+                        <constraint firstAttribute="trailing" secondItem="Wpa-Qr-h3A" secondAttribute="trailing" constant="50" id="8QR-oM-V1a"/>
+                        <constraint firstItem="VdT-Gu-xUt" firstAttribute="leading" secondItem="tXM-0y-08y" secondAttribute="leading" constant="50" id="9AT-wL-t4g"/>
+                        <constraint firstItem="Z5l-fh-5aZ" firstAttribute="leading" secondItem="tXM-0y-08y" secondAttribute="leading" constant="30" id="BOy-o5-asJ"/>
+                        <constraint firstItem="Z5l-fh-5aZ" firstAttribute="top" secondItem="fNt-IH-6ia" secondAttribute="bottom" constant="35.5" id="Mf7-lv-pwm"/>
+                        <constraint firstAttribute="trailing" secondItem="VdT-Gu-xUt" secondAttribute="trailing" constant="50" id="Oc3-Ya-5ho"/>
+                        <constraint firstItem="fNt-IH-6ia" firstAttribute="top" secondItem="VdT-Gu-xUt" secondAttribute="bottom" constant="50" id="c9l-V2-5TF"/>
+                        <constraint firstAttribute="trailing" secondItem="Z5l-fh-5aZ" secondAttribute="trailing" constant="30" id="cfK-wm-Onq"/>
+                        <constraint firstAttribute="trailing" secondItem="fNt-IH-6ia" secondAttribute="trailing" constant="50" id="hG1-Zj-FdI"/>
+                        <constraint firstItem="VdT-Gu-xUt" firstAttribute="top" secondItem="Wpa-Qr-h3A" secondAttribute="bottom" constant="30" id="hVb-dM-sI5"/>
+                        <constraint firstItem="Wpa-Qr-h3A" firstAttribute="leading" secondItem="tXM-0y-08y" secondAttribute="leading" constant="50" id="hfD-IL-LLi"/>
+                        <constraint firstItem="fNt-IH-6ia" firstAttribute="leading" secondItem="tXM-0y-08y" secondAttribute="leading" constant="50" id="rQ7-KZ-stH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.48782492890000001" green="0.84002590669999999" blue="0.38746147689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tXM-0y-08y" firstAttribute="top" secondItem="tS3-Va-zAU" secondAttribute="bottom" constant="45" id="JtX-zx-Qso"/>
+                <constraint firstItem="tXM-0y-08y" firstAttribute="leading" secondItem="Ncg-Su-Qvq" secondAttribute="leading" constant="20" id="LfH-QW-9bb"/>
+                <constraint firstItem="Ncg-Su-Qvq" firstAttribute="trailing" secondItem="tXM-0y-08y" secondAttribute="trailing" constant="20" id="bVe-5G-ksc"/>
+                <constraint firstItem="tS3-Va-zAU" firstAttribute="top" secondItem="Ncg-Su-Qvq" secondAttribute="top" constant="150" id="cdT-8C-OCa"/>
+                <constraint firstItem="tS3-Va-zAU" firstAttribute="leading" secondItem="Ncg-Su-Qvq" secondAttribute="leading" constant="20" id="jja-gE-phm"/>
+                <constraint firstItem="Ncg-Su-Qvq" firstAttribute="bottom" secondItem="tXM-0y-08y" secondAttribute="bottom" constant="200" id="q4g-Ur-KTy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Ncg-Su-Qvq"/>
+            <point key="canvasLocation" x="250.72463768115944" y="183.48214285714286"/>
+        </view>
+    </objects>
+</document>

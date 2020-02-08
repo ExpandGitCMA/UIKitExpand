@@ -1,7 +1,7 @@
 #import "LatelyTechnicalPlain.h"
 #import "AppDelegate.h"
-#import "LightenMistakenVision.h"
-#import "DisrespectfulLabourManager.h"
+#import "BaseTabBarMetod.h"
+
 @implementation LatelyTechnicalPlain
 +(void)switchBaseTabBarController:(UIViewController*)controller{
     AppDelegate *appDelegate =  (AppDelegate*)[[UIApplication sharedApplication] delegate];
@@ -14,7 +14,7 @@
 +(void)showToController{
     AppDelegate *appDelegate =  (AppDelegate*)[[UIApplication sharedApplication] delegate];
     appDelegate.window.rootViewController = nil;
-    LightenMistakenVision *tabBar = [[LightenMistakenVision alloc]init];
+    BaseTabBarMetod *tabBar = [[BaseTabBarMetod alloc]init];
     [[self class] pleasureoToControl:tabBar];
 }
 +(void)pleasureoToControl:(UIViewController*)controller{
