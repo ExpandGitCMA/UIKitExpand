@@ -1,18 +1,23 @@
 #import "UnderlineDizzyTable.h"
+#import "LodingActivity.h"
+
+@interface UnderlineDizzyTable()
+
+@end
 @implementation UnderlineDizzyTable
+
 + (void)showActivityIndicator{
-    UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    activityIndicator.center = [self keyWindow].center;
-    activityIndicator.bounds = CGRectMake(0, 0, 50, 50);
-    [[self keyWindow] addSubview:activityIndicator];
-    [activityIndicator startAnimating];
-    activityIndicator.hidden = NO;
+
+     LodingActivity*loadingView = [[LodingActivity alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+     loadingView.center = [self keyWindow].center;
+     [[self keyWindow] addSubview:loadingView];
 }
+
 + (void)hideActivityIndicator{
     UIView *window = [self keyWindow];
     [window.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj isKindOfClass:[UIActivityIndicatorView class]]) {
-            [(UIActivityIndicatorView *)obj stopAnimating];
+        if ([obj isKindOfClass:[LodingActivity class]]) {
+            [(LodingActivity *)obj stopAnimating];
             obj.hidden = YES;
             [obj removeFromSuperview];
             *stop = YES;

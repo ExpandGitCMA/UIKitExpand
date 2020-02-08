@@ -81,6 +81,8 @@
 		84E547C623EE8C7200422C37 /* CJWRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547C023EE8C7200422C37 /* CJWRefreshFooter.m */; };
 		84E547C723EE8C7200422C37 /* CJWRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547C123EE8C7200422C37 /* CJWRefreshHeader.m */; };
 		84E547C823EE8C7200422C37 /* CJWActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547C223EE8C7200422C37 /* CJWActivityIndicatorView.m */; };
+		84E547E823EE994000422C37 /* CommunityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547E723EE994000422C37 /* CommunityVC.m */; };
+		84E547EB23EE9F9E00422C37 /* LodingActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547EA23EE9F9E00422C37 /* LodingActivity.m */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B34688AD1F15FB8800498E66 /* LatelyTechnicalPlain.m in Sources */ = {isa = PBXBuildFile; fileRef = B34688AC1F15FB8800498E66 /* LatelyTechnicalPlain.m */; };
 		B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D208D41F47E89700F0CE6F /* Assets.xcassets */; };
@@ -266,6 +268,10 @@
 		84E547C123EE8C7200422C37 /* CJWRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWRefreshHeader.m; sourceTree = "<group>"; };
 		84E547C223EE8C7200422C37 /* CJWActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWActivityIndicatorView.m; sourceTree = "<group>"; };
 		84E547C323EE8C7200422C37 /* CJWProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWProgressView.h; sourceTree = "<group>"; };
+		84E547E623EE994000422C37 /* CommunityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunityVC.h; sourceTree = "<group>"; };
+		84E547E723EE994000422C37 /* CommunityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommunityVC.m; sourceTree = "<group>"; };
+		84E547E923EE9F9E00422C37 /* LodingActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LodingActivity.h; sourceTree = "<group>"; };
+		84E547EA23EE9F9E00422C37 /* LodingActivity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LodingActivity.m; sourceTree = "<group>"; };
 		B30F386D1F15B5C7005B5CE6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B34688AB1F15FB8800498E66 /* LatelyTechnicalPlain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatelyTechnicalPlain.h; sourceTree = "<group>"; };
@@ -453,6 +459,7 @@
 				03067F4723E41BB100A08E53 /* LightenMistakenVision.m */,
 				03067F7E23E41BB100A08E53 /* TripPhotographerSolemnController.h */,
 				03067F5F23E41BB100A08E53 /* TripPhotographerSolemnController.m */,
+				84E547E523EE992300422C37 /* Community */,
 				03067FB523E434F500A08E53 /* Message */,
 				03067F4A23E41BB100A08E53 /* HomeVC */,
 				03067F6023E41BB100A08E53 /* MeCenterVC */,
@@ -639,8 +646,19 @@
 				84E547BF23EE8C7200422C37 /* pull_refresh_arrow@2x.png */,
 				84E547BE23EE8C7200422C37 /* CJWActivityIndicatorView.h */,
 				84E547C223EE8C7200422C37 /* CJWActivityIndicatorView.m */,
+				84E547E923EE9F9E00422C37 /* LodingActivity.h */,
+				84E547EA23EE9F9E00422C37 /* LodingActivity.m */,
 			);
 			path = MJRefreshCustom;
+			sourceTree = "<group>";
+		};
+		84E547E523EE992300422C37 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				84E547E623EE994000422C37 /* CommunityVC.h */,
+				84E547E723EE994000422C37 /* CommunityVC.m */,
+			);
+			path = Community;
 			sourceTree = "<group>";
 		};
 		B30F386C1F15B5A7005B5CE6 /* AppDelegate */ = {
@@ -952,6 +970,7 @@
 				0324ACC123E31F4E004B4C3E /* AsFondAssembly.m in Sources */,
 				03067FA723E41BB100A08E53 /* CrackHandleController.m in Sources */,
 				03067F9E23E41BB100A08E53 /* CareUniversityEcofriendly.m in Sources */,
+				84E547E823EE994000422C37 /* CommunityVC.m in Sources */,
 				840EDAB123ED61770024D946 /* DFCHotContent.m in Sources */,
 				03067FA623E41BB100A08E53 /* OweUnderneathBamboo.m in Sources */,
 				84E547C423EE8C7200422C37 /* CJWProgressView.m in Sources */,
@@ -967,6 +986,7 @@
 				038A0AF223EC01ED00463BFF /* AppDelegate+tabBar.m in Sources */,
 				03067FDE23E47AD600A08E53 /* UnderlineDizzyTable.m in Sources */,
 				03067FAB23E41BB100A08E53 /* ObeyStadiumController.m in Sources */,
+				84E547EB23EE9F9E00422C37 /* LodingActivity.m in Sources */,
 				038A0AF523EC081F00463BFF /* ToolsAuthorization.m in Sources */,
 				03067F8B23E41BB100A08E53 /* HappenDuringRealm.m in Sources */,
 				03067F9723E41BB100A08E53 /* LightenMistakenVision.m in Sources */,
