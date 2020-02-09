@@ -56,7 +56,7 @@
     
       _logoOut = [UIButton buttonWithType:UIButtonTypeCustom];
         _logoOut.backgroundColor = kUIColorFromRGB(AppMianColor);
-        _logoOut.frame = CGRectMake((SCREEN_WIDTH-300)/2, SCREEN_HEIGHT-268, 300, 45);
+        _logoOut.frame = CGRectMake((SCREEN_WIDTH-300)/2, SCREEN_HEIGHT-150, 300, 45);
         [_logoOut setTitle:@"退出登陆" forState:UIControlStateNormal];
         [_logoOut setTintColor:[UIColor whiteColor]];
        [_logoOut addTarget:self action:@selector(logoOutAction:) forControlEvents:UIControlEventTouchUpInside];

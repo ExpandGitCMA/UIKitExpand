@@ -71,5 +71,10 @@
     [controller.navigationController pushViewController:[ALRouter openURL:@"UsSystem"] animated:YES];
 }
 
++(void)switchTopushPostedMetodVC:(UIViewController*)controller{
+    [controller.navigationController pushViewController:[ALRouter openURL:@"PostedMetod"] animated:YES];
+}
+
+
 
 @end

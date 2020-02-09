@@ -8,4 +8,5 @@
 +(void)switchTopresentRegisterMetodVC:(UIViewController*)controller;
 +(void)switchTopushMessAgeMetodVC:(UIViewController*)controller;
 +(void)switchTopushUsSystemVC:(UIViewController*)controller;
++(void)switchTopushPostedMetodVC:(UIViewController*)controller;
 @end

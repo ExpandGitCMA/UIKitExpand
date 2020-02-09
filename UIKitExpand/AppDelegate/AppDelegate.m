@@ -5,11 +5,14 @@
 #import <UMAnalytics/MobClick.h>
 #import <UMShare/UMShare.h>
 #import "ALRouter.h"
+#import <SVProgressHUD.h>
 @interface AppDelegate ()
 @end
 
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [SVProgressHUD setMinimumDismissTimeInterval:2 ];
+
     [ALRouter loadConfigPlist:nil];
     [self  launchApptabBar];
     [UMConfigure initWithAppkey:@"5e3e5e1f4ca357829b000099" channel:@"App Store"];

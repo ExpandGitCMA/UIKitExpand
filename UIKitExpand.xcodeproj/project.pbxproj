@@ -32,6 +32,9 @@
 		840EDACC23EDC7D90024D946 /* UIView+LoadState.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC623EDC7D90024D946 /* UIView+LoadState.m */; };
 		84A4E4D923EFD245009E7406 /* UsCenterHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E4D823EFD245009E7406 /* UsCenterHead.m */; };
 		84A4E4DB23EFD255009E7406 /* UsCenterHead.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4E4DA23EFD255009E7406 /* UsCenterHead.xib */; };
+		84A4E50323EFE35A009E7406 /* PostedMetodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E50123EFE35A009E7406 /* PostedMetodVC.m */; };
+		84A4E50423EFE35A009E7406 /* PostedMetodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4E50223EFE35A009E7406 /* PostedMetodVC.xib */; };
+		84A4E50723EFEBCC009E7406 /* CJWUploadScreenshotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E50523EFEBCC009E7406 /* CJWUploadScreenshotView.m */; };
 		84E547C423EE8C7200422C37 /* CJWProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547BD23EE8C7200422C37 /* CJWProgressView.m */; };
 		84E547C523EE8C7200422C37 /* pull_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E547BF23EE8C7200422C37 /* pull_refresh_arrow@2x.png */; };
 		84E547C623EE8C7200422C37 /* CJWRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547C023EE8C7200422C37 /* CJWRefreshFooter.m */; };
@@ -179,6 +182,11 @@
 		84A4E4D723EFD245009E7406 /* UsCenterHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsCenterHead.h; sourceTree = "<group>"; };
 		84A4E4D823EFD245009E7406 /* UsCenterHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsCenterHead.m; sourceTree = "<group>"; };
 		84A4E4DA23EFD255009E7406 /* UsCenterHead.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsCenterHead.xib; sourceTree = "<group>"; };
+		84A4E50023EFE35A009E7406 /* PostedMetodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostedMetodVC.h; sourceTree = "<group>"; };
+		84A4E50123EFE35A009E7406 /* PostedMetodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostedMetodVC.m; sourceTree = "<group>"; };
+		84A4E50223EFE35A009E7406 /* PostedMetodVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostedMetodVC.xib; sourceTree = "<group>"; };
+		84A4E50523EFEBCC009E7406 /* CJWUploadScreenshotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWUploadScreenshotView.m; sourceTree = "<group>"; };
+		84A4E50623EFEBCC009E7406 /* CJWUploadScreenshotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWUploadScreenshotView.h; sourceTree = "<group>"; };
 		84E547BB23EE8C7200422C37 /* CJWRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWRefreshHeader.h; sourceTree = "<group>"; };
 		84E547BC23EE8C7200422C37 /* CJWRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWRefreshFooter.h; sourceTree = "<group>"; };
 		84E547BD23EE8C7200422C37 /* CJWProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWProgressView.m; sourceTree = "<group>"; };
@@ -542,8 +550,13 @@
 		84E5497923EECAFE00422C37 /* CommunityMetod */ = {
 			isa = PBXGroup;
 			children = (
-				84E5497A23EECAFE00422C37 /* CommunityVC.m */,
+				84A4E50623EFEBCC009E7406 /* CJWUploadScreenshotView.h */,
+				84A4E50523EFEBCC009E7406 /* CJWUploadScreenshotView.m */,
 				84E5497B23EECAFE00422C37 /* CommunityVC.h */,
+				84E5497A23EECAFE00422C37 /* CommunityVC.m */,
+				84A4E50023EFE35A009E7406 /* PostedMetodVC.h */,
+				84A4E50123EFE35A009E7406 /* PostedMetodVC.m */,
+				84A4E50223EFE35A009E7406 /* PostedMetodVC.xib */,
 			);
 			path = CommunityMetod;
 			sourceTree = "<group>";
@@ -902,6 +915,7 @@
 				840EDACB23EDC7D90024D946 /* JQLoadingStatusView.bundle in Resources */,
 				84E54A0A23EED01100422C37 /* RuleDetailsVC.xib in Resources */,
 				B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */,
+				84A4E50423EFE35A009E7406 /* PostedMetodVC.xib in Resources */,
 				840EDAC823EDC7D90024D946 /* JQLoadingStatusView.xib in Resources */,
 				84E549D023EECAFF00422C37 /* UserPrivacyVC.xib in Resources */,
 				84E547C523EE8C7200422C37 /* pull_refresh_arrow@2x.png in Resources */,
@@ -993,6 +1007,7 @@
 				84E547C423EE8C7200422C37 /* CJWProgressView.m in Sources */,
 				03067F8523E41BB100A08E53 /* UIControl+ExControlayerStyle.m in Sources */,
 				84E54A1523EED2A000422C37 /* FirmimageCell.m in Sources */,
+				84A4E50323EFE35A009E7406 /* PostedMetodVC.m in Sources */,
 				031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				84E54A1823EED7C200422C37 /* SystemNavigationCapture.m in Sources */,
 				84E547C823EE8C7200422C37 /* CJWActivityIndicatorView.m in Sources */,
@@ -1034,6 +1049,7 @@
 				03067F8723E41BB100A08E53 /* NSString+paths.m in Sources */,
 				840EDAC923EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m in Sources */,
 				84E549CA23EECAFF00422C37 /* AboutUsMetodVC.m in Sources */,
+				84A4E50723EFEBCC009E7406 /* CJWUploadScreenshotView.m in Sources */,
 				84E549CB23EECAFF00422C37 /* SystemActivity.m in Sources */,
 				840EDACC23EDC7D90024D946 /* UIView+LoadState.m in Sources */,
 				84E54A4523EF054C00422C37 /* UsSystemVC.m in Sources */,

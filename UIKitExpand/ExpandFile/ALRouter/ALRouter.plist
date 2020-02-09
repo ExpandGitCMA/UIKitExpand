@@ -16,5 +16,7 @@
 	<string>MessAgeMetodVC</string>
 	<key>UsSystem</key>
 	<string>UsSystemVC</string>
+	<key>PostedMetod</key>
+	<string>PostedMetodVC</string>
 </dict>
 </plist>

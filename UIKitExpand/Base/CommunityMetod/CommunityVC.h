@@ -1,5 +1,7 @@
-#import <UIKit/UIKit.h>
+#import "BaseMetodVC.h"
 NS_ASSUME_NONNULL_BEGIN
-@interface CommunityVC : UIViewController
+
+@interface CommunityVC : BaseMetodVC
+
 @end
 NS_ASSUME_NONNULL_END
