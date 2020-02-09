@@ -50,7 +50,7 @@
         @"imei":@"B900E334868556ejrwowq]r8576BF3031",
         @"dev_name":@"iPhone6",
         @"app_type":@"2",
-        @"username":_accountField.text,
+        @"name":_accountField.text,
         @"password":_passwordField.text,
     };
     

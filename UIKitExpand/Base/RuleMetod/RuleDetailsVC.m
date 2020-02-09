@@ -2,16 +2,16 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "NSString+IMAdditions.h"
 @interface RuleDetailsVC ()
-@property (weak, nonatomic) IBOutlet UIImageView *QuLeHomeDetailImageV;
-@property (weak, nonatomic) IBOutlet UITextView *QuLeDetailTextView;
+@property (weak, nonatomic) IBOutlet UIImageView *OrgyHomeDetailImageV;
+@property (weak, nonatomic) IBOutlet UITextView *OrgyDetailTextView;
 @end
 @implementation RuleDetailsVC
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.QuLeDetailTextView.editable = NO;
-    self.QuLeDetailTextView.text = self.conten;
+    self.OrgyDetailTextView.editable = NO;
+    self.OrgyDetailTextView.text = self.conten;
     if (self.url &&[self.url isNull]) {
-    [self.QuLeHomeDetailImageV sd_setImageWithURL:[NSURL URLWithString:self.url]
+    [self.OrgyHomeDetailImageV sd_setImageWithURL:[NSURL URLWithString:self.url]
                      placeholderImage:[UIImage imageNamed:@"icon_data_empty"]];
     }
 }

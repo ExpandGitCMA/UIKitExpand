@@ -4,8 +4,10 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <Photos/Photos.h>
 #import <SVProgressHUD.h>
-#import "CJWUploadScreenshotView.h"
+#import "UploadScreenshotView.h"
 #import "UserDefaultManager.h"
+#import "DisGermTools.h"
+#import "DisBamboo.h"
 @interface PostedMetodVC ()<UITextViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *pleaseInputLabel;
 @property (weak, nonatomic) IBOutlet UITextView *editTextView;
@@ -16,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *photoCount;
 @property (nonatomic,strong)NSMutableArray * dataArr;
 @property (nonatomic,copy) NSString * imageStr;
-@property (nonatomic , strong)CJWUploadScreenshotView*uploadView;
+@property (nonatomic , strong)UploadScreenshotView*uploadView;
 
 @end
 
@@ -35,13 +37,13 @@
 }
 
 
--(CJWUploadScreenshotView*)uploadView{
+-(UploadScreenshotView*)uploadView{
     if (!_uploadView) {
-        _uploadView = [[CJWUploadScreenshotView alloc]initWithFrame:CGRectMake(0,0, SCREEN_WIDTH, 100)];
-        _uploadView.maxCount = 5;
+        _uploadView = [[UploadScreenshotView alloc]initWithFrame:CGRectMake(0,0, SCREEN_WIDTH, 100)];
+        _uploadView.maxCount = 3;
         __weak typeof(self) weakSelf = self;
         [_uploadView setCountBlock:^(NSInteger maxCount) {
-          weakSelf.photoCount.text = [NSString stringWithFormat:@"%@%ld%@",@"最多上传",maxCount,@"/4"];
+          weakSelf.photoCount.text = [NSString stringWithFormat:@"%@%ld%@",@"最多上传",maxCount,@"/3"];
          }];
         [self.upload addSubview:_uploadView];
     }
@@ -75,15 +77,53 @@
      [[HttpNetWorkManager sharedManager] requestWithMetod:URL_Signout params:dict completed:^(BOOL ret, id obj) {
 
         [SVProgressHUD showInfoWithStatus:@"发布成功,审核通过会显示在社区话题"];
-         [self.navigationController popViewControllerAnimated:YES];
-        
+         
 
+         
+         NSDate *date = [NSDate date];
+         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+         [formatter setDateFormat:@"yyyy-MM-dd"];
+         NSString *str = [formatter stringFromDate:date];
+         
+         
+        DisBamboo * model = [[DisBamboo alloc] init];
+       
+        UIImage * image = _uploadView.icons[0];
+        NSString * imageDataStr = [self UIImageToBase64Str:image];
+        model.dataImageStr = imageDataStr;
+         
+         if (_uploadView.icons.count>2) {
+             model.dataImageUrls = [self UIImageToBase64Str:_uploadView.icons[1]];
+         }
+        
+         if (_uploadView.icons.count>3) {
+            model.dataImageUrl = [self UIImageToBase64Str:_uploadView.icons[2]];
+         }
+        
+         
+        model.dateStr = str;
+        model.token = str;
+        model.news = self.editTextView.text;
+        model.liker = @"0";
+        model.collect = @"0";
+        model.name = [NSString stringWithFormat:@"%@%@",user.name,user.mobile];
+        model.headimageStr = imageDataStr;
+        NSMutableArray*array = [NSMutableArray new];
+        [array addObject:model];
+         
+        [[DisGermTools slidingDiaryShare] saveObjects:array];
+        [self.navigationController popViewControllerAnimated:YES];
      }];
 
     DEBUG_NSLog(@"=======>%@",_uploadView.icons )
     
 }
-
+-(NSString *)UIImageToBase64Str:(UIImage *) image
+{
+    NSData *data = UIImageJPEGRepresentation(image, 1.0f);
+    NSString *encodedImageStr = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    return encodedImageStr;
+}
 
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
     

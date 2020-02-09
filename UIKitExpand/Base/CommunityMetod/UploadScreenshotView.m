@@ -1,12 +1,12 @@
 //
-//  CJWUploadScreenshotView.m
+//  UploadScreenshotView.m
 //  OShop_iOS
 //
 //  Created by ZeroSmile on 2017/9/27.
 //  Copyright © 2017年 CJW. All rights reserved.
 //
 
-#import "CJWUploadScreenshotView.h"
+#import "UploadScreenshotView.h"
 #import "UIView+SDExtension.h"
 #import "Safety.h"
 #import <AVFoundation/AVFoundation.h>
@@ -73,7 +73,7 @@
 @end
 
 
-@interface CJWUploadScreenshotView ()<UploadShotCellDelegate,UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIActionSheetDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface UploadScreenshotView ()<UploadShotCellDelegate,UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIActionSheetDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, assign) BOOL isCanClick;
@@ -82,7 +82,7 @@
 @end
 
 static NSString * const reuseIdentifier = @"Cell";
-@implementation CJWUploadScreenshotView
+@implementation UploadScreenshotView
 -(instancetype)initWithFrame:(CGRect)frame
 {
    
@@ -146,7 +146,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    if (self.icons.count>4) {
+    if (self.icons.count>3) {
         return;
     }
     if (indexPath.row!=self.icons.count-1){

@@ -17,7 +17,7 @@
 }
 
 
-- (IBAction)QuLeCommitBtnAction:(UIButton *)sender {
+- (IBAction)OrgyCommitBtnAction:(UIButton *)sender {
     if (self.backTextView.text.length == 0) {
         [SVProgressHUD showInfoWithStatus:@"请输入意见或者问题"];
         return;

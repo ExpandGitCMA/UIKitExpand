@@ -1,5 +1,5 @@
 //
-//  CJWUploadScreenshotView.h
+//  UploadScreenshotView.h
 //  OShop_iOS
 //
 //  Created by ZeroSmile on 2017/9/27.
@@ -28,7 +28,7 @@
 
 typedef void (^MaxCountBlock)(NSInteger  maxCount);
 
-@interface CJWUploadScreenshotView : UIView
+@interface UploadScreenshotView : UIView
 @property (nonatomic,copy)MaxCountBlock countBlock;
 @property (nonatomic, strong) NSMutableArray *icons;
 @property (nonatomic, assign) NSUInteger maxCount;

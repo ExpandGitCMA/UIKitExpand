@@ -9,4 +9,6 @@ target 'UIKitExpand' do
   pod 'UMCShare/UI'
   pod 'UMCShare/Social/ReducedWeChat'
   pod 'UMCShare/Social/ReducedQQ'
+  pod 'Masonry', '1.1.0'
+  pod 'FMDB'
 end

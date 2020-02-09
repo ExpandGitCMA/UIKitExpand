@@ -34,7 +34,15 @@
 		84A4E4DB23EFD255009E7406 /* UsCenterHead.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4E4DA23EFD255009E7406 /* UsCenterHead.xib */; };
 		84A4E50323EFE35A009E7406 /* PostedMetodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E50123EFE35A009E7406 /* PostedMetodVC.m */; };
 		84A4E50423EFE35A009E7406 /* PostedMetodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4E50223EFE35A009E7406 /* PostedMetodVC.xib */; };
-		84A4E50723EFEBCC009E7406 /* CJWUploadScreenshotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E50523EFEBCC009E7406 /* CJWUploadScreenshotView.m */; };
+		84A4E50A23EFFBDC009E7406 /* UploadScreenshotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E50923EFFBDC009E7406 /* UploadScreenshotView.m */; };
+		84A4E52A23F00138009E7406 /* MunityNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E52723F00138009E7406 /* MunityNoteCell.m */; };
+		84A4E52B23F00138009E7406 /* MunityNoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4E52823F00138009E7406 /* MunityNoteCell.xib */; };
+		84A4E52E23F00154009E7406 /* DisGermTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E52C23F00154009E7406 /* DisGermTools.m */; };
+		84A4E53123F0016F009E7406 /* DisBamboo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E53023F0016F009E7406 /* DisBamboo.m */; };
+		84A4E53423F00182009E7406 /* DisapproveGerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E53323F00182009E7406 /* DisapproveGerm.m */; };
+		84A4E53723F00198009E7406 /* DeepenPleasurableTennisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E53523F00198009E7406 /* DeepenPleasurableTennisView.m */; };
+		84A4E53B23F001AA009E7406 /* DiscussGerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E53823F001A9009E7406 /* DiscussGerm.m */; };
+		84A4E53C23F001AA009E7406 /* DiscussGerm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4E53A23F001AA009E7406 /* DiscussGerm.xib */; };
 		84E547C423EE8C7200422C37 /* CJWProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547BD23EE8C7200422C37 /* CJWProgressView.m */; };
 		84E547C523EE8C7200422C37 /* pull_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E547BF23EE8C7200422C37 /* pull_refresh_arrow@2x.png */; };
 		84E547C623EE8C7200422C37 /* CJWRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547C023EE8C7200422C37 /* CJWRefreshFooter.m */; };
@@ -185,8 +193,22 @@
 		84A4E50023EFE35A009E7406 /* PostedMetodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostedMetodVC.h; sourceTree = "<group>"; };
 		84A4E50123EFE35A009E7406 /* PostedMetodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostedMetodVC.m; sourceTree = "<group>"; };
 		84A4E50223EFE35A009E7406 /* PostedMetodVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostedMetodVC.xib; sourceTree = "<group>"; };
-		84A4E50523EFEBCC009E7406 /* CJWUploadScreenshotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWUploadScreenshotView.m; sourceTree = "<group>"; };
-		84A4E50623EFEBCC009E7406 /* CJWUploadScreenshotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWUploadScreenshotView.h; sourceTree = "<group>"; };
+		84A4E50823EFFBDC009E7406 /* UploadScreenshotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadScreenshotView.h; sourceTree = "<group>"; };
+		84A4E50923EFFBDC009E7406 /* UploadScreenshotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadScreenshotView.m; sourceTree = "<group>"; };
+		84A4E52723F00138009E7406 /* MunityNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MunityNoteCell.m; sourceTree = "<group>"; };
+		84A4E52823F00138009E7406 /* MunityNoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MunityNoteCell.xib; sourceTree = "<group>"; };
+		84A4E52923F00138009E7406 /* MunityNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MunityNoteCell.h; sourceTree = "<group>"; };
+		84A4E52C23F00154009E7406 /* DisGermTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisGermTools.m; sourceTree = "<group>"; };
+		84A4E52D23F00154009E7406 /* DisGermTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisGermTools.h; sourceTree = "<group>"; };
+		84A4E52F23F0016F009E7406 /* DisBamboo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisBamboo.h; sourceTree = "<group>"; };
+		84A4E53023F0016F009E7406 /* DisBamboo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisBamboo.m; sourceTree = "<group>"; };
+		84A4E53223F00182009E7406 /* DisapproveGerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisapproveGerm.h; sourceTree = "<group>"; };
+		84A4E53323F00182009E7406 /* DisapproveGerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisapproveGerm.m; sourceTree = "<group>"; };
+		84A4E53523F00198009E7406 /* DeepenPleasurableTennisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeepenPleasurableTennisView.m; sourceTree = "<group>"; };
+		84A4E53623F00198009E7406 /* DeepenPleasurableTennisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepenPleasurableTennisView.h; sourceTree = "<group>"; };
+		84A4E53823F001A9009E7406 /* DiscussGerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscussGerm.m; sourceTree = "<group>"; };
+		84A4E53923F001A9009E7406 /* DiscussGerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscussGerm.h; sourceTree = "<group>"; };
+		84A4E53A23F001AA009E7406 /* DiscussGerm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscussGerm.xib; sourceTree = "<group>"; };
 		84E547BB23EE8C7200422C37 /* CJWRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWRefreshHeader.h; sourceTree = "<group>"; };
 		84E547BC23EE8C7200422C37 /* CJWRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWRefreshFooter.h; sourceTree = "<group>"; };
 		84E547BD23EE8C7200422C37 /* CJWProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWProgressView.m; sourceTree = "<group>"; };
@@ -550,13 +572,27 @@
 		84E5497923EECAFE00422C37 /* CommunityMetod */ = {
 			isa = PBXGroup;
 			children = (
-				84A4E50623EFEBCC009E7406 /* CJWUploadScreenshotView.h */,
-				84A4E50523EFEBCC009E7406 /* CJWUploadScreenshotView.m */,
+				84A4E50823EFFBDC009E7406 /* UploadScreenshotView.h */,
+				84A4E50923EFFBDC009E7406 /* UploadScreenshotView.m */,
 				84E5497B23EECAFE00422C37 /* CommunityVC.h */,
 				84E5497A23EECAFE00422C37 /* CommunityVC.m */,
 				84A4E50023EFE35A009E7406 /* PostedMetodVC.h */,
 				84A4E50123EFE35A009E7406 /* PostedMetodVC.m */,
 				84A4E50223EFE35A009E7406 /* PostedMetodVC.xib */,
+				84A4E52923F00138009E7406 /* MunityNoteCell.h */,
+				84A4E52723F00138009E7406 /* MunityNoteCell.m */,
+				84A4E52823F00138009E7406 /* MunityNoteCell.xib */,
+				84A4E52D23F00154009E7406 /* DisGermTools.h */,
+				84A4E52C23F00154009E7406 /* DisGermTools.m */,
+				84A4E52F23F0016F009E7406 /* DisBamboo.h */,
+				84A4E53023F0016F009E7406 /* DisBamboo.m */,
+				84A4E53223F00182009E7406 /* DisapproveGerm.h */,
+				84A4E53323F00182009E7406 /* DisapproveGerm.m */,
+				84A4E53623F00198009E7406 /* DeepenPleasurableTennisView.h */,
+				84A4E53523F00198009E7406 /* DeepenPleasurableTennisView.m */,
+				84A4E53923F001A9009E7406 /* DiscussGerm.h */,
+				84A4E53823F001A9009E7406 /* DiscussGerm.m */,
+				84A4E53A23F001AA009E7406 /* DiscussGerm.xib */,
 			);
 			path = CommunityMetod;
 			sourceTree = "<group>";
@@ -919,9 +955,11 @@
 				840EDAC823EDC7D90024D946 /* JQLoadingStatusView.xib in Resources */,
 				84E549D023EECAFF00422C37 /* UserPrivacyVC.xib in Resources */,
 				84E547C523EE8C7200422C37 /* pull_refresh_arrow@2x.png in Resources */,
+				84A4E52B23F00138009E7406 /* MunityNoteCell.xib in Resources */,
 				84E54A3E23EED8EB00422C37 /* ALRouter.plist in Resources */,
 				84E549DE23EECAFF00422C37 /* RegisterMetodVC.xib in Resources */,
 				84A4E4DB23EFD255009E7406 /* UsCenterHead.xib in Resources */,
+				84A4E53C23F001AA009E7406 /* DiscussGerm.xib in Resources */,
 				84E549E123EECAFF00422C37 /* LoginMetodVC.xib in Resources */,
 				84E549F723EECC0700422C37 /* RebuildIllJoy.xib in Resources */,
 			);
@@ -1001,8 +1039,10 @@
 				84E5491D23EEBA8300422C37 /* UserDefaultManager.m in Sources */,
 				84E549E423EECAFF00422C37 /* WKWebViewVC.m in Sources */,
 				84E54A0923EED01100422C37 /* RuleDetailsVC.m in Sources */,
+				84A4E52A23F00138009E7406 /* MunityNoteCell.m in Sources */,
 				84E54A3F23EED8EB00422C37 /* ALRouter.m in Sources */,
 				84E549E923EECAFF00422C37 /* DFCHotContent.m in Sources */,
+				84A4E53123F0016F009E7406 /* DisBamboo.m in Sources */,
 				0324ACC123E31F4E004B4C3E /* AsFondAssembly.m in Sources */,
 				84E547C423EE8C7200422C37 /* CJWProgressView.m in Sources */,
 				03067F8523E41BB100A08E53 /* UIControl+ExControlayerStyle.m in Sources */,
@@ -1010,20 +1050,24 @@
 				84A4E50323EFE35A009E7406 /* PostedMetodVC.m in Sources */,
 				031EBEAC23D6B1E900919BEF /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				84E54A1823EED7C200422C37 /* SystemNavigationCapture.m in Sources */,
+				84A4E50A23EFFBDC009E7406 /* UploadScreenshotView.m in Sources */,
 				84E547C823EE8C7200422C37 /* CJWActivityIndicatorView.m in Sources */,
 				84E54A4223EEDA3100422C37 /* LatelyMetodRouter.m in Sources */,
 				84E549E223EECAFF00422C37 /* LoginMetodVC.m in Sources */,
 				038A0AF223EC01ED00463BFF /* AppDelegate+tabBar.m in Sources */,
 				84E549DF23EECAFF00422C37 /* RegisterMetodVC.m in Sources */,
+				84A4E53423F00182009E7406 /* DisapproveGerm.m in Sources */,
 				03067FDE23E47AD600A08E53 /* UnderlineDizzyTable.m in Sources */,
 				84E549EC23EECAFF00422C37 /* GainDetectionAbnormal.m in Sources */,
 				84E549FC23EECC8700422C37 /* HomeNewCell.m in Sources */,
 				84E547EB23EE9F9E00422C37 /* LodingActivity.m in Sources */,
 				84E549CF23EECAFF00422C37 /* UsCenterMetodVC.m in Sources */,
+				84A4E53B23F001AA009E7406 /* DiscussGerm.m in Sources */,
 				038A0AF523EC081F00463BFF /* ToolsAuthorization.m in Sources */,
 				84E54A0323EECF3E00422C37 /* RuleMetodVC.m in Sources */,
 				84E5492823EEC47100422C37 /* BaseMetodVC.m in Sources */,
 				03067F8E23E41BB100A08E53 /* ExpanFileConstants.m in Sources */,
+				84A4E53723F00198009E7406 /* DeepenPleasurableTennisView.m in Sources */,
 				84E549F323EECBBC00422C37 /* HomeMetodVC.m in Sources */,
 				84E547C623EE8C7200422C37 /* CJWRefreshFooter.m in Sources */,
 				84E549C823EECAFF00422C37 /* BaseTabBarMetod.m in Sources */,
@@ -1042,6 +1086,7 @@
 				03067FE123E47BA300A08E53 /* UIView+SDExtension.m in Sources */,
 				84E549D523EECAFF00422C37 /* MessAgeMetodVC.m in Sources */,
 				03067F9623E41BB100A08E53 /* GeologicalFluid.m in Sources */,
+				84A4E52E23F00154009E7406 /* DisGermTools.m in Sources */,
 				84E54A1223EED20000422C37 /* GeneralBanner.m in Sources */,
 				84E549D123EECAFF00422C37 /* UsCenterCell.m in Sources */,
 				84E547C723EE8C7200422C37 /* CJWRefreshHeader.m in Sources */,
@@ -1049,7 +1094,6 @@
 				03067F8723E41BB100A08E53 /* NSString+paths.m in Sources */,
 				840EDAC923EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m in Sources */,
 				84E549CA23EECAFF00422C37 /* AboutUsMetodVC.m in Sources */,
-				84A4E50723EFEBCC009E7406 /* CJWUploadScreenshotView.m in Sources */,
 				84E549CB23EECAFF00422C37 /* SystemActivity.m in Sources */,
 				840EDACC23EDC7D90024D946 /* UIView+LoadState.m in Sources */,
 				84E54A4523EF054C00422C37 /* UsSystemVC.m in Sources */,
