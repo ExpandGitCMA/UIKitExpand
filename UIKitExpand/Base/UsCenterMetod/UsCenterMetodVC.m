@@ -24,19 +24,19 @@
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(setClick) title:@"nav_set"];
     NSArray*data = @[
            @{
-               @"title":@"隐私协议",
+               @"title":@"足球知识小课堂",
                @"content":@"",
            },
            @{
-               @"title":@"意见反馈",
+               @"title":@"给予意见反馈",
                @"content":@"",
            },
            @{
-                @"title":@"分享",
+                @"title":@"快来分享一下",
                 @"content":@"",
              },
            @{
-                 @"title":@"设置",
+                 @"title":@"系统设置",
                  @"content":@"",
              },
         
@@ -107,7 +107,7 @@
     if ([UserDefaultManager isLogin]) {
          switch (indexPath.row) {
                 case 0:
-                    [LatelyMetodRouter switchTopushUserPrivacyVC:self];
+                    [LatelyMetodRouter switchTopushRuleMetodVC:self];
             
                     break;
                 case 1:

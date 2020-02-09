@@ -18,5 +18,7 @@
 	<string>UsSystemVC</string>
 	<key>PostedMetod</key>
 	<string>PostedMetodVC</string>
+	<key>RuleMetod</key>
+	<string>RuleMetodVC</string>
 </dict>
 </plist>

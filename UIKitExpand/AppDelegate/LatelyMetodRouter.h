@@ -9,4 +9,5 @@
 +(void)switchTopushMessAgeMetodVC:(UIViewController*)controller;
 +(void)switchTopushUsSystemVC:(UIViewController*)controller;
 +(void)switchTopushPostedMetodVC:(UIViewController*)controller;
++(void)switchTopushRuleMetodVC:(UIViewController*)controller;
 @end

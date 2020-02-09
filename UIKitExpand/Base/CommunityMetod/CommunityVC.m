@@ -32,6 +32,8 @@
     DisapproveGerm * sdtoo = [[DisapproveGerm alloc] init];
     [sdtoo ultimatelyGlobalDusk:@"Orgy"];
     
+   self.tableView.emptyDataSetSource = self;
+    self.tableView.emptyDataSetDelegate = self;
     self.tableView.mj_header = nil;
     [self.tableView registerNib:[UINib nibWithNibName:@"MunityNoteCell" bundle:nil] forCellReuseIdentifier:@"SDDiarySetNoteCellID"];
    
@@ -195,6 +197,15 @@
           
           [imageVc showPreView:[UIApplication sharedApplication].keyWindow urls:array index:0];
 
+}
+- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView{
+    return [UIImage imageNamed:@"icon_data_empty"];
+}
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView{
+    NSString *text = @"  数据空空如也... ";
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:17.0f],
+       NSForegroundColorAttributeName: [UIColor lightGrayColor]};
+    return [[NSAttributedString alloc] initWithString:text attributes:attributes];
 }
 - (NSArray *)sepC:(NSString *)se{
     NSArray * arr = [se componentsSeparatedByString:@"-"];

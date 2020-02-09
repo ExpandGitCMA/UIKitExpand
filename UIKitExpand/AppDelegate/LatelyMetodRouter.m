@@ -33,6 +33,7 @@
 }
 
 
+
 #pragma mark-隐私协议跳转
 +(void)switchTopushUserPrivacyVC:(UIViewController*)controller{
     [controller.navigationController pushViewController:[ALRouter openURL:@"UserPrivacy"] animated:YES];
@@ -76,5 +77,7 @@
 }
 
 
-
++(void)switchTopushRuleMetodVC:(UIViewController*)controller{
+    [controller.navigationController pushViewController:[ALRouter openURL:@"RuleMetod"] animated:YES];
+}
 @end

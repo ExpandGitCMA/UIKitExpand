@@ -50,8 +50,8 @@
     CommunityVC *communityVC = [CommunityVC new];
     [self tabBarControllers:communityVC title:@"社区" imageUrl:@"discover"];
     HomeMetodVC *homePage = [HomeMetodVC new];
-    RuleMetodVC *score = [RuleMetodVC new];
-    [self tabBarControllers:score title:@"规则" imageUrl:@"score"];
+//    RuleMetodVC *score = [RuleMetodVC new];
+//    [self tabBarControllers:score title:@"规则" imageUrl:@"score"];
     [self tabBarControllers:homePage  title:@"首页" imageUrl:@"icon-home"];
     UsCenterMetodVC *personal = [UsCenterMetodVC new];
     [self tabBarControllers:personal title:@"我的" imageUrl:@"icon-account"];
