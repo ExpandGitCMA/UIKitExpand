@@ -6,9 +6,11 @@
 #import "DisBamboo.h"
 #import "DisapproveGerm.h"
 #import "DeepenPleasurableTennisView.h"
-#import "DiscussGerm.h"
+#import "YBSUIPrivacyView.h"
 #import "PostedMetodVC.h"
 #import "FJPreImageView.h"
+#import "YBSYBSportsAlert.h"
+
 @interface CommunityVC ()
 
 @end
@@ -35,7 +37,7 @@
    self.tableView.emptyDataSetSource = self;
     self.tableView.emptyDataSetDelegate = self;
     self.tableView.mj_header = nil;
-    [self.tableView registerNib:[UINib nibWithNibName:@"MunityNoteCell" bundle:nil] forCellReuseIdentifier:@"SDDiarySetNoteCellID"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MunityNoteCell" bundle:nil] forCellReuseIdentifier:@"MunityNoteCell"];
    
 }
 
@@ -68,7 +70,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     DisBamboo * model = self.dataSource[indexPath.row];
     if (model.dataImageStr) {
-        MunityNoteCell * noteCell = [tableView dequeueReusableCellWithIdentifier:@"SDDiarySetNoteCellID" forIndexPath:indexPath];
+        MunityNoteCell * noteCell = [tableView dequeueReusableCellWithIdentifier:@"MunityNoteCell" forIndexPath:indexPath];
         noteCell.diaryNoteLabel.text = model.news;
         noteCell.diaryImageView.image = [self Base64StrToUIImage:model.dataImageStr];
         
@@ -130,8 +132,13 @@
         };
         noteCell.talkblockAction = ^{
             if ([UserDefaultManager isLogin]) {
-                DiscussGerm * OrgyView = [[DiscussGerm alloc] init];
-                [self.view.window addSubview:OrgyView];
+//                YBSUIPrivacyView * OrgyView = [[YBSUIPrivacyView alloc] init];
+//                [self.view.window addSubview:OrgyView];
+                
+                YBSYBSportsAlert*sportsAlert = [YBSYBSportsAlert initYBSportsAlertWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) delegate:nil ];
+                     [sportsAlert setAnimationType:YBSportsAlertAnimationTypeDefault];
+                
+                    [sportsAlert YBSDCAlerAnimationConterl:self];
             }else{
                  [LatelyMetodRouter switchTopresentLoginMetodVC:self];
             }
@@ -158,6 +165,7 @@
     return nil;
 }
 
+
 -(void)updateDailyModel:(DisBamboo *)model{
     
     [[DisGermTools slidingDiaryShare]updateObjectsLiker:model];
@@ -180,8 +188,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-       DisBamboo * model = self.dataSource[indexPath.row];
-
+    DisBamboo * model = self.dataSource[indexPath.row];
     NSMutableArray * array = [NSMutableArray new];
 
     [array addObject:model.dataImageStr];
@@ -194,28 +201,31 @@
     }
      
     
-         FJPreImageView * imageVc = [[FJPreImageView alloc]init];
+    FJPreImageView * imageVc = [[FJPreImageView alloc]init];
           
-          [imageVc setLongTapPressBlock:^(UIImage * _Nonnull image) {
+    [imageVc setLongTapPressBlock:^(UIImage * _Nonnull image) {
               NSLog(@"长按图片回调");
-          }];
+   }];
           
-          [imageVc showPreView:[UIApplication sharedApplication].keyWindow urls:array index:0];
+   [imageVc showPreView:[UIApplication sharedApplication].keyWindow urls:array index:0];
 
 }
 - (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView{
     return [UIImage imageNamed:@"icon_data_empty"];
 }
+
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView{
     NSString *text = @"  数据空空如也... ";
     NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:17.0f],
        NSForegroundColorAttributeName: [UIColor lightGrayColor]};
     return [[NSAttributedString alloc] initWithString:text attributes:attributes];
 }
+
 - (NSArray *)sepC:(NSString *)se{
     NSArray * arr = [se componentsSeparatedByString:@"-"];
     return arr;
 }
+
 -(UIImage *)Base64StrToUIImage:(NSString *)_encodedImageStr
 {
     NSData * decodedImageData = [[NSData alloc] initWithBase64EncodedString:_encodedImageStr options:(NSDataBase64DecodingIgnoreUnknownCharacters)];
@@ -226,7 +236,6 @@
 -(void)editClick{
     
     if ([UserDefaultManager isLogin]) {
-       // [LatelyMetodRouter switchTopushPostedMetodVC:self];
         PostedMetodVC * homeDetailVC = [[PostedMetodVC alloc] init];
         homeDetailVC.hidesBottomBarWhenPushed = YES;
         homeDetailVC.loadBlock = ^{

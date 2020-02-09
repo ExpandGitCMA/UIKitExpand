@@ -41,8 +41,9 @@
 		84A4E53123F0016F009E7406 /* DisBamboo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E53023F0016F009E7406 /* DisBamboo.m */; };
 		84A4E53423F00182009E7406 /* DisapproveGerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E53323F00182009E7406 /* DisapproveGerm.m */; };
 		84A4E53723F00198009E7406 /* DeepenPleasurableTennisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E53523F00198009E7406 /* DeepenPleasurableTennisView.m */; };
-		84A4E53B23F001AA009E7406 /* DiscussGerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E53823F001A9009E7406 /* DiscussGerm.m */; };
-		84A4E53C23F001AA009E7406 /* DiscussGerm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4E53A23F001AA009E7406 /* DiscussGerm.xib */; };
+		84A4E53F23F055A6009E7406 /* YBSYBSportsAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E53D23F055A6009E7406 /* YBSYBSportsAlert.m */; };
+		84A4E54323F05606009E7406 /* YBSUIPrivacyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E54023F05606009E7406 /* YBSUIPrivacyView.m */; };
+		84A4E54423F05606009E7406 /* YBSUIPrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4E54123F05606009E7406 /* YBSUIPrivacyView.xib */; };
 		84E547C423EE8C7200422C37 /* CJWProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547BD23EE8C7200422C37 /* CJWProgressView.m */; };
 		84E547C523EE8C7200422C37 /* pull_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E547BF23EE8C7200422C37 /* pull_refresh_arrow@2x.png */; };
 		84E547C623EE8C7200422C37 /* CJWRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547C023EE8C7200422C37 /* CJWRefreshFooter.m */; };
@@ -206,9 +207,11 @@
 		84A4E53323F00182009E7406 /* DisapproveGerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisapproveGerm.m; sourceTree = "<group>"; };
 		84A4E53523F00198009E7406 /* DeepenPleasurableTennisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeepenPleasurableTennisView.m; sourceTree = "<group>"; };
 		84A4E53623F00198009E7406 /* DeepenPleasurableTennisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepenPleasurableTennisView.h; sourceTree = "<group>"; };
-		84A4E53823F001A9009E7406 /* DiscussGerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscussGerm.m; sourceTree = "<group>"; };
-		84A4E53923F001A9009E7406 /* DiscussGerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscussGerm.h; sourceTree = "<group>"; };
-		84A4E53A23F001AA009E7406 /* DiscussGerm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscussGerm.xib; sourceTree = "<group>"; };
+		84A4E53D23F055A6009E7406 /* YBSYBSportsAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSYBSportsAlert.m; sourceTree = "<group>"; };
+		84A4E53E23F055A6009E7406 /* YBSYBSportsAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSYBSportsAlert.h; sourceTree = "<group>"; };
+		84A4E54023F05606009E7406 /* YBSUIPrivacyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSUIPrivacyView.m; sourceTree = "<group>"; };
+		84A4E54123F05606009E7406 /* YBSUIPrivacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBSUIPrivacyView.xib; sourceTree = "<group>"; };
+		84A4E54223F05606009E7406 /* YBSUIPrivacyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSUIPrivacyView.h; sourceTree = "<group>"; };
 		84E547BB23EE8C7200422C37 /* CJWRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWRefreshHeader.h; sourceTree = "<group>"; };
 		84E547BC23EE8C7200422C37 /* CJWRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWRefreshFooter.h; sourceTree = "<group>"; };
 		84E547BD23EE8C7200422C37 /* CJWProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWProgressView.m; sourceTree = "<group>"; };
@@ -590,9 +593,11 @@
 				84A4E53323F00182009E7406 /* DisapproveGerm.m */,
 				84A4E53623F00198009E7406 /* DeepenPleasurableTennisView.h */,
 				84A4E53523F00198009E7406 /* DeepenPleasurableTennisView.m */,
-				84A4E53923F001A9009E7406 /* DiscussGerm.h */,
-				84A4E53823F001A9009E7406 /* DiscussGerm.m */,
-				84A4E53A23F001AA009E7406 /* DiscussGerm.xib */,
+				84A4E53E23F055A6009E7406 /* YBSYBSportsAlert.h */,
+				84A4E53D23F055A6009E7406 /* YBSYBSportsAlert.m */,
+				84A4E54223F05606009E7406 /* YBSUIPrivacyView.h */,
+				84A4E54023F05606009E7406 /* YBSUIPrivacyView.m */,
+				84A4E54123F05606009E7406 /* YBSUIPrivacyView.xib */,
 			);
 			path = CommunityMetod;
 			sourceTree = "<group>";
@@ -946,6 +951,7 @@
 				0324AC9A23E2DEFA004B4C3E /* date.json in Resources */,
 				84E549CD23EECAFF00422C37 /* UsCenterCell.xib in Resources */,
 				84E549D623EECAFF00422C37 /* MessAgeMeCell.xib in Resources */,
+				84A4E54423F05606009E7406 /* YBSUIPrivacyView.xib in Resources */,
 				84E549CC23EECAFF00422C37 /* FeedbackMetodVC.xib in Resources */,
 				84E549FD23EECC8700422C37 /* HomeNewCell.xib in Resources */,
 				840EDACB23EDC7D90024D946 /* JQLoadingStatusView.bundle in Resources */,
@@ -959,7 +965,6 @@
 				84E54A3E23EED8EB00422C37 /* ALRouter.plist in Resources */,
 				84E549DE23EECAFF00422C37 /* RegisterMetodVC.xib in Resources */,
 				84A4E4DB23EFD255009E7406 /* UsCenterHead.xib in Resources */,
-				84A4E53C23F001AA009E7406 /* DiscussGerm.xib in Resources */,
 				84E549E123EECAFF00422C37 /* LoginMetodVC.xib in Resources */,
 				84E549F723EECC0700422C37 /* RebuildIllJoy.xib in Resources */,
 			);
@@ -1037,6 +1042,7 @@
 				840EDACA23EDC7D90024D946 /* JQLoadingStatusView.m in Sources */,
 				84E549D423EECAFF00422C37 /* MessAgeMeCell.m in Sources */,
 				84E5491D23EEBA8300422C37 /* UserDefaultManager.m in Sources */,
+				84A4E54323F05606009E7406 /* YBSUIPrivacyView.m in Sources */,
 				84E549E423EECAFF00422C37 /* WKWebViewVC.m in Sources */,
 				84E54A0923EED01100422C37 /* RuleDetailsVC.m in Sources */,
 				84A4E52A23F00138009E7406 /* MunityNoteCell.m in Sources */,
@@ -1062,7 +1068,6 @@
 				84E549FC23EECC8700422C37 /* HomeNewCell.m in Sources */,
 				84E547EB23EE9F9E00422C37 /* LodingActivity.m in Sources */,
 				84E549CF23EECAFF00422C37 /* UsCenterMetodVC.m in Sources */,
-				84A4E53B23F001AA009E7406 /* DiscussGerm.m in Sources */,
 				038A0AF523EC081F00463BFF /* ToolsAuthorization.m in Sources */,
 				84E54A0323EECF3E00422C37 /* RuleMetodVC.m in Sources */,
 				84E5492823EEC47100422C37 /* BaseMetodVC.m in Sources */,
@@ -1095,6 +1100,7 @@
 				840EDAC923EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m in Sources */,
 				84E549CA23EECAFF00422C37 /* AboutUsMetodVC.m in Sources */,
 				84E549CB23EECAFF00422C37 /* SystemActivity.m in Sources */,
+				84A4E53F23F055A6009E7406 /* YBSYBSportsAlert.m in Sources */,
 				840EDACC23EDC7D90024D946 /* UIView+LoadState.m in Sources */,
 				84E54A4523EF054C00422C37 /* UsSystemVC.m in Sources */,
 				84E549F823EECC0700422C37 /* RebuildIllJoy.m in Sources */,

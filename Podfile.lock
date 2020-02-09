@@ -20,7 +20,6 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - Masonry (1.1.0)
   - MJRefresh (3.3.1)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
@@ -46,7 +45,6 @@ DEPENDENCIES:
   - DZNEmptyDataSet
   - FJPreImageView
   - FMDB
-  - Masonry (= 1.1.0)
   - MJRefresh
   - SDWebImage (~> 3.7.3)
   - SVProgressHUD
@@ -62,7 +60,6 @@ SPEC REPOS:
     - DZNEmptyDataSet
     - FJPreImageView
     - FMDB
-    - Masonry
     - MJRefresh
     - SDWebImage
     - SVProgressHUD
@@ -75,7 +72,6 @@ SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FJPreImageView: bbe92fa3111ae3c7e46338a64fc7bb8eaf9c8bd7
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
@@ -83,6 +79,6 @@ SPEC CHECKSUMS:
   UMCCommon: 971f324a5a99c9d662ae040a815e7e3d7ef8b2a8
   UMCShare: e0cef55c0fd6051254c8cda1d0630eb578b27bad
 
-PODFILE CHECKSUM: 0d579d6f5c4c15d6f641b125758480ab6bf0c68f
+PODFILE CHECKSUM: f51e3159b5c77ca7bfabb697a7ac25dfd57367cf
 
 COCOAPODS: 1.8.4
