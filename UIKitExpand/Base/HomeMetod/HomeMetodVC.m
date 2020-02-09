@@ -9,12 +9,14 @@
 
 #import "UnderlineDizzyTable.h"
 #import "UserDefaultManager.h"
+#import "FJPreImageView.h"
 
 @interface HomeMetodVC ()<HotContentDelegate>
 @property(nonatomic,strong)DFCHotContent *hotContent;
 @property (nonatomic,assign)NSInteger totalPage;
 @property (nonatomic,assign) NSInteger currentPage;
 @property (nonatomic,assign) NSInteger contentPage;
+@property (nonatomic,copy)NSArray *array;
 @end
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 @implementation HomeMetodVC
@@ -41,11 +43,23 @@
 -(void)getHomeBanner{
     [[HttpNetWorkManager sharedManager] goUponGutter:URL_HomeBanner params:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
-             NSArray *banner = [obj objectForKey:@"banner"];
-             [self.banner setArrayStringUrl:banner];
+             _array = [obj objectForKey:@"banner"];
+             [self.banner setArrayStringUrl:_array];
         }
     }];
 }
+-(void)cycleScrollView:(GeneralBanner *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
+
+
+     FJPreImageView * imageVc = [[FJPreImageView alloc]init];
+      
+      [imageVc setLongTapPressBlock:^(UIImage * _Nonnull image) {
+          NSLog(@"长按图片回调");
+      }];
+      
+      [imageVc showPreView:[UIApplication sharedApplication].keyWindow urls:_array index:0];
+}
+
 - (void)getLoad{
     if (_currentPage < _totalPage) {
                _currentPage++;

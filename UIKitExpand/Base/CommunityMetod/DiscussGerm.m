@@ -22,12 +22,12 @@
 }
 - (IBAction)ofCourseBtnAction:(UIButton *)sender {
     if (self.OrgyTalkTextView.text.length == 0) {
-        [SVProgressHUD showInfoWithStatus:@"评论不能为空"];
+        [SVProgressHUD showInfoWithStatus:@"请输入评论话题！！"];
         return;
     }
     [SVProgressHUD show];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [SVProgressHUD showSuccessWithStatus:@"评论成功，我们将在5个小时内审核您的评论"];
+        [SVProgressHUD showSuccessWithStatus:@"评论成功，我们将在2个小时内审核您的评论"];
         [self removeFromSuperview];
     });
 }

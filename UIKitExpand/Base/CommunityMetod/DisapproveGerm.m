@@ -94,16 +94,19 @@ static DisapproveGerm * _tool = nil;
         
         NSArray * arr = @[
             @{
-                        @"dataImageStr":self.imageDataArr[4],
-                        @"news":@"周末踢球活动真开心😄",
-                        @"dateStr":@"2019-12-10",
-                        @"token":@"3",
-                        @"liker":@"22",
-                        @"collect":@"31",
-                        @"name":@"小故事多多",
-                        @"headimageStr":self.headImageArr[4]
-                                   
-                            },
+                   @"dataImageStr":self.imageDataArr[2],
+                   @"news":@"坚持就会有效果,加油我们是最优秀的一群人,我们是一群热爱足球的人，努力奔跑永不言弃！",
+                   @"dateStr":@"2019-12-6",
+                   @"token":@"3",
+                   @"liker":@"19",
+                  @"collect":@"45",
+                  @"name":@"南平三叔的竹叶",
+                  @"ImageUrls":@"",
+                  @"ImageUrl":@"",
+                  @"headimageStr":self.headImageArr[2]
+                   
+            },
+           
         @{
              @"dataImageStr":self.imageDataArr[3],
              @"news":@"孩子们今天真开心,这场开心的踢球",
@@ -112,21 +115,24 @@ static DisapproveGerm * _tool = nil;
              @"liker":@"9",
              @"collect":@"22",
              @"name":@"十分爱你的肉肉",
+             @"ImageUrls":[self UIImageToBase64Str:[UIImage imageNamed:@"febasodfjhasuarhs"]],
+               @"ImageUrl":[self UIImageToBase64Str:[UIImage imageNamed:@"febasodfjerwearhs"]],
              @"headimageStr":self.headImageArr[1]
              
         },
+        @{
+              @"dataImageStr":self.imageDataArr[4],
+              @"news":@"周末踢球活动真开心😄",
+              @"dateStr":@"2019-12-10",
+              @"token":@"3",
+              @"liker":@"22",
+              @"collect":@"31",
+             @"name":@"小故事多多",
+             @"ImageUrls":[self UIImageToBase64Str:[UIImage imageNamed:@"febfgsuarhs"]],
+             @"ImageUrl":@"",
+             @"headimageStr":self.headImageArr[4],
+           },
                           
-     @{
-            @"dataImageStr":self.imageDataArr[2],
-            @"news":@"坚持就会有效果,加油我们是最优秀的一群人,我们是一群热爱足球的人，努力奔跑永不言弃！",
-            @"dateStr":@"2019-12-6",
-            @"token":@"3",
-            @"liker":@"19",
-           @"collect":@"45",
-           @"name":@"南平三叔的竹叶",
-           @"headimageStr":self.headImageArr[2]
-            
-     },
     @{
         @"dataImageStr":self.imageDataArr[1],
         @"news":@"有甜有咸有咸,挥汗如雨的下午时光",
@@ -135,6 +141,8 @@ static DisapproveGerm * _tool = nil;
         @"liker":@"12",
         @"collect":@"66",
         @"name":@"詹老头子",
+        @"ImageUrls":@"",
+        @"ImageUrl":@"",
         @"headimageStr":self.headImageArr[3]
         
     },
@@ -146,6 +154,8 @@ static DisapproveGerm * _tool = nil;
             @"liker":@"56",
             @"collect":@"12",
             @"name":@"抓小喵的兔子",
+            @"ImageUrls":[self UIImageToBase64Str:[UIImage imageNamed:@"februarytyoiahs"]],
+            @"ImageUrl":@"",
            @"headimageStr":self.headImageArr[0]
          },
       
@@ -155,8 +165,8 @@ static DisapproveGerm * _tool = nil;
         for (NSDictionary * dic in arr) {
             DisBamboo * model = [[DisBamboo alloc] init];
             model.dataImageStr = dic[@"dataImageStr"];
-            model.dataImageUrls= @"";
-            model.dataImageUrl = @"";
+            model.dataImageUrls= dic[@"ImageUrls"];
+            model.dataImageUrl = dic[@"ImageUrl"];
             model.dateStr = dic[@"dateStr"];
             model.token = dic[@"token"];
             model.news = dic[@"news"];

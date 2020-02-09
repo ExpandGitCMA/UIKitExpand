@@ -77,9 +77,7 @@
      [[HttpNetWorkManager sharedManager] requestWithMetod:URL_Signout params:dict completed:^(BOOL ret, id obj) {
 
         [SVProgressHUD showInfoWithStatus:@"发布成功,审核通过会显示在社区话题"];
-         
-
-         
+        
          NSDate *date = [NSDate date];
          NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
          [formatter setDateFormat:@"yyyy-MM-dd"];

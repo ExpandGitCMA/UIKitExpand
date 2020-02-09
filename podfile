@@ -11,4 +11,5 @@ target 'UIKitExpand' do
   pod 'UMCShare/Social/ReducedQQ'
   pod 'Masonry', '1.1.0'
   pod 'FMDB'
+  pod 'FJPreImageView'
 end

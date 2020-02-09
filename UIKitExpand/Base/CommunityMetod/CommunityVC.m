@@ -8,7 +8,7 @@
 #import "DeepenPleasurableTennisView.h"
 #import "DiscussGerm.h"
 #import "PostedMetodVC.h"
-
+#import "FJPreImageView.h"
 @interface CommunityVC ()
 
 @end
@@ -173,6 +173,28 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+       DisBamboo * model = self.dataSource[indexPath.row];
+
+    NSMutableArray * array = [NSMutableArray new];
+
+    [array addObject:model.dataImageStr];
+
+    if ([model.dataImageUrls isNull]) {
+        [array addObject:model.dataImageUrls];
+    }
+    if ([model.dataImageUrl isNull]) {
+        [array addObject:model.dataImageUrl];
+    }
+     
+    
+         FJPreImageView * imageVc = [[FJPreImageView alloc]init];
+          
+          [imageVc setLongTapPressBlock:^(UIImage * _Nonnull image) {
+              NSLog(@"长按图片回调");
+          }];
+          
+          [imageVc showPreView:[UIApplication sharedApplication].keyWindow urls:array index:0];
+
 }
 - (NSArray *)sepC:(NSString *)se{
     NSArray * arr = [se componentsSeparatedByString:@"-"];
