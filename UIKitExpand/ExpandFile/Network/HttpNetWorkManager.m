@@ -135,7 +135,7 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
 
 -(void)requestWithMetod:(NSString *)path  params :(NSDictionary *)params  completed:(HttpCompletedBlock)completed{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.requestSerializer.timeoutInterval = 10;
+    manager.requestSerializer.timeoutInterval = 5;
     manager.responseSerializer.acceptableContentTypes =
     [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
   

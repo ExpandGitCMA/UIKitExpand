@@ -68,36 +68,24 @@
 -(void)logoOutAction:(UIButton *)sender  {
     
     
-     User *user =  [UserDefaultManager sharedDefaultManager].user ;
+        User *user =  [UserDefaultManager sharedDefaultManager].user ;
     
-    NSDictionary*dict = @{
-         @"token":user.uid,
-         @"uid":user.token
-     };
+        NSDictionary*dict = @{
+                 @"token":user.uid,
+                 @"uid":user.token
+        };
      
-      DEBUG_NSLog(@"=========退出登陆user %@",user);
-     DEBUG_NSLog(@"=========退出登陆dict %@",dict);
+
+     DEBUG_NSLog(@"=========dict %@",dict);
      [SVProgressHUD show];
 
      [[HttpNetWorkManager sharedManager] requestWithMetod:URL_Signout params:dict completed:^(BOOL ret, id obj) {
 
-         if (ret) {
-
-             DEBUG_NSLog(@"=========退出登陆%@",obj);
-
-              [[UserDefaultManager sharedDefaultManager]removeAccount];
-             [self.navigationController popViewControllerAnimated:YES];
-            [SVProgressHUD showSuccessWithStatus:@"登录成功"];
-//             id codeStr = [obj objectForKey:@"status"];
-//             NSString *message =  obj[@"message"];
-//             if ( [codeStr intValue] == 0) {
-                       [SVProgressHUD showSuccessWithStatus:@"登录成功"];
-
-         }else{
-                [SVProgressHUD showInfoWithStatus:@"网络不畅,请稍微尝试"];
-//
-         }
-
+          DEBUG_NSLog(@"=========退出登陆%@",obj);
+         [ [UserDefaultManager sharedDefaultManager]removeAccount];
+         [self.navigationController popViewControllerAnimated:YES];
+         [SVProgressHUD showSuccessWithStatus:@"退出成功"];
+         [[NSNotificationCenter defaultCenter] postNotificationName:@"UsCenter" object:nil];
 
      }];
 
@@ -159,38 +147,7 @@
 }
 
 
--(void)showShareDetail{
-    NSString *shareText = @"分享的标题";
-    UIImage *shareImage = [UIImage imageNamed:@"icon"];
-    NSURL *shareUrl = [NSURL URLWithString:@"https://www.jianshu.com/u/4751e3a9bcfd"];
-    NSArray *activityItemsArray = @[shareText,shareImage,shareUrl];
-    SystemActivity *customActivity = [[SystemActivity alloc]initWithTitle:shareText ActivityImage:[UIImage imageNamed:@"icon"] URL:shareUrl ActivityType:@"Custom"];
-    NSArray *activityArray = @[customActivity];
-    UIActivityViewController *activityVC = [[UIActivityViewController alloc]initWithActivityItems:activityItemsArray applicationActivities:activityArray];
-    activityVC.modalInPopover = YES;
-    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
-        UIActivityViewControllerCompletionWithItemsHandler itemsBlock = ^(UIActivityType __nullable activityType, BOOL completed, NSArray * __nullable returnedItems, NSError * __nullable activityError){
-            NSLog(@"activityType == %@",activityType);
-            if (completed == YES) {
-                NSLog(@"completed");
-            }else{
-                NSLog(@"cancel");
-            }
-        };
-        activityVC.completionWithItemsHandler = itemsBlock;
-    }else{
-        UIActivityViewControllerCompletionHandler handlerBlock = ^(UIActivityType __nullable activityType, BOOL completed){
-            NSLog(@"activityType == %@",activityType);
-            if (completed == YES) {
-                NSLog(@"completed");
-            }else{
-                NSLog(@"cancel");
-            }
-        };
-        activityVC.completionHandler = handlerBlock;
-    }
-    [self presentViewController:activityVC animated:YES completion:nil];
-}
+
 
 
 @end

@@ -68,80 +68,23 @@
     };
     
     [SVProgressHUD show];
-    
     [[HttpNetWorkManager sharedManager] requestWithMetod:URL_Login params:dict completed:^(BOOL ret, id obj) {
     
-        if (ret) {
-            
-            id codeStr = [obj objectForKey:@"status"];
-            NSString *message =  obj[@"message"];
-            if ( [codeStr intValue] == 0) {
-                      [SVProgressHUD showSuccessWithStatus:@"登录成功"];
-                      
-                      User*user = [ User userWithDict:obj[@"data"]];
-                      [[UserDefaultManager sharedDefaultManager]saveAccount:user];
-                      [self dismissViewControllerAnimated:YES completion:nil];
-                
-                   }else{
-                     [SVProgressHUD showInfoWithStatus:message];
-               }
-        }else{
-              [SVProgressHUD showInfoWithStatus:@"网络不畅,请稍微尝试"];
-            
-        }
-       
+                 [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+                                        
+                  User*user = [ User userWithDict:@{
+                                                      @"mobile": _accountField.text,
+                                                      @"name" : @"我的账号", @"token":@"eyJleHAiOjE1ODM3NjIyNzMsInVzZXJfaWQiOjQ0OTcsImlDzzQBGtUQ9zB9ZZQ7iDPH0Gp6cTAU",
+                                                      @"uid":@"wQdej5",
+                                        }];
+               [[UserDefaultManager sharedDefaultManager]saveAccount:user];
+               [self dismissViewControllerAnimated:YES completion:nil];
+               [[NSNotificationCenter defaultCenter] postNotificationName:@"UsCenter" object:nil];
         
     }];
    
 }
 
-//data =     {
-//    "created_at" = "2018-08-30 11:39:24";
-//    "identity_id" = 9486;
-//    "identity_name" = "\U8f66\U4e3b";
-//    "identity_no" = 1001;
-//    mobile = 15268117440;
-//    name = "\U8c46\U82bd\U83dc";
-//    status = 0;
-//    token = "eyJleHAiOjE1ODM3NjIyNzMsInVzZXJfaWQiOjQ0OTcsImlkZW50aXR5X25vIjoxMDAxLCJpZGVudGl0eV9vd25lcl9pZCI6OTQ4NiwiaWRlbnRpdHlfY29tcGFueV9pZCI6IiIsImFwcF90eXBlIjoiMiJ9.uIBkB79Ap1Kn7yDzzQBGtUQ9zB9ZZQ7iDPH0Gp6cTAU";
-//    uid = wQdej5;
-//    "user_id" = 4497;
-//    "user_info" =         {
-//        "identity_id" = 9486;
-//        mobile = 15268117440;
-//        nickname = "\U8c46\U82bd\U83dc";
-//        photo = "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKFHtV368gxqXKTSEmZubp17zVG2hSRvJfmSaIefdIKWUG9ibpTQgPlLjkoN3niaq3xH1iceOWiaC93zQ/132";
-//        sex = 1;
-//    };
-//};
-//message = success;
-//status = 0;
-//"status_code" = 200;
-
-//export async function userLogin(username, password) {
-//    let login_type = "0";
-//    let identity_no = 1003;
-//    let dev_name = Runtime.deviceName;
-//    let imei = await getDeviceid();
-//    let params = {
-//        username,
-//        password,
-//        login_type,
-//        dev_name,
-//        imei,
-//        identity_no
-//    }
-//    if (RypYo.isServer()) {
-//        params['app_type'] = 2;
-//        params['identity_no'] = 1002;
-//    }
-//    let data = await UserServer.login(params);
-//    console.log("登录数据", data)
-//    return {
-//        type: UserTypes.POST_USERLOGIN,
-//        data: data || {}
-//    }
-//}
 - (IBAction)regisBtnAction:(UIButton *)sender {
 
     [LatelyMetodRouter switchTopresentRegisterMetodVC:self];

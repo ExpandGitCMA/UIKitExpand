@@ -80,30 +80,41 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
                  NSDictionary*  meta = [obj objectForKey:@"meta"];
                  NSDictionary*  body = [obj objectForKey:@"body"];
                 NSString *  metaUrl = [meta objectForKey:@"id"];
+               
+             
+                
                 NSArray *banner = [body objectForKey:@"img"];
                 for (NSDictionary *dic in banner) {
                       NSString *url = [dic objectForKey:@"url"];
                       [data addObject:url];
-                   }
-              [[HttpNetWorkManager sharedManager] getSportsNewspath:metaUrl params:@{} completed:^(BOOL ret, id obj) {
-                        NSDictionary*body = [obj objectForKey:@"body"];
-                        if (ret) {
-                            NSString*html = body[@"text"];
-                            if (data.count>0|| [html isNull]) {
-                                 [self.view dismessStateView];
-                                 [_banner setArrayStringUrl:[data copy]];
-                                 [self.webView loadHTMLString:html baseURL:nil];
+              
+                }
+                if ([metaUrl containsString:@"http"]) {
+                                         
+                      [[HttpNetWorkManager sharedManager] getSportsNewspath:metaUrl params:@{} completed:^(BOOL ret, id obj) {
+                                NSDictionary*body = [obj objectForKey:@"body"];
+                                if (ret) {
+                                    NSString*html = body[@"text"];
+                                    if (data.count>0|| [html isNull]) {
+                                         [self.view dismessStateView];
+                                         [_banner setArrayStringUrl:[data copy]];
+                                         [self.webView loadHTMLString:html baseURL:nil];
+                                    }else{
+                                         [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
+                                    }
+                                }else{
+                                     [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
+                                }
+                               }];
+                            
                             }else{
                                  [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
                             }
-                        }else{
-                             [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
-                        }
-                       }];
                 }else{
                      [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
                 }
            }];
+ 
 }
 #pragma mark - WKNavigationDelegate
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation{

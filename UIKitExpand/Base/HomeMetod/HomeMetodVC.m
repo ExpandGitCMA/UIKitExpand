@@ -159,18 +159,18 @@
     
     
     if ([UserDefaultManager isLogin]) {
-      NewsModel *model = [self.dataSource SafetyObjectAtIndex:indexPath.row];
-      RuleDetailsVC * homeDetailVC = [[RuleDetailsVC alloc] init];
-      homeDetailVC.hidesBottomBarWhenPushed = YES;
-      if ([model.content isNull]) {
-          homeDetailVC.url = model.thumbnail;
-          homeDetailVC.conten = model.content;
-          [self.navigationController pushViewController:homeDetailVC animated:YES];
-      }else{
-          WKWebViewVC* webViewVC = [[WKWebViewVC alloc]initGetLoadWitheresponseObjectUrl:model.link[@"url"] banner:@[]];
-          webViewVC.hidesBottomBarWhenPushed = YES;
-          [self.navigationController pushViewController:webViewVC animated:YES];
-      }
+          NewsModel *model = [self.dataSource SafetyObjectAtIndex:indexPath.row];
+          RuleDetailsVC * homeDetailVC = [[RuleDetailsVC alloc] init];
+          homeDetailVC.hidesBottomBarWhenPushed = YES;
+          if ([model.content isNull]) {
+              homeDetailVC.url = model.thumbnail;
+              homeDetailVC.conten = model.content;
+              [self.navigationController pushViewController:homeDetailVC animated:YES];
+          }else{
+              WKWebViewVC* webViewVC = [[WKWebViewVC alloc]initGetLoadWitheresponseObjectUrl:model.link[@"url"] banner:@[]];
+              webViewVC.hidesBottomBarWhenPushed = YES;
+              [self.navigationController pushViewController:webViewVC animated:YES];
+          }
     }else{
          [LatelyMetodRouter switchTopresentLoginMetodVC:self];
     }

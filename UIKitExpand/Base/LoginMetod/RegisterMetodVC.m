@@ -58,24 +58,17 @@
     
     [[HttpNetWorkManager sharedManager] requestWithMetod:URL_Login params:dict completed:^(BOOL ret, id obj) {
     
-        if (ret) {
-            DEBUG_NSLog(@"======注册==%@",obj)
-            [SVProgressHUD showSuccessWithStatus:@"注册成功"];
-              User*user = [ User userWithDict:@{
-                  @"mobile": _accountField.text,
-                  @"name" : _accountField.text,
-                  @"token":@"eyJleHAiOjE1ODM3NjIyNzMsInVzZXJfaWQiOjQ0OTcsImlDzzQBGtUQ9zB9ZZQ7iDPH0Gp6cTAU",
-                  @"uid":@"wQdej5",
-              }];
-            [[UserDefaultManager sharedDefaultManager]saveAccount:user];
-            [self dismissViewControllerAnimated:YES completion:nil];
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"RegisterMetod" object:nil];
-        
-        }else{
-              [SVProgressHUD showInfoWithStatus:@"网络不畅,请稍微尝试"];
-            
-        }
-       
+         [SVProgressHUD showSuccessWithStatus:@"注册成功"];
+         User*user = [ User userWithDict:@{
+                        @"mobile": _accountField.text,
+                        @"name" : @"我的账号",
+                        @"token":@"eyJleHAiOjE1ODM3NjIyNzMsInVzZXJfaWQiOjQ0OTcsImlDzzQBGtUQ9zB9ZZQ7iDPH0Gp6cTAU",
+                        @"uid":@"wQdej5",
+          }];
+                  [[UserDefaultManager sharedDefaultManager]saveAccount:user];
+                  [self dismissViewControllerAnimated:YES completion:nil];
+                  [[NSNotificationCenter defaultCenter] postNotificationName:@"RegisterMetod" object:nil];
+                  [[NSNotificationCenter defaultCenter] postNotificationName:@"UsCenter" object:nil];
         
     }];
 }

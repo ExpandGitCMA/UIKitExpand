@@ -30,6 +30,8 @@
 		840EDACA23EDC7D90024D946 /* JQLoadingStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC123EDC7D90024D946 /* JQLoadingStatusView.m */; };
 		840EDACB23EDC7D90024D946 /* JQLoadingStatusView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 840EDAC323EDC7D90024D946 /* JQLoadingStatusView.bundle */; };
 		840EDACC23EDC7D90024D946 /* UIView+LoadState.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC623EDC7D90024D946 /* UIView+LoadState.m */; };
+		84A4E4D923EFD245009E7406 /* UsCenterHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E4D823EFD245009E7406 /* UsCenterHead.m */; };
+		84A4E4DB23EFD255009E7406 /* UsCenterHead.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4E4DA23EFD255009E7406 /* UsCenterHead.xib */; };
 		84E547C423EE8C7200422C37 /* CJWProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547BD23EE8C7200422C37 /* CJWProgressView.m */; };
 		84E547C523EE8C7200422C37 /* pull_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E547BF23EE8C7200422C37 /* pull_refresh_arrow@2x.png */; };
 		84E547C623EE8C7200422C37 /* CJWRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E547C023EE8C7200422C37 /* CJWRefreshFooter.m */; };
@@ -174,6 +176,9 @@
 		840EDAC523EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQLoadingIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		840EDAC623EDC7D90024D946 /* UIView+LoadState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LoadState.m"; sourceTree = "<group>"; };
 		840EDAC723EDC7D90024D946 /* JQLoadingStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQLoadingStatusView.h; sourceTree = "<group>"; };
+		84A4E4D723EFD245009E7406 /* UsCenterHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsCenterHead.h; sourceTree = "<group>"; };
+		84A4E4D823EFD245009E7406 /* UsCenterHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsCenterHead.m; sourceTree = "<group>"; };
+		84A4E4DA23EFD255009E7406 /* UsCenterHead.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsCenterHead.xib; sourceTree = "<group>"; };
 		84E547BB23EE8C7200422C37 /* CJWRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWRefreshHeader.h; sourceTree = "<group>"; };
 		84E547BC23EE8C7200422C37 /* CJWRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWRefreshFooter.h; sourceTree = "<group>"; };
 		84E547BD23EE8C7200422C37 /* CJWProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWProgressView.m; sourceTree = "<group>"; };
@@ -564,6 +569,9 @@
 				84E5498523EECAFF00422C37 /* SystemActivity.h */,
 				84E54A4323EF054C00422C37 /* UsSystemVC.h */,
 				84E54A4423EF054C00422C37 /* UsSystemVC.m */,
+				84A4E4D723EFD245009E7406 /* UsCenterHead.h */,
+				84A4E4D823EFD245009E7406 /* UsCenterHead.m */,
+				84A4E4DA23EFD255009E7406 /* UsCenterHead.xib */,
 			);
 			path = UsCenterMetod;
 			sourceTree = "<group>";
@@ -899,6 +907,7 @@
 				84E547C523EE8C7200422C37 /* pull_refresh_arrow@2x.png in Resources */,
 				84E54A3E23EED8EB00422C37 /* ALRouter.plist in Resources */,
 				84E549DE23EECAFF00422C37 /* RegisterMetodVC.xib in Resources */,
+				84A4E4DB23EFD255009E7406 /* UsCenterHead.xib in Resources */,
 				84E549E123EECAFF00422C37 /* LoginMetodVC.xib in Resources */,
 				84E549F723EECC0700422C37 /* RebuildIllJoy.xib in Resources */,
 			);
@@ -1030,6 +1039,7 @@
 				84E54A4523EF054C00422C37 /* UsSystemVC.m in Sources */,
 				84E549F823EECC0700422C37 /* RebuildIllJoy.m in Sources */,
 				B3F4F0001F14A8600005197E /* main.m in Sources */,
+				84A4E4D923EFD245009E7406 /* UsCenterHead.m in Sources */,
 				84E54A0B23EED01100422C37 /* RuleModel.m in Sources */,
 				84E549E523EECAFF00422C37 /* VomitTime.m in Sources */,
 				84E549EB23EECAFF00422C37 /* HotContentCell.m in Sources */,
