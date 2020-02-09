@@ -146,7 +146,12 @@
            
         };
         noteCell.pingBiBlock = ^{
-            [self pingBiYheDailyModel:model];
+          
+            if ([UserDefaultManager isLogin]) {
+                     [self pingBiYheDailyModel:model];
+                }else{
+                    [LatelyMetodRouter switchTopresentLoginMetodVC:self];
+               }
         };
         return noteCell;
     }
