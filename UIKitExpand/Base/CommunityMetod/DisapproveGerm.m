@@ -128,7 +128,7 @@ static DisapproveGerm * _tool = nil;
               @"liker":@"22",
               @"collect":@"31",
              @"name":@"小故事多多",
-             @"ImageUrls":[self UIImageToBase64Str:[UIImage imageNamed:@"febfgsuarhs"]],
+             @"ImageUrls":@"",
              @"ImageUrl":@"",
              @"headimageStr":self.headImageArr[4],
            },
@@ -155,7 +155,7 @@ static DisapproveGerm * _tool = nil;
             @"collect":@"12",
             @"name":@"抓小喵的兔子",
             @"ImageUrls":[self UIImageToBase64Str:[UIImage imageNamed:@"februarytyoiahs"]],
-            @"ImageUrl":@"",
+            @"ImageUrl":[self UIImageToBase64Str:[UIImage imageNamed:@"febfgsuarhs"]],
            @"headimageStr":self.headImageArr[0]
          },
       
