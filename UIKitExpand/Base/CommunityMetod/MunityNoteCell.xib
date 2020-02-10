@@ -103,7 +103,7 @@
                             <action selector="OrgyTalkBtnAction:" destination="VYz-It-QKw" eventType="touchUpInside" id="Qqr-HC-vUi"/>
                         </connections>
                     </button>
-                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ2-Wj-0XB">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ2-Wj-0XB">
                         <rect key="frame" x="357" y="10" width="45" height="45"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="45" id="VSk-iq-Yey"/>
