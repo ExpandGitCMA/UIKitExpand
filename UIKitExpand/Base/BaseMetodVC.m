@@ -5,6 +5,7 @@
 @implementation BaseMetodVC
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self dataSource];
 }
 -(GeneralBanner*)banner{

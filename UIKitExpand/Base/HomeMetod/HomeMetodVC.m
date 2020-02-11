@@ -5,7 +5,7 @@
 #import "HomeNewCell.h"
 #import "CoordinateDinosaur.h"
 #import "DFCHotContent.h"
-#import "WKWebViewVC.h"
+#import "WKViewMetodVC.h"
 
 #import "UnderlineDizzyTable.h"
 #import "UserDefaultManager.h"
@@ -181,9 +181,9 @@
               homeDetailVC.conten = model.content;
               [self.navigationController pushViewController:homeDetailVC animated:YES];
           }else{
-              WKWebViewVC* webViewVC = [[WKWebViewVC alloc]initGetLoadWitheresponseObjectUrl:model.link[@"url"] banner:@[]];
-              webViewVC.hidesBottomBarWhenPushed = YES;
-              [self.navigationController pushViewController:webViewVC animated:YES];
+              WKViewMetodVC* metodVC = [[WKViewMetodVC alloc]initGetLoadWitheresponseObjectUrl:model.link[@"url"] banner:@[]];
+               metodVC.hidesBottomBarWhenPushed = YES;
+              [self.navigationController pushViewController: metodVC animated:YES];
           }
     }else{
          [LatelyMetodRouter switchTopresentLoginMetodVC:self];

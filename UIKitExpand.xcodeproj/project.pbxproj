@@ -26,6 +26,7 @@
 		038A0AF223EC01ED00463BFF /* AppDelegate+tabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A0AF123EC01ED00463BFF /* AppDelegate+tabBar.m */; };
 		038A0AF523EC081F00463BFF /* ToolsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A0AF423EC081F00463BFF /* ToolsAuthorization.m */; };
 		84048CC723F29D2600E78497 /* BaseLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84048CC623F29D2600E78497 /* BaseLaunchViewController.m */; };
+		84048CCA23F2ADD500E78497 /* WKViewMetodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84048CC923F2ADD500E78497 /* WKViewMetodVC.m */; };
 		840EDAC823EDC7D90024D946 /* JQLoadingStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840EDABF23EDC7D90024D946 /* JQLoadingStatusView.xib */; };
 		840EDAC923EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC023EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m */; };
 		840EDACA23EDC7D90024D946 /* JQLoadingStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC123EDC7D90024D946 /* JQLoadingStatusView.m */; };
@@ -75,7 +76,6 @@
 		84E549DF23EECAFF00422C37 /* RegisterMetodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E549A223EECAFF00422C37 /* RegisterMetodVC.m */; };
 		84E549E123EECAFF00422C37 /* LoginMetodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E549A623EECAFF00422C37 /* LoginMetodVC.xib */; };
 		84E549E223EECAFF00422C37 /* LoginMetodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E549A723EECAFF00422C37 /* LoginMetodVC.m */; };
-		84E549E423EECAFF00422C37 /* WKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E549AF23EECAFF00422C37 /* WKWebViewVC.m */; };
 		84E549E523EECAFF00422C37 /* VomitTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E549B023EECAFF00422C37 /* VomitTime.m */; };
 		84E549E923EECAFF00422C37 /* DFCHotContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E549B823EECAFF00422C37 /* DFCHotContent.m */; };
 		84E549EA23EECAFF00422C37 /* CoordinateDinosaur.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E549B923EECAFF00422C37 /* CoordinateDinosaur.m */; };
@@ -183,6 +183,8 @@
 		2EC86418AF49E0D7082C20E8 /* Pods-UIKitExpand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.debug.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.debug.xcconfig"; sourceTree = "<group>"; };
 		84048CC523F29D2600E78497 /* BaseLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLaunchViewController.h; sourceTree = "<group>"; };
 		84048CC623F29D2600E78497 /* BaseLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLaunchViewController.m; sourceTree = "<group>"; };
+		84048CC823F2ADD500E78497 /* WKViewMetodVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKViewMetodVC.h; sourceTree = "<group>"; };
+		84048CC923F2ADD500E78497 /* WKViewMetodVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKViewMetodVC.m; sourceTree = "<group>"; };
 		840EDABF23EDC7D90024D946 /* JQLoadingStatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JQLoadingStatusView.xib; sourceTree = "<group>"; };
 		840EDAC023EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQLoadingIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		840EDAC123EDC7D90024D946 /* JQLoadingStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQLoadingStatusView.m; sourceTree = "<group>"; };
@@ -267,9 +269,7 @@
 		84E549A723EECAFF00422C37 /* LoginMetodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginMetodVC.m; sourceTree = "<group>"; };
 		84E549A923EECAFF00422C37 /* RegisterMetodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterMetodVC.h; sourceTree = "<group>"; };
 		84E549AA23EECAFF00422C37 /* BaseTabBarMetod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarMetod.h; sourceTree = "<group>"; };
-		84E549AF23EECAFF00422C37 /* WKWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewVC.m; sourceTree = "<group>"; };
 		84E549B023EECAFF00422C37 /* VomitTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VomitTime.m; sourceTree = "<group>"; };
-		84E549B423EECAFF00422C37 /* WKWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewVC.h; sourceTree = "<group>"; };
 		84E549B623EECAFF00422C37 /* VomitTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VomitTime.h; sourceTree = "<group>"; };
 		84E549B823EECAFF00422C37 /* DFCHotContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCHotContent.m; sourceTree = "<group>"; };
 		84E549B923EECAFF00422C37 /* CoordinateDinosaur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateDinosaur.m; sourceTree = "<group>"; };
@@ -682,8 +682,8 @@
 		84E549AB23EECAFF00422C37 /* HomeMetod */ = {
 			isa = PBXGroup;
 			children = (
-				84E549B423EECAFF00422C37 /* WKWebViewVC.h */,
-				84E549AF23EECAFF00422C37 /* WKWebViewVC.m */,
+				84048CC823F2ADD500E78497 /* WKViewMetodVC.h */,
+				84048CC923F2ADD500E78497 /* WKViewMetodVC.m */,
 				84E549B023EECAFF00422C37 /* VomitTime.m */,
 				84E549B623EECAFF00422C37 /* VomitTime.h */,
 				84E549F123EECBBC00422C37 /* HomeMetodVC.h */,
@@ -1048,7 +1048,6 @@
 				84E549D423EECAFF00422C37 /* MessAgeMeCell.m in Sources */,
 				84E5491D23EEBA8300422C37 /* UserDefaultManager.m in Sources */,
 				84A4E54323F05606009E7406 /* YBSUIPrivacyView.m in Sources */,
-				84E549E423EECAFF00422C37 /* WKWebViewVC.m in Sources */,
 				84E54A0923EED01100422C37 /* RuleDetailsVC.m in Sources */,
 				84A4E52A23F00138009E7406 /* MunityNoteCell.m in Sources */,
 				84E54A3F23EED8EB00422C37 /* ALRouter.m in Sources */,
@@ -1099,6 +1098,7 @@
 				03067F9623E41BB100A08E53 /* GeologicalFluid.m in Sources */,
 				84A4E52E23F00154009E7406 /* DisGermTools.m in Sources */,
 				84E54A1223EED20000422C37 /* GeneralBanner.m in Sources */,
+				84048CCA23F2ADD500E78497 /* WKViewMetodVC.m in Sources */,
 				84E549D123EECAFF00422C37 /* UsCenterCell.m in Sources */,
 				84E547C723EE8C7200422C37 /* CJWRefreshHeader.m in Sources */,
 				03067F8923E41BB100A08E53 /* UIImage+ImageEffects.m in Sources */,
@@ -1271,7 +1271,7 @@
 				CODE_SIGN_ENTITLEMENTS = UIKitExpand/UIKitExpand.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.3;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				DEVELOPMENT_TEAM = 8DZ394K7X7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1304,7 +1304,7 @@
 				CODE_SIGN_ENTITLEMENTS = UIKitExpand/UIKitExpand.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.3;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				DEVELOPMENT_TEAM = 8DZ394K7X7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

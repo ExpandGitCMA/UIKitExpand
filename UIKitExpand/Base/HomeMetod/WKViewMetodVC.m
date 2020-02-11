@@ -1,21 +1,25 @@
-#import "WKWebViewVC.h"
+
+#import "WKViewMetodVC.h"
+#import <WebKit/WebKit.h>
+
+
 #import <MJRefresh.h>
 #import "SportsMacrosHeadr.h"
 #import "GeneralBanner.h"
 #import "UnderlineDizzyTable.h"
 #import "UIView+LoadState.h"
 #import "NSString+IMAdditions.h"
-
 #import "HttpNetWorkManager.h"
-
-@interface WKWebViewVC ()<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
+@interface WKViewMetodVC ()<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 @property(nonatomic,copy)WKWebView *webView;
 @property(nonatomic,copy)NSString *metaUrl;
 
 @property(nonatomic,strong)GeneralBanner*banner;
 @property(nonatomic,strong)UIView * headerView;
+
 @end
-@implementation WKWebViewVC
+
+@implementation WKViewMetodVC
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 #define IPHONE_X \
@@ -24,6 +28,8 @@ if (@available(iOS 11.0, *)) {\
 isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
 }\
 (isPhoneX);})
+
+
 -(instancetype)initGetLoadWitheresponseObjectUrl:(NSString*)url banner:(NSArray*)banner{
     if(self = [super init]){
         [self.view showLoadStateWithMaskViewStateType:viewStateWithLoading];
@@ -41,9 +47,11 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"详情";
+    self.view.backgroundColor =  [UIColor whiteColor];
     [self webView];
     [self banner];
 }
+
 -(GeneralBanner*)banner{
     if (!_banner) {
         _banner = [GeneralBanner cycleScrollViewWithFrame:CGRectMake(0,IPHONE_X?88:64, SCREEN_WIDTH, 190) delegate:nil];
@@ -63,8 +71,8 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
         _webView.scrollView.bounces = NO;
         _webView.scrollView.showsVerticalScrollIndicator=YES;
         _webView.scrollView.showsHorizontalScrollIndicator=NO;
-        _webView.scrollView.backgroundColor = [UIColor whiteColor];
-       _webView.backgroundColor = [UIColor clearColor];
+//        _webView.scrollView.backgroundColor = [UIColor whiteColor];
+       _webView.backgroundColor = [UIColor whiteColor];
        _webView.opaque = NO;
         [self.view addSubview:_webView];
         _webView.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -97,7 +105,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
                                     NSString*html = body[@"text"];
                                     if (data.count>0|| [html isNull]) {
                                          [self.view dismessStateView];
-                                         [_banner setArrayStringUrl:[data copy]];
+                                         [[self banner] setArrayStringUrl:[data copy]];
                                          [self.webView loadHTMLString:html baseURL:nil];
                                     }else{
                                          [self.view showLoadStateWithMaskViewStateType:viewStateWithLoadError];
@@ -168,4 +176,5 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 }
 - (void)dealloc {
 }
+
 @end

@@ -1,5 +1,3 @@
-
-
 #import "BaseLaunchViewController.h"
 #import "SportsMacrosHeadr.h"
 #import <AFNetworking.h>
@@ -28,21 +26,19 @@
     
     [self.view addSubview:imgView];
     
-    
-    //注意： 建议加网络监控，有网的时候，再去请求开关接口。不然app首次下载容易出现崩溃的情况。
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         if (status == AFNetworkReachabilityStatusReachableViaWiFi || status == AFNetworkReachabilityStatusReachableViaWWAN) {
             [self babyLearnRecord];
         }else{
-            [self switchBaseTabBarController];
+            [self switchToBarController];
         }
     }];
     
 }
 
 
--(void)switchBaseTabBarController{
+-(void)switchToBarController{
     BaseTabBarMetod *tabBar = [[BaseTabBarMetod alloc]init];
     [UIApplication sharedApplication].keyWindow.rootViewController = tabBar ;
 }
@@ -57,7 +53,7 @@
            
             dispatch_async(dispatch_get_main_queue(), ^{
             
-                  [self switchBaseTabBarController];
+                  [self switchToBarController];
              
                 NSString *pushkey = responseObject[@"pushkey"];
                   AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
