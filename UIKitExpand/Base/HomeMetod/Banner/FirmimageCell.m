@@ -20,10 +20,28 @@
     _imageView.frame = self.bounds;
 }
 -(void)mixPartyDirty:(NSString*)url{
-    [_imageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"icon_data_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        if (image) {
-           _imageView.contentMode = UIViewContentModeScaleToFill;
-        }
-    }];
+    
+
+    if ([self isUrl:url]) {
+        [_imageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"icon_data_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            if (image) {
+               _imageView.contentMode = UIViewContentModeScaleToFill;
+            }
+        }];
+    }else{
+        _imageView.contentMode = UIViewContentModeScaleToFill;
+        _imageView.image = [UIImage imageNamed:url];
+        
+    }
+
+    
+    
+}
+
+- (BOOL)isUrl:(NSString *)str{
+    if ([str hasPrefix:@"http://"] || [str hasPrefix:@"https://"]) {
+        return YES;
+    }
+    return NO;
 }
 @end
