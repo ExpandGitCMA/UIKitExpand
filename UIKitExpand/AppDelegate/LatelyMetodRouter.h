@@ -1,6 +1,5 @@
 #import <UIKit/UIKit.h>
 @interface LatelyMetodRouter : NSObject
-+(void)didFinishToVC;
 +(void)switchTopushUserPrivacyVC:(UIViewController*)controller;
 +(void)switchTopushFeedbackMetodVC:(UIViewController*)controller;
 +(void)switchTopushAboutUsMetodVC:(UIViewController*)controller;

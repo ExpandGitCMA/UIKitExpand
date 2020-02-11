@@ -113,7 +113,6 @@
          [self.navigationController popViewControllerAnimated:YES];
     }];
     
-    DEBUG_NSLog(@"=======>%@",_uploadView.icons )
     
 }
 -(NSString *)UIImageToBase64Str:(UIImage *) image

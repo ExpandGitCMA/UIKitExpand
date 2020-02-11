@@ -135,7 +135,6 @@ static const CGFloat kMargin = 30;
         [_session stopRunning];
         AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex : 0 ];
         stringValue = metadataObject.stringValue;
-        DEBUG_NSLog(@"stringValue=%@",stringValue);
         [self pushAppUrl:stringValue];
     }
 }
@@ -195,7 +194,6 @@ static const CGFloat kMargin = 30;
 }
 #pragma mark-> 闪光灯
 -(void)openFlash:(UIButton*)button{
-    DEBUG_NSLog(@"闪光灯");
     button.selected = !button.selected;
     if (button.selected) {
         [self turnTorchOn:YES];
@@ -207,7 +205,6 @@ static const CGFloat kMargin = 30;
 #pragma mark-> 我的二维码
 -(void)myCode{
     [self.navigationController popViewControllerAnimated:YES];
-    DEBUG_NSLog(@"我的二维码");
 }
 #pragma mark-> 开关闪光灯
 - (void)turnTorchOn:(BOOL)on{

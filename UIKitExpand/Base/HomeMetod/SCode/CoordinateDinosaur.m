@@ -75,7 +75,7 @@
     }
 }
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation{
-   DEBUG_NSLog(@"接收到服务器跳转请求之后调用=%@",webView.URL.absoluteString);
+ 
 }
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
     NSString*absoluteString = navigationResponse.response.URL.absoluteString;

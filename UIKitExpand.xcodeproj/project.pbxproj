@@ -25,6 +25,7 @@
 		0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */; };
 		038A0AF223EC01ED00463BFF /* AppDelegate+tabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A0AF123EC01ED00463BFF /* AppDelegate+tabBar.m */; };
 		038A0AF523EC081F00463BFF /* ToolsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A0AF423EC081F00463BFF /* ToolsAuthorization.m */; };
+		84048CC723F29D2600E78497 /* BaseLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84048CC623F29D2600E78497 /* BaseLaunchViewController.m */; };
 		840EDAC823EDC7D90024D946 /* JQLoadingStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840EDABF23EDC7D90024D946 /* JQLoadingStatusView.xib */; };
 		840EDAC923EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC023EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m */; };
 		840EDACA23EDC7D90024D946 /* JQLoadingStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC123EDC7D90024D946 /* JQLoadingStatusView.m */; };
@@ -180,6 +181,8 @@
 		1557A88AC0C9420DBF348CAF /* Pods-UIKitExpand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.release.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.release.xcconfig"; sourceTree = "<group>"; };
 		2865E39BF27EDBE025A41994 /* libPods-UIKitExpand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIKitExpand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC86418AF49E0D7082C20E8 /* Pods-UIKitExpand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.debug.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.debug.xcconfig"; sourceTree = "<group>"; };
+		84048CC523F29D2600E78497 /* BaseLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLaunchViewController.h; sourceTree = "<group>"; };
+		84048CC623F29D2600E78497 /* BaseLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLaunchViewController.m; sourceTree = "<group>"; };
 		840EDABF23EDC7D90024D946 /* JQLoadingStatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JQLoadingStatusView.xib; sourceTree = "<group>"; };
 		840EDAC023EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQLoadingIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		840EDAC123EDC7D90024D946 /* JQLoadingStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQLoadingStatusView.m; sourceTree = "<group>"; };
@@ -480,6 +483,8 @@
 				84E5492723EEC47100422C37 /* BaseMetodVC.m */,
 				84E549AA23EECAFF00422C37 /* BaseTabBarMetod.h */,
 				84E5497823EECAFE00422C37 /* BaseTabBarMetod.m */,
+				84048CC523F29D2600E78497 /* BaseLaunchViewController.h */,
+				84048CC623F29D2600E78497 /* BaseLaunchViewController.m */,
 				84E5497923EECAFE00422C37 /* CommunityMetod */,
 				84E549AB23EECAFF00422C37 /* HomeMetod */,
 				84E5499F23EECAFF00422C37 /* LoginMetod */,
@@ -1048,6 +1053,7 @@
 				84A4E52A23F00138009E7406 /* MunityNoteCell.m in Sources */,
 				84E54A3F23EED8EB00422C37 /* ALRouter.m in Sources */,
 				84E549E923EECAFF00422C37 /* DFCHotContent.m in Sources */,
+				84048CC723F29D2600E78497 /* BaseLaunchViewController.m in Sources */,
 				84A4E53123F0016F009E7406 /* DisBamboo.m in Sources */,
 				0324ACC123E31F4E004B4C3E /* AsFondAssembly.m in Sources */,
 				84E547C423EE8C7200422C37 /* CJWProgressView.m in Sources */,
