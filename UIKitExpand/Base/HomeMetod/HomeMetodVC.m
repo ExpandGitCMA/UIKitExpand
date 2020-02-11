@@ -41,7 +41,7 @@
      [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(msgClick) title:@"msg_home"];
 }
 -(void)getHomeBanner{
-    [[HttpNetWorkManager sharedManager] goUponGutter:URL_HomeBanner params:@{} completed:^(BOOL ret, id obj) {
+    [[HttpNetWorkManager sharedManager] requestGetMetod:URL_HomeBanner params:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
              _array = [obj objectForKey:@"banner"];
              [self.banner setArrayStringUrl:_array];
@@ -79,7 +79,7 @@
     }
 }
 - (void)getBrandGoodDatasours:(NSDictionary *)dic{
-     [[HttpNetWorkManager sharedManager] getSportsNewspath:URL_ComNews params:dic completed:^(BOOL ret, id obj) {
+     [[HttpNetWorkManager sharedManager] getNewsSportpath:URL_ComNews params:dic completed:^(BOOL ret, id obj) {
          if (ret) {
              if(_currentPage == 1){
                  _totalPage =  [obj[0][@"totalPage"] integerValue];

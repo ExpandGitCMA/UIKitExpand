@@ -43,34 +43,45 @@
          [SVProgressHUD showInfoWithStatus:@"请输入密码"];
          return;
      }
-    NSDictionary*dict = @{
-        @"login_type":@"0",
-        @"identity_no":@"1003",
-        @"dev_name":@"",
-        @"imei":@"B900E334868556ejrwowq]r8576BF3031",
-        @"dev_name":@"iPhone6",
-        @"app_type":@"2",
-        @"name":_accountField.text,
-        @"password":_passwordField.text,
-    };
-    
-    [SVProgressHUD show];
-    
-    [[HttpNetWorkManager sharedManager] requestWithMetod:URL_Login params:dict completed:^(BOOL ret, id obj) {
-    
-         [SVProgressHUD showSuccessWithStatus:@"注册成功"];
-         User*user = [ User userWithDict:@{
-                        @"mobile": _accountField.text,
-                        @"name" : @"我的账号",
-                        @"token":@"eyJleHAiOjE1ODM3NjIyNzMsInVzZXJfaWQiOjQ0OTcsImlDzzQBGtUQ9zB9ZZQ7iDPH0Gp6cTAU",
-                        @"uid":@"wQdej5",
-          }];
-                  [[UserDefaultManager sharedDefaultManager]saveAccount:user];
-                  [self dismissViewControllerAnimated:YES completion:nil];
-                  [[NSNotificationCenter defaultCenter] postNotificationName:@"RegisterMetod" object:nil];
-                  [[NSNotificationCenter defaultCenter] postNotificationName:@"UsCenter" object:nil];
+
+
+    AVUser *user = [AVUser user];
+    user.username = _accountField.text;
+    user.password = _passwordField.text;
         
-    }];
+    [SVProgressHUD show];
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+           if (succeeded) {
+               // 注册成功直接登录
+               [AVUser logInWithUsernameInBackground:_accountField.text password:_passwordField.text block:^(AVUser *user, NSError *error){
+                   if (user) {
+                      
+                        [SVProgressHUD showSuccessWithStatus:@"注册成功"];
+                        User*users = [ User userWithDict:@{
+                                       @"mobile": user.username,
+                                       @"name" : @"我的账号",
+                                       @"token":user.sessionToken,
+                                       @"uid":user.objectId,
+                         }];
+                        [[UserDefaultManager sharedDefaultManager]saveAccount:users];
+                        [self dismissViewControllerAnimated:YES completion:nil];
+                        [[NSNotificationCenter defaultCenter] postNotificationName:@"RegisterMetod" object:nil];
+                        [[NSNotificationCenter defaultCenter] postNotificationName:@"UsCenter" object:nil];
+                       DEBUG_NSLog(@"========注册成功直接登录=======%@",user);
+                   } else {
+                       DEBUG_NSLog(@"登录失败：%@",error.localizedFailureReason);
+                       [SVProgressHUD showSuccessWithStatus:error.localizedFailureReason];
+                   }
+               }];
+           }else if(error.code == 202){
+                DEBUG_NSLog(@"注册失败，用户名已经存在==%@",error.localizedFailureReason);
+                [SVProgressHUD showSuccessWithStatus:@"注册失败,用户名已经存在"];
+           }else{
+               DEBUG_NSLog(@"注册失败：%@",error.localizedFailureReason);
+               [SVProgressHUD showSuccessWithStatus:error.localizedFailureReason];
+           }
+       }];
+    
 }
 
 - (IBAction)registedAgreementAction:(UIButton *)sender {

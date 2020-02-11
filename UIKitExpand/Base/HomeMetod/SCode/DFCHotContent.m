@@ -1,7 +1,7 @@
 #import "DFCHotContent.h"
 #import "HotContentCell.h"
 #import "SportsColorHeader.h"
-#import "SportsBallFile.h"
+#import "SportsMacrosHeadr.h"
 @interface DFCHotContent ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic,copy)NSArray*hotSearch;
 @property(assign,nonatomic)NSInteger isCurrentSelect;

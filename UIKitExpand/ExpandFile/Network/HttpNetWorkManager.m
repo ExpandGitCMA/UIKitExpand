@@ -59,21 +59,23 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
     }
     return msg;
 }
-- (void)setCommonValue:(NSMutableDictionary *)parameters{
-    [parameters SafetySetObject:@"1.1.1" forKey:@"appVersion"];
-    [parameters SafetySetObject:@"13" forKey:@"version"];
-}
-- (void)goUponGutter:(NSString *)path params:(NSDictionary *)params completed:(HttpCompletedBlock)completed{
+
+
+- (void)requestGetMetod:(NSString *)path params:(NSDictionary *)params completed:(HttpCompletedBlock)completed{
     [self requestWithMetod:GET path:path params:params completed:completed];
 }
-- (void)bargainOntoHobby:(NSString *)path params:(NSDictionary *)params completed:(HttpCompletedBlock)completed{
+
+- (void)requestPOSTMetod:(NSString *)path params:(NSDictionary *)params completed:(HttpCompletedBlock)completed{
     [self requestWithMetod:POST path:path params:params completed:completed];
 }
+
+
 - (void)requestWithMetod:(HTTPMethod)method path:(NSString *)path params:(NSDictionary *)params completed:(HttpCompletedBlock)completed{
     switch (method) {
         case GET: {
             @weakify(self)
-            [[self manager] GET:path parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+            [[self manager]GET:path parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+            } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 @strongify(self)
                 if (completed) {
                     BOOL bSuccess = [self isNetSuccess:responseObject];
@@ -90,27 +92,31 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
                     completed(NO, errStr);
                 }
             }];
+            
             break;
         }
         case POST: {
             @weakify(self)
-             [[self manager] POST:path parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-                 @strongify(self)
-                 if (completed) {
-                     BOOL bSuccess = [self isNetSuccess:responseObject];
-                     if (bSuccess==YES) {
-                         completed(YES, responseObject);
-                     }else{
-                         completed(NO, responseObject[@"msg"]);
-                     }
-                 }
-             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                 @strongify(self)
-                 NSString *errStr = [self getCommentErrorString:error];
-                 if (completed) {
-                     completed(NO, errStr);
-                 }
-             }];
+                     
+            [[self manager]POST:path parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+            } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                @strongify(self)
+                if (completed) {
+                    BOOL bSuccess = [self isNetSuccess:responseObject];
+                    if (bSuccess==YES) {
+                        completed(YES, responseObject);
+                    }else{
+                        completed(NO, responseObject[@"msg"]);
+                    }
+                }
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                    @strongify(self)
+                    NSString *errStr = [self getCommentErrorString:error];
+                    if (completed) {
+                        completed(NO, errStr);
+                    }
+            }];
+            
             break;
         }
         default: {
@@ -118,7 +124,9 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
         }
     }
 }
--(void)getSportsNewspath:(NSString *)path   params:(NSDictionary *)params  completed:(HttpCompletedBlock)completed{
+
+
+-(void)getNewsSportpath:(NSString *)path   params:(NSDictionary *)params  completed:(HttpCompletedBlock)completed{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
        manager.requestSerializer.timeoutInterval = 10;
        manager.responseSerializer.acceptableContentTypes =
@@ -132,46 +140,6 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
        }];
 }
 
-
--(void)requestWithMetod:(NSString *)path  params :(NSDictionary *)params  completed:(HttpCompletedBlock)completed{
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.requestSerializer.timeoutInterval = 5;
-    manager.responseSerializer.acceptableContentTypes =
-    [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
-  
-    
-    [manager POST:path parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-      
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"responseObject=================>%@",responseObject);
-        completed(YES, responseObject);
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSString *errStr = [self getCommentErrorString:error];
-        NSLog(@"errStr=================>%@",errStr);
-         NSLog(@"error.userInfo=================>%@",error.userInfo);
-        if (error) {
-            completed(NO, @{});
-        }
-    }];
-    
-}
-
--(void)sailThroughAlternativeMineral:(NSDictionary *)params completed:(HttpCompletedBlock)completed {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.requestSerializer.timeoutInterval = 5;
-    manager.responseSerializer.acceptableContentTypes =
-    [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
-    [manager GET:URL_HomeNews parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        completed(YES, responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        if (error) {
-            completed(NO, @{});
-        }
-    }];
-}
 - (void )borrowNosebleed:(NSString *)name completed:(HttpCompletedBlock)completed {
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"json"];
     NSData *data = [[NSData alloc] initWithContentsOfFile:path];
@@ -180,7 +148,9 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
         completed(true,dict);
     }
 }
+
 - (NSString *)matchingAppServerUrl{
-    return BASE_API_URL;
+    return @"http://mock-api.com/Rz3ambnM.mock/";
 }
+
 @end

@@ -63,56 +63,56 @@
         return;
     }
     
-     User *user =  [UserDefaultManager sharedDefaultManager].user ;
+    [SVProgressHUD show];
+    UIImage * image = _uploadView.icons[0];
     
-        NSDictionary*dict = @{
-                 @"token":user.uid,
-                 @"uid":user.token
-        };
-     
-
-     DEBUG_NSLog(@"=========dict %@",dict);
-     [SVProgressHUD show];
-
-     [[HttpNetWorkManager sharedManager] requestWithMetod:URL_Signout params:dict completed:^(BOOL ret, id obj) {
-
+    NSData * imageData = UIImagePNGRepresentation(image);
+    AVUser *currentuser = [AVUser currentUser];
+    AVFile *avatarFile = [AVFile fileWithData:imageData];
+    [currentuser setObject:avatarFile forKey:@"avatar"];
+    [currentuser saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
         [SVProgressHUD showInfoWithStatus:@"发布成功,审核通过会显示在社区"];
+        User *user =  [UserDefaultManager sharedDefaultManager].user ;
+          
+          NSDate *date = [NSDate date];
+          NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+          [formatter setDateFormat:@"yyyy-MM-dd"];
+          NSString *str = [formatter stringFromDate:date];
+          
+          
+         DisBamboo * model = [[DisBamboo alloc] init];
         
-         NSDate *date = [NSDate date];
-         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-         [formatter setDateFormat:@"yyyy-MM-dd"];
-         NSString *str = [formatter stringFromDate:date];
+         UIImage * image = _uploadView.icons[0];
+         NSString * imageDataStr = [self UIImageToBase64Str:image];
+         model.dataImageStr = imageDataStr;
+          
+          if (_uploadView.icons.count>2) {
+              model.dataImageUrls = [self UIImageToBase64Str:_uploadView.icons[1]];
+          }else{
+              model.dataImageUrls = @"";
+          }
          
+          if (_uploadView.icons.count>3) {
+              model.dataImageUrl = [self UIImageToBase64Str:_uploadView.icons[2]];
+          }else{
+              model.dataImageUrl = @"";
+          }
          
-        DisBamboo * model = [[DisBamboo alloc] init];
-       
-        UIImage * image = _uploadView.icons[0];
-        NSString * imageDataStr = [self UIImageToBase64Str:image];
-        model.dataImageStr = imageDataStr;
-         
-         if (_uploadView.icons.count>2) {
-             model.dataImageUrls = [self UIImageToBase64Str:_uploadView.icons[1]];
-         }
-        
-         if (_uploadView.icons.count>3) {
-            model.dataImageUrl = [self UIImageToBase64Str:_uploadView.icons[2]];
-         }
-        
-         
-        model.dateStr = str;
-        model.token = str;
-        model.news = self.editTextView.text;
-        model.liker = @"0";
-        model.collect = @"0";
-        model.name = [NSString stringWithFormat:@"%@%@",user.name,user.mobile];
-        model.headimageStr = imageDataStr;
-        NSMutableArray*array = [NSMutableArray new];
-        [array addObject:model];
-         
-        [[DisGermTools slidingDiaryShare] saveObjects:array];
-        [self.navigationController popViewControllerAnimated:YES];
-     }];
-
+          
+         model.dateStr = str;
+         model.token = str;
+         model.news = self.editTextView.text;
+         model.liker = @"0";
+         model.collect = @"0";
+         model.name = [NSString stringWithFormat:@"%@%@",user.name,user.mobile];
+         model.headimageStr = imageDataStr;
+         NSMutableArray*array = [NSMutableArray new];
+         [array addObject:model];
+          
+         [[DisGermTools slidingDiaryShare] saveObjects:array];
+         [self.navigationController popViewControllerAnimated:YES];
+    }];
+    
     DEBUG_NSLog(@"=======>%@",_uploadView.icons )
     
 }

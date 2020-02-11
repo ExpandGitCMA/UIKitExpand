@@ -170,7 +170,7 @@
 		0324ACBE23E31F4E004B4C3E /* TableViewAnimationKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitConfig.h; sourceTree = "<group>"; };
 		0324ACBF23E31F4E004B4C3E /* AsFondAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsFondAssembly.h; sourceTree = "<group>"; };
 		0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XSAnimationKit.m"; sourceTree = "<group>"; };
-		038A0AED23EBFF6100463BFF /* SportsBallFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsBallFile.h; sourceTree = "<group>"; };
+		038A0AED23EBFF6100463BFF /* SportsMacrosHeadr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsMacrosHeadr.h; sourceTree = "<group>"; };
 		038A0AEE23EBFF6100463BFF /* SportsColorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsColorHeader.h; sourceTree = "<group>"; };
 		038A0AEF23EBFF6100463BFF /* SportsBallAppUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsBallAppUrl.h; sourceTree = "<group>"; };
 		038A0AF023EC01ED00463BFF /* AppDelegate+tabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+tabBar.h"; sourceTree = "<group>"; };
@@ -309,7 +309,7 @@
 		B30F386D1F15B5C7005B5CE6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B3D208D41F47E89700F0CE6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "UIKitExpand/Resource(资源)/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
-		B3F4EFFB1F14A8600005197E /* 体讯互娱-足球.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "体讯互娱-足球.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F4EFFB1F14A8600005197E /* 体讯互娱-足球.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "体讯互娱-足球.app"; path = "亞博体育社区-足球.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F4EFFF1F14A8600005197E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3F4F00D1F14A8600005197E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3F4F00F1F14A8600005197E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -439,7 +439,7 @@
 			isa = PBXGroup;
 			children = (
 				038A0AEF23EBFF6100463BFF /* SportsBallAppUrl.h */,
-				038A0AED23EBFF6100463BFF /* SportsBallFile.h */,
+				038A0AED23EBFF6100463BFF /* SportsMacrosHeadr.h */,
 				038A0AEE23EBFF6100463BFF /* SportsColorHeader.h */,
 			);
 			path = Macros;
@@ -1016,11 +1016,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand-resources.sh",
+				"${PODS_ROOT}/AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AVOSCloud_Art.inc",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
@@ -1281,7 +1283,7 @@
 					"-l\"AFNetworking\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.MutualOrgy;
-				PRODUCT_NAME = "亞博体育社区足球";
+				PRODUCT_NAME = "亞博体育社区-足球";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1314,7 +1316,7 @@
 					"-l\"AFNetworking\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.MutualOrgy;
-				PRODUCT_NAME = "亞博体育社区足球";
+				PRODUCT_NAME = "亞博体育社区-足球";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

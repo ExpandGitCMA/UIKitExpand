@@ -1,6 +1,6 @@
 #import "WKWebViewVC.h"
 #import <MJRefresh.h>
-#import "SportsBallFile.h"
+#import "SportsMacrosHeadr.h"
 #import "GeneralBanner.h"
 #import "UnderlineDizzyTable.h"
 #import "UIView+LoadState.h"
@@ -74,7 +74,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     return _webView;
 }
 - (void)getLoad:(NSString*)url{
-    [[HttpNetWorkManager sharedManager] getSportsNewspath:url params:@{} completed:^(BOOL ret, id obj) {
+    [[HttpNetWorkManager sharedManager] getNewsSportpath:url params:@{} completed:^(BOOL ret, id obj) {
             if (ret) {
                 NSMutableArray*data = [[NSMutableArray alloc]init];
                  NSDictionary*  meta = [obj objectForKey:@"meta"];
@@ -91,7 +91,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
                 }
                 if ([metaUrl containsString:@"http"]) {
                                          
-                      [[HttpNetWorkManager sharedManager] getSportsNewspath:metaUrl params:@{} completed:^(BOOL ret, id obj) {
+                      [[HttpNetWorkManager sharedManager] getNewsSportpath:metaUrl params:@{} completed:^(BOOL ret, id obj) {
                                 NSDictionary*body = [obj objectForKey:@"body"];
                                 if (ret) {
                                     NSString*html = body[@"text"];

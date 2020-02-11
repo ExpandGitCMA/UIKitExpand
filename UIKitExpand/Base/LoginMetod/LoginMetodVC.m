@@ -56,32 +56,37 @@
          [SVProgressHUD showInfoWithStatus:@"请输入密码"];
          return;
      }
-    NSDictionary*dict = @{
-        @"login_type":@"0",
-        @"identity_no":@"1003",
-        @"dev_name":@"",
-        @"imei":@"B900E33486855699C82FB8576BF3031",
-        @"dev_name":@"iPhone6",
-        @"app_type":@"2",
-        @"name":_accountField.text,
-        @"password":_passwordField.text,
-    };
+
     
     [SVProgressHUD show];
-    [[HttpNetWorkManager sharedManager] requestWithMetod:URL_Login params:dict completed:^(BOOL ret, id obj) {
-    
-                 [SVProgressHUD showSuccessWithStatus:@"登录成功"];
-                                        
-                  User*user = [ User userWithDict:@{
-                                                      @"mobile": _accountField.text,
-                                                      @"name" : @"我的账号", @"token":@"eyJleHAiOjE1ODM3NjIyNzMsInVzZXJfaWQiOjQ0OTcsImlDzzQBGtUQ9zB9ZZQ7iDPH0Gp6cTAU",
-                                                      @"uid":@"wQdej5",
-                                        }];
-               [[UserDefaultManager sharedDefaultManager]saveAccount:user];
-               [self dismissViewControllerAnimated:YES completion:nil];
-               [[NSNotificationCenter defaultCenter] postNotificationName:@"UsCenter" object:nil];
-        
+    NSString *name = _accountField.text;
+    NSString *pasw = _passwordField.text;
+    [AVUser logInWithUsernameInBackground:name password:pasw block:^(AVUser *user, NSError *error){
+       if (user) {
+       
+            DEBUG_NSLog(@"登录：%@",user);
+            [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+            User*users = [ User userWithDict:@{
+                             @"mobile": user.username,
+                             @"name" : @"我的账号",
+                             @"token":user.sessionToken,
+                             @"uid":user.objectId,
+                             }];
+            [[UserDefaultManager sharedDefaultManager]saveAccount:users];
+            [self dismissViewControllerAnimated:YES completion:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"UsCenter" object:nil];
+        } else {
+           DEBUG_NSLog(@"登录失败：%@",error.localizedFailureReason);
+            NSString*msg = @"网络异常,请稍后尝试!";
+            if(error.code == 210){
+                 msg = @"账号或者密码错误!";
+            }else  if(error.code == 211){
+                 msg = @"用户不存在!";
+            }
+           [SVProgressHUD showSuccessWithStatus:msg];
+        }
     }];
+    
    
 }
 

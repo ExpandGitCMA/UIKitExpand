@@ -65,34 +65,15 @@
        [self.view addSubview:_logoOut];
 }
 
+
 -(void)logoOutAction:(UIButton *)sender  {
     
-    
-        User *user =  [UserDefaultManager sharedDefaultManager].user ;
-    
-        NSDictionary*dict = @{
-                 @"token":user.uid,
-                 @"uid":user.token
-        };
-     
-
-     DEBUG_NSLog(@"=========dict %@",dict);
-     [SVProgressHUD show];
-
-     [[HttpNetWorkManager sharedManager] requestWithMetod:URL_Signout params:dict completed:^(BOOL ret, id obj) {
-
-          DEBUG_NSLog(@"=========退出登陆%@",obj);
-         [ [UserDefaultManager sharedDefaultManager]removeAccount];
-         [self.navigationController popViewControllerAnimated:YES];
-         [SVProgressHUD showSuccessWithStatus:@"退出成功"];
-         [[NSNotificationCenter defaultCenter] postNotificationName:@"UsCenter" object:nil];
-
-     }];
-
-    
-    
-
+      [AVUser logOut];
+      [[UserDefaultManager sharedDefaultManager]removeAccount];
+      [self.navigationController popViewControllerAnimated:YES];
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"UsCenter" object:nil];
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
    UsCenterCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];

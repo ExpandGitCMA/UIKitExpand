@@ -1,7 +1,7 @@
 #import "GeneralBanner.h"
 #import "FirmimageCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "SportsBallFile.h"
+#import "Safety.h"
 
 
 NSString *const ReuseIdent = @"SDCycleCell";

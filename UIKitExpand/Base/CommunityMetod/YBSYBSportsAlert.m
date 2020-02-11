@@ -1,6 +1,6 @@
 #import "YBSYBSportsAlert.h"
 #import "YBSUIPrivacyView.h"
-#import "SportsBallFile.h"
+#import "SportsMacrosHeadr.h"
 #import "SVProgressHUD.h"
 @interface YBSYBSportsAlert ()<UITextViewDelegate>
 @property(nonatomic,strong)YBSUIPrivacyView *sportsAlert;

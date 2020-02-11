@@ -1,4 +1,4 @@
 #import <MJRefresh/MJRefresh.h>
-#import "SportsBallFile.h"
+#import "SportsMacrosHeadr.h"
 @interface CJWRefreshFooter : MJRefreshAutoFooter
 @end

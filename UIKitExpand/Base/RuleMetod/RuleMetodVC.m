@@ -16,7 +16,7 @@
      [self.banner setArrayStringUrl:@[@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1580991564429&di=246cdb78dcf1746eb4fd1788cce95602&imgtype=0&src=http%3A%2F%2Fimg2.enjoyz.com%2F2019%2F03%2F28%2F20190328021223168.jpg"]];
 }
 - (void)simplyTallWidth{
-    [[HttpNetWorkManager sharedManager]goUponGutter:URL_Gamerule params:@{} completed:^(BOOL ret, id obj) {
+    [[HttpNetWorkManager sharedManager]requestGetMetod:URL_Gamerule params:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
             self.tableView.tableHeaderView =  [self banner];
             [self.dataSource removeAllObjects];

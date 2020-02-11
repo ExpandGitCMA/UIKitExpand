@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import "SportsBallFile.h"
+#import "SportsMacrosHeadr.h"
 @interface CJWProgressView : UIView
 @property (nonatomic) CGFloat progress;
 @property (nonatomic) CGFloat lineWidth;

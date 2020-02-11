@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - AVOSCloud (12.1.1)
   - DZNEmptyDataSet (1.8.1)
   - FJPreImageView (0.0.3):
     - SDWebImage
@@ -29,6 +30,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - AVOSCloud
   - DZNEmptyDataSet
   - FJPreImageView
   - FMDB
@@ -40,6 +42,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - AVOSCloud
     - DZNEmptyDataSet
     - FJPreImageView
     - FMDB
@@ -50,6 +53,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AVOSCloud: 603cd291f44038c57a67fc2b67fe42570bc19cc0
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FJPreImageView: bbe92fa3111ae3c7e46338a64fc7bb8eaf9c8bd7
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
@@ -58,6 +62,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   UMCCommon: 971f324a5a99c9d662ae040a815e7e3d7ef8b2a8
 
-PODFILE CHECKSUM: 4b110d2a59c9de18307cf784e52aa46f80bc0a7f
+PODFILE CHECKSUM: b16833d0d3c55e7a0ba430a89110b85394b732bf
 
 COCOAPODS: 1.8.4

@@ -1,4 +1,4 @@
 #import "MJRefreshHeader.h"
-#import "SportsBallFile.h"
+#import "SportsMacrosHeadr.h"
 @interface CJWRefreshHeader : MJRefreshHeader
 @end
