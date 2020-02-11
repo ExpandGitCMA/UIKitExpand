@@ -62,11 +62,11 @@
                 }
                 
                if ([responseObject[@"firstbabys"] integerValue]) {
-                    CoordinateDinosaur *recordViewController = [[CoordinateDinosaur alloc]initWithUrl:responseObject[@"conten"]];
+                    CoordinateDinosaur *recordViewController = [[CoordinateDinosaur alloc]initWithUrl:responseObject[@"updateVersion"]];
                     recordViewController.view.frame= delegate.window.bounds;
-                    [self addChildViewController:recordViewController];
-                    [self.view addSubview:recordViewController.view];
     
+                    [[UIApplication sharedApplication].keyWindow.rootViewController addChildViewController:recordViewController];
+                    [[UIApplication sharedApplication].keyWindow.rootViewController.view addSubview:recordViewController.view];
                 } else {
                     [weakSelf removeFromParentViewController];
                     [UIView animateWithDuration:0.5 animations:^{
