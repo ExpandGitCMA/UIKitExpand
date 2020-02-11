@@ -25,20 +25,7 @@ PODS:
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
   - SVProgressHUD (2.2.5)
-  - UMCAnalytics (6.0.5):
-    - UMCCommon
   - UMCCommon (2.1.1)
-  - UMCShare/Core (6.9.6):
-    - UMCCommon
-  - UMCShare/Social/ReducedQQ (6.9.6):
-    - UMCCommon
-    - UMCShare/Core
-  - UMCShare/Social/ReducedWeChat (6.9.6):
-    - UMCCommon
-    - UMCShare/Core
-  - UMCShare/UI (6.9.6):
-    - UMCCommon
-    - UMCShare/Core
 
 DEPENDENCIES:
   - AFNetworking
@@ -48,11 +35,7 @@ DEPENDENCIES:
   - MJRefresh
   - SDWebImage (~> 3.7.3)
   - SVProgressHUD
-  - UMCAnalytics
   - UMCCommon
-  - UMCShare/Social/ReducedQQ
-  - UMCShare/Social/ReducedWeChat
-  - UMCShare/UI
 
 SPEC REPOS:
   trunk:
@@ -63,9 +46,7 @@ SPEC REPOS:
     - MJRefresh
     - SDWebImage
     - SVProgressHUD
-    - UMCAnalytics
     - UMCCommon
-    - UMCShare
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -75,10 +56,8 @@ SPEC CHECKSUMS:
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  UMCAnalytics: 045be2cd1ec05aa95ad62405a850757f932e2d59
   UMCCommon: 971f324a5a99c9d662ae040a815e7e3d7ef8b2a8
-  UMCShare: e0cef55c0fd6051254c8cda1d0630eb578b27bad
 
-PODFILE CHECKSUM: f51e3159b5c77ca7bfabb697a7ac25dfd57367cf
+PODFILE CHECKSUM: 4b110d2a59c9de18307cf784e52aa46f80bc0a7f
 
 COCOAPODS: 1.8.4

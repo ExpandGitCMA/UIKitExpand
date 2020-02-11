@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "scan_btn_flash_down.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "yMTopD7W1b.png",
       "scale" : "2x"
     },
     {

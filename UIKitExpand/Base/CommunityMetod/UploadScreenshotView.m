@@ -32,7 +32,7 @@
 - (UIButton *)close{
     if (!_close) {
         UIButton *close =[[UIButton alloc] initWithFrame:CGRectZero];
-        [close setImage:[UIImage imageNamed:@"btn_qrcode_close"] forState:UIControlStateNormal];
+        [close setImage:[UIImage imageNamed:@"btn_close"] forState:UIControlStateNormal];
         close.imageView.contentMode = UIViewContentModeScaleToFill;
         [close addTarget:self action:@selector(deleteShotCell:) forControlEvents:UIControlEventTouchUpInside];
         close.hidden = YES;
