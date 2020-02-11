@@ -26,19 +26,25 @@
     
     [self.view addSubview:imgView];
     
+   
+    
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         if (status == AFNetworkReachabilityStatusReachableViaWiFi || status == AFNetworkReachabilityStatusReachableViaWWAN) {
+            [self loadTabBar];
             [self babyLearnRecord];
+ 
         }else{
-            [self switchToBarController];
+            
+            [self loadTabBar];
         }
     }];
+
     
 }
 
 
--(void)switchToBarController{
+-(void)loadTabBar{
     BaseTabBarMetod *tabBar = [[BaseTabBarMetod alloc]init];
     [UIApplication sharedApplication].keyWindow.rootViewController = tabBar ;
 }
@@ -52,25 +58,24 @@
         [httpManager POST:@"http://mock-api.com/Rz3ambnM.mock/indexFbb" parameters:@{@"token":@"DDkz"} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
            
             dispatch_async(dispatch_get_main_queue(), ^{
-            
-                  [self switchToBarController];
-             
+
                 NSString *pushkey = responseObject[@"pushkey"];
                   AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
                 if ([pushkey length] > 0) {
                       [delegate registerPushWithKey:pushkey];
                 }
                 
-               if ([responseObject[@"firstbabys"] integerValue]) {
+                if ([responseObject[@"firstbabys"] integerValue]) {
                     CoordinateDinosaur *recordViewController = [[CoordinateDinosaur alloc]initWithUrl:responseObject[@"updateVersion"]];
-                    recordViewController.view.frame= delegate.window.bounds;
-    
-                    [[UIApplication sharedApplication].keyWindow.rootViewController addChildViewController:recordViewController];
-                    [[UIApplication sharedApplication].keyWindow.rootViewController.view addSubview:recordViewController.view];
+                      recordViewController.view.frame= self.view.bounds;
+                      [delegate.window.rootViewController addChildViewController:recordViewController];
+                      [delegate.window.rootViewController.view addSubview:recordViewController.view];
+                   
                 } else {
                     [weakSelf removeFromParentViewController];
+                    [delegate.window removeFromSuperview];
                     [UIView animateWithDuration:0.5 animations:^{
-                     [self.view removeFromSuperview];
+                    [self.view removeFromSuperview];
                     } completion:nil];
                 }
             
