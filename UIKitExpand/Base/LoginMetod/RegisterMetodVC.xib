@@ -72,7 +72,7 @@
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5l-fh-5aZ">
                             <rect key="frame" x="0.0" y="254.5" width="374" height="30"/>
-                            <state key="normal" title="注册, 即表示《同意体讯互娱-足球注册登陆协议》">
+                            <state key="normal" title="注册, 即表示《同意亞博体育社区-足球注册登陆协议》">
                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
                             <connections>

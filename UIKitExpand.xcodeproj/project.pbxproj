@@ -1281,7 +1281,7 @@
 					"-l\"AFNetworking\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.MutualOrgy;
-				PRODUCT_NAME = "体讯互娱-足球";
+				PRODUCT_NAME = "亞博体育社区足球";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1314,7 +1314,7 @@
 					"-l\"AFNetworking\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.MutualOrgy;
-				PRODUCT_NAME = "体讯互娱-足球";
+				PRODUCT_NAME = "亞博体育社区足球";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

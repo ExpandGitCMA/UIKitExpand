@@ -22,8 +22,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎来到体讯互娱-足球" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FC1-mu-w8q">
-                    <rect key="frame" x="111" y="89" width="192" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎来到亞博体育社区-足球" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FC1-mu-w8q">
+                    <rect key="frame" x="93" y="89" width="228.5" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="TcR-6K-nd5"/>
                     </constraints>
@@ -115,7 +115,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="G7D-4X-doN"/>
                     </constraints>
-                    <state key="normal" title="登录,即代表&lt;同意体讯互娱-足球注册登陆协议 &gt;">
+                    <state key="normal" title="登录,即代表&lt;同意亞博体育社区-足球注册登陆协议 &gt;">
                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <connections>

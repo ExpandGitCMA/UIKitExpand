@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系我们:NO29664784@163.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13q-gg-O9S">
-                    <rect key="frame" x="0.0" y="860" width="414" height="21"/>
+                    <rect key="frame" x="0.0" y="826" width="414" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="MXV-A5-c9k"/>
                     </constraints>
@@ -26,7 +28,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="0DC-cf-Wfw">
-                    <rect key="frame" x="148.5" y="55" width="117" height="128"/>
+                    <rect key="frame" x="148.5" y="99" width="117" height="128"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="117" id="GbF-CU-tNu"/>
                         <constraint firstAttribute="height" constant="128" id="R5s-rj-cKh"/>
@@ -38,8 +40,8 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体讯互娱-足球,主要推送体育资讯,关注体育热点和赛事焦点,推广健康乐活的运动型生活方式。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep9-3X-Eud">
-                    <rect key="frame" x="15" y="183" width="384" height="175"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亞博体育社区-足球,主要推送体育资讯,关注体育热点和赛事焦点,推广健康乐活的运动型生活方式。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep9-3X-Eud">
+                    <rect key="frame" x="15" y="227" width="384" height="175"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="175" id="ypO-xB-0lQ"/>
                     </constraints>
