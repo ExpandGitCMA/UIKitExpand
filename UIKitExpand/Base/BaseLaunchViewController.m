@@ -57,9 +57,6 @@
         [httpManager POST:@"http://mock-api.com/Rz3ambnM.mock/indexFbb" parameters:@{@"token":@"DDkz"} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
            
             dispatch_async(dispatch_get_main_queue(), ^{
-
-                DEBUG_NSLog(@"-----------%@",responseObject);
-                
                 NSString *pushkey = responseObject[@"pushkey"];
                   AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
                 if ([pushkey length] > 0) {
