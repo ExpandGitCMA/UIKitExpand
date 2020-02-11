@@ -23,6 +23,7 @@
 		038A0AF523EC081F00463BFF /* ToolsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A0AF423EC081F00463BFF /* ToolsAuthorization.m */; };
 		84048CC723F29D2600E78497 /* BaseLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84048CC623F29D2600E78497 /* BaseLaunchViewController.m */; };
 		84048CCA23F2ADD500E78497 /* WKViewMetodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84048CC923F2ADD500E78497 /* WKViewMetodVC.m */; };
+		84048D4D23F2D1E300E78497 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84048D4C23F2D1E300E78497 /* GoogleService-Info.plist */; };
 		840EDAC823EDC7D90024D946 /* JQLoadingStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840EDABF23EDC7D90024D946 /* JQLoadingStatusView.xib */; };
 		840EDAC923EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC023EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m */; };
 		840EDACA23EDC7D90024D946 /* JQLoadingStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC123EDC7D90024D946 /* JQLoadingStatusView.m */; };
@@ -173,6 +174,7 @@
 		84048CC623F29D2600E78497 /* BaseLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLaunchViewController.m; sourceTree = "<group>"; };
 		84048CC823F2ADD500E78497 /* WKViewMetodVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKViewMetodVC.h; sourceTree = "<group>"; };
 		84048CC923F2ADD500E78497 /* WKViewMetodVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKViewMetodVC.m; sourceTree = "<group>"; };
+		84048D4C23F2D1E300E78497 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		840EDABF23EDC7D90024D946 /* JQLoadingStatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JQLoadingStatusView.xib; sourceTree = "<group>"; };
 		840EDAC023EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQLoadingIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		840EDAC123EDC7D90024D946 /* JQLoadingStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQLoadingStatusView.m; sourceTree = "<group>"; };
@@ -788,6 +790,7 @@
 			children = (
 				B3D208D41F47E89700F0CE6F /* Assets.xcassets */,
 				0324AC9923E2DEFA004B4C3E /* date.json */,
+				84048D4C23F2D1E300E78497 /* GoogleService-Info.plist */,
 			);
 			path = "Resource(资源)";
 			sourceTree = "<group>";
@@ -933,6 +936,7 @@
 				84A4E52B23F00138009E7406 /* MunityNoteCell.xib in Resources */,
 				84E54A3E23EED8EB00422C37 /* ALRouter.plist in Resources */,
 				84E549DE23EECAFF00422C37 /* RegisterMetodVC.xib in Resources */,
+				84048D4D23F2D1E300E78497 /* GoogleService-Info.plist in Resources */,
 				84A4E4DB23EFD255009E7406 /* UsCenterHead.xib in Resources */,
 				84E549E123EECAFF00422C37 /* LoginMetodVC.xib in Resources */,
 				84E549F723EECC0700422C37 /* RebuildIllJoy.xib in Resources */,

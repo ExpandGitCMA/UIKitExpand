@@ -6,6 +6,8 @@
 #import <AVOSCloud/AVOSCloud.h>
 #import "SportsBallAppUrl.h"
 
+@import Firebase;
+
 @interface AppDelegate ()
 
 @end
@@ -14,6 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [FIRApp configure];
     [SVProgressHUD setMinimumDismissTimeInterval:2 ];
     [self  launchApptabBar];
     [AVOSCloud setApplicationId:APP_ID clientKey:APP_KEY serverURLString:API_URL];

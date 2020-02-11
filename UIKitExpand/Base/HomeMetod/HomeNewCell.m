@@ -11,10 +11,28 @@
 -(void)setModel:(NewsModel *)model{
     _title.text = model.title;
     _timer .text = [model.source isNull]?model.source:model.intro;
-    [_image sd_setImageWithURL:[NSURL URLWithString:model.thumbnail] placeholderImage:[UIImage imageNamed:@"icon_data_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+    
+    NSString *url;
+    if ([self isUrl:model.thumbnail]) {
+        url = model.thumbnail;
+    }else{
+        
+        url = [NSString stringWithFormat:@"%@%@",@"https://n.sinaimg.cn",model.thumbnail];
+    }
+    
+    [_image sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"icon_data_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
            if (image) {
               _image.contentMode = UIViewContentModeScaleToFill;
            }
        }];
+}
+
+
+
+- (BOOL)isUrl:(NSString *)str{
+    if ([str hasPrefix:@"http://"] || [str hasPrefix:@"https://"]) {
+        return YES;
+    }
+    return NO;
 }
 @end

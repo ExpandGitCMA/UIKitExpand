@@ -7,5 +7,6 @@ target 'UIKitExpand' do
   pod 'UMCCommon'
   pod 'FMDB'
   pod 'FJPreImageView'
-  pod 'AVOSCloud' 
+  pod 'AVOSCloud'
+  pod 'Firebase/Analytics'
 end
