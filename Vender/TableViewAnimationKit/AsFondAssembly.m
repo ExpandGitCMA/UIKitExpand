@@ -73,7 +73,7 @@
         }];
     }
 }
-+ (void)alphaAnimationWithTableView:(UITableView *)tableView {
++ (void)tableViewAnimationWithTableView:(UITableView *)tableView {
     
     NSArray *cells = tableView.visibleCells;
     for (int i = 0; i < cells.count; i++) {

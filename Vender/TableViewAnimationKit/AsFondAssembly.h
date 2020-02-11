@@ -23,7 +23,7 @@
 
 + (void)moveAnimationWithTableView:(UITableView *)tableView;
 + (void)moveSpringAnimationWithTableView:(UITableView *)tableView;
-+ (void)alphaAnimationWithTableView:(UITableView *)tableView;
++ (void)tableViewAnimationWithTableView:(UITableView *)tableView;
 + (void)fallAnimationWithTableView:(UITableView *)tableView;
 + (void)shakeAnimationWithTableView:(UITableView *)tableView;
 + (void)overTurnAnimationWithTableView:(UITableView *)tableView;
