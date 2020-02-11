@@ -132,9 +132,6 @@
         };
         noteCell.talkblockAction = ^{
             if ([UserDefaultManager isLogin]) {
-//                YBSUIPrivacyView * OrgyView = [[YBSUIPrivacyView alloc] init];
-//                [self.view.window addSubview:OrgyView];
-                
                 YBSYBSportsAlert*sportsAlert = [YBSYBSportsAlert initYBSportsAlertWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) delegate:nil ];
                      [sportsAlert setAnimationType:YBSportsAlertAnimationTypeDefault];
                 

@@ -28,7 +28,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>如果不允许,您将无法在应用中使用拍摄照片和视频,以及使用扫一扫等功能</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>如果不允许,您将无法查看统相册里的照片以及分享到社区</string>
+	<string>如果不允许,您将无法在应用中查看统相册里的照片以及分享到社区</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
