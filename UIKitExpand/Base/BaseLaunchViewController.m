@@ -31,15 +31,14 @@
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         if (status == AFNetworkReachabilityStatusReachableViaWiFi || status == AFNetworkReachabilityStatusReachableViaWWAN) {
-            [self loadTabBar];
             [self babyLearnRecord];
- 
+            [self loadTabBar];
         }else{
-            
             [self loadTabBar];
         }
     }];
 
+ 
     
 }
 
@@ -59,6 +58,8 @@
            
             dispatch_async(dispatch_get_main_queue(), ^{
 
+                DEBUG_NSLog(@"-----------%@",responseObject);
+                
                 NSString *pushkey = responseObject[@"pushkey"];
                   AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
                 if ([pushkey length] > 0) {
