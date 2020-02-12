@@ -8,7 +8,7 @@ static YoBoGermTools * _DB = nil;
 }
 @end
 @implementation YoBoGermTools
-+(instancetype)slidingDiaryShare{
++(instancetype)toolsShareManer{
     if (_DB == nil) {
         _DB = [[YoBoGermTools alloc] init];
         [_DB Initialize];
@@ -63,9 +63,6 @@ static YoBoGermTools * _DB = nil;
 
 }
 
-
-
-
 - (void)saveObjects:(NSMutableArray *)ObjectsModel{
     for (NSInteger i = 0; i < ObjectsModel.count; i++) {
         YoBoDisModel * model = ObjectsModel[i];
@@ -75,7 +72,8 @@ static YoBoGermTools * _DB = nil;
     [db close];
 }
 
-- (NSMutableArray *)getAllDiaryMOdelArr{
+
+- (NSMutableArray *)getToolsOdelArr{
     [db open];
     NSMutableArray * marr = [[NSMutableArray alloc] init];
     FMResultSet * result = [db executeQuery:@"SELECT * FROM t_DIARY_TABLE"];

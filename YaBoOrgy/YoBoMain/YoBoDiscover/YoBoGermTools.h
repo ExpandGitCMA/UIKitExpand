@@ -2,10 +2,10 @@
 NS_ASSUME_NONNULL_BEGIN
 @class YoBoDisModel;
 @interface YoBoGermTools : NSObject
-+(instancetype)slidingDiaryShare;
++(instancetype)toolsShareManer;
 -(void)updateObjectsLiker:(YoBoDisModel *)model;
 -(void)saveObjects:(NSMutableArray *)ObjectsModel;
 -(void)deleteObject:(YoBoDisModel *)model;
--(NSMutableArray *)getAllDiaryMOdelArr;
+-(NSMutableArray *)getToolsOdelArr;
 @end
 NS_ASSUME_NONNULL_END

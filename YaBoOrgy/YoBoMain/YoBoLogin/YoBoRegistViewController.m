@@ -31,7 +31,7 @@
 
  -(void)colse{
 
-         [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 
@@ -86,11 +86,13 @@
     
 }
 
+
 - (IBAction)registedAgreementAction:(UIButton *)sender {
 
       ImpairBeingController *controller = [[ImpairBeingController  alloc] init];
       [self.navigationController pushViewController:controller animated:YES];
 }
+
 
 
 // 只能输入字母和数字

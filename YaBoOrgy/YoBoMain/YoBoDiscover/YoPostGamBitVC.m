@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIView *upload;
 
 @property (weak, nonatomic) IBOutlet UILabel *photoCount;
-@property (nonatomic,strong)NSMutableArray * dataArr;
+
 @property (nonatomic,copy) NSString * imageStr;
 @property (nonatomic , strong)YoBoUploadhotView*uploadView;
 
@@ -72,17 +72,16 @@
     AVFile *avatarFile = [AVFile fileWithData:imageData];
     [currentuser setObject:avatarFile forKey:@"avatar"];
     [currentuser saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-        [SVProgressHUD showInfoWithStatus:@"发布成功,审核通过会显示在社区"];
+        [SVProgressHUD showInfoWithStatus:@"发布成功"];
         YoBoLoginUser *user =  [YoBoDefault defaultUser].user ;
           
-          NSDate *date = [NSDate date];
-          NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-          [formatter setDateFormat:@"yyyy-MM-dd"];
-          NSString *str = [formatter stringFromDate:date];
+        NSDate *date = [NSDate date];
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"yyyy-MM-dd"];
+        NSString *str = [formatter stringFromDate:date];
           
-          
-         YoBoDisModel * model = [[YoBoDisModel alloc] init];
-        
+
+        YoBoDisModel * model = [[YoBoDisModel alloc] init];
         UIImage * image = self->_uploadView.icons[0];
          NSString * imageDataStr = [self IMGToBase64Str:image];
          model.imageStr = imageDataStr;
@@ -110,14 +109,13 @@
          NSMutableArray*array = [NSMutableArray new];
          [array addObject:model];
           
-         [[YoBoGermTools slidingDiaryShare] saveObjects:array];
+         [[YoBoGermTools toolsShareManer] saveObjects:array];
          [self.navigationController popViewControllerAnimated:YES];
     }];
     
     
 }
--(NSString *)IMGToBase64Str:(UIImage *) image
-{
+-(NSString *)IMGToBase64Str:(UIImage *) image{
     NSData *data = UIImageJPEGRepresentation(image, 1.0f);
     NSString *encodedImageStr = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     return encodedImageStr;
@@ -142,13 +140,6 @@
     self.sumCount.text = [NSString stringWithFormat:@"%ld/600",(long)num];
 }
 
-
-- (NSMutableArray *)dataArr {
-    if (!_dataArr) {
-        _dataArr = [[NSMutableArray alloc] init];
-    }
-    return _dataArr;
-}
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

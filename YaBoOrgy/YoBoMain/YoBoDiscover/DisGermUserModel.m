@@ -1,6 +1,8 @@
 #import "DisGermUserModel.h"
 #import "YoBoDisModel.h"
 #import "YoBoGermTools.h"
+
+
 static DisGermUserModel * _tool = nil;
 @interface DisGermUserModel ()
 @property (nonatomic,strong)NSMutableArray * BillCacheArr;
@@ -10,6 +12,8 @@ static DisGermUserModel * _tool = nil;
 @property (nonatomic,strong)NSMutableArray * holidayArr;
 @property (nonatomic,strong)NSMutableArray * admissionArr;
 @end
+
+
 
 @implementation DisGermUserModel
 
@@ -136,8 +140,9 @@ static DisGermUserModel * _tool = nil;
             model.headimage = dic[@"headimage"];
             [self.cacheArr addObject:model];
         }
-        [[YoBoGermTools slidingDiaryShare] saveObjects:self.cacheArr];
+        [[YoBoGermTools toolsShareManer] saveObjects:self.cacheArr];
     }
+    
 }
 
 
@@ -186,4 +191,6 @@ static DisGermUserModel * _tool = nil;
     }
     return _admissionArr;
 }
+
+
 @end

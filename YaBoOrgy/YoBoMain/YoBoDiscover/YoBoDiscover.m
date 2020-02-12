@@ -29,7 +29,7 @@
     [self diaryShow];
 }
 -(void)diaryShow{
-    self.dataSource = [[YoBoGermTools slidingDiaryShare] getAllDiaryMOdelArr];
+    self.dataSource = [[YoBoGermTools toolsShareManer] getToolsOdelArr];
     [self.tableView reloadData];
 
 }
@@ -168,7 +168,7 @@
 
 -(void)updateDailyModel:(YoBoDisModel *)model{
     
-    [[YoBoGermTools slidingDiaryShare]updateObjectsLiker:model];
+    [[YoBoGermTools toolsShareManer]updateObjectsLiker:model];
 }
 
 -(void)pingBiYheDailyModel:(YoBoDisModel *)model{
@@ -177,7 +177,7 @@
            NSLog(@"取消");
        }];
        UIAlertAction *sureBtn = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull   action) {
-           [[YoBoGermTools slidingDiaryShare]deleteObject:model];
+           [[YoBoGermTools toolsShareManer]deleteObject:model];
               [self diaryShow];
        }];
        [sureBtn setValue:[UIColor redColor] forKey:@"titleTextColor"];
