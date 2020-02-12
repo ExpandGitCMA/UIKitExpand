@@ -1,9 +1,10 @@
 #import "AppDelegate+ApptabBar.h"
 #import "AppColorHeader.h"
-#import "UncertainTransfusion.h"
-#import "FeelLeatherManager.h"
+
 @implementation AppDelegate (ApptabBar)
--(void)launchAppAppearance{
+
+
+-(void)launch{
     [[UITabBar appearance] setTintColor:kUIColorFromRGB(AppScore)];
     [[UINavigationBar appearance] setBarTintColor:kUIColorFromRGB(AppScore)];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];

@@ -3,6 +3,7 @@
 #import <UMCommon/UMCommon.h>
 #import <SVProgressHUD.h>
 #import <AVOSCloud/AVOSCloud.h>
+
 @import Firebase;
 
 @interface AppDelegate ()
@@ -16,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self launchAppAppearance];
+    [self launch];
     [FIRApp configure];
     [SVProgressHUD setMinimumDismissTimeInterval:2 ];
     [AVOSCloud setApplicationId:APP_ID clientKey:APP_KEY serverURLString:API_URL];
@@ -26,4 +27,5 @@
 -(void)registerPushWithKey:(NSString*)key{
      [UMConfigure initWithAppkey:@"5e3a3feda904a9297aeefed1" channel:@"App Store"];
 }
+
 @end

@@ -1,16 +1,10 @@
-//
-//  YaBoMesSystem.m
-//  UIKitExpand
-//
-//  Created by admin on 8/2/2020.
-//  Copyright © 2020 ZeroSmell. All rights reserved.
-//
 
 #import "YaBoMesSystem.h"
 #import "BlessPorter.h"
 #import "AnchorSongController.h"
 #import "SVProgressHUD.h"
 #import "YoBoDefault.h"
+
 
 @interface YaBoMesSystem ()
 @property (nonatomic,strong) UIButton*logoOut;
