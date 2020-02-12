@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B3F4EFFA1F14A8600005197E"
-               BuildableName = "&#x4e9e;&#x535a;&#x4f53;&#x80b2;&#x793e;&#x533a;-&#x8db3;&#x7403;.app"
+               BuildableName = "&#x4f18;&#x901f;&#x4f53;&#x80b2;&#x793e;&#x533a;-&#x8db3;&#x7403;.app"
                BlueprintName = "UIKitExpand"
                ReferencedContainer = "container:UIKitExpand.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3F4EFFA1F14A8600005197E"
-            BuildableName = "&#x4e9e;&#x535a;&#x4f53;&#x80b2;&#x793e;&#x533a;-&#x8db3;&#x7403;.app"
+            BuildableName = "&#x4f18;&#x901f;&#x4f53;&#x80b2;&#x793e;&#x533a;-&#x8db3;&#x7403;.app"
             BlueprintName = "UIKitExpand"
             ReferencedContainer = "container:UIKitExpand.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3F4EFFA1F14A8600005197E"
-            BuildableName = "&#x4e9e;&#x535a;&#x4f53;&#x80b2;&#x793e;&#x533a;-&#x8db3;&#x7403;.app"
+            BuildableName = "&#x4f18;&#x901f;&#x4f53;&#x80b2;&#x793e;&#x533a;-&#x8db3;&#x7403;.app"
             BlueprintName = "UIKitExpand"
             ReferencedContainer = "container:UIKitExpand.xcodeproj">
          </BuildableReference>

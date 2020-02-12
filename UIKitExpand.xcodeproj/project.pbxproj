@@ -1235,7 +1235,7 @@
 				CODE_SIGN_ENTITLEMENTS = UIKitExpand/UIKitExpand.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.5;
+				CURRENT_PROJECT_VERSION = 1.0.6;
 				DEVELOPMENT_TEAM = 57Y8ANKX46;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1253,7 +1253,7 @@
 					"-l\"AFNetworking\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.MutualOrgy;
-				PRODUCT_NAME = "亞博体育社区-足球";
+				PRODUCT_NAME = "优速体育社区-足球";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1268,7 +1268,7 @@
 				CODE_SIGN_ENTITLEMENTS = UIKitExpand/UIKitExpand.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.5;
+				CURRENT_PROJECT_VERSION = 1.0.6;
 				DEVELOPMENT_TEAM = 57Y8ANKX46;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1286,7 +1286,7 @@
 					"-l\"AFNetworking\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.MutualOrgy;
-				PRODUCT_NAME = "亞博体育社区-足球";
+				PRODUCT_NAME = "优速体育社区-足球";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

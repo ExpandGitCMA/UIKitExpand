@@ -40,7 +40,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亞博体育社区-足球,主要推送体育资讯,关注体育热点和赛事焦点,推广健康乐活的运动型生活方式。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep9-3X-Eud">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优速体育社区-足球,主要推送体育资讯,关注体育热点和赛事焦点,推广健康乐活的运动型生活方式。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep9-3X-Eud">
                     <rect key="frame" x="15" y="227" width="384" height="175"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="175" id="ypO-xB-0lQ"/>

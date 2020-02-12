@@ -21,13 +21,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="立即注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tS3-Va-zAU">
-                    <rect key="frame" x="20" y="169" width="105.5" height="31.5"/>
+                    <rect key="frame" x="20" y="125" width="105.5" height="31.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXM-0y-08y">
-                    <rect key="frame" x="20" y="245.5" width="374" height="416.5"/>
+                    <rect key="frame" x="20" y="201.5" width="374" height="494.5"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入6-12位数字英文密码" textAlignment="natural" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VdT-Gu-xUt" customClass="LoginTextField">
                             <rect key="frame" x="30" y="84" width="314" height="40"/>
@@ -72,7 +72,7 @@
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5l-fh-5aZ">
                             <rect key="frame" x="0.0" y="254.5" width="374" height="30"/>
-                            <state key="normal" title="注册, 即表示《同意亞博体育社区-足球注册登陆协议》">
+                            <state key="normal" title="注册, 即表示《同意优速体育社区-足球注册登陆协议》">
                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
                             <connections>
