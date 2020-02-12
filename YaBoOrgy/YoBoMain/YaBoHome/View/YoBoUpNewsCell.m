@@ -1,5 +1,5 @@
-#import "NewsUpViewCell.h"
-@implementation NewsUpViewCell
+#import "YoBoUpNewsCell.h"
+@implementation YoBoUpNewsCell
 - (void)awakeFromNib {
     [super awakeFromNib];
 }

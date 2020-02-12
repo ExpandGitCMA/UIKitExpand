@@ -4,15 +4,15 @@
 #import "YaBoCodeVC.h"
 #import "PlanLogic.h"
 #import "NewsPlayBallCell.h"
-#import "NewsBallCell.h"
-#import "NewsSportCell.h"
+#import "YoBoBallCell.h"
+#import "YoBoNews.h"
 #import "NewsSportModel.h"
 #import "Leagstus.h"
 #import "LeagstusCell.h"
-#import "NewsUpView.h"
+#import "YoBoUpNews.h"
 #import "FJPreImageView.h"
 @interface YaBoHomeVC ()
-@property(nonatomic,strong)NewsUpView*upView;
+@property(nonatomic,strong)YoBoUpNews*upView;
 @property (nonatomic, assign) BOOL upValue;
 @end
 @implementation YaBoHomeVC
@@ -26,8 +26,8 @@
 
 -(void)initUIView{
     [self.tableView registerNib:[UINib nibWithNibName:@"NewsPlayBallCell" bundle:nil] forCellReuseIdentifier:@"PlayBallCell"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"NewsBallCell" bundle:nil] forCellReuseIdentifier:@"BallCell"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"NewsSportCell" bundle:nil] forCellReuseIdentifier:@"SportCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"YoBoBallCell" bundle:nil] forCellReuseIdentifier:@"BallCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"YoBoNews" bundle:nil] forCellReuseIdentifier:@"SportCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"LeagstusCell" bundle:nil] forCellReuseIdentifier:@"LeagstusCell"];
     [self getHomeBanner];
 }
@@ -50,6 +50,8 @@
       }];
       [imageVc showPreView:[UIApplication sharedApplication].keyWindow urls:index index:0];
 }
+
+
 - (void)getMassage{
     NSMutableArray*data = [[NSMutableArray alloc]init];
     [[FeelLeatherManager sharedManager] requestWithLocalFileWithName:@"date" completed:^(BOOL ret, id obj) {
@@ -80,11 +82,13 @@
      });
 }
 
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell*tableViewCell;
    id obj = self.dataSource[indexPath.row];
     if ([obj isKindOfClass:[ BackwardTallWreck class]]) {
-         NewsBallCell*cell = [tableView dequeueReusableCellWithIdentifier:@"BallCell" forIndexPath:indexPath];
+         YoBoBallCell*cell = [tableView dequeueReusableCellWithIdentifier:@"BallCell" forIndexPath:indexPath];
         BackwardTallWreck *model = self.dataSource[indexPath.row];
         cell.title.text = model.title;
         cell.timer .text = model.pubtime;
@@ -103,7 +107,7 @@
             }];
          tableViewCell = cell;
      }else if ([obj isKindOfClass:[NewsSportModel class]]){
-           NewsSportCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SportCell" forIndexPath:indexPath];
+           YoBoNews *cell = [tableView dequeueReusableCellWithIdentifier:@"SportCell" forIndexPath:indexPath];
             NewsSportModel *model = self.dataSource [indexPath.row];
             cell.title.text = model.title;
             cell.content.text = model.time;
@@ -125,12 +129,18 @@
     tableViewCell.selectionStyle = UITableViewCellSelectionStyleNone;
     return tableViewCell;
 }
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
    return self.dataSource.count;
 }
+
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView*)tableView{
    return 1;
 }
+
+
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     if (_upValue) {
@@ -138,15 +148,19 @@
      }
      return 0;
 }
+
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     return [self upView];
 }
--(NewsUpView*)upView{
+
+-(YoBoUpNews*)upView{
     if (!_upView) {
-        _upView = [[NewsUpView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 150)];
+        _upView = [[YoBoUpNews alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 150)];
     }
     return _upView;
 }
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
  id obj = self.dataSource[indexPath.row];
     if ([obj isKindOfClass:[ BackwardTallWreck class]]) {

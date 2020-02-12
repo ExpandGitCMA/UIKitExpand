@@ -1,5 +1,6 @@
-#import "NewsSportCell.h"
-@implementation NewsSportCell
+#import "YoBoBallCell.h"
+#import "AppColorHeader.h"
+@implementation YoBoBallCell
 - (void)awakeFromNib {
     [super awakeFromNib];
 }

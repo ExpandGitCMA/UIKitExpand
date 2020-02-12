@@ -306,7 +306,7 @@ static NSString * const reuseIdentifier = @"Cell";
    [self.icons insertObject:image atIndex:self.icons.count - 1];
     [picker dismissViewControllerAnimated:YES completion:^{
         if (self.countBlock) {
-            self.countBlock(_icons.count-1);
+            self.countBlock(self->_icons.count-1);
         }
         
         dispatch_async(dispatch_get_main_queue(), ^{

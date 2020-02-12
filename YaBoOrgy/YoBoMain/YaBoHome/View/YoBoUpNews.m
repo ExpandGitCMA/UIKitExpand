@@ -1,14 +1,16 @@
-#import "NewsUpView.h"
-#import "NewsUpViewCell.h"
+#import "YoBoUpNews.h"
+#import "YoBoUpNewsCell.h"
 #import "FeelLeatherManager.h"
 #import "NSString+IMAdditions.h"
 #import "UIView+SDExtension.h"
 #import "YaBoRemoteVC.h"
-@interface NewsUpView ()<UITableViewDelegate,UITableViewDataSource>
+
+
+@interface YoBoUpNews ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *arraySource;
 @end
-@implementation NewsUpView
+@implementation YoBoUpNews
 -(instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self initView];
@@ -30,7 +32,7 @@
     _tableView.tableFooterView = [UIView new];
     _tableView.rowHeight = 75;
     _tableView.scrollEnabled = NO;
-    [_tableView registerNib:[UINib nibWithNibName:@"NewsUpViewCell" bundle:nil] forCellReuseIdentifier:@"NewsUpViewCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"YoBoUpNewsCell" bundle:nil] forCellReuseIdentifier:@"YoBoUpNewsCell"];
     [self addSubview:_tableView];
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -40,7 +42,7 @@
     return _arraySource.count;
 }
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-     NewsUpViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NewsUpViewCell"];
+     YoBoUpNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"YoBoUpNewsCell"];
     NSDictionary *dict = [self.arraySource SafetyObjectAtIndex:indexPath.row];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.title.text = dict[@"title"];
