@@ -1,14 +1,14 @@
-#import "YBSYBSportsAlert.h"
-#import "YBSUIPrivacyView.h"
+#import "YoBoAlert.h"
+#import "YoBoDiscuss.h"
 #import "AppHeaderFile.h"
 #import "SVProgressHUD.h"
-@interface YBSYBSportsAlert ()<UITextViewDelegate>
-@property(nonatomic,strong)YBSUIPrivacyView *sportsAlert;
+@interface YoBoAlert ()<UITextViewDelegate>
+@property(nonatomic,strong)YoBoDiscuss *sportsAlert;
 @property(nonatomic,strong)UIView *sportsBlackView;
 @end
-@implementation YBSYBSportsAlert
+@implementation YoBoAlert
 +(instancetype)initYBSportsAlertWithFrame:(CGRect)frame delegate:(id<YBSDCAlertDelegate>)delegate{
-    YBSYBSportsAlert *alertView = [[self alloc] initWithFrame:frame];
+    YoBoAlert *alertView = [[self alloc] initWithFrame:frame];
     alertView.delegate = delegate;
     return alertView;
 }
@@ -30,9 +30,9 @@
     }
     return _sportsBlackView;
 }
--(YBSUIPrivacyView*)sportsAlert{
+-(YoBoDiscuss*)sportsAlert{
     if (!_sportsAlert) {
-        _sportsAlert =   [[YBSUIPrivacyView alloc] init];;
+        _sportsAlert =   [[YoBoDiscuss alloc] init];;
          _sportsAlert.frame = CGRectMake(45, SCREEN_HEIGHT, SCREEN_WIDTH - 90, 280);
          _sportsAlert.userInteractionEnabled = YES;
          _sportsAlert.layer.cornerRadius = 14;
@@ -48,6 +48,7 @@
     }
     return _sportsAlert;
 }
+
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView{ return NO; }
 -(void)clicked:(UIButton *)sender{
 

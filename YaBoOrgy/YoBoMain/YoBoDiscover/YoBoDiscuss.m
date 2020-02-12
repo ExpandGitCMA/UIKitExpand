@@ -1,14 +1,17 @@
-#import "YBSUIPrivacyView.h"
+#import "YoBoDiscuss.h"
 #import <SVProgressHUD.h>
-@interface YBSUIPrivacyView ()
+@interface YoBoDiscuss ()
 
 @end
-@implementation YBSUIPrivacyView
+@implementation YoBoDiscuss
 - (instancetype)init
 {
     self = [super init];
-    return [[[NSBundle mainBundle]loadNibNamed:@"YBSUIPrivacyView" owner:self options:nil]lastObject];
+    return [[[NSBundle mainBundle]loadNibNamed:@"YoBoDiscuss" owner:self options:nil]lastObject];
 }
+
+
+
 - (void)awakeFromNib{
     [super awakeFromNib];
 

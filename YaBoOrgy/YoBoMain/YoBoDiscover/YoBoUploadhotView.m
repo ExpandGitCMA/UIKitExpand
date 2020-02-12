@@ -1,22 +1,19 @@
-//
-//  UploadScreenshotView.m
-//  OShop_iOS
-//
-//  Created by ZeroSmile on 2017/9/27.
-//  Copyright © 2017年 CJW. All rights reserved.
-//
 
-#import "UploadScreenshotView.h"
+
+#import "YoBoUploadhotView.h"
 #import "UIView+SDExtension.h"
 #import "InvestigateFate.h"
 #import <AVFoundation/AVFoundation.h>
 #import <Photos/PHPhotoLibrary.h>
-@interface CJWUploadScreenshotCell ()
+
+@interface YoBoUploadhotCell ()
 @property (nonatomic ,weak) UIImageView *imageView;
 @property (nonatomic, weak) UIButton *close;
+
 @end
 
-@implementation CJWUploadScreenshotCell
+
+@implementation YoBoUploadhotCell
 
 - (UIImageView *)imageView
 {
@@ -28,6 +25,7 @@
     }
     return _imageView;
 }
+
 
 - (UIButton *)close{
     if (!_close) {
@@ -42,10 +40,11 @@
     return _close;
 }
 
+
 - (void)deleteShotCell:(UIButton *)sender{
     
-    if ([self.delegate respondsToSelector:@selector(deleteCell:iconViewindex:)]&&self.delegate) {
-        [self.delegate deleteCell:self iconViewindex:self.index];
+    if ([self.delegate respondsToSelector:@selector(uploadHot:switchIndex:)]&&self.delegate) {
+        [self.delegate uploadHot:self switchIndex:self.index];
     }
 }
 
@@ -73,7 +72,7 @@
 @end
 
 
-@interface UploadScreenshotView ()<UploadShotCellDelegate,UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIActionSheetDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface YoBoUploadhotView ()<YoBoUploadDelegate,UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIActionSheetDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, assign) BOOL isCanClick;
@@ -82,12 +81,12 @@
 @end
 
 static NSString * const reuseIdentifier = @"Cell";
-@implementation UploadScreenshotView
+@implementation YoBoUploadhotView
 -(instancetype)initWithFrame:(CGRect)frame
 {
    
     if (self = [super initWithFrame:frame]) {
-        [self.collectionView registerClass:[CJWUploadScreenshotCell class] forCellWithReuseIdentifier:reuseIdentifier];
+        [self.collectionView registerClass:[YoBoUploadhotCell class] forCellWithReuseIdentifier:reuseIdentifier];
         [self addSubview:self.collectionView];
     }
     return self;
@@ -119,7 +118,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CJWUploadScreenshotCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    YoBoUploadhotCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     cell.delegate = self;
     cell.index = indexPath.row;
     cell.maxCount = self.maxCount;
@@ -133,10 +132,10 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 
--(void)deleteCell:(CJWUploadScreenshotCell *)deleteCell iconViewindex:(NSInteger)iconViewindex{
+-(void)uploadHot:(YoBoUploadhotCell *)uploadHot switchIndex:(NSInteger)switchIndex{
     
-    if (iconViewindex<self.icons.count) {
-        [self.icons removeObjectAtIndex:iconViewindex];
+    if (switchIndex<self.icons.count) {
+        [self.icons removeObjectAtIndex:switchIndex];
     }
     if (self.countBlock) {
         self.countBlock(_icons.count-1);

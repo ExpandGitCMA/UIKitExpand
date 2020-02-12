@@ -5,7 +5,7 @@ typedef void(^shouCangAction)(void);
 typedef void(^talkAction)(void);
 typedef void(^jubaoAction)(void);
 typedef void(^pingBiAction)(void);
-@interface MunityNoteCell : UITableViewCell
+@interface YoBoNoteCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *diaryMonthLabel;
 @property (weak, nonatomic) IBOutlet UILabel *diaryYearLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *diaryImageView;
@@ -13,8 +13,8 @@ typedef void(^pingBiAction)(void);
 @property (weak, nonatomic) IBOutlet UIButton *zanBtn;
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UIImageView *headImageV;
-@property (weak, nonatomic) IBOutlet UIImageView *dataImageUrls;
-@property (weak, nonatomic) IBOutlet UIImageView *dataImageUrl;
+@property (weak, nonatomic) IBOutlet UIImageView *imageUrls;
+@property (weak, nonatomic) IBOutlet UIImageView *imageUrl;
 @property (weak, nonatomic) IBOutlet UIButton *shouCangBtn;
 @property (weak, nonatomic) IBOutlet UIButton *OrgyTalkBtn;
 @property (nonatomic,copy)zanAction zanblock;

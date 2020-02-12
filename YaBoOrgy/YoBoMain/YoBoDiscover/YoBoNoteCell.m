@@ -1,5 +1,5 @@
-#import "MunityNoteCell.h"
-@implementation MunityNoteCell
+#import "YoBoNoteCell.h"
+@implementation YoBoNoteCell
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.zanBtn.selected = NO;

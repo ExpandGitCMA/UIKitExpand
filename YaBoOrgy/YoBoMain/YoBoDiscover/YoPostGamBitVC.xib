@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostedMetodVC">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YoPostGamBitVC">
             <connections>
                 <outlet property="BgView" destination="VfP-7L-sJC" id="S1P-Sj-18m"/>
                 <outlet property="editTextView" destination="QjA-D8-G2b" id="wnP-76-nUy"/>

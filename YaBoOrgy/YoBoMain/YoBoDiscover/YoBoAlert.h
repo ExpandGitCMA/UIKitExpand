@@ -4,12 +4,12 @@ typedef NS_ENUM(NSInteger,  YBSDCAlerAnimation) {
      YBSportsAlertAnimationTypeCenter,
      YBSportsAlertAnimationTypeLine,
 };
-@class YBSYBSportsAlert;
+@class YoBoAlert;
 @protocol YBSDCAlertDelegate <NSObject>
 @optional
-- (void)didSportsAlert:(YBSYBSportsAlert *)didSportsAlert;
+- (void)didSportsAlert:(YoBoAlert *)didSportsAlert;
 @end
-@interface YBSYBSportsAlert : UIView
+@interface YoBoAlert : UIView
 + (instancetype)initYBSportsAlertWithFrame:(CGRect)frame delegate:(id<YBSDCAlertDelegate>)delegate;
 @property (nonatomic, weak) id<YBSDCAlertDelegate> delegate;
 @property(nonatomic,assign) YBSDCAlerAnimation  animationType;

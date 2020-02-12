@@ -8,15 +8,15 @@
 
 #import "YoBoDiscover.h"
 #import "YoBoDefault.h"
-#import "MunityNoteCell.h"
+#import "YoBoNoteCell.h"
 #import <SVProgressHUD.h>
-#import "DisGermTools.h"
-#import "DisBamboo.h"
-#import "DisapproveGerm.h"
-#import "YBSUIPrivacyView.h"
-#import "PostedMetodVC.h"
+#import "YoBoGermTools.h"
+#import "YoBoDisModel.h"
+#import "DisGermUserModel.h"
+#import "YoBoDiscuss.h"
+#import "YoPostGamBitVC.h"
 #import "FJPreImageView.h"
-#import "YBSYBSportsAlert.h"
+#import "YoBoAlert.h"
 
 @interface YoBoDiscover ()
 
@@ -29,7 +29,7 @@
     [self diaryShow];
 }
 -(void)diaryShow{
-    self.dataSource = [[DisGermTools slidingDiaryShare] getAllDiaryMOdelArr];
+    self.dataSource = [[YoBoGermTools slidingDiaryShare] getAllDiaryMOdelArr];
     [self.tableView reloadData];
 
 }
@@ -37,13 +37,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
        [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(editClick) title:@"edit_icon"];
-    DisapproveGerm * sdtoo = [[DisapproveGerm alloc] init];
-    [sdtoo ultimatelyGlobalDusk:@"Orgy"];
+    DisGermUserModel * sdtoo = [[DisGermUserModel alloc] init];
+    [sdtoo initUserModel:@"Orgy"];
     
    self.tableView.emptyDataSetSource = self;
     self.tableView.emptyDataSetDelegate = self;
     self.tableView.mj_header = nil;
-    [self.tableView registerNib:[UINib nibWithNibName:@"MunityNoteCell" bundle:nil] forCellReuseIdentifier:@"MunityNoteCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"YoBoNoteCell" bundle:nil] forCellReuseIdentifier:@"YoBoNoteCell"];
    
 }
 
@@ -52,8 +52,8 @@
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    DisBamboo * model = self.dataSource[indexPath.row];
-    if (model.dataImageStr) {
+    YoBoDisModel * model = self.dataSource[indexPath.row];
+    if (model.imageStr) {
         return 285 + [self tableViewForRowAtIndexCellHeight:model.news];
     }else{
         return 100;
@@ -64,21 +64,21 @@
     return self.dataSource.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    DisBamboo * model = self.dataSource[indexPath.row];
-    if (model.dataImageStr) {
-        MunityNoteCell * noteCell = [tableView dequeueReusableCellWithIdentifier:@"MunityNoteCell" forIndexPath:indexPath];
+    YoBoDisModel * model = self.dataSource[indexPath.row];
+    if (model.imageStr) {
+        YoBoNoteCell * noteCell = [tableView dequeueReusableCellWithIdentifier:@"YoBoNoteCell" forIndexPath:indexPath];
         noteCell.diaryNoteLabel.text = model.news;
-        noteCell.diaryImageView.image = [self Base64StrToUIImage:model.dataImageStr];
+        noteCell.diaryImageView.image = [self Base64StrToUIImage:model.imageStr];
         
-        if (model.dataImageUrls) {
-             noteCell.dataImageUrls.image = [self Base64StrToUIImage:model.dataImageUrls];
+        if (model.imageUrls) {
+             noteCell.imageUrls.image = [self Base64StrToUIImage:model.imageUrls];
         }
-        if (model.dataImageUrl) {
-              noteCell.dataImageUrl.image = [self Base64StrToUIImage:model.dataImageUrl];
+        if (model.imageUrl) {
+              noteCell.imageUrl.image = [self Base64StrToUIImage:model.imageUrl];
         }
       
-        NSArray * arr = [self sepC:model.dateStr];
-        noteCell.headImageV.image = [self Base64StrToUIImage:model.headimageStr];
+        NSArray * arr = [self sepC:model.timer];
+        noteCell.headImageV.image = [self Base64StrToUIImage:model.headimage];
         noteCell.diaryYearLabel.text = [NSString stringWithFormat:@"%@",arr[0]];
         noteCell.diaryMonthLabel.text = [NSString stringWithFormat:@"%@/%@",arr[1],arr[2]];
         [noteCell.zanBtn setTitle:[NSString stringWithFormat:@"%.f",[model.liker floatValue]] forState:UIControlStateNormal];
@@ -134,7 +134,7 @@
         };
         noteCell.talkblockAction = ^{
             if ([YoBoDefault isLogin]) {
-                YBSYBSportsAlert*sportsAlert = [YBSYBSportsAlert initYBSportsAlertWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) delegate:nil ];
+                YoBoAlert*sportsAlert = [YoBoAlert initYBSportsAlertWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) delegate:nil ];
                      [sportsAlert setAnimationType:YBSportsAlertAnimationTypeDefault];
                 
                     [sportsAlert YBSDCAlerAnimationConterl:self];
@@ -166,18 +166,18 @@
 }
 
 
--(void)updateDailyModel:(DisBamboo *)model{
+-(void)updateDailyModel:(YoBoDisModel *)model{
     
-    [[DisGermTools slidingDiaryShare]updateObjectsLiker:model];
+    [[YoBoGermTools slidingDiaryShare]updateObjectsLiker:model];
 }
 
--(void)pingBiYheDailyModel:(DisBamboo *)model{
+-(void)pingBiYheDailyModel:(YoBoDisModel *)model{
     UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:@"屏蔽" message:@"屏蔽这条文字和图片？" preferredStyle:UIAlertControllerStyleAlert];
        UIAlertAction *cancelBtn = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
            NSLog(@"取消");
        }];
        UIAlertAction *sureBtn = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull   action) {
-           [[DisGermTools slidingDiaryShare]deleteObjectByFormat:model];
+           [[YoBoGermTools slidingDiaryShare]deleteObject:model];
               [self diaryShow];
        }];
        [sureBtn setValue:[UIColor redColor] forKey:@"titleTextColor"];
@@ -188,31 +188,32 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    DisBamboo * model = self.dataSource[indexPath.row];
+    YoBoDisModel * model = self.dataSource[indexPath.row];
     NSMutableArray * array = [NSMutableArray new];
 
-    [array addObject:model.dataImageStr];
+    [array addObject:model.imageStr];
 
-    if ([model.dataImageUrls isNull]) {
-        [array addObject:model.dataImageUrls];
+    if ([model.imageUrls isNull]) {
+        [array addObject:model.imageUrls];
     }
-    if ([model.dataImageUrl isNull]) {
-        [array addObject:model.dataImageUrl];
+    if ([model.imageUrl isNull]) {
+        [array addObject:model.imageUrl];
     }
      
     
     FJPreImageView * imageVc = [[FJPreImageView alloc]init];
           
     [imageVc setLongTapPressBlock:^(UIImage * _Nonnull image) {
-              NSLog(@"长按图片回调");
+             
    }];
-          
    [imageVc showPreView:[UIApplication sharedApplication].keyWindow urls:array index:0];
 
 }
+
 - (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView{
     return [UIImage imageNamed:@"icon_data_empty"];
 }
+
 
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView{
     NSString *text = @"  数据空空如也... ";
@@ -236,7 +237,7 @@
 -(void)editClick{
     
     if ([YoBoDefault isLogin]) {
-        PostedMetodVC * homeDetailVC = [[PostedMetodVC alloc] init];
+        YoPostGamBitVC * homeDetailVC = [[YoPostGamBitVC alloc] init];
         homeDetailVC.hidesBottomBarWhenPushed = YES;
     
      [self.navigationController pushViewController: homeDetailVC animated:YES];
@@ -248,8 +249,8 @@
 
 
 -(void)topresentLoginMetodVC{
-    
        UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:[YoBoLogin new]];
        [self presentViewController:navc animated:YES completion:nil];
 }
+
 @end
