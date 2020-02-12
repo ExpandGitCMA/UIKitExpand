@@ -70,8 +70,10 @@ NSUInteger  const SGMaxSections = 100;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+  
+
     if ([self.delegate respondsToSelector:@selector(cycleScrollView:didSelectItemAtIndex:)]) {
-        [self.delegate cycleScrollView:self didSelectItemAtIndex:indexPath.item % self.arraySource.count];
+        [self.delegate cycleScrollView:self didSelectItemAtIndex:_arraySource];
     }
 }
 -(UIPageControl*)pageControl{

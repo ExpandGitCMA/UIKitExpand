@@ -5,6 +5,7 @@
 #import "HollowMale.h"
 #import "AnchorSongController.h"
 #import "YaBoScoreVC.h"
+#import "YoBoLogin.h"
 @interface YaBoMesVC ()
 @end
 @implementation YaBoMesVC
@@ -33,47 +34,66 @@
     return 70;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    switch (indexPath.row) {
-        case 0:{
-             ImpairBeingController *controller = [[ImpairBeingController  alloc] init];
-              controller.hidesBottomBarWhenPushed = YES;
-              [self.navigationController pushViewController:controller animated:YES];
-           }
-            break;
-        case 1:{
-            AnchorSongController*controller = [[AnchorSongController  alloc] init];
-                      controller.hidesBottomBarWhenPushed = YES;
-                      [self.navigationController pushViewController:controller animated:YES];
+    
+    
+    if ([YoBoDefault isLogin]) {
+
+        switch (indexPath.row) {
+            case 0:{
+                 ImpairBeingController *controller = [[ImpairBeingController  alloc] init];
+                  controller.hidesBottomBarWhenPushed = YES;
+                  [self.navigationController pushViewController:controller animated:YES];
+               }
+                break;
+            case 1:{
+                AnchorSongController*controller = [[AnchorSongController  alloc] init];
+                          controller.hidesBottomBarWhenPushed = YES;
+                          [self.navigationController pushViewController:controller animated:YES];
+            }
+                break;
+                case 2:{
+                    [self showShareDetail];
+                }
+                break;
+                case 3:{
+                     YaBoScoreVC *score = [YaBoScoreVC new];
+                      score.hidesBottomBarWhenPushed = YES;
+                      [self.navigationController pushViewController:score animated:YES];
+                }
+                break;
+                case 4:{
+                    SeriouslyConvenientStuffController*aboutUs = [SeriouslyConvenientStuffController new];
+                    aboutUs.hidesBottomBarWhenPushed = YES;
+                    [self.navigationController pushViewController:aboutUs animated:YES];
+                }
+            
+                break;
+            default:
+                break;
         }
-            break;
-            case 2:{
-                [self showShareDetail];
-            }
-            break;
-            case 3:{
-                 YaBoScoreVC *score = [YaBoScoreVC new];
-                  score.hidesBottomBarWhenPushed = YES;
-                  [self.navigationController pushViewController:score animated:YES];
-            }
-            break;
-            case 4:{
-                SeriouslyConvenientStuffController*aboutUs = [SeriouslyConvenientStuffController new];
-                aboutUs.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:aboutUs animated:YES];
-            }
+    }else{
+        UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:[YoBoLogin new]];
+        [self presentViewController:navc animated:YES completion:nil];
         
-            break;
-        default:
-            break;
     }
+    
+    
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 -(void)setClick{
-    SeriouslyConvenientStuffController*aboutUs = [SeriouslyConvenientStuffController new];
-    aboutUs.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:aboutUs animated:YES];
+   
+    
+    if ([YoBoDefault isLogin]) {
+        SeriouslyConvenientStuffController*aboutUs = [SeriouslyConvenientStuffController new];
+           aboutUs.hidesBottomBarWhenPushed = YES;
+           [self.navigationController pushViewController:aboutUs animated:YES];
+    }else{
+        UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:[YoBoLogin new]];
+        [self presentViewController:navc animated:YES completion:nil];
+    }
 }
 -(void)showShareDetail{
         NSString *shareText = @"分享的标题";

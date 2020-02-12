@@ -15,7 +15,7 @@
     }
     return _zeroSDCycleView;
 }
--(void)cycleScrollView:(ReuniteDifficultyWalletView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
+-(void)cycleScrollView:(ReuniteDifficultyWalletView *)cycleScrollView didSelectItemAtIndex:(NSArray*)index{
 }
 -(NSMutableArray*)dataSource{
     if (!_dataSource) {

@@ -10,7 +10,7 @@
 #import "Leagstus.h"
 #import "LeagstusCell.h"
 #import "NewsUpView.h"
-
+#import "FJPreImageView.h"
 @interface YaBoHomeVC ()
 @property(nonatomic,strong)NewsUpView*upView;
 @property (nonatomic, assign) BOOL upValue;
@@ -41,6 +41,15 @@
     }];
 }
 
+-(void)cycleScrollView:(ReuniteDifficultyWalletView *)cycleScrollView didSelectItemAtIndex:(NSArray*)index{
+    
+     FJPreImageView * imageVc = [[FJPreImageView alloc]init];
+             
+       [imageVc setLongTapPressBlock:^(UIImage * _Nonnull image) {
+                
+      }];
+      [imageVc showPreView:[UIApplication sharedApplication].keyWindow urls:index index:0];
+}
 - (void)getMassage{
     NSMutableArray*data = [[NSMutableArray alloc]init];
     [[FeelLeatherManager sharedManager] requestWithLocalFileWithName:@"date" completed:^(BOOL ret, id obj) {

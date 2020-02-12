@@ -11,7 +11,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "NSString+IMAdditions.h"
 #import <AVOSCloud/AVOSCloud.h>
-
+#import "YoBoDefault.h"
 
 
 @interface YaBoBaseMainVC : UIViewController<UITableViewDelegate, UITableViewDataSource,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate,ZeroSDCycleViewDelegate>

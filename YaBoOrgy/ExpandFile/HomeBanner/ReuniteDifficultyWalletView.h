@@ -11,7 +11,7 @@ typedef enum {
 @class ReuniteDifficultyWalletView;
 @protocol ZeroSDCycleViewDelegate <NSObject>
 @optional
-- (void)cycleScrollView:(ReuniteDifficultyWalletView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index;
+- (void)cycleScrollView:(ReuniteDifficultyWalletView *)cycleScrollView didSelectItemAtIndex:(NSArray*)index;
 - (void)cycleScrollView:(ReuniteDifficultyWalletView *)cycleScrollView didScrollToIndex:(NSInteger)index;
 @end
 @interface ReuniteDifficultyWalletView : UIView
