@@ -9,9 +9,9 @@
 #import "YaBoBaseMainVC.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef void(^loadFlesh)(void);
 @interface YoBoRegistViewController : YaBoBaseMainVC
-
+@property (nonatomic,copy)loadFlesh loadBlock;
 @end
 
 NS_ASSUME_NONNULL_END

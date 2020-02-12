@@ -95,6 +95,8 @@
 		8403627823F3FD8B00B7BBFA /* YoPostGamBitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403626923F3FD8A00B7BBFA /* YoPostGamBitVC.m */; };
 		8403627923F3FD8B00B7BBFA /* YoBoUploadhotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403626A23F3FD8A00B7BBFA /* YoBoUploadhotView.m */; };
 		8403627A23F3FD8B00B7BBFA /* YoBoAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403626E23F3FD8B00B7BBFA /* YoBoAlert.m */; };
+		8403636623F41BB400B7BBFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8403636523F41BB400B7BBFA /* GoogleService-Info.plist */; };
+		8403636923F4212500B7BBFA /* UsSystemVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403636723F4212500B7BBFA /* UsSystemVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -280,6 +282,9 @@
 		8403626C23F3FD8A00B7BBFA /* YoBoNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoBoNoteCell.h; sourceTree = "<group>"; };
 		8403626D23F3FD8B00B7BBFA /* YoPostGamBitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoPostGamBitVC.h; sourceTree = "<group>"; };
 		8403626E23F3FD8B00B7BBFA /* YoBoAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoBoAlert.m; sourceTree = "<group>"; };
+		8403636523F41BB400B7BBFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8403636723F4212500B7BBFA /* UsSystemVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsSystemVC.m; sourceTree = "<group>"; };
+		8403636823F4212500B7BBFA /* UsSystemVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsSystemVC.h; sourceTree = "<group>"; };
 		E93070832707C1DDF6A7BEE3 /* libPods-YaBoOrgy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YaBoOrgy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -341,6 +346,7 @@
 				8403621823F3EF0900B7BBFA /* AppBaseMain.m */,
 				031414FD23E9426A009DB240 /* AppDelegate+ApptabBar.h */,
 				031414FC23E9426A009DB240 /* AppDelegate+ApptabBar.m */,
+				8403636523F41BB400B7BBFA /* GoogleService-Info.plist */,
 				0314145C23E93EA1009DB240 /* Main.storyboard */,
 				0314145F23E93EA7009DB240 /* Assets.xcassets */,
 				0314146123E93EA7009DB240 /* LaunchScreen.storyboard */,
@@ -641,6 +647,8 @@
 				0314155E23E94779009DB240 /* SeriouslyConvenientStuffController.xib */,
 				0314155823E94733009DB240 /* YaBoMesVC.h */,
 				0314155723E94733009DB240 /* YaBoMesVC.m */,
+				8403636823F4212500B7BBFA /* UsSystemVC.h */,
+				8403636723F4212500B7BBFA /* UsSystemVC.m */,
 			);
 			path = YaBoMes;
 			sourceTree = "<group>";
@@ -869,6 +877,7 @@
 				0314156C23E9477A009DB240 /* BlessPorter.xib in Resources */,
 				8403627323F3FD8B00B7BBFA /* YoBoDiscuss.xib in Resources */,
 				0314145E23E93EA1009DB240 /* Main.storyboard in Resources */,
+				8403636623F41BB400B7BBFA /* GoogleService-Info.plist in Resources */,
 				0314156D23E9477A009DB240 /* AnchorSongController.xib in Resources */,
 				8403627123F3FD8B00B7BBFA /* YoBoNoteCell.xib in Resources */,
 			);
@@ -955,6 +964,7 @@
 				8403625323F3F80000B7BBFA /* YoBoRegistViewController.m in Sources */,
 				8403627923F3FD8B00B7BBFA /* YoBoUploadhotView.m in Sources */,
 				0314156823E9477A009DB240 /* AnchorSongController.m in Sources */,
+				8403636923F4212500B7BBFA /* UsSystemVC.m in Sources */,
 				0314157E23E94823009DB240 /* InvestigateFate.m in Sources */,
 				031414FE23E9426A009DB240 /* AppDelegate+ApptabBar.m in Sources */,
 				0314153723E9429E009DB240 /* YaBoScoreVC.m in Sources */,

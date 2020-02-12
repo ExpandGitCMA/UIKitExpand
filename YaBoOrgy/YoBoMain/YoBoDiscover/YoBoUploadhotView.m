@@ -333,7 +333,7 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     if (!_icons) {
         _icons = [[NSMutableArray alloc] init];
-        [_icons addObject:[UIImage imageNamed:@"addUpload"]];
+        [_icons addObject:[UIImage imageNamed:@"Mteth"]];
     }
     return _icons;
 }

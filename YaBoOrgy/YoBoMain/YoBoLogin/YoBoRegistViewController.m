@@ -31,8 +31,9 @@
 
  -(void)colse{
 
-        [self dismissViewControllerAnimated:YES completion:nil];
+         [self.navigationController popViewControllerAnimated:YES];
 }
+
 
 
 - (IBAction)registedAction:(UIButton *)sender {
@@ -66,7 +67,12 @@
                                        @"uid":user.objectId,
                          }];
                         [[YoBoDefault defaultUser]keyedUser:users];
-                        [self dismissViewControllerAnimated:YES completion:nil];
+                        [self.navigationController popViewControllerAnimated:YES];
+                       
+                       if (self.loadBlock) {
+                           self.loadBlock();
+                       }
+                       
                    } else {
                        [SVProgressHUD showSuccessWithStatus:error.localizedFailureReason];
                    }

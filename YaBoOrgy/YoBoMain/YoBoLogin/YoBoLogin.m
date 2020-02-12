@@ -69,7 +69,7 @@
                              }];
             [[YoBoDefault defaultUser]keyedUser:users];
             [self dismissViewControllerAnimated:YES completion:nil];
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"UsCenter" object:nil];
+           
         } else {
            DEBUG_NSLog(@"登录失败：%@",error.localizedFailureReason);
             NSString*msg = @"网络异常,请稍后尝试!";
@@ -81,14 +81,17 @@
            [SVProgressHUD showSuccessWithStatus:msg];
         }
     }];
-    
-   
 }
+
 
 - (IBAction)regisBtnAction:(UIButton *)sender {
 
-   UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:[YoBoRegistViewController new]];
-  [self presentViewController:navc animated:YES completion:nil];
+    __weak typeof(self)weakSelf = self;
+    YoBoRegistViewController *legistView= [ YoBoRegistViewController new];
+        legistView.loadBlock = ^{
+        [weakSelf dismissViewControllerAnimated:YES completion:nil];
+    };
+    [self.navigationController pushViewController:legistView animated:YES];
 }
 
 

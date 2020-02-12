@@ -39,6 +39,7 @@ static YoBoDefault *userManager = nil;
 
 //保存数据
 - (void)keyedUser:(YoBoLoginUser *)user{
+    
     _user = user;
      [NSKeyedArchiver archiveRootObject:user toFile:[self cacheDir]];
 }
@@ -64,4 +65,14 @@ static YoBoDefault *userManager = nil;
     }
     return NO;
 }
+
++(NSArray*)getUsSource{
+   YoBoLoginUser *user =  [YoBoDefault defaultUser].user ;
+    if ([YoBoDefault isLogin]) {
+        return @[[NSString stringWithFormat:@"%@%@",user.name,user.mobile],@"隐私协议",@"意见反馈",@"分享好友",@"足球小知识",@"关于我们"];
+    }else{
+         return @[@"登录/注册",@"隐私协议",@"意见反馈",@"分享好友",@"足球小知识",@"关于我们"];
+    }
+}
+
 @end

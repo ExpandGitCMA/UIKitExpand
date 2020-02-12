@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)keyedUser:(YoBoLoginUser *)user;
 - (void)removeAccount;
 + (BOOL)isLogin;
++(NSArray*)getUsSource;
 @end
 
 NS_ASSUME_NONNULL_END

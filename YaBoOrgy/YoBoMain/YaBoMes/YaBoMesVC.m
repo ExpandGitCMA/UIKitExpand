@@ -6,30 +6,45 @@
 #import "AnchorSongController.h"
 #import "YaBoScoreVC.h"
 #import "YoBoLogin.h"
+#import "UsSystemVC.h"
+
 @interface YaBoMesVC ()
 @end
 @implementation YaBoMesVC
+
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(setClick) title:@"nav_set"];
-     self.dataSource = [NSMutableArray arrayWithObjects:@"隐私协议",@"意见反馈",@"分享好友",@"足球小知识",@"关于我们",nil];
      [self.tableView registerNib:[UINib nibWithNibName:@"BlessPorter" bundle:nil] forCellReuseIdentifier:@"cell"];
      self.tableView.mj_header = nil;
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
    BlessPorter *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.title.text  = [self.dataSource SafetyObjectAtIndex:indexPath.row];
+    cell.title.text  = [[YoBoDefault getUsSource] SafetyObjectAtIndex:indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    if ([YoBoDefault isLogin]&&indexPath.row == 0 ) {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     return cell;
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return  self.dataSource.count;
+    return  [YoBoDefault getUsSource].count;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 70;
 }
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     
@@ -37,28 +52,31 @@
 
         switch (indexPath.row) {
             case 0:{
+                break;
+            }
+            case 1:{
                  ImpairBeingController *controller = [[ImpairBeingController  alloc] init];
                   controller.hidesBottomBarWhenPushed = YES;
                   [self.navigationController pushViewController:controller animated:YES];
                }
                 break;
-            case 1:{
+            case 2:{
                 AnchorSongController*controller = [[AnchorSongController  alloc] init];
                           controller.hidesBottomBarWhenPushed = YES;
                           [self.navigationController pushViewController:controller animated:YES];
             }
                 break;
-                case 2:{
+                case 3:{
                     [self showShareDetail];
                 }
                 break;
-                case 3:{
+                case 4:{
                      YaBoScoreVC *score = [YaBoScoreVC new];
                       score.hidesBottomBarWhenPushed = YES;
                       [self.navigationController pushViewController:score animated:YES];
                 }
                 break;
-                case 4:{
+                case 5:{
                     SeriouslyConvenientStuffController*aboutUs = [SeriouslyConvenientStuffController new];
                     aboutUs.hidesBottomBarWhenPushed = YES;
                     [self.navigationController pushViewController:aboutUs animated:YES];
@@ -73,25 +91,27 @@
         [self presentViewController:navc animated:YES completion:nil];
         
     }
-    
-    
-    
 }
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+
 -(void)setClick{
-   
     
     if ([YoBoDefault isLogin]) {
-        SeriouslyConvenientStuffController*aboutUs = [SeriouslyConvenientStuffController new];
-           aboutUs.hidesBottomBarWhenPushed = YES;
-           [self.navigationController pushViewController:aboutUs animated:YES];
+           UsSystemVC*systemVC = [ UsSystemVC new];
+           systemVC.hidesBottomBarWhenPushed = YES;
+           [self.navigationController pushViewController:systemVC animated:YES];
     }else{
         UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:[YoBoLogin new]];
-        [self presentViewController:navc animated:YES completion:nil];
+        [self presentViewController:navc animated:YES completion:^{}];
     }
 }
+
 -(void)showShareDetail{
         NSString *shareText = @"分享的标题";
         UIImage *shareImage = [UIImage imageNamed:@"banner"];
