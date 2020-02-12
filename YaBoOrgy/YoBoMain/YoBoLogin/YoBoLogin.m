@@ -58,8 +58,6 @@
     NSString *pasw = _passwordField.text;
     [AVUser logInWithUsernameInBackground:name password:pasw block:^(AVUser *user, NSError *error){
        if (user) {
-       
-            DEBUG_NSLog(@"登录：%@",user);
             [SVProgressHUD showSuccessWithStatus:@"登录成功"];
             YoBoLoginUser*users = [ YoBoLoginUser userWithDict:@{
                              @"mobile": user.username,
@@ -69,7 +67,7 @@
                              }];
             [[YoBoDefault defaultUser]keyedUser:users];
             [self dismissViewControllerAnimated:YES completion:nil];
-           
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadDataUS" object:nil];
         } else {
            DEBUG_NSLog(@"登录失败：%@",error.localizedFailureReason);
             NSString*msg = @"网络异常,请稍后尝试!";
@@ -90,6 +88,7 @@
     YoBoRegistViewController *legistView= [ YoBoRegistViewController new];
         legistView.loadBlock = ^{
         [weakSelf dismissViewControllerAnimated:YES completion:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadDataUS" object:nil];
     };
     [self.navigationController pushViewController:legistView animated:YES];
 }
@@ -110,16 +109,31 @@
 
 // 只能输入字母和数字
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"] invertedSet];
-    NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
     
-    if (textField.text.length>12) {
-        return NO;
+    
+    NSString *toBeString =[textField.text stringByReplacingCharactersInRange:range withString:string];
+    if ([textField isEqual:_accountField]) {
+        if (toBeString.length>11) {
+             return NO;
+        }
+       return [self isNumber:toBeString];
+    }else{
+        if (toBeString.length>12) {
+             return NO;
+         }
+         NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"] invertedSet];
+        NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
+        return [string isEqualToString:filtered];
     }
-    return [string isEqualToString:filtered];
+    return YES;
+    
 }
 
 
+- (BOOL)isNumber:(NSString*)source {
+    NSString *regex = @"^[\\u0030-\\u0039]+$";
+    return ([source rangeOfString:regex options:NSRegularExpressionSearch].length>0);
+}
 
 
 @end

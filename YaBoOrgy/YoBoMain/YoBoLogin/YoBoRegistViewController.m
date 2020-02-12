@@ -95,13 +95,28 @@
 
 // 只能输入字母和数字
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"] invertedSet];
-    NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
     
-    if (textField.text.length>12) {
-        return NO;
-    }
-    return [string isEqualToString:filtered];
+    NSString *toBeString =[textField.text stringByReplacingCharactersInRange:range withString:string];
+     if ([textField isEqual:_accountField]) {
+         if (toBeString.length>11) {
+              return NO;
+         }
+        return [self isNumber:toBeString];
+     }else{
+         if (toBeString.length>12) {
+              return NO;
+          }
+          NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"] invertedSet];
+         NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
+         return [string isEqualToString:filtered];
+     }
+     return YES;
+}
+
+
+- (BOOL)isNumber:(NSString*)source {
+    NSString *regex = @"^[\\u0030-\\u0039]+$";
+    return ([source rangeOfString:regex options:NSRegularExpressionSearch].length>0);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

@@ -59,7 +59,7 @@
                                 <action selector="registedAction:" destination="-1" eventType="touchUpInside" id="Rjl-dU-hFb"/>
                             </connections>
                         </button>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入6-12数字或者英文账号" textAlignment="natural" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Wpa-Qr-h3A" customClass="LoginTextField">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入11手机有效手机号" textAlignment="natural" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Wpa-Qr-h3A" customClass="LoginTextField">
                             <rect key="frame" x="30" y="14" width="314" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="41u-58-JL6"/>

@@ -83,7 +83,7 @@
                                 <action selector="regisBtnAction:" destination="-1" eventType="touchUpInside" id="YBX-xP-69k"/>
                             </connections>
                         </button>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入6-12数字或者英文账号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gN4-wu-byY" customClass="LoginTextField">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入11手机有效手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gN4-wu-byY" customClass="LoginTextField">
                             <rect key="frame" x="30" y="0.0" width="314" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="djG-DI-1Ho"/>
