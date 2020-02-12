@@ -2,10 +2,14 @@
 @interface YaBoBaseMainVC ()
 @end
 @implementation YaBoBaseMainVC
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self dataSource];
 }
+
+
 -(ReuniteDifficultyWalletView*)zeroSDCycleView{
     if (!_zeroSDCycleView) {
         _zeroSDCycleView = [ReuniteDifficultyWalletView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 190) delegate:self];
@@ -15,14 +19,20 @@
     }
     return _zeroSDCycleView;
 }
+
+
 -(void)cycleScrollView:(ReuniteDifficultyWalletView *)cycleScrollView didSelectItemAtIndex:(NSArray*)index{
 }
+
+
 -(NSMutableArray*)dataSource{
     if (!_dataSource) {
        _dataSource = [NSMutableArray array];
     }
     return _dataSource;
 }
+
+
 -(UITableView*)tableView{
     if (!_tableView) {
          if (@available(iOS 11.0, *)) {
@@ -40,34 +50,50 @@
          [_tableView.mj_header beginRefreshing];
          [self.view addSubview:_tableView];
     }
+    
     return _tableView;
 }
+
+
 - (void)getLoad{
      dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView.mj_footer endRefreshing];
             [self.tableView reloadData];
     });
 }
+
+
 - (void)getMassage{
 }
+
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
 }
+
+
 - (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView{
     return [UIImage imageNamed:@"icon_data_empty"];
 }
+
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView{
     NSString *text = @"  数据空空如也... ";
     NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:17.0f],
        NSForegroundColorAttributeName: [UIColor lightGrayColor]};
     return [[NSAttributedString alloc] initWithString:text attributes:attributes];
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+   
     return 0;
 }
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier:nil];
     return cell;
 }
+
+
 -(NSMutableArray*)getRandomArrFrome:(NSArray*)arr{
     NSMutableArray *newArr = [NSMutableArray new];
     while (newArr.count != arr.count) {
@@ -79,11 +105,18 @@
     }
     return newArr;
 }
+
+
 -(CGFloat)tableViewForRowAtIndexCellHeight:(NSString *)title{
     CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 30, MAXFLOAT);
     return [title boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:18]} context:nil].size.height;
 }
+
+
 - (void)starAnimationWithTableView:(UITableView *)tableView {
     [TableViewAnimationKit showWithAnimationType:XSTableViewAnimationTypeSpringList tableView:tableView];
 }
+
+
+
 @end

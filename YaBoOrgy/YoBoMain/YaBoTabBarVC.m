@@ -9,6 +9,7 @@
 
 
 
+
 -(NSMutableArray*)tabBarSource{
     if (!_tabBarSource) {
         _tabBarSource = [NSMutableArray new];
@@ -32,25 +33,40 @@
     self.viewControllers = [self.tabBarSource copy];
 }
 
+
+
 -(void)tabBarControllers:(UIViewController*)controller title:(NSString*)title imageUrl:(NSString*)imageUrl{
     controller.title = title;
     controller.tabBarItem.image = [UIImage imageNamed:imageUrl];
     UINavigationController *tabBar = [[UINavigationController alloc]initWithRootViewController:controller];
     [self.tabBarSource addObject:tabBar];
 }
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+
 #pragma mark - UITabBarDelegate
 -(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    
 }
 
 - (void)tabBar:(UITabBar *)tabBar willBeginCustomizingItems:(NSArray<UITabBarItem *> *)items {
+    
 }
+
 - (void)tabBar:(UITabBar *)tabBar didBeginCustomizingItems:(NSArray<UITabBarItem *> *)items {
+    
 }
+
 - (void)tabBar:(UITabBar *)tabBar willEndCustomizingItems:(NSArray<UITabBarItem *> *)items changed:(BOOL)changed {
+    
 }
+
 - (void)tabBar:(UITabBar *)tabBar didEndCustomizingItems:(NSArray<UITabBarItem *> *)items changed:(BOOL)changed{
+    
 }
+
 @end

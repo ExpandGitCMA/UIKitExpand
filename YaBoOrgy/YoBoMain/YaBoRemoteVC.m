@@ -1,11 +1,18 @@
 #import "YaBoRemoteVC.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "NSString+IMAdditions.h"
+
+
 @interface YaBoRemoteVC ()
 @property (weak, nonatomic) IBOutlet UIImageView *detailImage;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @end
+
+
+
 @implementation YaBoRemoteVC
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.textView.editable = NO;
