@@ -14,12 +14,9 @@
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(setClick) title:@"nav_set"];
      self.dataSource = [NSMutableArray arrayWithObjects:@"隐私协议",@"意见反馈",@"分享好友",@"足球小知识",@"关于我们",nil];
      [self.tableView registerNib:[UINib nibWithNibName:@"BlessPorter" bundle:nil] forCellReuseIdentifier:@"cell"];
+     self.tableView.mj_header = nil;
 }
--(void)getMassage{
-       [self.tableView.mj_header endRefreshing];
-       [self.tableView.mj_footer endRefreshing];
-       [self.tableView reloadData];
-}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
    BlessPorter *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
