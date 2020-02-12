@@ -14,7 +14,14 @@
 #import "YoBoDefault.h"
 
 
-@interface YaBoBaseMainVC : UIViewController<UITableViewDelegate, UITableViewDataSource,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate,ZeroSDCycleViewDelegate>
+
+
+@interface YaBoBaseMainVC : UIViewController<
+           UITableViewDelegate,
+           UITableViewDataSource,
+           DZNEmptyDataSetSource,
+           DZNEmptyDataSetDelegate,
+           ZeroSDCycleViewDelegate>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *dataSource;
 @property(nonatomic,strong)ReuniteDifficultyWalletView *zeroSDCycleView;
