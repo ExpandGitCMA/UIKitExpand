@@ -1,10 +1,14 @@
 #import "YaBoScoreVC.h"
+
 #import "BeatLikeNewspaper.h"
 #import "AppHeaderFile.h"
 #import "FeelLeatherManager.h"
 #import "TableViewAnimationKit.h"
 #import "AppColorHeader.h"
 #import "YaBoScoreView.h"
+
+
+
 @interface YaBoScoreVC ()<UITableViewDelegate, UITableViewDataSource,UITextViewDelegate>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSMutableArray *dataSource;
@@ -12,18 +16,22 @@
 @property(nonatomic,strong)YaBoScoreView *textView;
 @end
 @implementation YaBoScoreVC
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self textView];
     [self tableView];
     [self getMassage];
 }
+
 -(NSMutableArray*)dataSource{
     if (!_dataSource) {
        _dataSource = [NSMutableArray array];
     }
     return _dataSource;
 }
+
 -(UITableView*)tableView{
     if (!_tableView) {
          if (@available(iOS 11.0, *)) {
@@ -52,7 +60,7 @@
                       }
                       dispatch_async(dispatch_get_main_queue(), ^{
                         BeatLikeNewspaper *model = self.dataSource[0];
-                        _textView.text.text = model.rule;
+                          self->_textView.text.text = model.rule;
                         [self.tableView reloadData];
                         [self starAnimationWithTableView:self.tableView];
                       });

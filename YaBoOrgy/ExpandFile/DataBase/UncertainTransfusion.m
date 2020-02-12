@@ -9,9 +9,9 @@ static NSString *const presentCache = @"presentCache";
     return [[UncertainTransfusion allocWithZone:zone] init];
 }
 + (id)allocWithZone:(NSZone *)zone{
-    return [self sharedDefaultManager];
+    return [self defaultUser];
 }
-+(instancetype)sharedDefaultManager{
++(instancetype)defaultUser{
     static dispatch_once_t dispatch;
     dispatch_once(&dispatch , ^{
         if (!userManager) {

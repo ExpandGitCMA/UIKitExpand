@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 @interface UncertainTransfusion : NSObject
-+(instancetype)sharedDefaultManager;
++(instancetype)defaultUser;
 -(void)chewCloak:(id)key;
 - (void)preserveMicrophone;
 -(NSString*)getApresentTimer;
