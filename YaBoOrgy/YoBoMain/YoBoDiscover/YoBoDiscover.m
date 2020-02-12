@@ -36,19 +36,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-       [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(editClick) title:@"edit_icon"];
+
+    [self initUIView];
     DisGermUserModel * sdtoo = [[DisGermUserModel alloc] init];
-    [sdtoo initUserModel:@"Orgy"];
-    
-   self.tableView.emptyDataSetSource = self;
-    self.tableView.emptyDataSetDelegate = self;
-    self.tableView.mj_header = nil;
-    [self.tableView registerNib:[UINib nibWithNibName:@"YoBoNoteCell" bundle:nil] forCellReuseIdentifier:@"YoBoNoteCell"];
-   
+    [sdtoo initUserModel:@"NewsOrgy"];
 }
 
 
-
+-(void)initUIView{
+   [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(editClick) title:@"edit_icon"];
+    self.tableView.emptyDataSetSource = self;
+    self.tableView.emptyDataSetDelegate = self;
+    self.tableView.mj_header = nil;
+    [self.tableView registerNib:[UINib nibWithNibName:@"YoBoNoteCell" bundle:nil] forCellReuseIdentifier:@"YoBoNoteCell"];
+}
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -63,6 +64,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataSource.count;
 }
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     YoBoDisModel * model = self.dataSource[indexPath.row];
     if (model.imageStr) {
@@ -134,10 +137,9 @@
         };
         noteCell.talkblockAction = ^{
             if ([YoBoDefault isLogin]) {
-                YoBoAlert*sportsAlert = [YoBoAlert initYBSportsAlertWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) delegate:nil ];
-                     [sportsAlert setAnimationType:YBSportsAlertAnimationTypeDefault];
                 
-                    [sportsAlert YBSDCAlerAnimationConterl:self];
+                YoBoAlert*alert = [YoBoAlert initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) delegate:nil ];
+                [alert showAlerAnimationConterl:self];
             }else{
                  [self topresentLoginMetodVC];
             }
@@ -210,9 +212,11 @@
 
 }
 
+
 - (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView{
     return [UIImage imageNamed:@"icon_data_empty"];
 }
+
 
 
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView{
@@ -222,10 +226,12 @@
     return [[NSAttributedString alloc] initWithString:text attributes:attributes];
 }
 
+
 - (NSArray *)sepC:(NSString *)se{
     NSArray * arr = [se componentsSeparatedByString:@"-"];
     return arr;
 }
+
 
 -(UIImage *)Base64StrToUIImage:(NSString *)_encodedImageStr
 {
@@ -233,6 +239,7 @@
     UIImage *_decodedImage = [UIImage imageWithData:decodedImageData];
     return _decodedImage;
 }
+
 
 -(void)editClick{
     
@@ -248,9 +255,11 @@
 }
 
 
+
 -(void)topresentLoginMetodVC{
        UINavigationController * navc = [[UINavigationController alloc] initWithRootViewController:[YoBoLogin new]];
        [self presentViewController:navc animated:YES completion:nil];
 }
+
 
 @end

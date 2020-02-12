@@ -1,21 +1,23 @@
 //
-//  UsSystemVC.m
+//  YaBoMesSystem.m
 //  UIKitExpand
 //
 //  Created by admin on 8/2/2020.
 //  Copyright © 2020 ZeroSmell. All rights reserved.
 //
 
-#import "UsSystemVC.h"
+#import "YaBoMesSystem.h"
 #import "BlessPorter.h"
 #import "AnchorSongController.h"
 #import "SVProgressHUD.h"
 #import "YoBoDefault.h"
-@interface UsSystemVC ()
+
+@interface YaBoMesSystem ()
 @property (nonatomic,strong) UIButton*logoOut;
 @end
 
-@implementation UsSystemVC
+
+@implementation YaBoMesSystem
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,14 +45,16 @@
       [self.tableView registerNib:[UINib nibWithNibName:@"BlessPorter" bundle:nil] forCellReuseIdentifier:@"cell"];
     
       _logoOut = [UIButton buttonWithType:UIButtonTypeCustom];
-        _logoOut.backgroundColor = kUIColorFromRGB(AppScore);
-        _logoOut.frame = CGRectMake((SCREEN_WIDTH-300)/2, SCREEN_HEIGHT-150, 300, 45);
-        [_logoOut setTitle:@"退出登陆" forState:UIControlStateNormal];
-        [_logoOut setTintColor:[UIColor whiteColor]];
-       [_logoOut addTarget:self action:@selector(logoOutAction:) forControlEvents:UIControlEventTouchUpInside];
-        _logoOut.layer.cornerRadius = 5;
-       _logoOut.layer.masksToBounds=YES;
-       [self.view addSubview:_logoOut];
+     _logoOut.backgroundColor = kUIColorFromRGB(AppScore);
+     _logoOut.frame = CGRectMake((SCREEN_WIDTH-300)/2, SCREEN_HEIGHT-150, 300, 45);
+     [_logoOut setTitle:@"退出登陆" forState:UIControlStateNormal];
+     [_logoOut setTintColor:[UIColor whiteColor]];
+     [_logoOut addTarget:self action:@selector(logoOutAction:) forControlEvents:UIControlEventTouchUpInside];
+      _logoOut.layer.cornerRadius = 5;
+    _logoOut.layer.masksToBounds=YES;
+    [self.view addSubview:_logoOut];
+    
+    
 }
 
 

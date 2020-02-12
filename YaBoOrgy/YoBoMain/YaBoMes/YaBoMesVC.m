@@ -6,7 +6,7 @@
 #import "AnchorSongController.h"
 #import "YaBoScoreVC.h"
 #import "YoBoLogin.h"
-#import "UsSystemVC.h"
+#import "YaBoMesSystem.h"
 
 @interface YaBoMesVC ()
 @end
@@ -22,13 +22,16 @@
 }
 
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(setClick) title:@"nav_set"];
      [self.tableView registerNib:[UINib nibWithNibName:@"BlessPorter" bundle:nil] forCellReuseIdentifier:@"cell"];
      self.tableView.mj_header = nil;
+     self.tableView.scrollEnabled =NO;
      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadData:) name:@"reloadDataUS" object:nil];
 }
+
 
 - (void)reloadData:(NSNotification *)notification {
     [self.tableView reloadData];
@@ -110,7 +113,7 @@
 -(void)setClick{
     
     if ([YoBoDefault isLogin]) {
-           UsSystemVC*systemVC = [ UsSystemVC new];
+           YaBoMesSystem*systemVC = [ YaBoMesSystem new];
            systemVC.hidesBottomBarWhenPushed = YES;
            [self.navigationController pushViewController:systemVC animated:YES];
     }else{

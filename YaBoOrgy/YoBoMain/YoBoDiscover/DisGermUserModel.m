@@ -25,20 +25,13 @@ static DisGermUserModel * _tool = nil;
 }
 
 
-
-+ (NSString *)conversionDateFormat{
-    NSDateFormatter * format = [[NSDateFormatter alloc] init];
-    [format setDateFormat:@"YYYY-MM-dd"];
-    NSDate * dateNow = [NSDate date];
-    NSString * currentStr = [format stringFromDate:dateNow];
-    return currentStr;
-}
 -(NSString *)IMGToBase64Str:(UIImage *) image
 {
     NSData *data = UIImageJPEGRepresentation(image, 1.0f);
     NSString *encodedImageStr = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     return encodedImageStr;
 }
+
 
 - (void)initUserModel:(NSString *)model{
     if ([self isFirstShow:model]) {
@@ -145,7 +138,6 @@ static DisGermUserModel * _tool = nil;
     
 }
 
-
 -(BOOL)isFirstShow:(NSString *)str{
     NSUserDefaults * Faults = [NSUserDefaults standardUserDefaults];
     if ([Faults objectForKey:str]) {
@@ -155,36 +147,43 @@ static DisGermUserModel * _tool = nil;
         return YES;
     }
 }
+
+
 - (NSMutableArray *)BillCacheArr{
     if (!_BillCacheArr) {
         _BillCacheArr = [[NSMutableArray alloc] init];
     }
     return _BillCacheArr;
 }
+
 - (NSMutableArray *)cacheArr{
     if (!_cacheArr) {
         _cacheArr = [[NSMutableArray alloc] init];
     }
     return _cacheArr;
 }
+
 - (NSMutableArray *)imageDataArr{
     if (!_imageDataArr) {
         _imageDataArr = [[NSMutableArray alloc] init];
     }
     return _imageDataArr;
 }
+
 - (NSMutableArray *)headImageArr{
     if (!_headImageArr) {
         _headImageArr = [[NSMutableArray alloc] init];
     }
     return _headImageArr;
 }
+
 - (NSMutableArray *)holidayArr{
     if (!_holidayArr) {
         _holidayArr = [[NSMutableArray alloc] init];
     }
     return _holidayArr;
 }
+
 - (NSMutableArray *)admissionArr{
     if (!_admissionArr) {
         _admissionArr = [[NSMutableArray alloc] init];

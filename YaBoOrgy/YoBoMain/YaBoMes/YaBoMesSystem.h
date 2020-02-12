@@ -1,5 +1,5 @@
 //
-//  UsSystemVC.h
+//  YaBoMesSystem.h
 //  UIKitExpand
 //
 //  Created by admin on 8/2/2020.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UsSystemVC : YaBoBaseMainVC
+@interface YaBoMesSystem : YaBoBaseMainVC
 
 
 @end
