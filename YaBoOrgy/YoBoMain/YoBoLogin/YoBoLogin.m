@@ -1,16 +1,12 @@
 
 #import "YoBoLogin.h"
 
-#define NUM @"0123456789"
-#define ALPHA @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-#define ALPHANUM @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-
-
 #import <SVProgressHUD.h>
 #import "YoBoLoginUser.h"
 #import "YoBoDefault.h"
 #import "ImpairBeingController.h"
 #import "YoBoRegistViewController.h"
+
 
 @interface YoBoLogin ()
 
@@ -33,15 +29,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"登录";
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavLeftStyle barTarget:self action:@selector(colse) title:@"navigation_back"];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationWillChange:) name:@"RegisterMetod" object:nil];
 }
 
-- (void)orientationWillChange:(NSNotification *)notification {
-      if ([YoBoDefault isLogin]) {
-         [self colse];
-     }
-}
+
 
 - (void)colse{
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -99,11 +91,13 @@
   [self presentViewController:navc animated:YES completion:nil];
 }
 
+
 - (IBAction)protocolBtnAction:(UIButton *)sender {
 
       ImpairBeingController *controller = [[ImpairBeingController  alloc] init];
      [self.navigationController pushViewController:controller animated:YES];
 }
+
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -123,27 +117,6 @@
 }
 
 
-// 小写字母转大写字母
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    textField.text = [textField.text uppercaseString];
-}
-//限制中文输入 判断是否中文
-+ (BOOL)isChineseCharacter:(NSString*)source {
-    //参考了 https://www.jianshu.com/p/b40b3c618fec
-    NSString *regex = @"^[\\u4E00-\\u9FEA]+$";
-    return ([source rangeOfString:regex options:NSRegularExpressionSearch].length>0);
-}
-//严格限制英文输入
-+ (BOOL)isEnglishCharacter:(NSString*)source {
-    NSString *upperRegex = @"^[\\u0041-\\u005A]+$";
-    NSString *lowerRegex = @"^[\\u0061-\\u007A]+$";
-    BOOL isEnglish = (([source rangeOfString:upperRegex options:NSRegularExpressionSearch].length>0) || ([source rangeOfString:lowerRegex options:NSRegularExpressionSearch].length>0));
-    return isEnglish;
-}
-//判断数字
-+ (BOOL)isNumber:(NSString*)source {
-    NSString *regex = @"^[\\u0030-\\u0039]+$";
-    return ([source rangeOfString:regex options:NSRegularExpressionSearch].length>0);
-}
+
 
 @end

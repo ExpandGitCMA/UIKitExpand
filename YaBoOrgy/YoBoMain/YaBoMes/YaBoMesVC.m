@@ -4,13 +4,14 @@
 #import "ImpairBeingController.h"
 #import "HollowMale.h"
 #import "AnchorSongController.h"
+#import "YaBoScoreVC.h"
 @interface YaBoMesVC ()
 @end
 @implementation YaBoMesVC
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(setClick) title:@"nav_set"];
-     self.dataSource = [NSMutableArray arrayWithObjects:@"隐私协议",@"意见反馈",@"分享好友",@"关于我们",nil];
+     self.dataSource = [NSMutableArray arrayWithObjects:@"隐私协议",@"意见反馈",@"分享好友",@"足球小知识",@"关于我们",nil];
      [self.tableView registerNib:[UINib nibWithNibName:@"BlessPorter" bundle:nil] forCellReuseIdentifier:@"cell"];
 }
 -(void)getMassage{
@@ -49,8 +50,18 @@
                 [self showShareDetail];
             }
             break;
-            case 3:
-            [self setClick];
+            case 3:{
+                 YaBoScoreVC *score = [YaBoScoreVC new];
+                  score.hidesBottomBarWhenPushed = YES;
+                  [self.navigationController pushViewController:score animated:YES];
+            }
+            break;
+            case 4:{
+                SeriouslyConvenientStuffController*aboutUs = [SeriouslyConvenientStuffController new];
+                aboutUs.hidesBottomBarWhenPushed = YES;
+                [self.navigationController pushViewController:aboutUs animated:YES];
+            }
+        
             break;
         default:
             break;

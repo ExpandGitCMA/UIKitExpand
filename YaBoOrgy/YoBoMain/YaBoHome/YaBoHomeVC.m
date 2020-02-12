@@ -10,15 +10,20 @@
 #import "Leagstus.h"
 #import "LeagstusCell.h"
 #import "NewsUpView.h"
+
 @interface YaBoHomeVC ()
 @property(nonatomic,strong)NewsUpView*upView;
 @property (nonatomic, assign) BOOL upValue;
 @end
 @implementation YaBoHomeVC
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initUIView];
 }
+
+
 -(void)initUIView{
     [self.tableView registerNib:[UINib nibWithNibName:@"NewsPlayBallCell" bundle:nil] forCellReuseIdentifier:@"PlayBallCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"NewsBallCell" bundle:nil] forCellReuseIdentifier:@"BallCell"];
@@ -29,7 +34,6 @@
 -(void)getHomeBanner{
     [[FeelLeatherManager sharedManager]tryHeapUseful:URL_HomeSports params:@{} completed:^(BOOL ret, id obj) {
         if (ret) {
-             BOOL boolValue = [[obj objectForKey:@"vanue"] boolValue];
             NSArray *banner = [obj objectForKey:@"banner"];
             self.tableView.tableHeaderView =  [self zeroSDCycleView];
             [self.zeroSDCycleView setArrayStringUrl:banner];
@@ -81,7 +85,7 @@
         NewsModel *model = self.dataSource [indexPath.row];
         cell.title.text = model.title;
         cell.timer .text = model.time;
-         [cell.image  sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"icon_data_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+         [cell.image  sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",@"https://n.sinaimg.cn",model.image]] placeholderImage:[UIImage imageNamed:@"icon_data_empty"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
              if (!error&&image) {
                     cell.image.contentMode =  UIViewContentModeScaleAspectFill;
              }else{
@@ -163,9 +167,9 @@
           homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@%@",model.pubtime,@"\n",model.modtime_desc,model.title];
          }else if ([obj isKindOfClass:[ NewsModel class]]){
             NewsModel *model = self.dataSource [indexPath.row];
-              homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.time,@"\n",model.title];
+              homeDetailVC.conten = [NSString stringWithFormat:@"%@%@%@",model.time,@"\n",model.content];
          if([model.image isNull]){
-              homeDetailVC.url =  model.image;
+              homeDetailVC.url =  [NSString stringWithFormat:@"%@%@",@"https://n.sinaimg.cn",model.image];
            }else{
              homeDetailVC.image = @"news_empty";
             }

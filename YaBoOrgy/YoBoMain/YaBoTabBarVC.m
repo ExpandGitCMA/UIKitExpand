@@ -1,19 +1,14 @@
 #import "YaBoTabBarVC.h"
 #import "YaBoMesVC.h"
 #import "YaBoHomeVC.h"
-#import "YaBoScoreVC.h"
+#import "YoBoDiscover.h"
 @interface YaBoTabBarVC ()<UITabBarDelegate>
 @property(nonatomic,strong)NSMutableArray*tabBarSource;
 @end
 @implementation YaBoTabBarVC
-- (instancetype)init{
-    self = [super init];
-    if (self) {
-        NSLog(@"开启启动了哦");
-        [self addSubController];
-    }
-    return self;
-}
+
+
+
 -(NSMutableArray*)tabBarSource{
     if (!_tabBarSource) {
         _tabBarSource = [NSMutableArray new];
@@ -22,16 +17,21 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self initSubController];
 }
--(void)addSubController{
+
+
+-(void)initSubController{
     YaBoHomeVC *homePage = [YaBoHomeVC new];
     [self tabBarControllers:homePage  title:@"体育资讯" imageUrl:@"icon-home-new"];
-    YaBoScoreVC *score = [YaBoScoreVC new];
-    [self tabBarControllers:score title:@"足球小知识" imageUrl:@"score"];
+    YoBoDiscover *score = [YoBoDiscover new];
+    [self tabBarControllers:score title:@"发现" imageUrl:@"score"];
     YaBoMesVC *personal = [YaBoMesVC new];
     [self tabBarControllers:personal title:@"我的" imageUrl:@"icon-account"];
     self.viewControllers = [self.tabBarSource copy];
 }
+
 -(void)tabBarControllers:(UIViewController*)controller title:(NSString*)title imageUrl:(NSString*)imageUrl{
     controller.title = title;
     controller.tabBarItem.image = [UIImage imageNamed:imageUrl];

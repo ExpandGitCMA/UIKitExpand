@@ -83,6 +83,18 @@
 		8403625023F3F6B900B7BBFA /* LoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403624E23F3F6B900B7BBFA /* LoginTextField.m */; };
 		8403625323F3F80000B7BBFA /* YoBoRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403625223F3F80000B7BBFA /* YoBoRegistViewController.m */; };
 		8403625523F3F81C00B7BBFA /* YoBoRegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8403625423F3F81C00B7BBFA /* YoBoRegistViewController.xib */; };
+		8403625923F3FD3D00B7BBFA /* YoBoDiscover.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403625823F3FD3D00B7BBFA /* YoBoDiscover.m */; };
+		8403626F23F3FD8B00B7BBFA /* PostedMetodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8403625A23F3FD8900B7BBFA /* PostedMetodVC.xib */; };
+		8403627023F3FD8B00B7BBFA /* DisGermTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403625B23F3FD8900B7BBFA /* DisGermTools.m */; };
+		8403627123F3FD8B00B7BBFA /* MunityNoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8403625C23F3FD8A00B7BBFA /* MunityNoteCell.xib */; };
+		8403627223F3FD8B00B7BBFA /* DisBamboo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403625E23F3FD8A00B7BBFA /* DisBamboo.m */; };
+		8403627323F3FD8B00B7BBFA /* YBSUIPrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8403625F23F3FD8A00B7BBFA /* YBSUIPrivacyView.xib */; };
+		8403627423F3FD8B00B7BBFA /* DisapproveGerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403626323F3FD8A00B7BBFA /* DisapproveGerm.m */; };
+		8403627523F3FD8B00B7BBFA /* MunityNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403626623F3FD8A00B7BBFA /* MunityNoteCell.m */; };
+		8403627723F3FD8B00B7BBFA /* YBSUIPrivacyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403626823F3FD8A00B7BBFA /* YBSUIPrivacyView.m */; };
+		8403627823F3FD8B00B7BBFA /* PostedMetodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403626923F3FD8A00B7BBFA /* PostedMetodVC.m */; };
+		8403627923F3FD8B00B7BBFA /* UploadScreenshotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403626A23F3FD8A00B7BBFA /* UploadScreenshotView.m */; };
+		8403627A23F3FD8B00B7BBFA /* YBSYBSportsAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403626E23F3FD8B00B7BBFA /* YBSYBSportsAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,6 +259,27 @@
 		8403625123F3F80000B7BBFA /* YoBoRegistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoBoRegistViewController.h; sourceTree = "<group>"; };
 		8403625223F3F80000B7BBFA /* YoBoRegistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoBoRegistViewController.m; sourceTree = "<group>"; };
 		8403625423F3F81C00B7BBFA /* YoBoRegistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YoBoRegistViewController.xib; sourceTree = "<group>"; };
+		8403625723F3FD3D00B7BBFA /* YoBoDiscover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoBoDiscover.h; sourceTree = "<group>"; };
+		8403625823F3FD3D00B7BBFA /* YoBoDiscover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoBoDiscover.m; sourceTree = "<group>"; };
+		8403625A23F3FD8900B7BBFA /* PostedMetodVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostedMetodVC.xib; sourceTree = "<group>"; };
+		8403625B23F3FD8900B7BBFA /* DisGermTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisGermTools.m; sourceTree = "<group>"; };
+		8403625C23F3FD8A00B7BBFA /* MunityNoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MunityNoteCell.xib; sourceTree = "<group>"; };
+		8403625D23F3FD8A00B7BBFA /* DisapproveGerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisapproveGerm.h; sourceTree = "<group>"; };
+		8403625E23F3FD8A00B7BBFA /* DisBamboo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisBamboo.m; sourceTree = "<group>"; };
+		8403625F23F3FD8A00B7BBFA /* YBSUIPrivacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBSUIPrivacyView.xib; sourceTree = "<group>"; };
+		8403626023F3FD8A00B7BBFA /* UploadScreenshotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadScreenshotView.h; sourceTree = "<group>"; };
+		8403626123F3FD8A00B7BBFA /* DisBamboo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisBamboo.h; sourceTree = "<group>"; };
+		8403626223F3FD8A00B7BBFA /* DisGermTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisGermTools.h; sourceTree = "<group>"; };
+		8403626323F3FD8A00B7BBFA /* DisapproveGerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisapproveGerm.m; sourceTree = "<group>"; };
+		8403626423F3FD8A00B7BBFA /* YBSYBSportsAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSYBSportsAlert.h; sourceTree = "<group>"; };
+		8403626523F3FD8A00B7BBFA /* YBSUIPrivacyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSUIPrivacyView.h; sourceTree = "<group>"; };
+		8403626623F3FD8A00B7BBFA /* MunityNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MunityNoteCell.m; sourceTree = "<group>"; };
+		8403626823F3FD8A00B7BBFA /* YBSUIPrivacyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSUIPrivacyView.m; sourceTree = "<group>"; };
+		8403626923F3FD8A00B7BBFA /* PostedMetodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostedMetodVC.m; sourceTree = "<group>"; };
+		8403626A23F3FD8A00B7BBFA /* UploadScreenshotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadScreenshotView.m; sourceTree = "<group>"; };
+		8403626C23F3FD8A00B7BBFA /* MunityNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MunityNoteCell.h; sourceTree = "<group>"; };
+		8403626D23F3FD8B00B7BBFA /* PostedMetodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostedMetodVC.h; sourceTree = "<group>"; };
+		8403626E23F3FD8B00B7BBFA /* YBSYBSportsAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSYBSportsAlert.m; sourceTree = "<group>"; };
 		E93070832707C1DDF6A7BEE3 /* libPods-YaBoOrgy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YaBoOrgy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -343,11 +376,12 @@
 			children = (
 				0314150223E94293009DB240 /* YaBoBaseMainVC.h */,
 				0314150323E94293009DB240 /* YaBoBaseMainVC.m */,
-				0314151E23E9429E009DB240 /* YaBoTabBarVC.m */,
 				0314151F23E9429E009DB240 /* YaBoTabBarVC.h */,
+				0314151E23E9429E009DB240 /* YaBoTabBarVC.m */,
 				8403621223F3EE9400B7BBFA /* YaBoRemoteVC.h */,
 				8403621323F3EE9400B7BBFA /* YaBoRemoteVC.m */,
 				8403621423F3EE9400B7BBFA /* YaBoRemoteVC.xib */,
+				8403625623F3FD3100B7BBFA /* YoBoDiscover */,
 				8403622023F3F31F00B7BBFA /* YoBoLogin */,
 				8403620523F3EC4E00B7BBFA /* YaBoHome */,
 				8403620623F3EC4E00B7BBFA /* YaBoMes */,
@@ -666,6 +700,34 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8403625623F3FD3100B7BBFA /* YoBoDiscover */ = {
+			isa = PBXGroup;
+			children = (
+				8403625723F3FD3D00B7BBFA /* YoBoDiscover.h */,
+				8403625823F3FD3D00B7BBFA /* YoBoDiscover.m */,
+				8403626023F3FD8A00B7BBFA /* UploadScreenshotView.h */,
+				8403626A23F3FD8A00B7BBFA /* UploadScreenshotView.m */,
+				8403626D23F3FD8B00B7BBFA /* PostedMetodVC.h */,
+				8403626923F3FD8A00B7BBFA /* PostedMetodVC.m */,
+				8403625A23F3FD8900B7BBFA /* PostedMetodVC.xib */,
+				8403626C23F3FD8A00B7BBFA /* MunityNoteCell.h */,
+				8403626623F3FD8A00B7BBFA /* MunityNoteCell.m */,
+				8403625C23F3FD8A00B7BBFA /* MunityNoteCell.xib */,
+				8403626223F3FD8A00B7BBFA /* DisGermTools.h */,
+				8403625B23F3FD8900B7BBFA /* DisGermTools.m */,
+				8403626123F3FD8A00B7BBFA /* DisBamboo.h */,
+				8403625E23F3FD8A00B7BBFA /* DisBamboo.m */,
+				8403625D23F3FD8A00B7BBFA /* DisapproveGerm.h */,
+				8403626323F3FD8A00B7BBFA /* DisapproveGerm.m */,
+				8403626423F3FD8A00B7BBFA /* YBSYBSportsAlert.h */,
+				8403626E23F3FD8B00B7BBFA /* YBSYBSportsAlert.m */,
+				8403626523F3FD8A00B7BBFA /* YBSUIPrivacyView.h */,
+				8403626823F3FD8A00B7BBFA /* YBSUIPrivacyView.m */,
+				8403625F23F3FD8A00B7BBFA /* YBSUIPrivacyView.xib */,
+			);
+			path = YoBoDiscover;
+			sourceTree = "<group>";
+		};
 		B5EBE889DFACEA691CCB17B8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -800,12 +862,15 @@
 				0314146323E93EA7009DB240 /* LaunchScreen.storyboard in Resources */,
 				8403622A23F3F33100B7BBFA /* YoBoLogin.xib in Resources */,
 				0314156B23E9477A009DB240 /* SeriouslyConvenientStuffController.xib in Resources */,
+				8403626F23F3FD8B00B7BBFA /* PostedMetodVC.xib in Resources */,
 				0314146023E93EA7009DB240 /* Assets.xcassets in Resources */,
 				031414F223E940EC009DB240 /* logo.jpg in Resources */,
 				8403621123F3EE8C00B7BBFA /* YaBoScoreView.xib in Resources */,
 				0314156C23E9477A009DB240 /* BlessPorter.xib in Resources */,
+				8403627323F3FD8B00B7BBFA /* YBSUIPrivacyView.xib in Resources */,
 				0314145E23E93EA1009DB240 /* Main.storyboard in Resources */,
 				0314156D23E9477A009DB240 /* AnchorSongController.xib in Resources */,
+				8403627123F3FD8B00B7BBFA /* MunityNoteCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,11 +944,16 @@
 				0314156923E9477A009DB240 /* BlessPorter.m in Sources */,
 				0314152E23E9429E009DB240 /* Leagstus.m in Sources */,
 				8403624923F3F38300B7BBFA /* LeagstusCell.m in Sources */,
+				8403627A23F3FD8B00B7BBFA /* YBSYBSportsAlert.m in Sources */,
 				8403622C23F3F33100B7BBFA /* YoBoLogin.m in Sources */,
 				031414E123E9401B009DB240 /* TossUnnecessaryConsiderationView.m in Sources */,
 				8403621923F3EF0900B7BBFA /* AppBaseMain.m in Sources */,
+				8403627723F3FD8B00B7BBFA /* YBSUIPrivacyView.m in Sources */,
 				8403621023F3EE8C00B7BBFA /* YaBoScoreView.m in Sources */,
+				8403627823F3FD8B00B7BBFA /* PostedMetodVC.m in Sources */,
+				8403627523F3FD8B00B7BBFA /* MunityNoteCell.m in Sources */,
 				8403625323F3F80000B7BBFA /* YoBoRegistViewController.m in Sources */,
+				8403627923F3FD8B00B7BBFA /* UploadScreenshotView.m in Sources */,
 				0314156823E9477A009DB240 /* AnchorSongController.m in Sources */,
 				0314157E23E94823009DB240 /* InvestigateFate.m in Sources */,
 				031414FE23E9426A009DB240 /* AppDelegate+ApptabBar.m in Sources */,
@@ -895,6 +965,7 @@
 				0314155923E94733009DB240 /* YaBoMesVC.m in Sources */,
 				0314157D23E94823009DB240 /* MatterUnexpectedLongitude.m in Sources */,
 				031414D123E9401B009DB240 /* BegBeyondAmphibian.m in Sources */,
+				8403627423F3FD8B00B7BBFA /* DisapproveGerm.m in Sources */,
 				8403621F23F3F1B200B7BBFA /* CrossAnalysisAccidental.m in Sources */,
 				031414D223E9401B009DB240 /* ScareBesidesHurding.m in Sources */,
 				031414E723E9401B009DB240 /* CloudyWharf.m in Sources */,
@@ -905,17 +976,20 @@
 				8403625023F3F6B900B7BBFA /* LoginTextField.m in Sources */,
 				0314154C23E94429009DB240 /* UITableView+XSAnimationKit.m in Sources */,
 				0314154B23E94429009DB240 /* TableViewAnimationKit.m in Sources */,
+				8403625923F3FD3D00B7BBFA /* YoBoDiscover.m in Sources */,
 				0314145523E93EA1009DB240 /* AppDelegate.m in Sources */,
 				8403624423F3F38300B7BBFA /* NewsUpViewCell.m in Sources */,
 				0314153423E9429E009DB240 /* YaBoTabBarVC.m in Sources */,
 				0314155523E94677009DB240 /* BeatLikeNewspaper.m in Sources */,
 				0314158223E94852009DB240 /* BackwardTallWreck.m in Sources */,
 				0314156E23E9477A009DB240 /* SeriouslyConvenientStuffController.m in Sources */,
+				8403627023F3FD8B00B7BBFA /* DisGermTools.m in Sources */,
 				031414DD23E9401B009DB240 /* FavourStrip.m in Sources */,
 				0314146623E93EA7009DB240 /* main.m in Sources */,
 				8403624A23F3F38300B7BBFA /* NewsPlayBallCell.m in Sources */,
 				031414E223E9401B009DB240 /* VentureCloudySeed.m in Sources */,
 				8403622923F3F33100B7BBFA /* YoBoLoginUser.m in Sources */,
+				8403627223F3FD8B00B7BBFA /* DisBamboo.m in Sources */,
 				031414E523E9401B009DB240 /* StressFakeCircumstance.m in Sources */,
 				0314154D23E94429009DB240 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				031414CE23E9401B009DB240 /* UncertainTransfusion.m in Sources */,
