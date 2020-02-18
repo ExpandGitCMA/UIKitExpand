@@ -150,23 +150,6 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="250.72463768115944" y="183.48214285714286"/>
         </view>
-        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZA-ZR-Fgy">
-            <rect key="frame" x="0.0" y="0.0" width="314" height="45"/>
-            <color key="backgroundColor" red="0.43026983740000002" green="0.7790606618" blue="0.159180671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstAttribute="height" constant="45" id="dFQ-PD-Fbd"/>
-            </constraints>
-            <state key="normal" title="注册">
-                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-            </state>
-            <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                    <integer key="value" value="5"/>
-                </userDefinedRuntimeAttribute>
-                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-            </userDefinedRuntimeAttributes>
-            <point key="canvasLocation" x="-332" y="247"/>
-        </button>
     </objects>
     <resources>
         <image name="button:6hz-IU-qWr:image" width="21" height="21">
