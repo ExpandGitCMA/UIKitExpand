@@ -45,6 +45,9 @@
 
 -(void)loadTabBar{
     BaseTabBarMetod *tabBar = [[BaseTabBarMetod alloc]init];
+
+//    tabBar.view.frame = self.view.bounds;
+//    [self.view addSubview:tabBar.view];
     [UIApplication sharedApplication].keyWindow.rootViewController = tabBar ;
 }
 
