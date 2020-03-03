@@ -1,4 +1,4 @@
 #import "MJRefreshHeader.h"
-#import "SportsMacrosHeadr.h"
+#import "AppUrlprotocol.h"
 @interface CJWRefreshHeader : MJRefreshHeader
 @end

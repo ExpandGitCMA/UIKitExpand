@@ -1,5 +1,5 @@
-#ifndef SportsColorHeader_h
-#define SportsColorHeader_h
+#ifndef ColorHeaderRGBType_h
+#define ColorHeaderRGBType_h
 
 #import <Foundation/Foundation.h>
 
@@ -11,7 +11,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 
 typedef NS_ENUM(UInt32, ColorRGBType) {
-    AppMianColor             = 0x55BE04,
+    AppMianColor             = 0x587EFF,
     ExSearch                 = 0Xf2f2f2,
     ExAddress                = 0x999999,
     ExStyle                  = 0x81858c,

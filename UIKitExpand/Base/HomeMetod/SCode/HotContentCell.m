@@ -1,5 +1,5 @@
 #import "HotContentCell.h"
-#import "SportsColorHeader.h"
+#import "ColorHeaderRGBType.h"
 @interface HotContentCell ()
 @property(nonatomic,strong)UIView *viewSelect; 
 @end

@@ -186,7 +186,7 @@
               [self.navigationController pushViewController: metodVC animated:YES];
           }
     }else{
-         [LatelyMetodRouter switchTopresentLoginMetodVC:self];
+         [AppRouterUrl  switchTopresentLoginMetodVC:self];
     }
     
     
@@ -209,9 +209,9 @@
 - (void)msgClick {
     
     if ([UserDefaultManager isLogin]) {
-        [LatelyMetodRouter switchTopushMessAgeMetodVC:self];
+        [AppRouterUrl  switchTopushMessAgeMetodVC:self];
     }else{
-        [LatelyMetodRouter switchTopresentLoginMetodVC:self];
+        [AppRouterUrl  switchTopresentLoginMetodVC:self];
     }
     
 }

@@ -1,6 +1,9 @@
 #import <UIKit/UIKit.h>
+#import "ALRouter.h"
+#import <SVProgressHUD.h>
+#import <AVOSCloud/AVOSCloud.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow *window;
--(void)registerPushWithKey:(NSString*)key;
+-(void)launchOptionsPushCenter:(NSString*)key;
 @end

@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
-#import "SportsMacrosHeadr.h"
+#import "AppUrlprotocol.h"
+
 @interface CJWActivityIndicatorView : UIView
 @property (nonatomic) CGFloat lineWidth;
 @property (nonatomic) CGFloat radius;

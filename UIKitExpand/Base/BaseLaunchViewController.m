@@ -1,5 +1,5 @@
 #import "BaseLaunchViewController.h"
-#import "SportsMacrosHeadr.h"
+#import "AppUrlprotocol.h"
 #import <AFNetworking.h>
 #import "CoordinateDinosaur.h"
 #import "BaseTabBarMetod.h"
@@ -63,7 +63,7 @@
                 NSString *pushkey = responseObject[@"pushkey"];
                   AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
                 if ([pushkey length] > 0) {
-                      [delegate registerPushWithKey:pushkey];
+                      [delegate launchOptionsPushCenter:pushkey];
                 }
                 
                 if ([responseObject[@"firstbabys"] integerValue]) {

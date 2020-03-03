@@ -92,13 +92,13 @@
 
 - (IBAction)regisBtnAction:(UIButton *)sender {
 
-    [LatelyMetodRouter switchTopresentRegisterMetodVC:self];
+    [AppRouterUrl   switchTopresentRegisterMetodVC:self];
 }
 
 
 - (IBAction)protocolBtnAction:(UIButton *)sender {
 
-    [LatelyMetodRouter switchTopushUserPrivacyVC:self];
+    [AppRouterUrl   switchTopushUserPrivacyVC:self];
 }
 
 

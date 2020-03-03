@@ -1,5 +1,5 @@
 #import "WellFunnyMurdererView.h"
-#import "SportsColorHeader.h"
+#import "ColorHeaderRGBType.h"
 static NSString *FDMSG_Home_DataEmpty    = @"数据空空如也...";
 @interface WellFunnyMurdererView ()
 @end

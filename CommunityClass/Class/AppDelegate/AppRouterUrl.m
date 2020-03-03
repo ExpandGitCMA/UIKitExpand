@@ -1,7 +1,7 @@
-#import "LatelyMetodRouter.h"
+#import "AppRouterUrl.h"
 #import "ALRouter.h"
 
-@implementation LatelyMetodRouter
+@implementation AppRouterUrl  
 
 #pragma mark-隐私协议跳转
 +(void)switchTopushUserPrivacyVC:(UIViewController*)controller{

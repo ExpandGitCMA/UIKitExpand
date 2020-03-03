@@ -4,7 +4,6 @@ target 'UIKitExpand' do
   pod 'MJRefresh'
   pod 'SVProgressHUD'
   pod 'DZNEmptyDataSet'
-  pod 'UMCCommon'
   pod 'FMDB'
   pod 'FJPreImageView'
   pod 'AVOSCloud'

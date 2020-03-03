@@ -79,7 +79,7 @@
 
 -(void)logoinTouchUpInside:(UIButton *)sender{
     if (![UserDefaultManager isLogin]) {
-        [LatelyMetodRouter switchTopresentLoginMetodVC:self];
+        [AppRouterUrl  switchTopresentLoginMetodVC:self];
     }
 }
 
@@ -107,12 +107,12 @@
     if ([UserDefaultManager isLogin]) {
          switch (indexPath.row) {
                 case 0:
-                    [LatelyMetodRouter switchTopushRuleMetodVC:self];
+                    [AppRouterUrl  switchTopushRuleMetodVC:self];
             
                     break;
                 case 1:
 
-                     [LatelyMetodRouter switchTopushFeedbackMetodVC:self];
+                     [AppRouterUrl  switchTopushFeedbackMetodVC:self];
                     
                 
                     break;
@@ -128,7 +128,7 @@
                     break;
             }
       }else{
-          [LatelyMetodRouter switchTopresentLoginMetodVC:self];
+          [AppRouterUrl  switchTopresentLoginMetodVC:self];
       }
 }
 
@@ -173,9 +173,9 @@
 -(void)setClick{
     
     if ([UserDefaultManager isLogin]) {
-        [LatelyMetodRouter switchTopushUsSystemVC:self];
+        [AppRouterUrl  switchTopushUsSystemVC:self];
     }else{
-        [LatelyMetodRouter switchTopresentLoginMetodVC:self];
+        [AppRouterUrl  switchTopresentLoginMetodVC:self];
     }
     
 }

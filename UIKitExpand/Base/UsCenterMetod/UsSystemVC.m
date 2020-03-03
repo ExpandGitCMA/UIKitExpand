@@ -102,7 +102,7 @@
             break;
         case 1:
 
-             [LatelyMetodRouter switchTopushFeedbackMetodVC:self];
+             [AppRouterUrl  switchTopushFeedbackMetodVC:self];
             
         
             break;
@@ -116,10 +116,10 @@
             
             break;
             case 3:
-            [LatelyMetodRouter switchTopushAboutUsMetodVC:self];
+            [AppRouterUrl  switchTopushAboutUsMetodVC:self];
             break;
             case 4:
-            [LatelyMetodRouter switchTopushUserPrivacyVC:self];
+            [AppRouterUrl  switchTopushUserPrivacyVC:self];
             break;
         default:
             break;

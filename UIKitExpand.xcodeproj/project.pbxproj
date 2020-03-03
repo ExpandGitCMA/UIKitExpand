@@ -19,7 +19,6 @@
 		0324AC9A23E2DEFA004B4C3E /* date.json in Resources */ = {isa = PBXBuildFile; fileRef = 0324AC9923E2DEFA004B4C3E /* date.json */; };
 		0324ACC123E31F4E004B4C3E /* AsFondAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACBB23E31F4E004B4C3E /* AsFondAssembly.m */; };
 		0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */; };
-		038A0AF223EC01ED00463BFF /* AppDelegate+tabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A0AF123EC01ED00463BFF /* AppDelegate+tabBar.m */; };
 		038A0AF523EC081F00463BFF /* ToolsAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A0AF423EC081F00463BFF /* ToolsAuthorization.m */; };
 		84048CC723F29D2600E78497 /* BaseLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84048CC623F29D2600E78497 /* BaseLaunchViewController.m */; };
 		84048CCA23F2ADD500E78497 /* WKViewMetodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84048CC923F2ADD500E78497 /* WKViewMetodVC.m */; };
@@ -29,6 +28,8 @@
 		840EDACA23EDC7D90024D946 /* JQLoadingStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC123EDC7D90024D946 /* JQLoadingStatusView.m */; };
 		840EDACB23EDC7D90024D946 /* JQLoadingStatusView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 840EDAC323EDC7D90024D946 /* JQLoadingStatusView.bundle */; };
 		840EDACC23EDC7D90024D946 /* UIView+LoadState.m in Sources */ = {isa = PBXBuildFile; fileRef = 840EDAC623EDC7D90024D946 /* UIView+LoadState.m */; };
+		84820C05240E8DFD003CBE6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84820C04240E8DFD003CBE6E /* ViewController.m */; };
+		84820C0A240E8F75003CBE6E /* BaseMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84820C09240E8F75003CBE6E /* BaseMainViewController.m */; };
 		84A4E4D923EFD245009E7406 /* UsCenterHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E4D823EFD245009E7406 /* UsCenterHead.m */; };
 		84A4E4DB23EFD255009E7406 /* UsCenterHead.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4E4DA23EFD255009E7406 /* UsCenterHead.xib */; };
 		84A4E50323EFE35A009E7406 /* PostedMetodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E50123EFE35A009E7406 /* PostedMetodVC.m */; };
@@ -93,7 +94,7 @@
 		84E54A1823EED7C200422C37 /* SystemNavigationCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E54A1623EED7C200422C37 /* SystemNavigationCapture.m */; };
 		84E54A3E23EED8EB00422C37 /* ALRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84E54A3B23EED8EB00422C37 /* ALRouter.plist */; };
 		84E54A3F23EED8EB00422C37 /* ALRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E54A3D23EED8EB00422C37 /* ALRouter.m */; };
-		84E54A4223EEDA3100422C37 /* LatelyMetodRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E54A4023EEDA3100422C37 /* LatelyMetodRouter.m */; };
+		84E54A4223EEDA3100422C37 /* AppRouterUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E54A4023EEDA3100422C37 /* AppRouterUrl.m */; };
 		84E54A4523EF054C00422C37 /* UsSystemVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E54A4423EF054C00422C37 /* UsSystemVC.m */; };
 		B30F38711F15B5C7005B5CE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */; };
 		B3D208D51F47E89700F0CE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D208D41F47E89700F0CE6F /* Assets.xcassets */; };
@@ -160,11 +161,8 @@
 		0324ACBE23E31F4E004B4C3E /* TableViewAnimationKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitConfig.h; sourceTree = "<group>"; };
 		0324ACBF23E31F4E004B4C3E /* AsFondAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsFondAssembly.h; sourceTree = "<group>"; };
 		0324ACC023E31F4E004B4C3E /* UITableView+XSAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XSAnimationKit.m"; sourceTree = "<group>"; };
-		038A0AED23EBFF6100463BFF /* SportsMacrosHeadr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsMacrosHeadr.h; sourceTree = "<group>"; };
-		038A0AEE23EBFF6100463BFF /* SportsColorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsColorHeader.h; sourceTree = "<group>"; };
-		038A0AEF23EBFF6100463BFF /* SportsBallAppUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsBallAppUrl.h; sourceTree = "<group>"; };
-		038A0AF023EC01ED00463BFF /* AppDelegate+tabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+tabBar.h"; sourceTree = "<group>"; };
-		038A0AF123EC01ED00463BFF /* AppDelegate+tabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+tabBar.m"; sourceTree = "<group>"; };
+		038A0AED23EBFF6100463BFF /* AppUrlprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUrlprotocol.h; sourceTree = "<group>"; };
+		038A0AEE23EBFF6100463BFF /* ColorHeaderRGBType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorHeaderRGBType.h; sourceTree = "<group>"; };
 		038A0AF323EC081F00463BFF /* ToolsAuthorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsAuthorization.h; sourceTree = "<group>"; };
 		038A0AF423EC081F00463BFF /* ToolsAuthorization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsAuthorization.m; sourceTree = "<group>"; };
 		1557A88AC0C9420DBF348CAF /* Pods-UIKitExpand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExpand.release.xcconfig"; path = "Target Support Files/Pods-UIKitExpand/Pods-UIKitExpand.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +181,10 @@
 		840EDAC523EDC7D90024D946 /* JQLoadingIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQLoadingIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		840EDAC623EDC7D90024D946 /* UIView+LoadState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LoadState.m"; sourceTree = "<group>"; };
 		840EDAC723EDC7D90024D946 /* JQLoadingStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQLoadingStatusView.h; sourceTree = "<group>"; };
+		84820C03240E8DFD003CBE6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84820C04240E8DFD003CBE6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84820C08240E8F75003CBE6E /* BaseMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseMainViewController.h; sourceTree = "<group>"; };
+		84820C09240E8F75003CBE6E /* BaseMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseMainViewController.m; sourceTree = "<group>"; };
 		84A4E4D723EFD245009E7406 /* UsCenterHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsCenterHead.h; sourceTree = "<group>"; };
 		84A4E4D823EFD245009E7406 /* UsCenterHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsCenterHead.m; sourceTree = "<group>"; };
 		84A4E4DA23EFD255009E7406 /* UsCenterHead.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsCenterHead.xib; sourceTree = "<group>"; };
@@ -295,14 +297,14 @@
 		84E54A3B23EED8EB00422C37 /* ALRouter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ALRouter.plist; sourceTree = "<group>"; };
 		84E54A3C23EED8EB00422C37 /* ALRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRouter.h; sourceTree = "<group>"; };
 		84E54A3D23EED8EB00422C37 /* ALRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALRouter.m; sourceTree = "<group>"; };
-		84E54A4023EEDA3100422C37 /* LatelyMetodRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatelyMetodRouter.m; sourceTree = "<group>"; };
-		84E54A4123EEDA3100422C37 /* LatelyMetodRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatelyMetodRouter.h; sourceTree = "<group>"; };
+		84E54A4023EEDA3100422C37 /* AppRouterUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRouterUrl.m; sourceTree = "<group>"; };
+		84E54A4123EEDA3100422C37 /* AppRouterUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRouterUrl.h; sourceTree = "<group>"; };
 		84E54A4323EF054C00422C37 /* UsSystemVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsSystemVC.h; sourceTree = "<group>"; };
 		84E54A4423EF054C00422C37 /* UsSystemVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsSystemVC.m; sourceTree = "<group>"; };
 		B30F386D1F15B5C7005B5CE6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B3D208D41F47E89700F0CE6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "UIKitExpand/Resource(资源)/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
-		B3F4EFFB1F14A8600005197E /* 亞博体育社区-足球.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "亞博体育社区-足球.app"; path = "优速体育社区-足球.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F4EFFB1F14A8600005197E /* 亚博体育社区.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "亚博体育社区.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F4EFFF1F14A8600005197E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3F4F00D1F14A8600005197E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3F4F00F1F14A8600005197E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -407,9 +409,6 @@
 		03067F2D23E41BB000A08E53 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
-				038A0AEF23EBFF6100463BFF /* SportsBallAppUrl.h */,
-				038A0AED23EBFF6100463BFF /* SportsMacrosHeadr.h */,
-				038A0AEE23EBFF6100463BFF /* SportsColorHeader.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -523,6 +522,34 @@
 				840EDAC323EDC7D90024D946 /* JQLoadingStatusView.bundle */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		84820C02240E8BE6003CBE6E /* CommunityClass */ = {
+			isa = PBXGroup;
+			children = (
+				038A0AED23EBFF6100463BFF /* AppUrlprotocol.h */,
+				038A0AEE23EBFF6100463BFF /* ColorHeaderRGBType.h */,
+				84820C06240E8F06003CBE6E /* Class */,
+			);
+			path = CommunityClass;
+			sourceTree = "<group>";
+		};
+		84820C06240E8F06003CBE6E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				B30F386C1F15B5A7005B5CE6 /* AppDelegate */,
+				84820C07240E8F3F003CBE6E /* news */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		84820C07240E8F3F003CBE6E /* news */ = {
+			isa = PBXGroup;
+			children = (
+				84820C08240E8F75003CBE6E /* BaseMainViewController.h */,
+				84820C09240E8F75003CBE6E /* BaseMainViewController.m */,
+			);
+			path = news;
 			sourceTree = "<group>";
 		};
 		84E547BA23EE8C7200422C37 /* MJRefreshCustom */ = {
@@ -704,10 +731,10 @@
 			children = (
 				B30F386D1F15B5C7005B5CE6 /* AppDelegate.h */,
 				B30F386E1F15B5C7005B5CE6 /* AppDelegate.m */,
-				038A0AF023EC01ED00463BFF /* AppDelegate+tabBar.h */,
-				038A0AF123EC01ED00463BFF /* AppDelegate+tabBar.m */,
-				84E54A4123EEDA3100422C37 /* LatelyMetodRouter.h */,
-				84E54A4023EEDA3100422C37 /* LatelyMetodRouter.m */,
+				84E54A4123EEDA3100422C37 /* AppRouterUrl.h */,
+				84E54A4023EEDA3100422C37 /* AppRouterUrl.m */,
+				84820C03240E8DFD003CBE6E /* ViewController.h */,
+				84820C04240E8DFD003CBE6E /* ViewController.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -724,6 +751,7 @@
 		B3F4EFF21F14A8600005197E = {
 			isa = PBXGroup;
 			children = (
+				84820C02240E8BE6003CBE6E /* CommunityClass */,
 				B3F4EFFD1F14A8600005197E /* UIKitExpand */,
 				B3F4F0171F14A8600005197E /* UIKitExpandTests */,
 				B3F4F0221F14A8600005197E /* UIKitExpandUITests */,
@@ -737,7 +765,7 @@
 		B3F4EFFC1F14A8600005197E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3F4EFFB1F14A8600005197E /* 亞博体育社区-足球.app */,
+				B3F4EFFB1F14A8600005197E /* 亚博体育社区.app */,
 				B3F4F0141F14A8600005197E /* AnnoyInteriorNetwork.xctest */,
 				B3F4F01F1F14A8600005197E /* TogetherAmpleBrochure.xctest */,
 			);
@@ -747,7 +775,6 @@
 		B3F4EFFD1F14A8600005197E /* UIKitExpand */ = {
 			isa = PBXGroup;
 			children = (
-				B30F386C1F15B5A7005B5CE6 /* AppDelegate */,
 				03067F4623E41BB000A08E53 /* Base */,
 				03067F0723E41BB000A08E53 /* ExpandFile */,
 				D8C6CA221F42D9A400BE85ED /* Resource(资源) */,
@@ -824,7 +851,7 @@
 			);
 			name = UIKitExpand;
 			productName = UIKitExpand;
-			productReference = B3F4EFFB1F14A8600005197E /* 亞博体育社区-足球.app */;
+			productReference = B3F4EFFB1F14A8600005197E /* 亚博体育社区.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B3F4F0131F14A8600005197E /* UIKitExpandTests */ = {
@@ -1022,6 +1049,7 @@
 				84E549E923EECAFF00422C37 /* DFCHotContent.m in Sources */,
 				84048CC723F29D2600E78497 /* BaseLaunchViewController.m in Sources */,
 				84A4E53123F0016F009E7406 /* DisBamboo.m in Sources */,
+				84820C0A240E8F75003CBE6E /* BaseMainViewController.m in Sources */,
 				0324ACC123E31F4E004B4C3E /* AsFondAssembly.m in Sources */,
 				84E547C423EE8C7200422C37 /* CJWProgressView.m in Sources */,
 				03067F8523E41BB100A08E53 /* UIControl+ExControlayerStyle.m in Sources */,
@@ -1031,9 +1059,8 @@
 				84E54A1823EED7C200422C37 /* SystemNavigationCapture.m in Sources */,
 				84A4E50A23EFFBDC009E7406 /* UploadScreenshotView.m in Sources */,
 				84E547C823EE8C7200422C37 /* CJWActivityIndicatorView.m in Sources */,
-				84E54A4223EEDA3100422C37 /* LatelyMetodRouter.m in Sources */,
+				84E54A4223EEDA3100422C37 /* AppRouterUrl.m in Sources */,
 				84E549E223EECAFF00422C37 /* LoginMetodVC.m in Sources */,
-				038A0AF223EC01ED00463BFF /* AppDelegate+tabBar.m in Sources */,
 				84E549DF23EECAFF00422C37 /* RegisterMetodVC.m in Sources */,
 				84A4E53423F00182009E7406 /* DisapproveGerm.m in Sources */,
 				03067FDE23E47AD600A08E53 /* UnderlineDizzyTable.m in Sources */,
@@ -1047,6 +1074,7 @@
 				84A4E53723F00198009E7406 /* DeepenPleasurableTennisView.m in Sources */,
 				84E549F323EECBBC00422C37 /* HomeMetodVC.m in Sources */,
 				84E547C623EE8C7200422C37 /* CJWRefreshFooter.m in Sources */,
+				84820C05240E8DFD003CBE6E /* ViewController.m in Sources */,
 				84E549C823EECAFF00422C37 /* BaseTabBarMetod.m in Sources */,
 				84E549D323EECAFF00422C37 /* FeedbackMetodVC.m in Sources */,
 				0324ACC223E31F4E004B4C3E /* UITableView+XSAnimationKit.m in Sources */,
@@ -1254,7 +1282,7 @@
 					"-l\"AFNetworking\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.MutualOrgy;
-				PRODUCT_NAME = "优速体育社区-足球";
+				PRODUCT_NAME = "亚博体育社区";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1287,7 +1315,7 @@
 					"-l\"AFNetworking\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.MutualOrgy;
-				PRODUCT_NAME = "优速体育社区-足球";
+				PRODUCT_NAME = "亚博体育社区";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

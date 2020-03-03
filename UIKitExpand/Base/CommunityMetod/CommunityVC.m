@@ -109,7 +109,7 @@
                 [self updateDailyModel:model];
                 
             }else{
-                 [LatelyMetodRouter switchTopresentLoginMetodVC:self];
+                 [AppRouterUrl  switchTopresentLoginMetodVC:self];
             }
        
         };
@@ -137,7 +137,7 @@
                 
                     [sportsAlert YBSDCAlerAnimationConterl:self];
             }else{
-                 [LatelyMetodRouter switchTopresentLoginMetodVC:self];
+                 [AppRouterUrl  switchTopresentLoginMetodVC:self];
             }
         
         };
@@ -145,7 +145,7 @@
             if ([UserDefaultManager isLogin]) {
                  
                }else{
-                  [LatelyMetodRouter switchTopresentLoginMetodVC:self];
+                  [AppRouterUrl  switchTopresentLoginMetodVC:self];
             }
            
         };
@@ -154,7 +154,7 @@
             if ([UserDefaultManager isLogin]) {
                      [self pingBiYheDailyModel:model];
                 }else{
-                    [LatelyMetodRouter switchTopresentLoginMetodVC:self];
+                    [AppRouterUrl  switchTopresentLoginMetodVC:self];
                }
         };
         return noteCell;
@@ -241,7 +241,7 @@
      [self.navigationController pushViewController: homeDetailVC animated:YES];
         
     }else{
-         [LatelyMetodRouter switchTopresentLoginMetodVC:self];
+         [AppRouterUrl  switchTopresentLoginMetodVC:self];
     }
 }
 

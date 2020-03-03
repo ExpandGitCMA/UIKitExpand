@@ -86,7 +86,7 @@
 
 - (IBAction)registedAgreementAction:(UIButton *)sender {
 
-     [LatelyMetodRouter switchTopushUserPrivacyVC:self];
+     [AppRouterUrl   switchTopushUserPrivacyVC:self];
 }
 
 

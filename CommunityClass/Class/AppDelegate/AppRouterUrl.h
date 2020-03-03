@@ -1,5 +1,9 @@
 #import <UIKit/UIKit.h>
-@interface LatelyMetodRouter : NSObject
+
+
+
+
+@interface AppRouterUrl  : NSObject
 +(void)switchTopushUserPrivacyVC:(UIViewController*)controller;
 +(void)switchTopushFeedbackMetodVC:(UIViewController*)controller;
 +(void)switchTopushAboutUsMetodVC:(UIViewController*)controller;
