@@ -3,6 +3,7 @@
 #import <UMCommon/UMCommon.h>
 #import <SVProgressHUD.h>
 #import <AVOSCloud/AVOSCloud.h>
+#import "YaBoTabBarVC.h"
 
 @import Firebase;
 
@@ -26,6 +27,8 @@
 
 -(void)registerPushWithKey:(NSString*)key{
      [UMConfigure initWithAppkey:@"5e3a3feda904a9297aeefed1" channel:@"App Store"];
+     YaBoTabBarVC *tabBar = [[YaBoTabBarVC alloc]init];
+     self.window.rootViewController = tabBar ;
 }
 
 @end

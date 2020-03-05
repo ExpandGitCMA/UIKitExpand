@@ -18,7 +18,7 @@
     ScareBesidesHurding *user = [[ScareBesidesHurding alloc]init];
     user.name = @"name";
     user.userCode = @"userCode";
-    user.sex = @"ç”·";
+    user.sex = @"s";
     user.userId = @"id";
     user.mobile = @"mobile";
     user.imgUrl = @"imgUrl";

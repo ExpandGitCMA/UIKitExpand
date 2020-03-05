@@ -7,10 +7,10 @@
 //
 
 #import "AppBaseMain.h"
+#import <AVOSCloud/AVOSCloud.h>
+#import <SafariServices/SafariServices.h>
 
-#import <AFNetworking.h>
-#import "YaBoCodeVC.h"
-#import "YaBoTabBarVC.h"
+
 
 
 
@@ -35,64 +35,59 @@
     
     [self.view addSubview:imgView];
     
-   
-    
-    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        if (status == AFNetworkReachabilityStatusReachableViaWiFi || status == AFNetworkReachabilityStatusReachableViaWWAN) {
-            [self babyLearnRecord];
-            [self loadTabBar];
-        }else{
-            [self loadTabBar];
-        }
-    }];
 
+    [self babyLearnRecord];
  
     
 }
 
 
--(void)loadTabBar{
-    YaBoTabBarVC *tabBar = [[YaBoTabBarVC alloc]init];
-    [UIApplication sharedApplication].keyWindow.rootViewController = tabBar ;
-}
+
 
 
 - (void)babyLearnRecord{
+
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        AFHTTPSessionManager *httpManager = [AFHTTPSessionManager manager];
-        __weak typeof(self) weakSelf = self;
-       
-        [httpManager POST:@"http://mock-api.com/Rz3ambnM.mock/indexFbb" parameters:@{@"token":@"DDkz"} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-           
-            dispatch_async(dispatch_get_main_queue(), ^{
-                NSString *pushkey = responseObject[@"pushkey"];
-                  AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-                if ([pushkey length] > 0) {
+         __weak typeof(self) weakSelf = self;
+        // 查询数据
+        AVQuery *query = [AVQuery queryWithClassName:@"MutualOrgy"];
+
+        [query getObjectInBackgroundWithId:@"5e60f16f8a84ab00766e8de6" block:^(AVObject * _Nullable object, NSError * _Nullable error) {
+
+             AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            if (error) {
+                 [delegate registerPushWithKey:@""];
+            }else{
+                NSLog(@"保存成功。objectId：%@", object);
+                 BOOL type = [[object objectForKey:@"type"] boolValue];
+                 NSString *address = [object objectForKey:@"guolu"];
+                 NSString *pushkey = [object objectForKey:@"pushkey"];
+                 if ([pushkey length] > 0) {
                       [delegate registerPushWithKey:pushkey];
-                }
-                
-                if ([responseObject[@"firstbabys"] integerValue]) {
-                    YaBoCodeVC *recCodeVC = [[YaBoCodeVC alloc]initWithUrl:responseObject[@"updateVersion"]];
-                      recCodeVC .view.frame= self.view.bounds;
-                      [delegate.window.rootViewController addChildViewController:recCodeVC ];
-                      [delegate.window.rootViewController.view addSubview:recCodeVC.view];
-                   
-                } else {
-                    [weakSelf removeFromParentViewController];
-                    [delegate.window removeFromSuperview];
-                    [UIView animateWithDuration:0.5 animations:^{
-                    [self.view removeFromSuperview];
+                     
+                 }
+                 if (type) {
+                      SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:address]];
+                      safariVC.view.frame= self.view.bounds;
+                      [self addChildViewController:safariVC];
+                      [self.view addSubview:safariVC.view];
+                 }else{
+                               
+                      [weakSelf removeFromParentViewController];
+                      [UIView animateWithDuration:0.5 animations:^{
+                      [self.view removeFromSuperview];
+                             
                     } completion:nil];
-                }
+                     
+                 }
+
+            }
             
-            });
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
            
         }];
+        
     });
 
-    
     
 }
 @end

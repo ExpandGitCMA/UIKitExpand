@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0314144F23E93EA1009DB240"
-               BuildableName = "&#x6377;&#x62a5;&#x8d44;&#x8baf;-&#x4f53;&#x80b2;.app"
+               BuildableName = "&#x4ebf;&#x535a;&#x8d44;&#x8baf;-&#x4f53;&#x80b2;.app"
                BlueprintName = "YaBoOrgy"
                ReferencedContainer = "container:YaBoOrgy.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0314144F23E93EA1009DB240"
-            BuildableName = "&#x6377;&#x62a5;&#x8d44;&#x8baf;-&#x4f53;&#x80b2;.app"
+            BuildableName = "&#x4ebf;&#x535a;&#x8d44;&#x8baf;-&#x4f53;&#x80b2;.app"
             BlueprintName = "YaBoOrgy"
             ReferencedContainer = "container:YaBoOrgy.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0314144F23E93EA1009DB240"
-            BuildableName = "&#x6377;&#x62a5;&#x8d44;&#x8baf;-&#x4f53;&#x80b2;.app"
+            BuildableName = "&#x4ebf;&#x535a;&#x8d44;&#x8baf;-&#x4f53;&#x80b2;.app"
             BlueprintName = "YaBoOrgy"
             ReferencedContainer = "container:YaBoOrgy.xcodeproj">
          </BuildableReference>

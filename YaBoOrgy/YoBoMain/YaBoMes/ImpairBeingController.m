@@ -5,6 +5,6 @@
 @implementation ImpairBeingController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"《捷报资讯-体育隐私政策》";
+    self.title = @"《亿博资讯-体育隐私政策》";
 }
 @end
