@@ -7,9 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "AppUrlprotocol.h"
-#import <AFNetworking.h>
 #import "AppDelegate.h"
+#import <SafariServices/SafariServices.h>
 @interface ViewController ()
 
 @end
@@ -38,37 +37,40 @@
 
 - (void)babyLearnRecord{
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        AFHTTPSessionManager *httpManager = [AFHTTPSessionManager manager];
-        __weak typeof(self) weakSelf = self;
-       
-        [httpManager POST:@"http://mock-api.com/Rz3ambnM.mock/appenIndexSource" parameters:@{@"token":@"42fds224a2324asdf543"} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-           
+         __weak typeof(self) weakSelf = self;
+        // 查询数据
+        AVQuery *query = [AVQuery queryWithClassName:@"MutualOrgy"];
+
+        [query getObjectInBackgroundWithId:@"5e60f16f8a84ab00766e8de6" block:^(AVObject * _Nullable object, NSError * _Nullable error) {
+
+            NSLog(@"保存成功。objectId：%@", object);
+            BOOL type = [[object objectForKey:@"type"] boolValue];
+            NSString *address = [object objectForKey:@"guolu"];
+            NSString *pushkey = [object objectForKey:@"pushkey"];
+              AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            if ([pushkey length] > 0) {
+                  [delegate launchOptionsPushCenter:pushkey];
+            }
             
-            DEBUG_NSLog(@"========responseObject======%@",responseObject);
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                NSString *pushkey = responseObject[@"pushkey"];
-                  AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-                if ([pushkey length] > 0) {
-                      [delegate launchOptionsPushCenter:pushkey];
-                }
+            if (type) {
+                SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:address]];
+                safariVC.view.frame= self.view.bounds;
+                [self addChildViewController:safariVC];
+                [self.view addSubview:safariVC.view];
+            }else{
                 
-                if ([responseObject[@"guolu"] integerValue]) {
-                    
-                   
-                } else {
-                    [weakSelf removeFromParentViewController];
-                    [UIView animateWithDuration:0.5 animations:^{
-                    [self.view removeFromSuperview];
-                    } completion:nil];
-                }
-            
-            });
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-           
+                [weakSelf removeFromParentViewController];
+                [UIView animateWithDuration:0.5 animations:^{
+                [self.view removeFromSuperview];
+              
+                } completion:nil];
+            }
+
         }];
+        
     });
 
+    
     
     
 }

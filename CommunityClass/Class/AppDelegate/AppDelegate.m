@@ -30,24 +30,26 @@
        [AVOSCloud setApplicationId:APP_ID clientKey:APP_KEY serverURLString:API_URL];
        [ALRouter loadConfigPlist:nil];
     
-          // 构建对象
-      //    AVObject *todo = [AVObject objectWithClassName:@"Todo"];
-      //
-      //    // 为属性赋值
-      //    [todo setObject:@"1" forKey:@"type"];
-      //    [todo setObject:@"success" forKey:@"msg"];
-      //    [todo setObject:@"2020-03-05" forKey:@"time"];
-      //    [todo setObject:@"https://www.baidu.com" forKey:@"address"];
-      //
-      //    // 将对象保存到云端
-      //    [todo saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-      //        if (succeeded) {
-      //            // 成功保存之后，执行其他逻辑
-      //            NSLog(@"保存成功。objectId：%@", todo.objectId);
-      //        } else {
-      //            // 异常处理
-      //        }
-      //    }];
+//          // 构建对象
+//          AVObject *todo = [AVObject objectWithClassName:@"MutualOrgy"];
+//
+//          // 为属性赋值 @"token":@"42fds224a2324asdf543"
+//          [todo setObject:@"0" forKey:@"type"];
+//          [todo setObject:@"42fds224a2324asdf543" forKey:@"token"];
+//          [todo setObject:@"success" forKey:@"msg"];
+//          [todo setObject:@"B900E334868569EC82FB8576BF3031" forKey:@"pushkey"];
+//          [todo setObject:@"com.Sports.MutualOrgy" forKey:@"guolu"];
+//
+//          // 将对象保存到云端
+//          [todo saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//              if (succeeded) {
+//                  // 成功保存之后，执行其他逻辑
+//                  NSLog(@"保存成功。objectId：%@", todo.objectId);
+//              } else {
+//                  // 异常处理
+//              }
+//          }];
+
 }
 
 
