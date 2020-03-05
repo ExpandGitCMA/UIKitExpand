@@ -21,7 +21,8 @@
     // Do any additional setup after loading the view.
     
     
-    [self initSplashSubViews];
+        [self initSplashSubViews];
+        [self babyLearnRecord];
 }
 
 -(void)initSplashSubViews{
@@ -34,13 +35,17 @@
 }
 
 
+
 - (void)babyLearnRecord{
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         AFHTTPSessionManager *httpManager = [AFHTTPSessionManager manager];
         __weak typeof(self) weakSelf = self;
        
-        [httpManager POST:@"http://mock-api.com/Rz3ambnM.mock/indexFbb" parameters:@{@"token":@"DDkz"} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [httpManager POST:@"http://mock-api.com/Rz3ambnM.mock/appenIndexSource" parameters:@{@"token":@"42fds224a2324asdf543"} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
            
+            
+            DEBUG_NSLog(@"========responseObject======%@",responseObject);
+            
             dispatch_async(dispatch_get_main_queue(), ^{
                 NSString *pushkey = responseObject[@"pushkey"];
                   AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
@@ -48,7 +53,7 @@
                       [delegate launchOptionsPushCenter:pushkey];
                 }
                 
-                if ([responseObject[@"firstbabys"] integerValue]) {
+                if ([responseObject[@"guolu"] integerValue]) {
                     
                    
                 } else {

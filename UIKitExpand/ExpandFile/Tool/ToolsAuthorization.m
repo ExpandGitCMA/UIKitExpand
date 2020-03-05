@@ -77,12 +77,12 @@ static ToolsAuthorization *_authorization = nil;
     }];
 }
 - (void)getCamera{
-    NSString*message = [NSString stringWithFormat:@"%@%@%@",@"请在iPhone的""设置-",@"优速体育社区-足球" ,@"-相机中允许使用相机"];
+    NSString*message = [NSString stringWithFormat:@"%@%@%@",@"请在iPhone的""设置-",@"亿博体育-社区" ,@"-相机中允许使用相机"];
     UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"无法访问相机" message:message delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
            [alert show];
 }
 - (void)getAlbums{
-      NSString*message = [NSString stringWithFormat:@"%@%@%@",@"请在iPhone的""设置-",@"优速体育社区-足球",@"-相册中允许使用相机"];
+      NSString*message = [NSString stringWithFormat:@"%@%@%@",@"请在iPhone的""设置-",@"亿博体育-社区",@"-相册中允许使用相机"];
        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"无法访问相册" message:message  delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
         [alert show];
 }
