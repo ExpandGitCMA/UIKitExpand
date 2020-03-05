@@ -347,7 +347,6 @@
 				03067F0D23E41BB000A08E53 /* ExUIKit */,
 				03067F1623E41BB000A08E53 /* Category */,
 				03067F2423E41BB000A08E53 /* Network */,
-				03067F2D23E41BB000A08E53 /* Macros */,
 				03067F3123E41BB000A08E53 /* EmptyView */,
 				03067F4123E41BB000A08E53 /* Tool */,
 			);
@@ -398,13 +397,6 @@
 				84E549FF23EECE6A00422C37 /* HttpNetWorkManager.m */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		03067F2D23E41BB000A08E53 /* Macros */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Macros;
 			sourceTree = "<group>";
 		};
 		03067F3123E41BB000A08E53 /* EmptyView */ = {
@@ -884,7 +876,6 @@
 				TargetAttributes = {
 					B3F4EFFA1F14A8600005197E = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 57Y8ANKX46;
 						ProvisioningStyle = Automatic;
 					};
 					B3F4F0131F14A8600005197E = {
@@ -1245,7 +1236,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.6;
-				DEVELOPMENT_TEAM = 57Y8ANKX46;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1278,7 +1269,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.6;
-				DEVELOPMENT_TEAM = 57Y8ANKX46;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
