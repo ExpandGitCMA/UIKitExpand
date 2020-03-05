@@ -5,7 +5,6 @@ target 'YaBoOrgy' do
   pod 'SVProgressHUD'
   pod 'DZNEmptyDataSet'
   pod 'AFNetworking'
-  pod 'UMCCommon'
   pod 'FMDB'
   pod 'FJPreImageView'
   pod 'AVOSCloud'

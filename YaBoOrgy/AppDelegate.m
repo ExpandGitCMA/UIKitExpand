@@ -1,6 +1,5 @@
 #import "AppDelegate.h"
 #import "AppDelegate+ApptabBar.h"
-#import <UMCommon/UMCommon.h>
 #import <SVProgressHUD.h>
 #import <AVOSCloud/AVOSCloud.h>
 #import "YaBoTabBarVC.h"
@@ -26,7 +25,7 @@
 }
 
 -(void)registerPushWithKey:(NSString*)key{
-     [UMConfigure initWithAppkey:@"5e3a3feda904a9297aeefed1" channel:@"App Store"];
+
      YaBoTabBarVC *tabBar = [[YaBoTabBarVC alloc]init];
      self.window.rootViewController = tabBar ;
 }

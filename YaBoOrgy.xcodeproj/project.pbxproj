@@ -117,7 +117,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0314145023E93EA1009DB240 /* 捷报资讯-体育.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "捷报资讯-体育.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0314145023E93EA1009DB240 /* 捷报资讯-体育.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "捷报资讯-体育.app"; path = "亿博资讯-体育.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0314145323E93EA1009DB240 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0314145423E93EA1009DB240 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0314145D23E93EA1009DB240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -1181,7 +1181,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.0;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = KXRSF8XDU6;
 				INFOPLIST_FILE = YaBoOrgy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1189,7 +1189,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.NewsOrgy;
 				PRODUCT_NAME = "亿博资讯-体育";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1202,7 +1202,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.0;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = KXRSF8XDU6;
 				INFOPLIST_FILE = YaBoOrgy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1210,7 +1210,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sports.NewsOrgy;
 				PRODUCT_NAME = "亿博资讯-体育";
 				TARGETED_DEVICE_FAMILY = 1;
