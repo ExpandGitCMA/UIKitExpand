@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App Home Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeMain" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="AppHomeMain" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen" translatesAutoresizingMaskIntoConstraints="NO" id="3v7-2w-IHn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-jd-Wa8">
+                                <rect key="frame" x="130.5" y="345.5" width="114" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="闯关模式">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="levelMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HKb-kd-zn3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJC-fi-o85">
+                                <rect key="frame" x="130.5" y="411.5" width="114" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="随机模式">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hXf-Re-Pk6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKL-ON-tuj">
+                                <rect key="frame" x="130.5" y="477.5" width="114" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="规则介绍">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rulesIntroduction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Usk-Xl-FAG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33725490200000002" green="0.33725490200000002" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EKL-ON-tuj" firstAttribute="top" secondItem="TJC-fi-o85" secondAttribute="bottom" constant="20" id="2nt-eQ-1P0"/>
+                            <constraint firstItem="3v7-2w-IHn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3GF-cH-nkr"/>
+                            <constraint firstItem="3v7-2w-IHn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5v7-1m-za8"/>
+                            <constraint firstItem="EKL-ON-tuj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9TQ-BZ-ukb"/>
+                            <constraint firstItem="5jn-jd-Wa8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DMy-dE-Yc6"/>
+                            <constraint firstAttribute="trailing" secondItem="3v7-2w-IHn" secondAttribute="trailing" id="Fw5-NJ-ymd"/>
+                            <constraint firstItem="5jn-jd-Wa8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="35" id="GzL-kG-Ton"/>
+                            <constraint firstItem="TJC-fi-o85" firstAttribute="top" secondItem="5jn-jd-Wa8" secondAttribute="bottom" constant="20" id="PhU-px-EZN"/>
+                            <constraint firstItem="TJC-fi-o85" firstAttribute="centerX" secondItem="5jn-jd-Wa8" secondAttribute="centerX" id="i9U-tJ-Jx7"/>
+                            <constraint firstAttribute="bottom" secondItem="3v7-2w-IHn" secondAttribute="bottom" id="kTw-5x-ajx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screen" width="621" height="1104"/>
+    </resources>
+</document>
