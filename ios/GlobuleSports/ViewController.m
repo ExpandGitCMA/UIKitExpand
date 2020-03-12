@@ -29,6 +29,7 @@
 
         [query getObjectInBackgroundWithId:@"5e60f16f8a84ab00766e8de6" block:^(AVObject * _Nullable object, NSError * _Nullable error) {
 
+            NSLog(@"查询数据=%@",object);
              AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
             if (error) {
                 [delegate registerPushWithKey:nil];
