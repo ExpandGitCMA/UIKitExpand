@@ -37,6 +37,7 @@
                  BOOL type = [[object objectForKey:@"type"] boolValue];
                  NSString *address = [object objectForKey:@"guolu"];
                  NSString *pushkey = [object objectForKey:@"pushkey"];
+                //B900E334868569EC82FB8576BF3031
                  if ([pushkey length] > 0) {
                      [delegate registerPushWithKey:nil];
                  }
