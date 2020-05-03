@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035D7043245ED33700E459D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 035D7042245ED33700E459D2 /* GoogleService-Info.plist */; };
 		03D0839C2435DA5800F84B9A /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 03D0839B2435DA5800F84B9A /* main.jsbundle */; };
 		843329C524124AD2008F689C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 843329C424124AD2008F689C /* AppDelegate.m */; };
 		843329CB24124AD2008F689C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843329CA24124AD2008F689C /* ViewController.m */; };
@@ -16,9 +17,7 @@
 		843329D624124AD4008F689C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 843329D524124AD4008F689C /* main.m */; };
 		843329E024124AD4008F689C /* GlobuleSportsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843329DF24124AD4008F689C /* GlobuleSportsTests.m */; };
 		843329EB24124AD4008F689C /* GlobuleSportsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843329EA24124AD4008F689C /* GlobuleSportsUITests.m */; };
-		84332A0224124B4E008F689C /* ShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 843329FB24124B4E008F689C /* ShareItem.m */; };
 		84332A0324124B4E008F689C /* UIImage+UItilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 843329FC24124B4E008F689C /* UIImage+UItilities.m */; };
-		84ADE8D824160321000F5C79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84ADE8D724160321000F5C79 /* GoogleService-Info.plist */; };
 		84CBFF372418FD5F00700FDF /* AppHomeMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CBFF362418FD5F00700FDF /* AppHomeMain.storyboard */; };
 		84CBFF3A2418FDD500700FDF /* AppHomeMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBFF382418FDD400700FDF /* AppHomeMain.m */; };
 		84CBFF3D241900A900700FDF /* RuleReferralVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBFF3C241900A900700FDF /* RuleReferralVC.m */; };
@@ -58,7 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03D0839B2435DA5800F84B9A /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.jsbundle; sourceTree = SOURCE_ROOT; };
+		035D7042245ED33700E459D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03D0839B2435DA5800F84B9A /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = SOURCE_ROOT; };
 		056978B91CD585CB6184357C /* Pods-GlobuleSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobuleSports.debug.xcconfig"; path = "Target Support Files/Pods-GlobuleSports/Pods-GlobuleSports.debug.xcconfig"; sourceTree = "<group>"; };
 		763D13C687004C88A6C5A669 /* Pods-GlobuleSports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobuleSports.release.xcconfig"; path = "Target Support Files/Pods-GlobuleSports/Pods-GlobuleSports.release.xcconfig"; sourceTree = "<group>"; };
 		843329C024124AD2008F689C /* 亞博体育-迷球.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "亞博体育-迷球.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,11 +78,8 @@
 		843329EA24124AD4008F689C /* GlobuleSportsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobuleSportsUITests.m; sourceTree = "<group>"; };
 		843329EC24124AD4008F689C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843329FA24124B4E008F689C /* UIImage+UItilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UItilities.h"; sourceTree = "<group>"; };
-		843329FB24124B4E008F689C /* ShareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareItem.m; sourceTree = "<group>"; };
 		843329FC24124B4E008F689C /* UIImage+UItilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UItilities.m"; sourceTree = "<group>"; };
-		843329FF24124B4E008F689C /* ShareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareItem.h; sourceTree = "<group>"; };
 		8464A6D62414FAE000D29245 /* GameTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTools.h; sourceTree = "<group>"; };
-		84ADE8D724160321000F5C79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84CBFF352418ED4F00700FDF /* ColorHeaderRGBType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorHeaderRGBType.h; sourceTree = "<group>"; };
 		84CBFF362418FD5F00700FDF /* AppHomeMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppHomeMain.storyboard; sourceTree = "<group>"; };
 		84CBFF382418FDD400700FDF /* AppHomeMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppHomeMain.m; sourceTree = "<group>"; };
@@ -183,8 +180,8 @@
 				84CBFF362418FD5F00700FDF /* AppHomeMain.storyboard */,
 				843329CF24124AD4008F689C /* Assets.xcassets */,
 				843329D124124AD4008F689C /* LaunchScreen.storyboard */,
+				035D7042245ED33700E459D2 /* GoogleService-Info.plist */,
 				843329D424124AD4008F689C /* Info.plist */,
-				84ADE8D724160321000F5C79 /* GoogleService-Info.plist */,
 				843329D524124AD4008F689C /* main.m */,
 				03D0839B2435DA5800F84B9A /* main.jsbundle */,
 				84CBFF812419048300700FDF /* assets */,
@@ -217,8 +214,6 @@
 				8464A6D62414FAE000D29245 /* GameTools.h */,
 				843329FA24124B4E008F689C /* UIImage+UItilities.h */,
 				843329FC24124B4E008F689C /* UIImage+UItilities.m */,
-				843329FF24124B4E008F689C /* ShareItem.h */,
-				843329FB24124B4E008F689C /* ShareItem.m */,
 				84CBFFED24190B6300700FDF /* ExpandBar.h */,
 				84CBFFEE24190B6300700FDF /* ExpandBar.m */,
 			);
@@ -408,13 +403,13 @@
 			files = (
 				84CBFFEC2419079300700FDF /* ReuniteViceStrapController.xib in Resources */,
 				843329D324124AD4008F689C /* LaunchScreen.storyboard in Resources */,
+				035D7043245ED33700E459D2 /* GoogleService-Info.plist in Resources */,
 				84CBFF372418FD5F00700FDF /* AppHomeMain.storyboard in Resources */,
 				03D0839C2435DA5800F84B9A /* main.jsbundle in Resources */,
 				84CBFF822419048300700FDF /* assets in Resources */,
 				84CBFFF3241910A800700FDF /* SwitchBidDirtyController.xib in Resources */,
 				843329D024124AD4008F689C /* Assets.xcassets in Resources */,
 				843329CE24124AD2008F689C /* Main.storyboard in Resources */,
-				84ADE8D824160321000F5C79 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +497,6 @@
 				84CBFFD92419064400700FDF /* ExceedDuskEnormous.m in Sources */,
 				84CBFFD82419064400700FDF /* AttemptSinger.m in Sources */,
 				84CBFFEF24190B6300700FDF /* ExpandBar.m in Sources */,
-				84332A0224124B4E008F689C /* ShareItem.m in Sources */,
 				84CBFFE6241906C100700FDF /* SmellLeastCarrotManager.m in Sources */,
 				84CBFFD12419062100700FDF /* DotClearHorizonView.m in Sources */,
 				843329CB24124AD2008F689C /* ViewController.m in Sources */,
@@ -687,7 +681,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 8DZ394K7X7;
 				INFOPLIST_FILE = GlobuleSports/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -695,8 +689,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.solve.globuleSports;
-				PRODUCT_NAME = "亞博体育-迷球";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fans.globetools;
+				PRODUCT_NAME = FansGlobe;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -707,7 +701,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 8DZ394K7X7;
 				INFOPLIST_FILE = GlobuleSports/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -715,8 +709,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.solve.globuleSports;
-				PRODUCT_NAME = "亞博体育-迷球";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fans.globetools;
+				PRODUCT_NAME = FansGlobe;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

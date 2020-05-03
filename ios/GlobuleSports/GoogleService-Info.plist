@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1091067275950-r0fetft3r60ulmhu16bebp58442g9ipn.apps.googleusercontent.com</string>
+	<string>1091067275950-aifbpkbn3qls27mva2sjs88kbpf7iskq.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1091067275950-r0fetft3r60ulmhu16bebp58442g9ipn</string>
+	<string>com.googleusercontent.apps.1091067275950-aifbpkbn3qls27mva2sjs88kbpf7iskq</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCuvUS-ifg4_RdtGHmhrCxt_XoUMukkZW0</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.solve.globuleSports</string>
+	<string>com.fans.globetools</string>
 	<key>PROJECT_ID</key>
 	<string>com-ecpei-service</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1091067275950:ios:ddf2a3926e8404538d1b3f</string>
+	<string>1:1091067275950:ios:621932fbbc2a735e8d1b3f</string>
 	<key>DATABASE_URL</key>
 	<string>https://com-ecpei-service.firebaseio.com</string>
 </dict>

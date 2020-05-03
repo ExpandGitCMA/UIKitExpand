@@ -13,6 +13,7 @@
 #import "UIColor+HEX.h"
 #import "ExpandBar.h"
 #import "RuleReferralVC.h"
+#import "ColorHeaderRGBType.h"
 // 每个关卡间的距离
 static CGFloat space = 10;
 // 关卡总数量
@@ -32,7 +33,7 @@ static NSInteger levelCount = 60;
     
     // 添加关卡
     [self addLevelToScrollView];
-    [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(help) title:@"help"];
+//    [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(help) title:@"help"];
 }
 
 
@@ -63,7 +64,8 @@ static NSInteger levelCount = 60;
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setFrame:CGRectMake(0, 0, backW, backH)];
     [btn setTitle:[NSString stringWithFormat:@"%ld", index + 1] forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btn setTitleColor:kUIColorFromRGB(AppMianColor) forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:22];
     btn.tag = 200 + index;
     [btn addTarget:self action:@selector(selectLevel:) forControlEvents:UIControlEventTouchUpInside];
     [backView addSubview:btn];

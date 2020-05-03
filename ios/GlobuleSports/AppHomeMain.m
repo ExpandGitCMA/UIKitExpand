@@ -31,7 +31,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"体育-迷球";
     // Do any additional setup after loading the view, typically from a nib.
     [self starView];
     [self starViewTwo];

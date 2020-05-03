@@ -117,7 +117,7 @@
     }
     
    // self.titleLabel.text = @"随机模式";
-      self.title = @"随机模式";
+      self.title = @"挑战关卡";
     // 生成迷宫
     // 迷宫行数(随机)
     NSInteger row = arc4random() % 30 + 10;
