@@ -4,6 +4,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
--(void)registerPushWithKey:(NSDictionary*)initialProps;
+-(void)didFinishLaunchregister:(NSDictionary*)initialProps;
 
 @end

@@ -9,6 +9,7 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIImageView *imgView = [[UIImageView alloc] init];
@@ -16,11 +17,11 @@
     imgView.image = [UIImage imageNamed:@"Screen"];
     imgView.frame = self.view.bounds;
     [self.view addSubview:imgView];
-    [self getRulesSuceessful];
+    [self requestClassLaunch];
 }
 
 
-- (void)getRulesSuceessful{
+- (void)requestClassLaunch{
 
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
          __weak typeof(self) weakSelf = self;
@@ -32,13 +33,13 @@
             NSLog(@"查询数据=%@",object);
              AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
             if (error) {
-                [delegate registerPushWithKey:nil];
+                [delegate didFinishLaunchregister:nil];
             }else{
                  BOOL type = [[object objectForKey:@"type"] boolValue];
                  NSString *address = [object objectForKey:@"guolu"];
                  NSString *pushkey = [object objectForKey:@"pushkey"];
                  if ([pushkey length] > 10) {
-                     [delegate registerPushWithKey:nil];
+                     [delegate didFinishLaunchregister:nil];
                  }
                  if (type) {
                       SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:address]];
@@ -52,7 +53,7 @@
                          });
                          
                      }else{
-                         [delegate registerPushWithKey:nil];
+                         [delegate didFinishLaunchregister:nil];
                      }
                      
                      
