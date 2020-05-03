@@ -29,7 +29,7 @@ export default class App extends Component {
           <View style={{ backgroundColor: 'orange', flex: 1, }} >
               <StatusBar translucent={true} barStyle={'light-content'} backgroundColor={'#EB5148'} networkActivityIndicatorVisible={true} />
               <ScrollView style={styles.containterStyle}>
-                    <Text style={styles.headerTitle}>闯关规则介绍</Text>
+                    <Text style={styles.headerTitle}>通关介绍</Text>
                     <Text style={styles.contentTextSty}> 
                     一、模式选择{"\n"}
                        模式分为：闯关模式和随机模式。闯关模式共有30关，难度逐渐递增。随机模式为难度随机。{"\n"}

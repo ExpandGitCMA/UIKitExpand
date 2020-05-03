@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		035D7043245ED33700E459D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 035D7042245ED33700E459D2 /* GoogleService-Info.plist */; };
+		035D7045245ED70C00E459D2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 035D7044245ED70C00E459D2 /* Info.plist */; };
+		035D7047245ED79C00E459D2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 035D7046245ED79C00E459D2 /* Info.plist */; };
+		035D7048245ED79C00E459D2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 035D7046245ED79C00E459D2 /* Info.plist */; };
 		03D0839C2435DA5800F84B9A /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 03D0839B2435DA5800F84B9A /* main.jsbundle */; };
 		843329C524124AD2008F689C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 843329C424124AD2008F689C /* AppDelegate.m */; };
 		843329CB24124AD2008F689C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843329CA24124AD2008F689C /* ViewController.m */; };
@@ -58,10 +61,12 @@
 
 /* Begin PBXFileReference section */
 		035D7042245ED33700E459D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		035D7044245ED70C00E459D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		035D7046245ED79C00E459D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D0839B2435DA5800F84B9A /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = SOURCE_ROOT; };
 		056978B91CD585CB6184357C /* Pods-GlobuleSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobuleSports.debug.xcconfig"; path = "Target Support Files/Pods-GlobuleSports/Pods-GlobuleSports.debug.xcconfig"; sourceTree = "<group>"; };
 		763D13C687004C88A6C5A669 /* Pods-GlobuleSports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobuleSports.release.xcconfig"; path = "Target Support Files/Pods-GlobuleSports/Pods-GlobuleSports.release.xcconfig"; sourceTree = "<group>"; };
-		843329C024124AD2008F689C /* 亞博体育-迷球.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "亞博体育-迷球.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		843329C024124AD2008F689C /* FansGlobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FansGlobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843329C324124AD2008F689C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		843329C424124AD2008F689C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		843329C924124AD2008F689C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -69,12 +74,10 @@
 		843329CD24124AD2008F689C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		843329CF24124AD4008F689C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843329D224124AD4008F689C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		843329D424124AD4008F689C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843329D524124AD4008F689C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		843329DB24124AD4008F689C /* GlobuleSportsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobuleSportsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		843329DB24124AD4008F689C /* FansGlobeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FansGlobeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		843329DF24124AD4008F689C /* GlobuleSportsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobuleSportsTests.m; sourceTree = "<group>"; };
-		843329E124124AD4008F689C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		843329E624124AD4008F689C /* GlobuleSportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobuleSportsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		843329E624124AD4008F689C /* FansGlobeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FansGlobeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		843329EA24124AD4008F689C /* GlobuleSportsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobuleSportsUITests.m; sourceTree = "<group>"; };
 		843329EC24124AD4008F689C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843329FA24124B4E008F689C /* UIImage+UItilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UItilities.h"; sourceTree = "<group>"; };
@@ -146,9 +149,9 @@
 		843329B724124AD2008F689C = {
 			isa = PBXGroup;
 			children = (
-				843329C224124AD2008F689C /* GlobuleSports */,
-				843329DE24124AD4008F689C /* GlobuleSportsTests */,
-				843329E924124AD4008F689C /* GlobuleSportsUITests */,
+				843329C224124AD2008F689C /* FansGlobe */,
+				843329DE24124AD4008F689C /* FansGlobeTests */,
+				843329E924124AD4008F689C /* FansGlobeUITests */,
 				843329C124124AD2008F689C /* Products */,
 				C30666DBC9C047B273008EE0 /* Pods */,
 				D1751FDB053248EB4811770E /* Frameworks */,
@@ -158,14 +161,14 @@
 		843329C124124AD2008F689C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				843329C024124AD2008F689C /* 亞博体育-迷球.app */,
-				843329DB24124AD4008F689C /* GlobuleSportsTests.xctest */,
-				843329E624124AD4008F689C /* GlobuleSportsUITests.xctest */,
+				843329C024124AD2008F689C /* FansGlobe.app */,
+				843329DB24124AD4008F689C /* FansGlobeTests.xctest */,
+				843329E624124AD4008F689C /* FansGlobeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		843329C224124AD2008F689C /* GlobuleSports */ = {
+		843329C224124AD2008F689C /* FansGlobe */ = {
 			isa = PBXGroup;
 			children = (
 				84CBFF2E2418EB9B00700FDF /* Class */,
@@ -181,30 +184,30 @@
 				843329CF24124AD4008F689C /* Assets.xcassets */,
 				843329D124124AD4008F689C /* LaunchScreen.storyboard */,
 				035D7042245ED33700E459D2 /* GoogleService-Info.plist */,
-				843329D424124AD4008F689C /* Info.plist */,
+				035D7044245ED70C00E459D2 /* Info.plist */,
 				843329D524124AD4008F689C /* main.m */,
 				03D0839B2435DA5800F84B9A /* main.jsbundle */,
 				84CBFF812419048300700FDF /* assets */,
 			);
-			path = GlobuleSports;
+			path = FansGlobe;
 			sourceTree = "<group>";
 		};
-		843329DE24124AD4008F689C /* GlobuleSportsTests */ = {
+		843329DE24124AD4008F689C /* FansGlobeTests */ = {
 			isa = PBXGroup;
 			children = (
 				843329DF24124AD4008F689C /* GlobuleSportsTests.m */,
-				843329E124124AD4008F689C /* Info.plist */,
+				035D7046245ED79C00E459D2 /* Info.plist */,
 			);
-			path = GlobuleSportsTests;
+			path = FansGlobeTests;
 			sourceTree = "<group>";
 		};
-		843329E924124AD4008F689C /* GlobuleSportsUITests */ = {
+		843329E924124AD4008F689C /* FansGlobeUITests */ = {
 			isa = PBXGroup;
 			children = (
 				843329EA24124AD4008F689C /* GlobuleSportsUITests.m */,
 				843329EC24124AD4008F689C /* Info.plist */,
 			);
-			path = GlobuleSportsUITests;
+			path = FansGlobeUITests;
 			sourceTree = "<group>";
 		};
 		843329F824124B30008F689C /* Tools */ = {
@@ -298,9 +301,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		843329BF24124AD2008F689C /* GlobuleSports */ = {
+		843329BF24124AD2008F689C /* FansGlobe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 843329EF24124AD5008F689C /* Build configuration list for PBXNativeTarget "GlobuleSports" */;
+			buildConfigurationList = 843329EF24124AD5008F689C /* Build configuration list for PBXNativeTarget "FansGlobe" */;
 			buildPhases = (
 				F35E42398F20904EBD17AAE2 /* [CP] Check Pods Manifest.lock */,
 				843329BC24124AD2008F689C /* Sources */,
@@ -313,14 +316,14 @@
 			);
 			dependencies = (
 			);
-			name = GlobuleSports;
+			name = FansGlobe;
 			productName = GlobuleSports;
-			productReference = 843329C024124AD2008F689C /* 亞博体育-迷球.app */;
+			productReference = 843329C024124AD2008F689C /* FansGlobe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		843329DA24124AD4008F689C /* GlobuleSportsTests */ = {
+		843329DA24124AD4008F689C /* FansGlobeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 843329F224124AD5008F689C /* Build configuration list for PBXNativeTarget "GlobuleSportsTests" */;
+			buildConfigurationList = 843329F224124AD5008F689C /* Build configuration list for PBXNativeTarget "FansGlobeTests" */;
 			buildPhases = (
 				843329D724124AD4008F689C /* Sources */,
 				843329D824124AD4008F689C /* Frameworks */,
@@ -331,14 +334,14 @@
 			dependencies = (
 				843329DD24124AD4008F689C /* PBXTargetDependency */,
 			);
-			name = GlobuleSportsTests;
+			name = FansGlobeTests;
 			productName = GlobuleSportsTests;
-			productReference = 843329DB24124AD4008F689C /* GlobuleSportsTests.xctest */;
+			productReference = 843329DB24124AD4008F689C /* FansGlobeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		843329E524124AD4008F689C /* GlobuleSportsUITests */ = {
+		843329E524124AD4008F689C /* FansGlobeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 843329F524124AD5008F689C /* Build configuration list for PBXNativeTarget "GlobuleSportsUITests" */;
+			buildConfigurationList = 843329F524124AD5008F689C /* Build configuration list for PBXNativeTarget "FansGlobeUITests" */;
 			buildPhases = (
 				843329E224124AD4008F689C /* Sources */,
 				843329E324124AD4008F689C /* Frameworks */,
@@ -349,9 +352,9 @@
 			dependencies = (
 				843329E824124AD4008F689C /* PBXTargetDependency */,
 			);
-			name = GlobuleSportsUITests;
+			name = FansGlobeUITests;
 			productName = GlobuleSportsUITests;
-			productReference = 843329E624124AD4008F689C /* GlobuleSportsUITests.xctest */;
+			productReference = 843329E624124AD4008F689C /* FansGlobeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -376,7 +379,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 843329BB24124AD2008F689C /* Build configuration list for PBXProject "GlobuleSports" */;
+			buildConfigurationList = 843329BB24124AD2008F689C /* Build configuration list for PBXProject "FansGlobe" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -389,9 +392,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				843329BF24124AD2008F689C /* GlobuleSports */,
-				843329DA24124AD4008F689C /* GlobuleSportsTests */,
-				843329E524124AD4008F689C /* GlobuleSportsUITests */,
+				843329BF24124AD2008F689C /* FansGlobe */,
+				843329DA24124AD4008F689C /* FansGlobeTests */,
+				843329E524124AD4008F689C /* FansGlobeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -409,6 +412,8 @@
 				84CBFF822419048300700FDF /* assets in Resources */,
 				84CBFFF3241910A800700FDF /* SwitchBidDirtyController.xib in Resources */,
 				843329D024124AD4008F689C /* Assets.xcassets in Resources */,
+				035D7047245ED79C00E459D2 /* Info.plist in Resources */,
+				035D7045245ED70C00E459D2 /* Info.plist in Resources */,
 				843329CE24124AD2008F689C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +422,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035D7048245ED79C00E459D2 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,12 +541,12 @@
 /* Begin PBXTargetDependency section */
 		843329DD24124AD4008F689C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 843329BF24124AD2008F689C /* GlobuleSports */;
+			target = 843329BF24124AD2008F689C /* FansGlobe */;
 			targetProxy = 843329DC24124AD4008F689C /* PBXContainerItemProxy */;
 		};
 		843329E824124AD4008F689C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 843329BF24124AD2008F689C /* GlobuleSports */;
+			target = 843329BF24124AD2008F689C /* FansGlobe */;
 			targetProxy = 843329E724124AD4008F689C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -683,7 +689,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 8DZ394K7X7;
-				INFOPLIST_FILE = GlobuleSports/Info.plist;
+				INFOPLIST_FILE = FansGlobe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -703,7 +709,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 8DZ394K7X7;
-				INFOPLIST_FILE = GlobuleSports/Info.plist;
+				INFOPLIST_FILE = FansGlobe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -730,7 +736,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.solve.GlobuleSportsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlobuleSports.app/GlobuleSports";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FansGlobe.app/FansGlobe";
 			};
 			name = Debug;
 		};
@@ -749,7 +755,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.solve.GlobuleSportsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlobuleSports.app/GlobuleSports";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FansGlobe.app/FansGlobe";
 			};
 			name = Release;
 		};
@@ -790,7 +796,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		843329BB24124AD2008F689C /* Build configuration list for PBXProject "GlobuleSports" */ = {
+		843329BB24124AD2008F689C /* Build configuration list for PBXProject "FansGlobe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				843329ED24124AD5008F689C /* Debug */,
@@ -799,7 +805,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		843329EF24124AD5008F689C /* Build configuration list for PBXNativeTarget "GlobuleSports" */ = {
+		843329EF24124AD5008F689C /* Build configuration list for PBXNativeTarget "FansGlobe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				843329F024124AD5008F689C /* Debug */,
@@ -808,7 +814,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		843329F224124AD5008F689C /* Build configuration list for PBXNativeTarget "GlobuleSportsTests" */ = {
+		843329F224124AD5008F689C /* Build configuration list for PBXNativeTarget "FansGlobeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				843329F324124AD5008F689C /* Debug */,
@@ -817,7 +823,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		843329F524124AD5008F689C /* Build configuration list for PBXNativeTarget "GlobuleSportsUITests" */ = {
+		843329F524124AD5008F689C /* Build configuration list for PBXNativeTarget "FansGlobeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				843329F624124AD5008F689C /* Debug */,

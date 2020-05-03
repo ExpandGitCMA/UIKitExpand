@@ -2,7 +2,7 @@ platform :ios, '9.0'
 
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'GlobuleSports' do
+target 'FansGlobe' do
   pod 'AVOSCloud'
   pod 'Firebase/Crashlytics'
   pod 'Firebase/Analytics'

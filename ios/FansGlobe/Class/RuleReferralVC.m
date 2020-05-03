@@ -23,7 +23,7 @@
     
     RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:nil];
     RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
-                                                         moduleName:@"GlobuleSports"
+                                                         moduleName:@"FansGlobe"
                                                   initialProperties:nil];
     rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
     self.view = rootView;
