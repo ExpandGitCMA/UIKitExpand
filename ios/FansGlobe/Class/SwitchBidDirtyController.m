@@ -33,7 +33,6 @@ static NSInteger levelCount = 60;
     
     // 添加关卡
     [self addLevelToScrollView];
-//    [self.navigationController captureNavigationType:NavigationBarImageStyle NavigationStyle:NavRightStyle barTarget:self action:@selector(help) title:@"help"];
 }
 
 
@@ -64,7 +63,7 @@ static NSInteger levelCount = 60;
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setFrame:CGRectMake(0, 0, backW, backH)];
     [btn setTitle:[NSString stringWithFormat:@"%ld", index + 1] forState:UIControlStateNormal];
-    [btn setTitleColor:kUIColorFromRGB(AppMianColor) forState:UIControlStateNormal];
+    [btn setTitleColor:UIColorRGB(AppMianColor) forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:22];
     btn.tag = 200 + index;
     [btn addTarget:self action:@selector(selectLevel:) forControlEvents:UIControlEventTouchUpInside];

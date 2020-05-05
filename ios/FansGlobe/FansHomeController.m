@@ -6,13 +6,13 @@
 //  Copyright © 2018年 tulip. All rights reserved.
 // 
 
-#import "AppHomeMain.h"
+#import "FansHomeController.h"
 #import "RuleReferralVC.h"
 #import "ReuniteViceStrapController.h"
 #import "SwitchBidDirtyController.h"
 #import "StarTextView.h"
 
-@interface AppHomeMain ()
+@interface FansHomeController ()
 @property (nonatomic, strong)StarTextView *starView;
 @property (nonatomic, strong)StarTextView *starViewTwo;
 @end
@@ -27,7 +27,7 @@
 // 屏幕高度比例
 #define kH_Scale (kScreenHeight/568.0)
 
-@implementation AppHomeMain
+@implementation FansHomeController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

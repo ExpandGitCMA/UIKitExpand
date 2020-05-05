@@ -16,7 +16,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     // 设置画笔颜色
-     CGContextSetStrokeColorWithColor(context, kUIColorFromRGB(AppMianColor).CGColor);
+     CGContextSetStrokeColorWithColor(context, UIColorRGB(AppMianColor).CGColor);
 
     
     // 指定直线样式

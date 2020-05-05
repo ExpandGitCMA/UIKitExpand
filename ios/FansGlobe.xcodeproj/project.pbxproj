@@ -21,8 +21,8 @@
 		843329E024124AD4008F689C /* GlobuleSportsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843329DF24124AD4008F689C /* GlobuleSportsTests.m */; };
 		843329EB24124AD4008F689C /* GlobuleSportsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843329EA24124AD4008F689C /* GlobuleSportsUITests.m */; };
 		84332A0324124B4E008F689C /* UIImage+UItilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 843329FC24124B4E008F689C /* UIImage+UItilities.m */; };
-		84CBFF372418FD5F00700FDF /* AppHomeMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CBFF362418FD5F00700FDF /* AppHomeMain.storyboard */; };
-		84CBFF3A2418FDD500700FDF /* AppHomeMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBFF382418FDD400700FDF /* AppHomeMain.m */; };
+		84CBFF372418FD5F00700FDF /* FansHomeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CBFF362418FD5F00700FDF /* FansHomeController.storyboard */; };
+		84CBFF3A2418FDD500700FDF /* FansHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBFF382418FDD400700FDF /* FansHomeController.m */; };
 		84CBFF3D241900A900700FDF /* RuleReferralVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBFF3C241900A900700FDF /* RuleReferralVC.m */; };
 		84CBFF822419048300700FDF /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 84CBFF812419048300700FDF /* assets */; };
 		84CBFFD02419062100700FDF /* ConservativePrejudiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBFFCB2419062100700FDF /* ConservativePrejudiceView.m */; };
@@ -84,9 +84,9 @@
 		843329FC24124B4E008F689C /* UIImage+UItilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UItilities.m"; sourceTree = "<group>"; };
 		8464A6D62414FAE000D29245 /* GameTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTools.h; sourceTree = "<group>"; };
 		84CBFF352418ED4F00700FDF /* ColorHeaderRGBType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorHeaderRGBType.h; sourceTree = "<group>"; };
-		84CBFF362418FD5F00700FDF /* AppHomeMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppHomeMain.storyboard; sourceTree = "<group>"; };
-		84CBFF382418FDD400700FDF /* AppHomeMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppHomeMain.m; sourceTree = "<group>"; };
-		84CBFF392418FDD500700FDF /* AppHomeMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHomeMain.h; sourceTree = "<group>"; };
+		84CBFF362418FD5F00700FDF /* FansHomeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FansHomeController.storyboard; sourceTree = "<group>"; };
+		84CBFF382418FDD400700FDF /* FansHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FansHomeController.m; sourceTree = "<group>"; };
+		84CBFF392418FDD500700FDF /* FansHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansHomeController.h; sourceTree = "<group>"; };
 		84CBFF3B241900A900700FDF /* RuleReferralVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuleReferralVC.h; sourceTree = "<group>"; };
 		84CBFF3C241900A900700FDF /* RuleReferralVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuleReferralVC.m; sourceTree = "<group>"; };
 		84CBFF812419048300700FDF /* assets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = assets; sourceTree = SOURCE_ROOT; };
@@ -177,10 +177,10 @@
 				843329C424124AD2008F689C /* AppDelegate.m */,
 				843329C924124AD2008F689C /* ViewController.h */,
 				843329CA24124AD2008F689C /* ViewController.m */,
-				84CBFF392418FDD500700FDF /* AppHomeMain.h */,
-				84CBFF382418FDD400700FDF /* AppHomeMain.m */,
+				84CBFF392418FDD500700FDF /* FansHomeController.h */,
+				84CBFF382418FDD400700FDF /* FansHomeController.m */,
 				843329CC24124AD2008F689C /* Main.storyboard */,
-				84CBFF362418FD5F00700FDF /* AppHomeMain.storyboard */,
+				84CBFF362418FD5F00700FDF /* FansHomeController.storyboard */,
 				843329CF24124AD4008F689C /* Assets.xcassets */,
 				843329D124124AD4008F689C /* LaunchScreen.storyboard */,
 				035D7042245ED33700E459D2 /* GoogleService-Info.plist */,
@@ -407,7 +407,7 @@
 				84CBFFEC2419079300700FDF /* ReuniteViceStrapController.xib in Resources */,
 				843329D324124AD4008F689C /* LaunchScreen.storyboard in Resources */,
 				035D7043245ED33700E459D2 /* GoogleService-Info.plist in Resources */,
-				84CBFF372418FD5F00700FDF /* AppHomeMain.storyboard in Resources */,
+				84CBFF372418FD5F00700FDF /* FansHomeController.storyboard in Resources */,
 				03D0839C2435DA5800F84B9A /* main.jsbundle in Resources */,
 				84CBFF822419048300700FDF /* assets in Resources */,
 				84CBFFF3241910A800700FDF /* SwitchBidDirtyController.xib in Resources */,
@@ -513,7 +513,7 @@
 				84CBFFD02419062100700FDF /* ConservativePrejudiceView.m in Sources */,
 				84CBFFF4241910A800700FDF /* SwitchBidDirtyController.m in Sources */,
 				843329D624124AD4008F689C /* main.m in Sources */,
-				84CBFF3A2418FDD500700FDF /* AppHomeMain.m in Sources */,
+				84CBFF3A2418FDD500700FDF /* FansHomeController.m in Sources */,
 				84CBFFE4241906C100700FDF /* UIColor+HEX.m in Sources */,
 				84CBFFE5241906C100700FDF /* BuildVersionMedium.m in Sources */,
 				84CBFFD22419062100700FDF /* StarTextView.m in Sources */,

@@ -4,7 +4,7 @@
 
 
 #import "ColorHeaderRGBType.h"
-#import "AppHomeMain.h"
+#import "FansHomeController.h"
 @interface AppDelegate ()
 
 @end
@@ -24,13 +24,13 @@
 
 -(void)didFinishLaunchregister:(NSDictionary*)initialProps{
 
-    [[UITabBar appearance] setTintColor:kUIColorFromRGB(AppMianColor)];
-    [[UINavigationBar appearance] setBarTintColor:kUIColorFromRGB(AppMianColor)];
+    [[UITabBar appearance] setTintColor:UIColorRGB(AppMianColor)];
+    [[UINavigationBar appearance] setBarTintColor:UIColorRGB(AppMianColor)];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIColor whiteColor], NSForegroundColorAttributeName,[UIFont fontWithName:@"PingFang-SC-Medium" size: 18], NSFontAttributeName, nil]];
-     [[UITextField appearance] setTintColor:kUIColorFromRGB(AppMianColor)];
+     [[UITextField appearance] setTintColor:UIColorRGB(AppMianColor)];
     
-    UIStoryboard *story = [UIStoryboard storyboardWithName:@"AppHomeMain" bundle:nil];
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"FansHomeController" bundle:nil];
     UINavigationController *rootViewController = [[UINavigationController alloc]initWithRootViewController:[story instantiateViewControllerWithIdentifier:@"HomeMain"]];
     self.window.rootViewController = rootViewController;
 }
