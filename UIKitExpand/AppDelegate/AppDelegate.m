@@ -13,8 +13,7 @@
 #import "ExpandUser.h"
 #import "ExUserDefaultManager.h"
 
-#include "exbankcard.h"
-#include "excards.h"
+
 
 @interface AppDelegate ()
 
@@ -30,10 +29,7 @@
 
      ExpandUser*user = [ExpandUser userWithDict:nil];
      [[ExUserDefaultManager sharedDefaultManager]saveAccount:user];
-    
-    unsigned char result [512];
-    int resultLen = BankCardNV12(result, 512, 0, 0, 0, 0, 0, 0, 0, 0);
-    
+
     return YES;
 }
 
